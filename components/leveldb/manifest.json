@@ -1,0 +1,10 @@
+{
+  "manifest_version":  1,
+  "name": "service:leveldb",
+  "display_name": "LevelDB Service",
+  "capabilities": {
+    "required": {
+      "*": { "classes": [ "app" ] }
+    }
+  }
+}

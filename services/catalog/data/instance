@@ -1,0 +1,7 @@
+{
+  "manifest_version":  1,
+  "name": "service:foo",
+  "display_name": "Foo",
+  "process-group": "bar",
+  "capabilities": { }
+}

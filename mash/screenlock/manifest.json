@@ -1,0 +1,10 @@
+{
+  "manifest_version":  1,
+  "name": "service:screenlock",
+  "display_name": "Screen Lock",
+  "capabilities": {
+    "required": {
+      "*": { "classes": [ "app" ] }
+    }
+  }
+}

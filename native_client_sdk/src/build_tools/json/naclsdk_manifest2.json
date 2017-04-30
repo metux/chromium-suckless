@@ -1,0 +1,143 @@
+{
+  "bundles": [
+    {
+      "archives": [
+        {
+          "checksum": {
+            "sha1": "c90944aa6dc45085f1a222396ffa2b6a86afdf3d"
+          },
+          "host_os": "all",
+          "size": 31159,
+          "url": "https://storage.googleapis.com/nativeclient-mirror/nacl/nacl_sdk/trunk.361478/sdk_tools.tgz"
+        }
+      ],
+      "description": "Native Client SDK Tools, revision 361478",
+      "name": "sdk_tools",
+      "recommended": "yes",
+      "revision": 361478,
+      "stability": "stable",
+      "version": 1
+    },
+    {
+      "archives": [
+        {
+          "host_os": "win",
+          "url": "https://storage.googleapis.com/nativeclient-mirror/nacl/nacl_sdk/sdk/${revision}/vs_addin.tgz"
+        }
+      ],
+      "description": "Visual Studio Add-In for building and debugging NaCl applications",
+      "name": "vs_addin",
+      "recommended": "no",
+      "repath": "vs_addin",
+      "revision": 1578,
+      "stability": "dev",
+      "version": 0
+    },
+    {
+      "archives": [],
+      "description": "Chrome 44 bundle, revision xxxxx",
+      "name": "pepper_44",
+      "recommended": "no",
+      "repath": "pepper_44",
+      "revision": 0,
+      "stability": "post_stable",
+      "version": 44
+    },
+    {
+      "archives": [],
+      "description": "Chrome 45 bundle, revision xxxxx",
+      "name": "pepper_45",
+      "recommended": "no",
+      "repath": "pepper_45",
+      "revision": 0,
+      "stability": "post_stable",
+      "version": 45
+    },
+    {
+      "archives": [],
+      "description": "Chrome 46 bundle, revision xxxxx",
+      "name": "pepper_46",
+      "recommended": "no",
+      "repath": "pepper_46",
+      "revision": 0,
+      "stability": "post_stable",
+      "version": 46
+    },
+    {
+      "archives": [],
+      "description": "Chrome 47 bundle, revision xxxxx",
+      "name": "pepper_47",
+      "recommended": "no",
+      "repath": "pepper_47",
+      "revision": 0,
+      "stability": "post_stable",
+      "version": 47
+    },
+    {
+      "archives": [],
+      "description": "Chrome 49 bundle, revision xxxxx",
+      "name": "pepper_49",
+      "recommended": "no",
+      "repath": "pepper_49",
+      "revision": 0,
+      "stability": "post_stable",
+      "version": 49
+    },
+    {
+      "archives": [],
+      "description": "Chrome 50 bundle, revision xxxxx",
+      "name": "pepper_50",
+      "recommended": "no",
+      "repath": "pepper_50",
+      "revision": 0,
+      "stability": "post_stable",
+      "version": 50
+    },
+    {
+      "archives": [
+        {
+          "checksum": {
+            "sha1": "8fa21433d946fb30666d29d9898ab91b6f0fb708"
+          },
+          "host_os": "linux",
+          "size": 332591654,
+          "url": "https://storage.googleapis.com/nativeclient-mirror/nacl/nacl_sdk/55.0.2879.2/naclsdk_linux.tar.bz2"
+        },
+        {
+          "checksum": {
+            "sha1": "6db864b3372ad98a46d6c6166f59c5cfa13f7a57"
+          },
+          "host_os": "mac",
+          "size": 322946452,
+          "url": "https://storage.googleapis.com/nativeclient-mirror/nacl/nacl_sdk/55.0.2879.2/naclsdk_mac.tar.bz2"
+        },
+        {
+          "checksum": {
+            "sha1": "0f562a6288c18459f4132c0a7dada147c588e8e9"
+          },
+          "host_os": "win",
+          "size": 318999883,
+          "url": "https://storage.googleapis.com/nativeclient-mirror/nacl/nacl_sdk/55.0.2879.2/naclsdk_win.tar.bz2"
+        }
+      ],
+      "description": "Chrome 55 bundle. Chrome revision: 2. NaCl revision: fe5bd51f9b79d27b2a3884181d4004cfccf70759",
+      "name": "pepper_55",
+      "recommended": "no",
+      "repath": "pepper_55",
+      "revision": 2,
+      "stability": "dev",
+      "version": 55
+    },
+    {
+      "archives": [],
+      "description": "Chrome Canary",
+      "name": "pepper_canary",
+      "recommended": "no",
+      "repath": "",
+      "revision": 0,
+      "stability": "canary",
+      "version": 0
+    }
+  ],
+  "manifest_version": 2
+}

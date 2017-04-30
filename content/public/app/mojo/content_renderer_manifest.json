@@ -1,0 +1,28 @@
+{
+  "manifest_version":  1,
+  "name": "service:content_renderer",
+  "display_name": "Content (renderer process)",
+  "capabilities": {
+    "provided": {
+      "browser": [
+        "content::mojom::EmbeddedWorkerInstanceClient",
+        "content::mojom::EmbeddedWorkerSetup",
+        "content::mojom::FrameFactory",
+        "content::mojom::RenderWidgetWindowTreeClientFactory",
+        "IPC::mojom::ChannelBootstrap",
+        "mojom::ResourceUsageReporter",
+        "visitedlink::mojom::VisitedLinkNotificationSink",
+        "web_cache::mojom::WebCache"
+      ]
+    },
+    "required": {
+      "service:content_browser": { "classes":  [ "renderer" ] },
+      "service:ui": {
+        "interfaces": [
+          "ui::mojom::Gpu",
+          "ui::mojom::GpuService"
+        ]
+      }
+    }
+  }
+}

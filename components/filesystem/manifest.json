@@ -1,0 +1,10 @@
+{
+  "manifest_version":  1,
+  "name": "service:filesystem",
+  "display_name": "File System Service",
+  "capabilities": {
+    "required": {
+      "*": { "classes": [ "app" ] }
+    }
+  }
+}
