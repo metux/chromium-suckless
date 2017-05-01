@@ -15,8 +15,7 @@ namespace content {
 namespace {
 
 bool IsWhitelistedPermissionType(PermissionType permission) {
-  return permission == PermissionType::GEOLOCATION ||
-         permission == PermissionType::MIDI;
+  return permission == PermissionType::GEOLOCATION;
 }
 
 }  // namespace

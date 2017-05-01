@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">ชื่อบุ๊กมาร์ก</translation>
 <translation id="1123316951456119629">หากยกเลิกการเชื่อมต่อบัญชี Google ของคุณจาก <ph name="PRODUCT_NAME" /> ข้อมูลของคุณจะยังคงอยู่ในคอมพิวเตอร์นี้แต่การเปลี่ยนแปลงที่เกิดขึ้นจะไม่ถูกซิงค์ไปที่บัญชี Google ของคุณอีกต่อไป ข้อมูลที่ถูกจัดเก็บไว้ในบัญชี Google ของคุณเรียบร้อยแล้วจะยังคงอยู่ในบัญชีเหมือนเดิมจนกว่าคุณจะลบไปโดยใช้ <ph name="BEGIN_LINK" />Google แดชบอร์ด<ph name="END_LINK" /></translation>
 <translation id="1124772482545689468">ผู้ใช้</translation>
-<translation id="1128109161498068552">ไม่อนุญาตให้ไซต์ใดๆ ใช้ข้อความเฉพาะของระบบในการเข้าถึงอุปกรณ์ MIDI</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">แก้ไขเครื่องมือค้นหา</translation>
 <translation id="1128987120443782698">อุปกรณ์จัดเก็บข้อมูลมีความจุ <ph name="DEVICE_CAPACITY" /> โปรดเสียบการ์ด SD หรืออุปกรณ์หน่วยความจำ USB ที่มีความจุอย่างน้อย 4 GB</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">ที่กำหนดเอง</translation>
 <translation id="1178539123212786672">ตัวแก้ไขพร็อกซี V8 นอกกระบวนการ</translation>
 <translation id="1178581264944972037">หยุดชั่วคราว</translation>
-<translation id="1179803038870941185"><ph name="URL" /> ต้องการที่จะได้รับสิทธิ์ควบคุมอุปกรณ์ MIDI เต็มรูปแบบ</translation>
 <translation id="1181037720776840403">ลบ</translation>
 <translation id="1183083053288481515">การใช้ใบรับรองที่ผู้ดูแลระบบออกให้</translation>
 <translation id="1183237619868651138">ไม่สามารถติดตั้ง <ph name="EXTERNAL_CRX_FILE" /> ในแคชในเครื่อง</translation>
@@ -658,7 +656,6 @@
 <translation id="1844692022597038441">ไฟล์นี้ไม่สามารถใช้งานแบบออฟไลน์ได้</translation>
 <translation id="1846308012215045257">กด Control และคลิกเพื่อเรียกใช้ <ph name="PLUGIN_NAME" /></translation>
 <translation id="184633654410729720">แป้นพิมพ์ภาษาไทย (เกษมณี)</translation>
-<translation id="1849186935225320012">หน้านี้มีสิทธิ์ควบคุมอุปกรณ์ MIDI เต็มรูปแบบ</translation>
 <translation id="1850508293116537636">หมุน&amp;ตามเข็มนาฬิกา</translation>
 <translation id="1852799913675865625">เกิดข้อผิดพลาดขณะพยายามอ่านไฟล์: <ph name="ERROR_TEXT" /></translation>
 <translation id="1856715684130786728">เพิ่มตำแหน่ง...</translation>
@@ -795,7 +792,6 @@
 <translation id="2080070583977670716">การตั้งค่าเพิ่มเติม</translation>
 <translation id="2081322486940989439">ไซต์นี้ไม่ยอมรับ Visa</translation>
 <translation id="2085470240340828803">มีไฟล์ที่ชื่อว่า "<ph name="FILENAME" />" อยู่แล้ว คุณต้องการทำอย่างไร</translation>
-<translation id="2085985589726507051">Web MIDI API</translation>
 <translation id="2087822576218954668">พิมพ์: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">หากต้องการกู้คืนข้อมูลบัญชี โปรดไปที่ google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">การตั้งค่าความปลอดภัยของระบบ</translation>
@@ -905,7 +901,6 @@
 <translation id="2222641695352322289">วิธีเดียวที่จะยกเลิกการทำงานนี้คือการติดตั้ง <ph name="IDS_SHORT_PRODUCT_OS_NAME" /> ใหม่</translation>
 <translation id="2224444042887712269">การตั้งค่านี้เป็นของ <ph name="OWNER_EMAIL" /></translation>
 <translation id="2224551243087462610">แก้ไขชื่อโฟลเดอร์</translation>
-<translation id="2226449515541314767">ไซต์นี้ถูกบล็อกจากการมีสิทธิ์ควบคุมอุปกรณ์ MIDI เต็มรูปแบบ</translation>
 <translation id="2226720438730111184">แจ้งให้เราทราบถึงสิ่งที่เกิดขึ้น</translation>
 <translation id="2229161054156947610">เหลือเวลามากกว่า 1 ชั่วโมง</translation>
 <translation id="222931766245975952">ไฟล์ไม่สมบูรณ์</translation>
@@ -1525,7 +1520,6 @@
 <translation id="297870353673992530">เซิร์ฟเวอร์ DNS:</translation>
 <translation id="2981113813906970160">แสดงเคอร์เซอร์เมาส์ขนาดใหญ่</translation>
 <translation id="2984337792991268709">วันนี้ <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">หน้านี้ถูกบล็อกจากการมีสิทธิ์ควบคุมอุปกรณ์ MIDI เต็มรูปแบบ</translation>
 <translation id="2987775926667433828">จีน (ตัวเต็ม)</translation>
 <translation id="2987776766682852234">ลดรายละเอียดส่วนหัว "ผู้อ้างอิง" เริ่มต้น</translation>
 <translation id="2989474696604907455">ไม่ได้แนบ</translation>
@@ -1735,7 +1729,6 @@
 <translation id="3254434849914415189">เลือกแอปพลิเคชันค่าเริ่มต้นสำหรับไฟล์ <ph name="FILE_TYPE" />:</translation>
 <translation id="3255228561559750854">ค้นหาหรือพูดว่า "Ok Google"</translation>
 <translation id="3257011895468050906">เปิดใช้การสนับสนุน Token Binding</translation>
-<translation id="326356299252142602">ใช้ Windows Runtime MIDI API</translation>
 <translation id="3264544094376351444">แบบอักษร Sans-Serif</translation>
 <translation id="3264547943200567728">ไม่สามารถตั้งค่าเครือข่าย Chromebox ของคุณได้</translation>
 <translation id="3265459715026181080">ปิดหน้าต่าง</translation>
@@ -1957,7 +1950,6 @@
 <translation id="3530751398950974194">อัปเดตข้อความรหัสผ่านสำหรับการซิงค์</translation>
 <translation id="3531250013160506608">ช่องข้อความรหัสผ่าน</translation>
 <translation id="3534879087479077042">ผู้ใช้ภายใต้การดูแลคืออะไร</translation>
-<translation id="3535652963535405415">เปิดใช้งานความช่วยเหลือเกี่ยวกับ Web MIDI API ทดลองใช้</translation>
 <translation id="354060433403403521">อะแดปเตอร์ AC</translation>
 <translation id="3541661933757219855">พิมพ์ Ctrl+Alt+/ หรือ Escape เพื่อซ่อน</translation>
 <translation id="3543393733900874979">การอัปเดตล้มเหลว (ข้อผิดพลาด: <ph name="ERROR_NUMBER" />)</translation>
@@ -1986,7 +1978,6 @@
 <translation id="3574210789297084292">ลงชื่อเข้าใช้</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">ลิทัวเนีย</translation>
-<translation id="3575927481544652747">ปิดใช้ Windows Runtime MIDI API สำหรับ WebMIDI ซึ่งจะเปิดใช้อยู่โดยค่าเริ่มต้นใน Windows 10 ขึ้นไป</translation>
 <translation id="3576324189521867626">ติดตั้งเรียบร้อยแล้ว</translation>
 <translation id="3578331450833904042">ค่าเริ่มต้น (เลือกทั้งหมด)</translation>
 <translation id="3578594933904494462">เนื้อหาของแท็บนี้กำลังถูกแชร์</translation>
@@ -3017,7 +3008,6 @@
 <translation id="499165176004408815">ใช้โหมดคอนทราสต์สูง</translation>
 <translation id="4992066212339426712">เปิดเสียง</translation>
 <translation id="4992458225095111526">ยืนยัน Powerwash</translation>
-<translation id="4992576607980257687">ถามฉันเมื่อไซต์ต้องการที่จะใช้ข้อความเฉพาะของระบบในการเข้าถึงอุปกรณ์ MIDI (แนะนำ)</translation>
 <translation id="4994474651455208930">อนุญาตให้ไซต์แจ้งขอเป็นตัวจัดการเริ่มต้นสำหรับโปรโตคอล</translation>
 <translation id="4998873842614926205">ยืนยันการเปลี่ยนแปลง</translation>
 <translation id="4999273653895592255">การตั้งค่าสถานะนี้เป็นการควบคุมว่าจะให้เราแสดง UI แบบเก่าหรือแบบใหม่สำหรับหน้าต่างเครื่องมือเลือกการจับภาพเดสก์ท็อป</translation>
@@ -3615,7 +3605,6 @@
 <translation id="5774295353725270860">เปิดแอปพลิเคชันไฟล์</translation>
 <translation id="5774515636230743468">จัดการ:</translation>
 <translation id="577624874850706961">ค้นหาคุกกี้</translation>
-<translation id="5778550464785688721">การควบคุมอุปกรณ์ MIDI เต็มรูปแบบ</translation>
 <translation id="5780066559993805332">(ดีที่สุด)</translation>
 <translation id="5780973441651030252">ลำดับความสำคัญของกระบวนการ</translation>
 <translation id="5783221160790377646">เนื่องจากข้อผิดพลาด ผู้ใช้ภายใต้การดูแลไม่ได้ถูกสร้างขึ้น โปรดลองอีกครั้งในภายหลัง</translation>
@@ -3749,7 +3738,6 @@
 <translation id="5965403572731919803">เพิ่มลงในชั้นวาง...</translation>
 <translation id="5965661248935608907">อีกทั้งยังควบคุมหน้าที่จะแสดงเมื่อคุณคลิกปุ่ม "หน้าแรก" หรือทำการค้นหาจากแถบอเนกประสงค์</translation>
 <translation id="5971037678316050792">ควบคุมสถานะและการจับคู่อะแดปเตอร์บลูทูธ</translation>
-<translation id="5972017421290582825">จัดการการตั้งค่า MIDI...</translation>
 <translation id="5972708806901999743">ย้ายไปด้านบน</translation>
 <translation id="5972826969634861500">เริ่มต้นใช้งาน <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">ย่อ</translation>
@@ -3923,7 +3911,6 @@
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: กำลังเชื่อมต่อ...</translation>
 <translation id="6226777517901268232">ไฟล์คีย์ส่วนตัว (ไม่บังคับ)</translation>
 <translation id="6227235786875481728">ไม่สามารถเล่นไฟล์นี้</translation>
-<translation id="6228691855869374890">ไซต์นี้มีการควบคุมอุปกรณ์ MIDI เต็มรูปแบบ</translation>
 <translation id="6231148928368101651">แผง</translation>
 <translation id="6231881193380278751">เพิ่มพารามิเตอร์ข้อความค้นหาใน URL เพื่อรีเฟรชหน้าโดยอัตโนมัติ: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">แบตเตอรี่</translation>
@@ -4577,7 +4564,6 @@
 <translation id="711902386174337313">อ่านรายการอุปกรณ์ที่คุณลงชื่อเข้าใช้</translation>
 <translation id="7119389851461848805">เปิด/ปิด</translation>
 <translation id="7119832699359874134">รหัส CVC ไม่ถูกต้อง โปรดตรวจสอบและลองอีกครั้ง</translation>
-<translation id="7122132768827815392">ใช้ Windows Runtime MIDI API สำหรับ WebMIDI (ใช้ได้กับอุปกรณ์ที่ใช้ Windows 10 ขึ้นไปเท่านั้น)</translation>
 <translation id="7122169255686960726">สำเนาเพิ่มเติม</translation>
 <translation id="7126604456862387217">"&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;" - &lt;em&gt;ค้นหาไดรฟ์&lt;/em&gt;</translation>
 <translation id="7127980134843952133">ประวัติการดาวน์โหลด</translation>
@@ -4992,7 +4978,6 @@
 <translation id="7706319470528945664">แป้นพิมพ์ภาษาโปรตุเกส</translation>
 <translation id="7709152031285164251">ล้มเหลว - <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">การคลิก "ดำเนินการต่อ" หมายถึงคุณตกลงตาม <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" /> และ <ph name="LEGAL_DOC_LINK_TEXT_5" /></translation>
-<translation id="7713320380037170544">อนุญาตให้ทุกเว็บไซต์ใช้ข้อความเฉพาะของระบบในการเข้าถึงอุปกรณ์ MIDI</translation>
 <translation id="7714464543167945231">ใบรับรอง</translation>
 <translation id="7716020873543636594">คลิกอัตโนมัติเมื่อตัวชี้ของเมาส์หยุด</translation>
 <translation id="7716284821709466371">ความสูงไทล์เริ่มต้น</translation>
@@ -5173,7 +5158,6 @@
 <translation id="7965010376480416255">หน่วยความจำที่ใช้ร่วมกัน</translation>
 <translation id="7966241909927244760">คัด&amp;ลอกที่อยู่รูปภาพ</translation>
 <translation id="7967437925638594022">ส่วนขยายและแอป</translation>
-<translation id="7968796119156413760">ใช้ Android Midi API สำหรับ WebMIDI (ใช้ได้สำหรับอุปกรณ์ Android M ขึ้นไปเท่านั้น)</translation>
 <translation id="7968833647796919681">เปิดใช้งานการเก็บรวบรวมข้อมูลผลการปฏิบัติงาน</translation>
 <translation id="7968982339740310781">ดูรายละเอียด</translation>
 <translation id="7969525169268594403">สโลวีเนีย</translation>
@@ -5318,7 +5302,6 @@
 <translation id="8146793085009540321">การลงชื่อเข้าใช้ไม่สำเร็จ โปรดติดต่อผู้ดูแลระบบหรือลองอีกครั้ง</translation>
 <translation id="8148264977957212129">วิธีป้อนข้อมูลแบบพินอิน</translation>
 <translation id="8148913456785123871">แสดงการ์ด Google Now ใน Launcher</translation>
-<translation id="8150391391298684512">ปิดใช้ Windows Runtime MIDI API</translation>
 <translation id="8151185429379586178">เครื่องมือสำหรับนักพัฒนาซอฟต์แวร์</translation>
 <translation id="8151638057146502721">กำหนดค่า</translation>
 <translation id="8151639108075998630">เปิดใช้งานการท่องเว็บในฐานะผู้มาเยือน</translation>
@@ -5651,7 +5634,6 @@
 <translation id="8603912787021349466">อนุญาตให้แอป Android เริ่มต้นทำงานโดยอัตโนมัติหลังลงชื่อเข้าใช้</translation>
 <translation id="8605428685123651449">หน่วยความจำ SQLite</translation>
 <translation id="8605503133013456784">ไม่สามารถยกเลิกการเชื่อมต่อและการจับคู่กับ "<ph name="DEVICE_NAME" />"</translation>
-<translation id="8606726445206553943">ใช้อุปกรณ์ MIDI ของคุณ</translation>
 <translation id="8609465669617005112">เลื่อนขึ้น</translation>
 <translation id="8610892630019863050">ถามเมื่อไซต์ต้องการจะแสดงการแจ้งเตือน (แนะนำ)</translation>
 <translation id="8615618338313291042">แอปพลิเคชันที่ไม่ระบุตัวตน: <ph name="APP_NAME" /></translation>
@@ -5898,7 +5880,6 @@
 <translation id="8926389886865778422">ไม่ต้องถามอีก</translation>
 <translation id="8926518602592448999">ปิดส่วนขยายโหมดนักพัฒนาซอฟต์แวร์</translation>
 <translation id="8931394284949551895">อุปกรณ์ใหม่</translation>
-<translation id="8932730422557198035">ใช้ Android Midi API</translation>
 <translation id="8933960630081805351">&amp;แสดงใน Finder</translation>
 <translation id="8934732568177537184">ต่อไป</translation>
 <translation id="8938356204940892126">ฉันขอยกเลิก</translation>

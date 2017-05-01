@@ -593,9 +593,6 @@ Your Google account may have other forms of browsing history like searches and a
       <message name="IDS_ENABLE_NOTIFICATIONS_VIBRATE_SUMMARY" desc="Summary for the preference to enable vibration for notifications">
         Notifications may vibrate the device
       </message>
-      <message name="IDS_MIDI_SYSEX_PERMISSION_TITLE" desc="Title of the permission that allows a website to get full control of MIDI devices [CHAR-LIMIT=32]">
-        Allow full control of MIDI devices
-      </message>
       <message name="IDS_BACKGROUND_SYNC_PERMISSION_TITLE" desc="Title of the permission that allows websites to queue an operation for the next time the device is online[CHAR-LIMIT=32]">
         Background sync
       </message>

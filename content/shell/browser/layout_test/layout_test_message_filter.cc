@@ -157,11 +157,7 @@ void LayoutTestMessageFilter::OnSetPermission(
   DCHECK_CURRENTLY_ON(BrowserThread::UI);
 
   content::PermissionType type;
-  if (name == "midi") {
-    type = PermissionType::MIDI;
-  } else if (name == "midi-sysex") {
-    type = PermissionType::MIDI_SYSEX;
-  } else if (name == "push-messaging") {
+  if (name == "push-messaging") {
     type = PermissionType::PUSH_MESSAGING;
   } else if (name == "notifications") {
     type = PermissionType::NOTIFICATIONS;

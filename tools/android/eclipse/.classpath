@@ -265,7 +265,6 @@ to the classpath for downstream development. See "additional_entries" below.
     <classpathentry kind="lib" path="out/Debug/lib.java/device/vibration/android/vibration_manager_android.jar"/>
     <classpathentry kind="lib" path="out/Debug/lib.java/device/vibration/mojo_bindings_java.jar"/>
     <classpathentry kind="lib" path="out/Debug/lib.java/media/base/android/media_java.jar"/>
-    <classpathentry kind="lib" path="out/Debug/lib.java/media/midi/midi_java.jar"/>
     <classpathentry kind="lib" path="out/Debug/lib.java/mojo/android/system_java.jar"/>
     <classpathentry kind="lib" path="out/Debug/lib.java/mojo/public/java/bindings.jar"/>
     <classpathentry kind="lib" path="out/Debug/lib.java/mojo/public/java/system.jar"/>

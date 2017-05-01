@@ -247,12 +247,6 @@
         "swarming": {
           "can_use_on_swarming_builders": true
         },
-        "test": "midi_unittests"
-      },
-      {
-        "swarming": {
-          "can_use_on_swarming_builders": true
-        },
         "test": "nacl_helper_nonsfi_unittests"
       },
       {
@@ -631,12 +625,6 @@
         "swarming": {
           "can_use_on_swarming_builders": true
         },
-        "test": "midi_unittests"
-      },
-      {
-        "swarming": {
-          "can_use_on_swarming_builders": true
-        },
         "test": "mus_demo_unittests"
       },
       {
@@ -966,12 +954,6 @@
           "can_use_on_swarming_builders": true
         },
         "test": "message_center_unittests"
-      },
-      {
-        "swarming": {
-          "can_use_on_swarming_builders": true
-        },
-        "test": "midi_unittests"
       },
       {
         "swarming": {

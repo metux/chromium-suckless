@@ -13,12 +13,10 @@ namespace content {
 // Never delete or reorder an entry; only add new entries
 // immediately before PermissionType::NUM
 enum class PermissionType {
-  MIDI_SYSEX = 1,
   PUSH_MESSAGING = 2,
   NOTIFICATIONS = 3,
   GEOLOCATION = 4,
   PROTECTED_MEDIA_IDENTIFIER = 5,
-  MIDI = 6,
   DURABLE_STORAGE = 7,
   AUDIO_CAPTURE = 8,
   VIDEO_CAPTURE = 9,

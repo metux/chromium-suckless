@@ -44,7 +44,6 @@ A Fizikai web használatához be kell kapcsolnia a Bluetooth funkciót és a hel
 <translation id="1423209968422390786">A helyadatokhoz való hozzáférés <ph name="BEGIN_LINK" />ki van kapcsolva ezen az eszközön<ph name="END_LINK" />.</translation>
 <translation id="1430915738399379752">Nyomtatás</translation>
 <translation id="1445680696957526815">A Chrome egyes összetevői nem kompatibilisek egymással. Lehet, hogy éppen a Chrome verziófrissítése zajlik, ezért próbálja újra pár perc múlva. Ha a probléma továbbra is fennáll, próbálja meg eltávolítani, majd újratelepíteni a Chrome-ot.</translation>
-<translation id="1446450296470737166">MIDI-eszközök teljes vezérlése</translation>
 <translation id="145097072038377568">Kikapcsolva az Android beállításaiban</translation>
 <translation id="147006957810816598">A rendszer nem jelentkezteti ki Google-fiókjából.</translation>
 <translation id="1477626028522505441">A következő fájl letöltése szerverproblémák miatt nem sikerült: <ph name="FILE_NAME" />.</translation>

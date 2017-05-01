@@ -63,12 +63,6 @@ ContentRendererClient::OverrideCreateWebRTCPeerConnectionHandler(
   return nullptr;
 }
 
-blink::WebMIDIAccessor*
-ContentRendererClient::OverrideCreateMIDIAccessor(
-    blink::WebMIDIAccessorClient* client) {
-  return nullptr;
-}
-
 blink::WebAudioDevice*
 ContentRendererClient::OverrideCreateAudioDevice(
     double sample_rate) {

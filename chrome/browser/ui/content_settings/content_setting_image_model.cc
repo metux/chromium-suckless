@@ -35,7 +35,6 @@ using content::WebContents;
 //     ContentSettingBlockedImageModel           - generic blocked setting
 //     ContentSettingGeolocationImageModel       - geolocation
 //     ContentSettingRPHImageModel               - protocol handlers
-//     ContentSettingMIDISysExImageModel         - midi sysex
 //   ContentSettingMediaImageModel             - media
 //   ContentSettingSubresourceFilterImageModel - deceptive content
 
@@ -84,17 +83,6 @@ class ContentSettingRPHImageModel : public ContentSettingSimpleImageModel {
   ContentSettingRPHImageModel();
 
   void UpdateFromWebContents(WebContents* web_contents) override;
-};
-
-class ContentSettingMIDISysExImageModel
-    : public ContentSettingSimpleImageModel {
- public:
-  ContentSettingMIDISysExImageModel();
-
-  void UpdateFromWebContents(WebContents* web_contents) override;
-
- private:
-  DISALLOW_COPY_AND_ASSIGN(ContentSettingMIDISysExImageModel);
 };
 
 namespace {
@@ -188,9 +176,6 @@ ContentSettingSimpleImageModel::CreateForContentTypeForTesting(
 
   if (content_settings_type == CONTENT_SETTINGS_TYPE_PROTOCOL_HANDLERS)
     return base::MakeUnique<ContentSettingRPHImageModel>();
-
-  if (content_settings_type == CONTENT_SETTINGS_TYPE_MIDI_SYSEX)
-    return base::MakeUnique<ContentSettingMIDISysExImageModel>();
 
   return base::MakeUnique<ContentSettingBlockedImageModel>(
       content_settings_type);
@@ -465,41 +450,6 @@ void ContentSettingRPHImageModel::UpdateFromWebContents(
   set_visible(true);
 }
 
-// MIDI SysEx ------------------------------------------------------------------
-
-ContentSettingMIDISysExImageModel::ContentSettingMIDISysExImageModel()
-    : ContentSettingSimpleImageModel(CONTENT_SETTINGS_TYPE_MIDI_SYSEX) {
-}
-
-void ContentSettingMIDISysExImageModel::UpdateFromWebContents(
-    WebContents* web_contents) {
-  set_visible(false);
-  if (!web_contents)
-    return;
-  TabSpecificContentSettings* content_settings =
-      TabSpecificContentSettings::FromWebContents(web_contents);
-  if (!content_settings)
-    return;
-  const ContentSettingsUsagesState& usages_state =
-      content_settings->midi_usages_state();
-  if (usages_state.state_map().empty())
-    return;
-  set_visible(true);
-
-  // If any embedded site has access the allowed icon takes priority over the
-  // blocked icon.
-  unsigned int state_flags = 0;
-  usages_state.GetDetailedInfo(nullptr, &state_flags);
-  bool allowed =
-      !!(state_flags & ContentSettingsUsagesState::TABSTATE_HAS_ANY_ALLOWED);
-  set_icon_by_vector_id(gfx::VectorIconId::MIDI,
-                        allowed ? gfx::VectorIconId::VECTOR_ICON_NONE
-                                : gfx::VectorIconId::BLOCKED_BADGE);
-  set_tooltip(l10n_util::GetStringUTF16(allowed
-                                            ? IDS_MIDI_SYSEX_ALLOWED_TOOLTIP
-                                            : IDS_MIDI_SYSEX_BLOCKED_TOOLTIP));
-}
-
 // Base class ------------------------------------------------------------------
 
 gfx::Image ContentSettingImageModel::GetIcon(SkColor nearby_text_color) const {
@@ -547,7 +497,6 @@ ScopedVector<ContentSettingImageModel>
   result.push_back(
       new ContentSettingBlockedImageModel(
           CONTENT_SETTINGS_TYPE_AUTOMATIC_DOWNLOADS));
-  result.push_back(new ContentSettingMIDISysExImageModel());
 
   return result;
 }

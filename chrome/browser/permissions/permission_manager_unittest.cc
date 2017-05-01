@@ -95,7 +95,6 @@ class PermissionManagerTest : public testing::Test {
 };
 
 TEST_F(PermissionManagerTest, GetPermissionStatusDefault) {
-  CheckPermissionStatus(PermissionType::MIDI_SYSEX, PermissionStatus::ASK);
   CheckPermissionStatus(PermissionType::PUSH_MESSAGING, PermissionStatus::ASK);
   CheckPermissionStatus(PermissionType::NOTIFICATIONS, PermissionStatus::ASK);
   CheckPermissionStatus(PermissionType::GEOLOCATION, PermissionStatus::ASK);
@@ -114,9 +113,6 @@ TEST_F(PermissionManagerTest, GetPermissionStatusAfterSet) {
                         PermissionStatus::GRANTED);
   CheckPermissionStatus(PermissionType::PUSH_MESSAGING,
                         PermissionStatus::GRANTED);
-
-  SetPermission(CONTENT_SETTINGS_TYPE_MIDI_SYSEX, CONTENT_SETTING_ALLOW);
-  CheckPermissionStatus(PermissionType::MIDI_SYSEX, PermissionStatus::GRANTED);
 
 #if defined(OS_ANDROID)
   SetPermission(CONTENT_SETTINGS_TYPE_PROTECTED_MEDIA_IDENTIFIER,
@@ -296,23 +292,6 @@ TEST_F(PermissionManagerTest, ChangesBackAndForth) {
 
   EXPECT_TRUE(callback_called());
   EXPECT_EQ(PermissionStatus::ASK, callback_result());
-
-  GetPermissionManager()->UnsubscribePermissionStatusChange(subscription_id);
-}
-
-TEST_F(PermissionManagerTest, SubscribeMIDIPermission) {
-  int subscription_id = GetPermissionManager()->SubscribePermissionStatusChange(
-      PermissionType::MIDI, url(), url(),
-      base::Bind(&PermissionManagerTest::OnPermissionChange,
-                 base::Unretained(this)));
-
-  CheckPermissionStatus(PermissionType::GEOLOCATION, PermissionStatus::ASK);
-  GetHostContentSettingsMap()->SetContentSettingDefaultScope(
-      url(), url(), CONTENT_SETTINGS_TYPE_GEOLOCATION, std::string(),
-      CONTENT_SETTING_ALLOW);
-  CheckPermissionStatus(PermissionType::GEOLOCATION, PermissionStatus::GRANTED);
-
-  EXPECT_FALSE(callback_called());
 
   GetPermissionManager()->UnsubscribePermissionStatusChange(subscription_id);
 }

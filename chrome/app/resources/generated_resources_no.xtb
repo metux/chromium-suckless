@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">Bokmerkenavn</translation>
 <translation id="1123316951456119629">Når du kobler Google-kontoen din fra <ph name="PRODUCT_NAME" />, forblir dataene dine på denne datamaskinen, men synkroniseres ikke lenger med Google-kontoen din. Data som allerede er lagret i Google-kontoen din forblir der til du fjerner dem ved hjelp av <ph name="BEGIN_LINK" />Google Oversikt<ph name="END_LINK" />.</translation>
 <translation id="1124772482545689468">Bruker</translation>
-<translation id="1128109161498068552">Ikke tillat at nettsteder bruker systemeksklusive meldinger for å få tilgang til MIDI-enheter</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">Endre i søkemotoren</translation>
 <translation id="1128987120443782698">Lagringsenheten har en kapasitet på <ph name="DEVICE_CAPACITY" />. Sett inn et SD-kort eller en USB-minnepinne med kapasitet på minst 4 GB.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">Tilpasset</translation>
 <translation id="1178539123212786672">Selvstendig løsningsprogram for V8-proxy-tjenere.</translation>
 <translation id="1178581264944972037">Stans midlertidig</translation>
-<translation id="1179803038870941185"><ph name="URL" /> ønsker full kontroll over MIDI-enhetene dine.</translation>
 <translation id="1181037720776840403">Fjern</translation>
 <translation id="1183083053288481515">Bruk av et administratorlevert sertifikat</translation>
 <translation id="1183237619868651138"><ph name="EXTERNAL_CRX_FILE" /> kan ikke installeres i lokalbufferen.</translation>
@@ -655,7 +653,6 @@
 <translation id="1844692022597038441">Denne filen er ikke tilgjengelig utenfor Internett.</translation>
 <translation id="1846308012215045257">Control-klikk for å kjøre <ph name="PLUGIN_NAME" /></translation>
 <translation id="184633654410729720">Thai-tastatur (Kedmanee)</translation>
-<translation id="1849186935225320012">Denne siden har full kontroll over MIDI-enheter.</translation>
 <translation id="1850508293116537636">Rotér &amp;med klokken</translation>
 <translation id="1852799913675865625">Det oppstod en feil under forsøket på å lese filen: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">Legg til plassering</translation>
@@ -792,7 +789,6 @@
 <translation id="2080070583977670716">Flere innstillinger</translation>
 <translation id="2081322486940989439">Dette nettstedet godtar ikke Visa.</translation>
 <translation id="2085470240340828803">Det finnes allerede en fil med navnet «<ph name="FILENAME" />». Hva ønsker du å gjøre?</translation>
-<translation id="2085985589726507051">Web MIDI API</translation>
 <translation id="2087822576218954668">Skriv ut: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">For å gjenopprette kontoinformasjonen din, gå til: google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">Systemets sikkerhetsinnstillinger</translation>
@@ -902,7 +898,6 @@
 <translation id="2222641695352322289">Den eneste måten du kan angre dette på er ved å installere <ph name="IDS_SHORT_PRODUCT_OS_NAME" /> på nytt.</translation>
 <translation id="2224444042887712269">Denne innstillingen tilhører <ph name="OWNER_EMAIL" />.</translation>
 <translation id="2224551243087462610">Rediger mappenavn</translation>
-<translation id="2226449515541314767">Full kontroll over MIDI-enheter er blokkert for dette nettstedet.</translation>
 <translation id="2226720438730111184">Fortell oss hva som skjer</translation>
 <translation id="2229161054156947610">Mer enn én time igjen</translation>
 <translation id="222931766245975952">Filen er komprimert</translation>
@@ -1521,7 +1516,6 @@ Jeg tror ikke det er nødvendig å blokkere dette nettstedet.</translation>
 <translation id="297870353673992530">DNS-tjener:</translation>
 <translation id="2981113813906970160">Vis stor musepeker</translation>
 <translation id="2984337792991268709">I dag kl. <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">Full kontroll over MIDI-enheter er blokkert for denne siden.</translation>
 <translation id="2987775926667433828">Kinesisk, tradisjonell</translation>
 <translation id="2987776766682852234">Reduser standard granularitet for «referer»-toppteksten.</translation>
 <translation id="2989474696604907455">ikke tilkoblet</translation>
@@ -1731,7 +1725,6 @@ Sjekk e-posten din på <ph name="ACCOUNT_EMAIL" /> for instruksjoner om dette og
 <translation id="3254434849914415189">Velg standardapp for <ph name="FILE_TYPE" />-filer:</translation>
 <translation id="3255228561559750854">Søk, eller si «OK Google»</translation>
 <translation id="3257011895468050906">Slå på støtte for Token Binding.</translation>
-<translation id="326356299252142602">Bruk Windows Runtime MIDI API</translation>
 <translation id="3264544094376351444">Uten seriffer</translation>
 <translation id="3264547943200567728">Kunne ikke konfigurere nettverket for Chromeboxen</translation>
 <translation id="3265459715026181080">Lukk vindu</translation>
@@ -1952,7 +1945,6 @@ Fra <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3530751398950974194">Oppdater passordfrasen for synkronisering</translation>
 <translation id="3531250013160506608">Passordets tekstboks</translation>
 <translation id="3534879087479077042">Hva er en administrert bruker?</translation>
-<translation id="3535652963535405415">Aktiver eksperimentell støtte for Web MIDI API.</translation>
 <translation id="354060433403403521">Strømadapter</translation>
 <translation id="3541661933757219855">Trykk på Ctrl+Alt+/ eller Escape for å skjule</translation>
 <translation id="3543393733900874979">Oppdatering mislyktes (feil: <ph name="ERROR_NUMBER" />)</translation>
@@ -1981,7 +1973,6 @@ Fra <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3574210789297084292">logg på</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" />, <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">Litauisk</translation>
-<translation id="3575927481544652747">Slå av Windows Runtime MIDI API for WebMIDI. Dette er som standard slått på i Windows 10 eller nyere.</translation>
 <translation id="3576324189521867626">Installert</translation>
 <translation id="3578331450833904042">Standard (registrerer alt)</translation>
 <translation id="3578594933904494462">Innholdet i denne fanen blir delt.</translation>
@@ -3010,7 +3001,6 @@ Trykk på en tast for å fortsette økten.</translation>
 <translation id="499165176004408815">Bruk høykontrastmodus</translation>
 <translation id="4992066212339426712">Slå på lyden</translation>
 <translation id="4992458225095111526">Bekreft Powerwash</translation>
-<translation id="4992576607980257687">Spør meg når et nettsted vil bruke systemeksklusive meldinger for tilgang til MIDI-enheter (anbefalt)</translation>
 <translation id="4994474651455208930">Tillat at nettsteder kan be om å bli standard behandlere for protokoller</translation>
 <translation id="4998873842614926205">Bekreft endringer</translation>
 <translation id="4999273653895592255">Dette flagget styrer om vi bruker det gamle eller nye brukergrensesnittet på valgvinduet for skjermopptak.</translation>
@@ -3605,7 +3595,6 @@ Trykk på en tast for å fortsette økten.</translation>
 <translation id="5774295353725270860">Åpne Filer-appen</translation>
 <translation id="5774515636230743468">Manifest:</translation>
 <translation id="577624874850706961">Søk i informasjonskapsler</translation>
-<translation id="5778550464785688721">Full kontroll av MIDI-enheter</translation>
 <translation id="5780066559993805332">(Best)</translation>
 <translation id="5780973441651030252">Prosessprioritet</translation>
 <translation id="5783221160790377646">På grunn av en feil ble det ikke opprettet noen administrert bruker. Prøv på nytt senere.</translation>
@@ -3739,7 +3728,6 @@ Trykk på en tast for å fortsette økten.</translation>
 <translation id="5965403572731919803">Legg til på hyllen</translation>
 <translation id="5965661248935608907">Den styrer også hvilken side som vises når du klikker på Startside-knappen eller søker fra multifunksjonsfeltet.</translation>
 <translation id="5971037678316050792">kontrollere statusen og tilkoblingen for Bluetooth-adapteren</translation>
-<translation id="5972017421290582825">Administrer MIDI-innstillinger</translation>
 <translation id="5972708806901999743">Flytt øverst</translation>
 <translation id="5972826969634861500">Start <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">Zoom ut</translation>
@@ -3913,7 +3901,6 @@ Trykk på en tast for å fortsette økten.</translation>
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: kobler til...</translation>
 <translation id="6226777517901268232">Privat nøkkelfil (valgfritt)</translation>
 <translation id="6227235786875481728">Denne filen kan ikke spilles av.</translation>
-<translation id="6228691855869374890">Dette nettstedet har full kontroll over MIDI-enheter.</translation>
 <translation id="6231148928368101651">Paneler</translation>
 <translation id="6231881193380278751">Legg til en forespørselsparameter i nettadressen for å laste inn siden på nytt automatisk: chrome://device-log/?refresh=&lt;sek&gt;</translation>
 <translation id="6232017090690406397">Batteri</translation>
@@ -4565,7 +4552,6 @@ Trykk på en tast for å fortsette økten.</translation>
 <translation id="711902386174337313">lese listen over de påloggede enhetene dine</translation>
 <translation id="7119389851461848805">av/på</translation>
 <translation id="7119832699359874134">Ugyldig CVC-kode. Sjekk den og prøv på nytt.</translation>
-<translation id="7122132768827815392">Bruk Windows Runtime MIDI API for WebMIDI (gjelder bare for enheter som kjører Windows 10 eller nyere).</translation>
 <translation id="7122169255686960726">Flere eksemplarer</translation>
 <translation id="7126604456862387217">'&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;' – &lt;em&gt;søk i Disk&lt;/em&gt;</translation>
 <translation id="7127980134843952133">Nedlastingslogg</translation>
@@ -4972,7 +4958,6 @@ Trykk på en tast for å fortsette økten.</translation>
 <translation id="7706319470528945664">Portugisisk tastatur</translation>
 <translation id="7709152031285164251">Mislykket – <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">Ved å klikke på «Fortsett» godtar du <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" /> og <ph name="LEGAL_DOC_LINK_TEXT_5" />.</translation>
-<translation id="7713320380037170544">La alle nettsteder bruke systemeksklusive meldinger for tilgang til MIDI-enheter</translation>
 <translation id="7714464543167945231">Sertifikat</translation>
 <translation id="7716020873543636594">Klikk automatisk når musepekeren stopper</translation>
 <translation id="7716284821709466371">Standard panelhøyde</translation>
@@ -5153,7 +5138,6 @@ Trykk på en tast for å fortsette økten.</translation>
 <translation id="7965010376480416255">Lagret minne</translation>
 <translation id="7966241909927244760">K&amp;opiér bildeadressen</translation>
 <translation id="7967437925638594022">Utvidelser og apper</translation>
-<translation id="7968796119156413760">Bruk Android Midi API for WebMIDI (gjelder bare for Android M+-enheter).</translation>
 <translation id="7968833647796919681">Aktiverer innsamling av ytelsesdata</translation>
 <translation id="7968982339740310781">Se detaljer</translation>
 <translation id="7969525169268594403">Slovensk</translation>
@@ -5298,7 +5282,6 @@ Oppbevar nøkkelfilen på et trygt sted. Du får bruk for den når du skal oppre
 <translation id="8146793085009540321">Påloggingen mislyktes. Kontakt administratoren din, eller prøv på nytt.</translation>
 <translation id="8148264977957212129">Pinyin inndatametode</translation>
 <translation id="8148913456785123871">Vis Google Nå-kort i appoversikten</translation>
-<translation id="8150391391298684512">Slå av Windows Runtime MIDI API</translation>
 <translation id="8151185429379586178">Utviklerverktøy</translation>
 <translation id="8151638057146502721">Konfigurer</translation>
 <translation id="8151639108075998630">Aktiver nettlesing for gjester</translation>
@@ -5631,7 +5614,6 @@ Oppbevar nøkkelfilen på et trygt sted. Du får bruk for den når du skal oppre
 <translation id="8603912787021349466">Tillat at Android-apper starter automatisk når du logger på.</translation>
 <translation id="8605428685123651449">SQLite-minne</translation>
 <translation id="8605503133013456784">Kunne ikke fjerne tilknytning til og koble fra «<ph name="DEVICE_NAME" />».</translation>
-<translation id="8606726445206553943">bruke MIDI-enhetene dine</translation>
 <translation id="8609465669617005112">Flytt opp</translation>
 <translation id="8610892630019863050">Spør når et nettsted ønsker å vise varsler (anbefales)</translation>
 <translation id="8615618338313291042">Inkognitoprogram: <ph name="APP_NAME" /></translation>
@@ -5878,7 +5860,6 @@ Oppbevar nøkkelfilen på et trygt sted. Du får bruk for den når du skal oppre
 <translation id="8926389886865778422">Ikke spør igjen</translation>
 <translation id="8926518602592448999">Deaktiver utvidelser for utviklermodus</translation>
 <translation id="8931394284949551895">Nye enheter</translation>
-<translation id="8932730422557198035">Bruk Android Midi API</translation>
 <translation id="8933960630081805351">&amp;Vis i Finder</translation>
 <translation id="8934732568177537184">Fortsett</translation>
 <translation id="8938356204940892126">Jeg gir opp</translation>

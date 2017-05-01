@@ -644,19 +644,6 @@ void AwContents::CancelGeolocationPermissionRequests(const GURL& origin) {
       origin, AwPermissionRequest::Geolocation);
 }
 
-void AwContents::RequestMIDISysexPermission(
-    const GURL& origin,
-    const base::Callback<void(bool)>& callback) {
-  permission_request_handler_->SendRequest(
-      std::unique_ptr<AwPermissionRequestDelegate>(new SimplePermissionRequest(
-          origin, AwPermissionRequest::MIDISysex, callback)));
-}
-
-void AwContents::CancelMIDISysexPermissionRequests(const GURL& origin) {
-  permission_request_handler_->CancelRequest(
-      origin, AwPermissionRequest::AwPermissionRequest::MIDISysex);
-}
-
 void AwContents::FindAllAsync(JNIEnv* env,
                               const JavaParamRef<jobject>& obj,
                               const JavaParamRef<jstring>& search_string) {

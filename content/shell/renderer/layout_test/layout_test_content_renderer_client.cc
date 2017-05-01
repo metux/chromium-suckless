@@ -43,8 +43,6 @@ using blink::WebAudioDevice;
 using blink::WebClipboard;
 using blink::WebFrame;
 using blink::WebLocalFrame;
-using blink::WebMIDIAccessor;
-using blink::WebMIDIAccessorClient;
 using blink::WebMediaStreamCenter;
 using blink::WebMediaStreamCenterClient;
 using blink::WebPlugin;
@@ -181,14 +179,6 @@ LayoutTestContentRendererClient::OverrideCreateWebRTCPeerConnectionHandler(
 #else
   return NULL;
 #endif
-}
-
-WebMIDIAccessor*
-LayoutTestContentRendererClient::OverrideCreateMIDIAccessor(
-    WebMIDIAccessorClient* client) {
-  test_runner::WebTestInterfaces* interfaces =
-      LayoutTestRenderThreadObserver::GetInstance()->test_interfaces();
-  return interfaces->CreateMIDIAccessor(client);
 }
 
 WebAudioDevice*

@@ -12,8 +12,6 @@ enum WebPermissionType {
   WebPermissionTypeNotifications,
   WebPermissionTypePush,
   WebPermissionTypePushNotifications,
-  WebPermissionTypeMidi,
-  WebPermissionTypeMidiSysEx,
   WebPermissionTypeDurableStorage,
   WebPermissionTypeBackgroundSync,
 

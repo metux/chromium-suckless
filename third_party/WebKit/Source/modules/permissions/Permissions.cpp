@@ -8,7 +8,6 @@
 #include "bindings/core/v8/Nullable.h"
 #include "bindings/core/v8/ScriptPromise.h"
 #include "bindings/core/v8/ScriptPromiseResolver.h"
-#include "bindings/modules/v8/V8MidiPermissionDescriptor.h"
 #include "bindings/modules/v8/V8PermissionDescriptor.h"
 #include "bindings/modules/v8/V8PushPermissionDescriptor.h"
 #include "core/dom/DOMException.h"
@@ -79,12 +78,7 @@ PermissionDescriptorPtr parsePermission(ScriptState* scriptState,
 
     return createPermissionDescriptor(PermissionName::PUSH_NOTIFICATIONS);
   }
-  if (name == "midi") {
-    MidiPermissionDescriptor midiPermission =
-        NativeValueTraits<MidiPermissionDescriptor>::nativeValue(
-            scriptState->isolate(), rawPermission.v8Value(), exceptionState);
-    return createMidiPermissionDescriptor(midiPermission.sysex());
-  }
+
   if (name == "background-sync")
     return createPermissionDescriptor(PermissionName::BACKGROUND_SYNC);
 

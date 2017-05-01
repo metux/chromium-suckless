@@ -119,16 +119,6 @@ void RecordPermissionRequest(PermissionType permission,
           "ContentSettings.PermissionRequested.Notifications.Url2",
           rappor::LOW_FREQUENCY_ETLD_PLUS_ONE_RAPPOR_TYPE,
           rappor::GetDomainAndRegistrySampleFromGURL(requesting_origin));
-    } else if (permission == PermissionType::MIDI ||
-               permission == PermissionType::MIDI_SYSEX) {
-      // TODO(dominickn): remove this deprecated metric - crbug.com/605836.
-      rappor::SampleDomainAndRegistryFromGURL(
-          rappor_service, "ContentSettings.PermissionRequested.Midi.Url",
-          requesting_origin);
-      rappor_service->RecordSample(
-          "ContentSettings.PermissionRequested.Midi.Url2",
-          rappor::LOW_FREQUENCY_ETLD_PLUS_ONE_RAPPOR_TYPE,
-          rappor::GetDomainAndRegistrySampleFromGURL(requesting_origin));
     }
   }
 
@@ -444,7 +434,6 @@ void PermissionUmaUtil::RecordPermissionPromptPriorCount(
     int count) {
   // The user is not prompted for these permissions, thus there is no prompt
   // event to record a prior count for.
-  DCHECK_NE(PermissionType::MIDI, permission);
   DCHECK_NE(PermissionType::BACKGROUND_SYNC, permission);
   DCHECK_NE(PermissionType::NUM, permission);
 
@@ -468,10 +457,6 @@ void PermissionUmaUtil::PermissionPromptAcceptedWithPersistenceToggle(
       UMA_HISTOGRAM_BOOLEAN(
           "Permissions.Prompt.Accepted.Persisted.Notifications",
           toggle_enabled);
-      break;
-    case PermissionType::MIDI_SYSEX:
-      UMA_HISTOGRAM_BOOLEAN("Permissions.Prompt.Accepted.Persisted.MidiSysEx",
-                            toggle_enabled);
       break;
     case PermissionType::PUSH_MESSAGING:
       UMA_HISTOGRAM_BOOLEAN(
@@ -502,7 +487,6 @@ void PermissionUmaUtil::PermissionPromptAcceptedWithPersistenceToggle(
       break;
     // The user is not prompted for these permissions, thus there is no accept
     // recorded for them.
-    case PermissionType::MIDI:
     case PermissionType::BACKGROUND_SYNC:
     case PermissionType::NUM:
       NOTREACHED() << "PERMISSION "
@@ -521,10 +505,6 @@ void PermissionUmaUtil::PermissionPromptDeniedWithPersistenceToggle(
       break;
     case PermissionType::NOTIFICATIONS:
       UMA_HISTOGRAM_BOOLEAN("Permissions.Prompt.Denied.Persisted.Notifications",
-                            toggle_enabled);
-      break;
-    case PermissionType::MIDI_SYSEX:
-      UMA_HISTOGRAM_BOOLEAN("Permissions.Prompt.Denied.Persisted.MidiSysEx",
                             toggle_enabled);
       break;
     case PermissionType::PUSH_MESSAGING:
@@ -553,7 +533,6 @@ void PermissionUmaUtil::PermissionPromptDeniedWithPersistenceToggle(
       break;
     // The user is not prompted for these permissions, thus there is no deny
     // recorded for them.
-    case PermissionType::MIDI:
     case PermissionType::BACKGROUND_SYNC:
     case PermissionType::NUM:
       NOTREACHED() << "PERMISSION "
@@ -635,12 +614,6 @@ void PermissionUmaUtil::RecordPermissionAction(
                             "Permissions.Action.InsecureOrigin.Notifications",
                             action);
       break;
-    case PermissionType::MIDI_SYSEX:
-      PERMISSION_ACTION_UMA(secure_origin, "Permissions.Action.MidiSysEx",
-                            "Permissions.Action.SecureOrigin.MidiSysEx",
-                            "Permissions.Action.InsecureOrigin.MidiSysEx",
-                            action);
-      break;
     case PermissionType::PUSH_MESSAGING:
       PERMISSION_ACTION_UMA(secure_origin, "Permissions.Action.PushMessaging",
                             "Permissions.Action.SecureOrigin.PushMessaging",
@@ -676,7 +649,6 @@ void PermissionUmaUtil::RecordPermissionAction(
       break;
     // The user is not prompted for these permissions, thus there is no
     // permission action recorded for them.
-    case PermissionType::MIDI:
     case PermissionType::BACKGROUND_SYNC:
     case PermissionType::NUM:
       NOTREACHED() << "PERMISSION "

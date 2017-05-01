@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">Nama bookmark</translation>
 <translation id="1123316951456119629">Dengan memutuskan kaitan Akun Google Anda dari <ph name="PRODUCT_NAME" />, data Anda akan tetap di komputer ini, namun perubahan tidak lagi disinkronkan ke Google Akun Anda. Data yang sudah disimpan di Akun Google akan tetap disimpan di sana hingga Anda menghapusnya menggunakan <ph name="BEGIN_LINK" />Google Dasbor<ph name="END_LINK" />.</translation>
 <translation id="1124772482545689468">Pengguna</translation>
-<translation id="1128109161498068552">Jangan izinkan situs apa pun untuk menggunakan pesan eksklusif sistem untuk mengakses perangkat MIDI</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">Edit mesin telusur</translation>
 <translation id="1128987120443782698">Perangkat penyimpanan ini berkapasitas <ph name="DEVICE_CAPACITY" />. Masukkan kartu SD atau stik memori USB yang berkapasitas sekurang-kurangnya 4 GB.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">Sesuaikan</translation>
 <translation id="1178539123212786672">Pemecah Proxy V8 di luar proses.</translation>
 <translation id="1178581264944972037">Jeda</translation>
-<translation id="1179803038870941185"><ph name="URL" /> ingin mendapatkan kontrol penuh atas perangkat MIDI Anda.</translation>
 <translation id="1181037720776840403">Hapus</translation>
 <translation id="1183083053288481515">Menggunakan sertifikat yang diberikan oleh administrator</translation>
 <translation id="1183237619868651138">Tidak dapat memasang <ph name="EXTERNAL_CRX_FILE" /> di cache lokal.</translation>
@@ -658,7 +656,6 @@
 <translation id="1844692022597038441">File ini tidak tersedia secara offline.</translation>
 <translation id="1846308012215045257">Kontrol-klik untuk menjalankan <ph name="PLUGIN_NAME" /></translation>
 <translation id="184633654410729720">Keyboard Thai (Kedmanee)</translation>
-<translation id="1849186935225320012">Laman ini memiliki kontrol penuh perangkat MIDI.</translation>
 <translation id="1850508293116537636">Putar &amp;searah jarum jam</translation>
 <translation id="1852799913675865625">Terdapat kesalahan saat mencoba membaca file: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">+ lokasi...</translation>
@@ -795,7 +792,6 @@
 <translation id="2080070583977670716">Setelan lain</translation>
 <translation id="2081322486940989439">Situs ini tidak menerima Visa.</translation>
 <translation id="2085470240340828803">File bernama "<ph name="FILENAME" />" sudah ada. Apa yang ingin Anda lakukan?</translation>
-<translation id="2085985589726507051">API MIDI Web</translation>
 <translation id="2087822576218954668">Pencetakan: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">Untuk memulihkan informasi akun Anda, buka: google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">Setelan keamanan sistem</translation>
@@ -905,7 +901,6 @@
 <translation id="2222641695352322289">Satu-satunya cara untuk mengurungkan tindakan ini adalah dengan memasang ulang <ph name="IDS_SHORT_PRODUCT_OS_NAME" />.</translation>
 <translation id="2224444042887712269">Setelan ini adalah milik <ph name="OWNER_EMAIL" />.</translation>
 <translation id="2224551243087462610">Edit nama folder</translation>
-<translation id="2226449515541314767">Situs ini diblokir agar tidak memiliki kontrol penuh atas perangkat MIDI.</translation>
 <translation id="2226720438730111184">Beri Tahu Kami Apa Yang Terjadi</translation>
 <translation id="2229161054156947610">Lebih dari 1 jam lagi</translation>
 <translation id="222931766245975952">File terpotong</translation>
@@ -1525,7 +1520,6 @@ Saya rasa situs ini tidak perlu diblokir!</translation>
 <translation id="297870353673992530">Server DNS:</translation>
 <translation id="2981113813906970160">Tampilkan kursor mouse besar</translation>
 <translation id="2984337792991268709"><ph name="TODAY_DAYTIME" /> hari ini</translation>
-<translation id="2986010903908656993">Laman ini diblokir karena memiliki kontrol penuh atas perangkat MIDI.</translation>
 <translation id="2987775926667433828">Cina Tradisional</translation>
 <translation id="2987776766682852234">Kurangi perincian header 'perujuk' default.</translation>
 <translation id="2989474696604907455">tidak terlampir</translation>
@@ -1735,7 +1729,6 @@ Periksa email Anda di <ph name="ACCOUNT_EMAIL" /> untuk melihat hal ini dan petu
 <translation id="3254434849914415189">Pilih aplikasi default untuk file <ph name="FILE_TYPE" />:</translation>
 <translation id="3255228561559750854">Telusuri atau ucapkan "Ok Google"</translation>
 <translation id="3257011895468050906">Aktifkan dukungan Pengikatan Token</translation>
-<translation id="326356299252142602">Gunakan API Windows Runtime MIDI</translation>
 <translation id="3264544094376351444">Font Sans-serif</translation>
 <translation id="3264547943200567728">Gagal menyiapkan jaringan Chromebox</translation>
 <translation id="3265459715026181080">Tutup Jendela</translation>
@@ -1957,7 +1950,6 @@ Dari <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3530751398950974194">Perbarui frasa sandi sinkronisasi</translation>
 <translation id="3531250013160506608">Kotak teks sandi</translation>
 <translation id="3534879087479077042">Apa itu pengguna yang dilindungi?</translation>
-<translation id="3535652963535405415">Mengaktifkan dukungan eksperimental API MIDI Web.</translation>
 <translation id="354060433403403521">Adaptor AC</translation>
 <translation id="3541661933757219855">Tekan Ctrl+Alt+/ atau Escape untuk menyembunyikan</translation>
 <translation id="3543393733900874979">Gagal memperbarui (kesalahan: <ph name="ERROR_NUMBER" />)</translation>
@@ -1986,7 +1978,6 @@ Dari <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3574210789297084292">masuk</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">Lithuania</translation>
-<translation id="3575927481544652747">Menonaktifkan API Windows Runtime MIDI untuk WebMIDI, yang diaktifkan secara default di Windows 10 atau lebih baru.</translation>
 <translation id="3576324189521867626">Berhasil dipasang</translation>
 <translation id="3578331450833904042">Default (ambil semuanya)</translation>
 <translation id="3578594933904494462">Konten tab ini sedang dibagikan.</translation>
@@ -3017,7 +3008,6 @@ Tekan sembarang tombol untuk melanjutkan penjelajahan.</translation>
 <translation id="499165176004408815">Gunakan mode kontras tinggi</translation>
 <translation id="4992066212339426712">Bunyikan</translation>
 <translation id="4992458225095111526">Konfirmasi Powerwash</translation>
-<translation id="4992576607980257687">Tanyakan kepada saya saat situs ingin menggunakan pesan eksklusif sistem untuk mengakses perangkat MIDI (disarankan)</translation>
 <translation id="4994474651455208930">Izinkan situs meminta untuk menjadi penangan default bagi protokol</translation>
 <translation id="4998873842614926205">Konfirmasikan Perubahan</translation>
 <translation id="4999273653895592255">Bendera ini mengontrol apakah kami harus menampilkan antarmuka versi lama atau baru untuk jendela alat pilih tangkapan desktop.</translation>
@@ -3615,7 +3605,6 @@ Tekan sembarang tombol untuk melanjutkan penjelajahan.</translation>
 <translation id="5774295353725270860">Membuka aplikasi File</translation>
 <translation id="5774515636230743468">Manifes:</translation>
 <translation id="577624874850706961">Telusuri cookie</translation>
-<translation id="5778550464785688721">Kontrol penuh perangkat MIDI</translation>
 <translation id="5780066559993805332">(Terbaik)</translation>
 <translation id="5780973441651030252">Prioritas proses</translation>
 <translation id="5783221160790377646">Karena kesalahan, pengguna yang dilindungi tidak dibuat. Coba lagi nanti.</translation>
@@ -3749,7 +3738,6 @@ Tekan sembarang tombol untuk melanjutkan penjelajahan.</translation>
 <translation id="5965403572731919803">Tambahkan ke rak...</translation>
 <translation id="5965661248935608907">Juga mengontrol apa yang ditampilkan laman saat Anda mengeklik tombol Beranda atau menelusuri dari Omnibox.</translation>
 <translation id="5971037678316050792">Mengontrol penyandingan dan keadaan adaptor Bluetooth</translation>
-<translation id="5972017421290582825">Kelola setelan MIDI...</translation>
 <translation id="5972708806901999743">Pindahkan ke atas</translation>
 <translation id="5972826969634861500">Mulai <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">Perkecil</translation>
@@ -3923,7 +3911,6 @@ Tekan sembarang tombol untuk melanjutkan penjelajahan.</translation>
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: Menyambungkan...</translation>
 <translation id="6226777517901268232">File kunci pribadi (opsional)</translation>
 <translation id="6227235786875481728">File ini tidak dapat diputar.</translation>
-<translation id="6228691855869374890">Situs ini memiliki kontrol penuh atas perangkat MIDI.</translation>
 <translation id="6231148928368101651">Panel</translation>
 <translation id="6231881193380278751">Tambahkan parameter kueri di URL untuk menyegarkan laman secara otomatis: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">Baterai</translation>
@@ -4577,7 +4564,6 @@ Tekan sembarang tombol untuk melanjutkan penjelajahan.</translation>
 <translation id="711902386174337313">Membaca daftar perangkat tempat Anda telah masuk</translation>
 <translation id="7119389851461848805">daya</translation>
 <translation id="7119832699359874134">Kode CVC tidak valid. Harap periksa dan coba lagi.</translation>
-<translation id="7122132768827815392">Gunakan API Windows Runtime MIDI untuk WebMIDI (hanya efektif pada Windows 10 atau yang lebih baru).</translation>
 <translation id="7122169255686960726">Salinan lainnya</translation>
 <translation id="7126604456862387217">'&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;' - &lt;em&gt;telusuri Drive&lt;/em&gt;</translation>
 <translation id="7127980134843952133">Riwayat unduhan</translation>
@@ -4992,7 +4978,6 @@ Tekan sembarang tombol untuk melanjutkan penjelajahan.</translation>
 <translation id="7706319470528945664">Keyboard untuk bahasa Portugis</translation>
 <translation id="7709152031285164251">Gagal - <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">Dengan mengklik Lanjutkan, Anda menyetujui <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" />, dan <ph name="LEGAL_DOC_LINK_TEXT_5" />.</translation>
-<translation id="7713320380037170544">Mengizinkan semua situs untuk menggunakan sistem pesan eksklusif untuk mengakses perangkat MIDI</translation>
 <translation id="7714464543167945231">Sertifikat</translation>
 <translation id="7716020873543636594">Mengeklik secara otomatis saat kursor berhenti</translation>
 <translation id="7716284821709466371">Tinggi ubin default</translation>
@@ -5173,7 +5158,6 @@ Tekan sembarang tombol untuk melanjutkan penjelajahan.</translation>
 <translation id="7965010376480416255">Memori Bersama</translation>
 <translation id="7966241909927244760">S&amp;alin Alamat Gambar</translation>
 <translation id="7967437925638594022">Ekstensi &amp; Aplikasi</translation>
-<translation id="7968796119156413760">Menggunakan API Android Midi untuk WebMIDI (hanya efektif dengan perangkat Android M+).</translation>
 <translation id="7968833647796919681">Mengaktifkan koleksi data kinerja</translation>
 <translation id="7968982339740310781">Lihat detail</translation>
 <translation id="7969525169268594403">Slovenia</translation>
@@ -5318,7 +5302,6 @@ Simpan file kunci Anda di tempat yang aman. Anda akan membutuhkannya untuk membu
 <translation id="8146793085009540321">Proses masuk gagal. Hubungi administrator Anda atau coba lagi.</translation>
 <translation id="8148264977957212129">Metode masukan Pinyin</translation>
 <translation id="8148913456785123871">Tampilkan kartu Google Now di peluncur</translation>
-<translation id="8150391391298684512">Nonaktifkan API Windows Runtime MIDI</translation>
 <translation id="8151185429379586178">Alat pengembang</translation>
 <translation id="8151638057146502721">Konfigurasi</translation>
 <translation id="8151639108075998630">Aktifkan penjelajahan tamu</translation>
@@ -5651,7 +5634,6 @@ Simpan file kunci Anda di tempat yang aman. Anda akan membutuhkannya untuk membu
 <translation id="8603912787021349466">Mengizinkan aplikasi Android mulai secara otomatis setelah masuk.</translation>
 <translation id="8605428685123651449">Memori SQLite</translation>
 <translation id="8605503133013456784">Gagal memutus sambungan dan menghapus penyandingan dari "<ph name="DEVICE_NAME" />".</translation>
-<translation id="8606726445206553943">Menggunakan perangkat MIDI Anda</translation>
 <translation id="8609465669617005112">Berpindah ke atas</translation>
 <translation id="8610892630019863050">Tanyakan saat situs ingin menampilkan pemberitahuan (disarankan)</translation>
 <translation id="8615618338313291042">Aplikasi Penyamaran: <ph name="APP_NAME" /></translation>
@@ -5898,7 +5880,6 @@ Simpan file kunci Anda di tempat yang aman. Anda akan membutuhkannya untuk membu
 <translation id="8926389886865778422">Jangan tanya lagi</translation>
 <translation id="8926518602592448999">Nonaktifkan Ekstensi Mode Pengembang</translation>
 <translation id="8931394284949551895">Perangkat baru</translation>
-<translation id="8932730422557198035">Gunakan API Android Midi</translation>
 <translation id="8933960630081805351">&amp;Tampilkan dalam Penemu</translation>
 <translation id="8934732568177537184">Lanjutkan</translation>
 <translation id="8938356204940892126">Saya menyerah</translation>

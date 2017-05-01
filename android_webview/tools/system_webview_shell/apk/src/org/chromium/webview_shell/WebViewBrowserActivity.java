@@ -82,7 +82,6 @@ public class WebViewBrowserActivity extends Activity implements PopupMenu.OnMenu
         sPermissions.put(RESOURCE_FILE_URL, Manifest.permission.READ_EXTERNAL_STORAGE);
         sPermissions.put(PermissionRequest.RESOURCE_AUDIO_CAPTURE,
                 Manifest.permission.RECORD_AUDIO);
-        sPermissions.put(PermissionRequest.RESOURCE_MIDI_SYSEX, NO_ANDROID_PERMISSION);
         sPermissions.put(PermissionRequest.RESOURCE_PROTECTED_MEDIA_ID, NO_ANDROID_PERMISSION);
         sPermissions.put(PermissionRequest.RESOURCE_VIDEO_CAPTURE,
                 Manifest.permission.CAMERA);

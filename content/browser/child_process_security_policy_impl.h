@@ -81,7 +81,6 @@ class CONTENT_EXPORT ChildProcessSecurityPolicyImpl
   bool CanDeleteFromFileSystem(int child_id,
                                const std::string& filesystem_id) override;
   bool HasWebUIBindings(int child_id) override;
-  void GrantSendMidiSysExMessage(int child_id) override;
   bool CanAccessDataForOrigin(int child_id, const GURL& url) override;
   bool HasSpecificPermissionForOrigin(int child_id,
                                       const url::Origin& origin) override;
@@ -161,9 +160,6 @@ class CONTENT_EXPORT ChildProcessSecurityPolicyImpl
   // storage::FilePermissionPolicy.
   void RegisterFileSystemPermissionPolicy(storage::FileSystemType type,
                                           int policy);
-
-  // Returns true if sending system exclusive messages is allowed.
-  bool CanSendMidiSysExMessage(int child_id);
 
  private:
   friend class ChildProcessSecurityPolicyInProcessBrowserTest;

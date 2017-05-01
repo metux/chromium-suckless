@@ -20,13 +20,4 @@ TEST(HTMLIFrameElementTest, SetPermissionsAttribute) {
   EXPECT_EQ("geolocation notifications", iframe->permissions()->value());
 }
 
-// Test setting via the DOMTokenList (JS codepath).
-TEST(HTMLIFrameElementTest, SetPermissionsAttributeJS) {
-  Document* document = Document::create();
-  HTMLIFrameElement* iframe = HTMLIFrameElement::create(*document);
-
-  iframe->permissions()->setValue("midi");
-  EXPECT_EQ("midi", iframe->getAttribute(HTMLNames::permissionsAttr));
-}
-
 }  // namespace blink

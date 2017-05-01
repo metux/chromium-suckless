@@ -268,32 +268,6 @@ static jboolean GetKeygenBlocked(JNIEnv* env,
       web_contents)->IsContentBlocked(CONTENT_SETTINGS_TYPE_KEYGEN);
 }
 
-static void GetMidiOrigins(JNIEnv* env,
-                           const JavaParamRef<jclass>& clazz,
-                           const JavaParamRef<jobject>& list) {
-  GetOrigins(env, CONTENT_SETTINGS_TYPE_MIDI_SYSEX,
-             &Java_WebsitePreferenceBridge_insertMidiInfoIntoList, list, false);
-}
-
-static jint GetMidiSettingForOrigin(JNIEnv* env,
-                                    const JavaParamRef<jclass>& clazz,
-                                    const JavaParamRef<jstring>& origin,
-                                    const JavaParamRef<jstring>& embedder,
-                                    jboolean is_incognito) {
-  return GetSettingForOrigin(env, CONTENT_SETTINGS_TYPE_MIDI_SYSEX, origin,
-                             embedder, is_incognito);
-}
-
-static void SetMidiSettingForOrigin(JNIEnv* env,
-                                    const JavaParamRef<jclass>& clazz,
-                                    const JavaParamRef<jstring>& origin,
-                                    const JavaParamRef<jstring>& embedder,
-                                    jint value,
-                                    jboolean is_incognito) {
-  SetSettingForOrigin(env, CONTENT_SETTINGS_TYPE_MIDI_SYSEX, origin, embedder,
-                      static_cast<ContentSetting>(value), is_incognito);
-}
-
 static void GetProtectedMediaIdentifierOrigins(
     JNIEnv* env,
     const JavaParamRef<jclass>& clazz,

@@ -2330,12 +2330,6 @@ void AudioMixerManager::TraceTargetType(DWORD dwType) const
     case MIXERLINE_TARGETTYPE_WAVEIN:
         StringCchCat(buf, 128, TEXT("(WAVEIN)"));
         break;
-    case MIXERLINE_TARGETTYPE_MIDIOUT:
-        StringCchCat(buf, 128, TEXT("(MIDIOUT)"));
-        break;
-    case MIXERLINE_TARGETTYPE_MIDIIN:
-        StringCchCat(buf, 128, TEXT("(MIDIIN)"));
-        break;
     default:
         StringCchCat(buf, 128, TEXT("(INVALID)"));
         break;

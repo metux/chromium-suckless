@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">Nome do favorito</translation>
 <translation id="1123316951456119629">Ao desconectar sua Conta do Google do <ph name="PRODUCT_NAME" />, seus dados permanecerão neste computador, mas as alterações não serão mais sincronizadas com sua conta. Os dados já armazenados em sua Conta do Google permanecerão lá até você removê-los usando o <ph name="BEGIN_LINK" />Painel de Controle do Google<ph name="END_LINK" />.</translation>
 <translation id="1124772482545689468">Usuário</translation>
-<translation id="1128109161498068552">Não permitir que nenhum site use mensagens exclusivas do sistema para acessar dispositivos MIDI</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">Editar mecanismo de pesquisa</translation>
 <translation id="1128987120443782698">O dispositivo de armazenamento tem capacidade de <ph name="DEVICE_CAPACITY" />. Insira um cartão SD ou um cartão de memória USB com pelo menos 4 GB de capacidade.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">Personalizado</translation>
 <translation id="1178539123212786672">V8 Proxy Resolver fora de processo.</translation>
 <translation id="1178581264944972037">Pausar</translation>
-<translation id="1179803038870941185"><ph name="URL" /> deseja obter controle total de seus dispositivos MIDI.</translation>
 <translation id="1181037720776840403">Remover</translation>
 <translation id="1183083053288481515">Usando um certificado fornecido pelo administrador</translation>
 <translation id="1183237619868651138">Não foi possível instalar o arquivo <ph name="EXTERNAL_CRX_FILE" /> no cache local.</translation>
@@ -658,7 +656,6 @@
 <translation id="1844692022597038441">Este arquivo não está disponível off-line.</translation>
 <translation id="1846308012215045257">Aperte Ctrl e clique para executar o plug-in <ph name="PLUGIN_NAME" /></translation>
 <translation id="184633654410729720">Teclado tailandês (kedmanee)</translation>
-<translation id="1849186935225320012">Esta página tem controle total de dispositivos MIDI.</translation>
 <translation id="1850508293116537636">Girar no &amp;sentido horário</translation>
 <translation id="1852799913675865625">Ocorreu um erro ao tentar ler o arquivo: <ph name="ERROR_TEXT" /></translation>
 <translation id="1856715684130786728">Adicionar local...</translation>
@@ -795,7 +792,6 @@
 <translation id="2080070583977670716">Mais definições</translation>
 <translation id="2081322486940989439">Este site não aceita Visa.</translation>
 <translation id="2085470240340828803">Já existe um arquivo chamado "<ph name="FILENAME" />". O que você quer fazer?</translation>
-<translation id="2085985589726507051">API Web MIDI</translation>
 <translation id="2087822576218954668">Impressão: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">Para recuperar informações da sua conta, acesse: google.com.br/accounts/recovery</translation>
 <translation id="2090876986345970080">Configuração de segurança do sistema</translation>
@@ -905,7 +901,6 @@
 <translation id="2222641695352322289">A única maneira de desfazer esta ação é reinstalar o <ph name="IDS_SHORT_PRODUCT_OS_NAME" />.</translation>
 <translation id="2224444042887712269">Esta configuração pertence a <ph name="OWNER_EMAIL" />.</translation>
 <translation id="2224551243087462610">Editar nome da pasta</translation>
-<translation id="2226449515541314767">O controle total de dispositivos MIDI foi bloqueado neste site.</translation>
 <translation id="2226720438730111184">Conte-nos o que está acontecendo</translation>
 <translation id="2229161054156947610">Mais de 1 hora restante</translation>
 <translation id="222931766245975952">Arquivo truncado</translation>
@@ -1525,7 +1520,6 @@ Não acho que este site deva ser bloqueado.</translation>
 <translation id="297870353673992530">Servidor DNS:</translation>
 <translation id="2981113813906970160">Mostrar cursor grande do mouse</translation>
 <translation id="2984337792991268709">Hoje <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">O controle total de dispositivos MIDI foi bloqueado nesta página.</translation>
 <translation id="2987775926667433828">Chinês Tradicional</translation>
 <translation id="2987776766682852234">Reduzir granularidade do cabeçalho do "referencial" padrão.</translation>
 <translation id="2989474696604907455">não conectado</translation>
@@ -1735,7 +1729,6 @@ Para ver mais informações, visite nossa <ph name="BEGIN_LINK" />Central de Aju
 <translation id="3254434849914415189">Escolha o aplicativo padrão para os arquivos <ph name="FILE_TYPE" />:</translation>
 <translation id="3255228561559750854">Pesquise ou diga "Ok Google"</translation>
 <translation id="3257011895468050906">Ativar o suporte ao Token Binding.</translation>
-<translation id="326356299252142602">Usar Windows Runtime MIDI API</translation>
 <translation id="3264544094376351444">Fonte Sans-Serif</translation>
 <translation id="3264547943200567728">Falha ao configurar a rede do seu Chromebox</translation>
 <translation id="3265459715026181080">Fechar janela</translation>
@@ -1957,7 +1950,6 @@ De <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3530751398950974194">Atualizar senha de sincronização</translation>
 <translation id="3531250013160506608">Caixa de texto de senha</translation>
 <translation id="3534879087479077042">O que é um usuário supervisionado?</translation>
-<translation id="3535652963535405415">Ative o suporte experimental da API Web MIDI.</translation>
 <translation id="354060433403403521">Carregador</translation>
 <translation id="3541661933757219855">Digite Ctrl+Alt+/ ou Esc para ocultar</translation>
 <translation id="3543393733900874979">Falha na atualização (erro: <ph name="ERROR_NUMBER" />)</translation>
@@ -1986,7 +1978,6 @@ De <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3574210789297084292">fazer login</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">Lituano</translation>
-<translation id="3575927481544652747">Desativar a Windows Runtime MIDI API para WebMIDI, que fica ativada por padrão no Windows 10 ou versões posteriores.</translation>
 <translation id="3576324189521867626">Instalação concluída</translation>
 <translation id="3578331450833904042">Padrão (captar tudo)</translation>
 <translation id="3578594933904494462">O conteúdo desta guia está sendo compartilhado.</translation>
@@ -3014,7 +3005,6 @@ Todos os usuários devem sair para continuar.</translation>
 <translation id="499165176004408815">Usar modo de alto contraste</translation>
 <translation id="4992066212339426712">Ativar som</translation>
 <translation id="4992458225095111526">Confirmar powerwash</translation>
-<translation id="4992576607980257687">Perguntar quando um site desejar usar mensagens exclusivas do sistema para acessar dispositivos MIDI (recomendado)</translation>
 <translation id="4994474651455208930">Permitir que os sites peçam para se tornarem manipuladores padrão de protocolos</translation>
 <translation id="4998873842614926205">Confirmar alterações</translation>
 <translation id="4999273653895592255">Esta sinalização controla se nós exibimos a interface de usuário antiga ou nova para a janela de seletor de Desktop Capture.</translation>
@@ -3613,7 +3603,6 @@ Não exponha nenhuma informação confidencial.</translation>
 <translation id="5774295353725270860">Abrir aplicativo Arquivos</translation>
 <translation id="5774515636230743468">Manifesto:</translation>
 <translation id="577624874850706961">Pesquisar cookies</translation>
-<translation id="5778550464785688721">Controle total de dispositivos MIDI</translation>
 <translation id="5780066559993805332">(Melhor)</translation>
 <translation id="5780973441651030252">Prioridade do processo</translation>
 <translation id="5783221160790377646">Devido a um erro, o usuário supervisionado não foi criado. Tente novamente mais tarde.</translation>
@@ -3747,7 +3736,6 @@ Não exponha nenhuma informação confidencial.</translation>
 <translation id="5965403572731919803">Adicionar à estante...</translation>
 <translation id="5965661248935608907">Controla também qual página deve ser exibida quando você clica no botão "Página inicial" ou quando faz uma pesquisa na Omnibox.</translation>
 <translation id="5971037678316050792">Controlar estado e pareamento do adaptador Bluetooth</translation>
-<translation id="5972017421290582825">Gerenciar configurações MIDI...</translation>
 <translation id="5972708806901999743">Mover para a parte superior</translation>
 <translation id="5972826969634861500">Iniciar o <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">Diminuir zoom</translation>
@@ -3922,7 +3910,6 @@ permanentemente excluídos assim que esse usuário for removido. Os websites vis
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: conectando...</translation>
 <translation id="6226777517901268232">Arquivo de chaves particulares (opcional)</translation>
 <translation id="6227235786875481728">Não foi possível reproduzir este arquivo.</translation>
-<translation id="6228691855869374890">Este site tem controle total de dispositivos MIDI.</translation>
 <translation id="6231148928368101651">Painéis</translation>
 <translation id="6231881193380278751">Adicionar um parâmetro de consulta no URL para atualizar automaticamente a página: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">Bateria</translation>
@@ -4577,7 +4564,6 @@ permanentemente excluídos assim que esse usuário for removido. Os websites vis
 <translation id="711902386174337313">Ler a lista dos dispositivos nos quais você fez login</translation>
 <translation id="7119389851461848805">power</translation>
 <translation id="7119832699359874134">Código CVC inválido. Verifique e tente novamente.</translation>
-<translation id="7122132768827815392">Usar Windows Runtime MIDI API para WebMIDI (eficaz apenas no Windows 10 ou versões posteriores).</translation>
 <translation id="7122169255686960726">Mais cópias</translation>
 <translation id="7126604456862387217">"&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;" - &lt;em&gt;pesquisar no Google Drive&lt;/em&gt;</translation>
 <translation id="7127980134843952133">Histórico de download</translation>
@@ -4993,7 +4979,6 @@ permanentemente excluídos assim que esse usuário for removido. Os websites vis
 <translation id="7706319470528945664">Teclado português</translation>
 <translation id="7709152031285164251">Falha - <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">Ao clicar em "Continuar", você aceita os seguintes documentos legais: <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" /> e <ph name="LEGAL_DOC_LINK_TEXT_5" />.</translation>
-<translation id="7713320380037170544">Permitir que todos os sites usem mensagens exclusivas do sistema para acessar dispositivos MIDI</translation>
 <translation id="7714464543167945231">Certificado</translation>
 <translation id="7716020873543636594">Clicar automaticamente quando o ponteiro do mouse parar</translation>
 <translation id="7716284821709466371">Altura padrão da divisão da imagem</translation>
@@ -5174,7 +5159,6 @@ permanentemente excluídos assim que esse usuário for removido. Os websites vis
 <translation id="7965010376480416255">Memória compartilhada</translation>
 <translation id="7966241909927244760">C&amp;opiar endereço da imagem</translation>
 <translation id="7967437925638594022">Extensões e aplicativos</translation>
-<translation id="7968796119156413760">Usar a API Android Midi para WebMIDI (eficaz apenas com dispositivo Android M ou posteriores).</translation>
 <translation id="7968833647796919681">Ativar coleta de dados de desempenho</translation>
 <translation id="7968982339740310781">Visualizar detalhes</translation>
 <translation id="7969525169268594403">Esloveno</translation>
@@ -5319,7 +5303,6 @@ Mantenha a sua chave de arquivo em um local seguro. Você precisará dela para c
 <translation id="8146793085009540321">Falha no login. Entre em contato com o administrador ou tente novamente.</translation>
 <translation id="8148264977957212129">Método de entrada Pinyin</translation>
 <translation id="8148913456785123871">Exibir Google Now cards na tela de início</translation>
-<translation id="8150391391298684512">Desativar a Windows Runtime MIDI API</translation>
 <translation id="8151185429379586178">Ferramentas do desenvolvedor</translation>
 <translation id="8151638057146502721">Configurar</translation>
 <translation id="8151639108075998630">Ativar a navegação de visitantes</translation>
@@ -5652,7 +5635,6 @@ Mantenha a sua chave de arquivo em um local seguro. Você precisará dela para c
 <translation id="8603912787021349466">Permitir que apps Android sejam iniciados automaticamente após o login.</translation>
 <translation id="8605428685123651449">Memória SQLite</translation>
 <translation id="8605503133013456784">Falha ao desconectar e desemparelhar de "<ph name="DEVICE_NAME" />".</translation>
-<translation id="8606726445206553943">Usar seus dispositivos MIDI</translation>
 <translation id="8609465669617005112">Mover para cima</translation>
 <translation id="8610892630019863050">Perguntar quando um site deseja mostrar notificações (recomendado)</translation>
 <translation id="8615618338313291042">Aplicativo anônimo: <ph name="APP_NAME" /></translation>
@@ -5899,7 +5881,6 @@ Mantenha a sua chave de arquivo em um local seguro. Você precisará dela para c
 <translation id="8926389886865778422">Não perguntar novamente</translation>
 <translation id="8926518602592448999">Desativar extensões no modo de desenvolvedor</translation>
 <translation id="8931394284949551895">Novos dispositivos</translation>
-<translation id="8932730422557198035">Usar a API Android Midi</translation>
 <translation id="8933960630081805351">&amp;Mostrar no Finder</translation>
 <translation id="8934732568177537184">Continuar</translation>
 <translation id="8938356204940892126">Eu desisto</translation>

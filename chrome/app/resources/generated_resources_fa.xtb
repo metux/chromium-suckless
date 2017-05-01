@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">نام نشانک</translation>
 <translation id="1123316951456119629">‏با قطع حساب Google خود از <ph name="PRODUCT_NAME" />، داده‌های شما در این رایانه باقی خواهد ماند اما تغییرات دیگر با حساب Google شما همگام‌سازی نخواهد شد. داده‌هایی که از قبل در حساب Google شما ذخیره شده در آنجا باقی خواهد ماند تا زمانی که آن‌ها را با استفاده از <ph name="BEGIN_LINK" />داشبورد Google<ph name="END_LINK" /> حذف کنید.</translation>
 <translation id="1124772482545689468">کاربر</translation>
-<translation id="1128109161498068552">‏به هیچ سایتی اجازه داده نشود برای دسترسی به دستگاه‌های MIDI از پیام‌های انحصاری سیستم استفاده کند</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">ویرایش موتور جستجو</translation>
 <translation id="1128987120443782698">‏دستگاه ذخیره‌سازی دارای ظرفیت <ph name="DEVICE_CAPACITY" /> است. لطفاً یک کارت SD یا کارت حافظهٔ USB دارای حداقل 4 گیگابایت ظرفیت را در دستگاه قرار دهید.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">سفارشی</translation>
 <translation id="1178539123212786672">‏فعال کردن تحلیل‌گر پروکسی خارج از پردازش V8.</translation>
 <translation id="1178581264944972037">مکث</translation>
-<translation id="1179803038870941185">‏<ph name="URL" /> می‌خواهد کنترل کامل دستگاه‌های MIDI شما را به‌دست آورد.</translation>
 <translation id="1181037720776840403">حذف</translation>
 <translation id="1183083053288481515">با استفاده از گواهی ارائه شده توسط سرپرست سیستم</translation>
 <translation id="1183237619868651138"><ph name="EXTERNAL_CRX_FILE" /> در حافظه پنهان محلی نصب نمی‌شود.</translation>
@@ -656,7 +654,6 @@
 <translation id="1844692022597038441">این فایل به‌صورت آفلاین در دسترس نیست.</translation>
 <translation id="1846308012215045257">برای اجرای <ph name="PLUGIN_NAME" /> کنترل-کلیک کنید</translation>
 <translation id="184633654410729720">صفحه‌کلید تایلندی (کدمانی)</translation>
-<translation id="1849186935225320012">‏این صفحه کنترل کامل دستگاه‌های MIDI را دارد.</translation>
 <translation id="1850508293116537636">چرخاندن در جهت &amp;عقربه‌های ساعت</translation>
 <translation id="1852799913675865625">خطایی در حین خواندن این فایل وجود داشت: <ph name="ERROR_TEXT" /></translation>
 <translation id="1856715684130786728">افزودن موقعیت مکانی...</translation>
@@ -793,7 +790,6 @@
 <translation id="2080070583977670716">تنظیمات بیشتر</translation>
 <translation id="2081322486940989439">‏این سایت Visa نمی‌پذیرد.</translation>
 <translation id="2085470240340828803">فایلی با نام «<ph name="FILENAME" />» از قبل وجود دارد. می‌خواهید چه کاری انجام دهید؟</translation>
-<translation id="2085985589726507051">Web MIDI API</translation>
 <translation id="2087822576218954668">چاپ: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">‏برای بازیابی اطلاعات حساب‌تان به اینجا بروید: google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">تنظیم امنیتی سیستم</translation>
@@ -903,7 +899,6 @@
 <translation id="2222641695352322289">تنها راه برای لغو این مورد، نصب مجدد <ph name="IDS_SHORT_PRODUCT_OS_NAME" /> است.</translation>
 <translation id="2224444042887712269">این تنظیم به <ph name="OWNER_EMAIL" /> متعلق است.</translation>
 <translation id="2224551243087462610">ویرایش نام پوشه</translation>
-<translation id="2226449515541314767">‏این سایت از داشتن کنترل کامل دستگاه‌های MIDI ممانعت شده است.</translation>
 <translation id="2226720438730111184">به ما بگویید چه اتفاقی افتاده است</translation>
 <translation id="2229161054156947610">بیش از ۱ ساعت مانده است</translation>
 <translation id="222931766245975952">فایل ناقص</translation>
@@ -1522,7 +1517,6 @@
 <translation id="297870353673992530">‏سرور DNS:</translation>
 <translation id="2981113813906970160">نمایش نشانگر موشواره بزرگ</translation>
 <translation id="2984337792991268709">امروز <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">‏این صفحه از داشتن کنترل کامل دستگاه‌های MIDI ممانعت شده است.</translation>
 <translation id="2987775926667433828">چینی قدیمی</translation>
 <translation id="2987776766682852234">جزئیات سرصفحه «معرف» پیش‌فرض را کم کنید.</translation>
 <translation id="2989474696604907455">متصل نیست</translation>
@@ -1732,7 +1726,6 @@
 <translation id="3254434849914415189">برنامه پیش‌فرض را برای فایل‌های <ph name="FILE_TYPE" /> انتخاب کنید:</translation>
 <translation id="3255228561559750854">‏جستجو کنید، یا بگویید «Ok Google»</translation>
 <translation id="3257011895468050906">‏فعال کردن پشتیبانی Token Binding.</translation>
-<translation id="326356299252142602">Use Windows Runtime MIDI API</translation>
 <translation id="3264544094376351444">‏قلم Sans-Serif</translation>
 <translation id="3264547943200567728">‏راه‌اندازی شبکه Chromebox شما ناموفق بود</translation>
 <translation id="3265459715026181080">بستن پنجره</translation>
@@ -1954,7 +1947,6 @@
 <translation id="3530751398950974194">به‌روزرسانی رمز عبارتی همگام‌سازی</translation>
 <translation id="3531250013160506608">کادر متنی گذرواژه</translation>
 <translation id="3534879087479077042">کاربر نظارت‌شده چیست؟</translation>
-<translation id="3535652963535405415">‏پشتیبانی آزمایشی از MIDI AP وب را فعال می‌کند.</translation>
 <translation id="354060433403403521">‏آداپتور AC</translation>
 <translation id="3541661933757219855">‏Ctrl+Alt+/ یاEscape را برای مخفی کردن تایپ کنید</translation>
 <translation id="3543393733900874979">به‌روزرسانی انجام نشد (خطا: <ph name="ERROR_NUMBER" />)</translation>
@@ -1983,7 +1975,6 @@
 <translation id="3574210789297084292">ورود به سیستم</translation>
 <translation id="3574305903863751447"><ph name="CITY" />، <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">لیتوانیایی</translation>
-<translation id="3575927481544652747">‏رابط برنامه‌نویسی نرم‌افزار MIDI ‏Windows Runtime برای WebMIDI (که به‌طورپیش‌فرض در Windows 10 یا بالاتر فعال است) را غیرفعال کنید.</translation>
 <translation id="3576324189521867626">نصب موفقیت‌آمیز بود</translation>
 <translation id="3578331450833904042">پیش‌فرض (شنیدن همه چیز)</translation>
 <translation id="3578594933904494462">محتوای این برگه اشتراک‌گذاری می‌شود.</translation>
@@ -3012,7 +3003,6 @@
 <translation id="499165176004408815">استفاده از حالت کنتراست بالا</translation>
 <translation id="4992066212339426712">باصدا کردن</translation>
 <translation id="4992458225095111526">‏تأیید Powerwash</translation>
-<translation id="4992576607980257687">‏اگر سایتی می‌خواهد برای دسترسی به دستگاه‌های MIDI از پیام‌های انحصاری سیستم استفاده کند، سؤال شود (توصیه می‌شود)</translation>
 <translation id="4994474651455208930">سایت‌ها اجازه دارند درخواست کنند کنترل کننده پیش‌فرض برای پروتکل ها شوند</translation>
 <translation id="4998873842614926205">تأیید تغییرها</translation>
 <translation id="4999273653895592255">این پرچم کنترل می‌کند رابط کاربری جدید یا قدیمی برای پنجره انتخابگر ضبط صفحه‌نمایش نشان داده شود یا خیر.</translation>
@@ -3611,7 +3601,6 @@
 <translation id="5774295353725270860">بازکردن برنامه فایل‌ها</translation>
 <translation id="5774515636230743468">اظهارنامه:</translation>
 <translation id="577624874850706961">جستجوی کوکی‌ها</translation>
-<translation id="5778550464785688721">‏کنترل کامل دستگاه‌های MIDI</translation>
 <translation id="5780066559993805332">(بهترین)</translation>
 <translation id="5780973441651030252">پردازش اولویت‌دار</translation>
 <translation id="5783221160790377646">به علت بروز خطا، کاربر نظارت‌شده ایجاد نشد. لطفاً دوباره امتحان کنید.</translation>
@@ -3745,7 +3734,6 @@
 <translation id="5965403572731919803">افزودن به قفسه...</translation>
 <translation id="5965661248935608907">‏این برنامه افزودنی همچنین صفحه‌ای را که هنگام کلیک کردن روی دکمه صفحه اصلی یا جستجو از Omnibox نشان داده می‌شود، کنترل می‌کند.</translation>
 <translation id="5971037678316050792">کنترل حالت آداپتور بلوتوث و مرتبط‌سازی</translation>
-<translation id="5972017421290582825">‏مدیریت تنظیمات MIDI ...</translation>
 <translation id="5972708806901999743">انتقال به بالا</translation>
 <translation id="5972826969634861500">شروع <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">کوچک نمایی</translation>
@@ -3919,7 +3907,6 @@
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: در حال اتصال...</translation>
 <translation id="6226777517901268232">فایل کلید خصوصی (اختیاری)</translation>
 <translation id="6227235786875481728">این فایل اجرا نمی‌شود.</translation>
-<translation id="6228691855869374890">‏این سایت کنترل کامل دستگاه‌های MIDI را دارد.</translation>
 <translation id="6231148928368101651">پانل‌ها</translation>
 <translation id="6231881193380278751">‏افزودن پارامتر جستار در نشانی وب برای بازخوانی خودکار صفحه: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">باتری</translation>
@@ -4573,7 +4560,6 @@
 <translation id="711902386174337313">خواندن فهرست دستگاه‌هایتان که وارد سیستم هستند</translation>
 <translation id="7119389851461848805">روشن/خاموش</translation>
 <translation id="7119832699359874134">‏کد CVC نامعتبر است. لطفاً آن را بررسی کرده، دوباره امتحان کنید.</translation>
-<translation id="7122132768827815392">‏استفاده از رابط برنامه‌نویسی نرم‌افزار (API) ‏Windows Runtime برای WebMIDI (فقط در Windows 10 یا بالاتر قابل‌استفاده است)</translation>
 <translation id="7122169255686960726">رونوشت‌های بیشتر</translation>
 <translation id="7126604456862387217">‏'&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;' - &lt;em&gt;جستجوی Drive&lt;/em&gt;</translation>
 <translation id="7127980134843952133">سابقه بارگیری</translation>
@@ -4989,7 +4975,6 @@
 <translation id="7706319470528945664">صفحه‌کلید پرتغالی</translation>
 <translation id="7709152031285164251">انجام نشد - <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">با کلیک کردن روی ادامه با <ph name="LEGAL_DOC_LINK_TEXT_1" />،‏ <ph name="LEGAL_DOC_LINK_TEXT_2" />،‏ <ph name="LEGAL_DOC_LINK_TEXT_3" />،‏ <ph name="LEGAL_DOC_LINK_TEXT_4" /> و <ph name="LEGAL_DOC_LINK_TEXT_5" /> موافقت می‌کنید.</translation>
-<translation id="7713320380037170544">‏به همه سایت‌ها اجازه داده شود برای دسترسی به دستگاه‌های MIDI از پیام‌های انحصاری سیستم استفاده کنند</translation>
 <translation id="7714464543167945231">گواهی</translation>
 <translation id="7716020873543636594">کلیک خودکار در هنگام توقف نشانگر موشواره</translation>
 <translation id="7716284821709466371">ارتفاع پیش‌فرض کاشی</translation>
@@ -5170,7 +5155,6 @@
 <translation id="7965010376480416255">حافظه مشترک</translation>
 <translation id="7966241909927244760">کپی آدرس تصویر</translation>
 <translation id="7967437925638594022">افزونه‌ها و برنامه‌ها</translation>
-<translation id="7968796119156413760">‏برای WebMIDI از Android Midi API استفاده کنید (فقط با دستگاه‌های Android M+‎ کار می‌کند).</translation>
 <translation id="7968833647796919681">فعال کردن جمع‌آوری داده‌های عملکرد</translation>
 <translation id="7968982339740310781">مشاهدهٔ جزئیات</translation>
 <translation id="7969525169268594403">اسلوونیایی</translation>
@@ -5315,7 +5299,6 @@
 <translation id="8146793085009540321">ورود به سیستم انجام نشد. لطفاً با سرپرستتان تماس بگیرید یا دوباره امتحان کنید.</translation>
 <translation id="8148264977957212129">‏روش ورودی Pinyin</translation>
 <translation id="8148913456785123871">‏نمایش کارت‌های Google Now در راه‌انداز</translation>
-<translation id="8150391391298684512">‏غیرفعال کردن رابط برنامه‌نویسی نرم‌افزار Windows Runtime MIDI</translation>
 <translation id="8151185429379586178">ابزارهای برنامه‌نویس</translation>
 <translation id="8151638057146502721">پیکربندی</translation>
 <translation id="8151639108075998630">فعال کردن مرور مهمان</translation>
@@ -5648,7 +5631,6 @@
 <translation id="8603912787021349466">‏به Android امکان دهید تا پس از ورود به سیستم، به‌طور خودکار راه‌اندازی شود.</translation>
 <translation id="8605428685123651449">‏حافظه SQLite</translation>
 <translation id="8605503133013456784">لغو مرتبط سازی "<ph name="DEVICE_NAME" />" و قطع اتصال از آن ناموفق بود.</translation>
-<translation id="8606726445206553943">‏استفاده از دستگاه‌های MIDI شما</translation>
 <translation id="8609465669617005112">انتقال به بالا</translation>
 <translation id="8610892630019863050">وقتی یک سایت می‌خواهد اعلان نشان دهد، سؤال شود (توصیه می‌شود)</translation>
 <translation id="8615618338313291042">برنامه ناشناس: <ph name="APP_NAME" /></translation>
@@ -5895,7 +5877,6 @@
 <translation id="8926389886865778422">دوباره سؤال نشود</translation>
 <translation id="8926518602592448999">غیرفعال کردن افزونه‌های حالت برنامه‌نویس</translation>
 <translation id="8931394284949551895">دستگاه‌های جدید</translation>
-<translation id="8932730422557198035">‏استفاده از Android Midi API</translation>
 <translation id="8933960630081805351">‏&amp;نمایش در Finder</translation>
 <translation id="8934732568177537184">ادامه</translation>
 <translation id="8938356204940892126">تسلیم</translation>

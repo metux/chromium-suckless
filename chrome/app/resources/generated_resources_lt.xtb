@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">Žymės pavadinimas</translation>
 <translation id="1123316951456119629">Jei atjungsite „Google“ paskyrą nuo „<ph name="PRODUCT_NAME" />“, šio kompiuterio duomenų pakeitimai daugiau nebus sinchronizuojami su „Google“ paskyra. „Google“ paskyroje išsaugoti duomenys liks joje, kol juos pašalinsite naudodami <ph name="BEGIN_LINK" />„Google“ informacijos suvestinę<ph name="END_LINK" />.</translation>
 <translation id="1124772482545689468">Naudotojas</translation>
-<translation id="1128109161498068552">Neleisti jokioms svetainėms naudoti sistemos išskirtinių pranešimų MIDI įrenginiams pasiekti</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">Paieškos variklio redagavimas</translation>
 <translation id="1128987120443782698">Saugojimo įrenginio talpa <ph name="DEVICE_CAPACITY" />. Įdėkite mažiausiai 4 GB talpos SD ar USB atminties kortelę.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">Priskirtas</translation>
 <translation id="1178539123212786672">Neapdoroto V8 tarpinio serverio vardų vertimo programa.</translation>
 <translation id="1178581264944972037">Pristabdyti</translation>
-<translation id="1179803038870941185"><ph name="URL" /> nori visiškai valdyti MIDI įrenginius.</translation>
 <translation id="1181037720776840403">Pašalinti</translation>
 <translation id="1183083053288481515">Naudojamas administratoriaus pateiktas sertifikatas</translation>
 <translation id="1183237619868651138">Nepavyko įdiegti „<ph name="EXTERNAL_CRX_FILE" />“ vietinėje talpykloje.</translation>
@@ -658,7 +656,6 @@
 <translation id="1844692022597038441">Šis failas nepasiekiamas neprisijungus.</translation>
 <translation id="1846308012215045257">Spustelėkite „Ctrl“, kad paleistumėte „<ph name="PLUGIN_NAME" />“</translation>
 <translation id="184633654410729720">Tailandietiška klaviatūra („Kedmanee“)</translation>
-<translation id="1849186935225320012">Šiame puslapyje visiškai valdomi MIDI įrenginiai.</translation>
 <translation id="1850508293116537636">Sukti pagal &amp;laikrodžio rodyklę</translation>
 <translation id="1852799913675865625">Bandant skaityti failą įvyko klaida: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">Pridėti vietą...</translation>
@@ -795,7 +792,6 @@
 <translation id="2080070583977670716">Daugiau nustatymų</translation>
 <translation id="2081322486940989439">Šioje svetainėje negalima naudoti „Visa“.</translation>
 <translation id="2085470240340828803">Failas pavadinimu „<ph name="FILENAME" />“ jau yra. Ką norite daryti?</translation>
-<translation id="2085985589726507051">Žiniatinklio MIDI API</translation>
 <translation id="2087822576218954668">Spausdinti: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">Jei norite atkurti paskyros informaciją, apsilankykite adresu google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">Sistemos saugos nustatymas</translation>
@@ -906,7 +902,6 @@
 <translation id="2222641695352322289">Vienintelis būdas tai anuliuoti yra iš naujo įdiegti „<ph name="IDS_SHORT_PRODUCT_OS_NAME" />“.</translation>
 <translation id="2224444042887712269">Šis nustatymas priklauso <ph name="OWNER_EMAIL" />.</translation>
 <translation id="2224551243087462610">Redaguoti aplanko pavadinimą</translation>
-<translation id="2226449515541314767">Ši svetainė užblokuota, kad negalėtų visiškai valdyti MIDI įrenginių.</translation>
 <translation id="2226720438730111184">Aprašykite problemą</translation>
 <translation id="2229161054156947610">Liko daugiau nei 1 val.</translation>
 <translation id="222931766245975952">Failas sutrumpintas</translation>
@@ -1526,7 +1521,6 @@ Nemanau, kad ši svetainė turėtų būti užblokuota!</translation>
 <translation id="297870353673992530">DNS serveris:</translation>
 <translation id="2981113813906970160">Rodyti didelį pelės žymeklį</translation>
 <translation id="2984337792991268709">Šiandien <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">Šis puslapis užblokuotas, kad negalėtų visiškai valdyti MIDI įrenginių.</translation>
 <translation id="2987775926667433828">Kinų tradicinė</translation>
 <translation id="2987776766682852234">Sumažinkite numatytosios „persiuntimo URL“ antraštės detalumą.</translation>
 <translation id="2989474696604907455">neprijungtas</translation>
@@ -1736,7 +1730,6 @@ Jei reikia daugiau informacijos, apsilankykite <ph name="BEGIN_LINK" />pagalbos 
 <translation id="3254434849914415189">Keisti numatytąją <ph name="FILE_TYPE" /> failų programą:</translation>
 <translation id="3255228561559750854">Ieškokite arba pasakykite „Ok Google“</translation>
 <translation id="3257011895468050906">Įgalinti „Token Binding“ palaikymą.</translation>
-<translation id="326356299252142602">Naudoti „Windows Runtime MIDI“ API</translation>
 <translation id="3264544094376351444">Šriftas „Sans-Serif“</translation>
 <translation id="3264547943200567728">Nepavyko nustatyti „Chromebox“ tinklo</translation>
 <translation id="3265459715026181080">Uždaryti langą</translation>
@@ -1958,7 +1951,6 @@ Iš <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3530751398950974194">Atnaujinkite sinchronizavimo slaptafrazę</translation>
 <translation id="3531250013160506608">Slaptažodžio teksto laukelis</translation>
 <translation id="3534879087479077042">Kas yra prižiūrimas naudotojas?</translation>
-<translation id="3535652963535405415">Įgalinti žiniatinklio MIDI API eksperimentinį palaikymą.</translation>
 <translation id="354060433403403521">Kintamosios srovės adapteris</translation>
 <translation id="3541661933757219855">Kad paslėptumėte, paspauskite „Ctrl“ + „Alt“+ / arba „Escape“ (grįžimo klavišą)</translation>
 <translation id="3543393733900874979">Nepavyko atnaujinti (klaida: <ph name="ERROR_NUMBER" />)</translation>
@@ -1987,7 +1979,6 @@ Iš <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3574210789297084292">prisijungti</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">Lietuvių</translation>
-<translation id="3575927481544652747">Išjungti „Windows Runtime MIDI“ API, skirtą „WebMIDI“, kuri pagal numatytuosius nustatymus įgalinta 10 arba naujesnės versijos sistemoje „Windows“.</translation>
 <translation id="3576324189521867626">Sėkmingai įdiegta</translation>
 <translation id="3578331450833904042">Numatytasis (pasirinkti viską)</translation>
 <translation id="3578594933904494462">Šio skirtuko lapo turinys bendrinamas.</translation>
@@ -3018,7 +3009,6 @@ Jei norite toliau naršyti, paspauskite bet kurį klavišą.</translation>
 <translation id="499165176004408815">Naudoti didelio kontrasto režimą</translation>
 <translation id="4992066212339426712">Įjungti garsą</translation>
 <translation id="4992458225095111526">Patvirtinti „Powerwash“</translation>
-<translation id="4992576607980257687">Paklausti, kai svetainė nori naudoti sistemos išskirtinius pranešimus MIDI įrenginiams pasiekti (rekomenduojama)</translation>
 <translation id="4994474651455208930">Leisti svetainėms pateikti pranešimus, kuriuose prašoma leisti tapti numatytosiomis protokolų apdorojimo programomis</translation>
 <translation id="4998873842614926205">Patvirtinti pakeitimus</translation>
 <translation id="4999273653895592255">Ši žyma valdo, ar rodoma sena, ar nauja darbalaukio transliacijos rinkiklio lango NS.</translation>
@@ -3617,7 +3607,6 @@ Jei norite toliau naršyti, paspauskite bet kurį klavišą.</translation>
 <translation id="5774295353725270860">Atidaryti failų programą</translation>
 <translation id="5774515636230743468">„Manifest“:</translation>
 <translation id="577624874850706961">Ieškoti slapukų</translation>
-<translation id="5778550464785688721">MIDI įrenginių visateisis valdymas</translation>
 <translation id="5780066559993805332">(Geriausia)</translation>
 <translation id="5780973441651030252">Apdorojimo pirmumas</translation>
 <translation id="5783221160790377646">Dėl klaidos prižiūrimas naudotojas nebuvo sukurtas. Vėliau bandykite dar kartą.</translation>
@@ -3751,7 +3740,6 @@ Jei norite toliau naršyti, paspauskite bet kurį klavišą.</translation>
 <translation id="5965403572731919803">Pridėti prie lentynos...</translation>
 <translation id="5965661248935608907">Ji taip pat kontroliuoja, koks puslapis rodomas, kai spustelėjate pagrindinio puslapio mygtuką ar ieškote „Omnibox“.</translation>
 <translation id="5971037678316050792">Valdyti „Bluetooth“ adapterio būseną ir susiejimą</translation>
-<translation id="5972017421290582825">Valdyti MIDI nustatymus...</translation>
 <translation id="5972708806901999743">Perkelti į viršų</translation>
 <translation id="5972826969634861500">Paleisti „<ph name="PRODUCT_NAME" />“</translation>
 <translation id="5975083100439434680">Tolinti</translation>
@@ -3925,7 +3913,6 @@ Jei norite toliau naršyti, paspauskite bet kurį klavišą.</translation>
 <translation id="6225378837831321064">„<ph name="DEVICE_NAME" />“: jungiamasi…</translation>
 <translation id="6226777517901268232">Privataus rakto failas (pasirenkama)</translation>
 <translation id="6227235786875481728">Nepavyko paleisti šio failo.</translation>
-<translation id="6228691855869374890">Ši svetainė visiškai valdo MIDI įrenginius.</translation>
 <translation id="6231148928368101651">Skydeliai</translation>
 <translation id="6231881193380278751">Kad puslapis būtų atnaujintas automatiškai, pridėkite šį užklausos parametrą prie URL: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">Akumuliatorius</translation>
@@ -4581,7 +4568,6 @@ Jei norite toliau naršyti, paspauskite bet kurį klavišą.</translation>
 <translation id="711902386174337313">Skaityti įrenginių, prie kurių esate prisijungę, sąrašą</translation>
 <translation id="7119389851461848805">maitinimas</translation>
 <translation id="7119832699359874134">Netinkamas kortelės saugos (CVC) kodas. Patikrinkite ir bandykite dar kartą.</translation>
-<translation id="7122132768827815392">Naudoti „Windows Runtime MIDI“ API, skirtą „WebMIDI“ (veikia tik su 10 arba naujesnės versijos „Windows“).</translation>
 <translation id="7122169255686960726">Daugiau kopijų</translation>
 <translation id="7126604456862387217">&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt; – &lt;em&gt;ieškoti Diske&lt;/em&gt;</translation>
 <translation id="7127980134843952133">Atsisiuntimų istorija</translation>
@@ -4996,7 +4982,6 @@ Jei norite toliau naršyti, paspauskite bet kurį klavišą.</translation>
 <translation id="7706319470528945664">Portugališka klaviatūra</translation>
 <translation id="7709152031285164251">Įvyko klaida – <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">Spustelėdami „Tęsti“ sutinkate su <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" /> ir <ph name="LEGAL_DOC_LINK_TEXT_5" />.</translation>
-<translation id="7713320380037170544">Leisti visoms svetainėms naudoti sistemos išskirtinius pranešimus MIDI įrenginiams pasiekti</translation>
 <translation id="7714464543167945231">Sertifikatas</translation>
 <translation id="7716020873543636594">Automatiškai spustelėkite sustojus pelės žymekliui</translation>
 <translation id="7716284821709466371">Numatytasis išklotinės dalies aukštis</translation>
@@ -5177,7 +5162,6 @@ Jei norite toliau naršyti, paspauskite bet kurį klavišą.</translation>
 <translation id="7965010376480416255">Bendrinama atmintis</translation>
 <translation id="7966241909927244760">K&amp;opijuoti vaizdo adresą</translation>
 <translation id="7967437925638594022">Plėtiniai ir programos</translation>
-<translation id="7968796119156413760">Naudoti „Android Midi“ API, skirtą „WebMIDI“ (veikia tik su „Android M“ ir naujesnių versijų „Android“ įrenginiais).</translation>
 <translation id="7968833647796919681">Įgalinti našumo duomenų rinkimą</translation>
 <translation id="7968982339740310781">Žiūrėti išsamią informaciją</translation>
 <translation id="7969525169268594403">Slovėnija</translation>
@@ -5322,7 +5306,6 @@ Rakto failą laikykite saugioje vietoje. Jo reikės, kai norėsite sukurti nauja
 <translation id="8146793085009540321">Nepavyko prisijungti. Susisiekite su administratoriumi arba bandykite dar kartą.</translation>
 <translation id="8148264977957212129">„Pinyin“ įvesties metodas</translation>
 <translation id="8148913456785123871">Rodyti „Google“ dabar korteles paleidimo priemonėje</translation>
-<translation id="8150391391298684512">Išjungti „Windows Runtime MIDI“ API</translation>
 <translation id="8151185429379586178">Kūrėjo įrankiai</translation>
 <translation id="8151638057146502721">Konfigūruoti</translation>
 <translation id="8151639108075998630">Įgalinti svečių naršymą</translation>
@@ -5657,7 +5640,6 @@ Skaičiuojamas laikas, kol bus įkrauta</translation>
 <translation id="8603912787021349466">Leisti prisijungus automatiškai paleisti „Android“ programas.</translation>
 <translation id="8605428685123651449">„SQLite“ atmintis</translation>
 <translation id="8605503133013456784">Nepavyko atsijungti ir atsieti nuo „<ph name="DEVICE_NAME" />“.</translation>
-<translation id="8606726445206553943">Naudoti MIDI įrenginius</translation>
 <translation id="8609465669617005112">Perkelti į viršų</translation>
 <translation id="8610892630019863050">Paklausti, kai svetainėje norima rodyti pranešimus (rekomenduojama)</translation>
 <translation id="8615618338313291042">Inkognito programa: <ph name="APP_NAME" /></translation>
@@ -5904,7 +5886,6 @@ Skaičiuojamas laikas, kol bus įkrauta</translation>
 <translation id="8926389886865778422">Neklauskite dar kartą</translation>
 <translation id="8926518602592448999">Išjunkite kūrėjo režimu veikiančius plėtinius</translation>
 <translation id="8931394284949551895">Nauji įrenginiai</translation>
-<translation id="8932730422557198035">Naudoti „Android Midi“ API</translation>
 <translation id="8933960630081805351">&amp;Rodyti ieškojimo priemonėje</translation>
 <translation id="8934732568177537184">Tęsti</translation>
 <translation id="8938356204940892126">Pasiduodu</translation>

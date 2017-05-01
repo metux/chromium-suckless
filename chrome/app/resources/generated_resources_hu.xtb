@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">Könyvjelző neve</translation>
 <translation id="1123316951456119629">Azzal, hogy megszünteti Google-fiókja és a(z) <ph name="PRODUCT_NAME" /> összekapcsolását, az adatai megmaradnak ezen a számítógépen, ám a módosítások nem lesznek szinkronizálva Google-fiókjával. A már a Google-fiókban tárolt adatok mindaddig ott maradnak, amíg el nem távolítja azokat a <ph name="BEGIN_LINK" />Google Irányítópult<ph name="END_LINK" /> segítségével.</translation>
 <translation id="1124772482545689468">Felhasználó</translation>
-<translation id="1128109161498068552">Ne engedélyezze a webhelyeknek, hogy exkluzív rendszerüzenetekkel elérhessék a MIDI-eszközöket</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">Keresőmotor beállítása</translation>
 <translation id="1128987120443782698">A tárolóeszköz kapacitása <ph name="DEVICE_CAPACITY" />. Kérjük, olyan SD-kártyát vagy USB-memóriakártyát helyezzen be, amelynek kapacitása legalább 4 GB.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">Egyéni</translation>
 <translation id="1178539123212786672">Folyamaton kívüli V8 Proxy Resolver.</translation>
 <translation id="1178581264944972037">Szünet</translation>
-<translation id="1179803038870941185">A(z) <ph name="URL" /> teljes hozzáférést kér a MIDI-eszközökhöz.</translation>
 <translation id="1181037720776840403">Eltávolítás</translation>
 <translation id="1183083053288481515">Rendszergazda által biztosított tanúsítvány használata</translation>
 <translation id="1183237619868651138">A(z) <ph name="EXTERNAL_CRX_FILE" /> nem telepíthető a helyi gyorsítótárban.</translation>
@@ -658,7 +656,6 @@
 <translation id="1844692022597038441">Ez a fájl nem érhető el offline.</translation>
 <translation id="1846308012215045257">A Control billentyű lenyomása mellett kattintson ide a(z) <ph name="PLUGIN_NAME" /> futtatásához.</translation>
 <translation id="184633654410729720">Thai billentyűzet (Kedmanee)</translation>
-<translation id="1849186935225320012">Ez az oldal teljes hozzáféréssel rendelkezik a MIDI-eszközökhöz.</translation>
 <translation id="1850508293116537636">Forgatás &amp;jobbra</translation>
 <translation id="1852799913675865625">Hiba lépett fel a fájl olvasása közben: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">Hely hozzáadása...</translation>
@@ -795,7 +792,6 @@
 <translation id="2080070583977670716">További beállítások</translation>
 <translation id="2081322486940989439">Ez a webhely nem fogadja el a Visa kártyákat.</translation>
 <translation id="2085470240340828803">Már létezik „<ph name="FILENAME" />” nevű fájl. Mit szeretne tenni?</translation>
-<translation id="2085985589726507051">Web MIDI API</translation>
 <translation id="2087822576218954668">Nyomtatás: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">Fiókadatainak helyreállításához lépjen a következő oldalra: google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">Rendszerbiztonsági beállítás</translation>
@@ -905,7 +901,6 @@
 <translation id="2222641695352322289">A visszavonás egyetlen módja a <ph name="IDS_SHORT_PRODUCT_OS_NAME" /> újratelepítése.</translation>
 <translation id="2224444042887712269">Ez a beállítás a következő fiókhoz tartozik: <ph name="OWNER_EMAIL" />.</translation>
 <translation id="2224551243087462610">Mappa nevének szerkesztése</translation>
-<translation id="2226449515541314767">Ennél a webhelynél le van tiltva a MIDI-eszközökhöz való teljes hozzáférés.</translation>
 <translation id="2226720438730111184">Mondja el, mi a probléma</translation>
 <translation id="2229161054156947610">Több mint 1 óra van hátra</translation>
 <translation id="222931766245975952">A fájl csonkult</translation>
@@ -1526,7 +1521,6 @@ Miután létrehozott egy új felügyelt felhasználót, bármikor és bármilyen
 <translation id="297870353673992530">DNS szerver:</translation>
 <translation id="2981113813906970160">Nagy egérmutató megjelenítése</translation>
 <translation id="2984337792991268709">Ma <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">Ennél az oldalnál le van tiltva a MIDI-eszközökhöz való teljes hozzáférés.</translation>
 <translation id="2987775926667433828">Kínai (hagyományos)</translation>
 <translation id="2987776766682852234">Az alapértelmezett „hivatkozói” fejléc részletességének csökkentése.</translation>
 <translation id="2989474696604907455">nincs csatlakoztatva</translation>
@@ -1736,7 +1730,6 @@ Ha további információt szeretne, látogasson el a <ph name="BEGIN_LINK" />Sú
 <translation id="3254434849914415189">Válassza ki az alapértelmezett alkalmazást <ph name="FILE_TYPE" />-fájlokhoz:</translation>
 <translation id="3255228561559750854">Végezzen keresést, vagy mondja azt, hogy „Oké, Google!”</translation>
 <translation id="3257011895468050906">A Token Binding támogatásának engedélyezése.</translation>
-<translation id="326356299252142602">A Windows Runtime MIDI API használata</translation>
 <translation id="3264544094376351444">Talp nélküli betűtípus</translation>
 <translation id="3264547943200567728">Nem sikerült beállítani a Chromebox hálózatát</translation>
 <translation id="3265459715026181080">Ablak bezárása</translation>
@@ -1958,7 +1951,6 @@ Innen: <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3530751398950974194">A szinkronizálási összetett jelszó frissítése</translation>
 <translation id="3531250013160506608">Jelszó szövegmező</translation>
 <translation id="3534879087479077042">Mi az a felügyelt felhasználó?</translation>
-<translation id="3535652963535405415">Web MIDI API kísérleti támogatás engedélyezése.</translation>
 <translation id="354060433403403521">Tápadapter</translation>
 <translation id="3541661933757219855">Az elrejtéshez nyomja meg a Ctrl+Alt+/ billentyűkombinációt vagy az Escape billentyűt</translation>
 <translation id="3543393733900874979">A frissítés sikertelen (hiba: <ph name="ERROR_NUMBER" />)</translation>
@@ -1987,7 +1979,6 @@ Innen: <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3574210789297084292">Bejelentkezés</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">litván</translation>
-<translation id="3575927481544652747">A Windows Runtime MIDI API for WebMIDI kikapcsolása, amely alapértelmezés szerint be van kapcsolva Windows 10 vagy újabb rendszereken.</translation>
 <translation id="3576324189521867626">Sikeresen telepítve</translation>
 <translation id="3578331450833904042">Alapértelmezett (mindent észlel)</translation>
 <translation id="3578594933904494462">A lap tartalma meg lesz osztva.</translation>
@@ -3016,7 +3007,6 @@ Az összes felhasználónak ki kell jelentkeznie a folytatáshoz.</translation>
 <translation id="499165176004408815">Nagy kontrasztú mód használata</translation>
 <translation id="4992066212339426712">Némítás feloldása</translation>
 <translation id="4992458225095111526">Powerwash megerősítése</translation>
-<translation id="4992576607980257687">Kérdezzen meg, amikor egy webhely exkluzív rendszerüzenetekkel szeretné elérni a MIDI-eszközöket (ajánlott)</translation>
 <translation id="4994474651455208930">A webhelyek kérhetik, hogy protokollok alapértelmezett kezelői legyenek</translation>
 <translation id="4998873842614926205">Módosítások jóváhagyása</translation>
 <translation id="4999273653895592255">A jelölő azt határozza meg, hogy a Desktop Capture választóablakának régi vagy új kezelőfelületét jelenítsük meg.</translation>
@@ -3615,7 +3605,6 @@ Győződjön meg arról, hogy nem ad ki bizalmas adatokat.</translation>
 <translation id="5774295353725270860">Fájlok alkalmazás megnyitása</translation>
 <translation id="5774515636230743468">Megnyilvánulás:</translation>
 <translation id="577624874850706961">Cookie-k keresése</translation>
-<translation id="5778550464785688721">MIDI eszközök – teljes hozzáférés</translation>
 <translation id="5780066559993805332">(legjobb)</translation>
 <translation id="5780973441651030252">Folyamatprioritás</translation>
 <translation id="5783221160790377646">A felügyelt felhasználó létrehozása egy hiba miatt nem sikerült. Kérjük, próbálja újra később.</translation>
@@ -3749,7 +3738,6 @@ Győződjön meg arról, hogy nem ad ki bizalmas adatokat.</translation>
 <translation id="5965403572731919803">Hozzáadás a polchoz...</translation>
 <translation id="5965661248935608907">Továbbá azt is szabályozza, hogy melyik oldal jelenik meg a Kezdőlap gombra történő kattintáskor vagy a cím- és keresősávban indított kereséskor.</translation>
 <translation id="5971037678316050792">Bluetooth-adapter állapotának és párosításának vezérlése</translation>
-<translation id="5972017421290582825">MIDI-beállítások kezelése...</translation>
 <translation id="5972708806901999743">Mozgatás a lista tetejére</translation>
 <translation id="5972826969634861500"><ph name="PRODUCT_NAME" /> indítása</translation>
 <translation id="5975083100439434680">Kicsinyítés</translation>
@@ -3923,7 +3911,6 @@ Győződjön meg arról, hogy nem ad ki bizalmas adatokat.</translation>
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: Kapcsolódás...</translation>
 <translation id="6226777517901268232">Privátkulcs-fájl (nem kötelező)</translation>
 <translation id="6227235786875481728">Ezt a fájlt nem lehet lejátszani.</translation>
-<translation id="6228691855869374890">Ez a webhely teljes hozzáféréssel rendelkezik a MIDI-eszközökhöz.</translation>
 <translation id="6231148928368101651">Panelek</translation>
 <translation id="6231881193380278751">Adjon meg egy lekérdezési paramétert az URL-ben az oldal automatikus frissítéséhez: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">Akkumulátor</translation>
@@ -4577,7 +4564,6 @@ Győződjön meg arról, hogy nem ad ki bizalmas adatokat.</translation>
 <translation id="711902386174337313">A bejelentkezett eszközök listájának olvasása</translation>
 <translation id="7119389851461848805">bekapcsolás</translation>
 <translation id="7119832699359874134">Érvénytelen CVC kód. Ellenőrizze, majd próbálja újra.</translation>
-<translation id="7122132768827815392">A Windows Runtime MIDI API for WebMIDI használata (csak a Windows 10 és újabb verzióknál működik).</translation>
 <translation id="7122169255686960726">Több másolat</translation>
 <translation id="7126604456862387217">„&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;” – &lt;em&gt;keresés a Drive-ban&lt;/em&gt;</translation>
 <translation id="7127980134843952133">Letöltési előzmények</translation>
@@ -4992,7 +4978,6 @@ Győződjön meg arról, hogy nem ad ki bizalmas adatokat.</translation>
 <translation id="7706319470528945664">Portugál billentyűzet</translation>
 <translation id="7709152031285164251">Meghiúsult – <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">A Folytatás lehetőségre kattintva elfogadja a következőket: <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" /> és <ph name="LEGAL_DOC_LINK_TEXT_5" />.</translation>
-<translation id="7713320380037170544">Engedélyezés az összes webhelynek, hogy exkluzív rendszerüzenetekkel férjenek hozzá a MIDI-eszközökhöz</translation>
 <translation id="7714464543167945231">Tanúsítvány</translation>
 <translation id="7716020873543636594">Automatikus kattintás, ha az egérmutató megáll</translation>
 <translation id="7716284821709466371">Alapértelmezett mozaikmagasság</translation>
@@ -5173,7 +5158,6 @@ Győződjön meg arról, hogy nem ad ki bizalmas adatokat.</translation>
 <translation id="7965010376480416255">Megosztott memória</translation>
 <translation id="7966241909927244760">Képcím más&amp;olása</translation>
 <translation id="7967437925638594022">Bővítmények és alkalmazások</translation>
-<translation id="7968796119156413760">Android Midi API for WebMIDI használata (csak Android M+ eszközöknél működik).</translation>
 <translation id="7968833647796919681">Teljesítménybeli adatok gyűjtésének engedélyezése</translation>
 <translation id="7968982339740310781">Részletek megjelenítése</translation>
 <translation id="7969525169268594403">szlovén</translation>
@@ -5318,7 +5302,6 @@ A kulcsfájlt tartsa biztonságos helyen. Szüksége lesz rá ahhoz, hogy új ve
 <translation id="8146793085009540321">Sikertelen bejelentkezés. Kérjük, forduljon rendszergazdájához, vagy próbálja újra.</translation>
 <translation id="8148264977957212129">Pinyin beviteli mód</translation>
 <translation id="8148913456785123871">Google Asszisztens-kártyák megjelenítése az indítón</translation>
-<translation id="8150391391298684512">A Windows Runtime MIDI API kikapcsolása</translation>
 <translation id="8151185429379586178">Fejlesztői eszközök</translation>
 <translation id="8151638057146502721">Konfigurálás</translation>
 <translation id="8151639108075998630">Vendégként való böngészés engedélyezése</translation>
@@ -5652,7 +5635,6 @@ letiltásához nyomja le a Ctrl+Alt+Z billentyűkombinációt.</translation>
 <translation id="8603912787021349466">Automatikus elindulás engedélyezése az Android-alkalmazások számára a bejelentkezést követően.</translation>
 <translation id="8605428685123651449">SQLite-memória</translation>
 <translation id="8605503133013456784">Nem sikerült megszakítani a kapcsolatot, illetve a(z) "<ph name="DEVICE_NAME" />" eszköz párosítását.</translation>
-<translation id="8606726445206553943">MIDI-eszközök használata</translation>
 <translation id="8609465669617005112">Mozgatás felfelé</translation>
 <translation id="8610892630019863050">Kérdezzen rá, ha egy webhely értesítéseket szeretne megjeleníteni (ajánlott)</translation>
 <translation id="8615618338313291042">Inkognitómódú alkalmazás: <ph name="APP_NAME" /></translation>
@@ -5899,7 +5881,6 @@ letiltásához nyomja le a Ctrl+Alt+Z billentyűkombinációt.</translation>
 <translation id="8926389886865778422">Többször ne figyelmeztessen</translation>
 <translation id="8926518602592448999">A fejlesztői módban futó bővítmények kikapcsolása</translation>
 <translation id="8931394284949551895">Új eszközök</translation>
-<translation id="8932730422557198035">Android Midi API használata</translation>
 <translation id="8933960630081805351">&amp;Megjelenítés a Finderben</translation>
 <translation id="8934732568177537184">Tovább</translation>
 <translation id="8938356204940892126">Feladom</translation>

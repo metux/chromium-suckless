@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">Име на отметката</translation>
 <translation id="1123316951456119629">С прекъсването на връзката с <ph name="PRODUCT_NAME" /> за профила ви в Google данните ви ще останат на този компютър, но промените повече няма да се синхронизират с профила ви. Информацията, която вече се съхранява в него, ще остане там, докато не я премахнете посредством <ph name="BEGIN_LINK" />Google Табло за управление<ph name="END_LINK" />.</translation>
 <translation id="1124772482545689468">Потребител</translation>
-<translation id="1128109161498068552">Да не се разрешава на сайтовете да използват специални системни съобщения за достъп до MIDI устройствата</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">Редактиране на търсещата машина</translation>
 <translation id="1128987120443782698">Устройството за съхранение е с капацитет <ph name="DEVICE_CAPACITY" />. Моля, поставете SD карта или USB памет с обем поне 4 ГБ.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">По избор</translation>
 <translation id="1178539123212786672">Извънпроцесен преобразувател на прокси сървъри за V8.</translation>
 <translation id="1178581264944972037">Пауза</translation>
-<translation id="1179803038870941185"><ph name="URL" /> иска да получи пълен контрол над MIDI устройствата ви.</translation>
 <translation id="1181037720776840403">Премахване</translation>
 <translation id="1183083053288481515">Използвате предоставен от администратора сертификат</translation>
 <translation id="1183237619868651138">„<ph name="EXTERNAL_CRX_FILE" />“ не може да се инсталира в локалния кеш.</translation>
@@ -655,7 +653,6 @@
 <translation id="1844692022597038441">Този файл не е налице офлайн.</translation>
 <translation id="1846308012215045257">Задръжте „Ctrl“ и кликнете, за да стартирате <ph name="PLUGIN_NAME" /></translation>
 <translation id="184633654410729720">Тайландска клавиатура (кедмани)</translation>
-<translation id="1849186935225320012">Тази страница има пълен контрол над MIDI устройствата.</translation>
 <translation id="1850508293116537636">Завъртане &amp;по часовниковата стрелка</translation>
 <translation id="1852799913675865625">Възникна грешка при опита за четене от файла: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">Добавяне на местоположение...</translation>
@@ -792,7 +789,6 @@
 <translation id="2080070583977670716">Още настройки</translation>
 <translation id="2081322486940989439">Този сайт не приема Visa.</translation>
 <translation id="2085470240340828803">Вече съществува файл с име „<ph name="FILENAME" />“. Какво искате да направите?</translation>
-<translation id="2085985589726507051">Приложен програмен интерфейс (API) за Web MIDI</translation>
 <translation id="2087822576218954668">Отпечатване: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">За да възстановите информацията за профила си, отворете google.bg/accounts/recovery</translation>
 <translation id="2090876986345970080">Системни защитни настройки</translation>
@@ -902,7 +898,6 @@
 <translation id="2222641695352322289">Единственият начин да отмените това е да преинсталирате <ph name="IDS_SHORT_PRODUCT_OS_NAME" />.</translation>
 <translation id="2224444042887712269">Тази настройка принадлежи на <ph name="OWNER_EMAIL" />.</translation>
 <translation id="2224551243087462610">Редактиране на името на папката</translation>
-<translation id="2226449515541314767">Пълният контрол над MIDI устройствата е блокиран за този сайт.</translation>
 <translation id="2226720438730111184">Кажете ни какво се случва</translation>
 <translation id="2229161054156947610">Остава повече от 1 час</translation>
 <translation id="222931766245975952">Файлът е скъсен</translation>
@@ -1522,7 +1517,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="297870353673992530">DNS сървър:</translation>
 <translation id="2981113813906970160">Показване на голям курсор на мишката</translation>
 <translation id="2984337792991268709">Днес, <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">Пълният контрол над MIDI устройствата е блокиран за тази страница.</translation>
 <translation id="2987775926667433828">Традиционен китайски</translation>
 <translation id="2987776766682852234">Намаляване на стандартната детайлност в заглавката „referer“.</translation>
 <translation id="2989474696604907455">не е свързано</translation>
@@ -1732,7 +1726,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="3254434849914415189">Избиране на приложението по подразбиране за файлове от тип <ph name="FILE_TYPE" />:</translation>
 <translation id="3255228561559750854">Потърсете нещо или кажете „OK Google“</translation>
 <translation id="3257011895468050906">Активиране на поддръжката за Token Binding.</translation>
-<translation id="326356299252142602">Използване на приложния програмен интерфейс (API) за MIDI по време на изпълнение за Windows</translation>
 <translation id="3264544094376351444">Безсерифен шрифт</translation>
 <translation id="3264547943200567728">Настройването на мрежата на вашия Chromebox не бе успешно</translation>
 <translation id="3265459715026181080">Затваряне на прозореца</translation>
@@ -1954,7 +1947,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="3530751398950974194">Актуализиране на пропуска за синхронизиране</translation>
 <translation id="3531250013160506608">Текстово поле за парола</translation>
 <translation id="3534879087479077042">Какво представлява контролираният потребител?</translation>
-<translation id="3535652963535405415">Активирайте експерименталната поддръжка за приложния програмен интерфейс (API) за уеб MIDI.</translation>
 <translation id="354060433403403521">Адаптер за променлив ток (AC)</translation>
 <translation id="3541661933757219855">Натиснете „Ctrl+Alt+/“ или „Escape“ за скриване</translation>
 <translation id="3543393733900874979">Актуализацията не бе успешна (грешка: <ph name="ERROR_NUMBER" />)</translation>
@@ -1983,7 +1975,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="3574210789297084292">вход</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">литовски</translation>
-<translation id="3575927481544652747">За WebMIDI да се деактивира приложният програмен интерфейс (API) за MIDI на Windows Runtime, който по подразбиране е активиран в Windows 10 и по-новите версии.</translation>
 <translation id="3576324189521867626">Инсталирането бе успешно</translation>
 <translation id="3578331450833904042">По подразбиране (улавяне на всички звуци)</translation>
 <translation id="3578594933904494462">Съдържанието на този раздел се споделя.</translation>
@@ -3013,7 +3004,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="499165176004408815">Използване на режима на висок контраст</translation>
 <translation id="4992066212339426712">Включване на звука</translation>
 <translation id="4992458225095111526">Потвърждаване на извършването на Powerwash</translation>
-<translation id="4992576607980257687">Нека получавам запитване, когато сайт иска да използва специални системни съобщения за достъп до MIDI устройствата (препоръчително)</translation>
 <translation id="4994474651455208930">Разрешаване на питания от сайтове дали да са манипулаторите по подразбиране за протоколите</translation>
 <translation id="4998873842614926205">Потвърждаване на промените</translation>
 <translation id="4999273653895592255">Този флаг контролира дали да се показва старият, или новият потребителски интерфейс на прозореца на инструмента за заснемане на работния плот.</translation>
@@ -3612,7 +3602,6 @@ PDF файл или в Google Диск.</translation>
 <translation id="5774295353725270860">Отваряне на приложението за файлове</translation>
 <translation id="5774515636230743468">Манифест:</translation>
 <translation id="577624874850706961">Търсене</translation>
-<translation id="5778550464785688721">Пълен контрол над MIDI устройства</translation>
 <translation id="5780066559993805332">(Най-добро)</translation>
 <translation id="5780973441651030252">Приоритет на процесите</translation>
 <translation id="5783221160790377646">Поради грешка не бе създаден контролиран потребител. Моля, опитайте отново по-късно.</translation>
@@ -3746,7 +3735,6 @@ PDF файл или в Google Диск.</translation>
 <translation id="5965403572731919803">Добавяне към лавицата...</translation>
 <translation id="5965661248935608907">То също контролира коя страница се показва при кликване върху бутона „Начална страница“ или при търсене от полето за всичко.</translation>
 <translation id="5971037678316050792">Контролиране на състоянието и сдвояването на адаптера за Bluetooth</translation>
-<translation id="5972017421290582825">Управление на настройките за MIDI...</translation>
 <translation id="5972708806901999743">Преместване най-горе</translation>
 <translation id="5972826969634861500">Стартиране на <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">Намаляване на мащаба</translation>
@@ -3920,7 +3908,6 @@ PDF файл или в Google Диск.</translation>
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: Установява се връзка...</translation>
 <translation id="6226777517901268232">Файл с частен ключ (незадължително)</translation>
 <translation id="6227235786875481728">Този файл не можа да бъде възпроизведен.</translation>
-<translation id="6228691855869374890">Този сайт има пълен контрол над MIDI устройствата.</translation>
 <translation id="6231148928368101651">Панели</translation>
 <translation id="6231881193380278751">За да се опреснява страницата автоматично, добавете към URL адреса параметър на заявката: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">Батерия</translation>
@@ -4574,7 +4561,6 @@ PDF файл или в Google Диск.</translation>
 <translation id="711902386174337313">Четене на списъка с устройства, на които сте влезли в профила си</translation>
 <translation id="7119389851461848805">захранване</translation>
 <translation id="7119832699359874134">Кодът за проверка е невалиден. Моля, проверете го и опитайте отново.</translation>
-<translation id="7122132768827815392">За WebMIDI да се използва приложният програмен интерфейс (API) за MIDI по време на изпълнение за Windows (работи само на устройства с Windows 10 или по-нова версия).</translation>
 <translation id="7122169255686960726">Още копия</translation>
 <translation id="7126604456862387217">&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt; – &lt;em&gt;търсене в Диск&lt;/em&gt;</translation>
 <translation id="7127980134843952133">История на изтеглянията</translation>
@@ -4989,7 +4975,6 @@ PDF файл или в Google Диск.</translation>
 <translation id="7706319470528945664">Португалска клавиатура</translation>
 <translation id="7709152031285164251">Не бе успешно – <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">С кликването си върху „Напред“ приемате <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" /> и <ph name="LEGAL_DOC_LINK_TEXT_5" />.</translation>
-<translation id="7713320380037170544">Да се разреши на всички сайтове да използват специални системни съобщения за достъп до MIDI устройствата</translation>
 <translation id="7714464543167945231">Сертификат</translation>
 <translation id="7716020873543636594">Автоматично кликване при спиране на курсора на мишката</translation>
 <translation id="7716284821709466371">Стандартна височина за плочките</translation>
@@ -5170,7 +5155,6 @@ PDF файл или в Google Диск.</translation>
 <translation id="7965010376480416255">Споделена памет</translation>
 <translation id="7966241909927244760">К&amp;опиране на адреса на изображението</translation>
 <translation id="7967437925638594022">Разширения и приложения</translation>
-<translation id="7968796119156413760">За WebMIDI да се използва приложният програмен интерфейс (API) за MIDI за Android (работи само на устройства с Android M или по-нова версия).</translation>
 <translation id="7968833647796919681">Активиране на събирането на данни за ефективността</translation>
 <translation id="7968982339740310781">Преглед на подробностите</translation>
 <translation id="7969525169268594403">словенски</translation>
@@ -5315,7 +5299,6 @@ PDF файл или в Google Диск.</translation>
 <translation id="8146793085009540321">Влизането не бе успешно. Моля, свържете се с администратора си или опитайте отново.</translation>
 <translation id="8148264977957212129">Метод за въвеждане на пинин</translation>
 <translation id="8148913456785123871">Показване на карти от Google Now в стартовия панел</translation>
-<translation id="8150391391298684512">Изключване на API за MIDI на Windows Runtime</translation>
 <translation id="8151185429379586178">Инстр. за програмисти</translation>
 <translation id="8151638057146502721">Конфигуриране</translation>
 <translation id="8151639108075998630">Активиране на сърфирането като гост</translation>
@@ -5649,7 +5632,6 @@ PDF файл или в Google Диск.</translation>
 <translation id="8603912787021349466">Позволява на приложенията за Android да се стартират автоматично след влизането.</translation>
 <translation id="8605428685123651449">Памет за SQLite</translation>
 <translation id="8605503133013456784">Прекъсването на връзката и на сдвояването с „<ph name="DEVICE_NAME" />“ не бе успешно.</translation>
-<translation id="8606726445206553943">Да използва MIDI устройствата ви.</translation>
 <translation id="8609465669617005112">Придвижване нагоре</translation>
 <translation id="8610892630019863050">Извеждане на запитване, когато сайт иска да показва известия (препоръчително)</translation>
 <translation id="8615618338313291042">Приложение „Инкогнито“: <ph name="APP_NAME" /></translation>
@@ -5896,7 +5878,6 @@ PDF файл или в Google Диск.</translation>
 <translation id="8926389886865778422">Без повторно питане</translation>
 <translation id="8926518602592448999">Деактивиране на разширенията в режим за програмисти</translation>
 <translation id="8931394284949551895">Нови устройства</translation>
-<translation id="8932730422557198035">Използване на приложния програмен интерфейс (API) за MIDI за Android</translation>
 <translation id="8933960630081805351">&amp;Показване във Finder</translation>
 <translation id="8934732568177537184">Напред</translation>
 <translation id="8938356204940892126">Отказвам се</translation>

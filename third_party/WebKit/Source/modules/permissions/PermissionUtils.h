@@ -17,9 +17,6 @@ bool connectToPermissionService(ExecutionContext*,
 mojom::blink::PermissionDescriptorPtr createPermissionDescriptor(
     mojom::blink::PermissionName);
 
-mojom::blink::PermissionDescriptorPtr createMidiPermissionDescriptor(
-    bool sysex);
-
 }  // namespace blink
 
 #endif  // PermissionUtils_h

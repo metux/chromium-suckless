@@ -63,7 +63,6 @@
 #include "content/renderer/media/image_capture_frame_grabber.h"
 #include "content/renderer/media/media_recorder_handler.h"
 #include "content/renderer/media/renderer_webaudiodevice_impl.h"
-#include "content/renderer/media/renderer_webmidiaccessor_impl.h"
 #include "content/renderer/mojo/blink_interface_provider_impl.h"
 #include "content/renderer/render_thread_impl.h"
 #include "content/renderer/renderer_clipboard_delegate.h"
@@ -152,7 +151,6 @@ using blink::WebGamepad;
 using blink::WebGamepads;
 using blink::WebIDBFactory;
 using blink::WebImageCaptureFrameGrabber;
-using blink::WebMIDIAccessor;
 using blink::WebMediaPlayer;
 using blink::WebMediaRecorderHandler;
 using blink::WebMediaStream;
@@ -791,16 +789,6 @@ bool RendererBlinkPlatformImpl::loadAudioResource(
 }
 
 //------------------------------------------------------------------------------
-
-blink::WebMIDIAccessor* RendererBlinkPlatformImpl::createMIDIAccessor(
-    blink::WebMIDIAccessorClient* client) {
-  blink::WebMIDIAccessor* accessor =
-      GetContentClient()->renderer()->OverrideCreateMIDIAccessor(client);
-  if (accessor)
-    return accessor;
-
-  return new RendererWebMIDIAccessorImpl(client);
-}
 
 void RendererBlinkPlatformImpl::getPluginList(
     bool refresh,

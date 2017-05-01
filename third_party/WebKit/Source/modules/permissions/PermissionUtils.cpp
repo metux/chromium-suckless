@@ -39,14 +39,4 @@ PermissionDescriptorPtr createPermissionDescriptor(PermissionName name) {
   return descriptor;
 }
 
-PermissionDescriptorPtr createMidiPermissionDescriptor(bool sysex) {
-  auto descriptor =
-      createPermissionDescriptor(mojom::blink::PermissionName::MIDI);
-  auto midiExtension = mojom::blink::MidiPermissionDescriptor::New();
-  midiExtension->sysex = sysex;
-  descriptor->extension = mojom::blink::PermissionDescriptorExtension::New();
-  descriptor->extension->set_midi(std::move(midiExtension));
-  return descriptor;
-}
-
 }  // namespace blink

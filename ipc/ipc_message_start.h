@@ -41,7 +41,6 @@ enum IPCMessageStart {
   BlobMsgStart,
   AppCacheMsgStart,
   AudioMsgStart,
-  MidiMsgStart,
   ChromeMsgStart,
   DragMsgStart,
   PrintMsgStart,

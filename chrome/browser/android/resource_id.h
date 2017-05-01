@@ -32,7 +32,6 @@ DECLARE_RESOURCE_ID(IDR_ANDROID_INFOBAR_GEOLOCATION,
                     R.drawable.infobar_geolocation)
 DECLARE_RESOURCE_ID(IDR_ANDROID_INFOBAR_MEDIA_STREAM_SCREEN,
                     R.drawable.infobar_screen_share)
-DECLARE_RESOURCE_ID(IDR_ANDROID_INFOBAR_MIDI, R.drawable.infobar_midi)
 DECLARE_RESOURCE_ID(IDR_ANDROID_INFOBAR_MULTIPLE_DOWNLOADS,
                     R.drawable.infobar_multiple_downloads)
 DECLARE_RESOURCE_ID(IDR_ANDROID_INFOBAR_NOTIFICATIONS,

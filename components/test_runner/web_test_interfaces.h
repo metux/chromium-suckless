@@ -18,8 +18,6 @@ class WebFrame;
 class WebFrameClient;
 class WebMediaStreamCenter;
 class WebMediaStreamCenterClient;
-class WebMIDIAccessor;
-class WebMIDIAccessorClient;
 class WebRTCPeerConnectionHandler;
 class WebRTCPeerConnectionHandlerClient;
 class WebThemeEngine;
@@ -59,9 +57,6 @@ class TEST_RUNNER_EXPORT WebTestInterfaces {
       blink::WebMediaStreamCenterClient* client);
   blink::WebRTCPeerConnectionHandler* CreateWebRTCPeerConnectionHandler(
       blink::WebRTCPeerConnectionHandlerClient* client);
-
-  blink::WebMIDIAccessor* CreateMIDIAccessor(
-      blink::WebMIDIAccessorClient* client);
 
   blink::WebAudioDevice* CreateAudioDevice(double sample_rate);
 

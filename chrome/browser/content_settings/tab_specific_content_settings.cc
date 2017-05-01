@@ -94,10 +94,6 @@ TabSpecificContentSettings::TabSpecificContentSettings(WebContents* tab)
           HostContentSettingsMapFactory::GetForProfile(
               Profile::FromBrowserContext(tab->GetBrowserContext())),
           CONTENT_SETTINGS_TYPE_GEOLOCATION),
-      midi_usages_state_(
-          HostContentSettingsMapFactory::GetForProfile(
-              Profile::FromBrowserContext(tab->GetBrowserContext())),
-          CONTENT_SETTINGS_TYPE_MIDI_SYSEX),
       pending_protocol_handler_(ProtocolHandler::EmptyProtocolHandler()),
       previous_protocol_handler_(ProtocolHandler::EmptyProtocolHandler()),
       pending_protocol_handler_setting_(CONTENT_SETTING_DEFAULT),
@@ -249,7 +245,6 @@ bool TabSpecificContentSettings::IsContentBlocked(
       content_type == CONTENT_SETTINGS_TYPE_MEDIASTREAM_CAMERA ||
       content_type == CONTENT_SETTINGS_TYPE_PPAPI_BROKER ||
       content_type == CONTENT_SETTINGS_TYPE_AUTOMATIC_DOWNLOADS ||
-      content_type == CONTENT_SETTINGS_TYPE_MIDI_SYSEX ||
       content_type == CONTENT_SETTINGS_TYPE_KEYGEN) {
     const auto& it = content_settings_status_.find(content_type);
     if (it != content_settings_status_.end())
@@ -287,13 +282,12 @@ void TabSpecificContentSettings::SetSubresourceBlockageIndicated() {
 bool TabSpecificContentSettings::IsContentAllowed(
     ContentSettingsType content_type) const {
   // This method currently only returns meaningful values for the content type
-  // cookies, media, PPAPI broker, downloads, and MIDI sysex.
+  // cookies, media, PPAPI broker, downloads.
   if (content_type != CONTENT_SETTINGS_TYPE_COOKIES &&
       content_type != CONTENT_SETTINGS_TYPE_MEDIASTREAM_MIC &&
       content_type != CONTENT_SETTINGS_TYPE_MEDIASTREAM_CAMERA &&
       content_type != CONTENT_SETTINGS_TYPE_PPAPI_BROKER &&
-      content_type != CONTENT_SETTINGS_TYPE_AUTOMATIC_DOWNLOADS &&
-      content_type != CONTENT_SETTINGS_TYPE_MIDI_SYSEX) {
+      content_type != CONTENT_SETTINGS_TYPE_AUTOMATIC_DOWNLOADS) {
     return false;
   }
 
@@ -652,18 +646,6 @@ void TabSpecificContentSettings::OnMediaStreamPermissionSet(
   }
 }
 
-void TabSpecificContentSettings::OnMidiSysExAccessed(
-    const GURL& requesting_origin) {
-  midi_usages_state_.OnPermissionSet(requesting_origin, true);
-  OnContentAllowed(CONTENT_SETTINGS_TYPE_MIDI_SYSEX);
-}
-
-void TabSpecificContentSettings::OnMidiSysExAccessBlocked(
-    const GURL& requesting_origin) {
-  midi_usages_state_.OnPermissionSet(requesting_origin, false);
-  OnContentBlocked(CONTENT_SETTINGS_TYPE_MIDI_SYSEX);
-}
-
 void TabSpecificContentSettings::
 ClearContentSettingsExceptForNavigationRelatedSettings() {
   for (auto& status : content_settings_status_) {
@@ -818,7 +800,6 @@ void TabSpecificContentSettings::DidStartNavigation(
   if (!navigation_handle->IsErrorPage())
     ClearNavigationRelatedContentSettings();
   ClearGeolocationContentSettings();
-  ClearMidiContentSettings();
   ClearPendingProtocolHandler();
 }
 
@@ -834,7 +815,6 @@ void TabSpecificContentSettings::DidFinishNavigation(
   ClearContentSettingsExceptForNavigationRelatedSettings();
   blocked_plugin_names_.clear();
   GeolocationDidNavigate(navigation_handle);
-  MidiDidNavigate(navigation_handle);
 
   if (web_contents()->GetVisibleURL().SchemeIsHTTPOrHTTPS()) {
     content_settings::RecordPluginsAction(
@@ -871,10 +851,6 @@ void TabSpecificContentSettings::ClearGeolocationContentSettings() {
   geolocation_usages_state_.ClearStateMap();
 }
 
-void TabSpecificContentSettings::ClearMidiContentSettings() {
-  midi_usages_state_.ClearStateMap();
-}
-
 void TabSpecificContentSettings::GeolocationDidNavigate(
     content::NavigationHandle* navigation_handle) {
   ContentSettingsUsagesState::CommittedDetails committed_details;
@@ -882,14 +858,6 @@ void TabSpecificContentSettings::GeolocationDidNavigate(
   committed_details.previous_url = previous_url_;
 
   geolocation_usages_state_.DidNavigate(committed_details);
-}
-
-void TabSpecificContentSettings::MidiDidNavigate(
-    content::NavigationHandle* navigation_handle) {
-  ContentSettingsUsagesState::CommittedDetails committed_details;
-  committed_details.current_url = navigation_handle->GetURL();
-  committed_details.previous_url = previous_url_;
-  midi_usages_state_.DidNavigate(committed_details);
 }
 
 void TabSpecificContentSettings::BlockAllContentForTesting() {

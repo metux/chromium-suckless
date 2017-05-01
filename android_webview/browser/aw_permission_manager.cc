@@ -305,12 +305,6 @@ int AwPermissionManager::RequestPermissions(
             base::Bind(&OnRequestResponse, weak_ptr_factory_.GetWeakPtr(),
                        request_id, permissions[i]));
         break;
-      case PermissionType::MIDI_SYSEX:
-        delegate->RequestMIDISysexPermission(
-            pending_request->requesting_origin,
-            base::Bind(&OnRequestResponse, weak_ptr_factory_.GetWeakPtr(),
-                       request_id, permissions[i]));
-        break;
       case PermissionType::AUDIO_CAPTURE:
       case PermissionType::VIDEO_CAPTURE:
       case PermissionType::NOTIFICATIONS:
@@ -322,10 +316,6 @@ int AwPermissionManager::RequestPermissions(
                          << static_cast<int>(permissions[i]);
         pending_request->SetPermissionStatus(permissions[i],
                                              PermissionStatus::DENIED);
-        break;
-      case PermissionType::MIDI:
-        pending_request->SetPermissionStatus(permissions[i],
-                                             PermissionStatus::GRANTED);
         break;
       case PermissionType::NUM:
         NOTREACHED() << "PermissionType::NUM was not expected here.";
@@ -341,7 +331,7 @@ int AwPermissionManager::RequestPermissions(
     return kNoPendingOperation;
 
   // If requests are resolved without calling delegate functions, e.g.
-  // PermissionType::MIDI is permitted within the previous for-loop, all
+  // PermissionType::*** is permitted within the previous for-loop, all
   // requests could be already resolved, but still in the |pending_requests_|
   // without invoking the callback.
   if (pending_request->IsCompleted()) {
@@ -445,10 +435,6 @@ void AwPermissionManager::CancelPermissionRequest(int request_id) {
           delegate->CancelProtectedMediaIdentifierPermissionRequests(
               requesting_origin);
         break;
-      case PermissionType::MIDI_SYSEX:
-        if (delegate)
-          delegate->CancelMIDISysexPermissionRequests(requesting_origin);
-        break;
       case PermissionType::NOTIFICATIONS:
       case PermissionType::PUSH_MESSAGING:
       case PermissionType::DURABLE_STORAGE:
@@ -458,9 +444,6 @@ void AwPermissionManager::CancelPermissionRequest(int request_id) {
       case PermissionType::FLASH:
         NOTIMPLEMENTED() << "CancelPermission not implemented for "
                          << static_cast<int>(permission);
-        break;
-      case PermissionType::MIDI:
-        // There is nothing to cancel so this is simply ignored.
         break;
       case PermissionType::NUM:
         NOTREACHED() << "PermissionType::NUM was not expected here.";
@@ -490,9 +473,6 @@ PermissionStatus AwPermissionManager::GetPermissionStatus(
   if (permission == PermissionType::PROTECTED_MEDIA_IDENTIFIER) {
     return result_cache_->GetResult(permission, requesting_origin,
                                     embedding_origin);
-  } else if (permission == PermissionType::MIDI) {
-    return PermissionStatus::GRANTED;
-  }
 
   return PermissionStatus::DENIED;
 }

@@ -15,20 +15,14 @@ TEST(HTMLIFrameElementPermissionsTest, ParseDelegatedPermissionsValid) {
   Vector<WebPermissionType> result;
   String errorMessage;
 
-  permissions->setValue("midi");
-  result = permissions->parseDelegatedPermissions(errorMessage);
-  EXPECT_EQ(1u, result.size());
-  EXPECT_EQ(WebPermissionTypeMidiSysEx, result[0]);
-
   permissions->setValue("");
   result = permissions->parseDelegatedPermissions(errorMessage);
   EXPECT_EQ(0u, result.size());
 
-  permissions->setValue("geolocation midi");
+  permissions->setValue("geolocation");
   result = permissions->parseDelegatedPermissions(errorMessage);
   EXPECT_EQ(2u, result.size());
   EXPECT_EQ(WebPermissionTypeGeolocation, result[0]);
-  EXPECT_EQ(WebPermissionTypeMidiSysEx, result[1]);
 }
 
 TEST(HTMLIFrameElementPermissionsTest, ParseDelegatedPermissionsInvalid) {
@@ -37,22 +31,22 @@ TEST(HTMLIFrameElementPermissionsTest, ParseDelegatedPermissionsInvalid) {
   Vector<WebPermissionType> result;
   String errorMessage;
 
-  permissions->setValue("midis");
+  permissions->setValue("wurstbrot");
   result = permissions->parseDelegatedPermissions(errorMessage);
   EXPECT_EQ(0u, result.size());
-  EXPECT_EQ("'midis' is an invalid permissions flag.", errorMessage);
+  EXPECT_EQ("'wurstbrot' is an invalid permissions flag.", errorMessage);
 
-  permissions->setValue("geolocations midis");
+  permissions->setValue("geolocations wurstbrot");
   result = permissions->parseDelegatedPermissions(errorMessage);
   EXPECT_EQ(0u, result.size());
-  EXPECT_EQ("'geolocations', 'midis' are invalid permissions flags.",
+  EXPECT_EQ("'geolocations', 'wurstbrot' are invalid permissions flags.",
             errorMessage);
 
-  permissions->setValue("geolocation midis");
+  permissions->setValue("geolocation wurstbrot");
   result = permissions->parseDelegatedPermissions(errorMessage);
   EXPECT_EQ(1u, result.size());
   EXPECT_EQ(WebPermissionTypeGeolocation, result[0]);
-  EXPECT_EQ("'midis' is an invalid permissions flag.", errorMessage);
+  EXPECT_EQ("'wurstbrot' is an invalid permissions flag.", errorMessage);
 }
 
 }  // namespace blink

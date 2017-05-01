@@ -405,9 +405,6 @@ class ChromeTests:
   def TestMessageCenter(self):
     return self.SimpleTest("message_center", "message_center_unittests")
 
-  def TestMidi(self):
-    return self.SimpleTest("chrome", "midi_unittests")
-
   def TestMojoCommon(self):
     return self.SimpleTest("mojo_common", "mojo_common_unittests")
 
@@ -686,7 +683,6 @@ class ChromeTests:
     "media": TestMedia,          "media_unittests": TestMedia,
     "message_center": TestMessageCenter,
     "message_center_unittests" : TestMessageCenter,
-    "midi": TestMidi,             "midi_unittests": TestMidi,
     "mojo_common": TestMojoCommon,
     "mojo_common_unittests": TestMojoCommon,
     "mojo_system": TestMojoSystem,
@@ -825,7 +821,6 @@ def _main():
       'jingle',
       'keyboard',
       'media',
-      'midi',
       'mojo_common',
       'mojo_public_bindings',
       'mojo_public_sysperf',

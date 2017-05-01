@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">Názov záložky</translation>
 <translation id="1123316951456119629">Po odpojení účtu Google z prehliadača <ph name="PRODUCT_NAME" /> sa zmeny vašich údajov v tomto počítači nebudú naďalej synchronizovať s účtom Google. Údaje, ktoré sú už uložené v účte Google, v ňom zostanú, až kým ich neodstránite pomocou služby <ph name="BEGIN_LINK" />Google Dashboard<ph name="END_LINK" />.</translation>
 <translation id="1124772482545689468">Používateľ</translation>
-<translation id="1128109161498068552">Žadnym stránkam nepovoliť používanie exkluzívnych správ na prístup k zariadeniam MIDI</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">Úprava vyhľadávača</translation>
 <translation id="1128987120443782698">Ukladací priestor zariadenia má kapacitu <ph name="DEVICE_CAPACITY" />. Vložte SD kartu alebo pamäťový kľúč USB s kapacitou minimálne 4 GB.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">Vlastné</translation>
 <translation id="1178539123212786672">Prekladač proxy serverov V8 mimo procesu</translation>
 <translation id="1178581264944972037">Pozastaviť</translation>
-<translation id="1179803038870941185">Stránka <ph name="URL" /> chce získať úplnú kontrolu nad vašimi zariadeniami MIDI.</translation>
 <translation id="1181037720776840403">Odstrániť</translation>
 <translation id="1183083053288481515">Používa sa certifikát, ktorý poskytol správca</translation>
 <translation id="1183237619868651138">Súbor <ph name="EXTERNAL_CRX_FILE" /> nie je možné nainštalovať v miestnej vyrovnávacej pamäti</translation>
@@ -658,7 +656,6 @@
 <translation id="1844692022597038441">Tento súbor nie je k dispozícii v režime offline.</translation>
 <translation id="1846308012215045257">Doplnok <ph name="PLUGIN_NAME" /> spustíte súčasným stlačením tlačidla Ctrl a kliknutím</translation>
 <translation id="184633654410729720">Thajská klávesnica (Kedmanee)</translation>
-<translation id="1849186935225320012">Táto stránka má úplnú kontrolu nad zariadeniami MIDI.</translation>
 <translation id="1850508293116537636">Otočiť &amp;v smere hodinových ručičiek</translation>
 <translation id="1852799913675865625">Pri čítaní súboru sa vyskytla chyba: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">Pridať umiestnenie...</translation>
@@ -795,7 +792,6 @@
 <translation id="2080070583977670716">Ďalšie nastavenia</translation>
 <translation id="2081322486940989439">Tieto stránky neprijímajú karty Visa.</translation>
 <translation id="2085470240340828803">Súbor s názvom <ph name="FILENAME" /> už existuje. Čo chcete urobiť?</translation>
-<translation id="2085985589726507051">Web MIDI API</translation>
 <translation id="2087822576218954668">Tlač: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">Ak chcete obnoviť informácie o svojom účte, prejdite na stránku google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">Nastavenie zabezpečenia systému</translation>
@@ -907,7 +903,6 @@ Do úplného nabitia zostáva: <ph name="HOUR" />:<ph name="MINUTE" /></translat
 <translation id="2222641695352322289">Jediný spôsob ako to napraviť, je zopakovať inštaláciu systému <ph name="IDS_SHORT_PRODUCT_OS_NAME" />.</translation>
 <translation id="2224444042887712269">Nastavenie patrí používateľovi <ph name="OWNER_EMAIL" />.</translation>
 <translation id="2224551243087462610">Upraviť názov priečinka</translation>
-<translation id="2226449515541314767">Týmto stránkam bola zablokovaná úplná kontrola nad zariadeniami MIDI.</translation>
 <translation id="2226720438730111184">Povedzte nám, čo sa deje</translation>
 <translation id="2229161054156947610">Zostáva viac ako 1 hodina</translation>
 <translation id="222931766245975952">Súbor bol upravený</translation>
@@ -1527,7 +1522,6 @@ Tieto webové stránky by podľa mňa nemali byť blokované.</translation>
 <translation id="297870353673992530">Server DNS:</translation>
 <translation id="2981113813906970160">Zobraziť veľký kurzor myši</translation>
 <translation id="2984337792991268709">Dnes o <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">Tejto stránke bola zablokovaná úplná kontrola nad zariadeniami MIDI.</translation>
 <translation id="2987775926667433828">Tradičná čínština</translation>
 <translation id="2987776766682852234">Zníženie predvolenej úrovne podrobnosti hlavičky „referer“.</translation>
 <translation id="2989474696604907455">nepripojené</translation>
@@ -1737,7 +1731,6 @@ Pri vytvorení kontrolovaného používateľa sa nevytvorí účet Google a jeh
 <translation id="3254434849914415189">Zvoľte pre súbory <ph name="FILE_TYPE" /> predvolenú aplikáciu:</translation>
 <translation id="3255228561559750854">Vyhľadávajte alebo vyslovte „Ok Google“</translation>
 <translation id="3257011895468050906">Povolenie podpory viazania tokenov.</translation>
-<translation id="326356299252142602">Použitie rozhrania Windows Runtime MIDI API</translation>
 <translation id="3264544094376351444">Bezpätkové písmo</translation>
 <translation id="3264547943200567728">Nepodarilo sa nastaviť sieť pre vaše zariadenie Chromebox</translation>
 <translation id="3265459715026181080">Zatvoriť okno</translation>
@@ -1959,7 +1952,6 @@ z domény <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3530751398950974194">Aktualizovať prístupovú frázu synchronizácie</translation>
 <translation id="3531250013160506608">Textové pole hesla</translation>
 <translation id="3534879087479077042">Čo je kontrolovaný používateľ?</translation>
-<translation id="3535652963535405415">Povoliť experimentálnu podporu rozhrania API Web MIDI.</translation>
 <translation id="354060433403403521">Sieťový napájací adaptér</translation>
 <translation id="3541661933757219855">Klávesnicu skryjete zadaním kombinácie klávesov Ctrl+Alt+/ alebo Esc</translation>
 <translation id="3543393733900874979">Aktualizácia zlyhala (chyba: <ph name="ERROR_NUMBER" />)</translation>
@@ -1988,7 +1980,6 @@ z domény <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3574210789297084292">prihlásiť sa</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">Litovčina</translation>
-<translation id="3575927481544652747">Zakázať pre WebMIDI rozhranie Windows Runtime MIDI API, ktoré je v systéme Windows 10 a novších systémoch predvolene aktivované.</translation>
 <translation id="3576324189521867626">Úspešne nainštalovaná</translation>
 <translation id="3578331450833904042">Predvolené (zaznamenať všetko)</translation>
 <translation id="3578594933904494462">Obsah tejto karty sa zdieľa.</translation>
@@ -3019,7 +3010,6 @@ Ak chcete pokračovať v práci, stlačte ľubovoľný kláves.</translation>
 <translation id="499165176004408815">Použiť režim s vysokým kontrastom</translation>
 <translation id="4992066212339426712">Obnoviť zvuk</translation>
 <translation id="4992458225095111526">Potvrdenia obnovenia Powerwash</translation>
-<translation id="4992576607980257687">Opýtať sa, keď budú chcieť stránky na prístup k zariadeniam MIDI použiť správy exkluzívne pre systém (odporúča sa)</translation>
 <translation id="4994474651455208930">Povoliť stránkam požiadať o nastavenie za predvolené obslužné nástroje protokolov</translation>
 <translation id="4998873842614926205">Potvrdiť zmeny</translation>
 <translation id="4999273653895592255">Tento príznak umožňuje ovládať, či sa v okne výberu prenosu obrazovky použije staré alebo nové používateľské rozhranie.</translation>
@@ -3617,7 +3607,6 @@ s ostatnými, a to všetko na jednom mieste.<ph name="MARKUP_9" /></translatio
 <translation id="5774295353725270860">Otvoriť aplikáciu Súbory</translation>
 <translation id="5774515636230743468">Manifest:</translation>
 <translation id="577624874850706961">Hľadať súbory cookie</translation>
-<translation id="5778550464785688721">Úplné ovládanie zariadení MIDI</translation>
 <translation id="5780066559993805332">(Najlepšie)</translation>
 <translation id="5780973441651030252">Priorita procesov</translation>
 <translation id="5783221160790377646">Kontrolovaný používateľ sa nevytvoril z dôvodu chyby. Skúste to znova neskôr.</translation>
@@ -3751,7 +3740,6 @@ s ostatnými, a to všetko na jednom mieste.<ph name="MARKUP_9" /></translatio
 <translation id="5965403572731919803">Pridať na poličku...</translation>
 <translation id="5965661248935608907">Tiež určuje, ktorá stránka sa zobrazí po kliknutí na tlačidlo Domovská stránka alebo pri vyhľadávaní pomocou všeobecného poľa.</translation>
 <translation id="5971037678316050792">Ovládanie stavu a párovania adaptéra Bluetooth</translation>
-<translation id="5972017421290582825">Spravovať nastavenia rozhrania MIDI...</translation>
 <translation id="5972708806901999743">Presunúť na začiatok</translation>
 <translation id="5972826969634861500">Spustiť <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">Oddialiť</translation>
@@ -3925,7 +3913,6 @@ s ostatnými, a to všetko na jednom mieste.<ph name="MARKUP_9" /></translatio
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: Prebieha pripájenie...</translation>
 <translation id="6226777517901268232">Súkromný kľúč (nepovinné)</translation>
 <translation id="6227235786875481728">Tento súbor nie je možné prehrať.</translation>
-<translation id="6228691855869374890">Tieto stránky majú úplnú kontrolu nad zariadeniami MIDI.</translation>
 <translation id="6231148928368101651">Panely</translation>
 <translation id="6231881193380278751">Pridajte do webovej adresy parameter dopytu na automatickú aktualizáciu stránky: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">Batéria</translation>
@@ -4579,7 +4566,6 @@ s ostatnými, a to všetko na jednom mieste.<ph name="MARKUP_9" /></translatio
 <translation id="711902386174337313">Čítať zoznam zariadení, v ktorých ste prihlásení</translation>
 <translation id="7119389851461848805">napájanie</translation>
 <translation id="7119832699359874134">Neplatný kód CVC. Skontrolujte ho a skúste to znova.</translation>
-<translation id="7122132768827815392">Použitie rozhrania Windows Runtime MIDI API v prípade rozhrania WebMIDI (funguje v systéme Windows 10 a novšom).</translation>
 <translation id="7122169255686960726">Ďalšie kópie</translation>
 <translation id="7126604456862387217">„&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;“ – &lt;em&gt;hľadať na Disku&lt;/em&gt;</translation>
 <translation id="7127980134843952133">História sťahovania</translation>
@@ -4994,7 +4980,6 @@ s ostatnými, a to všetko na jednom mieste.<ph name="MARKUP_9" /></translatio
 <translation id="7706319470528945664">portugalská klávesnica</translation>
 <translation id="7709152031285164251">Zlyhanie – <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">Kliknutím na položku Pokračovať vyjadrujete súhlas s dokumentmi <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" /> a <ph name="LEGAL_DOC_LINK_TEXT_5" />.</translation>
-<translation id="7713320380037170544">Povoliť všetkým stránkam používať na prístup k zariadeniam MIDI správy exkluzívne pre systém</translation>
 <translation id="7714464543167945231">Certifikát</translation>
 <translation id="7716020873543636594">Automaticky kliknúť po zastavení kurzora myši</translation>
 <translation id="7716284821709466371">Predvolená hodnota výšky dlaždice</translation>
@@ -5175,7 +5160,6 @@ s ostatnými, a to všetko na jednom mieste.<ph name="MARKUP_9" /></translatio
 <translation id="7965010376480416255">Zdieľaná pamäť</translation>
 <translation id="7966241909927244760">K&amp;opírovať adresu obrázka</translation>
 <translation id="7967437925638594022">Rozšírenia a aplikácie</translation>
-<translation id="7968796119156413760">Použiť rozhranie Android Midi API pre WebMIDI (funguje iba pre zariadenia s Androidom verzie Marshmallow a novšej).</translation>
 <translation id="7968833647796919681">Povoliť zhromažďovanie údajov o výkonnosti</translation>
 <translation id="7968982339740310781">Zobraziť podrobnosti</translation>
 <translation id="7969525169268594403">Slovinčina</translation>
@@ -5320,7 +5304,6 @@ Súbor kľúča uložte na bezpečné miesto. Budete ho potrebovať na vytvoreni
 <translation id="8146793085009540321">Prihlásenie zlyhalo. Kontaktujte svojho správcu alebo to skúste znova.</translation>
 <translation id="8148264977957212129">Metóda vstupu Pinyin</translation>
 <translation id="8148913456785123871">Zobraziť karty Google Now v aplikácii launcher</translation>
-<translation id="8150391391298684512">Zakázanie rozhrania Windows Runtime MIDI API</translation>
 <translation id="8151185429379586178">Nástroje pre vývojárov</translation>
 <translation id="8151638057146502721">Konfigurovať</translation>
 <translation id="8151639108075998630">Povoliť hosťovské prehliadanie</translation>
@@ -5654,7 +5637,6 @@ Prebieha výpočet času do úplného nabitia</translation>
 <translation id="8603912787021349466">Povoliť automatické spúšťanie aplikácií pre Android po prihlásení.</translation>
 <translation id="8605428685123651449">Pamäť nástroja SQLite</translation>
 <translation id="8605503133013456784">Nepodarilo sa odpojiť a zrušiť párovanie so zariadením „<ph name="DEVICE_NAME" />“.</translation>
-<translation id="8606726445206553943">Používať zariadenia MIDI</translation>
 <translation id="8609465669617005112">Presunúť nahor</translation>
 <translation id="8610892630019863050">Opýtať sa, keď chcú webové stránky zobrazovať upozornenia (odporúčané)</translation>
 <translation id="8615618338313291042">Aplikácia inkognito: <ph name="APP_NAME" /></translation>
@@ -5901,7 +5883,6 @@ Prebieha výpočet času do úplného nabitia</translation>
 <translation id="8926389886865778422">Túto otázku už nezobrazovať</translation>
 <translation id="8926518602592448999">Zakázanie rozšírení spustených v režime vývojára</translation>
 <translation id="8931394284949551895">Nové zariadenia</translation>
-<translation id="8932730422557198035">Použitie rozhrania Android Midi API</translation>
 <translation id="8933960630081805351">&amp;Zobraziť v aplikácii Finder</translation>
 <translation id="8934732568177537184">Pokračovať</translation>
 <translation id="8938356204940892126">Vzdávam sa</translation>

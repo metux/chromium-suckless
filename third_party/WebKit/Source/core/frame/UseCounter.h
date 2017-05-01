@@ -662,7 +662,6 @@ class CORE_EXPORT UseCounter {
     V8XPathEvaluator_CreateExpression_Method = 854,
     V8XPathEvaluator_CreateNSResolver_Method = 855,
     V8XPathEvaluator_Evaluate_Method = 856,
-    RequestMIDIAccess = 857,
     V8MouseEvent_LayerX_AttributeGetter = 858,
     V8MouseEvent_LayerY_AttributeGetter = 859,
     InnerTextWithShadowTree = 860,
@@ -928,7 +927,6 @@ class CORE_EXPORT UseCounter {
     EventComposed = 1140,
     GeolocationInsecureOriginIframe = 1141,
     GeolocationSecureOriginIframe = 1142,
-    RequestMIDIAccessIframe = 1143,
     GetUserMediaInsecureOriginIframe = 1144,
     GetUserMediaSecureOriginIframe = 1145,
     ElementRequestPointerLockIframe = 1146,
@@ -1158,7 +1156,6 @@ class CORE_EXPORT UseCounter {
 
     PointerEventSetCapture = 1431,
     PointerEventDispatch = 1432,
-    MIDIMessageEventReceivedTime = 1433,
     SummaryElementWithDisplayBlockAuthorRule = 1434,
     V8MediaStream_Active_AttributeGetter = 1435,
     BeforeInstallPromptEvent = 1436,

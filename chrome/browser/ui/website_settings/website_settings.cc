@@ -113,7 +113,6 @@ ContentSettingsType kPermissionType[] = {
 #endif
     CONTENT_SETTINGS_TYPE_FULLSCREEN,
     CONTENT_SETTINGS_TYPE_AUTOPLAY,
-    CONTENT_SETTINGS_TYPE_MIDI_SYSEX,
 };
 
 // Determines whether to show permission |type| in the Website Settings UI. Only

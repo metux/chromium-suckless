@@ -1,7 +1,6 @@
 # NOTE: Do not use these owners when you're in a subdirectory that has
 # OWNERS file. For example:
 # - cast
-# - midi
 # - ozone
 # - capture/{content,video}
 # Instead prefer the OWNERS in the subdirectory as they will be more familiar,

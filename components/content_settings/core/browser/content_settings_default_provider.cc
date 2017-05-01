@@ -149,11 +149,6 @@ DefaultProvider::DefaultProvider(PrefService* prefs, bool incognito)
           GetPrefName(CONTENT_SETTINGS_TYPE_MEDIASTREAM_CAMERA))),
       CONTENT_SETTING_NUM_SETTINGS);
   UMA_HISTOGRAM_ENUMERATION(
-      "ContentSettings.DefaultMIDISysExSetting",
-      IntToContentSetting(prefs_->GetInteger(
-          GetPrefName(CONTENT_SETTINGS_TYPE_MIDI_SYSEX))),
-      CONTENT_SETTING_NUM_SETTINGS);
-  UMA_HISTOGRAM_ENUMERATION(
       "ContentSettings.DefaultKeygenSetting",
       IntToContentSetting(prefs_->GetInteger(
           GetPrefName(CONTENT_SETTINGS_TYPE_KEYGEN))),

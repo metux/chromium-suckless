@@ -71,7 +71,6 @@
 #include "gin/public/gin_features.h"
 #include "media/audio/audio_features.h"
 #include "media/base/media_switches.h"
-#include "media/midi/midi_switches.h"
 #include "ui/base/ui_base_switches.h"
 #include "ui/compositor/compositor_switches.h"
 #include "ui/display/display_switches.h"
@@ -1689,9 +1688,6 @@ const FeatureEntry kFeatureEntries[] = {
     {"ntp-switch-to-existing-tab", IDS_FLAGS_NTP_SWITCH_TO_EXISTING_TAB_NAME,
      IDS_FLAGS_NTP_SWITCH_TO_EXISTING_TAB_DESCRIPTION, kOsAndroid,
      MULTI_VALUE_TYPE(kNtpSwitchToExistingTabChoices)},
-    {"use-android-midi-api", IDS_FLAGS_USE_ANDROID_MIDI_API_NAME,
-     IDS_FLAGS_USE_ANDROID_MIDI_API_DESCRIPTION, kOsAndroid,
-     SINGLE_VALUE_TYPE(switches::kUseAndroidMidiApi)},
 #endif  // OS_ANDROID
 #if defined(OS_WIN)
     {"trace-export-events-to-etw", IDS_FLAGS_TRACE_EXPORT_EVENTS_TO_ETW_NAME,
@@ -1701,9 +1697,6 @@ const FeatureEntry kFeatureEntries[] = {
      IDS_FLAGS_MERGE_KEY_CHAR_EVENTS_DESCRIPTION, kOsWin,
      ENABLE_DISABLE_VALUE_TYPE(switches::kEnableMergeKeyCharEvents,
                                switches::kDisableMergeKeyCharEvents)},
-    {"use-winrt-midi-api", IDS_FLAGS_USE_WINRT_MIDI_API_NAME,
-     IDS_FLAGS_USE_WINRT_MIDI_API_DESCRIPTION, kOsWin,
-     FEATURE_VALUE_TYPE(media::midi::features::kMidiManagerWinrt)},
 #endif  // OS_WIN
 #if BUILDFLAG(ENABLE_BACKGROUND)
     {"enable-push-api-background-mode", IDS_FLAGS_PUSH_API_BACKGROUND_MODE_NAME,

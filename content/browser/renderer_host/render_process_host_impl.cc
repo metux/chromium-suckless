@@ -81,7 +81,6 @@
 #include "content/browser/media/capture/audio_mirroring_manager.h"
 #include "content/browser/media/capture/image_capture_impl.h"
 #include "content/browser/media/media_internals.h"
-#include "content/browser/media/midi_host.h"
 #include "content/browser/memory/memory_coordinator.h"
 #include "content/browser/memory/memory_message_filter.h"
 #include "content/browser/message_port_message_filter.h"
@@ -1094,8 +1093,6 @@ void RenderProcessHostImpl::CreateMessageFilters() {
       media_internals, media_stream_manager,
       browser_context->GetResourceContext()->GetMediaDeviceIDSalt());
   AddFilter(audio_renderer_host_.get());
-  AddFilter(
-      new MidiHost(GetID(), BrowserMainLoop::GetInstance()->midi_manager()));
   AddFilter(new VideoCaptureHost(media_stream_manager));
   AddFilter(new AppCacheDispatcherHost(
       storage_partition_impl_->GetAppCacheService(), GetID()));

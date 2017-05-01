@@ -86,12 +86,10 @@ message PermissionReport {
   // corresponding Safe Browsing logs enum.
   enum PermissionType {
     UNKNOWN_PERMISSION = 0;
-    MIDI_SYSEX = 1;
     PUSH_MESSAGING = 2;
     NOTIFICATIONS = 3;
     GEOLOCATION = 4;
     PROTECTED_MEDIA_IDENTIFIER = 5;
-    MIDI = 6;
     DURABLE_STORAGE = 7;
     AUDIO_CAPTURE = 8;
     VIDEO_CAPTURE = 9;

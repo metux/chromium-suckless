@@ -30,7 +30,6 @@ class AwPermissionRequest {
     VideoCapture = 1 << 1,
     AudioCapture = 1 << 2,
     ProtectedMediaId = 1 << 3,
-    MIDISysex = 1 << 4,
   };
 
   // Take the ownership of |delegate|. Returns the native pointer in

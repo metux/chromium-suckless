@@ -141,9 +141,6 @@ public class ContentSettingsResources {
                     new ResourceItem(R.drawable.permission_mic, R.string.website_settings_use_mic,
                             R.string.mic_permission_title, ContentSetting.ASK, ContentSetting.BLOCK,
                             R.string.website_settings_category_mic_ask, 0));
-            localMap.put(ContentSettingsType.CONTENT_SETTINGS_TYPE_MIDI_SYSEX,
-                    new ResourceItem(R.drawable.permission_midi, 0,
-                                 R.string.midi_sysex_permission_title, null, null, 0, 0));
             localMap.put(ContentSettingsType.CONTENT_SETTINGS_TYPE_NOTIFICATIONS,
                     new ResourceItem(R.drawable.permission_push_notification,
                                  R.string.push_notifications_permission_title,

@@ -356,10 +356,6 @@ class PermissionContextBaseTests : public ChromeRenderViewHostTestHarness {
     }
 
     for (uint32_t i = 0; i < 5; ++i) {
-      TestPermissionContext permission_context(
-          profile(), content::PermissionType::MIDI_SYSEX,
-          CONTENT_SETTINGS_TYPE_MIDI_SYSEX);
-
       ContentSetting expected =
           (i < 4) ? CONTENT_SETTING_ASK : CONTENT_SETTING_BLOCK;
       const PermissionRequestID id(
@@ -377,17 +373,9 @@ class PermissionContextBaseTests : public ChromeRenderViewHostTestHarness {
       EXPECT_TRUE(permission_context.tab_context_updated());
       EXPECT_EQ(expected,
                 permission_context.GetContentSettingFromMap(url, url));
-
-      histograms.ExpectTotalCount(
-          "Permissions.Prompt.Dismissed.PriorDismissCount.MidiSysEx", i + 1);
-      histograms.ExpectBucketCount(
-          "Permissions.Prompt.Dismissed.PriorDismissCount.MidiSysEx", i, 1);
     }
 
     // Ensure that we finish in the block state.
-    TestPermissionContext permission_context(
-        profile(), content::PermissionType::MIDI_SYSEX,
-        CONTENT_SETTINGS_TYPE_MIDI_SYSEX);
     EXPECT_EQ(CONTENT_SETTING_BLOCK,
               permission_context.GetContentSettingFromMap(url, url));
     variations::testing::ClearAllVariationParams();
@@ -558,14 +546,6 @@ TEST_F(PermissionContextBaseTests, TestAskAndBlockNoPersist) {
                                CONTENT_SETTING_BLOCK, false);
 }
 
-// Simulates clicking Dismiss (X) in the infobar/bubble.
-// The permission should be denied but not saved for future use.
-TEST_F(PermissionContextBaseTests, TestAskAndDismiss) {
-  TestAskAndDecide_TestContent(content::PermissionType::MIDI_SYSEX,
-                               CONTENT_SETTINGS_TYPE_MIDI_SYSEX,
-                               CONTENT_SETTING_ASK, false);
-}
-
 // Simulates clicking Dismiss (X) in the infobar/bubble with the block on too
 // many dismissals feature active. The permission should be blocked after
 // several dismissals.
@@ -585,8 +565,6 @@ TEST_F(PermissionContextBaseTests, TestNonValidRequestingUrl) {
                                   CONTENT_SETTINGS_TYPE_GEOLOCATION);
   TestRequestPermissionInvalidUrl(content::PermissionType::NOTIFICATIONS,
                                   CONTENT_SETTINGS_TYPE_NOTIFICATIONS);
-  TestRequestPermissionInvalidUrl(content::PermissionType::MIDI_SYSEX,
-                                  CONTENT_SETTINGS_TYPE_MIDI_SYSEX);
   TestRequestPermissionInvalidUrl(content::PermissionType::PUSH_MESSAGING,
                                   CONTENT_SETTINGS_TYPE_NOTIFICATIONS);
 #if defined(OS_ANDROID) || defined(OS_CHROMEOS)
@@ -601,9 +579,6 @@ TEST_F(PermissionContextBaseTests, TestNonValidRequestingUrl) {
 TEST_F(PermissionContextBaseTests, TestGrantAndRevokeWithInfobars) {
   TestGrantAndRevoke_TestContent(content::PermissionType::GEOLOCATION,
                                  CONTENT_SETTINGS_TYPE_GEOLOCATION,
-                                 CONTENT_SETTING_ASK);
-  TestGrantAndRevoke_TestContent(content::PermissionType::MIDI_SYSEX,
-                                 CONTENT_SETTINGS_TYPE_MIDI_SYSEX,
                                  CONTENT_SETTING_ASK);
   TestGrantAndRevoke_TestContent(
       content::PermissionType::PROTECTED_MEDIA_IDENTIFIER,
@@ -626,9 +601,6 @@ TEST_F(PermissionContextBaseTests, TestGrantAndRevokeWithBubbles) {
                                  CONTENT_SETTINGS_TYPE_NOTIFICATIONS,
                                  CONTENT_SETTING_ASK);
 #endif
-  TestGrantAndRevoke_TestContent(content::PermissionType::MIDI_SYSEX,
-                                 CONTENT_SETTINGS_TYPE_MIDI_SYSEX,
-                                 CONTENT_SETTING_ASK);
   TestGrantAndRevoke_TestContent(content::PermissionType::PUSH_MESSAGING,
                                  CONTENT_SETTINGS_TYPE_NOTIFICATIONS,
                                  CONTENT_SETTING_ASK);
@@ -641,8 +613,6 @@ TEST_F(PermissionContextBaseTests, TestGlobalKillSwitch) {
                                   CONTENT_SETTINGS_TYPE_GEOLOCATION);
   TestGlobalPermissionsKillSwitch(content::PermissionType::NOTIFICATIONS,
                                   CONTENT_SETTINGS_TYPE_NOTIFICATIONS);
-  TestGlobalPermissionsKillSwitch(content::PermissionType::MIDI_SYSEX,
-                                  CONTENT_SETTINGS_TYPE_MIDI_SYSEX);
   TestGlobalPermissionsKillSwitch(content::PermissionType::PUSH_MESSAGING,
                                   CONTENT_SETTINGS_TYPE_NOTIFICATIONS);
   TestGlobalPermissionsKillSwitch(content::PermissionType::DURABLE_STORAGE,

@@ -202,16 +202,8 @@ TEST_F(ContentSettingsUsagesStateTests, ClearOnNewOriginForGeolocation) {
   ClearOnNewOrigin(CONTENT_SETTINGS_TYPE_GEOLOCATION);
 }
 
-TEST_F(ContentSettingsUsagesStateTests, ClearOnNewOriginForMidi) {
-  ClearOnNewOrigin(CONTENT_SETTINGS_TYPE_MIDI_SYSEX);
-}
-
 TEST_F(ContentSettingsUsagesStateTests, ShowPortOnSameHostForGeolocation) {
   ShowPortOnSameHost(CONTENT_SETTINGS_TYPE_GEOLOCATION);
-}
-
-TEST_F(ContentSettingsUsagesStateTests, ShowPortOnSameHostForMidi) {
-  ShowPortOnSameHost(CONTENT_SETTINGS_TYPE_MIDI_SYSEX);
 }
 
 }  // namespace

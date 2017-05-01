@@ -116,7 +116,6 @@ class IndexedDBDispatcher;
 class InputHandlerManager;
 class MediaStreamCenter;
 class MemoryObserver;
-class MidiMessageFilter;
 class NetInfoDispatcher;
 class P2PSocketDispatcher;
 class PeerConnectionDependencyFactory;
@@ -304,10 +303,6 @@ class CONTENT_EXPORT RenderThreadImpl
 
   AudioMessageFilter* audio_message_filter() {
     return audio_message_filter_.get();
-  }
-
-  MidiMessageFilter* midi_message_filter() {
-    return midi_message_filter_.get();
   }
 
 #if defined(OS_ANDROID)
@@ -567,7 +562,6 @@ class CONTENT_EXPORT RenderThreadImpl
   scoped_refptr<DBMessageFilter> db_message_filter_;
   scoped_refptr<AudioInputMessageFilter> audio_input_message_filter_;
   scoped_refptr<AudioMessageFilter> audio_message_filter_;
-  scoped_refptr<MidiMessageFilter> midi_message_filter_;
   scoped_refptr<DevToolsAgentFilter> devtools_agent_message_filter_;
   std::unique_ptr<V8SamplingProfiler> v8_sampling_profiler_;
 

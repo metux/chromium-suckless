@@ -43,7 +43,6 @@ class RapporService;
 //   ContentSettingSimpleBubbleModel             - single content setting
 //     ContentSettingMixedScriptBubbleModel        - mixed script
 //     ContentSettingRPHBubbleModel                - protocol handlers
-//     ContentSettingMidiSysExBubbleModel          - midi sysex
 //     ContentSettingDomainListBubbleModel         - domain list (geolocation)
 //     ContentSettingSingleRadioGroup              - radio group
 //       ContentSettingCookiesBubbleModel            - cookies

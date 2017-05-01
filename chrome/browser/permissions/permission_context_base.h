@@ -51,7 +51,7 @@ using BrowserPermissionCallback = base::Callback<void(ContentSetting)>;
 // in particular it is advised to override UpdateTabContext in order to manage
 // the permission from the omnibox.
 // It is mandatory to override IsRestrictedToSecureOrigin.
-// See midi_permission_context.h/cc or push_permission_context.cc/h for some
+// See push_permission_context.cc/h for some
 // examples.
 
 class PermissionContextBase : public KeyedService {

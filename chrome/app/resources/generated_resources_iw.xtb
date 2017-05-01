@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">שם סימניה</translation>
 <translation id="1123316951456119629">‏לאחר ניתוק חשבון Google שלך מ-<ph name="PRODUCT_NAME" />, הנתונים שלך יישארו במחשב זה, אך השינויים לא יסתנכרנו עוד עם חשבון Google שלך. נתונים שכבר מאוחסנים בחשבון Google שלך יישארו בו עד שתסיר אותם באמצעות <ph name="BEGIN_LINK" />לוח הבקרה של Google‏<ph name="END_LINK" />.</translation>
 <translation id="1124772482545689468">משתמש</translation>
-<translation id="1128109161498068552">‏אל תאפשר לאף אתר להשתמש בהודעות בלעדיות של המערכת כדי לגשת למכשירי MIDI.</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">עריכת מנוע חיפוש</translation>
 <translation id="1128987120443782698">‏התקן האחסון הוא בעל קיבולת של <ph name="DEVICE_CAPACITY" />. הכנס כרטיס SD או מקל זיכרון USB עם קיבולת של ‎4GB לפחות.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">מותאם אישית</translation>
 <translation id="1178539123212786672">‏V8 Proxy Resolver מחוץ לתהליך.</translation>
 <translation id="1178581264944972037">השהה</translation>
-<translation id="1179803038870941185">‏<ph name="URL" /> רוצה לקבל שליטה מלאה על מכשירי MIDI שלך.</translation>
 <translation id="1181037720776840403">הסר</translation>
 <translation id="1183083053288481515">משתמש באישור שהוענק על ידי מנהל מערכת</translation>
 <translation id="1183237619868651138">לא ניתן להתקין את <ph name="EXTERNAL_CRX_FILE" /> במטמון המקומי.</translation>
@@ -654,7 +652,6 @@
 <translation id="1844692022597038441">קובץ זו אינו זמין במצב לא מקוון.</translation>
 <translation id="1846308012215045257">‏כדי להפעיל את <ph name="PLUGIN_NAME" />, לחץ עליו תוך כדי הקשה על Control</translation>
 <translation id="184633654410729720">‏מקלדת תאילנדית (Kedmanee)</translation>
-<translation id="1849186935225320012">‏לדף זה יש שליטה מלאה על מכשירי MIDI.</translation>
 <translation id="1850508293116537636">סובב &amp;בכיוון השעון</translation>
 <translation id="1852799913675865625">אירעה שגיאה בעת ניסיון לקרוא את הקובץ: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">הוסף מיקום...</translation>
@@ -791,7 +788,6 @@
 <translation id="2080070583977670716">הגדרות נוספות</translation>
 <translation id="2081322486940989439">‏אתר זה אינו מקבל כרטיסי אשראי מסוג Visa.</translation>
 <translation id="2085470240340828803">כבר קיים קובץ בשם "<ph name="FILENAME" />". מה ברצונך לעשות?</translation>
-<translation id="2085985589726507051">‏MIDI API באינטרנט</translation>
 <translation id="2087822576218954668">הדפס: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">‏כדי לשחזר את המידע מהחשבון, עבור אל: google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">הגדרה של אבטחת מערכת</translation>
@@ -901,7 +897,6 @@
 <translation id="2222641695352322289">הדרך היחידה לבטל פעולה זו היא להתקין מחדש את <ph name="IDS_SHORT_PRODUCT_OS_NAME" />.</translation>
 <translation id="2224444042887712269">ההגדרה הזו שייכת ל-<ph name="OWNER_EMAIL" />.</translation>
 <translation id="2224551243087462610">ערוך את שם התיקייה</translation>
-<translation id="2226449515541314767">‏האפשרות לשלוט שליטה מלאה על מכשירי MIDI נחסמה עבור אתר זה.</translation>
 <translation id="2226720438730111184">ספר לנו מה קורה</translation>
 <translation id="2229161054156947610">נותרה יותר משעה אחת</translation>
 <translation id="222931766245975952">הקובץ נקטע</translation>
@@ -1521,7 +1516,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="297870353673992530">‏שרת DNS:</translation>
 <translation id="2981113813906970160">הצג סמן עכבר גדול</translation>
 <translation id="2984337792991268709">היום <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">‏האפשרות לשליטה מלאה על מכשירי MIDI נחסמה עבור דף זה.</translation>
 <translation id="2987775926667433828">סינית מסורתית</translation>
 <translation id="2987776766682852234">צמצם ברירת מחדל של רמת פירוט בכותרת 'גורם מפנה'.</translation>
 <translation id="2989474696604907455">לא מחובר</translation>
@@ -1730,7 +1724,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="3254434849914415189">בחר את יישום ברירת המחדל עבור קובצי <ph name="FILE_TYPE" />:</translation>
 <translation id="3255228561559750854">‏חפש, או אמור "Ok, Google"</translation>
 <translation id="3257011895468050906">‏אפשר תמיכת Token Binding.</translation>
-<translation id="326356299252142602">‏שימוש ב-Windows Runtime MIDI API</translation>
 <translation id="3264544094376351444">‏גופן Sans-Serif</translation>
 <translation id="3264547943200567728">‏נכשל הניסיון להגדיר את הרשת של ה-Chromebox</translation>
 <translation id="3265459715026181080">סגור חלון</translation>
@@ -1952,7 +1945,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="3530751398950974194">עדכן את משפט הסיסמה עבור סנכרון</translation>
 <translation id="3531250013160506608">תיבת טקסט של סיסמה</translation>
 <translation id="3534879087479077042">מהו משתמש בפיקוח?</translation>
-<translation id="3535652963535405415">‏הפעל תמיכה ניסיונית בממשק ה-API של MIDI באינטרנט.</translation>
 <translation id="354060433403403521">‏מתאם AC</translation>
 <translation id="3541661933757219855">‏הקלד Ctrl+Alt+/ או Escape כדי להסתיר</translation>
 <translation id="3543393733900874979">העדכון נכשל (שגיאה: <ph name="ERROR_NUMBER" />)</translation>
@@ -1981,7 +1973,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="3574210789297084292">היכנס</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">ליטאית</translation>
-<translation id="3575927481544652747">‏השבתה של Windows Runtime MIDI API ל-WebMIDI, המופעל כברירת מחדל ב-Windows 10 ואילך.</translation>
 <translation id="3576324189521867626">הותקן בהצלחה</translation>
 <translation id="3578331450833904042">ברירת מחדל (קולט הכל)</translation>
 <translation id="3578594933904494462">התוכן בכרטיסייה הזו משותף.</translation>
@@ -3012,7 +3003,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="499165176004408815">השתמש במצב ניגודיות גבוהה</translation>
 <translation id="4992066212339426712">בטל השתקה</translation>
 <translation id="4992458225095111526">‏אשר פעולת Powerwash</translation>
-<translation id="4992576607980257687">‏שאל אותי כאשר אתר רוצה להשתמש בהודעות בלעדיות של המערכת כדי לגשת למכשירי MIDI (מומלץ)</translation>
 <translation id="4994474651455208930">אפשר לאתרים לבקש להפוך למטפלי ברירת המחדל עבור פרוטוקולים</translation>
 <translation id="4998873842614926205">אשר שינויים</translation>
 <translation id="4999273653895592255">דגל זה קובע אם נציג את ממשק המשתמש הישן או החדש של חלון לבחירת סטרימינג ממחשב שולחני.</translation>
@@ -3611,7 +3601,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="5774295353725270860">פתח את יישום הקבצים</translation>
 <translation id="5774515636230743468">מניפסט:</translation>
 <translation id="577624874850706961">‏חפש קובצי Cookie</translation>
-<translation id="5778550464785688721">‏שליטה מלאה במכשירי MIDI</translation>
 <translation id="5780066559993805332">(מומלץ ביותר)</translation>
 <translation id="5780973441651030252">עדיפות תהליך</translation>
 <translation id="5783221160790377646">עקב שגיאה, לא נוצר משתמש בפיקוח. נסה שוב מאוחר יותר.</translation>
@@ -3745,7 +3734,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="5965403572731919803">הוסף למדף...</translation>
 <translation id="5965661248935608907">הגדרה זו גם קובעת איזה דף מוצג כשאתה לוחץ על הלחצן 'דף הבית' או מבצע חיפוש מסרגל הכתובות.</translation>
 <translation id="5971037678316050792">‏הגדרת מצב ושליטה בהתאמה עבור מתאם Bluetooth</translation>
-<translation id="5972017421290582825">‏נהל הגדרות MIDI...</translation>
 <translation id="5972708806901999743">העבר למעלה</translation>
 <translation id="5972826969634861500">הפעל את <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">התרחק</translation>
@@ -3919,7 +3907,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: מתחבר...</translation>
 <translation id="6226777517901268232">קובץ מפתח פרטי (אופציונלי)</translation>
 <translation id="6227235786875481728">לא ניתן להפעיל קובץ זה.</translation>
-<translation id="6228691855869374890">‏לאתר זה יש שליטה מלאה על מכשירי MIDI.</translation>
 <translation id="6231148928368101651">חלוניות</translation>
 <translation id="6231881193380278751">‏הוסף פרמטר שאילתה בכתובת האתר כדי לרענן את הדף באופן אוטומטי: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">סוללה</translation>
@@ -4572,7 +4559,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="711902386174337313">קריאה של רשימת ההתקנים המחוברים שלך</translation>
 <translation id="7119389851461848805">הפעלה</translation>
 <translation id="7119832699359874134">קוד אימות לא חוקי. בדוק ונסה שוב.</translation>
-<translation id="7122132768827815392">‏השתמש ב-Windows Runtime MIDI API ל-WebMIDI (תקף רק ב-Windows 10 ומעלה).</translation>
 <translation id="7122169255686960726">עותקים נוספים</translation>
 <translation id="7126604456862387217">‏'&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;' - &lt;em&gt;חפש בכונן&lt;/em&gt;</translation>
 <translation id="7127980134843952133">היסטוריית הורדות</translation>
@@ -4979,7 +4965,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="7706319470528945664">מקלדת פורטוגזית</translation>
 <translation id="7709152031285164251">נכשל - <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">בלחיצה על 'המשך', אתה מביע הסכמה ל<ph name="LEGAL_DOC_LINK_TEXT_1" />‏, <ph name="LEGAL_DOC_LINK_TEXT_2" />‏, <ph name="LEGAL_DOC_LINK_TEXT_3" />‏, <ph name="LEGAL_DOC_LINK_TEXT_4" />, ו<ph name="LEGAL_DOC_LINK_TEXT_5" />.</translation>
-<translation id="7713320380037170544">‏אפשר לכל האתרים להשתמש בהודעות בלעדיות של המערכת כדי לגשת למכשירי MIDI</translation>
 <translation id="7714464543167945231">אישור</translation>
 <translation id="7716020873543636594">קליק אוטומטי כשסמן העכבר עוצר</translation>
 <translation id="7716284821709466371">ברירת מחדל של גובה אריח</translation>
@@ -5160,7 +5145,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="7965010376480416255">זיכרון משותף</translation>
 <translation id="7966241909927244760">העתק כתובת &amp;תמונה</translation>
 <translation id="7967437925638594022">תוספים ואפליקציות</translation>
-<translation id="7968796119156413760">‏השתמש בממשק ה-API של Android Midi עבור WebMIDI (תקף רק במכשירים שבהם פועל  Android M+‎).</translation>
 <translation id="7968833647796919681">הפעל איסוף של נתוני ביצועים</translation>
 <translation id="7968982339740310781">הצג פרטים</translation>
 <translation id="7969525169268594403">סלובנית</translation>
@@ -5305,7 +5289,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="8146793085009540321">הכניסה נכשלה. צור קשר עם מנהל המערכת או נסה שוב.</translation>
 <translation id="8148264977957212129">‏שיטת קלט Pinyin</translation>
 <translation id="8148913456785123871">‏הצג כרטיסים של Google Now במפעיל היישומים</translation>
-<translation id="8150391391298684512">‏השבת את Windows Runtime MIDI API</translation>
 <translation id="8151185429379586178">כלים למפתחים</translation>
 <translation id="8151638057146502721">הגדר</translation>
 <translation id="8151639108075998630">הפוך גלישה של אורחים  לפעילה</translation>
@@ -5638,7 +5621,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="8603912787021349466">‏אפשר הפעלה אוטומטית של אפליקציות ל-Android לאחר כניסה.</translation>
 <translation id="8605428685123651449">‏זיכרון SQLite</translation>
 <translation id="8605503133013456784">נכשל הניסיון להתנתק או לבטל את ההתאמה של "<ph name="DEVICE_NAME" />".</translation>
-<translation id="8606726445206553943">‏להשתמש במכשירי ה-MIDI שלך</translation>
 <translation id="8609465669617005112">הזז למעלה</translation>
 <translation id="8610892630019863050">שאל כשאתר רוצה להציג הודעות (מומלץ)</translation>
 <translation id="8615618338313291042">יישום גלישה בסתר: <ph name="APP_NAME" /></translation>
@@ -5885,7 +5867,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="8926389886865778422">אל תשאל שוב</translation>
 <translation id="8926518602592448999">השבתת תוספים במצב מפתח</translation>
 <translation id="8931394284949551895">מכשירים חדשים</translation>
-<translation id="8932730422557198035">‏השתמש בממשק ה-API של Android Midi</translation>
 <translation id="8933960630081805351">‏ה&amp;צג ב-Finder</translation>
 <translation id="8934732568177537184">המשך</translation>
 <translation id="8938356204940892126">אני מוותר</translation>

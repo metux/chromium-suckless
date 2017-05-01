@@ -44,7 +44,6 @@ You must have Bluetooth and Location turned on in order to use the Physical Web.
 <translation id="1423209968422390786">Location access is <ph name="BEGIN_LINK" />turned off for this device<ph name="END_LINK" />.</translation>
 <translation id="1430915738399379752">Print</translation>
 <translation id="1445680696957526815">Chrome’s components are incompatible with one another. Chrome may be upgrading, please try again in a few minutes. If the problem continues, try uninstalling and re-installing Chrome.</translation>
-<translation id="1446450296470737166">Allow full control of MIDI devices</translation>
 <translation id="145097072038377568">Turned off in Android Settings</translation>
 <translation id="147006957810816598">You won’t be signed out of your Google account.</translation>
 <translation id="1477626028522505441"><ph name="FILE_NAME" /> download failed due to server issues.</translation>

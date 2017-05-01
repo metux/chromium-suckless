@@ -392,8 +392,6 @@ source_set("blink_headers") {
     "platform/modules/serviceworker/WebServiceWorkerSkipWaitingCallbacks.h",
     "platform/modules/serviceworker/WebServiceWorkerState.h",
     "platform/modules/vr/WebVR.h",
-    "platform/modules/webmidi/WebMIDIAccessor.h",
-    "platform/modules/webmidi/WebMIDIAccessorClient.h",
     "platform/modules/websockets/WebSocketHandle.h",
     "platform/modules/websockets/WebSocketHandleClient.h",
     "platform/modules/websockets/WebSocketHandshakeRequestInfo.h",

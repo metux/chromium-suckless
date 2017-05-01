@@ -161,8 +161,6 @@ class TestRunner : public WebTestRunner {
   void setDragImage(const blink::WebImage& drag_image);
   bool shouldDumpNavigationPolicy() const;
 
-  bool midiAccessorResult();
-
   // Methods used by MockColorChooser:
   void DidOpenChooser();
   void DidCloseChooser();
@@ -525,9 +523,6 @@ class TestRunner : public WebTestRunner {
   // Resets between tests.
   void SetPOSIXLocale(const std::string& locale);
 
-  // MIDI function to control permission handling.
-  void SetMIDIAccessorResult(bool result);
-
   // Simulates a click on a Web Notification.
   void SimulateWebNotificationClick(const std::string& title, int action_index);
 
@@ -600,9 +595,6 @@ class TestRunner : public WebTestRunner {
   // If true and test_repaint_ is true as well, pixel dump will be produced as
   // a series of 1px-wide, view-tall paints across the width of the view.
   bool sweep_horizontally_;
-
-  // If false, MockWebMIDIAccessor fails on startSession() for testing.
-  bool midi_accessor_result_;
 
   bool has_custom_text_output_;
   std::string custom_text_output_;

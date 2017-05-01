@@ -10,7 +10,6 @@
 #include "components/test_runner/app_banner_client.h"
 #include "components/test_runner/mock_web_audio_device.h"
 #include "components/test_runner/mock_web_media_stream_center.h"
-#include "components/test_runner/mock_web_midi_accessor.h"
 #include "components/test_runner/mock_webrtc_peer_connection_handler.h"
 #include "components/test_runner/test_interfaces.h"
 #include "components/test_runner/test_runner.h"
@@ -72,11 +71,6 @@ WebRTCPeerConnectionHandler*
 WebTestInterfaces::CreateWebRTCPeerConnectionHandler(
     WebRTCPeerConnectionHandlerClient* client) {
   return new MockWebRTCPeerConnectionHandler(client, interfaces_.get());
-}
-
-WebMIDIAccessor* WebTestInterfaces::CreateMIDIAccessor(
-    WebMIDIAccessorClient* client) {
-  return new MockWebMIDIAccessor(client, interfaces_.get());
 }
 
 WebAudioDevice* WebTestInterfaces::CreateAudioDevice(double sample_rate) {

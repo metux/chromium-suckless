@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">বুকমার্কের নাম</translation>
 <translation id="1123316951456119629">আপনার Google অ্যাকাউন্টকে <ph name="PRODUCT_NAME" /> এর থেকে সংযোগ বিচ্ছিন্ন করার মাধ্যেমে, এই কম্পিউটারে করা আপনার ডেটাতে পরিবর্তনগুলি এখন আর আপনার Google অ্যাকাউন্টের সাথে সিঙ্ক হবে না৷ আপনার Google অ্যাকাউন্টে আগে থেকে সংরক্ষিত ডেটা ততক্ষন অবশিষ্ট থাকবে যতক্ষন না আপনি <ph name="BEGIN_LINK" />Google ড্যাশবোর্ড<ph name="END_LINK" /> ব্যবহার করে এগুলিকে সরাচ্ছেন৷</translation>
 <translation id="1124772482545689468">ব্যবহারকারী</translation>
-<translation id="1128109161498068552">কোনো সাইটকে MIDI ডিভাইসগুলি অ্যাক্সেস করার জন্য সিস্টেমের বিশিষ্ট বার্তাগুলি ব্যবহার করার মঞ্জুরি দেবেন না</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">সার্চ ইঞ্জিন সম্পাদনা করুন</translation>
 <translation id="1128987120443782698">সঞ্চয় ডিভাইসের <ph name="DEVICE_CAPACITY" /> ক্ষমতা আছে৷ দয়া করে কমপক্ষে 4GB ক্ষমতাসম্পন্ন কোন SD কার্ড অথবা USB মেমোরি স্টিক ঢোকান৷</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">কাস্টম</translation>
 <translation id="1178539123212786672">প্রক্রিয়া বিহীন V8 প্রক্সী সমাধানকারী।</translation>
 <translation id="1178581264944972037">বিরাম</translation>
-<translation id="1179803038870941185"><ph name="URL" /> আপনার MIDI ডিভাইসগুলির পূর্ণ নিয়ন্ত্রণ পেতে চায়৷</translation>
 <translation id="1181037720776840403">সরান</translation>
 <translation id="1183083053288481515">একজন প্রশাসক দ্বারা-সরবরাহ করা শংসাপত্র ব্যবহার করে</translation>
 <translation id="1183237619868651138">স্থানীয় ক্যাশে-এর মধ্যে <ph name="EXTERNAL_CRX_FILE" /> ইনস্টল করা যায়নি৷</translation>
@@ -658,7 +656,6 @@
 <translation id="1844692022597038441">এই ফাইলটি অফলাইনে উপলব্ধ নয়৷</translation>
 <translation id="1846308012215045257"><ph name="PLUGIN_NAME" /> চালানোর জন্য Control-ক্লিক করুন</translation>
 <translation id="184633654410729720">থাই কীবোর্ড (কেদমানি)</translation>
-<translation id="1849186935225320012">এই পৃষ্ঠাটির MIDI ডিভাইসগুলির উপর সম্পূর্ণ নিয়ন্ত্রণ আছে৷</translation>
 <translation id="1850508293116537636">&amp;ঘড়ির কাঁটার দিকে ঘোরান</translation>
 <translation id="1852799913675865625"><ph name="ERROR_TEXT" /> ফাইলটি পড়ার চেষ্টা করার সময় একটি ত্রুটি ঘটেছিল৷</translation>
 <translation id="1856715684130786728">অবস্থান যোগ করুন...</translation>
@@ -795,7 +792,6 @@
 <translation id="2080070583977670716">আরো সেটিংস</translation>
 <translation id="2081322486940989439">এই সাইটটি Visa গ্রহণ করে না।</translation>
 <translation id="2085470240340828803">"<ph name="FILENAME" />" নামের একটি ফাইল ইতিমধ্যেই বিদ্যমান৷ আপনি কী করতে চান?</translation>
-<translation id="2085985589726507051">ওয়েব MIDI API</translation>
 <translation id="2087822576218954668">প্রিন্ট করুন: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">আপনার অ্যাকাউন্ট তথ্য পুনরুদ্ধার করার জন্য, google.com/accounts/recovery-এ যান</translation>
 <translation id="2090876986345970080">সিস্টেম সুরক্ষা সেটিং</translation>
@@ -905,7 +901,6 @@
 <translation id="2222641695352322289">এটি পূর্বাবস্থায় ফিরিয়ে আনার একমাত্র উপায় হল <ph name="IDS_SHORT_PRODUCT_OS_NAME" /> পুনরায় ইনস্টল করা৷</translation>
 <translation id="2224444042887712269">এই সেটিংটি <ph name="OWNER_EMAIL" /> এর৷</translation>
 <translation id="2224551243087462610">ফোল্ডার নাম সম্পাদনা করুন</translation>
-<translation id="2226449515541314767">MIDI ডিভাইসগুলির সম্পূর্ণ নিয়ন্ত্রণ থেকে এই সাইটিকে অবরুদ্ধ করা হয়েছে৷</translation>
 <translation id="2226720438730111184">কী ঘটছে তা আমাদের বলুন</translation>
 <translation id="2229161054156947610">1 ঘন্টার বেশী বাকি</translation>
 <translation id="222931766245975952">ফাইল অবচ্ছেদন করা হয়েছে</translation>
@@ -1526,7 +1521,6 @@
 <translation id="297870353673992530">DNS সার্ভার:</translation>
 <translation id="2981113813906970160">বড় মাউস কার্সার দেখান</translation>
 <translation id="2984337792991268709">আজ <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">MIDI ডিভাইসগুলির সম্পূর্ণ নিয়ন্ত্রণ থেকে এই পৃষ্ঠাটিকে অবরুদ্ধ করা হয়েছে৷</translation>
 <translation id="2987775926667433828">চিনা ঐতিহ্যশালী</translation>
 <translation id="2987776766682852234">ডিফল্ট 'মধ্যস্থতাকারী' হেডার কণিকাভাবটি হ্রাস করুন৷</translation>
 <translation id="2989474696604907455">সংযুক্ত নয়</translation>
@@ -1735,7 +1729,6 @@
 <translation id="3254434849914415189"><ph name="FILE_TYPE" /> ফাইলের জন্য ডিফল্ট অ্যাপ্লিকেশন বেছে নিন:</translation>
 <translation id="3255228561559750854">অনুসন্ধান করুন, অথবা "Ok Google" বলুন</translation>
 <translation id="3257011895468050906">Token Binding সমর্থন সক্ষম করুন।</translation>
-<translation id="326356299252142602">Windows রানটাইম MIDI API ব্যবহার করুন</translation>
 <translation id="3264544094376351444">Sans-Serif হরফ</translation>
 <translation id="3264547943200567728">আপনার Chromebox এর নেটওয়ার্ক স্থাপন করতে ব্যর্থ হয়েছে</translation>
 <translation id="3265459715026181080">উইন্ডো বন্ধ করুন</translation>
@@ -1953,7 +1946,6 @@
 <translation id="3530751398950974194">সিঙ্ক পাসফ্রেজ আপডেট করুন</translation>
 <translation id="3531250013160506608">পাসওয়ার্ড পাঠ্য বাক্স</translation>
 <translation id="3534879087479077042">একজন তত্ত্বাবধানে থাকা ব্যবহারকারী কি?</translation>
-<translation id="3535652963535405415">ওয়েব MIDI API পরীক্ষামূলক সমর্থন সক্ষম করে৷</translation>
 <translation id="354060433403403521">AC অ্যাডপ্টার</translation>
 <translation id="3541661933757219855">Ctrl+Alt+/ টাইপ করুন অথবা লুকাতে Escape</translation>
 <translation id="3543393733900874979">আপডেট ব্যর্থ হয়েছে (ত্রুটি: <ph name="ERROR_NUMBER" />)</translation>
@@ -1982,7 +1974,6 @@
 <translation id="3574210789297084292">প্রবেশ করুন</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">লিথুয়ানিয়ান</translation>
-<translation id="3575927481544652747">WebMIDI এর জন্য Windows রানটাইম MIDI API অক্ষম করুন, যা Windows 10 বা পরবর্তী সংস্করণে ডিফল্টভাবে সক্ষমিত থাকে।</translation>
 <translation id="3576324189521867626">সফলভাবে ইনস্টল হয়েছে</translation>
 <translation id="3578331450833904042">ডিফল্ট (সবকিছু টেনে নেয়)</translation>
 <translation id="3578594933904494462">এই ট্যাবের সামগ্রী শেয়ার করা হচ্ছে৷</translation>
@@ -3010,7 +3001,6 @@
 <translation id="499165176004408815">উচ্চ কনট্রাস্ট মোড ব্যবহার করুন</translation>
 <translation id="4992066212339426712">সশব্দ করুন</translation>
 <translation id="4992458225095111526">পাওয়ারওয়াশ নিশ্চিত করুন</translation>
-<translation id="4992576607980257687">যখন কোনো সাইট MIDI ডিভাইসগুলি অ্যাক্সেস করার জন্য সিস্টেমের বিশিষ্ট বার্তাগুলি ব্যবহার করতে চায় তখন আমাকে জিজ্ঞাসা করুন (প্রস্তাবিত)</translation>
 <translation id="4994474651455208930">সাইটগুলিকে প্রোটোকলের জন্য ডিফল্ট হ্যান্ডলার হওয়ার জন্য জিজ্ঞাসা করার অনুমতি দেয়</translation>
 <translation id="4998873842614926205">পরিবর্তনগুলি নিশ্চিত করুন</translation>
 <translation id="4999273653895592255">ডেস্কটপ ক্যাপচার চয়নকারি উইণ্ডোর জন্য আমরা পুরনো নাকি নতুন UI দেখাব তা এই ফ্ল্যাগটি নিয়ন্ত্রণ করে।</translation>
@@ -3607,7 +3597,6 @@
 <translation id="5774295353725270860">ফাইল অ্যাপ্লিকেশন খুলুন</translation>
 <translation id="5774515636230743468">সুস্পষ্ট:</translation>
 <translation id="577624874850706961">কুকিজ অনুসন্ধান করুন</translation>
-<translation id="5778550464785688721">MIDI ডিভাইসসমূহ পূর্ণ নিয়ন্ত্রণ</translation>
 <translation id="5780066559993805332">(সেরা)</translation>
 <translation id="5780973441651030252">প্রক্রিয়ার অগ্রাধিকার</translation>
 <translation id="5783221160790377646">একটি ত্রুটির কারণে, তত্ত্বাবধানে থাকা ব্যবহারকারী তৈরি করা হয়নি৷ দয়া করে পরে আবার চেষ্টা করুন৷</translation>
@@ -3741,7 +3730,6 @@
 <translation id="5965403572731919803">শেল্ফে যোগ করুন...</translation>
 <translation id="5965661248935608907">আপনি হোম বোতাম ক্লিক করলে বা Omnibox থেকে অনুসন্ধান করলে কোন পৃষ্ঠাটি দেখানো হবে তাও এটি নিয়ন্ত্রণ করে।</translation>
 <translation id="5971037678316050792">ব্লুটুথ অ্যাডাপ্টারের স্থিতি ও যুক্ত করা নিয়ন্ত্রণ করে</translation>
-<translation id="5972017421290582825">MIDI সেটিংস পরিচালনা করুন...</translation>
 <translation id="5972708806901999743">শীর্ষে যান</translation>
 <translation id="5972826969634861500"><ph name="PRODUCT_NAME" /> শুরু করুন</translation>
 <translation id="5975083100439434680">জুম কমান</translation>
@@ -3916,7 +3904,6 @@
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: সংযুক্ত হচ্ছে...</translation>
 <translation id="6226777517901268232">ব্যক্তিগত কী ফাইল (ঐচ্ছিক)</translation>
 <translation id="6227235786875481728">এই ফাইলটি চালানো যাবেনা৷</translation>
-<translation id="6228691855869374890">এই সাইটির MIDI ডিভাইসগুলির উপর সম্পূর্ণ নিয়ন্ত্রণ আছে৷</translation>
 <translation id="6231148928368101651">প্যানেল</translation>
 <translation id="6231881193380278751">পৃষ্ঠাটি অটো-রিফ্রেশ করতে URL এ কোনো ক্যোয়ারী পারাম যোগ করুন: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">ব্যাটারি: %</translation>
@@ -4571,7 +4558,6 @@
 <translation id="711902386174337313">আপনার সাইন-ইন করা ডিভাইসগুলির তালিকা পড়ুন</translation>
 <translation id="7119389851461848805">পাওয়ার</translation>
 <translation id="7119832699359874134">অবৈধ CVC কোড৷ দয়া করে পরীক্ষা করুন এবং আবার চেষ্টা করুন৷</translation>
-<translation id="7122132768827815392">WebMIDI এর জন্য Windows রানটাইম MIDI API (শুধুমাত্র Windows 10 বা পরবর্তী সংস্করণে কার্যকর) ব্যবহার করুন।</translation>
 <translation id="7122169255686960726">আরো প্রতিলিপি</translation>
 <translation id="7126604456862387217">'&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;' - &lt;em&gt;ড্রাইভে অনুসন্ধান করুন&lt;/em&gt;</translation>
 <translation id="7127980134843952133">ইতিহাস ডাউনলোড করুন</translation>
@@ -4985,7 +4971,6 @@
 <translation id="7706319470528945664">পর্তুগিজ কীবোর্ড</translation>
 <translation id="7709152031285164251">ব্যর্থ হয়েছে - <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">চালিয়ে যান এ ক্লিক করার মাধ্যমে আপনি <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" />, এবং <ph name="LEGAL_DOC_LINK_TEXT_5" /> এ সম্মত হচ্ছেন৷</translation>
-<translation id="7713320380037170544">সমস্ত সাইটকে MIDI ডিভাইসগুলি অ্যাক্সেস করার জন্য সিস্টেমের বিশিষ্ট বার্তাগুলি ব্যবহার করার অনুমতি দিন</translation>
 <translation id="7714464543167945231">শংসাপত্র</translation>
 <translation id="7716020873543636594">মাউস পয়েন্টার বন্ধ হয়ে গেলে স্বয়ংক্রিয়ভাবে ক্লিক করুন</translation>
 <translation id="7716284821709466371">টালির ডিফল্ট উচ্চতা</translation>
@@ -5166,7 +5151,6 @@
 <translation id="7965010376480416255">ভাগকরা স্মৃতি</translation>
 <translation id="7966241909927244760">চি&amp;ত্র ঠিকানা কপি করুন</translation>
 <translation id="7967437925638594022">এক্সটেনশান এবং অ্যাপ্লিকেশানগুলি</translation>
-<translation id="7968796119156413760">WebMIDI এর জন্য Android Midi API ব্যবহার করুন (শুধুমাত্র Android M+ ডিভাইসে কার্যকর)।</translation>
 <translation id="7968833647796919681">কার্য-সম্পাদনা ডেটা সংগ্রহ সক্ষম করুন</translation>
 <translation id="7968982339740310781">বিশদ বিবরণ দেখুন</translation>
 <translation id="7969525169268594403">স্লোভেনিয়ান</translation>
@@ -5311,7 +5295,6 @@
 <translation id="8146793085009540321">প্রবেশ করুন ব্যর্থ হয়েছে। দয়া করে আপনার প্রশাসকের সাথে যোগাযোগ করুন অথবা আবার চেষ্টা করুন।</translation>
 <translation id="8148264977957212129">পিনইন ইনপুট পদ্ধতি</translation>
 <translation id="8148913456785123871">লঞ্চারে Google Now কার্ডগুলি দেখান</translation>
-<translation id="8150391391298684512">Windows রানটাইম MIDI API অক্ষমকরণ</translation>
 <translation id="8151185429379586178">বিকাশকারী সরঞ্জামগুলি</translation>
 <translation id="8151638057146502721">কনফিগার করুন</translation>
 <translation id="8151639108075998630">অতিথি ব্রাউজিং সক্ষম করুন</translation>
@@ -5646,7 +5629,6 @@
 <translation id="8603912787021349466">সাইন ইন করার পর Android অ্যাপ্লিকেশানগুলিকে স্বয়ংক্রিয়ভাবে চালু হওয়ার অনুমতি দিন।</translation>
 <translation id="8605428685123651449">SQLite মেমোরি</translation>
 <translation id="8605503133013456784">"<ph name="DEVICE_NAME" />" থেকে সংযোগ বিচ্ছিন্ন করতে ব্যর্থ৷</translation>
-<translation id="8606726445206553943">আপনার MIDI ডিভাইসসমূহ ব্যবহার করুন</translation>
 <translation id="8609465669617005112">উপরে যান</translation>
 <translation id="8610892630019863050">কোনো সাইট যখন বিজ্ঞপ্তিগুলি দেখাতে চায় তখন জিজ্ঞাসা করবে (প্রস্তাবিত)</translation>
 <translation id="8615618338313291042">ছদ্মবেশী অ্যাপ্লিকেশান: <ph name="APP_NAME" /></translation>
@@ -5893,7 +5875,6 @@
 <translation id="8926389886865778422">আর জিজ্ঞাসা করবেন না</translation>
 <translation id="8926518602592448999">বিকাশকারী মোডে চলা এক্সটেনশানগুলি অক্ষম করুন</translation>
 <translation id="8931394284949551895">নতুন ডিভাইসগুলি</translation>
-<translation id="8932730422557198035">Android Midi API ব্যবহার করুন</translation>
 <translation id="8933960630081805351">ফাইন্ডারে &amp;দেখান</translation>
 <translation id="8934732568177537184">অবিরত থাকুন</translation>
 <translation id="8938356204940892126">আমি হাল ছাড়ছি</translation>

@@ -51,13 +51,6 @@
       // Silent interval between the test tones.
       var testToneInterval = 0.1;
 
-      // The safe range for the equal loudness of sinusoid is roughly between
-      // 200 ~ 1000Hz, which is A3(57) ~ C6(84). In this test, the starting
-      // pitch is 220Hz and the interval is the whole tone. (2 MIDI pitch)
-      // With 16 speakers, the last test tone will play the MIDI pitch of
-      // F6(89), which is 1396Hz.
-      var startMIDIPitch = 57;
-
       var eMaxChannelCount = document.querySelector('#eMaxChannelCount');
       var eButton = document.querySelector('#eButton');
       var eChannelIndex = document.querySelector('#eChannelIndex');
@@ -86,11 +79,6 @@
 
       eMaxChannelCount.textContent = maxChannelCount;
 
-      // Convert the MIDI pitch to frequency.
-      function midi2freq(midiPitch) {
-        return 440 * Math.pow(2, (midiPitch - 69) / 12);
-      }
-
       // A global storage to keep the OSC reference alive.
       var oscs = [];
 
@@ -108,10 +96,6 @@
           else
             endTestTone();
         };
-
-        // The pitch for each speaker goes up as the channel index increases.
-        // Note that the interval is 2, whole tone.
-        osc.frequency.value = midi2freq(startMIDIPitch + channelIndex * 2);
 
         // The channel index starts from 1.
         eChannelIndex.textContent = 'Channel #' + (channelIndex + 1);

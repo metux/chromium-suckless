@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">Järjehoidja nimi</translation>
 <translation id="1123316951456119629">Kui katkestate Google'i konto ühenduse rakendusega <ph name="PRODUCT_NAME" />, jäävad teie andmed sellesse arvutisse, kuid muudatusi ei sünkroonita enam teie Google'i kontoga. Teie Google'i kontole juba salvestatud andmed jäävad sinna seniks, kuni need <ph name="BEGIN_LINK" />Google Dashboardi<ph name="END_LINK" /> abil eemaldate.</translation>
 <translation id="1124772482545689468">Kasutaja</translation>
-<translation id="1128109161498068552">Ära luba ühelgi saidil kasutada süsteemi eksklusiivseid sõnumeid MIDI-seadmetele juurdepääsu saamiseks</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">Otsingumootori muutmine</translation>
 <translation id="1128987120443782698">Salvestusseadme maht on <ph name="DEVICE_CAPACITY" />. Sisestage SD-kaart või USB-mälupulk, mille maht on vähemalt 4 GB.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">Kohandatud</translation>
 <translation id="1178539123212786672">Mittetöödeldav V8 puhverserveri lahendaja.</translation>
 <translation id="1178581264944972037">Peata</translation>
-<translation id="1179803038870941185"><ph name="URL" /> soovib teie MIDI-seadmeid täielikult juhtida.</translation>
 <translation id="1181037720776840403">Eemalda</translation>
 <translation id="1183083053288481515">Administraatori antud sertifikaadi kasutamine</translation>
 <translation id="1183237619868651138">Faili <ph name="EXTERNAL_CRX_FILE" /> ei saa kohalikku vahemällu installida.</translation>
@@ -644,7 +642,6 @@
 <translation id="1826516787628120939">Kontrollimine</translation>
 <translation id="1828149253358786390"><ph name="SITE" /> soovib teile saata märguandeid.</translation>
 <translation id="1828378091493947763">Seda pistikprogrammi selles seadmes ei toetata</translation>
-<translation id="1828901632669367785">Prindi, kasutades süsteemidialoogi ...</translation>
 <translation id="1829192082282182671">&amp;Vähenda</translation>
 <translation id="1830550083491357902">Pole sisse logitud</translation>
 <translation id="1832511806131704864">Telefoni muutmist värskendati</translation>
@@ -658,7 +655,6 @@
 <translation id="1844692022597038441">Fail ei ole võrguühenduseta saadaval.</translation>
 <translation id="1846308012215045257">Pistikprogrammi <ph name="PLUGIN_NAME" /> käitamiseks klõpsake juhtklahvil</translation>
 <translation id="184633654410729720">Tai klaviatuur (Kedmanee)</translation>
-<translation id="1849186935225320012">See leht saab MIDI-seadmeid täielikult juhtida.</translation>
 <translation id="1850508293116537636">Pööra &amp;päripäeva</translation>
 <translation id="1852799913675865625">Ilmnes viga, kui proovisite lugeda faili: <ph name="ERROR_TEXT" /></translation>
 <translation id="1856715684130786728">Lisa asukoht ...</translation>
@@ -795,7 +791,6 @@
 <translation id="2080070583977670716">Rohkem seadeid</translation>
 <translation id="2081322486940989439">See sait ei aktsepteeri Visat.</translation>
 <translation id="2085470240340828803">Fail nimega „<ph name="FILENAME" />” on juba olemas. Mida te teha soovite?</translation>
-<translation id="2085985589726507051">Web MIDI API</translation>
 <translation id="2087822576218954668">Printimine: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">Konto teabe taastamiseks minge aadressile: google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">Süsteemi turvaseade</translation>
@@ -906,7 +901,6 @@
 <translation id="2222641695352322289">Ainus viis selle tagasivõtmiseks on <ph name="IDS_SHORT_PRODUCT_OS_NAME" /> uuesti installida.</translation>
 <translation id="2224444042887712269">Seade omanik on <ph name="OWNER_EMAIL" />.</translation>
 <translation id="2224551243087462610">Muuda kausta nime</translation>
-<translation id="2226449515541314767">Saidil pole lubatud MIDI-seadmeid täielikult juhtida.</translation>
 <translation id="2226720438730111184">Andke meile teada, mis toimub</translation>
 <translation id="2229161054156947610">Jäänud on rohkem kui 1 tund</translation>
 <translation id="222931766245975952">Fail on kärbitud</translation>
@@ -1028,7 +1022,6 @@ Kui olete loonud uue jälgitava kasutaja, saate tema seadeid mis tahes ajal ja s
 <translation id="2375701438512326360">Lubage või keelake puuteekraani tugi alatiseks või lubage see juhul, kui käivitamisel tuvastatakse puuteekraan (vaikeseade on automaatne).</translation>
 <translation id="2378075407703503998">Valitud on <ph name="SELCTED_FILE_COUNT" /> faili</translation>
 <translation id="2378982052244864789">Laiendi kataloogi valimine.</translation>
-<translation id="2379281330731083556">Prindi süsteemidialoogi abil ... <ph name="SHORTCUT_KEY" /></translation>
 <translation id="2381756643783702095">Küsib enne saatmist (soovitatav)</translation>
 <translation id="2381823505763074471">Kasutaja <ph name="PROFILE_USERNAME" /> väljalogimine.</translation>
 <translation id="2382974838774065879">pikk (2000 ms)</translation>
@@ -1269,7 +1262,6 @@ Ma arvan, et see sait ei tohiks olla blokeeritud.</translation>
 <translation id="2676946222714718093">Mängib seadmes</translation>
 <translation id="2678063897982469759">Luba uuesti</translation>
 <translation id="2678246812096664977">Kõik pistikprogrammid</translation>
-<translation id="2679385451463308372">Prindi süsteemidialoogi abil ...</translation>
 <translation id="2680208403056680091">Interneti-ühendust juhitakse</translation>
 <translation id="268053382412112343">&amp;Ajalugu</translation>
 <translation id="2682935131208585215">Küsi, kui sait proovib jälgida mu füüsilist asukohta (soovitatav)</translation>
@@ -1526,7 +1518,6 @@ Ma arvan, et see sait ei tohiks olla blokeeritud.</translation>
 <translation id="297870353673992530">DNS-server:</translation>
 <translation id="2981113813906970160">Kuva suur hiirekursor</translation>
 <translation id="2984337792991268709">Täna kell <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">Sellel lehel pole lubatud MIDI-seadmeid täielikult juhtida.</translation>
 <translation id="2987775926667433828">Hiina (traditsiooniline)</translation>
 <translation id="2987776766682852234">Päise „referer” vaikegranulaarsuse vähendamine.</translation>
 <translation id="2989474696604907455">pole ühendatud</translation>
@@ -1736,7 +1727,6 @@ Nende ja edasiste juhiste nägemiseks vaadake meile aadressil <ph name="ACCOUNT_
 <translation id="3254434849914415189">Valige vaikerakendus <ph name="FILE_TYPE" />-failide jaoks:</translation>
 <translation id="3255228561559750854">Otsige või öelge otsetee sõna „OK Google”</translation>
 <translation id="3257011895468050906">Märgi sidumise toe lubamine.</translation>
-<translation id="326356299252142602">Windows Runtime MIDI API kasutamine</translation>
 <translation id="3264544094376351444">Seriifideta font</translation>
 <translation id="3264547943200567728">Chromeboxi võrgu seadistamine ebaõnnestus</translation>
 <translation id="3265459715026181080">Sulge aken</translation>
@@ -1958,7 +1948,6 @@ Asukohast <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3530751398950974194">Värskenda sünkroonimise parooli</translation>
 <translation id="3531250013160506608">Parooli tekstiväli</translation>
 <translation id="3534879087479077042">Kes on valvatav kasutaja?</translation>
-<translation id="3535652963535405415">Lubab Web MIDI API katselise toe.</translation>
 <translation id="354060433403403521">Vahelduvvooluadapter</translation>
 <translation id="3541661933757219855">Peitmiseks vajutage klahve Ctrl + Alt + / või paoklahvi Esc</translation>
 <translation id="3543393733900874979">Värskendamine ebaõnnestus (viga: <ph name="ERROR_NUMBER" />)</translation>
@@ -1987,7 +1976,6 @@ Asukohast <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3574210789297084292">logi sisse</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">leedu keel</translation>
-<translation id="3575927481544652747">WebMIDI jaoks keelatakse Windowsi käitusaja MIDI API, mis on Windows 10-s ja uuemates versioonides vaikimisi lubatud.</translation>
 <translation id="3576324189521867626">Installimine õnnestus</translation>
 <translation id="3578331450833904042">Vaikimisi (kõige vastuvõtmine)</translation>
 <translation id="3578594933904494462">Selle vahekaardi sisu jagatakse.</translation>
@@ -3017,7 +3005,6 @@ Uurimise jätkamiseks vajutage mis tahes klahvi.</translation>
 <translation id="499165176004408815">Kasuta kõrge kontrastiga režiimi</translation>
 <translation id="4992066212339426712">Tühista vaigistus</translation>
 <translation id="4992458225095111526">Powerwashi kinnitamine</translation>
-<translation id="4992576607980257687">Küsi minult, kui sait tahab kasutada süsteemi eksklusiivseid sõnumeid MIDI-seadmetele juurdepääsu saamiseks (soovitatav)</translation>
 <translation id="4994474651455208930">Luba saitidel küsida, kas hakata protokollide vaikimisi töötlejateks</translation>
 <translation id="4998873842614926205">Muudatuste kinnitamine</translation>
 <translation id="4999273653895592255">See märgistus juhib, kas näitame töölaua jäädvustamise valimisaknas vana või uut kasutajaliidest.</translation>
@@ -3615,7 +3602,6 @@ Uurimise jätkamiseks vajutage mis tahes klahvi.</translation>
 <translation id="5774295353725270860">Ava failirakendus</translation>
 <translation id="5774515636230743468">Manifest:</translation>
 <translation id="577624874850706961">Otsi küpsiseid</translation>
-<translation id="5778550464785688721">MIDI-seadmete täielik juhtimine</translation>
 <translation id="5780066559993805332">(Parim)</translation>
 <translation id="5780973441651030252">Protsessi prioriteet</translation>
 <translation id="5783221160790377646">Vea tõttu ei loodud valvatavat kasutajat. Proovige hiljem uuesti.</translation>
@@ -3749,7 +3735,6 @@ Uurimise jätkamiseks vajutage mis tahes klahvi.</translation>
 <translation id="5965403572731919803">Lisa riiulile ...</translation>
 <translation id="5965661248935608907">Lisaks juhib see seda, mis leht kuvatakse avalehe nupul klõpsamisel või omnikastikeses otsingu tegemisel.</translation>
 <translation id="5971037678316050792">Bluetoothi adapteri oleku ja sidumise juhtimine</translation>
-<translation id="5972017421290582825">MIDI-seadete haldamine ...</translation>
 <translation id="5972708806901999743">Teisalda ülaossa</translation>
 <translation id="5972826969634861500">Käivita <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">Suumib välja</translation>
@@ -3923,7 +3908,6 @@ Uurimise jätkamiseks vajutage mis tahes klahvi.</translation>
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: ühendamine ...</translation>
 <translation id="6226777517901268232">Privaatvõtme fail (valikuline)</translation>
 <translation id="6227235786875481728">Faili ei saanud esitada.</translation>
-<translation id="6228691855869374890">See sait juhib MIDI-seadmeid täielikult.</translation>
 <translation id="6231148928368101651">Paneelid</translation>
 <translation id="6231881193380278751">Lehe automaatseks värskendamiseks lisage päringu parameeter URL-i: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">Aku</translation>
@@ -4577,7 +4561,6 @@ Uurimise jätkamiseks vajutage mis tahes klahvi.</translation>
 <translation id="711902386174337313">Sisselogitud seadmete loendi lugemine</translation>
 <translation id="7119389851461848805">toide</translation>
 <translation id="7119832699359874134">Vale CVC-kood. Kontrollige ja proovige uuesti.</translation>
-<translation id="7122132768827815392">WebMIDI jaoks kasutatakse Windows Runtime MIDI API-t (töötab ainult Windows 10-s või uuemates versioonides).</translation>
 <translation id="7122169255686960726">Rohkem koopiaid</translation>
 <translation id="7126604456862387217">„&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;” – &lt;em&gt;otsi Drive'ist&lt;/em&gt;</translation>
 <translation id="7127980134843952133">Allalaadimiste ajalugu</translation>
@@ -4992,7 +4975,6 @@ Uurimise jätkamiseks vajutage mis tahes klahvi.</translation>
 <translation id="7706319470528945664">Portugali klaviatuur</translation>
 <translation id="7709152031285164251">Ebaõnnestus – <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">Klõpsates nupul Jätka, nõustute dokumentidega <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" /> ja <ph name="LEGAL_DOC_LINK_TEXT_5" />.</translation>
-<translation id="7713320380037170544">Luba kõikidel saitidel kasutada süsteemi eksklusiivseid sõnumeid MIDI-seadmetele juurdepääsu saamiseks</translation>
 <translation id="7714464543167945231">Sertifikaat</translation>
 <translation id="7716020873543636594">Automaatne klõpsamine hiirekursori peatumisel</translation>
 <translation id="7716284821709466371">Paani vaikekõrgus</translation>
@@ -5173,7 +5155,6 @@ Uurimise jätkamiseks vajutage mis tahes klahvi.</translation>
 <translation id="7965010376480416255">Ühismälu</translation>
 <translation id="7966241909927244760">K&amp;opeeri kujutise aadress</translation>
 <translation id="7967437925638594022">Laiendused ja rakendused</translation>
-<translation id="7968796119156413760">WebMIDI jaoks kasutatakse Android Midi API-t (töötab ainult seadmetega Android M+).</translation>
 <translation id="7968833647796919681">Luba toimivusandmete kogumine</translation>
 <translation id="7968982339740310781">Kuva üksikasjad</translation>
 <translation id="7969525169268594403">sloveeni keel</translation>
@@ -5318,7 +5299,6 @@ Hoidke oma võtmefail kindlas kohas. Teil läheb seda oma laiendi uute versiooni
 <translation id="8146793085009540321">Sisselogimine ebaõnnestus. Võtke ühendust administraatoriga või proovige uuesti.</translation>
 <translation id="8148264977957212129">Pinyini sisestusmeetod</translation>
 <translation id="8148913456785123871">Kuva käivitusprogrammis teenuse Google Now kaardid</translation>
-<translation id="8150391391298684512">Windowsi käitusaja MIDI API keelamine</translation>
 <translation id="8151185429379586178">Arendaja tööriistad</translation>
 <translation id="8151638057146502721">Seadista</translation>
 <translation id="8151639108075998630">Luba külalissirvimine</translation>
@@ -5652,7 +5632,6 @@ Täislaadimiseks kuluva aja arvutamine</translation>
 <translation id="8603912787021349466">Androidi rakendustel lubatakse pärast sisselogimist automaatselt käivituda.</translation>
 <translation id="8605428685123651449">SQLite'i mälu</translation>
 <translation id="8605503133013456784">Seadme „<ph name="DEVICE_NAME" />” ühendust ja linkimist ei õnnestunud katkestada.</translation>
-<translation id="8606726445206553943">Kasutada MIDI-seadmeid</translation>
 <translation id="8609465669617005112">Liiguta üles</translation>
 <translation id="8610892630019863050">Küsi, kui sait soovib näidata märguandeid (soovitatav)</translation>
 <translation id="8615618338313291042">Inkognito rakendus: <ph name="APP_NAME" /></translation>
@@ -5899,7 +5878,6 @@ Täislaadimiseks kuluva aja arvutamine</translation>
 <translation id="8926389886865778422">Ära enam küsi</translation>
 <translation id="8926518602592448999">Arendaja režiimis töötavate laienduste keelamine</translation>
 <translation id="8931394284949551895">Uued seadmed</translation>
-<translation id="8932730422557198035">Kasuta Android Midi API-t</translation>
 <translation id="8933960630081805351">&amp;Näita otsijas</translation>
 <translation id="8934732568177537184">Jätka</translation>
 <translation id="8938356204940892126">Annan alla</translation>
@@ -6124,7 +6102,6 @@ Täislaadimiseks kuluva aja arvutamine</translation>
 <translation id="932327136139879170">Kodu</translation>
 <translation id="932508678520956232">Printimist ei saanud alustada.</translation>
 <translation id="93393615658292258">Ainult parool</translation>
-<translation id="936801553271523408">Süsteemidiagnostika andmed</translation>
 <translation id="93766956588638423">Laiendi parandamine</translation>
 <translation id="938470336146445890">Installige kasutaja sertifikaat.</translation>
 <translation id="938582441709398163">Klaviatuuri ülekate</translation>

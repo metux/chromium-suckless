@@ -89,8 +89,6 @@ class WebGraphicsContext3DProvider;
 class WebIDBFactory;
 class WebImageCaptureFrameGrabber;
 class WebInstalledApp;
-class WebMIDIAccessor;
-class WebMIDIAccessorClient;
 class WebMediaPlayer;
 class WebMediaRecorderHandler;
 class WebMediaStream;
@@ -186,14 +184,6 @@ class BLINK_PLATFORM_EXPORT Platform {
                                             WebAudioDevice::RenderCallback*,
                                             const WebString& deviceId,
                                             const WebSecurityOrigin&) {
-    return nullptr;
-  }
-
-  // MIDI ----------------------------------------------------------------
-
-  // Creates a platform dependent WebMIDIAccessor. MIDIAccessor under platform
-  // creates and owns it.
-  virtual WebMIDIAccessor* createMIDIAccessor(WebMIDIAccessorClient*) {
     return nullptr;
   }
 

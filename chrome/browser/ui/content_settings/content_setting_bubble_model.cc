@@ -174,7 +174,6 @@ void ContentSettingSimpleBubbleModel::SetManageText() {
     {CONTENT_SETTINGS_TYPE_PROTOCOL_HANDLERS, IDS_HANDLERS_BUBBLE_MANAGE_LINK},
     {CONTENT_SETTINGS_TYPE_PPAPI_BROKER, IDS_PPAPI_BROKER_BUBBLE_MANAGE_LINK},
     {CONTENT_SETTINGS_TYPE_AUTOMATIC_DOWNLOADS, IDS_BLOCKED_DOWNLOADS_LINK},
-    {CONTENT_SETTINGS_TYPE_MIDI_SYSEX, IDS_MIDI_SYSEX_BUBBLE_MANAGE_LINK},
   };
   set_manage_text(l10n_util::GetStringUTF8(
       GetIdForContentType(kLinkIDs, arraysize(kLinkIDs), content_type())));
@@ -1266,94 +1265,6 @@ ContentSettingSubresourceFilterBubbleModel::AsSubresourceFilterBubbleModel() {
   return this;
 }
 
-// ContentSettingMidiSysExBubbleModel ------------------------------------------
-
-class ContentSettingMidiSysExBubbleModel
-    : public ContentSettingSimpleBubbleModel {
- public:
-  ContentSettingMidiSysExBubbleModel(Delegate* delegate,
-                                     WebContents* web_contents,
-                                     Profile* profile);
-  ~ContentSettingMidiSysExBubbleModel() override {}
-
- private:
-  void MaybeAddDomainList(const std::set<std::string>& hosts, int title_id);
-  void SetDomainsAndCustomLink();
-  void OnCustomLinkClicked() override;
-
-  DISALLOW_COPY_AND_ASSIGN(ContentSettingMidiSysExBubbleModel);
-};
-
-ContentSettingMidiSysExBubbleModel::ContentSettingMidiSysExBubbleModel(
-    Delegate* delegate,
-    WebContents* web_contents,
-    Profile* profile)
-    : ContentSettingSimpleBubbleModel(delegate,
-                                      web_contents,
-                                      profile,
-                                      CONTENT_SETTINGS_TYPE_MIDI_SYSEX) {
-  SetDomainsAndCustomLink();
-}
-
-void ContentSettingMidiSysExBubbleModel::MaybeAddDomainList(
-    const std::set<std::string>& hosts, int title_id) {
-  if (!hosts.empty()) {
-    DomainList domain_list;
-    domain_list.title = l10n_util::GetStringUTF8(title_id);
-    domain_list.hosts = hosts;
-    add_domain_list(domain_list);
-  }
-}
-
-void ContentSettingMidiSysExBubbleModel::SetDomainsAndCustomLink() {
-  TabSpecificContentSettings* content_settings =
-      TabSpecificContentSettings::FromWebContents(web_contents());
-  const ContentSettingsUsagesState& usages_state =
-      content_settings->midi_usages_state();
-  ContentSettingsUsagesState::FormattedHostsPerState formatted_hosts_per_state;
-  unsigned int tab_state_flags = 0;
-  usages_state.GetDetailedInfo(&formatted_hosts_per_state, &tab_state_flags);
-  // Divide the tab's current MIDI sysex users into sets according to their
-  // permission state.
-  MaybeAddDomainList(formatted_hosts_per_state[CONTENT_SETTING_ALLOW],
-                     IDS_MIDI_SYSEX_BUBBLE_ALLOWED);
-
-  MaybeAddDomainList(formatted_hosts_per_state[CONTENT_SETTING_BLOCK],
-                     IDS_MIDI_SYSEX_BUBBLE_DENIED);
-
-  if (tab_state_flags & ContentSettingsUsagesState::TABSTATE_HAS_EXCEPTION) {
-    set_custom_link(l10n_util::GetStringUTF8(
-        IDS_MIDI_SYSEX_BUBBLE_CLEAR_LINK));
-    set_custom_link_enabled(true);
-  } else if (tab_state_flags &
-             ContentSettingsUsagesState::TABSTATE_HAS_CHANGED) {
-    set_custom_link(l10n_util::GetStringUTF8(
-        IDS_MIDI_SYSEX_BUBBLE_REQUIRE_RELOAD_TO_CLEAR));
-  }
-}
-
-void ContentSettingMidiSysExBubbleModel::OnCustomLinkClicked() {
-  if (!web_contents())
-    return;
-  // Reset this embedder's entry to default for each of the requesting
-  // origins currently on the page.
-  const GURL& embedder_url = web_contents()->GetURL();
-  TabSpecificContentSettings* content_settings =
-      TabSpecificContentSettings::FromWebContents(web_contents());
-  const ContentSettingsUsagesState::StateMap& state_map =
-      content_settings->midi_usages_state().state_map();
-  HostContentSettingsMap* map =
-      HostContentSettingsMapFactory::GetForProfile(profile());
-  for (const std::pair<GURL, ContentSetting>& map_entry : state_map) {
-    PermissionUtil::ScopedRevocationReporter(
-        profile(), map_entry.first, embedder_url,
-        CONTENT_SETTINGS_TYPE_MIDI_SYSEX, PermissionSourceUI::PAGE_ACTION);
-    map->SetContentSettingDefaultScope(map_entry.first, embedder_url,
-                                       CONTENT_SETTINGS_TYPE_MIDI_SYSEX,
-                                       std::string(), CONTENT_SETTING_DEFAULT);
-  }
-}
-
 // ContentSettingBubbleModel ---------------------------------------------------
 
 // static
@@ -1386,10 +1297,6 @@ ContentSettingBubbleModel*
         ProtocolHandlerRegistryFactory::GetForBrowserContext(profile);
     return new ContentSettingRPHBubbleModel(delegate, web_contents, profile,
                                             registry);
-  }
-  if (content_type == CONTENT_SETTINGS_TYPE_MIDI_SYSEX) {
-    return new ContentSettingMidiSysExBubbleModel(delegate, web_contents,
-                                                  profile);
   }
   if (content_type == CONTENT_SETTINGS_TYPE_IMAGES ||
       content_type == CONTENT_SETTINGS_TYPE_JAVASCRIPT ||

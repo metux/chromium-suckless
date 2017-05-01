@@ -11,7 +11,6 @@ enum PermissionName {
   GEOLOCATION,
   NOTIFICATIONS,
   PUSH_NOTIFICATIONS,
-  MIDI,
   PROTECTED_MEDIA_IDENTIFIER,
   DURABLE_STORAGE,
   AUDIO_CAPTURE,
@@ -19,13 +18,9 @@ enum PermissionName {
   BACKGROUND_SYNC,
 };
 
-struct MidiPermissionDescriptor {
-  bool sysex;
-};
-
 // Union of possible extensions to the base PermissionDescriptor type.
 union PermissionDescriptorExtension {
-  MidiPermissionDescriptor midi;
+  int dummy;
 };
 
 // This struct roughly corresponds to the PermissionDescriptor dictionary as

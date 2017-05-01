@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">Bogmærkets navn</translation>
 <translation id="1123316951456119629">Hvis du fjerner tilknytningen til din Google-konto fra <ph name="PRODUCT_NAME" />, vil dine data forblive på denne computer, men ændringer vil ikke længere blive synkroniseret med din Google-konto. Data, der allerede er gemt på din Google-konto, bevares, indtil du fjerner dem ved hjælp af <ph name="BEGIN_LINK" />Google Betjeningspanel<ph name="END_LINK" />.</translation>
 <translation id="1124772482545689468">Bruger</translation>
-<translation id="1128109161498068552">Tillad ikke, at websites bruger interne systemmeddelelser til at få adgang til MIDI-enheder</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">Rediger søgemaskine</translation>
 <translation id="1128987120443782698">Lagringsenheden har en kapacitet på <ph name="DEVICE_CAPACITY" />. Indsæt et SD-kort eller en USB-nøgle med en kapacitet på mindst 4 GB.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">Tilpasset</translation>
 <translation id="1178539123212786672">V8-proxyresolver, der ikke kører.</translation>
 <translation id="1178581264944972037">Pause</translation>
-<translation id="1179803038870941185"><ph name="URL" /> vil gerne have fuld kontrol over dine MIDI-enheder.</translation>
 <translation id="1181037720776840403">Fjern</translation>
 <translation id="1183083053288481515">Ved hjælp af et administratorcertifikat</translation>
 <translation id="1183237619868651138"><ph name="EXTERNAL_CRX_FILE" /> kan ikek indstalleres i den lokale cache.</translation>
@@ -655,7 +653,6 @@
 <translation id="1844692022597038441">Denne fil er ikke tilgængelig offline.</translation>
 <translation id="1846308012215045257">Hold ctrl-tasten nede, og klik for at køre <ph name="PLUGIN_NAME" /></translation>
 <translation id="184633654410729720">Thailandsk tastatur (Kedmanee)</translation>
-<translation id="1849186935225320012">Denne side har fuld kontrol over MIDI-enheder.</translation>
 <translation id="1850508293116537636">Roter med &amp;uret</translation>
 <translation id="1852799913675865625">Der opstod en fejl under forsøg på at læse filen: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">Tilføj placering...</translation>
@@ -792,7 +789,6 @@
 <translation id="2080070583977670716">Flere indstillinger</translation>
 <translation id="2081322486940989439">Dette website accepterer ikke Visa.</translation>
 <translation id="2085470240340828803">Der findes allerede en fil med navnet "<ph name="FILENAME" />". Hvad vil du foretage dig?</translation>
-<translation id="2085985589726507051">Web-MIDI API</translation>
 <translation id="2087822576218954668">Udskrift: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">Du gendanner dine kontooplysninger ved at gå til: google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">Indstillinger for systemsikkerhed</translation>
@@ -902,7 +898,6 @@
 <translation id="2222641695352322289">Den eneste måde at fortryde dette på er ved at geninstallere <ph name="IDS_SHORT_PRODUCT_OS_NAME" />.</translation>
 <translation id="2224444042887712269">Denne indstilling tilhører <ph name="OWNER_EMAIL" />.</translation>
 <translation id="2224551243087462610">Rediger mappenavn</translation>
-<translation id="2226449515541314767">Dette website er blevet blokeret fra at have fuld kontrol over MIDI-enheder.</translation>
 <translation id="2226720438730111184">Fortæl os, hvad der sker</translation>
 <translation id="2229161054156947610">Mere end én time tilbage</translation>
 <translation id="222931766245975952">Fil forkortet</translation>
@@ -1523,7 +1518,6 @@ Jeg synes ikke, dette website skal blokeres.</translation>
 <translation id="297870353673992530">DNS-server:</translation>
 <translation id="2981113813906970160">Vis stor musemarkør</translation>
 <translation id="2984337792991268709">I dag <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">Denne side er blevet forhindret i at have fuld kontrol over MIDI-enheder.</translation>
 <translation id="2987775926667433828">Kinesisk, traditionelt</translation>
 <translation id="2987776766682852234">Reducer gengivelsesgranularitet for standardheaderen.</translation>
 <translation id="2989474696604907455">ikke tilknyttet</translation>
@@ -1735,7 +1729,6 @@ Gå til din e-mail, <ph name="ACCOUNT_EMAIL" />, for at se denne og flere vejled
 <translation id="3254434849914415189">Vælg standardappen for <ph name="FILE_TYPE" />-filer:</translation>
 <translation id="3255228561559750854">Søg, eller sig "Ok Google"</translation>
 <translation id="3257011895468050906">Aktivér understøttelse af Token Binding.</translation>
-<translation id="326356299252142602">Brug Windows Runtime MIDI API</translation>
 <translation id="3264544094376351444">Sans-serif-skrifttype</translation>
 <translation id="3264547943200567728">Netværket for din Chromebox kunne ikke konfigureres</translation>
 <translation id="3265459715026181080">Luk vindue</translation>
@@ -1957,7 +1950,6 @@ Fra <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3530751398950974194">Opdater adgangssætning for synkronisering</translation>
 <translation id="3531250013160506608">Tekstfelt til adgangskode</translation>
 <translation id="3534879087479077042">Hvad er en administreret bruger?</translation>
-<translation id="3535652963535405415">Aktivér eksperimentel understøttelse af Web MIDI API.</translation>
 <translation id="354060433403403521">Vekselstrømsadapter</translation>
 <translation id="3541661933757219855">Tryk på Ctrl+Alt+/eller Esc for at skjule</translation>
 <translation id="3543393733900874979">Opdateringen mislykkedes (fejl: <ph name="ERROR_NUMBER" />)</translation>
@@ -1986,7 +1978,6 @@ Fra <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3574210789297084292">log ind</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">Litauisk</translation>
-<translation id="3575927481544652747">Deaktiver Windows Runtime MIDI API til WebMIDI, der som standard er aktiveret i Windows 10 eller nyere.</translation>
 <translation id="3576324189521867626">Appen blev installeret</translation>
 <translation id="3578331450833904042">Standard (opfanger alt)</translation>
 <translation id="3578594933904494462">Indholdet på denne fane deles.</translation>
@@ -3016,7 +3007,6 @@ Tryk på en vilkårlig tast for at fortsætte udforskningen.</translation>
 <translation id="499165176004408815">Brug tilstanden Høj kontrast</translation>
 <translation id="4992066212339426712">Slå lyden til</translation>
 <translation id="4992458225095111526">Bekræft Powerwash</translation>
-<translation id="4992576607980257687">Spørg mig, når et website vil bruge systemeksklusive meddelelser til at få adgang til MIDI-enheder (anbefales)</translation>
 <translation id="4994474651455208930">Tillad, at websites beder om at håndtere protokoller som standard</translation>
 <translation id="4998873842614926205">Bekræft ændringer</translation>
 <translation id="4999273653895592255">Dette flag kontrollerer, om vi viser den gamle eller den nye brugerflade i vinduet for valg af skærmoptagelse.</translation>
@@ -3613,7 +3603,6 @@ Tryk på en vilkårlig tast for at fortsætte udforskningen.</translation>
 <translation id="5774295353725270860">Åbn appen Filer</translation>
 <translation id="5774515636230743468">Manifest:</translation>
 <translation id="577624874850706961">Søg i cookies</translation>
-<translation id="5778550464785688721">Fuld kontrol over MIDI</translation>
 <translation id="5780066559993805332">(Bedst)</translation>
 <translation id="5780973441651030252">Procesprioritet</translation>
 <translation id="5783221160790377646">En administreret bruger kunne ikke oprettes på grund af en fejl. Prøv igen senere.</translation>
@@ -3747,7 +3736,6 @@ Tryk på en vilkårlig tast for at fortsætte udforskningen.</translation>
 <translation id="5965403572731919803">Føj til hylden...</translation>
 <translation id="5965661248935608907">Den styrer også, hvilken side der vises, når du klikker på knappen Startside eller søger via omnifeltet.</translation>
 <translation id="5971037678316050792">Kontrollere tilstand og parring af Bluetooth-adaptere</translation>
-<translation id="5972017421290582825">Administrer MIDI-indstillinger...</translation>
 <translation id="5972708806901999743">Flyt til toppen</translation>
 <translation id="5972826969634861500">Start <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">Zoom ud</translation>
@@ -3922,7 +3910,6 @@ slettes permanent, når den administrerede bruger fjernes. Besøgte websites og 
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: Opretter forbindelse...</translation>
 <translation id="6226777517901268232">Privat nøglefil (valgfrit)</translation>
 <translation id="6227235786875481728">Denne fil kunne ikke afspilles.</translation>
-<translation id="6228691855869374890">Dette website har fuld kontrol over MIDI-enheder.</translation>
 <translation id="6231148928368101651">Paneler</translation>
 <translation id="6231881193380278751">Tilføj en forespørgselsparameter i webadressen for at opdatere siden automatisk: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">Batteri</translation>
@@ -4576,7 +4563,6 @@ slettes permanent, når den administrerede bruger fjernes. Besøgte websites og 
 <translation id="711902386174337313">Læs listen over de enheder, hvor du er logget ind</translation>
 <translation id="7119389851461848805">tænd/sluk</translation>
 <translation id="7119832699359874134">Ugyldig CVC-kode. Kontrollér for fejl, og prøv igen.</translation>
-<translation id="7122132768827815392">Brug Windows Runtime MIDI API til WebMIDI (fungerer kun i Windows 10 eller nyere).</translation>
 <translation id="7122169255686960726">Flere kopier</translation>
 <translation id="7126604456862387217">"&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;" – &lt;em&gt;søg i Drev&lt;/em&gt;</translation>
 <translation id="7127980134843952133">Downloadhistorik</translation>
@@ -4991,7 +4977,6 @@ slettes permanent, når den administrerede bruger fjernes. Besøgte websites og 
 <translation id="7706319470528945664">Portugisisk tastatur</translation>
 <translation id="7709152031285164251">Mislykket - <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">Ved at klikke på Fortsæt accepterer du <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" /> og <ph name="LEGAL_DOC_LINK_TEXT_5" />.</translation>
-<translation id="7713320380037170544">Tillad, at alle websites kan bruge systemeksklusive meddelelser til at få adgang til MIDI-enheder</translation>
 <translation id="7714464543167945231">Certifikat</translation>
 <translation id="7716020873543636594">Klik automatisk, når musemarkøren stopper</translation>
 <translation id="7716284821709466371">Standardhøjden for felter</translation>
@@ -5172,7 +5157,6 @@ slettes permanent, når den administrerede bruger fjernes. Besøgte websites og 
 <translation id="7965010376480416255">Delt hukommelse</translation>
 <translation id="7966241909927244760">K&amp;opiér webadressen til billedet</translation>
 <translation id="7967437925638594022">Udvidelser og apps</translation>
-<translation id="7968796119156413760">Brug Android Midi API til WebMIDI (fungerer kun på enheder, der kører Android M eller nyere).</translation>
 <translation id="7968833647796919681">Aktivér registrering af data om ydeevne</translation>
 <translation id="7968982339740310781">Vis detaljer</translation>
 <translation id="7969525169268594403">Slovensk</translation>
@@ -5317,7 +5301,6 @@ Opbevar din nøglefil på et sikkert sted. Du skal bruge den til at oprette nye 
 <translation id="8146793085009540321">Login mislykkedes. Kontakt din administrator, eller prøv igen.</translation>
 <translation id="8148264977957212129">Pinyin indtastningsmetode</translation>
 <translation id="8148913456785123871">Vis Google Nu-kort i Starter</translation>
-<translation id="8150391391298684512">Deaktiver Windows Runtime MIDI API</translation>
 <translation id="8151185429379586178">Udviklerværktøjer</translation>
 <translation id="8151638057146502721">Konfigurer</translation>
 <translation id="8151639108075998630">Aktivér gæstesession</translation>
@@ -5651,7 +5634,6 @@ Beregner resterende tid</translation>
 <translation id="8603912787021349466">Giv Android-apps tilladelse til at starte automatisk, når du er logget ind.</translation>
 <translation id="8605428685123651449">SQLite-hukommelse</translation>
 <translation id="8605503133013456784">Kunne ikke afbryde forbindelsen og ophæve parringen fra "<ph name="DEVICE_NAME" />".</translation>
-<translation id="8606726445206553943">Brug dine MIDI-enheder</translation>
 <translation id="8609465669617005112">Flyt op</translation>
 <translation id="8610892630019863050">Spørg om tilladelse, når et website vil vise underretninger (anbefales)</translation>
 <translation id="8615618338313291042">Inkognitoprogram: <ph name="APP_NAME" /></translation>
@@ -5899,7 +5881,6 @@ Beregner resterende tid</translation>
 <translation id="8926389886865778422">Spørg ikke igen</translation>
 <translation id="8926518602592448999">Deaktiver udvidelser, der kører i udviklertilstand</translation>
 <translation id="8931394284949551895">Nye enheder</translation>
-<translation id="8932730422557198035">Anvend Android Midi API</translation>
 <translation id="8933960630081805351">&amp;Vis i Finder</translation>
 <translation id="8934732568177537184">Fortsæt</translation>
 <translation id="8938356204940892126">Jeg giver op</translation>

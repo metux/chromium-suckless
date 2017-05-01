@@ -151,9 +151,6 @@ class ContentSettingsHandler : public OptionsPageUIHandler,
   // counterparts and updates the Flash links' visibility accordingly.
   void CompareMediaExceptionsWithFlash(ContentSettingsType type);
 
-  // Clobbers and rebuilds just the MIDI SysEx exception table.
-  void UpdateMIDISysExExceptionsView();
-
   // Clobbers and rebuilds all chooser-based exception tables.
   void UpdateAllChooserExceptionsViewsFromModel();
 

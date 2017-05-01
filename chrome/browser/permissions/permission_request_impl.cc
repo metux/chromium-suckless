@@ -51,8 +51,6 @@ PermissionRequest::IconId PermissionRequestImpl::GetIconId() const {
     case content::PermissionType::PROTECTED_MEDIA_IDENTIFIER:
       return gfx::VectorIconId::CHROME_PRODUCT;
 #endif
-    case content::PermissionType::MIDI_SYSEX:
-      return gfx::VectorIconId::MIDI;
     case content::PermissionType::FLASH:
       return gfx::VectorIconId::EXTENSION;
     default:
@@ -73,9 +71,6 @@ base::string16 PermissionRequestImpl::GetMessageTextFragment() const {
       message_id = IDS_NOTIFICATION_PERMISSIONS_FRAGMENT;
       break;
 #endif
-    case content::PermissionType::MIDI_SYSEX:
-      message_id = IDS_MIDI_SYSEX_PERMISSION_FRAGMENT;
-      break;
 #if defined(OS_CHROMEOS)
     case content::PermissionType::PROTECTED_MEDIA_IDENTIFIER:
       message_id = IDS_PROTECTED_MEDIA_IDENTIFIER_PERMISSION_FRAGMENT;
@@ -129,8 +124,6 @@ PermissionRequestType PermissionRequestImpl::GetPermissionRequestType()
     case content::PermissionType::NOTIFICATIONS:
       return PermissionRequestType::PERMISSION_NOTIFICATIONS;
 #endif
-    case content::PermissionType::MIDI_SYSEX:
-      return PermissionRequestType::PERMISSION_MIDI_SYSEX;
     case content::PermissionType::PUSH_MESSAGING:
       return PermissionRequestType::PERMISSION_PUSH_MESSAGING;
 #if defined(OS_CHROMEOS)

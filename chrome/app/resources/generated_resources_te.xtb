@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">పేరును బుక్‌మార్క్ చేయండి</translation>
 <translation id="1123316951456119629"><ph name="PRODUCT_NAME" /> నుండి మీ Google ఖాతాను డిస్‌కనెక్ట్ చేయడం వల్ల, మీ డేటా ఈ కంప్యూటర్‌లో ఉంటుంది కానీ ఇకపై మార్పులు మీ Google ఖాతాకు సమకాలీకరించబడవు. మీరు <ph name="BEGIN_LINK" />Google డాష్‌బోర్డ్<ph name="END_LINK" />ను ఉపయోగించి తీసివేసే వరకు మీ Google ఖాతాలో ఇప్పటికే నిల్వ చేయబడిన డేటా అలాగే ఉంటుంది.</translation>
 <translation id="1124772482545689468">వినియోగదారు</translation>
-<translation id="1128109161498068552">MIDI పరికరాలను ప్రాప్యత చేయడం కోసం సిస్టమ్ విశిష్ట సందేశాలను ఉపయోగించడానికి ఏ సైట్‌లను అనుమతించవద్దు</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">శోధన ఇంజిన్‌ని సవరించండి</translation>
 <translation id="1128987120443782698">నిల్వ చేసే పరికరం <ph name="DEVICE_CAPACITY" /> సామర్థ్యాన్ని కలిగి ఉంది. దయచేసి కనీసం 4GB సామర్థ్యంతో ఉన్న SD కార్డ్ లేదా USB మెమరీ స్టిక్‌ని ఇన్‌సర్ట్ చెయ్యండి.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">అనుకూలీకరించిన</translation>
 <translation id="1178539123212786672">ప్రక్రియలో లేని V8 ప్రాక్సీ పరిష్కరిణి.</translation>
 <translation id="1178581264944972037">పాజ్ చేయి</translation>
-<translation id="1179803038870941185"><ph name="URL" /> మీ MIDI పరికరాలకు పూర్తి నియంత్రణను పొందాలనుకుంటోంది.</translation>
 <translation id="1181037720776840403">తొలగించు</translation>
 <translation id="1183083053288481515">నిర్వాహకుని ద్వారా అందించబడిన ప్రమాణపత్రాన్ని ఉపయోగిస్తున్నారు</translation>
 <translation id="1183237619868651138">స్థానిక కాష్‌లో <ph name="EXTERNAL_CRX_FILE" />ని ఇన్‌స్టాల్ చేయడం సాధ్యపడదు.</translation>
@@ -658,7 +656,6 @@
 <translation id="1844692022597038441">ఈ ఫైల్ ఆఫ్‌లైన్‌లో అందుబాటులో లేదు.</translation>
 <translation id="1846308012215045257"><ph name="PLUGIN_NAME" />ని అమలు చేయడానికి కంట్రోల్ నొక్కి, క్లిక్ చేయండి</translation>
 <translation id="184633654410729720">థాయ్ కీబోర్డ్ (కెడ్మానీ)</translation>
-<translation id="1849186935225320012">ఈ పేజీ MIDI పరికరాలకు పూర్తి నియంత్రణను కలిగి ఉంది.</translation>
 <translation id="1850508293116537636">&amp;సవ్యదిశలో తిప్పు</translation>
 <translation id="1852799913675865625">ఫైల్‌ను చదవడానికి ప్రయత్నించడంలో లోపం ఉంది: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">స్థానాన్ని జోడించు...</translation>
@@ -795,7 +792,6 @@
 <translation id="2080070583977670716">మరిన్ని సెట్టింగ్‌లు</translation>
 <translation id="2081322486940989439">ఈ సైట్ Visa కార్డ్‌ని ఆమోదించదు.</translation>
 <translation id="2085470240340828803">"<ph name="FILENAME" />" ఫైల్ పేరు ఇప్పటికే ఉంది. మీరు ఏమి చేయాలనుకుంటున్నారు?</translation>
-<translation id="2085985589726507051">వెబ్ MIDI API</translation>
 <translation id="2087822576218954668">ముద్రణ: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">మీ ఖాతా సమాచారాన్ని పునరుద్ధరించడానికి, దీనికి వెళ్లండి: google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">సిస్టమ్ భద్రతా సెట్టింగ్</translation>
@@ -905,7 +901,6 @@
 <translation id="2222641695352322289"><ph name="IDS_SHORT_PRODUCT_OS_NAME" />ను మళ్లీ ఇన్‌స్టాల్ చేయడం ద్వారా మాత్రమే దీన్ని చర్య రద్దు చేయగలరు.</translation>
 <translation id="2224444042887712269">ఈ సెట్టింగ్ <ph name="OWNER_EMAIL" />కి సంబంధించినది.</translation>
 <translation id="2224551243087462610">ఫోల్డర్ పేరును సవరించు</translation>
-<translation id="2226449515541314767">ఈ సైట్ MIDI పరికరాలకు పూర్తి నియంత్రణ లేకుండా బ్లాక్ చేయబడింది.</translation>
 <translation id="2226720438730111184">ఏమి జరుగుతోందో మాకు చెప్పండి</translation>
 <translation id="2229161054156947610">1 గంట పైగా మిగిలి ఉంది</translation>
 <translation id="222931766245975952">ఫైల్ కుదించబడింది</translation>
@@ -1525,7 +1520,6 @@
 <translation id="297870353673992530">DNS సర్వర్:</translation>
 <translation id="2981113813906970160">పెద్ద మౌస్ కర్సర్‌ను చూపు</translation>
 <translation id="2984337792991268709">ఈ రోజు <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">MIDI పరికరాలకు పూర్తి నియంత్రణ లేకుండా ఈ పేజీ బ్లాక్ చేయబడింది.</translation>
 <translation id="2987775926667433828">సంప్రదాయ చైనీస్</translation>
 <translation id="2987776766682852234">డిఫాల్ట్ 'రెఫరర్' ముఖ్య శీర్షిక కణికీయతను తగ్గించండి.</translation>
 <translation id="2989474696604907455">జోడించబడలేదు</translation>
@@ -1735,7 +1729,6 @@
 <translation id="3254434849914415189"><ph name="FILE_TYPE" /> ఫైల్‌ల కోసం డిఫాల్ట్ అనువర్తనాన్ని ఎంచుకోండి:</translation>
 <translation id="3255228561559750854">శోధించండి లేదా "Ok Google" చెప్పండి</translation>
 <translation id="3257011895468050906">Token Binding మద్దతుని ప్రారంభించండి.</translation>
-<translation id="326356299252142602">Windows అమలు సమయ MIDI APIని ఉపయోగించండి</translation>
 <translation id="3264544094376351444">Sans-Serif ఫాంట్</translation>
 <translation id="3264547943200567728">మీ Chromebox నెట్‌వర్క్‌ను సెటప్ చేయడంలో విఫలమైంది</translation>
 <translation id="3265459715026181080">విండో మూసివెయ్యి</translation>
@@ -1957,7 +1950,6 @@
 <translation id="3530751398950974194">సమకాలీకరణ రహస్య పదబంధాన్ని నవీకరించు</translation>
 <translation id="3531250013160506608">పాస్‌వర్డ్ వచనం పెట్టె</translation>
 <translation id="3534879087479077042">పర్యవేక్షించబడే వినియోగదారు అంటే ఏమిటి?</translation>
-<translation id="3535652963535405415">వెబ్ MIDI API ప్రయోగాత్మక మద్దతును ప్రారంభించండి.</translation>
 <translation id="354060433403403521">AC అడాప్టర్</translation>
 <translation id="3541661933757219855">Ctrl+Alt+/ టైప్ చెయ్యండి లేదా దాచిపెట్టడానికి Escape చెయ్యండి</translation>
 <translation id="3543393733900874979">నవీకరించడం విఫలమైంది (లోపం: <ph name="ERROR_NUMBER" />)</translation>
@@ -1986,7 +1978,6 @@
 <translation id="3574210789297084292">సైన్ ఇన్ అవ్వండి</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">లిథువేనియన్</translation>
-<translation id="3575927481544652747">WebMIDI కోసం Windows అమలు సమయ MIDI APIని నిలిపివేస్తుంది, ఇది Windows 10 లేదా తదుపరి దానిలో డిఫాల్ట్‌గా ప్రారంభించబడి ఉంటుంది.</translation>
 <translation id="3576324189521867626">విజయవంతంగా ఇన్‌స్టాల్ చేయబడింది</translation>
 <translation id="3578331450833904042">డిఫాల్ట్ (అన్నీ వినగలదు)</translation>
 <translation id="3578594933904494462">ఈ ట్యాబ్ యొక్క కంటెంట్ భాగస్వామ్యం చేయబడుతోంది.</translation>
@@ -3017,7 +3008,6 @@
 <translation id="499165176004408815">అధిక కాంట్రాస్ట్ మోడ్‌ను ఉపయోగించు</translation>
 <translation id="4992066212339426712">అన్‌మ్యూట్ చేయి</translation>
 <translation id="4992458225095111526">పవర్‌వాష్‌ను నిర్ధారించండి</translation>
-<translation id="4992576607980257687">MIDI పరికరాలను ప్రాప్యత చేయడానికి సిస్టమ్ విశిష్ట సందేశాలను సైట్ ఉపయోగించాలనుకున్నప్పుడు నన్ను అడగాలి (సిఫార్సు చేయబడింది)</translation>
 <translation id="4994474651455208930">ప్రోటోకాల్స్‌కు డిఫాల్ట్ హ్యాండ్లర్‌లుగా కావడం కోసం అడగటానికి సైట్‌లను అనుమతించండి</translation>
 <translation id="4998873842614926205">మార్పులను నిర్ధారించు</translation>
 <translation id="4999273653895592255">ఈ ఫ్లాగ్ మేము డెస్క్‌టాప్ క్యాప్చర్ ఎంపిక విండోకు పాత లేదా కొత్త UIల్లో దేన్ని చూపాలో నియంత్రిస్తుంది.</translation>
@@ -3615,7 +3605,6 @@
 <translation id="5774295353725270860">ఫైల్‌ల అనువర్తనాన్ని తెరువు</translation>
 <translation id="5774515636230743468">మానిఫెస్ట్:</translation>
 <translation id="577624874850706961">కుకీలను శోధించు</translation>
-<translation id="5778550464785688721">MIDI పరికరాల పూర్తి నియంత్రణ</translation>
 <translation id="5780066559993805332">(ఉత్తమమైనది)</translation>
 <translation id="5780973441651030252">ప్రాసెస్ ప్రాధాన్యత</translation>
 <translation id="5783221160790377646">లోపం కారణంగా, పర్యవేక్షించబడే వినియోగదారు సృష్టించబడలేదు. దయచేసి తర్వాత మళ్లీ ప్రయత్నించండి.</translation>
@@ -3749,7 +3738,6 @@
 <translation id="5965403572731919803">అరకు జోడించు...</translation>
 <translation id="5965661248935608907">ఇది మీరు హోమ్ బటన్‌ను క్లిక్ చేసేటప్పుడు లేదా ఓమ్నిపెట్టె నుండి శోధించేటప్పుడు చూపబడే పేజీని కూడా నియంత్రిస్తుంది.</translation>
 <translation id="5971037678316050792">బ్లూటూత్ అడాప్టర్ స్థితిని మరియు జత చేసే విధానాన్ని నియంత్రించడానికి అనుమతి</translation>
-<translation id="5972017421290582825">MIDI సెట్టింగ్‌లను నిర్వహించండి...</translation>
 <translation id="5972708806901999743">పైకి తరలించు</translation>
 <translation id="5972826969634861500"><ph name="PRODUCT_NAME" /> ప్రారంభించు</translation>
 <translation id="5975083100439434680">దూరంగా జూమ్ చెయ్యి</translation>
@@ -3923,7 +3911,6 @@
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: కనెక్ట్ అవుతోంది...</translation>
 <translation id="6226777517901268232">ప్రైవేట్ కీ ఫైల్ (ఐచ్ఛికం)</translation>
 <translation id="6227235786875481728">ఈ ఫైల్‌ని ప్లే చేయడం సాధ్యం కాలేదు.</translation>
-<translation id="6228691855869374890">ఈ సైట్ MIDI పరికరాలకు పూర్తి నియంత్రణను కలిగి ఉంది.</translation>
 <translation id="6231148928368101651">ప్యానెల్‌లు</translation>
 <translation id="6231881193380278751">పేజీని స్వయంచాలకంగా రిఫ్రెష్ చేయడానికి URLలో ప్రశ్న పరామితిని జోడించండి: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">బ్యాటరీ</translation>
@@ -4578,7 +4565,6 @@
 <translation id="711902386174337313">మీ సైన్-ఇన్ చేసిన పరికరాల యొక్క జాబితాను చదవడం</translation>
 <translation id="7119389851461848805">పవర్</translation>
 <translation id="7119832699359874134">చెల్లని CVC కోడ్. దయచేసి తనిఖీ చేసి మళ్లీ ప్రయత్నించండి.</translation>
-<translation id="7122132768827815392">WebMIDI కోసం Windows అమలు సమయ MIDI APIని ఉపయోగిస్తుంది (Windows 10 లేదా తదుపరి వాటిలో మాత్రమే ప్రభావవంతంగా ఉంటుంది).</translation>
 <translation id="7122169255686960726">మరిన్ని కాపీలు</translation>
 <translation id="7126604456862387217">'&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;' - &lt;em&gt;డిస్క్‌లో శోధించు&lt;/em&gt;</translation>
 <translation id="7127980134843952133">డౌన్‌లోడ్ చరిత్ర</translation>
@@ -4993,7 +4979,6 @@
 <translation id="7706319470528945664">పోర్చ్‌గీస్ కీబోర్డ్</translation>
 <translation id="7709152031285164251">విఫలమైంది - <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">కొనసాగించు క్లిక్ చేయడం ద్వారా మీరు <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" /> మరియు <ph name="LEGAL_DOC_LINK_TEXT_5" />కి అంగీకరిస్తారు.</translation>
-<translation id="7713320380037170544">MIDI పరికరాలను ప్రాప్యత చేయడం కోసం సిస్టమ్ ప్రత్యేక సందేశాలను ఉపయోగించడానికి అన్ని సైట్‌లను అనుమతించు</translation>
 <translation id="7714464543167945231">సర్టిఫికెట్</translation>
 <translation id="7716020873543636594">మౌస్ పాయింటర్ ఆపినప్పుడు స్వయంచాలకంగా క్లిక్ చేయి</translation>
 <translation id="7716284821709466371">డిఫాల్ట్ టైల్ ఎత్తు</translation>
@@ -5174,7 +5159,6 @@
 <translation id="7965010376480416255">భాగస్వామ్యం చెయ్యబడిన మెమరీ</translation>
 <translation id="7966241909927244760">చిత్రం చిరునామాను కా&amp;పీ చేయండి</translation>
 <translation id="7967437925638594022">పొడిగింపులు &amp; అనువర్తనాలు</translation>
-<translation id="7968796119156413760">WebMIDI కోసం Android Midi APIని (Android M+ పరికరాలతో మాత్రమే ప్రభావవంతంగా ఉంటుంది) ఉపయోగిస్తుంది.</translation>
 <translation id="7968833647796919681">పనితీరు డేటా సేకరణను ప్రారంభించు</translation>
 <translation id="7968982339740310781">వివరాలను వీక్షించండి</translation>
 <translation id="7969525169268594403">స్లోవేనియన్</translation>
@@ -5316,7 +5300,6 @@
 <translation id="8146793085009540321">సైన్-ఇన్ విఫలమైంది. దయచేసి మీ నిర్వాహకులను సంప్రదించండి లేదా మళ్లీ ప్రయత్నించండి.</translation>
 <translation id="8148264977957212129">Pinyin ఇన్‌పుట్ పద్ధతి</translation>
 <translation id="8148913456785123871">లాంచర్‌లో Google Now కార్డ్‌లను చూపు</translation>
-<translation id="8150391391298684512">Windows అమలు సమయ MIDI APIని నిలిపివేయండి</translation>
 <translation id="8151185429379586178">డెవలపర్ సాధనాలు</translation>
 <translation id="8151638057146502721">కాన్ఫిగర్ చేయి</translation>
 <translation id="8151639108075998630">అతిథి బ్రౌజింగ్‌ని ప్రారంభించు</translation>
@@ -5649,7 +5632,6 @@
 <translation id="8603912787021349466">Android అనువర్తనాలు సైన్ ఇన్ చేసిన తర్వాత స్వయంచాలకంగా ప్రారంభమయ్యేలా అనుమతిస్తుంది.</translation>
 <translation id="8605428685123651449">SQLite మెమరీ</translation>
 <translation id="8605503133013456784">"<ph name="DEVICE_NAME" />" నుండి డిస్‌కనెక్ట్ చేయడం మరియు జతని తీసివేయడం విఫలమైంది.</translation>
-<translation id="8606726445206553943">మీ MIDI పరికరాలను ఉపయోగించాలనుకుంటోంది</translation>
 <translation id="8609465669617005112">పైకి తరలించు</translation>
 <translation id="8610892630019863050">సైట్ నోటిఫికేషన్‌లను చూపాలనుకున్నప్పుడు అడుగు (సిఫార్సు చేయబడింది)</translation>
 <translation id="8615618338313291042">అజ్ఞాత అనువర్తనం: <ph name="APP_NAME" /></translation>
@@ -5896,7 +5878,6 @@
 <translation id="8926389886865778422">మళ్ళి అడగవద్దు</translation>
 <translation id="8926518602592448999">డెవలపర్ మోడ్ పొడిగింపులను నిలిపివేయండి</translation>
 <translation id="8931394284949551895">కొత్త పరికరాలు</translation>
-<translation id="8932730422557198035">Android Midi APIని ఉపయోగించండి</translation>
 <translation id="8933960630081805351">శోధినిలో &amp;చూపించు</translation>
 <translation id="8934732568177537184">కొనసాగించు</translation>
 <translation id="8938356204940892126">నా వల్ల కాలేదు</translation>

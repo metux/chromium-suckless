@@ -220,7 +220,6 @@ class TestRunnerBindings : public gin::Wrappable<TestRunnerBindings> {
   void SetIsolatedWorldSecurityOrigin(int world_id,
                                       v8::Local<v8::Value> origin);
   void SetJavaScriptCanAccessClipboard(bool can_access);
-  void SetMIDIAccessorResult(bool result);
   void SetMockDeviceLight(double value);
   void SetMockDeviceMotion(gin::Arguments* args);
   void SetMockDeviceOrientation(gin::Arguments* args);
@@ -527,8 +526,6 @@ gin::ObjectTemplateBuilder TestRunnerBindings::GetObjectTemplateBuilder(
                  &TestRunnerBindings::SetIsolatedWorldSecurityOrigin)
       .SetMethod("setJavaScriptCanAccessClipboard",
                  &TestRunnerBindings::SetJavaScriptCanAccessClipboard)
-      .SetMethod("setMIDIAccessorResult",
-                 &TestRunnerBindings::SetMIDIAccessorResult)
       .SetMethod("setMainFrameIsFirstResponder",
                  &TestRunnerBindings::NotImplemented)
       .SetMethod("setMockDeviceLight", &TestRunnerBindings::SetMockDeviceLight)
@@ -1348,11 +1345,6 @@ void TestRunnerBindings::SetPOSIXLocale(const std::string& locale) {
     runner_->SetPOSIXLocale(locale);
 }
 
-void TestRunnerBindings::SetMIDIAccessorResult(bool result) {
-  if (runner_)
-    runner_->SetMIDIAccessorResult(result);
-}
-
 void TestRunnerBindings::SimulateWebNotificationClick(const std::string& title,
                                                       int action_index) {
   if (!runner_)
@@ -1645,7 +1637,6 @@ void TestRunner::Reset() {
   dump_back_forward_list_ = false;
   test_repaint_ = false;
   sweep_horizontally_ = false;
-  midi_accessor_result_ = true;
   has_custom_text_output_ = false;
   custom_text_output_.clear();
 
@@ -1940,10 +1931,6 @@ void TestRunner::setDragImage(
 
 bool TestRunner::shouldDumpNavigationPolicy() const {
   return layout_test_runtime_flags_.dump_navigation_policy();
-}
-
-bool TestRunner::midiAccessorResult() {
-  return midi_accessor_result_;
 }
 
 void TestRunner::ClearDevToolsLocalStorage() {
@@ -2679,10 +2666,6 @@ void TestRunner::ResolveBeforeInstallPromptPromise(
 
 void TestRunner::SetPOSIXLocale(const std::string& locale) {
   delegate_->SetLocale(locale);
-}
-
-void TestRunner::SetMIDIAccessorResult(bool result) {
-  midi_accessor_result_ = result;
 }
 
 void TestRunner::SimulateWebNotificationClick(const std::string& title,

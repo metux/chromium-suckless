@@ -37,7 +37,6 @@
       "libphonenumber_unittests",
       "keyboard_unittests",
       "media_unittests",
-      "midi_unittests",
       "mojo_system_unittests",
       "mojo_public_system_unittests",
       "mojo_public_bindings_unittests",
@@ -62,7 +61,6 @@
       "url_unittests",
       "printing_unittests",
       "media_unittests",
-      "midi_unittests",
       "sql_unittests",
       "crypto_unittests",
       "remoting_unittests",
@@ -286,12 +284,6 @@
           "can_use_on_swarming_builders": true
         },
         "test": "media_unittests"
-      },
-      {
-        "swarming": {
-          "can_use_on_swarming_builders": true
-        },
-        "test": "midi_unittests"
       },
       {
         "swarming": {
@@ -590,12 +582,6 @@
         "swarming": {
           "can_use_on_swarming_builders": true
         },
-        "test": "midi_unittests"
-      },
-      {
-        "swarming": {
-          "can_use_on_swarming_builders": true
-        },
         "test": "mojo_common_unittests"
       },
       {
@@ -865,12 +851,6 @@
           "can_use_on_swarming_builders": true
         },
         "test": "media_unittests"
-      },
-      {
-        "swarming": {
-          "can_use_on_swarming_builders": true
-        },
-        "test": "midi_unittests"
       },
       {
         "swarming": {
@@ -1617,9 +1597,6 @@
         "test": "media_unittests"
       },
       {
-        "test": "midi_unittests"
-      },
-      {
         "shard_index": 0,
         "test": "unit_tests",
         "total_shards": 6
@@ -1882,9 +1859,6 @@
         "test": "media_unittests"
       },
       {
-        "test": "midi_unittests"
-      },
-      {
         "test": "mojo_common_unittests"
       },
       {
@@ -2016,9 +1990,6 @@
       },
       {
         "test": "media_unittests"
-      },
-      {
-        "test": "midi_unittests"
       },
       {
         "test": "mojo_common_unittests"

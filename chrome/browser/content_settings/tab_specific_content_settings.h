@@ -263,12 +263,6 @@ class TabSpecificContentSettings
     return geolocation_usages_state_;
   }
 
-  // Returns the ContentSettingsUsageState that controls the MIDI usage on
-  // this page.
-  const ContentSettingsUsagesState& midi_usages_state() const {
-    return midi_usages_state_;
-  }
-
   // Call to indicate that there is a protocol handler pending user approval.
   void set_pending_protocol_handler(const ProtocolHandler& handler) {
     pending_protocol_handler_ = handler;
@@ -373,10 +367,6 @@ class TabSpecificContentSettings
       const std::string& media_stream_requested_audio_device,
       const std::string& media_stream_requested_video_device);
 
-  // There methods are called to update the status about MIDI access.
-  void OnMidiSysExAccessed(const GURL& reqesting_origin);
-  void OnMidiSysExAccessBlocked(const GURL& requesting_origin);
-
   // Adds the given |SiteDataObserver|. The |observer| is notified when a
   // locale shared object, like for example a cookie, is accessed.
   void AddSiteDataObserver(SiteDataObserver* observer);
@@ -416,14 +406,8 @@ class TabSpecificContentSettings
   // Clears the Geolocation settings.
   void ClearGeolocationContentSettings();
 
-  // Clears the MIDI settings.
-  void ClearMidiContentSettings();
-
   // Updates Geolocation settings on navigation.
   void GeolocationDidNavigate(content::NavigationHandle* navigation_handle);
-
-  // Updates MIDI settings on navigation.
-  void MidiDidNavigate(content::NavigationHandle* navigation_handle);
 
   // All currently registered |SiteDataObserver|s.
   base::ObserverList<SiteDataObserver> observer_list_;
@@ -442,9 +426,6 @@ class TabSpecificContentSettings
 
   // Manages information about Geolocation API usage in this page.
   ContentSettingsUsagesState geolocation_usages_state_;
-
-  // Manages information about MIDI usages in this page.
-  ContentSettingsUsagesState midi_usages_state_;
 
   // The pending protocol handler, if any. This can be set if
   // registerProtocolHandler was invoked without user gesture.

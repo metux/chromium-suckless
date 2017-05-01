@@ -35,7 +35,6 @@ IN_PROC_BROWSER_TEST_F(ContentSettingImageModelBrowserTest, CreateBubbleModel) {
       CONTENT_SETTINGS_TYPE_AUTOMATIC_DOWNLOADS,
       CONTENT_SETTINGS_TYPE_GEOLOCATION,
       CONTENT_SETTINGS_TYPE_PROTOCOL_HANDLERS,
-      CONTENT_SETTINGS_TYPE_MIDI_SYSEX,
   };
 
   Profile* profile = browser()->profile();

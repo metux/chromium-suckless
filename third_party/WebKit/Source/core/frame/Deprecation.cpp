@@ -454,10 +454,6 @@ String Deprecation::deprecationMessage(UseCounter::Feature feature) {
           "touchend events that occur as part of a scroll",
           M56, "5649871251963904");
 
-    case UseCounter::MIDIMessageEventReceivedTime:
-      return willBeRemoved("MIDIMessageEvent.receivedTime", M56,
-                           "5665772797952000");
-
     case UseCounter::V8SVGSVGElement_UseCurrentView_AttributeGetter:
       return willBeRemoved("SVGSVGElement.useCurrentView", M56,
                            "4511711998509056");

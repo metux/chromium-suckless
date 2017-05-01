@@ -2732,58 +2732,6 @@ interface KeyboardEvent : UIEvent
     method initKeyboardEvent
 interface Location
     method constructor
-interface MIDIAccess : EventTarget
-    getter inputs
-    getter onstatechange
-    getter outputs
-    getter sysexEnabled
-    method constructor
-    setter onstatechange
-interface MIDIConnectionEvent : Event
-    getter port
-    method constructor
-interface MIDIInput : MIDIPort
-    getter onmidimessage
-    method constructor
-    setter onmidimessage
-interface MIDIInputMap
-    getter size
-    method constructor
-    method entries
-    method forEach
-    method get
-    method has
-    method keys
-    method values
-interface MIDIMessageEvent : Event
-    getter data
-    getter receivedTime
-    method constructor
-interface MIDIOutput : MIDIPort
-    method constructor
-    method send
-interface MIDIOutputMap
-    getter size
-    method constructor
-    method entries
-    method forEach
-    method get
-    method has
-    method keys
-    method values
-interface MIDIPort : EventTarget
-    getter connection
-    getter id
-    getter manufacturer
-    getter name
-    getter onstatechange
-    getter state
-    getter type
-    getter version
-    method close
-    method constructor
-    method open
-    setter onstatechange
 interface MediaDevices
     method constructor
     method enumerateDevices
@@ -3049,7 +2997,6 @@ interface Navigator
     method getBattery
     method getGamepads
     method javaEnabled
-    method requestMIDIAccess
     method requestMediaKeySystemAccess
     method sendBeacon
     method vibrate

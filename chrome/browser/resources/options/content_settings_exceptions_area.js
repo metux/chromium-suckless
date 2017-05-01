@@ -20,7 +20,6 @@ cr.define('options.contentSettings', function() {
              contentType == 'fullscreen' ||
              contentType == 'media-stream-mic' ||
              contentType == 'media-stream-camera' ||
-             contentType == 'midi-sysex' ||
              contentType == 'zoomlevels' ||
              isChosenObjectType(contentType));
   }

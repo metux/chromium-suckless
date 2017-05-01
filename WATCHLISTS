@@ -62,7 +62,6 @@
                   '|content/renderer/media/android' \
                   '|media/audio/android' \
                   '|media/base/android' \
-                  '|media/midi/*_android.*' \
                   '|media/video/capture/android'
     },
     'android_tab': {
@@ -617,9 +616,6 @@
     'metrics_xml_files': {
       # Subscribe to this to watch for changes to histograms.xml.
       'filepath': 'tools/metrics/.*\.xml$',
-    },
-    'midi': {
-      'filepath': 'midi',
     },
     'mojo': {
       'filepath': 'mojo',
@@ -1853,7 +1849,6 @@
     'message_loop': ['sadrul@chromium.org'],
     'metrics': ['asvitkine+watch@chromium.org'],
     'metrics_xml_files': ['asvitkine+watch@chromium.org'],
-    'midi': ['toyoshim+midi@chromium.org'],
     'mojo': ['aa@chromium.org',
              'abarth@chromium.org',
              'darin@chromium.org',

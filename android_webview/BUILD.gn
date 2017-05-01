@@ -515,7 +515,6 @@ source_set("common") {
     "//gpu/command_buffer/service",
     "//gpu/skia_bindings",
     "//media",
-    "//media/midi",
     "//net:extras",
     "//printing",
     "//services/shell/public/cpp",

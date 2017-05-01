@@ -29,13 +29,6 @@ PermissionType PermissionDescriptorToPermissionType(
       return PermissionType::NOTIFICATIONS;
     case PermissionName::PUSH_NOTIFICATIONS:
       return PermissionType::PUSH_MESSAGING;
-    case PermissionName::MIDI: {
-      if (descriptor->extension && descriptor->extension->is_midi() &&
-          descriptor->extension->get_midi()->sysex) {
-        return PermissionType::MIDI_SYSEX;
-      }
-      return PermissionType::MIDI;
-    }
     case PermissionName::PROTECTED_MEDIA_IDENTIFIER:
       return PermissionType::PROTECTED_MEDIA_IDENTIFIER;
     case PermissionName::DURABLE_STORAGE:

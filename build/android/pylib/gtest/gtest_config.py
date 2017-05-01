@@ -32,7 +32,6 @@ STABLE_TEST_SUITES = [
     'gpu_unittests',
     'ipc_tests',
     'media_unittests',
-    'midi_unittests',
     'net_unittests',
     'sandbox_linux_unittests',
     'skia_unittests',

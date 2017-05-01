@@ -18,7 +18,6 @@ translated_xibs = [
   "ContentBlockedCookies.xib",
   "ContentBlockedDownloads.xib",
   "ContentBlockedGeolocation.xib",
-  "ContentBlockedMIDISysEx.xib",
   "ContentBlockedMedia.xib",
   "ContentBlockedMixedScript.xib",
   "ContentBlockedPlugins.xib",

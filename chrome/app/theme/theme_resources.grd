@@ -35,7 +35,6 @@
       <structure type="chrome_scaled_image" name="IDR_ALLOWED_KEYGEN" file="common/allowed_keygen.png" />
       <structure type="chrome_scaled_image" name="IDR_ALLOWED_LOCATION" file="common/allowed_location.png" />
       <structure type="chrome_scaled_image" name="IDR_ALLOWED_MIC" file="common/allowed_mic.png" />
-      <structure type="chrome_scaled_image" name="IDR_ALLOWED_MIDI_SYSEX" file="common/allowed_midi.png" />
       <structure type="chrome_scaled_image" name="IDR_ALLOWED_MOUSE_CURSOR" file="common/allowed_mouse_cursor.png" />
       <structure type="chrome_scaled_image" name="IDR_ALLOWED_NOTIFICATION" file="common/allowed_notifications.png" />
       <if expr="enable_plugins">
@@ -97,7 +96,6 @@
       <structure type="chrome_scaled_image" name="IDR_BLOCKED_KEYGEN" file="common/blocked_keygen.png" />
       <structure type="chrome_scaled_image" name="IDR_BLOCKED_LOCATION" file="common/blocked_location.png" />
       <structure type="chrome_scaled_image" name="IDR_BLOCKED_MIC" file="common/blocked_mic.png" />
-      <structure type="chrome_scaled_image" name="IDR_BLOCKED_MIDI_SYSEX" file="common/blocked_midi.png" />
       <structure type="chrome_scaled_image" name="IDR_BLOCKED_MOUSE_CURSOR" file="common/blocked_mouse_cursor.png" />
       <structure type="chrome_scaled_image" name="IDR_BLOCKED_NOTIFICATION" file="common/blocked_notifications.png" />
       <if expr="enable_plugins">

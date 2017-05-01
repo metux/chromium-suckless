@@ -69,22 +69,6 @@ public abstract class WebsitePreferenceBridge {
         list.add(new GeolocationInfo(origin, embedder, false));
     }
 
-    /**
-     * @return the list of all origins that have midi permissions in non-incognito mode.
-     */
-    @SuppressWarnings("unchecked")
-    public static List<MidiInfo> getMidiInfo() {
-        ArrayList<MidiInfo> list = new ArrayList<MidiInfo>();
-        nativeGetMidiOrigins(list);
-        return list;
-    }
-
-    @CalledByNative
-    private static void insertMidiInfoIntoList(
-            ArrayList<MidiInfo> list, String origin, String embedder) {
-        list.add(new MidiInfo(origin, embedder, false));
-    }
-
     @CalledByNative
     private static Object createStorageInfoList() {
         return new ArrayList<StorageInfo>();
@@ -272,11 +256,6 @@ public abstract class WebsitePreferenceBridge {
     static native void nativeSetKeygenSettingForOrigin(
             String origin, int value, boolean isIncognito);
     private static native boolean nativeGetKeygenBlocked(Object webContents);
-    private static native void nativeGetMidiOrigins(Object list);
-    static native int nativeGetMidiSettingForOrigin(
-            String origin, String embedder, boolean isIncognito);
-    static native void nativeSetMidiSettingForOrigin(
-            String origin, String embedder, int value, boolean isIncognito);
     private static native void nativeGetNotificationOrigins(Object list);
     static native int nativeGetNotificationSettingForOrigin(
             String origin, boolean isIncognito);

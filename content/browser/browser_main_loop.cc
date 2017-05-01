@@ -82,7 +82,6 @@
 #include "device/time_zone_monitor/time_zone_monitor.h"
 #include "media/base/media.h"
 #include "media/base/user_input_monitor.h"
-#include "media/midi/midi_manager.h"
 #include "mojo/edk/embedder/embedder.h"
 #include "mojo/edk/embedder/scoped_ipc_support.h"
 #include "net/base/network_change_notifier.h"
@@ -1034,12 +1033,6 @@ void BrowserMainLoop::ShutdownThreadsAndCleanUp() {
                  "BrowserMainLoop::Subsystem:ResourceDispatcherHost");
     resource_dispatcher_host_->Shutdown();
   }
-  // Request shutdown to clean up allocated resources on the IO thread.
-  if (midi_manager_) {
-    TRACE_EVENT0("shutdown", "BrowserMainLoop::Subsystem:MidiManager");
-    midi_manager_->Shutdown();
-  }
-
   memory_pressure_monitor_.reset();
 
 #if defined(OS_MACOSX)
@@ -1283,11 +1276,6 @@ int BrowserMainLoop::BrowserThreadsStarted() {
   {
     TRACE_EVENT0("startup", "BrowserThreadsStarted::Subsystem:AudioMan");
     CreateAudioManager();
-  }
-
-  {
-    TRACE_EVENT0("startup", "BrowserThreadsStarted::Subsystem:MidiManager");
-    midi_manager_.reset(media::midi::MidiManager::Create());
   }
 
 #if defined(OS_WIN)

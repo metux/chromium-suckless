@@ -13,7 +13,6 @@
 #include "build/build_config.h"
 #include "chrome/browser/background_sync/background_sync_permission_context.h"
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
-#include "chrome/browser/media/midi_permission_context.h"
 #include "chrome/browser/media/webrtc/media_stream_device_permission_context.h"
 #include "chrome/browser/notifications/notification_permission_context.h"
 #include "chrome/browser/permissions/permission_context_base.h"
@@ -80,8 +79,6 @@ void ContentSettingToPermissionStatusCallbackWrapper(
 // Helper method to convert PermissionType to ContentSettingType.
 ContentSettingsType PermissionTypeToContentSetting(PermissionType permission) {
   switch (permission) {
-    case PermissionType::MIDI_SYSEX:
-      return CONTENT_SETTINGS_TYPE_MIDI_SYSEX;
     case PermissionType::PUSH_MESSAGING:
     case PermissionType::NOTIFICATIONS:
       return CONTENT_SETTINGS_TYPE_NOTIFICATIONS;
@@ -96,9 +93,6 @@ ContentSettingsType PermissionTypeToContentSetting(PermissionType permission) {
 #endif
     case PermissionType::DURABLE_STORAGE:
       return CONTENT_SETTINGS_TYPE_DURABLE_STORAGE;
-    case PermissionType::MIDI:
-      // This will hit the NOTREACHED below.
-      break;
     case PermissionType::AUDIO_CAPTURE:
       return CONTENT_SETTINGS_TYPE_MEDIASTREAM_MIC;
     case PermissionType::VIDEO_CAPTURE:
@@ -124,8 +118,6 @@ ContentSettingsType PermissionTypeToContentSetting(PermissionType permission) {
 // have a context.
 bool IsConstantPermission(PermissionType type) {
   switch (type) {
-    case PermissionType::MIDI:
-      return true;
     default:
       return false;
   }
@@ -146,8 +138,6 @@ void PermissionRequestResponseCallbackWrapper(
 ContentSetting GetContentSettingForConstantPermission(PermissionType type) {
   DCHECK(IsConstantPermission(type));
   switch (type) {
-    case PermissionType::MIDI:
-      return CONTENT_SETTING_ALLOW;
     default:
       return CONTENT_SETTING_DEFAULT;
   }
@@ -225,8 +215,6 @@ PermissionManager* PermissionManager::Get(Profile* profile) {
 PermissionManager::PermissionManager(Profile* profile)
     : profile_(profile),
       weak_ptr_factory_(this) {
-  permission_contexts_[PermissionType::MIDI_SYSEX] =
-      base::MakeUnique<MidiPermissionContext>(profile);
   permission_contexts_[PermissionType::PUSH_MESSAGING] =
       base::MakeUnique<NotificationPermissionContext>(
           profile, PermissionType::PUSH_MESSAGING);

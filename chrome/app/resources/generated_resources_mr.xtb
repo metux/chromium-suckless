@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">बुकमार्क नाव</translation>
 <translation id="1123316951456119629">आपले Google खाते <ph name="PRODUCT_NAME" /> वरून डिस्कनेक्ट केल्याने, या संगणकावर आपला डेटा तसाच राहील परंतु बदल आपल्या Google खात्यामध्ये अधिक संंकालित केले जाणार नाहीत. आपल्या Google खात्यात आधीपासून संचयित केलेला डेटा <ph name="BEGIN_LINK" />Google डॅशबोर्ड<ph name="END_LINK" /> वापरून जोपर्यंत काढत नाही तोपर्यंत तो तेथे राहील.</translation>
 <translation id="1124772482545689468">वापरकर्ता</translation>
-<translation id="1128109161498068552">MIDI डिव्हाइसवर प्रवेश करण्यासाठी सिस्टीम विशेष संदेश वापरण्याकरिता कोणत्याही साइटला अनुमती देऊ नका</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">शोध इंजिन संपादित करा</translation>
 <translation id="1128987120443782698">संचयन डिव्हाइसची क्षमता <ph name="DEVICE_CAPACITY" /> आहे. कृपया कमीत कमी 4GB क्षमतेचे एक SD कार्ड किंवा USB मेमरी स्टिक घाला. </translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">सानुकूल</translation>
 <translation id="1178539123212786672">V8 प्रॉक्सी निराकरणकर्ता प्रक्रिये-बाहेर.</translation>
 <translation id="1178581264944972037">विराम द्या</translation>
-<translation id="1179803038870941185"><ph name="URL" /> आपल्या MIDI डिव्हाइसचे पूर्ण नियंत्रण मिळवू इच्छिते.</translation>
 <translation id="1181037720776840403">काढा</translation>
 <translation id="1183083053288481515">प्रशासकाने-प्रदान केलेले प्रमाणपत्र वापरत आहे</translation>
 <translation id="1183237619868651138">स्थानिक कॅशेमध्ये <ph name="EXTERNAL_CRX_FILE" /> स्थापित करू शकत नाही.</translation>
@@ -657,7 +655,6 @@
 <translation id="1844692022597038441">ही फाइल ऑफलाइन उपलब्ध नाही.</translation>
 <translation id="1846308012215045257"><ph name="PLUGIN_NAME" /> चालविण्‍यासाठी Control-क्लिक करा</translation>
 <translation id="184633654410729720">थाई कीबोर्ड (Kedmanee)</translation>
-<translation id="1849186935225320012">या पृष्ठास MIDI डिव्हाइसचे पूर्ण नियंत्रण आहे.</translation>
 <translation id="1850508293116537636">&amp;घड्याळाच्या दिशेने फिरवा</translation>
 <translation id="1852799913675865625">फाइल वाचण्याचा प्रयत्न करताना एक त्रुटी आली: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">स्थान जोडा...</translation>
@@ -794,7 +791,6 @@
 <translation id="2080070583977670716">अधिक सेटिंग्ज</translation>
 <translation id="2081322486940989439">ही साइट Visa स्वीकारत नाही.</translation>
 <translation id="2085470240340828803">"<ph name="FILENAME" />" नावाची फाईल आधीपासूनच विद्यमान आहे. आपण काय करू इच्छिता?</translation>
-<translation id="2085985589726507051">Web MIDI API</translation>
 <translation id="2087822576218954668">मुद्रण: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">आपली खाते माहिती पुनर्प्राप्त करण्यासाठी, यावर जा: google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">सिस्टम सुरक्षा सेटिंग्ज</translation>
@@ -904,7 +900,6 @@
 <translation id="2222641695352322289">हे पूर्ववत करण्‍याचा एकमेव मार्ग म्‍हणजे <ph name="IDS_SHORT_PRODUCT_OS_NAME" /> यास पुन्‍हा-स्‍थापित करणे हा आहे.</translation>
 <translation id="2224444042887712269">ही सेटिंग <ph name="OWNER_EMAIL" /> च्या मालकीची आहे.</translation>
 <translation id="2224551243087462610">फोल्डर नाव संपादित करा</translation>
-<translation id="2226449515541314767">MIDI डिव्हाइसचे पूर्ण नियंत्रण असण्यापासून ही साइट अवरोधित केली गेली आहे.</translation>
 <translation id="2226720438730111184">काय होत आहे ते आम्हाला सांगा</translation>
 <translation id="2229161054156947610">1 तासापेक्षा जास्त बाकी</translation>
 <translation id="222931766245975952">फाईल कापली गेली</translation>
@@ -1524,7 +1519,6 @@
 <translation id="297870353673992530">DNS सर्व्हर:</translation>
 <translation id="2981113813906970160">मोठा माउस कर्सर दर्शवा</translation>
 <translation id="2984337792991268709">आज <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">MIDI डिव्हाइसचे पूर्ण नियंत्रण असण्यापासून हे पृष्ठ अवरोधित केले गेले आहे.</translation>
 <translation id="2987775926667433828">चीनी पारंपारिक</translation>
 <translation id="2987776766682852234">डीफॉल्‍ट 'संदर्भकर्ता' शीर्षलेख ग्रॅन्युलॅरिटी कमी करते.</translation>
 <translation id="2989474696604907455">संलग्न केले नाही</translation>
@@ -1730,7 +1724,6 @@
 <translation id="3254434849914415189"><ph name="FILE_TYPE" /> फायलींसाठी डीफॉल्ट अनुप्रयोग निवडा:</translation>
 <translation id="3255228561559750854">शोधा किंवा "ओके, Google" म्हणा</translation>
 <translation id="3257011895468050906">Token Binding समर्थन सक्षम करा.</translation>
-<translation id="326356299252142602">Windows Runtime MIDI API वापरा</translation>
 <translation id="3264544094376351444">Sans-serif font</translation>
 <translation id="3264547943200567728">आपल्या Chromebox चे नेटवर्क सेट करण्यात अयशस्वी</translation>
 <translation id="3265459715026181080">विंडो बंद करा</translation>
@@ -1952,7 +1945,6 @@
 <translation id="3530751398950974194">संकालन सांकेतिक वाक्यांश अद्यतनित करा</translation>
 <translation id="3531250013160506608">संकेतशब्द मजकूर बॉक्स</translation>
 <translation id="3534879087479077042">पर्यवेक्षी वापरकर्ता काय आहे?</translation>
-<translation id="3535652963535405415">Web MIDI API प्रायोगिक समर्थन सक्षम करा.</translation>
 <translation id="354060433403403521">AC अ‍ॅडाप्‍टर</translation>
 <translation id="3541661933757219855">लपवण्यासाठी Ctrl+Alt+/ किंवा Escape टाइप करा</translation>
 <translation id="3543393733900874979">अद्यतन अयशस्वी (त्रुटी: <ph name="ERROR_NUMBER" />)</translation>
@@ -1981,7 +1973,6 @@
 <translation id="3574210789297084292">साइन इन करा</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">लिथुआनियन</translation>
-<translation id="3575927481544652747">WebMIDI साठी, Windows Runtime MIDI API अक्षम करा जो Windows 10 किंवा त्यानंतरच्या आवृत्तीवर डीफॉल्टनुसार सक्षम केलेला आहे.</translation>
 <translation id="3576324189521867626">यशस्वीरित्या स्थापित केला</translation>
 <translation id="3578331450833904042">डीफॉल्ट (सर्वकाही उचला)</translation>
 <translation id="3578594933904494462">या टॅबची सामग्री सामायिक केली जात आहे.</translation>
@@ -3009,7 +3000,6 @@
 <translation id="499165176004408815">उच्च तीव्रता मोड वापरा</translation>
 <translation id="4992066212339426712">सशब्द करा</translation>
 <translation id="4992458225095111526">Powerwash ची पुष्टी करा</translation>
-<translation id="4992576607980257687">MIDI डिव्हाइसवर प्रवेश करण्यासाठी जेव्हा एखादी साइट सिस्टीम विशेष संदेश वापरू इच्छिते तेव्हा मला विचारा (शिफारस केलेले)</translation>
 <translation id="4994474651455208930">प्रोटोकॉलसाठी डीफॉल्ट हँडलर होण्यासाठी साइटना विचारण्याची परवानगी द्या</translation>
 <translation id="4998873842614926205">बदलांची पुष्‍टी करा</translation>
 <translation id="4999273653895592255">डेस्कटॉप कॅप्चर निवडक विंडोसाठी आम्ही जुने किंवा नवीन UI दर्शवावे ते हे ध्वजांकन नियंत्रित करते.</translation>
@@ -3607,7 +3597,6 @@
 <translation id="5774295353725270860">फायलीचा अनुप्रयोग उघडा</translation>
 <translation id="5774515636230743468">मॅनिफेस्ट:</translation>
 <translation id="577624874850706961">कुकीज शोधा</translation>
-<translation id="5778550464785688721">MIDI डिव्हाइसेस पूर्ण नियंत्रण</translation>
 <translation id="5780066559993805332">(सर्वोत्तम)</translation>
 <translation id="5780973441651030252">प्रक्रिया प्राधान्य</translation>
 <translation id="5783221160790377646">त्रुटीमुळे, पर्यवेक्षी वापरकर्ता तयार करण्यात आला नाही. कृपया नंतर पुन्हा प्रयत्न करा.</translation>
@@ -3741,7 +3730,6 @@
 <translation id="5965403572731919803">शेल्फमध्ये जोडा...</translation>
 <translation id="5965661248935608907">आपण होम बटण क्लिक करता किंवा विविधोपयोगी क्षेत्रातून शोध घेता तेव्हा कोणते पृष्ठ दर्शविले जाते हे देखील हे नियंत्रित करते.</translation>
 <translation id="5971037678316050792">Bluetooth अडाप्टर स्थिती आणि जोडणी नियंत्रित करा</translation>
-<translation id="5972017421290582825">MIDI सेटिंग्ज व्यवस्थापित करा...</translation>
 <translation id="5972708806901999743">शीर्षस्थानी हलवा</translation>
 <translation id="5972826969634861500"><ph name="PRODUCT_NAME" /> प्रारंभ करा</translation>
 <translation id="5975083100439434680">झूम कमी करा</translation>
@@ -3915,7 +3903,6 @@
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: कनेक्ट करत आहे...</translation>
 <translation id="6226777517901268232">खाजगी की फाईल (पर्यायी)</translation>
 <translation id="6227235786875481728">ही फाइल प्ले केली जाणे शक्य झाले नाही.</translation>
-<translation id="6228691855869374890">या साइटवर MIDI डिव्हाइसचे पूर्ण नियंत्रण आहे.</translation>
 <translation id="6231148928368101651">पॅनेल</translation>
 <translation id="6231881193380278751">पृष्ठ स्वयं-रीफ्रेश करण्यासाठी एक क्वेरी परम जोडा: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">बॅटरी</translation>
@@ -4570,7 +4557,6 @@
 <translation id="711902386174337313">आपल्या साइन इन केलेल्या डिव्हाइसेसची सूची वाचा</translation>
 <translation id="7119389851461848805">उर्जा</translation>
 <translation id="7119832699359874134">अवैध CVC कोड. कृपया तपासा आणि पुन्हा प्रयत्न करा.</translation>
-<translation id="7122132768827815392">WebMIDI साठी Windows Runtime MIDI API वापरा (केवळ Windows 10 किंवा त्यानंतरच्यांसाठी प्रभावी)</translation>
 <translation id="7122169255686960726">अधिक प्रती</translation>
 <translation id="7126604456862387217">'&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;' - &lt;em&gt;ड्राइव्ह शोधा&lt;/em&gt;</translation>
 <translation id="7127980134843952133">इतिहास डाउनलोड करा</translation>
@@ -4984,7 +4970,6 @@
 <translation id="7706319470528945664">पोर्तुगीज कीबोर्ड</translation>
 <translation id="7709152031285164251">अयशस्वी - <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">सुरु ठेवा क्लिक करून आपण <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" /> आणि <ph name="LEGAL_DOC_LINK_TEXT_5" /> ला सहमती देता.</translation>
-<translation id="7713320380037170544">MIDI डिव्हाइसवर प्रवेश करण्यासाठी सिस्टीम विशेष संदेश वापरण्याकरिता सर्व साइटना अनुमती द्या</translation>
 <translation id="7714464543167945231">प्रमाणपत्र</translation>
 <translation id="7716020873543636594">माउस पॉईंटर थांबतो तेव्हा स्वयंचलितपणे क्लिक करा</translation>
 <translation id="7716284821709466371">डीफॉल्ट टाइल उंची</translation>
@@ -5165,7 +5150,6 @@
 <translation id="7965010376480416255">सामायिक मेमरी</translation>
 <translation id="7966241909927244760">प्रतिमा पत्ता कॉपी करा</translation>
 <translation id="7967437925638594022">विस्तार आणि अॅप्स</translation>
-<translation id="7968796119156413760">WebMIDI साठी Android Midi API वापरा (केवळ Android M+ डिव्हाइसेससह प्रभावी).</translation>
 <translation id="7968833647796919681">कार्यप्रदर्शन डेटा संकलन सक्षम करा</translation>
 <translation id="7968982339740310781">तपशील पहा</translation>
 <translation id="7969525169268594403">स्लोव्हेनियन</translation>
@@ -5310,7 +5294,6 @@
 <translation id="8146793085009540321">साइन-इन अयशस्वी झाले. कृपया आपल्‍या प्रशासकाशी संपर्क साधा किंवा पुन्हा प्रयत्न करा.</translation>
 <translation id="8148264977957212129">पिनयिन इनपुट पद्धत</translation>
 <translation id="8148913456785123871">लाँचरमध्ये Google Now कार्ड दर्शवा</translation>
-<translation id="8150391391298684512">Windows Runtime MIDI API अक्षम करा</translation>
 <translation id="8151185429379586178">विकासक साधने</translation>
 <translation id="8151638057146502721">कॉन्फिगर करा</translation>
 <translation id="8151639108075998630">अतिथी ब्राउझिंग सक्षम करा</translation>
@@ -5643,7 +5626,6 @@
 <translation id="8603912787021349466">साइन इन केल्यानंतर Android अॅप्सना स्वयंचलितपणे प्रारंभ करण्‍यासाठी त्यांना अनुमती द्या.</translation>
 <translation id="8605428685123651449">SQLite मेमरी</translation>
 <translation id="8605503133013456784">"<ph name="DEVICE_NAME" />" वरुन डिस्कनेक्ट करण्यात आणि जोडणी काढण्यात अयशस्वी.</translation>
-<translation id="8606726445206553943">आपले MIDI डिव्हाइसेस वापरा</translation>
 <translation id="8609465669617005112">वर हलवा</translation>
 <translation id="8610892630019863050">साइट सूचना दर्शवू इच्छिते तेव्हा विचारा (शिफारस केलेले)</translation>
 <translation id="8615618338313291042">गुप्त अनुप्रयोग: <ph name="APP_NAME" /></translation>
@@ -5891,7 +5873,6 @@
 <translation id="8926389886865778422">पुन्हा विचारू नका</translation>
 <translation id="8926518602592448999">विकासक मोड विस्तार अक्षम करा</translation>
 <translation id="8931394284949551895">नवीन डिव्हाइसेस</translation>
-<translation id="8932730422557198035">Android Midi API वापरा</translation>
 <translation id="8933960630081805351">फाइंडर मध्ये &amp;दर्शवा</translation>
 <translation id="8934732568177537184">सुरु ठेवा</translation>
 <translation id="8938356204940892126">मी सोडून देतो</translation>

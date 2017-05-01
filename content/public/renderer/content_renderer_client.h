@@ -37,8 +37,6 @@ class WebAudioDevice;
 class WebClipboard;
 class WebFrame;
 class WebLocalFrame;
-class WebMIDIAccessor;
-class WebMIDIAccessorClient;
 class WebMediaStreamCenter;
 class WebMediaStreamCenterClient;
 class WebPlugin;
@@ -173,11 +171,6 @@ class CONTENT_EXPORT ContentRendererClient {
   virtual blink::WebRTCPeerConnectionHandler*
   OverrideCreateWebRTCPeerConnectionHandler(
       blink::WebRTCPeerConnectionHandlerClient* client);
-
-  // Allows the embedder to override creating a WebMIDIAccessor.  If it
-  // returns NULL the content layer will create the MIDI accessor.
-  virtual blink::WebMIDIAccessor* OverrideCreateMIDIAccessor(
-      blink::WebMIDIAccessorClient* client);
 
   // Allows the embedder to override creating a WebAudioDevice.  If it
   // returns NULL the content layer will create the audio device.

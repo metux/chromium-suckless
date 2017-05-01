@@ -100,8 +100,7 @@ class ChildProcessSecurityPolicyImpl::SecurityState {
  public:
   SecurityState()
     : enabled_bindings_(0),
-      can_read_raw_cookies_(false),
-      can_send_midi_sysex_(false) { }
+      can_read_raw_cookies_(false) { }
 
   ~SecurityState() {
     scheme_policy_.clear();
@@ -196,10 +195,6 @@ class ChildProcessSecurityPolicyImpl::SecurityState {
     can_read_raw_cookies_ = false;
   }
 
-  void GrantPermissionForMidiSysEx() {
-    can_send_midi_sysex_ = true;
-  }
-
   bool CanCommitOrigin(const url::Origin& origin) {
     return base::ContainsKey(origin_set_, origin);
   }
@@ -281,10 +276,6 @@ class ChildProcessSecurityPolicyImpl::SecurityState {
     return can_read_raw_cookies_;
   }
 
-  bool can_send_midi_sysex() const {
-    return can_send_midi_sysex_;
-  }
-
  private:
   typedef std::map<std::string, bool> SchemeMap;
   typedef std::set<url::Origin> OriginSet;
@@ -314,8 +305,6 @@ class ChildProcessSecurityPolicyImpl::SecurityState {
   int enabled_bindings_;
 
   bool can_read_raw_cookies_;
-
-  bool can_send_midi_sysex_;
 
   GURL origin_lock_;
 
@@ -549,16 +538,6 @@ void ChildProcessSecurityPolicyImpl::GrantCopyIntoFileSystem(
 void ChildProcessSecurityPolicyImpl::GrantDeleteFromFileSystem(
     int child_id, const std::string& filesystem_id) {
   GrantPermissionsForFileSystem(child_id, filesystem_id, DELETE_FILE_GRANT);
-}
-
-void ChildProcessSecurityPolicyImpl::GrantSendMidiSysExMessage(int child_id) {
-  base::AutoLock lock(lock_);
-
-  SecurityStateMap::iterator state = security_state_.find(child_id);
-  if (state == security_state_.end())
-    return;
-
-  state->second->GrantPermissionForMidiSysEx();
 }
 
 void ChildProcessSecurityPolicyImpl::GrantOrigin(int child_id,
@@ -979,16 +958,6 @@ void ChildProcessSecurityPolicyImpl::RegisterFileSystemPermissionPolicy(
     int policy) {
   base::AutoLock lock(lock_);
   file_system_policy_map_[type] = policy;
-}
-
-bool ChildProcessSecurityPolicyImpl::CanSendMidiSysExMessage(int child_id) {
-  base::AutoLock lock(lock_);
-
-  SecurityStateMap::iterator state = security_state_.find(child_id);
-  if (state == security_state_.end())
-    return false;
-
-  return state->second->can_send_midi_sysex();
 }
 
 }  // namespace content

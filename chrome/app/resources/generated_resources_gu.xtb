@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">બુકમાર્ક નામ</translation>
 <translation id="1123316951456119629"><ph name="PRODUCT_NAME" />થી તમારા Google એકાઉન્ટને ડિસ્કનેક્ટ કરીને, તમારો ડેટા આ કમ્પ્યુટર પર રહેશે પરંતુ ફેરફારો તમારા Google એકાઉન્ટ સાથે સમન્વયિત થશે નહીં. તમારા Google એકાઉન્ટમાં પહેલાથી સ્ટોર થયેલો ડેટા ત્યાંજ રહેશે જ્યાં સુધી તમે <ph name="BEGIN_LINK" />Google ડેશબૉર્ડ<ph name="END_LINK" />નો ઉપયોગ કરીને તેને દૂર કરશો નહીં.</translation>
 <translation id="1124772482545689468">વપરાશકર્તા</translation>
-<translation id="1128109161498068552">MIDI ઉપકરણોને ઍક્સેસ કરવા માટે સિસ્ટમના એકમાત્ર સંદેશાઓનો ઉપયોગ કરવાની કોઇપણ સાઇટ્સને  મંજૂરી આપશો નહીં</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">શોધ એંજિન સંપાદિત કરો</translation>
 <translation id="1128987120443782698">સ્ટોરેજ ઉપકરણની ક્ષમતા <ph name="DEVICE_CAPACITY" /> ની છે. કૃપા કરીને ઓછામાં ઓછું 4GB ની ક્ષમતાવાળું SD કાર્ડ અથવા USB મેમરી સ્ટિક શામેલ કરો.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">કસ્ટમ</translation>
 <translation id="1178539123212786672">આઉટ-ઓફ-પ્રોસેસ V8 પ્રોક્સી રિઝોલ્વર.</translation>
 <translation id="1178581264944972037">થોભો</translation>
-<translation id="1179803038870941185"><ph name="URL" /> તમારા MIDI ઉપકરણોનું પૂર્ણ નિયંત્રણ મેળવવા માંગે છે.</translation>
 <translation id="1181037720776840403">દૂર કરો</translation>
 <translation id="1183083053288481515">વ્યવસ્થાપક-પ્રદત્ત પ્રમાણપત્રનો ઉપયોગ કરી રહ્યું છે</translation>
 <translation id="1183237619868651138">સ્થાનિક કેશમાં <ph name="EXTERNAL_CRX_FILE" /> ને ઇન્સ્ટોલ કરી શકતાં નથી.</translation>
@@ -654,7 +652,6 @@
 <translation id="1844692022597038441">આ ફાઇલ ઑફલાઇન ઉપલબ્ધ નથી.</translation>
 <translation id="1846308012215045257"><ph name="PLUGIN_NAME" /> ચલાવવા માટે Control-ક્લિક કરો</translation>
 <translation id="184633654410729720">થાઈ કીબોર્ડ (Kedmanee)</translation>
-<translation id="1849186935225320012">આ પૃષ્ઠ પાસે MIDI ઉપકરણોનું સંપૂર્ણ નિયંત્રણ છે.</translation>
 <translation id="1850508293116537636">&amp;ઘડિયાળની દિશામાં ફેરવો</translation>
 <translation id="1852799913675865625">ફાઇલ વાંચવાનો પ્રયાસ કરતી વખતે ભૂલ આવી હતી: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">સ્થાન ઉમેરો...</translation>
@@ -791,7 +788,6 @@
 <translation id="2080070583977670716">વધુ સેટિંગ્સ</translation>
 <translation id="2081322486940989439">આ સાઇટ Visa ને સ્વીકારતી નથી.</translation>
 <translation id="2085470240340828803">"<ph name="FILENAME" />" નામની ફાઇલ પહેલાંથી અસ્તિત્વમાં છે. તમે શું કરવા માંગો છો?</translation>
-<translation id="2085985589726507051">વેબ MIDI API</translation>
 <translation id="2087822576218954668">છાપો: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">તમારી એકાઉન્ટ માહિતીને પુનઃપ્રાપ્ત કરવા માટે, આના પર જાઓ: google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">સિસ્ટમ સુરક્ષા સેટિંગ</translation>
@@ -902,7 +898,6 @@
 <translation id="2222641695352322289">આને પૂર્વવત કરવાની એકમાત્ર રીત <ph name="IDS_SHORT_PRODUCT_OS_NAME" /> ને ફરીથી ઇન્સ્ટોલ કરવું છે.</translation>
 <translation id="2224444042887712269">આ સેટિંગ <ph name="OWNER_EMAIL" /> ની છે.</translation>
 <translation id="2224551243087462610">ફોલ્ડરનું નામ સંપાદિત કરો</translation>
-<translation id="2226449515541314767">આ સાઇટને MIDI ઉપકરણોના સંપૂર્ણ નિયંત્રણ કરવાથી અવરોધિત કરવામાં આવી છે.</translation>
 <translation id="2226720438730111184">શું થઈ રહ્યું છે તે અમને કહો</translation>
 <translation id="2229161054156947610">1 કલાક કરતા વધુ બાકી</translation>
 <translation id="222931766245975952">ફાઇલ કપાયેલ છે</translation>
@@ -1522,7 +1517,6 @@
 <translation id="297870353673992530">DNS સર્વર:</translation>
 <translation id="2981113813906970160">મોટું માઉસ કર્સર બતાવો</translation>
 <translation id="2984337792991268709">આજે <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">આ પૃષ્ઠ MIDI ઉપકરણોના સંપૂર્ણ નિયંત્રણથી અવરોધિત કરવામાં આવ્યું છે.</translation>
 <translation id="2987775926667433828">પરંપરાગત ચાઇનીઝ</translation>
 <translation id="2987776766682852234">ડિફોલ્ટ "સંદર્ભકર્તા" હેડર ગ્રેન્યુલેરિટી ઘટાડો.</translation>
 <translation id="2989474696604907455">જોડાયેલ નથી</translation>
@@ -1732,7 +1726,6 @@
 <translation id="3254434849914415189"><ph name="FILE_TYPE" /> ફાઇલો માટે ડિફૉલ્ટ ઍપ્લિકેશન પસંદ કરો:</translation>
 <translation id="3255228561559750854">શોધો અથવા "Ok Google" કહો</translation>
 <translation id="3257011895468050906">Token Binding સમર્થનને સક્ષમ કરો.</translation>
-<translation id="326356299252142602">Windows રનટાઇમ MIDI API નો ઉપયોગ કરો</translation>
 <translation id="3264544094376351444">Sans-Serif ફૉન્ટ</translation>
 <translation id="3264547943200567728">તમારા Chromebox ના નેટવર્કને સેટ કરવામાં નિષ્ફળ થયાં</translation>
 <translation id="3265459715026181080">વિંડો બંધ કરો</translation>
@@ -1954,7 +1947,6 @@
 <translation id="3530751398950974194">સમન્વયન પાસફ્રેઝને અપડેટ કરો</translation>
 <translation id="3531250013160506608">પાસવર્ડ ટેક્સ્ટ બૉક્સ</translation>
 <translation id="3534879087479077042">નિરીક્ષણ કરેલ વપરાશકર્તા શું છે?</translation>
-<translation id="3535652963535405415">વેબ MIDI API પ્રાયોગિક સમર્થન સક્ષમ કરો.</translation>
 <translation id="354060433403403521">AC એડેપ્ટર</translation>
 <translation id="3541661933757219855">છુપાવવા માટે Ctrl+Alt+/ અથવા Escape ટાઇપ કરો</translation>
 <translation id="3543393733900874979">અપડેટ નિષ્ફળ થયું (ભૂલ: <ph name="ERROR_NUMBER" />)</translation>
@@ -1983,7 +1975,6 @@
 <translation id="3574210789297084292">સાઇન ઇન કરો</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">લિથુનિયન</translation>
-<translation id="3575927481544652747">WebMIDI માટે Windows રનટાઇમ MIDI API ને અક્ષમ કરો, કે જે Windows 10 અથવા પછીના સંસ્કરણ પર ડિફૉલ્ટ તરીકે સક્ષમ કરેલ છે.</translation>
 <translation id="3576324189521867626">સફળતાપૂર્વક ઇન્સ્ટૉલ કરી</translation>
 <translation id="3578331450833904042">ડિફોલ્ટ (બધું જ સાંભળશે)</translation>
 <translation id="3578594933904494462">આ ટેબની સામગ્રી શેર કરવામાં આવી રહી છે.</translation>
@@ -3014,7 +3005,6 @@
 <translation id="499165176004408815">ઉચ્ચ કોન્ટ્રાસ્ટ મોડનો ઉપયોગ કરો</translation>
 <translation id="4992066212339426712">અનમ્યૂટ કરો</translation>
 <translation id="4992458225095111526">Powerwash ની પુષ્ટિ કરો</translation>
-<translation id="4992576607980257687">MIDI ઉપકરણોની ઍક્સેસ કરવા માટે જ્યારે સાઇટ સિસ્ટમ વિશિષ્ટ સંદેશાઓનો ઉપયોગ કરવા માંગે ત્યારે મને કહો (ભલામણ કરેલ)</translation>
 <translation id="4994474651455208930">પ્રોટોકૉલ્સ માટે ડિફૉલ્ટ હેન્ડલર્સ બનવા માટે સાઇટને પૂછવાની મંજૂરી આપો</translation>
 <translation id="4998873842614926205">ફેરફારોની પુષ્ટિ કરો</translation>
 <translation id="4999273653895592255">અમે ડેસ્કટૉપ કૅપ્ચર પીકર વિંડો માટે જૂના અથવા નવા UI ને બતાવીએ કે કેમ તેનું નિયંત્રણ આ ફ્લેગ કરે છે.</translation>
@@ -3611,7 +3601,6 @@
 <translation id="5774295353725270860">ફાઇલ્સ ઍપ્લિકેશન ખોલો</translation>
 <translation id="5774515636230743468">સ્પષ્ટ:</translation>
 <translation id="577624874850706961">કૂકીઝ શોધો</translation>
-<translation id="5778550464785688721">MIDI ઉપકરણોનું પૂર્ણ નિયંત્રણ</translation>
 <translation id="5780066559993805332">(શ્રેષ્ઠ)</translation>
 <translation id="5780973441651030252">પ્રાધાન્યતા પર પ્રક્રિયા કરો</translation>
 <translation id="5783221160790377646">કોઈ ભૂલને લીધે, નિરીક્ષણ કરેલ વપરાશકર્તા બનાવી શકાયો નહોતો. કૃપા કરીને પછીથી ફરી પ્રયાસ કરો.</translation>
@@ -3745,7 +3734,6 @@
 <translation id="5965403572731919803">શેલ્ફ પર ઉમેરો...</translation>
 <translation id="5965661248935608907">જ્યારે તમે હોમ બટન ક્લિક કરો અથવા ઑમ્નિબૉક્સ પરથી શોધ કરો ત્યારે કયું પૃષ્ઠ બતાવવામાં આવે તે તેનું પણ નિયંત્રણ કરે છે.</translation>
 <translation id="5971037678316050792">Bluetooth એડેપ્ટર સ્થિતિ અને જોડીનું નિયંત્રણ કરો</translation>
-<translation id="5972017421290582825">MIDI સેટિંગ્સનું સંચાલન કરો...</translation>
 <translation id="5972708806901999743">ટોચ પર જાઓ</translation>
 <translation id="5972826969634861500"><ph name="PRODUCT_NAME" />  શરૂ કરો</translation>
 <translation id="5975083100439434680">ઝૂમ ઘટાડો</translation>
@@ -3919,7 +3907,6 @@
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: કનેક્ટ કરી રહ્યાં છે...</translation>
 <translation id="6226777517901268232">ખાનગી કી ફાઇલ (વૈકલ્પિક)</translation>
 <translation id="6227235786875481728">આ ફાઇલ ચલાવી શકાઈ નથી.</translation>
-<translation id="6228691855869374890">આ સાઇટનું MIDI ઉપકરણો પર સંપૂર્ણ નિયંત્રણ હોય છે.</translation>
 <translation id="6231148928368101651">પેનલ્સ</translation>
 <translation id="6231881193380278751">પૃષ્ઠને સ્વતઃ-તાજુ કરવા માટે URL માં એક ક્વેરી પરમ ઉમેરો: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">બૅટરી</translation>
@@ -4575,7 +4562,6 @@
 <translation id="711902386174337313">તમારા સાઇન ઇન કરેલા ઉપકરણોની સૂચિને વાંચો</translation>
 <translation id="7119389851461848805">પાવર</translation>
 <translation id="7119832699359874134">અમાન્ય CVC કોડ. કૃપા કરીને તપાસો અને ફરી પ્રયાસ કરો.</translation>
-<translation id="7122132768827815392">WebMIDI માટે Windows રનટાઇમ MIDI API નો ઉપયોગ કરો (માત્ર Windows 10 અથવા એ પછીના સંસ્કરણો પર જ અસરકારક).</translation>
 <translation id="7122169255686960726">વધુ કૉપિઝ</translation>
 <translation id="7126604456862387217">'&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;' - &lt;em&gt;ડ્રાઇવમાં શોધો&lt;/em&gt;</translation>
 <translation id="7127980134843952133">ડાઉનલોડ ઇતિહાસ</translation>
@@ -4990,7 +4976,6 @@
 <translation id="7706319470528945664">પોર્ટુગીઝ કીબોર્ડ</translation>
 <translation id="7709152031285164251">નિષ્ફળ થયું - <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">ચાલુ રાખો પર ક્લિક કરીને તમે <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" /> અને <ph name="LEGAL_DOC_LINK_TEXT_5" />થી સંમત થાઓ છો.</translation>
-<translation id="7713320380037170544">બધી સાઇટ્સને MIDI ઉપકરણો ઍક્સેસ કરવા માટે સિસ્ટમ વિશિષ્ટ સંદેશાઓનો ઉપયોગ કરવાની મંજૂરી આપો</translation>
 <translation id="7714464543167945231">પ્રમાણપત્ર</translation>
 <translation id="7716020873543636594">માઉસ પોઇન્ટર રોકાઈ જાય ત્યારે આપમેળે ક્લિક કરો</translation>
 <translation id="7716284821709466371">ડિફોલ્ટ ટાઇલ ઊંચાઇ</translation>
@@ -5171,7 +5156,6 @@
 <translation id="7965010376480416255">વહેંચેલી મેમરી</translation>
 <translation id="7966241909927244760">છબી સરનામું કૉ&amp;પિ કરો</translation>
 <translation id="7967437925638594022">ઍક્સ્ટેન્શનો અને ઍપ્લિકેશનો</translation>
-<translation id="7968796119156413760">WebMIDI માટે Android Midi API નો ઉપયોગ કરો (માત્ર Android M+ ઉપકરણો સાથે જ અસરકારક)</translation>
 <translation id="7968833647796919681">પ્રદર્શન ડેટા સંગ્રહ સક્ષમ કરો</translation>
 <translation id="7968982339740310781">વિગતો જુઓ</translation>
 <translation id="7969525169268594403">સ્લોવેનિયન</translation>
@@ -5311,7 +5295,6 @@
 <translation id="8146793085009540321">સાઇન-ઇન નિષ્ફળ થયું. કૃપા કરીને તમારા વ્યવસ્થાપકનો સંપર્ક કરો અથવા ફરી પ્રયાસ કરો.</translation>
 <translation id="8148264977957212129">પિનયિન ઇનપુટ મેથડ</translation>
 <translation id="8148913456785123871">લોન્ચરમાં Google Now કાર્ડ્સ દર્શાવો</translation>
-<translation id="8150391391298684512">Windows રનટાઇમ MIDI API ને અક્ષમ કરો</translation>
 <translation id="8151185429379586178">વિકાસકર્તા સાધનો</translation>
 <translation id="8151638057146502721">ગોઠવો</translation>
 <translation id="8151639108075998630">અતિથિ બ્રાઉઝિંગ સક્ષમ કરો</translation>
@@ -5647,7 +5630,6 @@
 <translation id="8603912787021349466">સાઇન ઇન કર્યા પછી Android ઍપ્લિકેશનોને આપમેળે શરૂ થવાની મંજૂરી આપો.</translation>
 <translation id="8605428685123651449">SQLite મેમરી</translation>
 <translation id="8605503133013456784">"<ph name="DEVICE_NAME" />" માંથી ડિસ્કનેક્ટ કરવામાં અને જોડી રદ કરવામાં નિષ્ફળ થયું.</translation>
-<translation id="8606726445206553943">તમારા MIDI ઉપકરણોનો ઉપયોગ કરો</translation>
 <translation id="8609465669617005112">ઉપર ખસેડો</translation>
 <translation id="8610892630019863050">જ્યારે કોઈ સાઇટ સૂચનાઓને દર્શાવવા માગતી હોય ત્યારે પૂછો (ભલામણ કરેલ)</translation>
 <translation id="8615618338313291042">છૂપી ઍપ્લિકેશન: <ph name="APP_NAME" /></translation>
@@ -5894,7 +5876,6 @@
 <translation id="8926389886865778422">ફરિથી પુછશો નહીં</translation>
 <translation id="8926518602592448999">વિકાસકર્તા મોડ એક્સ્ટેન્શન્સ અક્ષમ કરો</translation>
 <translation id="8931394284949551895">નવા ઉપકરણો</translation>
-<translation id="8932730422557198035">Android Midi API નો ઉપયોગ કરો</translation>
 <translation id="8933960630081805351">ફાઇન્ડર માં &amp;બતાવો</translation>
 <translation id="8934732568177537184">ચાલુ રાખો</translation>
 <translation id="8938356204940892126">હું હાર માનું છું</translation>

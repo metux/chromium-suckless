@@ -411,7 +411,6 @@ audio/l16
 audio/l20
 audio/l24
 audio/lpc
-audio/midi			mid midi kar
 audio/mpa
 audio/mpa-robust
 audio/mp4a-latm			m4a m4p

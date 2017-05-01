@@ -44,8 +44,5 @@ modules/speech/SpeechSynthesis
 modules/speech/SpeechSynthesisUtterance
 modules/webaudio/AudioContext
 modules/webaudio/AudioNode
-modules/webmidi/MIDIAccess
-modules/webmidi/MIDIInput
-modules/webmidi/MIDIPort
 modules/websockets/WebSocket ImplementedAs=DOMWebSocket
 modules/webusb/USB

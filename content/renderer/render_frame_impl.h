@@ -135,7 +135,6 @@ class MediaInterfaceProvider;
 class MediaStreamDispatcher;
 class MediaStreamRendererFactory;
 class MediaPermissionDispatcher;
-class MidiDispatcher;
 class NavigationState;
 class PageState;
 class PepperPluginInstanceImpl;

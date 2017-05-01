@@ -66,8 +66,6 @@ const char* kAndroidSupportedMediaExtensions[] = {
     ".jpg",    // FILE_TYPE_JPEG, image/jpeg
     ".m4a",    // FILE_TYPE_M4A, audio/mp4
     ".m4v",    // FILE_TYPE_M4V, video/mp4
-    ".mid",    // FILE_TYPE_MID, audio/midi
-    ".midi",   // FILE_TYPE_MID, audio/midi
     ".mka",    // FILE_TYPE_MKA, audio/x-matroska
     ".mkv",    // FILE_TYPE_MKV, video/x-matroska
     ".mp3",    // FILE_TYPE_MP3, audio/mpeg
@@ -75,14 +73,9 @@ const char* kAndroidSupportedMediaExtensions[] = {
     ".mpeg",   // FILE_TYPE_MP4, video/mpeg, video/mp2p
     ".mpg",    // FILE_TYPE_MP4, video/mpeg, video/mp2p
     ".mpga",   // FILE_TYPE_MP3, audio/mpeg
-    ".mxmf",   // FILE_TYPE_MID, audio/midi
     ".oga",    // FILE_TYPE_OGG, application/ogg
     ".ogg",    // FILE_TYPE_OGG, audio/ogg, application/ogg
-    ".ota",    // FILE_TYPE_MID, audio/midi
     ".png",    // FILE_TYPE_PNG, image/png
-    ".rtttl",  // FILE_TYPE_MID, audio/midi
-    ".rtx",    // FILE_TYPE_MID, audio/midi
-    ".smf",    // FILE_TYPE_SMF, audio/sp-midi
     ".ts",     // FILE_TYPE_MP2TS, video/mp2ts
     ".wav",    // FILE_TYPE_WAV, audio/x-wav
     ".wbmp",   // FILE_TYPE_WBMP, image/vnd.wap.wbmp
@@ -90,7 +83,6 @@ const char* kAndroidSupportedMediaExtensions[] = {
     ".webp",   // FILE_TYPE_WEBP, image/webp
     ".wma",    // FILE_TYPE_WMA, audio/x-ms-wma
     ".wmv",    // FILE_TYPE_WMV, video/x-ms-wmv
-    ".xmf",    // FILE_TYPE_MID, audio/midi
 };
 
 // Compares two TimestampMaps and returns the list of file paths added/removed

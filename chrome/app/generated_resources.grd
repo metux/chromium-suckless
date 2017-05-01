@@ -347,9 +347,6 @@ are declared in build/common.gypi.
       <message name="IDS_WEBSITE_SETTINGS_TYPE_CAMERA" desc="The label used for the camera permission controls in the Website Settings popup.">
         Camera
       </message>
-      <message name="IDS_WEBSITE_SETTINGS_TYPE_MIDI_SYSEX" desc="The label used for MIDI system exclusive message permission controls in the Website Settings popup.">
-        MIDI devices full control
-      </message>
       <message name="IDS_WEBSITE_SETTINGS_TYPE_STORAGE" desc="The label used for the local storage type in the Manage Sites settings.">
         Storage
       </message>
@@ -12543,55 +12540,6 @@ Tell us what happened exactly before you got the profile error message:
         Block
       </message>
 
-      <!-- Web MIDI messages -->
-      <message name="IDS_MIDI_SYSEX_TAB_LABEL" desc="Label for MIDI system exclusive message on Content Settings dialog">
-        MIDI devices full control
-      </message>
-      <message name="IDS_MIDI_SYSEX_ALLOW_RADIO" desc="A radio button in Content Settings dialog to allow a site to access MIDI devices with system exclusive messages.">
-        Allow all sites to use system exclusive messages to access MIDI devices
-      </message>
-      <message name="IDS_MIDI_SYSEX_BLOCK_RADIO" desc="A radio button in Content Settings dialog to deny a site to access MIDI devices with system exclusive messages.">
-        Do not allow any sites to use system exclusive messages to access MIDI devices
-      </message>
-      <message name="IDS_MIDI_SYSEX_ASK_RADIO" desc="A radio button in Content Settings dialog to allow a site to query the permision to access MIDI devices with system exclusive messages.">
-        Ask me when a site wants to use system exclusive messages to access MIDI devices (recommended)
-      </message>
-      <message name="IDS_MIDI_SYSEX_INFOBAR_QUESTION" desc="Question asked on the info bar whenever URL wants to access MIDI devices with system exclusive messages.">
-        <ph name="URL">
-          $1<ex>www.google.com</ex>
-        </ph> wants to get full control of your MIDI devices.
-      </message>
-      <message name="IDS_MIDI_SYSEX_PERMISSION_FRAGMENT" desc="Permission asked in the permission bubble when a URL wants to access MIDI devices with system exclusive messages, along with other permissions requests. Preceded by the prompt 'This site would like to:'">
-        Use your MIDI devices
-      </message>
-      <message name="IDS_MIDI_SYSEX_ALLOW_BUTTON" desc="A button in MIDI access infobar for allowing full access to MIDI devices for a given domain.">
-        Allow
-      </message>
-      <message name="IDS_MIDI_SYSEX_DENY_BUTTON" desc="A button in MIDI access infobar for denying full access to MIDI devices for a given domain.">
-        Block
-      </message>
-      <message name="IDS_MIDI_SYSEX_ALLOWED_TOOLTIP" desc="Location bar icon tooltip text when a page is allowed to use MIDI system exclusive messages.">
-        This page has full control of MIDI devices.
-      </message>
-      <message name="IDS_MIDI_SYSEX_BLOCKED_TOOLTIP" desc="Location bar icon tooltip text when a page is blocked from using MIDI system exclusive messages.">
-        This page has been blocked from having full control of MIDI devices.
-      </message>
-      <message name="IDS_MIDI_SYSEX_BUBBLE_ALLOWED" desc="Title of the MIDI bubble where system exclusive messages are allowed.">
-        This site has full control of MIDI devices.
-      </message>
-      <message name="IDS_MIDI_SYSEX_BUBBLE_DENIED" desc="Title of the MIDI bubble where system exclusive messages are blocked.">
-        This site has been blocked from having full control of MIDI devices.
-      </message>
-      <message name="IDS_MIDI_SYSEX_BUBBLE_REQUIRE_RELOAD_TO_CLEAR" desc="Hint text for the MIDI bubble informing user they must reload the page for the Clear settings command to take effect.">
-        Settings will be cleared on next reload.
-      </message>
-      <message name="IDS_MIDI_SYSEX_BUBBLE_CLEAR_LINK" desc="Link on the MIDI bubble that resets the list of allowed and blocked sites.">
-        Clear these settings for future visits
-      </message>
-      <message name="IDS_MIDI_SYSEX_BUBBLE_MANAGE_LINK" desc="Link on the MIDI bubble that opens up the Content Settings management dialog.">
-        Manage MIDI settings...
-      </message>
-
       <!-- Protocol Handler -->
       <message name="IDS_REGISTER_PROTOCOL_HANDLER_TOOLTIP" desc="Location bar icon tooltip text when a page wants to use registerProtocolHandler.">
         This page wants to install a service handler.
@@ -13609,16 +13557,6 @@ Please check your email at <ph name="ACCOUNT_EMAIL">$2<ex>jane.doe@gmail.com</ex
       </message>
       <message name="IDS_FLAGS_SPELLING_FEEDBACK_FIELD_TRIAL_DESCRIPTION" desc="Description of about:flags option to enable the field trial for sending feedback to spelling service.">
         Enable the field trial for sending user feedback to spelling service.
-      </message>
-
-      <!-- Web MIDI API. -->
-      <message name="IDS_FLAGS_WEB_MIDI_NAME"
-               desc="Name of about:flag option to turn on Web MIDI API">
-        Web MIDI API
-      </message>
-      <message name="IDS_FLAGS_WEB_MIDI_DESCRIPTION"
-               desc="Description of about:flag option to turn on Web MIDI API">
-        Enable Web MIDI API experimental support.
       </message>
 
       <!-- Site per process mode -->
@@ -14894,12 +14832,6 @@ Please check your email at <ph name="ACCOUNT_EMAIL">$2<ex>jane.doe@gmail.com</ex
       <message name="IDS_FLAGS_NTP_SWITCH_TO_EXISTING_TAB_MATCH_HOST" desc="Match the webpage to open with existing tabs by their Hostnames.">
         Match by Hostname
       </message>
-      <message name="IDS_FLAGS_USE_ANDROID_MIDI_API_NAME" desc="Name for the flag to use android midi api.">
-        Use Android Midi API
-      </message>
-      <message name="IDS_FLAGS_USE_ANDROID_MIDI_API_DESCRIPTION" desc="Description for the flag to use android midi api.">
-        Use Android Midi API for WebMIDI (effective only with Android M+ devices).
-      </message>
    </if>
 
     <if expr="is_win">
@@ -14916,18 +14848,6 @@ Please check your email at <ph name="ACCOUNT_EMAIL">$2<ex>jane.doe@gmail.com</ex
       </message>
       <message name="IDS_FLAGS_MERGE_KEY_CHAR_EVENTS_DESCRIPTION" desc="Description for the flag to enable/disable merging the key event with char event.">
         If disabled, Chrome will handle WM_KEY* and WM_CHAR separatedly.
-      </message>
-      <message name="IDS_FLAGS_USE_WINRT_MIDI_API_NAME" desc="Name for the flag to use Windows Runtime MIDI API.">
-        Use Windows Runtime MIDI API
-      </message>
-      <message name="IDS_FLAGS_USE_WINRT_MIDI_API_DESCRIPTION" desc="Description for the flag to use Windows Runtime MIDI API.">
-        Use Windows Runtime MIDI API for WebMIDI (effective only on Windows 10 or later).
-      </message>
-      <message name="IDS_FLAGS_DISABLE_WINRT_MIDI_API_NAME" desc="Name for the flag to disable Windows Runtime MIDI API.">
-        Disable Windows Runtime MIDI API
-      </message>
-      <message name="IDS_FLAGS_DISABLE_WINRT_MIDI_API_DESCRIPTION" desc="Description for the flag to disable Windows Runtime MIDI API.">
-        Disable Windows Runtime MIDI API for WebMIDI, which is enabled by default on Windows 10 or later.
       </message>
     </if>
 

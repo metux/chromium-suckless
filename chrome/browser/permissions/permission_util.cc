@@ -29,8 +29,6 @@ std::string PermissionUtil::GetPermissionString(
       return "Geolocation";
     case content::PermissionType::NOTIFICATIONS:
       return "Notifications";
-    case content::PermissionType::MIDI_SYSEX:
-      return "MidiSysEx";
     case content::PermissionType::PUSH_MESSAGING:
       return "PushMessaging";
     case content::PermissionType::DURABLE_STORAGE:
@@ -41,8 +39,6 @@ std::string PermissionUtil::GetPermissionString(
       return "AudioCapture";
     case content::PermissionType::VIDEO_CAPTURE:
       return "VideoCapture";
-    case content::PermissionType::MIDI:
-      return "Midi";
     case content::PermissionType::BACKGROUND_SYNC:
       return "BackgroundSync";
     case content::PermissionType::FLASH:
@@ -60,8 +56,6 @@ bool PermissionUtil::GetPermissionType(ContentSettingsType type,
     *out = PermissionType::GEOLOCATION;
   } else if (type == CONTENT_SETTINGS_TYPE_NOTIFICATIONS) {
     *out = PermissionType::NOTIFICATIONS;
-  } else if (type == CONTENT_SETTINGS_TYPE_MIDI_SYSEX) {
-    *out = PermissionType::MIDI_SYSEX;
   } else if (type == CONTENT_SETTINGS_TYPE_DURABLE_STORAGE) {
     *out = PermissionType::DURABLE_STORAGE;
   } else if (type == CONTENT_SETTINGS_TYPE_MEDIASTREAM_CAMERA) {

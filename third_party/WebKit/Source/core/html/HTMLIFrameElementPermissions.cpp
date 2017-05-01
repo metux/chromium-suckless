@@ -20,7 +20,6 @@ struct SupportedPermission {
 const SupportedPermission kSupportedPermissions[] = {
     {"geolocation", WebPermissionTypeGeolocation},
     {"notifications", WebPermissionTypeNotifications},
-    {"midi", WebPermissionTypeMidiSysEx},
 };
 
 // Returns true if the name is valid and the type is stored in |result|.

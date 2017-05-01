@@ -80,7 +80,6 @@ check_targets = [
   "//media/cdm/*",
   "//media/ffmpeg/*",
   "//media/gpu/*",
-  "//media/midi/*",
   "//media/mojo/*",
   "//media/test/*",
 

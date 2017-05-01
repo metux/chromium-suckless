@@ -42,7 +42,6 @@ android_library("content_java") {
     "//media/base/android:media_java",
     "//media/capture/content/android:screen_capture_java",
     "//media/capture/video/android:capture_java",
-    "//media/midi:midi_java",
     "//mojo/android:system_java",
     "//mojo/public/java:bindings",
     "//mojo/public/java:system",

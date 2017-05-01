@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">اسم الإشارة</translation>
 <translation id="1123316951456119629">‏بعد قطع اتصال حسابك في Google عن <ph name="PRODUCT_NAME" />، لن تتم مزامنة التغييرات في بياناتك على هذا الكمبيوتر مع حسابك في Google مرة أخرى. ستظل البيانات المخزنة فعلاً على حسابك في Google مكانها حتى تزيلها باستخدام <ph name="BEGIN_LINK" />لوحة تحكم Google<ph name="END_LINK" />.</translation>
 <translation id="1124772482545689468">المستخدم</translation>
-<translation id="1128109161498068552">‏عدم السماح لأي موقع باستخدام الرسائل الحصرية في النظام للدخول إلى أجهزة MIDI</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">تعديل محرّك البحث</translation>
 <translation id="1128987120443782698">‏تبلغ سعة جهاز التخزين <ph name="DEVICE_CAPACITY" />. الرجاء إدخال بطاقة SD أو رقاقة ذاكرة USB بسعة 4 غيغابايت.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">مخصص</translation>
 <translation id="1178539123212786672">‏أداة حل الخادم الوكيل V8 خارج المعالجة.</translation>
 <translation id="1178581264944972037">تعليق</translation>
-<translation id="1179803038870941185">‏يريد <ph name="URL" /> الحصول على إمكانية تحكم كاملة في أجهزة MIDI.</translation>
 <translation id="1181037720776840403">إزالة</translation>
 <translation id="1183083053288481515">يتم استخدام شهادة قدمها المشرف</translation>
 <translation id="1183237619868651138">تعذّر تثبيت <ph name="EXTERNAL_CRX_FILE" /> في ذاكرة التخزين المؤقت المحلية.</translation>
@@ -659,7 +657,6 @@
 <translation id="1844692022597038441">هذا الملف غير متاح في وضع عدم الاتصال.</translation>
 <translation id="1846308012215045257">‏انقر بالماوس مع الضغط على مفتاح Ctrl لتشغيل <ph name="PLUGIN_NAME" /></translation>
 <translation id="184633654410729720">‏لوحة المفاتيح التايلاندية (Kedmanee)</translation>
-<translation id="1849186935225320012">‏تتضمن هذه الصفحة إمكانية تحكم شامل في أجهزة MIDI.</translation>
 <translation id="1850508293116537636">تدوير &amp;في اتجاه عقارب الساعة</translation>
 <translation id="1852799913675865625">حدث خطأ أثناء محاولة قراءة الملف: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">إضافة موقع...</translation>
@@ -796,7 +793,6 @@
 <translation id="2080070583977670716">مزيد من الإعدادات</translation>
 <translation id="2081322486940989439">‏هذا الموقع لا يقبل بطاقة Visa.</translation>
 <translation id="2085470240340828803">هناك ملف بالاسم "<ph name="FILENAME" />" موجود فعلاً. ما الإجراء الذي تريد تنفيذه؟</translation>
-<translation id="2085985589726507051">‏واجهة برمجة تطبيقات MIDI على الويب</translation>
 <translation id="2087822576218954668">الطباعة: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">‏لاسترداد معلومات حسابك، انتقل إلى: google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">إعداد أمان النظام</translation>
@@ -906,7 +902,6 @@
 <translation id="2222641695352322289">الوسيلة الوحيدة للتراجع عن هذا هي إعادة تثبيت <ph name="IDS_SHORT_PRODUCT_OS_NAME" />.</translation>
 <translation id="2224444042887712269">ينتمي هذا الإعداد إلى <ph name="OWNER_EMAIL" />.</translation>
 <translation id="2224551243087462610">تعديل اسم المجلد</translation>
-<translation id="2226449515541314767">‏تم حظر هذا الموقع من التحكم تحكمًا كاملاً في أجهزة MIDI.</translation>
 <translation id="2226720438730111184">أخبرنا بما يحدث</translation>
 <translation id="2229161054156947610">يتبقى أكثر من ساعة واحدة</translation>
 <translation id="222931766245975952">تم اقتطاع الملف</translation>
@@ -1525,7 +1520,6 @@
 <translation id="297870353673992530">‏خادم نظام أسماء النطاقات (DNS):</translation>
 <translation id="2981113813906970160">عرض مؤشر الماوس الكبير</translation>
 <translation id="2984337792991268709">اليوم <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">‏تم حظر هذه الصفحة من التحكم تحكمًا كاملاً في أجهزة MIDI.</translation>
 <translation id="2987775926667433828">الصينيّة التقليديّة</translation>
 <translation id="2987776766682852234">الحد من تفاصيل عنوان "المُحيل" الافتراضية.</translation>
 <translation id="2989474696604907455">غير متصل</translation>
@@ -1735,7 +1729,6 @@
 <translation id="3254434849914415189">اختر التطبيق الافتراضي لملفات <ph name="FILE_TYPE" />:</translation>
 <translation id="3255228561559750854">‏يمكنك البحث أو النطق بعبارة "OK Google"</translation>
 <translation id="3257011895468050906">‏تمكين دعم "Token Binding".</translation>
-<translation id="326356299252142602">‏استخدام واجهة برمجة تطبيقات MIDI لوقت التشغيل في نظام التشغيل Windows</translation>
 <translation id="3264544094376351444">‏خط Sans-serif</translation>
 <translation id="3264547943200567728">‏أخفق إعداد شبكة Chromebox</translation>
 <translation id="3265459715026181080">إغلاق الإطار</translation>
@@ -1955,7 +1948,6 @@
 <translation id="3530751398950974194">تحديث مزامنة عبارة المرور</translation>
 <translation id="3531250013160506608">مربع نص كلمة المرور</translation>
 <translation id="3534879087479077042">ما اسم المستخدم الذي يخضع للإشراف؟</translation>
-<translation id="3535652963535405415">‏تمكين الدعم التجريبي لواجهة برمجة تطبيقات MIDI على الويب.</translation>
 <translation id="354060433403403521">‏محول AC</translation>
 <translation id="3541661933757219855">‏اكتب Ctrl+Alt+/ أو Escape للإخفاء</translation>
 <translation id="3543393733900874979">أخفق التحديث (خطأ: <ph name="ERROR_NUMBER" />)</translation>
@@ -1984,7 +1976,6 @@
 <translation id="3574210789297084292">تسجيل الدخول</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">الليتوانية</translation>
-<translation id="3575927481544652747">‏تعطيل واجهة برمجة تطبيقات MIDI لوقت التشغيل في نظام التشغيل Windows لـ WebMIDI، التي يتم تمكينها افتراضيًا على نظام التشغيل Windows الإصدار 10 أو الأحدث.</translation>
 <translation id="3576324189521867626">تم التثبيت بنجاح</translation>
 <translation id="3578331450833904042">افتراضي (اختيار كل شيء)</translation>
 <translation id="3578594933904494462">تجري مشاركة محتوى علامة التبويب هذه.</translation>
@@ -3012,7 +3003,6 @@
 <translation id="499165176004408815">استخدام وضع التباين العالي</translation>
 <translation id="4992066212339426712">إعادة الصوت</translation>
 <translation id="4992458225095111526">‏تأكيد Powerwash</translation>
-<translation id="4992576607980257687">‏إخباري عند محاولة أحد المواقع استخدام رسائل حصرية للنظام للدخول إلى أجهزة MIDI (يُوصى به)</translation>
 <translation id="4994474651455208930">السماح للمواقع بأن تطلب أن تصبح معالجات افتراضية للبروتوكولات</translation>
 <translation id="4998873842614926205">تأكيد التغييرات</translation>
 <translation id="4999273653895592255">تتحكم هذه العلامة في ما إذا كان يمكننا عرض واجهة المستخدم القديمة أو الجديدة لنافذة منتقي بث محتوى سطح المكتب.</translation>
@@ -3609,7 +3599,6 @@
 <translation id="5774295353725270860">فتح تطبيق الملفات</translation>
 <translation id="5774515636230743468">البيان:</translation>
 <translation id="577624874850706961">ملفات تعريف ارتباط البحث</translation>
-<translation id="5778550464785688721">‏التحكم الكامل في MIDI</translation>
 <translation id="5780066559993805332">(الأفضل)</translation>
 <translation id="5780973441651030252">أولوية المعالجة</translation>
 <translation id="5783221160790377646">لم يتم إنشاء مستخدم يخضع للإدارة نظرًا لحدوث خطأ. يُرجى إعادة المحاولة لاحقًا.</translation>
@@ -3743,7 +3732,6 @@
 <translation id="5965403572731919803">إضافة إلى الرف...</translation>
 <translation id="5965661248935608907">كما أنها تتحكم في الصفحة التي تظهر عند النقر على زر الصفحة الرئيسية أو إجراء بحث من المربع متعدد الاستخدامات.</translation>
 <translation id="5971037678316050792">التحكم في حالة محول بلوتوث وإقرانه</translation>
-<translation id="5972017421290582825">‏إدارة إعدادات MIDI...</translation>
 <translation id="5972708806901999743">نقل إلى الأعلى</translation>
 <translation id="5972826969634861500">بدء <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">تصغير</translation>
@@ -3918,7 +3906,6 @@
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: جارٍ التوصيل...</translation>
 <translation id="6226777517901268232">ملف مفتاح خاص (اختياري)</translation>
 <translation id="6227235786875481728">يتعذر تشغيل هذا الملف.</translation>
-<translation id="6228691855869374890">‏يتضمن هذا الموقع إمكانية تحكم شامل في أجهزة MIDI.</translation>
 <translation id="6231148928368101651">اللوحات</translation>
 <translation id="6231881193380278751">‏أضف معلمة طلب بحث في عنوان URL لإجراء تحديث تلقائي لصفحة: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">البطارية</translation>
@@ -4573,7 +4560,6 @@
 <translation id="711902386174337313">الاطلاع على قائمة بالأجهزة التي سجلت الدخول</translation>
 <translation id="7119389851461848805">الطاقة</translation>
 <translation id="7119832699359874134">‏رمز التحقق من البطاقة (CVC) غير صالح. يُرجى التحقق وإعادة المحاولة.</translation>
-<translation id="7122132768827815392">‏يمكنك استخدام واجهة برمجة تطبيقات MIDI لوقت التشغيل في نظام التشغيل Windows لـ WebMIDI (فعالة فقط مع نظام التشغيل Windows الإصدار 10 أو الإصدارات الأحدث).</translation>
 <translation id="7122169255686960726">مزيد من النسخ</translation>
 <translation id="7126604456862387217">‏'&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;' - &lt;em&gt;البحث في Drive&lt;/em&gt;</translation>
 <translation id="7127980134843952133">سجل التنزيل</translation>
@@ -4988,7 +4974,6 @@
 <translation id="7706319470528945664">لوحة المفاتيح البرتغالية</translation>
 <translation id="7709152031285164251">أخفق - <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">يُعد النقر على "متابعة" بمثابة موافقة منك على <ph name="LEGAL_DOC_LINK_TEXT_1" />، و<ph name="LEGAL_DOC_LINK_TEXT_2" />، و<ph name="LEGAL_DOC_LINK_TEXT_3" />، و<ph name="LEGAL_DOC_LINK_TEXT_4" />، و<ph name="LEGAL_DOC_LINK_TEXT_5" />.</translation>
-<translation id="7713320380037170544">‏السماح لجميع المواقع باستخدام الرسائل الحصرية في النظام للدخول إلى أجهزة MIDI</translation>
 <translation id="7714464543167945231">شهادة</translation>
 <translation id="7716020873543636594">النقر تلقائيًا عند توقف مؤشر الماوس</translation>
 <translation id="7716284821709466371">ارتفاع جزء الصورة الافتراضي</translation>
@@ -5169,7 +5154,6 @@
 <translation id="7965010376480416255">الذاكرة المشتركة</translation>
 <translation id="7966241909927244760">&amp;نسخ عنوان الصورة</translation>
 <translation id="7967437925638594022">الإضافات والتطبيقات</translation>
-<translation id="7968796119156413760">‏استخدام واجهة برمجة تطبيقات Android Midi لـ WebMIDI (فعالة فقط مع أجهزة Android M+).</translation>
 <translation id="7968833647796919681">تمكين جمع بيانات عن مستوى الأداء</translation>
 <translation id="7968982339740310781">عرض التفاصيل</translation>
 <translation id="7969525169268594403">السلوفينية</translation>
@@ -5314,7 +5298,6 @@
 <translation id="8146793085009540321">أخفق تسجيل الدخول، يُرجى الاتصال بالمشرف أو إعادة المحاولة.</translation>
 <translation id="8148264977957212129">‏أسلوب الإدخال لنظام Pinyin</translation>
 <translation id="8148913456785123871">‏إظهار بطاقات المساعد الفوري من Google في launcher</translation>
-<translation id="8150391391298684512">‏تعطيل واجهة برمجة تطبيقات MIDI لوقت التشغيل في نظام التشغيل Windows</translation>
 <translation id="8151185429379586178">أدوات مطوري البرامج</translation>
 <translation id="8151638057146502721">تهيئة</translation>
 <translation id="8151639108075998630">تمكين تصفح الضيف</translation>
@@ -5648,7 +5631,6 @@
 <translation id="8603912787021349466">‏السماح لتطبيقات Android بالبدء تلقائيًا بعد تسجيل الدخول.</translation>
 <translation id="8605428685123651449">‏ذاكرة SQLite</translation>
 <translation id="8605503133013456784">أخفق قطع الاتصال وإلغاء الاقتران بـ "<ph name="DEVICE_NAME" />".</translation>
-<translation id="8606726445206553943">‏استخدام أجهزة MIDI</translation>
 <translation id="8609465669617005112">التحريك إلى أعلى</translation>
 <translation id="8610892630019863050">طلب الإذن عند رغبة أحد المواقع إظهار الإشعارات (مستحسن)</translation>
 <translation id="8615618338313291042">تطبيق وضع التصفح المتخفي: <ph name="APP_NAME" /></translation>
@@ -5895,7 +5877,6 @@
 <translation id="8926389886865778422">عدم السؤال مرة أخرى</translation>
 <translation id="8926518602592448999">تعطيل إضافات وضع مطور البرامج</translation>
 <translation id="8931394284949551895">الأجهزة الجديدة</translation>
-<translation id="8932730422557198035">‏استخدام واجهة برمجة تطبيقات Android Midi</translation>
 <translation id="8933960630081805351">إ&amp;ظهار في الباحث</translation>
 <translation id="8934732568177537184">متابعة</translation>
 <translation id="8938356204940892126">توقفت</translation>

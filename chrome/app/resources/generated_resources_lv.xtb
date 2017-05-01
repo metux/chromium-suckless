@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">Grāmatzīmes nosaukums</translation>
 <translation id="1123316951456119629">Ja savu Google kontu atsaistīsiet no pārlūkprogrammas <ph name="PRODUCT_NAME" />, jūsu dati joprojām tiks glabāti šajā datorā, taču veiktās izmaiņas vairs netiks sinhronizētas ar Google kontu. Dati, kas jau tiek glabāti jūsu Google kontā, netiks dzēsti, kamēr tos nenoņemsiet, izmantojot <ph name="BEGIN_LINK" />Google vadības paneli<ph name="END_LINK" />.</translation>
 <translation id="1124772482545689468">Lietotājs</translation>
-<translation id="1128109161498068552">Neļaut nevienai vietnei izmantot ekskluzīvus sistēmas ziņojumus, lai piekļūtu MIDI ierīcēm</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">Meklētājprogrammas rediģēšana</translation>
 <translation id="1128987120443782698">Atmiņas ierīces ietilpība ir <ph name="DEVICE_CAPACITY" />. Ievietojiet SD karti vai USB atmiņas karti, kuras ietilpība ir vismaz 4 GB.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">Pielāgota</translation>
 <translation id="1178539123212786672">Ārpusprocesa V8 starpniekservera atrisinātājs.</translation>
 <translation id="1178581264944972037">Pauzēt</translation>
-<translation id="1179803038870941185"><ph name="URL" /> vēlas iegūt MIDI ierīču pilnīgu pārvaldību.</translation>
 <translation id="1181037720776840403">Noņemt</translation>
 <translation id="1183083053288481515">Administratora sniegta sertifikāta izmantošana</translation>
 <translation id="1183237619868651138">Failu “<ph name="EXTERNAL_CRX_FILE" />” nevar instalēt lokālajā kešatmiņā.</translation>
@@ -658,7 +656,6 @@
 <translation id="1844692022597038441">Šis fails nav pieejams bezsaistē.</translation>
 <translation id="1846308012215045257">Lai palaistu spraudni <ph name="PLUGIN_NAME" />, nospiediet taustiņu Ctrl un noklikšķiniet</translation>
 <translation id="184633654410729720">Taju valodas tastatūra (Kedmanee)</translation>
-<translation id="1849186935225320012">Šai lapai ir pieejama MIDI ierīču pilnīga pārvaldība.</translation>
 <translation id="1850508293116537636">Pagriezt &amp;pulksteņrādītāju kustības virzienā</translation>
 <translation id="1852799913675865625">Faila lasīšanas laikā radās kļūda: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">Pievienot atrašanās vietu...</translation>
@@ -795,7 +792,6 @@
 <translation id="2080070583977670716">Vairāk iestatījumu</translation>
 <translation id="2081322486940989439">Šajā vietnē netiek pieņemti maksājumi ar Visa karti.</translation>
 <translation id="2085470240340828803">Fails ar nosaukumu “<ph name="FILENAME" />” jau pastāv. Kā vēlaties rīkoties?</translation>
-<translation id="2085985589726507051">Tīmekļa MIDI API</translation>
 <translation id="2087822576218954668">Drukāšana: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">Lai atgūtu konta informāciju, apmeklējiet vietni google.com/accounts/recovery.</translation>
 <translation id="2090876986345970080">Sistēmas drošības iestatījumi</translation>
@@ -906,7 +902,6 @@ Vēl jālādē: <ph name="HOUR" />:<ph name="MINUTE" /></translation>
 <translation id="2222641695352322289">Šo darbību var atsaukt, tikai atkārtoti instalējot <ph name="IDS_SHORT_PRODUCT_OS_NAME" />.</translation>
 <translation id="2224444042887712269">Šo iestatījumu veica <ph name="OWNER_EMAIL" />.</translation>
 <translation id="2224551243087462610">Rediģēt mapes nosaukumu</translation>
-<translation id="2226449515541314767">Šajā vietnē ir bloķēta MIDI ierīču pilnīga pārvaldība.</translation>
 <translation id="2226720438730111184">Aprakstiet problēmu.</translation>
 <translation id="2229161054156947610">Atlikusi vairāk nekā 1 stunda</translation>
 <translation id="222931766245975952">Fails ir saīsināts</translation>
@@ -1526,7 +1521,6 @@ Es uzskatu, ka šai vietnei nav jābūt bloķētai.</translation>
 <translation id="297870353673992530">DNS serveris:</translation>
 <translation id="2981113813906970160">Rādīt lielu peles kursoru</translation>
 <translation id="2984337792991268709">Šodien plkst. <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">Šajā lapā ir bloķēta MIDI ierīču pilnīga pārvaldība.</translation>
 <translation id="2987775926667433828">Tradicionālā ķīniešu</translation>
 <translation id="2987776766682852234">Samazināt noklusējuma “referer” galvenes granularitāti.</translation>
 <translation id="2989474696604907455">nav pievienota</translation>
@@ -1737,7 +1731,6 @@ Lūdzu, pārbaudiet savu e-pasta iesūtni <ph name="ACCOUNT_EMAIL" />, lai skat�
 <translation id="3254434849914415189">Izvēlieties noklusējuma lietotni <ph name="FILE_TYPE" /> failu atvēršanai:</translation>
 <translation id="3255228561559750854">Veiciet meklēšanu vai sakiet “Ok Google”.</translation>
 <translation id="3257011895468050906">Iespējot Token Binding atbalstu.</translation>
-<translation id="326356299252142602">Izmantot Windows Runtime MIDI API</translation>
 <translation id="3264544094376351444">Sans-Serif fonts</translation>
 <translation id="3264547943200567728">Neizdevās iestatīt Chromebox tīklu</translation>
 <translation id="3265459715026181080">Aizvērt logu</translation>
@@ -1959,7 +1952,6 @@ no <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3530751398950974194">Atjaunināt sinhronizācijas ieejas frāzi</translation>
 <translation id="3531250013160506608">Paroles tekstlodziņš</translation>
 <translation id="3534879087479077042">Kas ir uzraudzīts lietotājs?</translation>
-<translation id="3535652963535405415">Iespējot tīmekļa MIDI API eksperimentālo atbalstu.</translation>
 <translation id="354060433403403521">Maiņstrāvas adapteris</translation>
 <translation id="3541661933757219855">Ievadīt Ctrl+Alt+/ vai Escape, lai paslēptu</translation>
 <translation id="3543393733900874979">Atjaunināšana neizdevās (kļūda: <ph name="ERROR_NUMBER" />)</translation>
@@ -1988,7 +1980,6 @@ no <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3574210789297084292">pierakstīties</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">Lietuviešu valoda</translation>
-<translation id="3575927481544652747">Atspējot Windows Runtime MIDI API saskarnei WebMIDI, kas operētājsistēmā Windows 10 un jaunākās versijās pēc noklusējuma ir iespējots.</translation>
 <translation id="3576324189521867626">Veiksmīgi instalēta</translation>
 <translation id="3578331450833904042">Noklusējums (uztvert visu)</translation>
 <translation id="3578594933904494462">Šīs cilnes saturs tiek kopīgots.</translation>
@@ -3019,7 +3010,6 @@ Lai turpinātu skatīšanu, nospiediet jebkuru taustiņu.</translation>
 <translation id="499165176004408815">Izmantot augsta kontrasta režīmu</translation>
 <translation id="4992066212339426712">Ieslēgt skaņu</translation>
 <translation id="4992458225095111526">Powerwash apstiprināšana</translation>
-<translation id="4992576607980257687">Jautāt, ja vietne vēlas izmantot ekskluzīvus sistēmas ziņojumus, lai piekļūtu MIDI ierīcēm (ieteicams)</translation>
 <translation id="4994474651455208930">Ļaut vietnēm lūgt kļūt par protokolu noklusējuma apdarinātājiem</translation>
 <translation id="4998873842614926205">Apstiprināt izmaiņas</translation>
 <translation id="4999273653895592255">Šis karodziņš nosaka, vai rādīt iepriekšējo vai jauno lietotāja saskarni darbvirsmas attēla uzņemšanas atlasīšanas logā.</translation>
@@ -3617,7 +3607,6 @@ Lai turpinātu skatīšanu, nospiediet jebkuru taustiņu.</translation>
 <translation id="5774295353725270860">Atvērt lietotni Faili</translation>
 <translation id="5774515636230743468">Manifests:</translation>
 <translation id="577624874850706961">Meklēt sīkfailus</translation>
-<translation id="5778550464785688721">Pilnīga MIDI ierīču pārvaldība</translation>
 <translation id="5780066559993805332">(Vislabākā)</translation>
 <translation id="5780973441651030252">Procesa prioritāte</translation>
 <translation id="5783221160790377646">Uzraudzītais lietotājs netika izveidots, jo radās kļūda. Lūdzu, vēlāk mēģiniet vēlreiz.</translation>
@@ -3751,7 +3740,6 @@ Lai turpinātu skatīšanu, nospiediet jebkuru taustiņu.</translation>
 <translation id="5965403572731919803">Pievienot plauktam...</translation>
 <translation id="5965661248935608907">Tas nosaka arī to, kāda lapa tiks rādīta, kad noklikšķināsiet uz pogas “Sākums” vai meklēsiet, izmantojot universālo lodziņu.</translation>
 <translation id="5971037678316050792">Kontrolēt Bluetooth adaptera statusu un savienošanu pārī</translation>
-<translation id="5972017421290582825">Pārvaldīt MIDI iestatījumus...</translation>
 <translation id="5972708806901999743">Pārvietot uz augšu</translation>
 <translation id="5972826969634861500">Sākt <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">Tālināt</translation>
@@ -3925,7 +3913,6 @@ Lai turpinātu skatīšanu, nospiediet jebkuru taustiņu.</translation>
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: notiek savienojuma izveide...</translation>
 <translation id="6226777517901268232">Privātās atslēgas fails (neobligāti)</translation>
 <translation id="6227235786875481728">Šo failu nevarēja demonstrēt.</translation>
-<translation id="6228691855869374890">Šai vietnei ir pieejama MIDI ierīču pilnīga pārvaldība.</translation>
 <translation id="6231148928368101651">Paneļi</translation>
 <translation id="6231881193380278751">Vietrādī URL pievienojiet vaicājuma parametru, lai automātiski atsvaidzinātu lapu: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">Akumulators</translation>
@@ -4580,7 +4567,6 @@ Lai turpinātu skatīšanu, nospiediet jebkuru taustiņu.</translation>
 <translation id="711902386174337313">Lasīt to ierīču sarakstu, kurās esat pierakstījies</translation>
 <translation id="7119389851461848805">ieslēgšana</translation>
 <translation id="7119832699359874134">CVC kods nav derīgs. Lūdzu, pārbaudiet to un mēģiniet vēlreiz.</translation>
-<translation id="7122132768827815392">Izmantot Windows Runtime MIDI API saskarnei WebMIDI (darbojas tikai operētājsistēmā Windows 10 vai jaunākās versijās).</translation>
 <translation id="7122169255686960726">Vairāk kopiju</translation>
 <translation id="7126604456862387217">'&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;' — &lt;em&gt;meklēt Diskā&lt;/em&gt;</translation>
 <translation id="7127980134843952133">Lejupielādes vēsture</translation>
@@ -4995,7 +4981,6 @@ Lai turpinātu skatīšanu, nospiediet jebkuru taustiņu.</translation>
 <translation id="7706319470528945664">Portugāļu valodas tastatūra</translation>
 <translation id="7709152031285164251">Lejupielāde neizdevās. <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">Noklikšķinot uz “Turpināt”, jūs piekrītat noteikumiem šādos juridiskajos dokumentos: <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" /> un <ph name="LEGAL_DOC_LINK_TEXT_5" />.</translation>
-<translation id="7713320380037170544">Ļaut visām vietnēm izmantot ekskluzīvus sistēmas ziņojumus, lai piekļūtu MIDI ierīcēm</translation>
 <translation id="7714464543167945231">Sertifikāts</translation>
 <translation id="7716020873543636594">Automātiski noklikšķināt, kad peles rādītājs apstājas.</translation>
 <translation id="7716284821709466371">Noklusējuma elementu augstums</translation>
@@ -5176,7 +5161,6 @@ Lai turpinātu skatīšanu, nospiediet jebkuru taustiņu.</translation>
 <translation id="7965010376480416255">Koplietotā atmiņa</translation>
 <translation id="7966241909927244760">Kopēt attēla adresi</translation>
 <translation id="7967437925638594022">Paplašinājumi un lietotnes</translation>
-<translation id="7968796119156413760">Izmantot Android Midi API saskarnei WebMIDI (darbojas tikai Android M+ ierīcēs).</translation>
 <translation id="7968833647796919681">Iespējot veiktspējas datu apkopošanu</translation>
 <translation id="7968982339740310781">Skatīt detalizētu informāciju</translation>
 <translation id="7969525169268594403">Slovēņu valoda</translation>
@@ -5321,7 +5305,6 @@ Glabājiet atslēgas failu drošā vietā. Tas būs vajadzīgs, lai izveidotu ja
 <translation id="8146793085009540321">Neizdevās pierakstīties. Lūdzu, sazinieties ar administratoru vai mēģiniet vēlreiz.</translation>
 <translation id="8148264977957212129">Pinyin valodas ievades metode</translation>
 <translation id="8148913456785123871">Rādīt “Google tagad” kartītes palaišanas programmā</translation>
-<translation id="8150391391298684512">Atspējot Windows Runtime MIDI API</translation>
 <translation id="8151185429379586178">Izstrādātāju rīki</translation>
 <translation id="8151638057146502721">Konfigurēt</translation>
 <translation id="8151639108075998630">Iespējot pārlūkošanu viesim</translation>
@@ -5656,7 +5639,6 @@ Tiek rēķināts atlikušais uzlādes laiks</translation>
 <translation id="8603912787021349466">Atļaut pēc pierakstīšanās automātiski palaist Android lietotnes.</translation>
 <translation id="8605428685123651449">SQLite atmiņa</translation>
 <translation id="8605503133013456784">Neizdevās atvienot un atdalīt no pāra ar ierīci <ph name="DEVICE_NAME" />.</translation>
-<translation id="8606726445206553943">izmantot jūsu MIDI ierīces</translation>
 <translation id="8609465669617005112">Virziet uz augšu</translation>
 <translation id="8610892630019863050">Vaicāt, ja vietne vēlas rādīt paziņojumus (ieteicams)</translation>
 <translation id="8615618338313291042">Inkognito lietojumprogramma: <ph name="APP_NAME" /></translation>
@@ -5903,7 +5885,6 @@ Tiek rēķināts atlikušais uzlādes laiks</translation>
 <translation id="8926389886865778422">Nejautāt atkārtoti</translation>
 <translation id="8926518602592448999">Izstrādātāja režīma paplašinājumu atspējošana</translation>
 <translation id="8931394284949551895">Jaunas ierīces</translation>
-<translation id="8932730422557198035">Izmantot Android Midi API</translation>
 <translation id="8933960630081805351">Rādīt lietojumprogrammā &amp;Finder</translation>
 <translation id="8934732568177537184">Turpināt</translation>
 <translation id="8938356204940892126">Es padodos</translation>

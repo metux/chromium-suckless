@@ -27,8 +27,6 @@ class LayoutTestContentRendererClient : public ShellContentRendererClient {
       blink::WebMediaStreamCenterClient* client) override;
   blink::WebRTCPeerConnectionHandler* OverrideCreateWebRTCPeerConnectionHandler(
       blink::WebRTCPeerConnectionHandlerClient* client) override;
-  blink::WebMIDIAccessor* OverrideCreateMIDIAccessor(
-      blink::WebMIDIAccessorClient* client) override;
   blink::WebAudioDevice* OverrideCreateAudioDevice(double sample_rate) override;
   blink::WebClipboard* OverrideWebClipboard() override;
   blink::WebThemeEngine* OverrideThemeEngine() override;

@@ -30,8 +30,6 @@ const int kMaximumReportsPerOriginPerPermissionPerMinute = 5;
 PermissionReport::PermissionType PermissionTypeForReport(
     PermissionType permission) {
   switch (permission) {
-    case PermissionType::MIDI_SYSEX:
-      return PermissionReport::MIDI_SYSEX;
     case PermissionType::PUSH_MESSAGING:
       return PermissionReport::PUSH_MESSAGING;
     case PermissionType::NOTIFICATIONS:
@@ -40,8 +38,6 @@ PermissionReport::PermissionType PermissionTypeForReport(
       return PermissionReport::GEOLOCATION;
     case PermissionType::PROTECTED_MEDIA_IDENTIFIER:
       return PermissionReport::PROTECTED_MEDIA_IDENTIFIER;
-    case PermissionType::MIDI:
-      return PermissionReport::MIDI;
     case PermissionType::DURABLE_STORAGE:
       return PermissionReport::DURABLE_STORAGE;
     case PermissionType::AUDIO_CAPTURE:

@@ -59,7 +59,6 @@ TEST_F(PermissionDecisionAutoBlockerUnitTest, RemoveCountsByUrl) {
   EXPECT_EQ(1, RecordDismiss(url1, content::PermissionType::NOTIFICATIONS));
 
   // Record some ignores.
-  EXPECT_EQ(1, RecordIgnore(url1, content::PermissionType::MIDI_SYSEX));
   EXPECT_EQ(1, RecordIgnore(url1, content::PermissionType::DURABLE_STORAGE));
   EXPECT_EQ(1, RecordIgnore(url2, content::PermissionType::GEOLOCATION));
   EXPECT_EQ(2, RecordIgnore(url2, content::PermissionType::GEOLOCATION));
@@ -70,7 +69,6 @@ TEST_F(PermissionDecisionAutoBlockerUnitTest, RemoveCountsByUrl) {
   // Expect that url1's actions are gone, but url2's remain.
   EXPECT_EQ(0, GetDismissalCount(url1, content::PermissionType::GEOLOCATION));
   EXPECT_EQ(0, GetDismissalCount(url1, content::PermissionType::NOTIFICATIONS));
-  EXPECT_EQ(0, GetIgnoreCount(url1, content::PermissionType::MIDI_SYSEX));
   EXPECT_EQ(0, GetIgnoreCount(url1, content::PermissionType::DURABLE_STORAGE));
 
   EXPECT_EQ(1, GetDismissalCount(url2, content::PermissionType::GEOLOCATION));
@@ -84,7 +82,6 @@ TEST_F(PermissionDecisionAutoBlockerUnitTest, RemoveCountsByUrl) {
   EXPECT_EQ(1, RecordIgnore(url1, content::PermissionType::GEOLOCATION));
   EXPECT_EQ(1, RecordIgnore(url1, content::PermissionType::NOTIFICATIONS));
   EXPECT_EQ(1, RecordIgnore(url1, content::PermissionType::DURABLE_STORAGE));
-  EXPECT_EQ(1, RecordIgnore(url2, content::PermissionType::MIDI_SYSEX));
 
   // Remove everything and expect that it's all gone.
   PermissionDecisionAutoBlocker::RemoveCountsByUrl(profile(),
@@ -98,5 +95,4 @@ TEST_F(PermissionDecisionAutoBlockerUnitTest, RemoveCountsByUrl) {
   EXPECT_EQ(0, GetIgnoreCount(url1, content::PermissionType::NOTIFICATIONS));
   EXPECT_EQ(0, GetIgnoreCount(url2, content::PermissionType::GEOLOCATION));
   EXPECT_EQ(0, GetIgnoreCount(url2, content::PermissionType::DURABLE_STORAGE));
-  EXPECT_EQ(0, GetIgnoreCount(url2, content::PermissionType::MIDI_SYSEX));
 }

@@ -58,7 +58,6 @@ template("implement_content_app") {
       "//gpu",
       "//media",
       "//media/capture",
-      "//media/midi",
       "//net",
       "//skia",
       "//third_party/android_tools:cpu_features",

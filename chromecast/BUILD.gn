@@ -37,7 +37,6 @@ cast_test_group("cast_tests") {
     "//content/test:content_unittests",
     "//crypto:crypto_unittests",
     "//media:media_unittests",
-    "//media/midi:midi_unittests",
     "//net:net_unittests",
     "//ppapi:ppapi_unittests",
     "//sandbox/linux:sandbox_linux_unittests",

@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">Pangalan ng bookmark</translation>
 <translation id="1123316951456119629">Sa pamamagitan ng pagdiskonekta ng iyong Google Account sa <ph name="PRODUCT_NAME" />, mananatili ang iyong data sa computer na ito ngunit hindi na masi-sync sa iyong Google Account ang mga pagbabago. Mananatili doon ang data na nakaimbak na sa iyong Google Account hanggang sa alisin mo ito gamit ang <ph name="BEGIN_LINK" />Google Dashboard<ph name="END_LINK" />.</translation>
 <translation id="1124772482545689468">User</translation>
-<translation id="1128109161498068552">Huwag payagan ang anumang mga site na gamitin ang mga eksklusibong mensahe ng system upang i-access ang mga MIDI device</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">I-edit ang search engine</translation>
 <translation id="1128987120443782698">Ang storage device ay may kapasidad na <ph name="DEVICE_CAPACITY" />. Mangyaring maglagay ng SD card o USB memory stick na may hindi bababa sa kapasidad na 4GB.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">Custom</translation>
 <translation id="1178539123212786672">Out-of-process na V8 Proxy Resolver.</translation>
 <translation id="1178581264944972037">I-pause</translation>
-<translation id="1179803038870941185">Gusto ng <ph name="URL" /> na magkaroon ng buong kontrol sa iyong mga MIDI device.</translation>
 <translation id="1181037720776840403">Alisin</translation>
 <translation id="1183083053288481515">Gumagamit ng certificate na ibinigay ng administrator</translation>
 <translation id="1183237619868651138">Hindi ma-install ang <ph name="EXTERNAL_CRX_FILE" /> sa lokal na cache.</translation>
@@ -658,7 +656,6 @@
 <translation id="1844692022597038441">Hindi available offline ang file na ito.</translation>
 <translation id="1846308012215045257">Pindutin ang control at i-click upang patakbuhin ang <ph name="PLUGIN_NAME" /></translation>
 <translation id="184633654410729720">Thai keyboard (Kedmanee)</translation>
-<translation id="1849186935225320012">May buong kontrol sa mga MIDI device ang pahinang ito.</translation>
 <translation id="1850508293116537636">I-rotate &amp;pakanan</translation>
 <translation id="1852799913675865625">Nagkaroon ng error habang sinusubukang basahin ang file: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">Magdagdag ng lokasyon...</translation>
@@ -795,7 +792,6 @@
 <translation id="2080070583977670716">Higit pang mga setting</translation>
 <translation id="2081322486940989439">Ang site na ito ay hindi tumatanggap ng Visa.</translation>
 <translation id="2085470240340828803">Umiiral na ang isang file na may pangalang "<ph name="FILENAME" />". Ano ang gusto mong gawin?</translation>
-<translation id="2085985589726507051">Web MIDI API</translation>
 <translation id="2087822576218954668">Print: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">Upang i-recover ang impormasyon ng iyong account, pumunta sa: google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">Setting ng seguridad ng system</translation>
@@ -907,7 +903,6 @@
 <translation id="2222641695352322289">Ang tanging paraan upang ma-undo ito ay ang muling i-install ng <ph name="IDS_SHORT_PRODUCT_OS_NAME" />.</translation>
 <translation id="2224444042887712269">Ang setting na ito ay kay <ph name="OWNER_EMAIL" />.</translation>
 <translation id="2224551243087462610">I-edit ang pangalan ng folder</translation>
-<translation id="2226449515541314767">Na-block ang site na ito mula sa pagkakaroon ng buong kontrol sa mga MIDI device.</translation>
 <translation id="2226720438730111184">Sabihin sa Amin Kung Ano ang Nangyayari</translation>
 <translation id="2229161054156947610">Mahigit sa 1 oras ang natitira</translation>
 <translation id="222931766245975952">Naputol ang file</translation>
@@ -1527,7 +1522,6 @@ Sa palagay ko, hindi dapat i-block ang site na ito!</translation>
 <translation id="297870353673992530">Server ng DNS:</translation>
 <translation id="2981113813906970160">Ipakita ang malaking mouse cursor</translation>
 <translation id="2984337792991268709">Ngayon <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">Na-block ang pahinang ito mula sa pagkakaroon ng buong kontrol sa mga MIDI device.</translation>
 <translation id="2987775926667433828">Tsino Tradisyunal</translation>
 <translation id="2987776766682852234">Bawasan ang default na granularity ng header ng  'referer.'</translation>
 <translation id="2989474696604907455">hindi naka-attach</translation>
@@ -1737,7 +1731,6 @@ Pakitingnan ang iyong email sa <ph name="ACCOUNT_EMAIL" /> para sa mga ito at hi
 <translation id="3254434849914415189">Piliin ang default na app para sa mga <ph name="FILE_TYPE" /> na file:</translation>
 <translation id="3255228561559750854">Maghanap, o sabihin ang "Ok Google"</translation>
 <translation id="3257011895468050906">I-enable ang suporta sa Pagba-bind ng Token.</translation>
-<translation id="326356299252142602">Gamitin ang Windows Runtime MIDI API</translation>
 <translation id="3264544094376351444">Sans-serif font</translation>
 <translation id="3264547943200567728">Hindi na-set up ang network ng iyong Chromebox</translation>
 <translation id="3265459715026181080">Close Window</translation>
@@ -1959,7 +1952,6 @@ Mula Sa <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3530751398950974194">I-update ang passphrase sa pag-sync</translation>
 <translation id="3531250013160506608">Kahon ng teksto ng password</translation>
 <translation id="3534879087479077042">Ano ang isang pinangangasiwaang user?</translation>
-<translation id="3535652963535405415">I-enable ang pang-eksperimentong suporta sa Web MIDI API.</translation>
 <translation id="354060433403403521">AC adapter</translation>
 <translation id="3541661933757219855">I-type ang Ctrl+Alt+/ o Escape upang itago</translation>
 <translation id="3543393733900874979">Nabigo ang pag-update (error: <ph name="ERROR_NUMBER" />)</translation>
@@ -1988,7 +1980,6 @@ Mula Sa <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3574210789297084292">mag-sign in</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">Lithuanian</translation>
-<translation id="3575927481544652747">I-disable ang Windows Runtime MIDI API para sa WebMIDI, na naka-enable bilang default sa Windows 10 o mas bago.</translation>
 <translation id="3576324189521867626">Matagumpay na na-install</translation>
 <translation id="3578331450833904042">Default (pakinggan ang lahat)</translation>
 <translation id="3578594933904494462">Ibinabahagi ang nilalaman ng tab na ito.</translation>
@@ -3020,7 +3011,6 @@ Pumindot ng anumang key upang magpatuloy sa pagtuklas.</translation>
 <translation id="499165176004408815">Gamitin ang high contrast mode</translation>
 <translation id="4992066212339426712">I-unmute</translation>
 <translation id="4992458225095111526">Kumpirmahin ang Powerwash</translation>
-<translation id="4992576607980257687">Tanungin ako kapag gusto ng isang site na gamitin ang mga eksklusibong mensahe ng system upang i-access ang mga MIDI device (inirerekomenda)</translation>
 <translation id="4994474651455208930">Payagan ang mga site na humiling na maging mga default na handler para sa mga protocol</translation>
 <translation id="4998873842614926205">Kumpirmahin ang mga Pagbabago</translation>
 <translation id="4999273653895592255">Kinokontrol ng flag na ito kung ipapakita namin ang luma o bagong UI para sa window ng picker ng desktop capture.</translation>
@@ -3618,7 +3608,6 @@ Pumindot ng anumang key upang magpatuloy sa pagtuklas.</translation>
 <translation id="5774295353725270860">App na Buksan ang Mga File</translation>
 <translation id="5774515636230743468">Manifest:</translation>
 <translation id="577624874850706961">Maghanap ng cookies</translation>
-<translation id="5778550464785688721">Ganap na pagkontrol sa mga MIDI device</translation>
 <translation id="5780066559993805332">(Pinakamahusay)</translation>
 <translation id="5780973441651030252">Priority ng proseso</translation>
 <translation id="5783221160790377646">Dahil sa isang error, hindi nagawa ang isang pinangangasiwaang user. Pakisubukang muli sa ibang pagkakataon.</translation>
@@ -3752,7 +3741,6 @@ Pumindot ng anumang key upang magpatuloy sa pagtuklas.</translation>
 <translation id="5965403572731919803">Idagdag sa shelf...</translation>
 <translation id="5965661248935608907">Kinokontrol din nito kung anong pahina ang ipinapakita kapag na-click mo ang button ng Home o naghanap mula sa Omnibox.</translation>
 <translation id="5971037678316050792">Kontrolin ang estado at pagpapares ng Bluetooth adapter</translation>
-<translation id="5972017421290582825">Pamahalaan ang mga setting ng MIDI...</translation>
 <translation id="5972708806901999743">Ilipat sa itaas</translation>
 <translation id="5972826969634861500">Simulan ang <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">Mag-zoom out</translation>
@@ -3926,7 +3914,6 @@ Pumindot ng anumang key upang magpatuloy sa pagtuklas.</translation>
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: Kumokonekta...</translation>
 <translation id="6226777517901268232">Pribadong key file (opsyonal)</translation>
 <translation id="6227235786875481728">Hindi ma-play ang file na ito.</translation>
-<translation id="6228691855869374890">May buong kontrol sa mga MIDI device ang site na ito.</translation>
 <translation id="6231148928368101651">Mga Panel</translation>
 <translation id="6231881193380278751">Magdagdag ng query param sa URL upang awtomatikong i-refresh ang page: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">Baterya</translation>
@@ -4582,7 +4569,6 @@ Pumindot ng anumang key upang magpatuloy sa pagtuklas.</translation>
 <translation id="711902386174337313">Basahin ang listahan ng iyong mga naka-sign in na device</translation>
 <translation id="7119389851461848805">power</translation>
 <translation id="7119832699359874134">Di-wasto ang CVC code. Pakitingnan at subukang muli.</translation>
-<translation id="7122132768827815392">Gamitin ang Windows Runtime MIDI API para sa WebMIDI (gumagana lang sa Windows 10 o mas bago).</translation>
 <translation id="7122169255686960726">Dagdagan ang mga kopya</translation>
 <translation id="7126604456862387217">'&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;' - &lt;em&gt;maghanap sa Drive&lt;/em&gt;</translation>
 <translation id="7127980134843952133">Kasaysayan ng pag-download</translation>
@@ -4997,7 +4983,6 @@ Pumindot ng anumang key upang magpatuloy sa pagtuklas.</translation>
 <translation id="7706319470528945664">Portuguese na keyboard</translation>
 <translation id="7709152031285164251">Nabigo - <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">Sa pamamagitan ng pag-click sa Magpatuloy sumasang-ayon ka sa <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" />, at <ph name="LEGAL_DOC_LINK_TEXT_5" />.</translation>
-<translation id="7713320380037170544">Payagan ang lahat ng site na gamitin ang mga eksklusibong mensahe ng system upang i-access ang mga MIDI device</translation>
 <translation id="7714464543167945231">Certificate</translation>
 <translation id="7716020873543636594">Awtomatikong mag-click kapag tumigil ang mouse pointer</translation>
 <translation id="7716284821709466371">Default na taas ng tile</translation>
@@ -5178,7 +5163,6 @@ Pumindot ng anumang key upang magpatuloy sa pagtuklas.</translation>
 <translation id="7965010376480416255">Pamamahagi ng Memorya</translation>
 <translation id="7966241909927244760">K&amp;opyahin ang Address ng Larawan</translation>
 <translation id="7967437925638594022">Mga Extension at App</translation>
-<translation id="7968796119156413760">Gamitin ang Android Midi API para sa WebMIDI (mabisa lang sa mga Android M+ device).</translation>
 <translation id="7968833647796919681">I-enable ang pagkolekta ng data ng pagganap</translation>
 <translation id="7968982339740310781">Tingnan ang mga detalye</translation>
 <translation id="7969525169268594403">Slovenian</translation>
@@ -5323,7 +5307,6 @@ Ilagay ang iyong key file sa ligtas na lugar. Kailangan mo ito upang lumikha ng 
 <translation id="8146793085009540321">Hindi nakapag-sign in. Mangyaring makipag-ugnayan sa iyong administrator o subukang muli.</translation>
 <translation id="8148264977957212129">Paraan ng pag-input na Pinyin</translation>
 <translation id="8148913456785123871">Magpakita ng mga Google Now card sa launcher</translation>
-<translation id="8150391391298684512">I-disable ang Windows Runtime MIDI API</translation>
 <translation id="8151185429379586178">Mga tool ng developer</translation>
 <translation id="8151638057146502721">I-configure</translation>
 <translation id="8151639108075998630">Paganahin ang pagba-browse ng bisita</translation>
@@ -5660,7 +5643,6 @@ Kinakalkula ang oras hanggang sa mapuno</translation>
 <translation id="8603912787021349466">Payagan ang mga Android app na awtomatikong magsimula pagkatapos mag-sign in.</translation>
 <translation id="8605428685123651449">Memory ng SQLite</translation>
 <translation id="8605503133013456784">Nabigong magdiskonekta at mag-unpair mula sa "<ph name="DEVICE_NAME" />".</translation>
-<translation id="8606726445206553943">Gamitin ang iyong mga MIDI device</translation>
 <translation id="8609465669617005112">Lumipat</translation>
 <translation id="8610892630019863050">Magtanong kapag gusto ng isang site na magpakita ng mga notification (inirerekomenda)</translation>
 <translation id="8615618338313291042">Incognito App: <ph name="APP_NAME" /></translation>
@@ -5908,7 +5890,6 @@ Kinakalkula ang oras hanggang sa mapuno</translation>
 <translation id="8926389886865778422">Huwag nang itanong ulit</translation>
 <translation id="8926518602592448999">I-disable ang Mga Extension sa Developer Mode</translation>
 <translation id="8931394284949551895">Mga bagong device</translation>
-<translation id="8932730422557198035">Gamitin ang Android Midi API</translation>
 <translation id="8933960630081805351">&amp;Show in Finder</translation>
 <translation id="8934732568177537184">Magpatuloy</translation>
 <translation id="8938356204940892126">Suko na ako</translation>

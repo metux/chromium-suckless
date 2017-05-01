@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">Nume marcaj</translation>
 <translation id="1123316951456119629">Dacă vă deconectați Contul Google de la <ph name="PRODUCT_NAME" />, datele dvs. vor rămâne pe acest computer, dar modificările acestora nu vor mai fi sincronizate cu Contul Google. Datele deja stocate în Contul dvs. Google vor rămâne acolo până când le eliminați utilizând <ph name="BEGIN_LINK" />Tabloul de bord Google<ph name="END_LINK" />.</translation>
 <translation id="1124772482545689468">Utilizator</translation>
-<translation id="1128109161498068552">Nu permiteți niciunui site să utilizeze mesajele rezervate sistemului pentru a accesa dispozitive MIDI</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">Editează motorul de căutare</translation>
 <translation id="1128987120443782698">Dispozitivul de stocare are o capacitate de <ph name="DEVICE_CAPACITY" />. Introdu un card SD sau un stick de memorie USB cu o capacitate de minimum 4 GB.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">Personalizează</translation>
 <translation id="1178539123212786672">Rezolvitorul proxy-ului V8 în afara procesului.</translation>
 <translation id="1178581264944972037">Întrerupe</translation>
-<translation id="1179803038870941185">Adresa <ph name="URL" /> dorește să preia controlul complet asupra dispozitivelor MIDI.</translation>
 <translation id="1181037720776840403">Elimină</translation>
 <translation id="1183083053288481515">Se utilizează un certificat oferit de administrator</translation>
 <translation id="1183237619868651138">Nu se poate instala <ph name="EXTERNAL_CRX_FILE" /> în memoria cache locală.</translation>
@@ -658,7 +656,6 @@
 <translation id="1844692022597038441">Acest fișier nu este disponibil offline.</translation>
 <translation id="1846308012215045257">Dă control-clic pentru a rula <ph name="PLUGIN_NAME" /></translation>
 <translation id="184633654410729720">Tastatură thailandeză (Kedmanee)</translation>
-<translation id="1849186935225320012">Această pagină are control complet asupra dispozitivelor MIDI.</translation>
 <translation id="1850508293116537636">Rotiți în sensul acelor de &amp;ceasornic</translation>
 <translation id="1852799913675865625">A apărut o eroare la citirea fișierului: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">Adăugați o locație...</translation>
@@ -795,7 +792,6 @@
 <translation id="2080070583977670716">Mai multe setări</translation>
 <translation id="2081322486940989439">Acest site nu acceptă Visa.</translation>
 <translation id="2085470240340828803">Există deja un fișier numit „<ph name="FILENAME" />”. Ce doriți să faceți?</translation>
-<translation id="2085985589726507051">API-ul Web MIDI</translation>
 <translation id="2087822576218954668">Printați: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">Pentru a recupera informațiile despre cont, accesează: google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">Setare de securitate a sistemului</translation>
@@ -905,7 +901,6 @@
 <translation id="2222641695352322289">Singura modalitate de anulare este să reinstalați <ph name="IDS_SHORT_PRODUCT_OS_NAME" />.</translation>
 <translation id="2224444042887712269">Setarea aparține utilizatorului <ph name="OWNER_EMAIL" />.</translation>
 <translation id="2224551243087462610">Editați numele dosarului</translation>
-<translation id="2226449515541314767">Acest site a fost blocat și nu poate avea control complet asupra dispozitivelor MIDI.</translation>
 <translation id="2226720438730111184">Spune-ne ce se întâmplă</translation>
 <translation id="2229161054156947610">A mai rămas mai mult de 1 oră</translation>
 <translation id="222931766245975952">Fișier trunchiat</translation>
@@ -1525,7 +1520,6 @@ Nu cred că acest site ar trebui blocat!</translation>
 <translation id="297870353673992530">Server DNS:</translation>
 <translation id="2981113813906970160">Afișați cursorul de mouse mare</translation>
 <translation id="2984337792991268709">Astăzi, la <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">Această pagină a fost blocată și nu poate avea control complet asupra dispozitivelor MIDI.</translation>
 <translation id="2987775926667433828">Chineză tradițională</translation>
 <translation id="2987776766682852234">Reduce nivelul de detaliere prestabilit din antetul „referer”.</translation>
 <translation id="2989474696604907455">neconectat</translation>
@@ -1735,7 +1729,6 @@ Pentru instrucțiuni suplimentare, verifică e-mailurile la adresa <ph name="ACC
 <translation id="3254434849914415189">Alegeți aplicația prestabilită pentru fișierele <ph name="FILE_TYPE" />:</translation>
 <translation id="3255228561559750854">Căutați sau rostiți „Ok Google”</translation>
 <translation id="3257011895468050906">Activează compatibilitatea cu Token Binding.</translation>
-<translation id="326356299252142602">Folosește API-ul Windows Runtime MIDI</translation>
 <translation id="3264544094376351444">Font Sans-Serif</translation>
 <translation id="3264547943200567728">Rețeaua pentru Chromebox nu a fost configurată</translation>
 <translation id="3265459715026181080">Închide fereastra</translation>
@@ -1957,7 +1950,6 @@ De la <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3530751398950974194">Actualizați expresia de acces pentru sincronizare</translation>
 <translation id="3531250013160506608">Casetă text pentru parolă</translation>
 <translation id="3534879087479077042">Ce este un utilizator monitorizat?</translation>
-<translation id="3535652963535405415">Activează asistența experimentală pentru API-ul Web MIDI.</translation>
 <translation id="354060433403403521">Adaptor c.a.</translation>
 <translation id="3541661933757219855">Apasă pe Ctrl+Alt+/ sau pe Escape pentru a ascunde</translation>
 <translation id="3543393733900874979">Actualizarea nu a reușit (eroare: <ph name="ERROR_NUMBER" />)</translation>
@@ -1986,7 +1978,6 @@ De la <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3574210789297084292">conectați-vă</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">Lituaniană</translation>
-<translation id="3575927481544652747">Dezactivează API-ul Windows Runtime MIDI pentru WebMIDI, care este activat în mod prestabilit pe Windows 10 sau versiunile ulterioare.</translation>
 <translation id="3576324189521867626">S-a instalat</translation>
 <translation id="3578331450833904042">Prestabilit (captează orice sunet)</translation>
 <translation id="3578594933904494462">La conținutul acestei file se permite accesul.</translation>
@@ -3017,7 +3008,6 @@ Apăsați pe orice tastă pentru a continua explorarea.</translation>
 <translation id="499165176004408815">Utilizați modul de contrast ridicat</translation>
 <translation id="4992066212339426712">Activează sunetul</translation>
 <translation id="4992458225095111526">Confirmă Powerwash</translation>
-<translation id="4992576607980257687">Notifică-mă dacă un site dorește să utilizeze mesajele rezervate sistemului ca să acceseze dispozitivele MIDI (recomandat)</translation>
 <translation id="4994474651455208930">Permiteți site-urilor să solicite să aibă rolul de programe asociate prestabilite pentru protocoale</translation>
 <translation id="4998873842614926205">Confirmați modificările</translation>
 <translation id="4999273653895592255">Acest marcaj controlează dacă afișăm vechea sau noua interfață de utilizare în fereastra cu selectorul pentru captura desktopului.</translation>
@@ -3615,7 +3605,6 @@ Apăsați pe orice tastă pentru a continua explorarea.</translation>
 <translation id="5774295353725270860">Deschideți aplicația Fișiere</translation>
 <translation id="5774515636230743468">Manifest:</translation>
 <translation id="577624874850706961">Caută cookie-uri</translation>
-<translation id="5778550464785688721">Control complet asupra dispozitivelor MIDI</translation>
 <translation id="5780066559993805332">(Cea mai bună)</translation>
 <translation id="5780973441651030252">Prioritatea procesului</translation>
 <translation id="5783221160790377646">Din cauza unei erori, nu a fost creat un utilizator monitorizat. Încercați din nou mai târziu.</translation>
@@ -3749,7 +3738,6 @@ Apăsați pe orice tastă pentru a continua explorarea.</translation>
 <translation id="5965403572731919803">Adaugă pe raft...</translation>
 <translation id="5965661248935608907">Stabilește și ce pagină se afișează când dați clic pe butonul Pagină de pornire sau când căutați din caseta polivalentă.</translation>
 <translation id="5971037678316050792">Controlează starea și conectarea adaptorului Bluetooth</translation>
-<translation id="5972017421290582825">Gestionați setările MIDI...</translation>
 <translation id="5972708806901999743">Mută în partea de sus</translation>
 <translation id="5972826969634861500">Pornește <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">Micșorează</translation>
@@ -3923,7 +3911,6 @@ Apăsați pe orice tastă pentru a continua explorarea.</translation>
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: se conectează...</translation>
 <translation id="6226777517901268232">Fișierul cu cheia privată (opțional)</translation>
 <translation id="6227235786875481728">Acest fișier nu a putut fi redat.</translation>
-<translation id="6228691855869374890">Acest site are control complet asupra dispozitivelor MIDI.</translation>
 <translation id="6231148928368101651">Panouri</translation>
 <translation id="6231881193380278751">Adaugă un parametru de interogare în adresa URL pentru a actualiza automat pagina: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">Baterie</translation>
@@ -4577,7 +4564,6 @@ Apăsați pe orice tastă pentru a continua explorarea.</translation>
 <translation id="711902386174337313">Citește lista dispozitivelor conectate</translation>
 <translation id="7119389851461848805">pornire</translation>
 <translation id="7119832699359874134">Codul CVC nu este valid. Verificați-l și încercați din nou.</translation>
-<translation id="7122132768827815392">Folosește API-ul Windows Runtime MIDI pentru WebMIDI (disponibil doar pentru Windows 10 sau versiunile ulterioare).</translation>
 <translation id="7122169255686960726">Mai multe copii</translation>
 <translation id="7126604456862387217">„&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;” – &lt;em&gt;căutați în Google Drive&lt;/em&gt;</translation>
 <translation id="7127980134843952133">Istoricul descărcărilor</translation>
@@ -4992,7 +4978,6 @@ Apăsați pe orice tastă pentru a continua explorarea.</translation>
 <translation id="7706319470528945664">Tastatură portugheză</translation>
 <translation id="7709152031285164251">Nu a reușit – <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">Dacă dați clic pe Continuați, sunteți de acord cu <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" /> și <ph name="LEGAL_DOC_LINK_TEXT_5" />.</translation>
-<translation id="7713320380037170544">Permiteți tuturor site-urilor să utilizeze mesajele rezervate sistemului pentru a accesa dispozitive MIDI</translation>
 <translation id="7714464543167945231">Certificat</translation>
 <translation id="7716020873543636594">Se dă clic automat când cursorul mouse-ului se oprește</translation>
 <translation id="7716284821709466371">Înălțime prestabilită a panourilor</translation>
@@ -5173,7 +5158,6 @@ Apăsați pe orice tastă pentru a continua explorarea.</translation>
 <translation id="7965010376480416255">Memorie comună</translation>
 <translation id="7966241909927244760">C&amp;opiază adresa imaginii</translation>
 <translation id="7967437925638594022">Extensii și aplicații</translation>
-<translation id="7968796119156413760">Folosește API-ul Android Midi pentru WebMIDI (disponibil doar pe dispozitivele cu Android M sau versiuni ulterioare).</translation>
 <translation id="7968833647796919681">Activați culegerea datelor privind performanța</translation>
 <translation id="7968982339740310781">Afișați detaliile</translation>
 <translation id="7969525169268594403">Slovenă</translation>
@@ -5318,7 +5302,6 @@ Păstrează fișierul cu cheia într-un loc sigur. Acesta va fi necesar la crear
 <translation id="8146793085009540321">Conectarea nu a reușit. Contactează administratorul sau încearcă din nou.</translation>
 <translation id="8148264977957212129">Metoda de introducere a textului Pinyin</translation>
 <translation id="8148913456785123871">Afișează carduri Google Now în lansator</translation>
-<translation id="8150391391298684512">Dezactivează API-ul Windows Runtime MIDI</translation>
 <translation id="8151185429379586178">Instrumente dezvoltator</translation>
 <translation id="8151638057146502721">Configurați</translation>
 <translation id="8151639108075998630">Activați navigarea în calitate de invitat</translation>
@@ -5651,7 +5634,6 @@ Păstrează fișierul cu cheia într-un loc sigur. Acesta va fi necesar la crear
 <translation id="8603912787021349466">Permite aplicațiilor Android să pornească automat după conectare.</translation>
 <translation id="8605428685123651449">Memorie SQLite</translation>
 <translation id="8605503133013456784">Deconectarea de la și anularea împerecherii cu „<ph name="DEVICE_NAME" />” a eșuat.</translation>
-<translation id="8606726445206553943">Folosească dispozitive MIDI</translation>
 <translation id="8609465669617005112">Mutați mai sus</translation>
 <translation id="8610892630019863050">Anunță-mă dacă un site vrea să afișeze notificări (recomandat)</translation>
 <translation id="8615618338313291042">Aplicație incognito: <ph name="APP_NAME" /></translation>
@@ -5898,7 +5880,6 @@ Păstrează fișierul cu cheia într-un loc sigur. Acesta va fi necesar la crear
 <translation id="8926389886865778422">Nu mai întreba</translation>
 <translation id="8926518602592448999">Dezactivați extensiile care rulează în modul pentru dezvoltatori</translation>
 <translation id="8931394284949551895">Dispozitive noi</translation>
-<translation id="8932730422557198035">Folosește API-ul Android Midi</translation>
 <translation id="8933960630081805351">&amp;Afișează în Finder</translation>
 <translation id="8934732568177537184">Continuați</translation>
 <translation id="8938356204940892126">Renunț</translation>

@@ -416,7 +416,6 @@ static const char* const kStandardAudioTypes[] = {
   "audio/amr",
   "audio/basic",
   "audio/flac",
-  "audio/midi",
   "audio/mp3",
   "audio/mp4",
   "audio/mpeg",

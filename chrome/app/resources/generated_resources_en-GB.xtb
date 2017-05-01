@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">Bookmark name</translation>
 <translation id="1123316951456119629">By disconnecting your Google Account from <ph name="PRODUCT_NAME" />, your data will remain on this computer but changes will no longer be synced to your Google Account. Data already stored in your Google Account will remain there until you remove it using <ph name="BEGIN_LINK" />Google Dashboard<ph name="END_LINK" />.</translation>
 <translation id="1124772482545689468">User</translation>
-<translation id="1128109161498068552">Do not allow any sites to use system exclusive messages to access MIDI devices</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">Edit search engine</translation>
 <translation id="1128987120443782698">The storage device has a capacity of <ph name="DEVICE_CAPACITY" />. Please insert an SD card or USB memory stick with at least 4 GB of capacity.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">Customised</translation>
 <translation id="1178539123212786672">Out-of-process V8 Proxy Resolver.</translation>
 <translation id="1178581264944972037">Pause</translation>
-<translation id="1179803038870941185"><ph name="URL" /> wants to get full control of your MIDI devices.</translation>
 <translation id="1181037720776840403">Remove</translation>
 <translation id="1183083053288481515">Using an administrator-provided certificate</translation>
 <translation id="1183237619868651138">Can't install <ph name="EXTERNAL_CRX_FILE" /> in local cache.</translation>
@@ -659,7 +657,6 @@
 <translation id="1844692022597038441">This file is not available offline.</translation>
 <translation id="1846308012215045257">Control-click to run <ph name="PLUGIN_NAME" /></translation>
 <translation id="184633654410729720">Thai keyboard (Kedmanee)</translation>
-<translation id="1849186935225320012">This page has full control of MIDI devices.</translation>
 <translation id="1850508293116537636">Rotate &amp;clockwise</translation>
 <translation id="1852799913675865625">There was an error while trying to read the file: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">Add location...</translation>
@@ -796,7 +793,6 @@
 <translation id="2080070583977670716">More settings</translation>
 <translation id="2081322486940989439">This site doesn't accept Visa.</translation>
 <translation id="2085470240340828803">A file named "<ph name="FILENAME" />" already exists. What do you want to do?</translation>
-<translation id="2085985589726507051">Web MIDI API</translation>
 <translation id="2087822576218954668">Print: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">To recover your account information, go to: google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">System security setting</translation>
@@ -907,7 +903,6 @@
 <translation id="2222641695352322289">The only way to undo this is to re-install <ph name="IDS_SHORT_PRODUCT_OS_NAME" />.</translation>
 <translation id="2224444042887712269">This setting belongs to <ph name="OWNER_EMAIL" />.</translation>
 <translation id="2224551243087462610">Edit folder name</translation>
-<translation id="2226449515541314767">This site has been blocked from having full control of MIDI devices.</translation>
 <translation id="2226720438730111184">Tell us what's happening</translation>
 <translation id="2229161054156947610">More than 1 hour left</translation>
 <translation id="222931766245975952">File truncated</translation>
@@ -1526,7 +1521,6 @@ I don't think this site should be blocked!</translation>
 <translation id="297870353673992530">DNS server:</translation>
 <translation id="2981113813906970160">Show large mouse cursor</translation>
 <translation id="2984337792991268709">Today <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">This page has been blocked from having full control of MIDI devices.</translation>
 <translation id="2987775926667433828">Chinese Traditional</translation>
 <translation id="2987776766682852234">Reduce default 'referer' header granularity.</translation>
 <translation id="2989474696604907455">not attached</translation>
@@ -1736,7 +1730,6 @@ Please check your email at <ph name="ACCOUNT_EMAIL" /> for these and further ins
 <translation id="3254434849914415189">Choose the default app for <ph name="FILE_TYPE" /> files:</translation>
 <translation id="3255228561559750854">Search, or say "OK Google"</translation>
 <translation id="3257011895468050906">Enable Token Binding support.</translation>
-<translation id="326356299252142602">Use Windows Runtime MIDI API</translation>
 <translation id="3264544094376351444">Sans-serif font</translation>
 <translation id="3264547943200567728">Failed to set up your Chromebox's network</translation>
 <translation id="3265459715026181080">Close Window</translation>
@@ -1958,7 +1951,6 @@ From <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3530751398950974194">Update sync passphrase</translation>
 <translation id="3531250013160506608">Password text box</translation>
 <translation id="3534879087479077042">What is a supervised user?</translation>
-<translation id="3535652963535405415">Enable Web MIDI API experimental support.</translation>
 <translation id="354060433403403521">AC adaptor</translation>
 <translation id="3541661933757219855">Type Ctrl+Alt+/ or Escape to hide</translation>
 <translation id="3543393733900874979">Update failed (error: <ph name="ERROR_NUMBER" />)</translation>
@@ -1987,7 +1979,6 @@ From <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3574210789297084292">sign in</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">Lithuanian</translation>
-<translation id="3575927481544652747">Disable Windows Runtime MIDI API for WebMIDI, which is enabled by default on Windows 10 or later.</translation>
 <translation id="3576324189521867626">Successfully installed</translation>
 <translation id="3578331450833904042">Default (pick up everything)</translation>
 <translation id="3578594933904494462">This tab's content is being shared.</translation>
@@ -3018,7 +3009,6 @@ Press any key to continue exploring.</translation>
 <translation id="499165176004408815">Use high contrast mode</translation>
 <translation id="4992066212339426712">Unmute</translation>
 <translation id="4992458225095111526">Confirm Powerwash</translation>
-<translation id="4992576607980257687">Ask me when a site wants to use system exclusive messages to access MIDI devices (recommended)</translation>
 <translation id="4994474651455208930">Allow sites to ask to become default handlers for protocols</translation>
 <translation id="4998873842614926205">Confirm Changes</translation>
 <translation id="4999273653895592255">This flag controls whether we show the old or new UI for desktop capture picker window.</translation>
@@ -3615,7 +3605,6 @@ Press any key to continue exploring.</translation>
 <translation id="5774295353725270860">Open Files app</translation>
 <translation id="5774515636230743468">Manifest:</translation>
 <translation id="577624874850706961">Search cookies</translation>
-<translation id="5778550464785688721">MIDI devices full control</translation>
 <translation id="5780066559993805332">(Best)</translation>
 <translation id="5780973441651030252">Process priority</translation>
 <translation id="5783221160790377646">Due to an error, a supervised user was not created. Please try again later.</translation>
@@ -3749,7 +3738,6 @@ Press any key to continue exploring.</translation>
 <translation id="5965403572731919803">Add to shelf...</translation>
 <translation id="5965661248935608907">It also controls what page is shown when you click the Home button or search from the Omnibox.</translation>
 <translation id="5971037678316050792">Control Bluetooth adaptor state and pairing</translation>
-<translation id="5972017421290582825">Manage MIDI settings...</translation>
 <translation id="5972708806901999743">Move to the top</translation>
 <translation id="5972826969634861500">Start <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">Zoom out</translation>
@@ -3923,7 +3911,6 @@ Press any key to continue exploring.</translation>
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: Connecting...</translation>
 <translation id="6226777517901268232">Private key file (optional)</translation>
 <translation id="6227235786875481728">This file could not be played.</translation>
-<translation id="6228691855869374890">This site has full control of MIDI devices.</translation>
 <translation id="6231148928368101651">Panels</translation>
 <translation id="6231881193380278751">Add a QueryParam in URL to auto-refresh the page: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">Battery</translation>
@@ -4578,7 +4565,6 @@ Press any key to continue exploring.</translation>
 <translation id="711902386174337313">Read the list of your signed-in devices</translation>
 <translation id="7119389851461848805">power</translation>
 <translation id="7119832699359874134">Invalid CVC code. Please check and try again.</translation>
-<translation id="7122132768827815392">Use Windows Runtime MIDI API for WebMIDI (effective only on Windows 10 or later).</translation>
 <translation id="7122169255686960726">More copies</translation>
 <translation id="7126604456862387217">'&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;' - &lt;em&gt;search Drive&lt;/em&gt;</translation>
 <translation id="7127980134843952133">Download history</translation>
@@ -4993,7 +4979,6 @@ Press any key to continue exploring.</translation>
 <translation id="7706319470528945664">Portuguese keyboard</translation>
 <translation id="7709152031285164251">Failed - <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">By clicking Continue you agree to the <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" /> and <ph name="LEGAL_DOC_LINK_TEXT_5" />.</translation>
-<translation id="7713320380037170544">Allow all sites to use system exclusive messages to access MIDI devices</translation>
 <translation id="7714464543167945231">Certificate</translation>
 <translation id="7716020873543636594">Automatically click when the mouse pointer stops</translation>
 <translation id="7716284821709466371">Default tile height</translation>
@@ -5174,7 +5159,6 @@ Press any key to continue exploring.</translation>
 <translation id="7965010376480416255">Shared Memory</translation>
 <translation id="7966241909927244760">C&amp;opy Image Address</translation>
 <translation id="7967437925638594022">Extensions &amp; Apps</translation>
-<translation id="7968796119156413760">Use Android Midi API for WebMIDI (effective only with Android M+ devices).</translation>
 <translation id="7968833647796919681">Enable performance data collection</translation>
 <translation id="7968982339740310781">View details</translation>
 <translation id="7969525169268594403">Slovenian</translation>
@@ -5319,7 +5303,6 @@ Keep your key file in a safe place. You will need it to create new versions of y
 <translation id="8146793085009540321">Sign-in failed. Please contact your administrator or try again.</translation>
 <translation id="8148264977957212129">Pinyin input method</translation>
 <translation id="8148913456785123871">Show Google Now cards in the launcher</translation>
-<translation id="8150391391298684512">Disable Windows Runtime MIDI API</translation>
 <translation id="8151185429379586178">Developer tools</translation>
 <translation id="8151638057146502721">Configure</translation>
 <translation id="8151639108075998630">Enable guest browsing</translation>
@@ -5654,7 +5637,6 @@ Calculating time until full</translation>
 <translation id="8603912787021349466">Allow Android apps to start automatically after signing in.</translation>
 <translation id="8605428685123651449">SQLite Memory</translation>
 <translation id="8605503133013456784">Failed to disconnect and unpair from "<ph name="DEVICE_NAME" />".</translation>
-<translation id="8606726445206553943">Use your MIDI devices</translation>
 <translation id="8609465669617005112">Move up</translation>
 <translation id="8610892630019863050">Ask when a site wants to show notifications (recommended)</translation>
 <translation id="8615618338313291042">Incognito App: <ph name="APP_NAME" /></translation>
@@ -5901,7 +5883,6 @@ Calculating time until full</translation>
 <translation id="8926389886865778422">Don't ask again</translation>
 <translation id="8926518602592448999">Disable Developer Mode Extensions</translation>
 <translation id="8931394284949551895">New devices</translation>
-<translation id="8932730422557198035">Use Android Midi API</translation>
 <translation id="8933960630081805351">&amp;Show in Finder</translation>
 <translation id="8934732568177537184">Continue</translation>
 <translation id="8938356204940892126">I give up</translation>

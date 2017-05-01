@@ -4,7 +4,6 @@
 
 enum PermissionName {
     "geolocation",
-    "midi",
     "notifications",
     "push",
     "background-sync"

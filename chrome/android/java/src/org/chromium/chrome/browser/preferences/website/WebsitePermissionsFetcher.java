@@ -51,8 +51,6 @@ public class WebsitePermissionsFetcher {
         // Populate features from more specific to less specific.
         // Geolocation lookup permission is per-origin and per-embedder.
         queue.add(new GeolocationInfoFetcher());
-        // Midi sysex access permission is per-origin and per-embedder.
-        queue.add(new MidiInfoFetcher());
         // Cookies are stored per-host.
         queue.add(new CookieExceptionInfoFetcher());
         // Fullscreen are stored per-origin.
@@ -237,18 +235,6 @@ public class WebsitePermissionsFetcher {
                 if (origin == null) continue;
                 WebsiteAddress embedder = WebsiteAddress.create(info.getEmbedder());
                 findOrCreateSite(origin, embedder).setGeolocationInfo(info);
-            }
-        }
-    }
-
-    private class MidiInfoFetcher extends Task {
-        @Override
-        public void run() {
-            for (MidiInfo info : WebsitePreferenceBridge.getMidiInfo()) {
-                WebsiteAddress origin = WebsiteAddress.create(info.getOrigin());
-                if (origin == null) continue;
-                WebsiteAddress embedder = WebsiteAddress.create(info.getEmbedder());
-                findOrCreateSite(origin, embedder).setMidiInfo(info);
             }
         }
     }

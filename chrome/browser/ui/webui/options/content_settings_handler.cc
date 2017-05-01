@@ -197,11 +197,6 @@ const ExceptionsInfoMap& GetExceptionsInfoMap() {
             false, UserMetricsAction(
                        "Options_DefaultMultipleAutomaticDLSettingChange"))));
     exceptions_info_map.insert(std::make_pair(
-        CONTENT_SETTINGS_TYPE_MIDI_SYSEX,
-        ContentSettingWithExceptions(
-            false,
-            UserMetricsAction("Options_DefaultMIDISysExSettingChanged"))));
-    exceptions_info_map.insert(std::make_pair(
         CONTENT_SETTINGS_TYPE_BACKGROUND_SYNC,
         ContentSettingWithExceptions(
             false,
@@ -481,11 +476,6 @@ void ContentSettingsHandler::GetLocalizedValues(
     {"multipleAutomaticDownloadsAllow", IDS_AUTOMATIC_DOWNLOADS_ALLOW_RADIO},
     {"multipleAutomaticDownloadsAsk", IDS_AUTOMATIC_DOWNLOADS_ASK_RADIO},
     {"multipleAutomaticDownloadsBlock", IDS_AUTOMATIC_DOWNLOADS_BLOCK_RADIO},
-    // MIDI system exclusive messages.
-    {"midiSysexHeader", IDS_MIDI_SYSEX_TAB_LABEL},
-    {"midiSysExAllow", IDS_MIDI_SYSEX_ALLOW_RADIO},
-    {"midiSysExAsk", IDS_MIDI_SYSEX_ASK_RADIO},
-    {"midiSysExBlock", IDS_MIDI_SYSEX_BLOCK_RADIO},
     // Push messaging strings.
     {"pushMessagingHeader", IDS_PUSH_MESSAGES_TAB_LABEL},
     {"pushMessagingAllow", IDS_PUSH_MESSSAGING_ALLOW_RADIO},
@@ -574,8 +564,6 @@ void ContentSettingsHandler::GetLocalizedValues(
                 IDS_PPAPI_BROKER_TAB_LABEL);
   RegisterTitle(localized_strings, "multiple-automatic-downloads",
                 IDS_AUTOMATIC_DOWNLOADS_TAB_LABEL);
-  RegisterTitle(localized_strings, "midi-sysex",
-                IDS_MIDI_SYSEX_TAB_LABEL);
   RegisterTitle(localized_strings, "usb-devices",
                 IDS_USB_DEVICES_HEADER_AND_TAB_LABEL);
   RegisterTitle(localized_strings, "background-sync",
@@ -840,8 +828,6 @@ void ContentSettingsHandler::UpdateExceptionsViewFromModel(
              type == CONTENT_SETTINGS_TYPE_MEDIASTREAM_CAMERA) {
     CompareMediaExceptionsWithFlash(type);
     UpdateExceptionsViewFromHostContentSettingsMap(type);
-  } else if (type == CONTENT_SETTINGS_TYPE_MIDI_SYSEX) {
-    UpdateMIDISysExExceptionsView();
   } else {
     UpdateExceptionsViewFromHostContentSettingsMap(type);
   }
@@ -996,12 +982,6 @@ void ContentSettingsHandler::CompareMediaExceptionsWithFlash(
 
   settings.exceptions_initialized = true;
   UpdateFlashMediaLinksVisibility(type);
-}
-
-void ContentSettingsHandler::UpdateMIDISysExExceptionsView() {
-  UpdateSettingDefaultFromModel(CONTENT_SETTINGS_TYPE_MIDI_SYSEX);
-  UpdateExceptionsViewFromHostContentSettingsMap(
-      CONTENT_SETTINGS_TYPE_MIDI_SYSEX);
 }
 
 void ContentSettingsHandler::UpdateAllChooserExceptionsViewsFromModel() {

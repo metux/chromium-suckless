@@ -96,7 +96,6 @@
 <translation id="1122960773616686544">Назив обележивача</translation>
 <translation id="1123316951456119629">Ако прекинете везу између Google налога и <ph name="PRODUCT_NAME" />-а, подаци ће остати на овом рачунару, али се промене више неће синхронизовати са Google налогом. Подаци који су већ ускладиштени на Google налогу остаће тамо док их не уклоните помоћу <ph name="BEGIN_LINK" />Google контролне табле<ph name="END_LINK" />.</translation>
 <translation id="1124772482545689468">Корисник</translation>
-<translation id="1128109161498068552">Не дозволи ниједном сајту да користи ексклузивне поруке система да би приступао MIDI уређајима</translation>
 <translation id="1128128132059598906">EAP-TTLS</translation>
 <translation id="1128591060186966949">Измена претраживача</translation>
 <translation id="1128987120443782698">Меморијски уређај има капацитет од <ph name="DEVICE_CAPACITY" />. Уметните SD картицу или USB меморијски уређај са најмање 4 GB капацитета.</translation>
@@ -134,7 +133,6 @@
 <translation id="1177863135347784049">Прилагођено</translation>
 <translation id="1178539123212786672">Разрешивач проксија V8 ван процеса.</translation>
 <translation id="1178581264944972037">Паузирај</translation>
-<translation id="1179803038870941185"><ph name="URL" /> жели да у потпуности контролише MIDI уређаје.</translation>
 <translation id="1181037720776840403">Уклони</translation>
 <translation id="1183083053288481515">Коришћење сертификата који је обезбедио администратор</translation>
 <translation id="1183237619868651138">Није успело инсталирање датотеке <ph name="EXTERNAL_CRX_FILE" /> у локалном кешу.</translation>
@@ -655,7 +653,6 @@
 <translation id="1844692022597038441">Ова датотека није доступна ван мреже.</translation>
 <translation id="1846308012215045257">Кликните и задржите тастер Control да бисте покренули <ph name="PLUGIN_NAME" /></translation>
 <translation id="184633654410729720">Тајска тастатура (Kedmanee)</translation>
-<translation id="1849186935225320012">Ова страница у потпуности контролише MIDI уређаје.</translation>
 <translation id="1850508293116537636">Окрећи &amp;у смеру кретања казаљке на сату</translation>
 <translation id="1852799913675865625">Дошло је до грешке при покушају читања датотеке: <ph name="ERROR_TEXT" />.</translation>
 <translation id="1856715684130786728">Додај локацију...</translation>
@@ -792,7 +789,6 @@
 <translation id="2080070583977670716">Више подешавања</translation>
 <translation id="2081322486940989439">Овај сајт не прихвата Visa картице.</translation>
 <translation id="2085470240340828803">Датотека са називом „<ph name="FILENAME" />“ већ постоји. Шта желите да урадите?</translation>
-<translation id="2085985589726507051">API за Web MIDI</translation>
 <translation id="2087822576218954668">Штампање: <ph name="PRINT_NAME" /></translation>
 <translation id="2090165459409185032">Да бисте вратили информације о налогу, идите на: google.com/accounts/recovery</translation>
 <translation id="2090876986345970080">Безбедносно подешавање система</translation>
@@ -903,7 +899,6 @@
 <translation id="2222641695352322289">Једини начин да ово опозовете је да поново инсталирате <ph name="IDS_SHORT_PRODUCT_OS_NAME" />.</translation>
 <translation id="2224444042887712269">Власник овог подешавања је <ph name="OWNER_EMAIL" />.</translation>
 <translation id="2224551243087462610">Измена имена директоријума</translation>
-<translation id="2226449515541314767">Спречено је да овај сајт у потпуности контролише MIDI уређаје.</translation>
 <translation id="2226720438730111184">Реците нам шта се дешава</translation>
 <translation id="2229161054156947610">Остало је више од сат времена</translation>
 <translation id="222931766245975952">Датотека је скраћена</translation>
@@ -1522,7 +1517,6 @@
 <translation id="297870353673992530">DNS сервер:</translation>
 <translation id="2981113813906970160">Прикажи велики курсор</translation>
 <translation id="2984337792991268709">Данас у <ph name="TODAY_DAYTIME" /></translation>
-<translation id="2986010903908656993">Спречено је да ова страница у потпуности контролише MIDI уређаје.</translation>
 <translation id="2987775926667433828">традиционални кинески</translation>
 <translation id="2987776766682852234">Смањи подразумевану грануларност заглавља „упућивач“.</translation>
 <translation id="2989474696604907455">није прикључено</translation>
@@ -1732,7 +1726,6 @@
 <translation id="3254434849914415189">Изаберите подразумевану апликацију за датотеке <ph name="FILE_TYPE" />:</translation>
 <translation id="3255228561559750854">Претражите или кажите „Ok Google“</translation>
 <translation id="3257011895468050906">Омогућава подршку за Token Binding.</translation>
-<translation id="326356299252142602">Користи Windows Runtime MIDI API</translation>
 <translation id="3264544094376351444">Фонт Sans-serif</translation>
 <translation id="3264547943200567728">Нисмо успели да подесимо мрежу Chromebox-а</translation>
 <translation id="3265459715026181080">Затвори прозор</translation>
@@ -1954,7 +1947,6 @@
 <translation id="3530751398950974194">Ажурирај приступну фразу за синхронизацију</translation>
 <translation id="3531250013160506608">Оквир за текст лозинке</translation>
 <translation id="3534879087479077042">Шта је то корисник под надзором?</translation>
-<translation id="3535652963535405415">Омогућите експерименталну подршку за API за Web MIDI.</translation>
 <translation id="354060433403403521">Пуњач</translation>
 <translation id="3541661933757219855">Да бисте сакрили откуцајте Ctrl+Alt+/ или Escape</translation>
 <translation id="3543393733900874979">Ажурирање није успело (грешка: <ph name="ERROR_NUMBER" />)</translation>
@@ -1983,7 +1975,6 @@
 <translation id="3574210789297084292">пријави ме</translation>
 <translation id="3574305903863751447"><ph name="CITY" />, <ph name="STATE" /> <ph name="COUNTRY" /></translation>
 <translation id="357479282490346887">литвански</translation>
-<translation id="3575927481544652747">Онемогућите Windows Runtime MIDI API за WebMIDI, који је подразумевано омогућен у Windows-у 10 или новијим верзијама.</translation>
 <translation id="3576324189521867626">Инсталирано је</translation>
 <translation id="3578331450833904042">Подразумевано (детектује све)</translation>
 <translation id="3578594933904494462">Садржај ове картице се дели.</translation>
@@ -3014,7 +3005,6 @@
 <translation id="499165176004408815">Користи режим високог контраста</translation>
 <translation id="4992066212339426712">Укључи звук</translation>
 <translation id="4992458225095111526">Потврђивање Powerwash-а</translation>
-<translation id="4992576607980257687">Питај ме када сајт жели да користи ексклузивне поруке система за приступ MIDI уређајима (препоручено)</translation>
 <translation id="4994474651455208930">Дозволи сајтовима да захтевају да постану подразумевани обрађивачи протокола</translation>
 <translation id="4998873842614926205">Потврда промена</translation>
 <translation id="4999273653895592255">Ова ознака контролише да ли ћемо приказивати стари или нови кориснички интерфејс у прозору бирача за снимак радне површине.</translation>
@@ -3614,7 +3604,6 @@
 <translation id="5774295353725270860">Отварање апликације Датотеке</translation>
 <translation id="5774515636230743468">Манифест:</translation>
 <translation id="577624874850706961">Претражите колачиће</translation>
-<translation id="5778550464785688721">Потпуна контрола над MIDI уређајима</translation>
 <translation id="5780066559993805332">(Најбоља)</translation>
 <translation id="5780973441651030252">Приоритет процеса</translation>
 <translation id="5783221160790377646">Корисник под надзором није направљен због грешке. Пробајте поново касније.</translation>
@@ -3748,7 +3737,6 @@
 <translation id="5965403572731919803">Додај на полицу...</translation>
 <translation id="5965661248935608907">Контролише и страницу која се приказује када кликнете на дугме Почетна или претражујете из омнибокса.</translation>
 <translation id="5971037678316050792">Контрола стања и упаривања Bluetooth адаптера</translation>
-<translation id="5972017421290582825">Управљај MIDI подешавањима...</translation>
 <translation id="5972708806901999743">Премести на врх</translation>
 <translation id="5972826969634861500">Покрени <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">Умањивање</translation>
@@ -3922,7 +3910,6 @@
 <translation id="6225378837831321064"><ph name="DEVICE_NAME" />: Повезује се...</translation>
 <translation id="6226777517901268232">Датотека приватног кључа (опционално)</translation>
 <translation id="6227235786875481728">Ову датотеку није могуће пустити.</translation>
-<translation id="6228691855869374890">Овај сајт у потпуности контролише MIDI уређаје.</translation>
 <translation id="6231148928368101651">Табле</translation>
 <translation id="6231881193380278751">Додајте параметар упита у URL да бисте аутоматски освежили страницу: chrome://device-log/?refresh=&lt;sec&gt;</translation>
 <translation id="6232017090690406397">Батерија</translation>
@@ -4575,7 +4562,6 @@
 <translation id="711902386174337313">Читање листе уређаја на којима сте пријављени</translation>
 <translation id="7119389851461848805">напајање</translation>
 <translation id="7119832699359874134">Неважећи CVC кôд. Проверите и покушајте поново.</translation>
-<translation id="7122132768827815392">Користи Windows Runtime MIDI API за WebMIDI (функционише само са уређајима који користе Windows 10 или новије верзије).</translation>
 <translation id="7122169255686960726">Више копија</translation>
 <translation id="7126604456862387217">„&lt;b&gt;<ph name="SEARCH_STRING" />&lt;/b&gt;“ – &lt;em&gt;претражи Диск&lt;/em&gt;</translation>
 <translation id="7127980134843952133">Историја преузимања</translation>
@@ -4984,7 +4970,6 @@
 <translation id="7706319470528945664">Језик тастатуре: португалски</translation>
 <translation id="7709152031285164251">Није успело – <ph name="INTERRUPT_REASON" /></translation>
 <translation id="7709980197120276510">Кликом на Настави прихватате документе <ph name="LEGAL_DOC_LINK_TEXT_1" />, <ph name="LEGAL_DOC_LINK_TEXT_2" />, <ph name="LEGAL_DOC_LINK_TEXT_3" />, <ph name="LEGAL_DOC_LINK_TEXT_4" /> и <ph name="LEGAL_DOC_LINK_TEXT_5" />.</translation>
-<translation id="7713320380037170544">Дозволи свим сајтовима да користе ексклузивне поруке система да би приступали MIDI уређајима</translation>
 <translation id="7714464543167945231">Сертификат</translation>
 <translation id="7716020873543636594">Аутоматски кликни када се курсор заустави</translation>
 <translation id="7716284821709466371">Подразумевана висина плочица</translation>
@@ -5165,7 +5150,6 @@
 <translation id="7965010376480416255">Дељена меморија</translation>
 <translation id="7966241909927244760">К&amp;опирај адресу слике</translation>
 <translation id="7967437925638594022">Додаци и апликације</translation>
-<translation id="7968796119156413760">Користи Android Midi API за WebMIDI (функционише само са уређајима који користе Android 6.0 и новије верзије).</translation>
 <translation id="7968833647796919681">Омогући прикупљање података о учинку</translation>
 <translation id="7968982339740310781">Прикажи детаље</translation>
 <translation id="7969525169268594403">словеначки</translation>
@@ -5310,7 +5294,6 @@
 <translation id="8146793085009540321">Пријављивање није успело. Контактирајте администратора или покушајте поново.</translation>
 <translation id="8148264977957212129">Пинјин метод уноса</translation>
 <translation id="8148913456785123871">Прикажи Картице за Google тренутно у покретачу</translation>
-<translation id="8150391391298684512">Онемогући Windows Runtime MIDI API</translation>
 <translation id="8151185429379586178">Алатке за програмере</translation>
 <translation id="8151638057146502721">Конфигуриши</translation>
 <translation id="8151639108075998630">Омогући прегледање за госте</translation>
@@ -5645,7 +5628,6 @@
 <translation id="8603912787021349466">Дозволите Android апликацијама да се аутоматски покрећу после пријављивања.</translation>
 <translation id="8605428685123651449">SQLite меморија</translation>
 <translation id="8605503133013456784">Прекид везе са уређајем „<ph name="DEVICE_NAME" />“ и отказивање упаривања са њим нису успели.</translation>
-<translation id="8606726445206553943">користи MIDI уређаје</translation>
 <translation id="8609465669617005112">Премести нагоре</translation>
 <translation id="8610892630019863050">Питај када сајт жели да приказује обавештења (препоручено)</translation>
 <translation id="8615618338313291042">Апл. у режиму без архивирања: <ph name="APP_NAME" /></translation>
@@ -5892,7 +5874,6 @@
 <translation id="8926389886865778422">Не питај ме поново</translation>
 <translation id="8926518602592448999">Онемогућите додатке у режиму програмера</translation>
 <translation id="8931394284949551895">Нови уређаји</translation>
-<translation id="8932730422557198035">Користи Android Midi API</translation>
 <translation id="8933960630081805351">&amp;Прикажи у Finder-у</translation>
 <translation id="8934732568177537184">Настави</translation>
 <translation id="8938356204940892126">Одустајем</translation>

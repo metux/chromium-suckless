@@ -36,7 +36,6 @@ public class Website implements Serializable {
     private KeygenInfo mKeygenInfo;
     private LocalStorageInfo mLocalStorageInfo;
     private MicrophoneInfo mMicrophoneInfo;
-    private MidiInfo mMidiInfo;
     private NotificationInfo mNotificationInfo;
     private ContentSettingException mPopupException;
     private ProtectedMediaIdentifierInfo mProtectedMediaIdentifierInfo;
@@ -320,33 +319,6 @@ public class Website implements Serializable {
      */
     public void setMicrophonePermission(ContentSetting value) {
         if (mMicrophoneInfo != null) mMicrophoneInfo.setContentSetting(value);
-    }
-
-    /**
-     * Sets the MidiInfo object for this Website.
-     */
-    public void setMidiInfo(MidiInfo info) {
-        mMidiInfo = info;
-    }
-
-    public MidiInfo getMidiInfo() {
-        return mMidiInfo;
-    }
-
-    /**
-     * Returns what permission governs MIDI usage access.
-     */
-    public ContentSetting getMidiPermission() {
-        return mMidiInfo != null ? mMidiInfo.getContentSetting() : null;
-    }
-
-    /**
-     * Configure Midi usage access setting for this site.
-     */
-    public void setMidiPermission(ContentSetting value) {
-        if (mMidiInfo != null) {
-            mMidiInfo.setContentSetting(value);
-        }
     }
 
     /**
