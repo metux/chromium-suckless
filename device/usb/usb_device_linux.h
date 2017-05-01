@@ -15,7 +15,6 @@
 #include "base/threading/thread_checker.h"
 #include "build/build_config.h"
 #include "device/usb/usb_device.h"
-#include "device/usb/webusb_descriptors.h"
 
 namespace base {
 class SequencedTaskRunner;

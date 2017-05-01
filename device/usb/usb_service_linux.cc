@@ -24,7 +24,6 @@
 #include "device/core/device_monitor_linux.h"
 #include "device/usb/usb_device_handle.h"
 #include "device/usb/usb_device_linux.h"
-#include "device/usb/webusb_descriptors.h"
 
 namespace device {
 
@@ -41,8 +40,6 @@ void OnReadDescriptors(const base::Callback<void(bool)>& callback,
   UsbDeviceLinux* device =
       static_cast<UsbDeviceLinux*>(device_handle->GetDevice().get());
 
-  if (allowed_origins)
-    device->set_webusb_allowed_origins(std::move(allowed_origins));
   if (landing_page.is_valid())
     device->set_webusb_landing_page(landing_page);
 

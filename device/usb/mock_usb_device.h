@@ -13,7 +13,6 @@
 
 #include "device/usb/usb_device.h"
 #include "device/usb/usb_device_handle.h"
-#include "device/usb/webusb_descriptors.h"
 #include "testing/gmock/include/gmock/gmock.h"
 
 namespace device {

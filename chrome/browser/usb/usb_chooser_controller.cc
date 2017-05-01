@@ -26,7 +26,6 @@
 #include "device/usb/mojo/type_converters.h"
 #include "device/usb/usb_device.h"
 #include "device/usb/usb_device_filter.h"
-#include "device/usb/webusb_descriptors.h"
 #include "ui/base/l10n/l10n_util.h"
 #include "url/gurl.h"
 

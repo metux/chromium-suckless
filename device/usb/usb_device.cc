@@ -6,7 +6,6 @@
 
 #include "base/guid.h"
 #include "device/usb/usb_device_handle.h"
-#include "device/usb/webusb_descriptors.h"
 
 namespace device {
 

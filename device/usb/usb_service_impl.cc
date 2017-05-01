@@ -24,7 +24,6 @@
 #include "components/device_event_log/device_event_log.h"
 #include "device/usb/usb_device_handle.h"
 #include "device/usb/usb_error.h"
-#include "device/usb/webusb_descriptors.h"
 #include "net/base/io_buffer.h"
 #include "third_party/libusb/src/libusb/libusb.h"
 
@@ -130,18 +129,6 @@ void SaveStringsAndRunContinuation(
   if (serial_number != 0)
     device->set_serial_number((*string_map)[serial_number]);
   continuation.Run();
-}
-
-void OnReadBosDescriptor(scoped_refptr<UsbDeviceHandle> device_handle,
-                         const base::Closure& barrier,
-                         const GURL& landing_page) {
-  scoped_refptr<UsbDeviceImpl> device =
-      static_cast<UsbDeviceImpl*>(device_handle->GetDevice().get());
-
-  if (landing_page.is_valid())
-    device->set_webusb_landing_page(landing_page);
-
-  barrier.Run();
 }
 
 void OnDeviceOpenedReadDescriptors(

@@ -14,7 +14,6 @@
 #include "device/usb/usb_device_handle_android.h"
 #include "device/usb/usb_interface_android.h"
 #include "device/usb/usb_service_android.h"
-#include "device/usb/webusb_descriptors.h"
 #include "jni/ChromeUsbDevice_jni.h"
 
 using base::android::ConvertJavaStringToUTF16;

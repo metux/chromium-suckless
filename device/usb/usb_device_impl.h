@@ -19,7 +19,6 @@
 #include "build/build_config.h"
 #include "device/usb/usb_descriptors.h"
 #include "device/usb/usb_device.h"
-#include "device/usb/webusb_descriptors.h"
 
 struct libusb_device;
 struct libusb_device_descriptor;

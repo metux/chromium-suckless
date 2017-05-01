@@ -44,8 +44,6 @@ static_library("usb") {
     "usb_service.h",
     "usb_service_android.cc",
     "usb_service_android.h",
-    "webusb_descriptors.cc",
-    "webusb_descriptors.h",
     generated_ids,
   ]
 
