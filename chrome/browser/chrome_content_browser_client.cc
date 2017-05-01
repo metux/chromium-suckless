@@ -95,7 +95,6 @@
 #include "chrome/browser/ui/tab_contents/chrome_web_contents_view_delegate.h"
 #include "chrome/browser/ui/webui/chrome_web_ui_controller_factory.h"
 #include "chrome/browser/ui/webui/log_web_ui_url.h"
-#include "chrome/browser/usb/usb_tab_helper.h"
 #include "chrome/common/channel_info.h"
 #include "chrome/common/chrome_constants.h"
 #include "chrome/common/chrome_paths.h"
@@ -732,36 +731,6 @@ void GetGuestViewDefaultContentSettingRules(
                                   incognito));
 }
 #endif  // defined(ENABLE_EXTENSIONS)
-
-void CreateUsbDeviceManager(
-    RenderFrameHost* render_frame_host,
-    mojo::InterfaceRequest<device::usb::DeviceManager> request) {
-  WebContents* web_contents =
-      WebContents::FromRenderFrameHost(render_frame_host);
-  if (!web_contents) {
-    NOTREACHED();
-    return;
-  }
-
-  UsbTabHelper* tab_helper =
-      UsbTabHelper::GetOrCreateForWebContents(web_contents);
-  tab_helper->CreateDeviceManager(render_frame_host, std::move(request));
-}
-
-void CreateWebUsbChooserService(
-    RenderFrameHost* render_frame_host,
-    mojo::InterfaceRequest<device::usb::ChooserService> request) {
-  WebContents* web_contents =
-      WebContents::FromRenderFrameHost(render_frame_host);
-  if (!web_contents) {
-    NOTREACHED();
-    return;
-  }
-
-  UsbTabHelper* tab_helper =
-      UsbTabHelper::GetOrCreateForWebContents(web_contents);
-  tab_helper->CreateChooserService(render_frame_host, std::move(request));
-}
 
 bool GetDataSaverEnabledPref(const PrefService* prefs) {
   // Enable data saver only when data saver pref is enabled and not part of

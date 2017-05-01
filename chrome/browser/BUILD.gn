@@ -1207,8 +1207,6 @@ split_static_library("browser") {
     "usb/usb_chooser_context.h",
     "usb/usb_chooser_context_factory.cc",
     "usb/usb_chooser_context_factory.h",
-    "usb/usb_tab_helper.cc",
-    "usb/usb_tab_helper.h",
     "usb/web_usb_histograms.cc",
     "usb/web_usb_histograms.h",
     "usb/web_usb_permission_provider.cc",

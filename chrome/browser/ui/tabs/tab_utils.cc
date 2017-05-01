@@ -13,7 +13,6 @@
 #include "chrome/browser/media/webrtc/media_stream_capture_indicator.h"
 #include "chrome/browser/themes/theme_properties.h"
 #include "chrome/browser/ui/tabs/tab_strip_model.h"
-#include "chrome/browser/usb/usb_tab_helper.h"
 #include "chrome/common/chrome_switches.h"
 #include "chrome/grit/generated_resources.h"
 #include "content/public/browser/web_contents.h"
@@ -162,10 +161,6 @@ TabAlertState GetTabAlertStateForContents(content::WebContents* contents) {
 
   if (contents->IsConnectedToBluetoothDevice())
     return TabAlertState::BLUETOOTH_CONNECTED;
-
-  UsbTabHelper* usb_tab_helper = UsbTabHelper::FromWebContents(contents);
-  if (usb_tab_helper && usb_tab_helper->IsDeviceConnected())
-    return TabAlertState::USB_CONNECTED;
 
   if (contents->IsAudioMuted())
     return TabAlertState::AUDIO_MUTING;

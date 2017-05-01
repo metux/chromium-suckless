@@ -12,7 +12,6 @@
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/usb/usb_chooser_context.h"
 #include "chrome/browser/usb/usb_chooser_context_factory.h"
-#include "chrome/browser/usb/usb_tab_helper.h"
 #include "chrome/common/chrome_switches.h"
 #include "content/public/browser/browser_thread.h"
 #include "content/public/browser/render_frame_host.h"
@@ -129,14 +128,10 @@ void WebUSBPermissionProvider::IncrementConnectionCount() {
   DCHECK_CURRENTLY_ON(content::BrowserThread::UI);
   WebContents* web_contents =
       WebContents::FromRenderFrameHost(render_frame_host_);
-  UsbTabHelper* tab_helper = UsbTabHelper::FromWebContents(web_contents);
-  tab_helper->IncrementConnectionCount(render_frame_host_);
 }
 
 void WebUSBPermissionProvider::DecrementConnectionCount() {
   DCHECK_CURRENTLY_ON(content::BrowserThread::UI);
   WebContents* web_contents =
       WebContents::FromRenderFrameHost(render_frame_host_);
-  UsbTabHelper* tab_helper = UsbTabHelper::FromWebContents(web_contents);
-  tab_helper->DecrementConnectionCount(render_frame_host_);
 }
