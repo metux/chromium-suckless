@@ -37,7 +37,6 @@ const uint8_t kDeviceClassHub = 0x09;
 
 void OnReadDescriptors(const base::Callback<void(bool)>& callback,
                        scoped_refptr<UsbDeviceHandle> device_handle,
-                       std::unique_ptr<WebUsbAllowedOrigins> allowed_origins,
                        const GURL& landing_page) {
   UsbDeviceLinux* device =
       static_cast<UsbDeviceLinux*>(device_handle->GetDevice().get());

@@ -36,12 +36,6 @@ class UsbDeviceLinux : public UsbDevice {
 
   const std::string& device_path() const { return device_path_; }
 
-  // These functions are used during enumeration only. The values must not
-  // change during the object's lifetime.
-  void set_webusb_allowed_origins(
-      std::unique_ptr<WebUsbAllowedOrigins> allowed_origins) {
-    webusb_allowed_origins_ = std::move(allowed_origins);
-  }
   void set_webusb_landing_page(const GURL& url) { webusb_landing_page_ = url; }
 
  protected:

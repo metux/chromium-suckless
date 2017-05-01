@@ -39,17 +39,6 @@ struct WebUsbConfigurationSubset {
   std::vector<WebUsbFunctionSubset> functions;
 };
 
-struct WebUsbAllowedOrigins {
-  WebUsbAllowedOrigins();
-  ~WebUsbAllowedOrigins();
-
-  bool Parse(const std::vector<uint8_t>& bytes);
-
-  std::vector<uint8_t> origin_ids;
-  std::vector<GURL> origins;
-  std::vector<WebUsbConfigurationSubset> configurations;
-};
-
 struct WebUsbPlatformCapabilityDescriptor {
   WebUsbPlatformCapabilityDescriptor();
   ~WebUsbPlatformCapabilityDescriptor();
@@ -63,11 +52,6 @@ struct WebUsbPlatformCapabilityDescriptor {
 };
 
 bool ParseWebUsbUrlDescriptor(const std::vector<uint8_t>& bytes, GURL* output);
-
-// Check if the origin is allowed.
-bool FindInWebUsbAllowedOrigins(
-    const device::WebUsbAllowedOrigins* allowed_origins,
-    const GURL& origin);
 
 }  // device
 

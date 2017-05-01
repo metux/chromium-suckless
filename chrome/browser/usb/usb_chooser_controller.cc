@@ -191,10 +191,5 @@ void UsbChooserController::GotUsbDeviceList(
 
 bool UsbChooserController::DisplayDevice(
     scoped_refptr<device::UsbDevice> device) const {
-  return device::UsbDeviceFilter::MatchesAny(device, filters_) &&
-         (base::CommandLine::ForCurrentProcess()->HasSwitch(
-              switches::kDisableWebUsbSecurity) ||
-          device::FindInWebUsbAllowedOrigins(
-              device->webusb_allowed_origins(),
-              render_frame_host_->GetLastCommittedURL().GetOrigin()));
+  return false;
 }

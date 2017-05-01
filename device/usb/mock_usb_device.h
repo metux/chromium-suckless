@@ -46,11 +46,6 @@ class MockUsbDevice : public UsbDevice {
 
   void AddMockConfig(const UsbConfigDescriptor& config);
 
-  void set_webusb_allowed_origins(
-      std::unique_ptr<WebUsbAllowedOrigins> webusb_allowed_origins) {
-    webusb_allowed_origins_ = std::move(webusb_allowed_origins);
-  }
-
   // Public wrappers around protected functions.
   void ActiveConfigurationChanged(int configuration_value);
   void NotifyDeviceRemoved();

@@ -48,11 +48,7 @@ const uint8_t kWebUsbCapabilityUUID[16] = {
 const int kControlTransferTimeout = 60000;  // 1 minute
 
 using ReadWebUsbDescriptorsCallback =
-    base::Callback<void(std::unique_ptr<WebUsbAllowedOrigins> allowed_origins,
-                        const GURL& landing_page)>;
-
-using ReadWebUsbAllowedOriginsCallback =
-    base::Callback<void(std::unique_ptr<WebUsbAllowedOrigins> allowed_origins)>;
+    base::Callback<void(const GURL& landing_page)>;
 
 // Parses a WebUSB Function Subset Header:
 // http://wicg.github.io/webusb/#dfn-function-subset-header
@@ -153,8 +149,7 @@ bool ParseConfiguration(WebUsbConfigurationSubset* configuration,
   return true;
 }
 
-void OnDoneReadingUrls(std::unique_ptr<WebUsbAllowedOrigins> allowed_origins,
-                       uint8_t landing_page_id,
+void OnDoneReadingUrls(uint8_t landing_page_id,
                        std::unique_ptr<std::map<uint8_t, GURL>> url_map,
                        const ReadWebUsbDescriptorsCallback& callback) {
   for (uint8_t origin_id : allowed_origins->origin_ids) {
@@ -227,8 +222,7 @@ void ReadUrlDescriptor(scoped_refptr<UsbDeviceHandle> device_handle,
 void ReadUrlDescriptors(scoped_refptr<UsbDeviceHandle> device_handle,
                         uint8_t vendor_code,
                         uint8_t landing_page_id,
-                        const ReadWebUsbDescriptorsCallback& callback,
-                        std::unique_ptr<WebUsbAllowedOrigins> allowed_origins) {
+                        const ReadWebUsbDescriptorsCallback& callback) {
   if (!allowed_origins) {
     callback.Run(nullptr, GURL());
     return;
@@ -260,63 +254,6 @@ void ReadUrlDescriptors(scoped_refptr<UsbDeviceHandle> device_handle,
   }
 }
 
-void OnReadWebUsbAllowedOrigins(
-    const ReadWebUsbAllowedOriginsCallback& callback,
-    UsbTransferStatus status,
-    scoped_refptr<net::IOBuffer> buffer,
-    size_t length) {
-  if (status != USB_TRANSFER_COMPLETED) {
-    USB_LOG(EVENT) << "Failed to read WebUSB allowed origins.";
-    callback.Run(nullptr);
-    return;
-  }
-
-  std::unique_ptr<WebUsbAllowedOrigins> allowed_origins(
-      new WebUsbAllowedOrigins());
-  if (allowed_origins->Parse(
-          std::vector<uint8_t>(buffer->data(), buffer->data() + length))) {
-    callback.Run(std::move(allowed_origins));
-  } else {
-    callback.Run(nullptr);
-  }
-}
-
-void OnReadWebUsbAllowedOriginsHeader(
-    scoped_refptr<UsbDeviceHandle> device_handle,
-    const ReadWebUsbAllowedOriginsCallback& callback,
-    uint8_t vendor_code,
-    UsbTransferStatus status,
-    scoped_refptr<net::IOBuffer> buffer,
-    size_t length) {
-  if (status != USB_TRANSFER_COMPLETED || length != 4) {
-    USB_LOG(EVENT) << "Failed to read WebUSB allowed origins header.";
-    callback.Run(nullptr);
-    return;
-  }
-
-  const uint8_t* data = reinterpret_cast<uint8_t*>(buffer->data());
-  uint16_t new_length = data[2] | (data[3] << 8);
-  scoped_refptr<IOBufferWithSize> new_buffer = new IOBufferWithSize(new_length);
-  device_handle->ControlTransfer(
-      USB_DIRECTION_INBOUND, UsbDeviceHandle::VENDOR, UsbDeviceHandle::DEVICE,
-      vendor_code, 0, kGetAllowedOriginsRequest, new_buffer, new_buffer->size(),
-      kControlTransferTimeout,
-      base::Bind(&OnReadWebUsbAllowedOrigins, callback));
-}
-
-void ReadWebUsbAllowedOrigins(
-    scoped_refptr<UsbDeviceHandle> device_handle,
-    uint8_t vendor_code,
-    const ReadWebUsbAllowedOriginsCallback& callback) {
-  scoped_refptr<IOBufferWithSize> buffer = new IOBufferWithSize(4);
-  device_handle->ControlTransfer(
-      USB_DIRECTION_INBOUND, UsbDeviceHandle::VENDOR, UsbDeviceHandle::DEVICE,
-      vendor_code, 0, kGetAllowedOriginsRequest, buffer, buffer->size(),
-      kControlTransferTimeout,
-      base::Bind(&OnReadWebUsbAllowedOriginsHeader, device_handle, callback,
-                 vendor_code));
-}
-
 void OnReadBosDescriptor(scoped_refptr<UsbDeviceHandle> device_handle,
                          const ReadWebUsbDescriptorsCallback& callback,
                          UsbTransferStatus status,
@@ -334,11 +271,6 @@ void OnReadBosDescriptor(scoped_refptr<UsbDeviceHandle> device_handle,
     callback.Run(nullptr, GURL());
     return;
   }
-
-  ReadWebUsbAllowedOrigins(
-      device_handle, descriptor.vendor_code,
-      base::Bind(&ReadUrlDescriptors, device_handle, descriptor.vendor_code,
-                 descriptor.landing_page_id, callback));
 }
 
 void OnReadBosDescriptorHeader(scoped_refptr<UsbDeviceHandle> device_handle,
@@ -379,10 +311,6 @@ WebUsbConfigurationSubset::WebUsbConfigurationSubset(
 
 WebUsbConfigurationSubset::~WebUsbConfigurationSubset() {}
 
-WebUsbAllowedOrigins::WebUsbAllowedOrigins() {}
-
-WebUsbAllowedOrigins::~WebUsbAllowedOrigins() {}
-
 // Parses a WebUSB Allowed Origins Header:
 // http://wicg.github.io/webusb/#dfn-allowed-origins-header
 //
@@ -393,50 +321,6 @@ WebUsbAllowedOrigins::~WebUsbAllowedOrigins() {}
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 // |  num configs  |   origin[0]   |   origin[1]   |     ...
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+------
-bool WebUsbAllowedOrigins::Parse(const std::vector<uint8_t>& bytes) {
-  const uint8_t kDescriptorType = 0x00;
-  const uint8_t kDescriptorMinLength = 5;
-
-  // The buffer must be at least the length of this descriptor's mandatory
-  // fields.
-  if (bytes.size() < kDescriptorMinLength)
-    return false;
-
-  // Validate that the length of this descriptor and the total length of the
-  // entire block of descriptors is consistent with the length of the buffer.
-  uint8_t length = bytes[0];
-  uint16_t total_length = bytes[2] + (bytes[3] << 8);
-  if (length < 5 || length > bytes.size() ||  // bLength
-      bytes[1] != kDescriptorType ||          // bDescriptorType
-      total_length < length || total_length > bytes.size()) {  // wTotalLength
-    return false;
-  }
-
-  std::vector<uint8_t>::const_iterator it = bytes.begin();
-  uint8_t num_configurations = bytes[4];
-
-  // The next |length - 5| bytes after the mandatory fields are origin indicies.
-  std::advance(it, kDescriptorMinLength);
-  uint8_t num_origins = length - kDescriptorMinLength;
-  origin_ids.reserve(num_origins);
-  for (size_t i = 0; i < num_origins; ++i) {
-    uint8_t index = *it++;
-    if (index == 0)
-      return false;
-    origin_ids.push_back(index);
-  }
-
-  // |num_configurations| configuration descriptors then follow the descriptor.
-  for (size_t i = 0; i < num_configurations; ++i) {
-    WebUsbConfigurationSubset configuration;
-    if (!ParseConfiguration(&configuration, &it, bytes.end()))
-      return false;
-    configurations.push_back(configuration);
-  }
-
-  return true;
-}
-
 WebUsbPlatformCapabilityDescriptor::WebUsbPlatformCapabilityDescriptor()
     : version(0), vendor_code(0) {}
 
@@ -562,28 +446,6 @@ bool ParseWebUsbUrlDescriptor(const std::vector<uint8_t>& bytes, GURL* output) {
   }
 
   return true;
-}
-
-bool FindInWebUsbAllowedOrigins(
-    const device::WebUsbAllowedOrigins* allowed_origins,
-    const GURL& origin) {
-  if (!allowed_origins)
-    return false;
-
-  if (base::ContainsValue(allowed_origins->origins, origin))
-    return true;
-
-  for (const auto& config : allowed_origins->configurations) {
-    if (base::ContainsValue(config.origins, origin))
-      return true;
-
-    for (const auto& function : config.functions) {
-      if (base::ContainsValue(function.origins, origin))
-        return true;
-    }
-  }
-
-  return false;
 }
 
 }  // namespace device
