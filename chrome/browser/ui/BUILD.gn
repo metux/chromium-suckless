@@ -2186,8 +2186,6 @@ split_static_library("ui") {
         "android/tab_model/tab_model_list.h",
         "android/toolbar/toolbar_model_android.cc",
         "android/toolbar/toolbar_model_android.h",
-        "android/usb_chooser_dialog_android.cc",
-        "android/usb_chooser_dialog_android.h",
         "android/view_android_helper.cc",
         "android/view_android_helper.h",
         "android/website_settings_popup_android.cc",
