@@ -467,7 +467,6 @@ def write_gn_ninja(path, root_gen_dir, options):
       'base/third_party/dmg_fp/dtoa_wrapper.cc',
       'base/third_party/dmg_fp/g_fmt.cc',
       'base/third_party/icu/icu_utf.cc',
-      'base/third_party/nspr/prtime.cc',
       'base/threading/non_thread_safe_impl.cc',
       'base/threading/post_task_and_reply_impl.cc',
       'base/threading/sequenced_task_runner_handle.cc',
@@ -567,7 +566,7 @@ def write_gn_ninja(path, root_gen_dir, options):
     }
 
   if is_linux:
-    libs.extend(['-lrt', '-latomic'])
+    libs.extend(['-lrt', '-latomic', '-lnspr4'])
     ldflags.extend(['-pthread'])
 
     static_libraries['xdg_user_dirs'] = {
