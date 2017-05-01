@@ -19,9 +19,7 @@ bool IsOrganicFirstRun() {
 
 base::FilePath MasterPrefsPath() {
   // The standard location of the master prefs is next to the chrome binary.
-  base::FilePath master_prefs;
-  if (!PathService::Get(base::DIR_EXE, &master_prefs))
-    return base::FilePath();
+  base::FilePath master_prefs = base::FilePath("/etc/chromium");
   return master_prefs.AppendASCII(installer::kDefaultMasterPrefs);
 }
 
