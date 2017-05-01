@@ -206,14 +206,6 @@ bool ContentBrowserClient::AllowKeygen(const GURL& url,
   return true;
 }
 
-ContentBrowserClient::AllowWebBluetoothResult
-ContentBrowserClient::AllowWebBluetooth(
-    content::BrowserContext* browser_context,
-    const url::Origin& requesting_origin,
-    const url::Origin& embedding_origin) {
-  return AllowWebBluetoothResult::ALLOW;
-}
-
 std::string ContentBrowserClient::GetWebBluetoothBlacklist() {
   return std::string();
 }

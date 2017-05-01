@@ -2048,36 +2048,6 @@ bool ChromeContentBrowserClient::AllowKeygen(
          CONTENT_SETTING_ALLOW;
 }
 
-ChromeContentBrowserClient::AllowWebBluetoothResult
-ChromeContentBrowserClient::AllowWebBluetooth(
-    content::BrowserContext* browser_context,
-    const url::Origin& requesting_origin,
-    const url::Origin& embedding_origin) {
-  // TODO(crbug.com/598890): Don't disable if
-  // base::CommandLine::ForCurrentProcess()->
-  // HasSwitch(switches::kEnableWebBluetooth) is true.
-  if (variations::GetVariationParamValue(
-          PermissionContextBase::kPermissionsKillSwitchFieldStudy,
-          "Bluetooth") ==
-      PermissionContextBase::kPermissionsKillSwitchBlockedValue) {
-    // The kill switch is enabled for this permission. Block requests.
-    return AllowWebBluetoothResult::BLOCK_GLOBALLY_DISABLED;
-  }
-
-  const HostContentSettingsMap* const content_settings =
-      HostContentSettingsMapFactory::GetForProfile(
-          Profile::FromBrowserContext(browser_context));
-
-  if (content_settings->GetContentSetting(GURL(requesting_origin.Serialize()),
-                                          GURL(embedding_origin.Serialize()),
-                                          CONTENT_SETTINGS_TYPE_BLUETOOTH_GUARD,
-                                          std::string()) ==
-      CONTENT_SETTING_BLOCK) {
-    return AllowWebBluetoothResult::BLOCK_POLICY;
-  }
-  return AllowWebBluetoothResult::ALLOW;
-}
-
 std::string ChromeContentBrowserClient::GetWebBluetoothBlacklist() {
   return variations::GetVariationParamValue("WebBluetoothBlacklist",
                                             "blacklist_additions");

@@ -378,18 +378,6 @@ class CONTENT_EXPORT ContentBrowserClient {
   // Allow the embedder to control whether we can use <keygen>.
   virtual bool AllowKeygen(const GURL& url, content::ResourceContext* context);
 
-  // Allow the embedder to control whether we can use Web Bluetooth.
-  // TODO(crbug.com/589228): Replace this with a use of the permission system.
-  enum class AllowWebBluetoothResult {
-    ALLOW,
-    BLOCK_POLICY,
-    BLOCK_GLOBALLY_DISABLED,
-  };
-  virtual AllowWebBluetoothResult AllowWebBluetooth(
-      content::BrowserContext* browser_context,
-      const url::Origin& requesting_origin,
-      const url::Origin& embedding_origin);
-
   // Returns a blacklist of UUIDs that have restrictions when accessed
   // via Web Bluetooth. Parsed by BluetoothBlacklist::Add().
   //

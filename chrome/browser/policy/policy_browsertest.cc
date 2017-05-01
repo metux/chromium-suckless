@@ -3418,9 +3418,6 @@ INSTANTIATE_TEST_CASE_P(MediaStreamDevicesControllerBrowserTestInstance,
 
 class WebBluetoothPolicyTest : public PolicyTest {
   void SetUpCommandLine(base::CommandLine* command_line)override {
-    // This is needed while Web Bluetooth is an Origin Trial, but can go away
-    // once it ships globally.
-    command_line->AppendSwitch(switches::kEnableWebBluetooth);
     PolicyTest::SetUpCommandLine(command_line);
   }
 };
