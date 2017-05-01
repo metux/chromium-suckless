@@ -1528,16 +1528,6 @@ void ChromeBrowserMainParts::PostBrowserStart() {
       base::TimeDelta::FromMinutes(1));
 #endif  // defined(ENABLE_WEBRTC)
 
-#if !defined(OS_ANDROID)
-  if (base::FeatureList::IsEnabled(features::kWebUsb)) {
-    web_usb_detector_.reset(new WebUsbDetector());
-    BrowserThread::PostAfterStartupTask(
-        FROM_HERE, BrowserThread::GetTaskRunnerForThread(BrowserThread::UI),
-        base::Bind(&WebUsbDetector::Initialize,
-                   base::Unretained(web_usb_detector_.get())));
-  }
-#endif
-
   // At this point, StartupBrowserCreator::Start has run creating initial
   // browser windows and tabs, but no progress has been made in loading
   // content as the main message loop hasn't started processing tasks yet.

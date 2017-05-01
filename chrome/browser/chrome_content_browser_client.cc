@@ -2977,18 +2977,6 @@ void ChromeContentBrowserClient::ExposeInterfacesToMediaService(
 void ChromeContentBrowserClient::RegisterRenderFrameMojoInterfaces(
     shell::InterfaceRegistry* registry,
     content::RenderFrameHost* render_frame_host) {
-  if (base::FeatureList::IsEnabled(features::kWebUsb)
-#if defined(ENABLE_EXTENSIONS)
-      &&
-      !render_frame_host->GetSiteInstance()->GetSiteURL().SchemeIs(
-          extensions::kExtensionScheme)
-#endif
-          ) {
-    registry->AddInterface(
-        base::Bind(&CreateUsbDeviceManager, render_frame_host));
-    registry->AddInterface(
-        base::Bind(&CreateWebUsbChooserService, render_frame_host));
-  }
 
   registry->AddInterface<bluetooth::mojom::AdapterFactory>(
       base::Bind(&bluetooth::AdapterFactory::Create));

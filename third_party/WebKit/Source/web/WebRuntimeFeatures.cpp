@@ -47,10 +47,6 @@ void WebRuntimeFeatures::enableWebAssemblySerialization(bool enable) {
   RuntimeEnabledFeatures::setWebAssemblySerializationEnabled(enable);
 }
 
-void WebRuntimeFeatures::enableWebUsb(bool enable) {
-  RuntimeEnabledFeatures::setWebUSBEnabled(enable);
-}
-
 void WebRuntimeFeatures::enableFeatureFromString(const std::string& name,
                                                  bool enable) {
   RuntimeEnabledFeatures::setFeatureEnabledFromString(name, enable);
