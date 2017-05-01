@@ -47,13 +47,6 @@ class CHROMEOS_EXPORT FakePowerManagerClient : public PowerManagerClient {
   bool HasObserver(const Observer* observer) const override;
   void SetRenderProcessManagerDelegate(
       base::WeakPtr<RenderProcessManagerDelegate> delegate) override;
-  void DecreaseScreenBrightness(bool allow_off) override;
-  void IncreaseScreenBrightness() override;
-  void SetScreenBrightnessPercent(double percent, bool gradual) override;
-  void GetScreenBrightnessPercent(
-      const GetScreenBrightnessPercentCallback& callback) override;
-  void DecreaseKeyboardBrightness() override;
-  void IncreaseKeyboardBrightness() override;
   void RequestStatusUpdate() override;
   void RequestSuspend() override;
   void RequestRestart() override;

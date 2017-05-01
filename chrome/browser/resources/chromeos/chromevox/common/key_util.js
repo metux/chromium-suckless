@@ -298,9 +298,9 @@ cvox.KeyUtil.getReadableNameForKeyCode = function(keyCode) {
   } else if (keyCode == 116) {
     return cros ? msg('window_overview_key') : 'F5';
   } else if (keyCode == 117) {
-    return cros ? msg('brightness_down_key') : 'F6';
+    return 'F6';
   } else if (keyCode == 118) {
-    return cros ? msg('brightness_up_key') : 'F7';
+    return 'F7';
   } else if (keyCode == 119) {
     return cros ? msg('volume_mute_key') : 'F8';
   } else if (keyCode == 120) {

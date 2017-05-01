@@ -371,11 +371,7 @@ using xkb_keysym_t = uint32_t;
 #define XKB_KEY_XF86LogWindowTree                 XF86XK_LogWindowTree
 #define XKB_KEY_XF86LogGrabInfo                   XF86XK_LogGrabInfo
 #define XKB_KEY_XF86ModeLock                      XF86XK_ModeLock
-#define XKB_KEY_XF86MonBrightnessUp               XF86XK_MonBrightnessUp
-#define XKB_KEY_XF86MonBrightnessDown             XF86XK_MonBrightnessDown
 #define XKB_KEY_XF86KbdLightOnOff                 XF86XK_KbdLightOnOff
-#define XKB_KEY_XF86KbdBrightnessUp               XF86XK_KbdBrightnessUp
-#define XKB_KEY_XF86KbdBrightnessDown             XF86XK_KbdBrightnessDown
 #define XKB_KEY_XF86Standby                       XF86XK_Standby
 #define XKB_KEY_XF86AudioLowerVolume              XF86XK_AudioLowerVolume
 #define XKB_KEY_XF86AudioMute                     XF86XK_AudioMute
@@ -419,7 +415,6 @@ using xkb_keysym_t = uint32_t;
 #define XKB_KEY_XF86OpenURL                       XF86XK_OpenURL
 #define XKB_KEY_XF86AddFavorite                   XF86XK_AddFavorite
 #define XKB_KEY_XF86HotLinks                      XF86XK_HotLinks
-#define XKB_KEY_XF86BrightnessAdjust              XF86XK_BrightnessAdjust
 #define XKB_KEY_XF86Finance                       XF86XK_Finance
 #define XKB_KEY_XF86Community                     XF86XK_Community
 #define XKB_KEY_XF86AudioRewind                   XF86XK_AudioRewind

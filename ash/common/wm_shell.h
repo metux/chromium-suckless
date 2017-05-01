@@ -47,12 +47,10 @@ namespace ash {
 
 class AcceleratorController;
 class AccessibilityDelegate;
-class BrightnessControlDelegate;
 class FocusCycler;
 class ImmersiveContextAsh;
 class ImmersiveFullscreenController;
 class KeyEventWatcher;
-class KeyboardBrightnessControlDelegate;
 class KeyboardUI;
 class MaximizeModeController;
 class MruWindowTracker;
@@ -114,15 +112,7 @@ class ASH_EXPORT WmShell {
     return accessibility_delegate_.get();
   }
 
-  BrightnessControlDelegate* brightness_control_delegate() {
-    return brightness_control_delegate_.get();
-  }
-
   FocusCycler* focus_cycler() { return focus_cycler_.get(); }
-
-  KeyboardBrightnessControlDelegate* keyboard_brightness_control_delegate() {
-    return keyboard_brightness_control_delegate_.get();
-  }
 
   KeyboardUI* keyboard_ui() { return keyboard_ui_.get(); }
 
@@ -451,11 +441,8 @@ class ASH_EXPORT WmShell {
 
   std::unique_ptr<AcceleratorController> accelerator_controller_;
   std::unique_ptr<AccessibilityDelegate> accessibility_delegate_;
-  std::unique_ptr<BrightnessControlDelegate> brightness_control_delegate_;
   std::unique_ptr<FocusCycler> focus_cycler_;
   std::unique_ptr<ImmersiveContextAsh> immersive_context_;
-  std::unique_ptr<KeyboardBrightnessControlDelegate>
-      keyboard_brightness_control_delegate_;
   std::unique_ptr<KeyboardUI> keyboard_ui_;
   std::unique_ptr<MaximizeModeController> maximize_mode_controller_;
   std::unique_ptr<MediaDelegate> media_delegate_;

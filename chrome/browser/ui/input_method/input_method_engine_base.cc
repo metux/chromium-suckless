@@ -82,12 +82,6 @@ std::string GetKeyFromEvent(const ui::KeyEvent& event) {
     case ui::VKEY_MEDIA_LAUNCH_APP1:
     case ui::VKEY_F5:
       return "ChromeOSSwitchWindow";
-    case ui::VKEY_BRIGHTNESS_DOWN:
-    case ui::VKEY_F6:
-      return "BrightnessDown";
-    case ui::VKEY_BRIGHTNESS_UP:
-    case ui::VKEY_F7:
-      return "BrightnessUp";
     case ui::VKEY_VOLUME_MUTE:
     case ui::VKEY_F8:
       return "AudioVolumeMute";

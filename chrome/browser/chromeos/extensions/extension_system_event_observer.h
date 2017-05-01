@@ -21,7 +21,6 @@ class ExtensionSystemEventObserver : public PowerManagerClient::Observer,
   ~ExtensionSystemEventObserver() override;
 
   // PowerManagerClient::Observer overrides:
-  void BrightnessChanged(int level, bool user_initiated) override;
   void SuspendDone(const base::TimeDelta& sleep_duration) override;
 
   // SessionManagerClient::Observer override.

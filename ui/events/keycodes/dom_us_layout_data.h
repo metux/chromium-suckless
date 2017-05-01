@@ -106,12 +106,6 @@ const struct NonPrintableCodeEntry {
     {DomCode::ARROW_UP, DomKey::ARROW_UP},
     {DomCode::BACKSPACE, DomKey::BACKSPACE},
     {DomCode::BASS_BOOST, DomKey::AUDIO_BASS_BOOST_TOGGLE},
-    {DomCode::BRIGHTNESS_DOWN, DomKey::BRIGHTNESS_DOWN},
-    {DomCode::BRIGHTNESS_UP, DomKey::BRIGHTNESS_UP},
-    // {DomCode::BRIGHTNESS_AUTO, DomKey::_}
-    // {DomCode::BRIGHTNESS_MAXIMUM, DomKey::_}
-    // {DomCode::BRIGHTNESS_MINIMIUM, DomKey::_}
-    // {DomCode::BRIGHTNESS_TOGGLE, DomKey::_}
     {DomCode::BROWSER_BACK, DomKey::BROWSER_BACK},
     {DomCode::BROWSER_FAVORITES, DomKey::BROWSER_FAVORITES},
     {DomCode::BROWSER_FORWARD, DomKey::BROWSER_FORWARD},
@@ -308,8 +302,6 @@ const struct DomKeyToKeyboardCodeEntry {
     // Device Keys
     // http://www.w3.org/TR/DOM-Level-3-Events-key/#keys-device
 #if defined(OS_POSIX)
-    {DomKey::BRIGHTNESS_DOWN, VKEY_BRIGHTNESS_DOWN},
-    {DomKey::BRIGHTNESS_UP, VKEY_BRIGHTNESS_UP},
     {DomKey::POWER, VKEY_POWER},
 #endif
     {DomKey::PRINT_SCREEN, VKEY_SNAPSHOT},
@@ -572,12 +564,6 @@ const struct DomCodeToKeyboardCodeEntry {
     {DomCode::SHIFT_RIGHT, VKEY_RSHIFT},        // 0x0700E5 ShiftRight
     {DomCode::ALT_RIGHT, VKEY_RMENU},           // 0x0700E6 AltRight
     {DomCode::META_RIGHT, VKEY_RWIN},             // 0x0700E7 OSRight
-#if defined(OS_POSIX)
-    {DomCode::BRIGHTNESS_UP,
-     VKEY_BRIGHTNESS_UP},                       // 0x0C006F BrightnessUp
-    {DomCode::BRIGHTNESS_DOWN,
-     VKEY_BRIGHTNESS_DOWN},                     // 0x0C0070 BrightnessDown
-#endif
     {DomCode::MEDIA_TRACK_NEXT,
      VKEY_MEDIA_NEXT_TRACK},                    // 0x0C00B5 MediaTrackNext
     {DomCode::MEDIA_TRACK_PREVIOUS,
@@ -637,8 +623,6 @@ const DomCodeToKeyboardCodeEntry kFallbackKeyboardCodeToDomCodeMap[] = {
     //  VKEY_OEM_104              // 0x0C00B3 MediaFastForward
     //
     // VKEYs with no corresponding DomCode, but a Linux evdev usage code:
-    //  VKEY_KBD_BRIGHTNESS_DOWN  //  evdev KEY_KBDILLUMDOWN
-    //  VKEY_KBD_BRIGHTNESS_UP    //  evdev KEY_KBDILLUMUP
     //  VKEY_WLAN                 //  evdev KEY_WLAN
     //
     // VKEYs with no corresponding DomCode and no obvious USB usage code:

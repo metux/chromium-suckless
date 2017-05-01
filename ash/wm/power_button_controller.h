@@ -57,9 +57,6 @@ class ASH_EXPORT PowerButtonController
     enable_quick_lock_ = enable_quick_lock;
   }
 
-  // Called when the current screen brightness changes.
-  void OnScreenBrightnessChanged(double percent);
-
   // Called when the power or lock buttons are pressed or released.
   void OnPowerButtonEvent(bool down, const base::TimeTicks& timestamp);
   void OnLockButtonEvent(bool down, const base::TimeTicks& timestamp);

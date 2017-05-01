@@ -23,10 +23,6 @@ class PowerSupplyProperties;
 
 namespace chromeos {
 
-// Callback used for getting the current screen brightness.  The param is in the
-// range [0.0, 100.0].
-typedef base::Callback<void(double)> GetScreenBrightnessPercentCallback;
-
 // PowerManagerClient is used to communicate with the power manager.
 class CHROMEOS_EXPORT PowerManagerClient : public DBusClient {
  public:
@@ -37,11 +33,6 @@ class CHROMEOS_EXPORT PowerManagerClient : public DBusClient {
 
     // Called if the power manager process restarts.
     virtual void PowerManagerRestarted() {}
-
-    // Called when the brightness is changed.
-    // |level| is of the range [0, 100].
-    // |user_initiated| is true if the action is initiated by the user.
-    virtual void BrightnessChanged(int level, bool user_initiated) {}
 
     // Called when peripheral device battery status is received.
     // |path| is the sysfs path for the battery of the peripheral device.
@@ -127,28 +118,6 @@ class CHROMEOS_EXPORT PowerManagerClient : public DBusClient {
   // be one delegate.
   virtual void SetRenderProcessManagerDelegate(
       base::WeakPtr<RenderProcessManagerDelegate> delegate) = 0;
-
-  // Decreases the screen brightness. |allow_off| controls whether or not
-  // it's allowed to turn off the back light.
-  virtual void DecreaseScreenBrightness(bool allow_off) = 0;
-
-  // Increases the screen brightness.
-  virtual void IncreaseScreenBrightness() = 0;
-
-  // Set the screen brightness to |percent|, in the range [0.0, 100.0].
-  // If |gradual| is true, the transition will be animated.
-  virtual void SetScreenBrightnessPercent(double percent, bool gradual) = 0;
-
-  // Asynchronously gets the current screen brightness, in the range
-  // [0.0, 100.0].
-  virtual void GetScreenBrightnessPercent(
-      const GetScreenBrightnessPercentCallback& callback) = 0;
-
-  // Decreases the keyboard brightness.
-  virtual void DecreaseKeyboardBrightness() = 0;
-
-  // Increases the keyboard brightness.
-  virtual void IncreaseKeyboardBrightness() = 0;
 
   // Requests an updated copy of the power status. Observer::PowerChanged()
   // will be called asynchronously.

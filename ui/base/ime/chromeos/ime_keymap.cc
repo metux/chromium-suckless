@@ -137,8 +137,6 @@ const struct KeyCodeTable {
   {VKEY_VOLUME_MUTE, "VolumeMute"},
   {VKEY_VOLUME_DOWN, "VolumeDown"},
   {VKEY_VOLUME_UP, "VolumeUp"},
-  {VKEY_BRIGHTNESS_DOWN, "BrightnessDown"},
-  {VKEY_BRIGHTNESS_UP, "BrightnessUp"},
   {VKEY_MEDIA_LAUNCH_APP1, "ChromeOSSwitchWindow"},
   {VKEY_MEDIA_LAUNCH_APP2, "ChromeOSFullscreen"},
   {VKEY_MEDIA_NEXT_TRACK, "MediaTrackNext"},

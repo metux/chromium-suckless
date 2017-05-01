@@ -47,10 +47,6 @@ bool CursorManager::ShouldHideCursorOnKeyEvent(
     case ui::VKEY_LWIN:
     case ui::VKEY_WLAN:
     case ui::VKEY_POWER:
-    case ui::VKEY_BRIGHTNESS_DOWN:
-    case ui::VKEY_BRIGHTNESS_UP:
-    case ui::VKEY_KBD_BRIGHTNESS_UP:
-    case ui::VKEY_KBD_BRIGHTNESS_DOWN:
       return false;
     default:
       return true;

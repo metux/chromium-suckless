@@ -94,61 +94,6 @@ class PowerManagerClientImpl : public PowerManagerClient {
     render_process_manager_delegate_ = delegate;
   }
 
-  void DecreaseScreenBrightness(bool allow_off) override {
-    dbus::MethodCall method_call(
-        power_manager::kPowerManagerInterface,
-        power_manager::kDecreaseScreenBrightnessMethod);
-    dbus::MessageWriter writer(&method_call);
-    writer.AppendBool(allow_off);
-    power_manager_proxy_->CallMethod(
-        &method_call,
-        dbus::ObjectProxy::TIMEOUT_USE_DEFAULT,
-        dbus::ObjectProxy::EmptyResponseCallback());
-  }
-
-  void IncreaseScreenBrightness() override {
-    SimpleMethodCallToPowerManager(
-        power_manager::kIncreaseScreenBrightnessMethod);
-  }
-
-  void DecreaseKeyboardBrightness() override {
-    SimpleMethodCallToPowerManager(
-        power_manager::kDecreaseKeyboardBrightnessMethod);
-  }
-
-  void IncreaseKeyboardBrightness() override {
-    SimpleMethodCallToPowerManager(
-        power_manager::kIncreaseKeyboardBrightnessMethod);
-  }
-
-  void SetScreenBrightnessPercent(double percent, bool gradual) override {
-    dbus::MethodCall method_call(
-        power_manager::kPowerManagerInterface,
-        power_manager::kSetScreenBrightnessPercentMethod);
-    dbus::MessageWriter writer(&method_call);
-    writer.AppendDouble(percent);
-    writer.AppendInt32(
-        gradual ?
-        power_manager::kBrightnessTransitionGradual :
-        power_manager::kBrightnessTransitionInstant);
-    power_manager_proxy_->CallMethod(
-        &method_call,
-        dbus::ObjectProxy::TIMEOUT_USE_DEFAULT,
-        dbus::ObjectProxy::EmptyResponseCallback());
-  }
-
-  void GetScreenBrightnessPercent(
-      const GetScreenBrightnessPercentCallback& callback) override {
-    dbus::MethodCall method_call(
-        power_manager::kPowerManagerInterface,
-        power_manager::kGetScreenBrightnessPercentMethod);
-    power_manager_proxy_->CallMethod(
-        &method_call,
-        dbus::ObjectProxy::TIMEOUT_USE_DEFAULT,
-        base::Bind(&PowerManagerClientImpl::OnGetScreenBrightnessPercent,
-                   weak_ptr_factory_.GetWeakPtr(), callback));
-  }
-
   void RequestStatusUpdate() override {
     POWER_LOG(USER) << "RequestStatusUpdate";
     dbus::MethodCall method_call(
@@ -266,17 +211,6 @@ class PowerManagerClientImpl : public PowerManagerClient {
         base::Bind(&PowerManagerClientImpl::NameOwnerChangedReceived,
                    weak_ptr_factory_.GetWeakPtr()));
 
-    // Monitor the D-Bus signal for brightness changes. Only the power
-    // manager knows the actual brightness level. We don't cache the
-    // brightness level in Chrome as it'll make things less reliable.
-    power_manager_proxy_->ConnectToSignal(
-        power_manager::kPowerManagerInterface,
-        power_manager::kBrightnessChangedSignal,
-        base::Bind(&PowerManagerClientImpl::BrightnessChangedReceived,
-                   weak_ptr_factory_.GetWeakPtr()),
-        base::Bind(&PowerManagerClientImpl::SignalConnected,
-                   weak_ptr_factory_.GetWeakPtr()));
-
     power_manager_proxy_->ConnectToSignal(
         power_manager::kPowerManagerInterface,
         power_manager::kPeripheralBatteryStatusSignal,
@@ -389,22 +323,6 @@ class PowerManagerClientImpl : public PowerManagerClient {
     }
   }
 
-  void BrightnessChangedReceived(dbus::Signal* signal) {
-    dbus::MessageReader reader(signal);
-    int32_t brightness_level = 0;
-    bool user_initiated = 0;
-    if (!(reader.PopInt32(&brightness_level) &&
-          reader.PopBool(&user_initiated))) {
-      POWER_LOG(ERROR) << "Brightness changed signal had incorrect parameters: "
-                       << signal->ToString();
-      return;
-    }
-    POWER_LOG(DEBUG) << "Brightness changed to " << brightness_level
-                     << ": user initiated " << user_initiated;
-    FOR_EACH_OBSERVER(Observer, observers_,
-                      BrightnessChanged(brightness_level, user_initiated));
-  }
-
   void PeripheralBatteryStatusReceived(dbus::Signal* signal) {
     dbus::MessageReader reader(signal);
     power_manager::PeripheralBatteryStatus protobuf_status;
@@ -454,24 +372,6 @@ class PowerManagerClientImpl : public PowerManagerClient {
                        << power_manager::kGetPowerSupplyPropertiesMethod
                        << " response";
     }
-  }
-
-  void OnGetScreenBrightnessPercent(
-      const GetScreenBrightnessPercentCallback& callback,
-      dbus::Response* response) {
-    if (!response) {
-      if (!system::StatisticsProvider::GetInstance()->IsRunningOnVm()) {
-        POWER_LOG(ERROR) << "Error calling "
-                         << power_manager::kGetScreenBrightnessPercentMethod;
-      }
-      return;
-    }
-    dbus::MessageReader reader(response);
-    double percent = 0.0;
-    if (!reader.PopDouble(&percent))
-      POWER_LOG(ERROR) << "Error reading response from powerd: "
-                       << response->ToString();
-    callback.Run(percent);
   }
 
   void HandlePowerSupplyProperties(

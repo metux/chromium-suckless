@@ -11,12 +11,6 @@ const char kPowerManagerInterface[] = "org.chromium.PowerManager";
 const char kPowerManagerServicePath[] = "/org/chromium/PowerManager";
 const char kPowerManagerServiceName[] = "org.chromium.PowerManager";
 // Methods exposed by powerd.
-const char kDecreaseScreenBrightnessMethod[] = "DecreaseScreenBrightness";
-const char kIncreaseScreenBrightnessMethod[] = "IncreaseScreenBrightness";
-const char kGetScreenBrightnessPercentMethod[] = "GetScreenBrightnessPercent";
-const char kSetScreenBrightnessPercentMethod[] = "SetScreenBrightnessPercent";
-const char kDecreaseKeyboardBrightnessMethod[] = "DecreaseKeyboardBrightness";
-const char kIncreaseKeyboardBrightnessMethod[] = "IncreaseKeyboardBrightness";
 const char kRequestRestartMethod[] = "RequestRestart";
 const char kRequestShutdownMethod[] = "RequestShutdown";
 const char kRequestSuspendMethod[] = "RequestSuspend";
@@ -36,8 +30,6 @@ const char kHandlePowerButtonAcknowledgmentMethod[] =
     "HandlePowerButtonAcknowledgment";
 const char kRecordDarkResumeWakeReasonMethod[] = "RecordDarkResumeWakeReason";
 // Signals emitted by powerd.
-const char kBrightnessChangedSignal[] = "BrightnessChanged";
-const char kKeyboardBrightnessChangedSignal[] = "KeyboardBrightnessChanged";
 const char kPeripheralBatteryStatusSignal[] = "PeripheralBatteryStatus";
 const char kPowerSupplyPollSignal[] = "PowerSupplyPoll";
 const char kSuspendImminentSignal[] = "SuspendImminent";
@@ -47,12 +39,8 @@ const char kInputEventSignal[] = "InputEvent";
 const char kIdleActionImminentSignal[] = "IdleActionImminent";
 const char kIdleActionDeferredSignal[] = "IdleActionDeferred";
 // Values
-const int kBrightnessTransitionGradual = 1;
-const int kBrightnessTransitionInstant = 2;
 enum UserActivityType {
   USER_ACTIVITY_OTHER = 0,
-  USER_ACTIVITY_BRIGHTNESS_UP_KEY_PRESS = 1,
-  USER_ACTIVITY_BRIGHTNESS_DOWN_KEY_PRESS = 2,
   USER_ACTIVITY_VOLUME_UP_KEY_PRESS = 3,
   USER_ACTIVITY_VOLUME_DOWN_KEY_PRESS = 4,
   USER_ACTIVITY_VOLUME_MUTE_KEY_PRESS = 5,

@@ -58,26 +58,6 @@ void FakePowerManagerClient::SetRenderProcessManagerDelegate(
   render_process_manager_delegate_ = delegate;
 }
 
-void FakePowerManagerClient::DecreaseScreenBrightness(bool allow_off) {
-}
-
-void FakePowerManagerClient::IncreaseScreenBrightness() {
-}
-
-void FakePowerManagerClient::SetScreenBrightnessPercent(double percent,
-                                                        bool gradual) {
-}
-
-void FakePowerManagerClient::GetScreenBrightnessPercent(
-    const GetScreenBrightnessPercentCallback& callback) {
-}
-
-void FakePowerManagerClient::DecreaseKeyboardBrightness() {
-}
-
-void FakePowerManagerClient::IncreaseKeyboardBrightness() {
-}
-
 void FakePowerManagerClient::RequestStatusUpdate() {
   // RequestStatusUpdate() calls and notifies the observers
   // asynchronously on a real device. On the fake implementation, we call

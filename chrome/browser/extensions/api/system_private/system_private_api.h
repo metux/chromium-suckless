@@ -50,9 +50,6 @@ class SystemPrivateGetApiKeyFunction : public UIThreadExtensionFunction {
   ResponseAction Run() override;
 };
 
-// Dispatches systemPrivate.onBrightnessChanged event for extensions.
-void DispatchBrightnessChangedEvent(int brightness, bool user_initiated);
-
 // Dispatches systemPrivate.onVolumeChanged event for extensions.
 void DispatchVolumeChangedEvent(double volume, bool is_volume_muted);
 

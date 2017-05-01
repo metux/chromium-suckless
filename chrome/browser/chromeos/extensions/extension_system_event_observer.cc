@@ -19,11 +19,6 @@ ExtensionSystemEventObserver::~ExtensionSystemEventObserver() {
   DBusThreadManager::Get()->GetSessionManagerClient()->RemoveObserver(this);
 }
 
-void ExtensionSystemEventObserver::BrightnessChanged(int level,
-                                                     bool user_initiated) {
-  extensions::DispatchBrightnessChangedEvent(level, user_initiated);
-}
-
 void ExtensionSystemEventObserver::SuspendDone(
     const base::TimeDelta& sleep_duration) {
   extensions::DispatchWokeUpEvent();

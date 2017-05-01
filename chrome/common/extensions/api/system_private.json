@@ -129,18 +129,6 @@
         ]
       },
       {
-        "name": "onBrightnessChanged",
-        "type": "function",
-        "description": "Fired when the screen brightness is changed.",
-        "parameters": [
-          {
-            "$ref": "BrightnessChangeInfo",
-            "name": "brightness",
-            "description": "Information about a change to the screen brightness."
-          }
-        ]
-      },
-      {
         "name": "onScreenUnlocked",
         "type": "function",
         "description": "Fired when the screen is unlocked.",

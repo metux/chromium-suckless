@@ -134,8 +134,6 @@ i18n.input.chrome.inputview.events.KeyCodes = {
   ZOOM_OUT: 'ZoomOut',
 
   // Device keys
-  BRIGHTNESS_DOWN: 'BrightnessDown',
-  BRIGHTNESS_UP: 'BrightnessUp',
   CAMERA: 'Camera',
   EJECT: 'Eject',
   LOG_OFF: 'LogOff',

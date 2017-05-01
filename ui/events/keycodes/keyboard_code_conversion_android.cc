@@ -15,8 +15,6 @@ const int kCombiningAccentMask = 0x7fffffff;
 // The minimum Android NDK does not provide values for these yet:
 enum {
   AKEYCODE_ASSIST = 219,
-  AKEYCODE_BRIGHTNESS_DOWN = 220,
-  AKEYCODE_BRIGHTNESS_UP = 221,
   AKEYCODE_MEDIA_AUDIO_TRACK = 222,
   AKEYCODE_SLEEP = 223,
   AKEYCODE_WAKEUP = 224,
@@ -243,10 +241,6 @@ DomKey GetDomKeyFromAndroidKeycode(int keycode) {
       return DomKey::EISU;
     case AKEYCODE_KATAKANA_HIRAGANA:
       return DomKey::HIRAGANA_KATAKANA;
-    case AKEYCODE_BRIGHTNESS_DOWN:
-      return DomKey::BRIGHTNESS_DOWN;
-    case AKEYCODE_BRIGHTNESS_UP:
-      return DomKey::BRIGHTNESS_UP;
     case AKEYCODE_SLEEP:
       return DomKey::STANDBY;
     case AKEYCODE_WAKEUP:

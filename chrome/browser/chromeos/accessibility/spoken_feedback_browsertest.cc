@@ -480,19 +480,6 @@ IN_PROC_BROWSER_TEST_P(SpokenFeedbackTest, NavigateSystemTray) {
   }
 }
 
-// See http://crbug.com/443608
-IN_PROC_BROWSER_TEST_P(SpokenFeedbackTest, DISABLED_ScreenBrightness) {
-  EnableChromeVox();
-
-  EXPECT_TRUE(PerformAcceleratorAction(ash::BRIGHTNESS_UP));
-  EXPECT_TRUE(base::MatchPattern(speech_monitor_.GetNextUtterance(),
-                                 "Brightness * percent"));
-
-  EXPECT_TRUE(PerformAcceleratorAction(ash::BRIGHTNESS_DOWN));
-  EXPECT_TRUE(base::MatchPattern(speech_monitor_.GetNextUtterance(),
-                                 "Brightness * percent"));
-}
-
 IN_PROC_BROWSER_TEST_P(SpokenFeedbackTest, VolumeSlider) {
   EnableChromeVox();
 

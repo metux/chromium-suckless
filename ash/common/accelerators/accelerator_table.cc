@@ -30,8 +30,6 @@ const AcceleratorData kAcceleratorData[] = {
 #if defined(OS_CHROMEOS)
     {true, ui::VKEY_BROWSER_SEARCH, ui::EF_NONE, TOGGLE_APP_LIST},
     {true, ui::VKEY_WLAN, ui::EF_NONE, TOGGLE_WIFI},
-    {true, ui::VKEY_KBD_BRIGHTNESS_DOWN, ui::EF_NONE, KEYBOARD_BRIGHTNESS_DOWN},
-    {true, ui::VKEY_KBD_BRIGHTNESS_UP, ui::EF_NONE, KEYBOARD_BRIGHTNESS_UP},
     // Maximize button.
     {true, ui::VKEY_MEDIA_LAUNCH_APP2, ui::EF_CONTROL_DOWN, TOGGLE_MIRROR_MODE},
     {true, ui::VKEY_MEDIA_LAUNCH_APP2, ui::EF_ALT_DOWN, SWAP_PRIMARY_DISPLAY},
@@ -41,14 +39,7 @@ const AcceleratorData kAcceleratorData[] = {
      TAKE_PARTIAL_SCREENSHOT},
     {true, ui::VKEY_MEDIA_LAUNCH_APP1, ui::EF_ALT_DOWN | ui::EF_CONTROL_DOWN,
      TAKE_WINDOW_SCREENSHOT},
-    {true, ui::VKEY_BRIGHTNESS_DOWN, ui::EF_NONE, BRIGHTNESS_DOWN},
-    {true, ui::VKEY_BRIGHTNESS_DOWN, ui::EF_ALT_DOWN, KEYBOARD_BRIGHTNESS_DOWN},
-    {true, ui::VKEY_BRIGHTNESS_UP, ui::EF_NONE, BRIGHTNESS_UP},
-    {true, ui::VKEY_BRIGHTNESS_UP, ui::EF_ALT_DOWN, KEYBOARD_BRIGHTNESS_UP},
-    {true, ui::VKEY_BRIGHTNESS_DOWN, ui::EF_CONTROL_DOWN | ui::EF_ALT_DOWN,
      MAGNIFY_SCREEN_ZOOM_OUT},
-    {true, ui::VKEY_BRIGHTNESS_UP, ui::EF_CONTROL_DOWN | ui::EF_ALT_DOWN,
-     MAGNIFY_SCREEN_ZOOM_IN},
     {true, ui::VKEY_L, ui::EF_COMMAND_DOWN, LOCK_SCREEN},
     {true, ui::VKEY_L, ui::EF_COMMAND_DOWN | ui::EF_SHIFT_DOWN, SUSPEND},
     // The lock key on Chrome OS keyboards produces F13 scancodes.
@@ -259,9 +250,6 @@ const size_t kDebugAcceleratorDataLength = arraysize(kDebugAcceleratorData);
 const AcceleratorData kDeveloperAcceleratorData[] = {
 #if defined(OS_CHROMEOS)
     // Extra shortcut for debug build to control magnifier on Linux desktop.
-    {true, ui::VKEY_BRIGHTNESS_DOWN, ui::EF_CONTROL_DOWN,
-     MAGNIFY_SCREEN_ZOOM_OUT},
-    {true, ui::VKEY_BRIGHTNESS_UP, ui::EF_CONTROL_DOWN, MAGNIFY_SCREEN_ZOOM_IN},
     // Extra shortcuts to lock the screen on Linux desktop.
     {true, ui::VKEY_L, ui::EF_ALT_DOWN, LOCK_PRESSED},
     {false, ui::VKEY_L, ui::EF_ALT_DOWN, LOCK_RELEASED},
@@ -330,15 +318,11 @@ const AcceleratorAction kActionsAllowedAtLoginOrLockScreen[] = {
     TAKE_PARTIAL_SCREENSHOT,
     TAKE_SCREENSHOT,
 #if defined(OS_CHROMEOS)
-    BRIGHTNESS_DOWN,
-    BRIGHTNESS_UP,
     DEBUG_TOGGLE_TOUCH_PAD,
     DEBUG_TOGGLE_TOUCH_SCREEN,
     DEBUG_TOGGLE_TOUCH_VIEW,
     DEV_ADD_REMOVE_DISPLAY,
     DISABLE_CAPS_LOCK,
-    KEYBOARD_BRIGHTNESS_DOWN,
-    KEYBOARD_BRIGHTNESS_UP,
     TOGGLE_CAPS_LOCK,
     TOGGLE_SPOKEN_FEEDBACK,
     TOGGLE_MIRROR_MODE,
@@ -388,14 +372,10 @@ const AcceleratorAction kActionsAllowedAtModalWindow[] = {
     TAKE_PARTIAL_SCREENSHOT,
     TAKE_SCREENSHOT,
 #if defined(OS_CHROMEOS)
-    BRIGHTNESS_DOWN,
-    BRIGHTNESS_UP,
     DEBUG_TOGGLE_TOUCH_PAD,
     DEBUG_TOGGLE_TOUCH_SCREEN,
     DEV_ADD_REMOVE_DISPLAY,
     DISABLE_CAPS_LOCK,
-    KEYBOARD_BRIGHTNESS_DOWN,
-    KEYBOARD_BRIGHTNESS_UP,
     LOCK_SCREEN,
     POWER_PRESSED,
     POWER_RELEASED,
@@ -424,10 +404,6 @@ const AcceleratorAction kRepeatableActions[] = {
     MEDIA_PREV_TRACK,
     RESTORE_TAB,
 #if defined(OS_CHROMEOS)
-    BRIGHTNESS_DOWN,
-    BRIGHTNESS_UP,
-    KEYBOARD_BRIGHTNESS_DOWN,
-    KEYBOARD_BRIGHTNESS_UP,
     VOLUME_DOWN,
     VOLUME_UP,
 #endif  // defined(OS_CHROMEOS)
@@ -453,14 +429,10 @@ const AcceleratorAction kActionsAllowedInAppModeOrPinnedMode[] = {
     SCALE_UI_UP,
     SWITCH_IME,  // Switch to another IME depending on the accelerator.
 #if defined(OS_CHROMEOS)
-    BRIGHTNESS_DOWN,
-    BRIGHTNESS_UP,
     DEV_ADD_REMOVE_DISPLAY,
     DEBUG_TOGGLE_TOUCH_PAD,
     DEBUG_TOGGLE_TOUCH_SCREEN,
     DISABLE_CAPS_LOCK,
-    KEYBOARD_BRIGHTNESS_DOWN,
-    KEYBOARD_BRIGHTNESS_UP,
     POWER_PRESSED,
     POWER_RELEASED,
     SWAP_PRIMARY_DISPLAY,
@@ -519,13 +491,9 @@ const AcceleratorAction kActionsKeepingMenuOpen[] = {
     TAKE_PARTIAL_SCREENSHOT,
     TAKE_SCREENSHOT,
 #if defined(OS_CHROMEOS)
-    BRIGHTNESS_DOWN,
-    BRIGHTNESS_UP,
     DEBUG_TOGGLE_TOUCH_PAD,
     DEBUG_TOGGLE_TOUCH_SCREEN,
     DISABLE_CAPS_LOCK,
-    KEYBOARD_BRIGHTNESS_DOWN,
-    KEYBOARD_BRIGHTNESS_UP,
     TOGGLE_CAPS_LOCK,
     TOGGLE_SPOKEN_FEEDBACK,
     TOGGLE_WIFI,

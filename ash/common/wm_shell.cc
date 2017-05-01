@@ -20,8 +20,6 @@
 #include "ash/common/shelf/shelf_window_watcher.h"
 #include "ash/common/shell_delegate.h"
 #include "ash/common/shell_window_ids.h"
-#include "ash/common/system/brightness_control_delegate.h"
-#include "ash/common/system/keyboard_brightness_control_delegate.h"
 #include "ash/common/system/toast/toast_manager.h"
 #include "ash/common/system/tray/system_tray_controller.h"
 #include "ash/common/system/tray/system_tray_delegate.h"
@@ -45,8 +43,6 @@
 #include "ui/views/focus/focus_manager_factory.h"
 
 #if defined(OS_CHROMEOS)
-#include "ash/common/system/chromeos/brightness/brightness_controller_chromeos.h"
-#include "ash/common/system/chromeos/keyboard_brightness_controller.h"
 #include "ash/common/system/chromeos/session/logout_confirmation_controller.h"
 #endif
 
@@ -211,10 +207,6 @@ WmShell::WmShell(std::unique_ptr<ShellDelegate> shell_delegate)
       wallpaper_delegate_(delegate_->CreateWallpaperDelegate()),
       window_cycle_controller_(new WindowCycleController),
       window_selector_controller_(new WindowSelectorController) {
-#if defined(OS_CHROMEOS)
-  brightness_control_delegate_.reset(new system::BrightnessControllerChromeos);
-  keyboard_brightness_control_delegate_.reset(new KeyboardBrightnessController);
-#endif
 }
 
 WmShell::~WmShell() {}

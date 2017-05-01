@@ -23,15 +23,6 @@ var UpdateStatus;
 var VolumeInfo;
 
 /**
- * Information about a change to the screen brightness.
- * @typedef {{
- *   brightness: number,
- *   userInitiated: boolean
- * }}
- */
-var BrightnessChangeInfo;
-
-/**
  * @const
  */
 chrome.systemPrivate = {};
@@ -56,9 +47,6 @@ chrome.systemPrivate.getApiKey = function(callback) {};
 
 /** @type {!ChromeEvent} */
 chrome.systemPrivate.onVolumeChanged;
-
-/** @type {!ChromeEvent} */
-chrome.systemPrivate.onBrightnessChanged;
 
 /** @type {!ChromeEvent} */
 chrome.systemPrivate.onScreenUnlocked;

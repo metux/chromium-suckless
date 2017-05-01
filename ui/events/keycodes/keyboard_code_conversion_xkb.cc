@@ -223,10 +223,6 @@ DomKey NonPrintableXKeySymToDomKey(xkb_keysym_t keysym) {
       return DomKey::PROPS;
     case XKB_KEY_XF86Next_VMode:
       return DomKey::VIDEO_MODE_NEXT;
-    case XKB_KEY_XF86MonBrightnessUp:
-      return DomKey::BRIGHTNESS_UP;
-    case XKB_KEY_XF86MonBrightnessDown:
-      return DomKey::BRIGHTNESS_DOWN;
     case XKB_KEY_XF86Standby:
     case XKB_KEY_XF86Sleep:
     case XKB_KEY_XF86Suspend:

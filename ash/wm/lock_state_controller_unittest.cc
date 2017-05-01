@@ -867,25 +867,6 @@ TEST_F(LockStateControllerTest, RequestAndCancelShutdownFromLockScreen) {
   ExpectLockedState();
 }
 
-// Test that we ignore power button presses when the screen is turned off.
-TEST_F(LockStateControllerTest, IgnorePowerButtonIfScreenIsOff) {
-  Initialize(false, LoginStatus::USER);
-
-  // When the screen brightness is at 0%, we shouldn't do anything in response
-  // to power button presses.
-  power_button_controller_->OnScreenBrightnessChanged(0.0);
-  PressPowerButton();
-  EXPECT_FALSE(test_api_->is_animating_lock());
-  ReleasePowerButton();
-
-  // After increasing the brightness to 10%, we should start the timer like
-  // usual.
-  power_button_controller_->OnScreenBrightnessChanged(10.0);
-  PressPowerButton();
-  EXPECT_TRUE(test_api_->is_animating_lock());
-  ReleasePowerButton();
-}
-
 TEST_F(LockStateControllerTest, HonorPowerButtonInDockedMode) {
   std::vector<std::unique_ptr<const ui::DisplayMode>> modes;
   modes.push_back(
@@ -905,16 +886,6 @@ TEST_F(LockStateControllerTest, HonorPowerButtonInDockedMode) {
   external_display.set_type(ui::DISPLAY_CONNECTION_TYPE_HDMI);
   external_display.set_modes(std::move(modes));
   outputs.push_back(&external_display);
-
-  // When all of the displays are turned off (e.g. due to user inactivity), the
-  // power button should be ignored.
-  power_button_controller_->OnScreenBrightnessChanged(0.0);
-  internal_display.set_current_mode(nullptr);
-  external_display.set_current_mode(nullptr);
-  power_button_controller_->OnDisplayModeChanged(outputs);
-  PressPowerButton();
-  EXPECT_FALSE(test_api_->is_animating_lock());
-  ReleasePowerButton();
 
   // When the screen brightness is 0% but the external display is still turned
   // on (indicating either docked mode or the user having manually decreased the

@@ -22,10 +22,6 @@ bool IsSystemKey(ui::KeyboardCode key_code) {
   switch (key_code) {
     case ui::VKEY_MEDIA_LAUNCH_APP2:  // Fullscreen button.
     case ui::VKEY_MEDIA_LAUNCH_APP1:  // Overview button.
-    case ui::VKEY_BRIGHTNESS_DOWN:
-    case ui::VKEY_BRIGHTNESS_UP:
-    case ui::VKEY_KBD_BRIGHTNESS_DOWN:
-    case ui::VKEY_KBD_BRIGHTNESS_UP:
     case ui::VKEY_VOLUME_MUTE:
     case ui::VKEY_VOLUME_DOWN:
     case ui::VKEY_VOLUME_UP:

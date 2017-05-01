@@ -2395,12 +2395,6 @@
       <message desc="Describes the key to toggle window overview in the ChromeVox keyboard explorer." name="IDS_CHROMEVOX_WINDOW_OVERVIEW_KEY">
         window overview
       </message>
-      <message desc="Describes the brightness down key in the ChromeVox keyboard explorer." name="IDS_CHROMEVOX_BRIGHTNESS_DOWN_KEY">
-        Brightness down
-      </message>
-      <message desc="Describes the brightness up key in the ChromeVox keyboard explorer." name="IDS_CHROMEVOX_BRIGHTNESS_UP_KEY">
-        Brightness up
-      </message>
       <message desc="Describes the volume mute key in the ChromeVox keyboard explorer." name="IDS_CHROMEVOX_VOLUME_MUTE_KEY">
         volume mute
       </message>

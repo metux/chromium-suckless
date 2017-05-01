@@ -864,14 +864,6 @@ KeyboardCode KeyboardCodeFromXKeysym(unsigned int keysym) {
       return VKEY_POWER;
     case XF86XK_Sleep:
       return VKEY_SLEEP;
-    case XF86XK_MonBrightnessDown:
-      return VKEY_BRIGHTNESS_DOWN;
-    case XF86XK_MonBrightnessUp:
-      return VKEY_BRIGHTNESS_UP;
-    case XF86XK_KbdBrightnessDown:
-      return VKEY_KBD_BRIGHTNESS_DOWN;
-    case XF86XK_KbdBrightnessUp:
-      return VKEY_KBD_BRIGHTNESS_UP;
 
     // TODO(sad): some keycodes are still missing.
   }
@@ -1076,10 +1068,6 @@ KeyboardCode DefaultKeyboardCodeFromHardwareKeycode(
         return VKEY_BROWSER_REFRESH;
       case 0xD4:  // KEY_DASHBOARD
         return VKEY_MEDIA_LAUNCH_APP2;
-      case 0xE8:  // KEY_BRIGHTNESSDOWN
-        return VKEY_BRIGHTNESS_DOWN;
-      case 0xE9:  // KEY_BRIGHTNESSUP
-        return VKEY_BRIGHTNESS_UP;
     }
     return VKEY_UNKNOWN;
   }
@@ -1340,14 +1328,6 @@ int XKeysymForWindowsKeyCode(KeyboardCode keycode, bool shift) {
       return XF86XK_WLAN;
     case VKEY_POWER:
       return XF86XK_PowerOff;
-    case VKEY_BRIGHTNESS_DOWN:
-      return XF86XK_MonBrightnessDown;
-    case VKEY_BRIGHTNESS_UP:
-      return XF86XK_MonBrightnessUp;
-    case VKEY_KBD_BRIGHTNESS_DOWN:
-      return XF86XK_KbdBrightnessDown;
-    case VKEY_KBD_BRIGHTNESS_UP:
-      return XF86XK_KbdBrightnessUp;
 
     default:
       LOG(WARNING) << "Unknown keycode:" << keycode;

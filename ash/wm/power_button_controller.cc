@@ -64,10 +64,6 @@ PowerButtonController::~PowerButtonController() {
 #endif
 }
 
-void PowerButtonController::OnScreenBrightnessChanged(double percent) {
-  brightness_is_zero_ = percent <= 0.001;
-}
-
 void PowerButtonController::OnPowerButtonEvent(
     bool down,
     const base::TimeTicks& timestamp) {

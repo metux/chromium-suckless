@@ -24,10 +24,6 @@ power_manager::UserActivityType GetUserActivityTypeForEvent(
     return power_manager::USER_ACTIVITY_OTHER;
 
   switch (static_cast<const KeyEvent*>(event)->key_code()) {
-    case VKEY_BRIGHTNESS_DOWN:
-      return power_manager::USER_ACTIVITY_BRIGHTNESS_DOWN_KEY_PRESS;
-    case VKEY_BRIGHTNESS_UP:
-      return power_manager::USER_ACTIVITY_BRIGHTNESS_UP_KEY_PRESS;
     case VKEY_VOLUME_DOWN:
       return power_manager::USER_ACTIVITY_VOLUME_DOWN_KEY_PRESS;
     case VKEY_VOLUME_MUTE:

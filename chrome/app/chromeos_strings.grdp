@@ -2356,15 +2356,6 @@ Press any key to continue exploring.
   <message name="IDS_OPTIONS_SETTINGS_TIMEZONE_DISPLAY_NAME_UTC" desc="This is the display name of UTC/GMT timezone for timezone option in user settings.">
     Coordinated Universal Time (UTC/GMT)
   </message>
-  <message name="IDS_OPTIONS_SETTINGS_BRIGHTNESS_DESCRIPTION" desc="In the settings tab, the text next to the buttons for screen brightness.">
-    Brightness:
-  </message>
-  <message name="IDS_OPTIONS_SETTINGS_BRIGHTNESS_DECREASE" desc="In the settings tab, the text of the button to decrease the screen brightness.">
-    Decrease
-  </message>
-  <message name="IDS_OPTIONS_SETTINGS_BRIGHTNESS_INCREASE" desc="In the settings tab, the text of the button to increase the screen brightness.">
-    Increase
-  </message>
   <message name="IDS_OPTIONS_SETTINGS_TAP_TO_CLICK_ENABLED_DESCRIPTION" desc="In the settings tab, the text next to the checkbox that enables tap-to-click.">
     Enable tap-to-click
   </message>

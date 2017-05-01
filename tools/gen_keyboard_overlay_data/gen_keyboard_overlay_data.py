@@ -62,8 +62,6 @@ LABEL_MAP = {
   'glyph_arrow_up': 'up',
   'glyph_back': 'back',
   'glyph_backspace': 'backspace',
-  'glyph_brightness_down': 'bright down',
-  'glyph_brightness_up': 'bright up',
   'glyph_enter': 'enter',
   'glyph_forward': 'forward',
   'glyph_fullscreen': 'full screen',

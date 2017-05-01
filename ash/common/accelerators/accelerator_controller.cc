@@ -18,8 +18,6 @@
 #include "ash/common/shelf/shelf_widget.h"
 #include "ash/common/shelf/wm_shelf.h"
 #include "ash/common/shell_delegate.h"
-#include "ash/common/system/brightness_control_delegate.h"
-#include "ash/common/system/keyboard_brightness_control_delegate.h"
 #include "ash/common/system/status_area_widget.h"
 #include "ash/common/system/tray/system_tray_delegate.h"
 #include "ash/common/system/tray/system_tray_notifier.h"
@@ -817,10 +815,6 @@ bool AcceleratorController::CanPerformAction(
     case TOGGLE_OVERVIEW:
     case WINDOW_MINIMIZE:
 #if defined(OS_CHROMEOS)
-    case BRIGHTNESS_DOWN:
-    case BRIGHTNESS_UP:
-    case KEYBOARD_BRIGHTNESS_DOWN:
-    case KEYBOARD_BRIGHTNESS_UP:
     case OPEN_CROSH:
     case OPEN_FILE_MANAGER:
     case OPEN_GET_HELP:
@@ -976,20 +970,6 @@ void AcceleratorController::PerformAction(AcceleratorAction action,
       HandlePositionCenter();
       break;
 #if defined(OS_CHROMEOS)
-    case BRIGHTNESS_DOWN: {
-      BrightnessControlDelegate* delegate =
-          WmShell::Get()->brightness_control_delegate();
-      if (delegate)
-        delegate->HandleBrightnessDown(accelerator);
-      break;
-    }
-    case BRIGHTNESS_UP: {
-      BrightnessControlDelegate* delegate =
-          WmShell::Get()->brightness_control_delegate();
-      if (delegate)
-        delegate->HandleBrightnessUp(accelerator);
-      break;
-    }
     case DEBUG_SHOW_TOAST:
     case DEBUG_TOGGLE_TOUCH_PAD:
     case DEBUG_TOGGLE_TOUCH_SCREEN:
@@ -999,20 +979,6 @@ void AcceleratorController::PerformAction(AcceleratorAction action,
     case DISABLE_CAPS_LOCK:
       HandleDisableCapsLock();
       break;
-    case KEYBOARD_BRIGHTNESS_DOWN: {
-      KeyboardBrightnessControlDelegate* delegate =
-          WmShell::Get()->keyboard_brightness_control_delegate();
-      if (delegate)
-        delegate->HandleKeyboardBrightnessDown(accelerator);
-      break;
-    }
-    case KEYBOARD_BRIGHTNESS_UP: {
-      KeyboardBrightnessControlDelegate* delegate =
-          WmShell::Get()->keyboard_brightness_control_delegate();
-      if (delegate)
-        delegate->HandleKeyboardBrightnessUp(accelerator);
-      break;
-    }
     case LOCK_SCREEN:
       HandleLock();
       break;

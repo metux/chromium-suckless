@@ -51,7 +51,6 @@
 #if defined(OS_CHROMEOS)
 #include "ash/common/system/chromeos/audio/tray_audio_chromeos.h"
 #include "ash/common/system/chromeos/bluetooth/tray_bluetooth.h"
-#include "ash/common/system/chromeos/brightness/tray_brightness.h"
 #include "ash/common/system/chromeos/enterprise/tray_enterprise.h"
 #include "ash/common/system/chromeos/media_security/multi_profile_media_tray_item.h"
 #include "ash/common/system/chromeos/network/tray_network.h"
@@ -251,7 +250,6 @@ void SystemTray::CreateItems(SystemTrayDelegate* delegate) {
   AddTrayItem(new MultiProfileMediaTrayItem(this));
   tray_audio_ = new TrayAudioChromeOs(this);
   AddTrayItem(tray_audio_);
-  AddTrayItem(new TrayBrightness(this));
   AddTrayItem(new TrayCapsLock(this));
   // TODO(jamescook): Remove this when mus has support for display management
   // and we have a DisplayManager equivalent. See http://crbug.com/548429

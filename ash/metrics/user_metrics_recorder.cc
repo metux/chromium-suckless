@@ -217,12 +217,6 @@ void UserMetricsRecorder::RecordUserMetricsAction(UserMetricsAction action) {
   using base::UserMetricsAction;
 
   switch (action) {
-    case UMA_ACCEL_KEYBOARD_BRIGHTNESS_DOWN_F6:
-      RecordAction(UserMetricsAction("Accel_KeyboardBrightnessDown_F6"));
-      break;
-    case UMA_ACCEL_KEYBOARD_BRIGHTNESS_UP_F7:
-      RecordAction(UserMetricsAction("Accel_KeyboardBrightnessUp_F7"));
-      break;
     case UMA_ACCEL_LOCK_SCREEN_LOCK_BUTTON:
       RecordAction(UserMetricsAction("Accel_LockScreen_LockButton"));
       break;
@@ -321,9 +315,6 @@ void UserMetricsRecorder::RecordUserMetricsAction(UserMetricsAction action) {
       break;
     case UMA_STATUS_AREA_AUDIO_SWITCH_OUTPUT_DEVICE:
       RecordAction(UserMetricsAction("StatusArea_Audio_SwitchOutputDevice"));
-      break;
-    case UMA_STATUS_AREA_BRIGHTNESS_CHANGED:
-      RecordAction(UserMetricsAction("StatusArea_BrightnessChanged"));
       break;
     case UMA_STATUS_AREA_BLUETOOTH_CONNECT_KNOWN_DEVICE:
       RecordAction(UserMetricsAction("StatusArea_Bluetooth_Connect_Known"));

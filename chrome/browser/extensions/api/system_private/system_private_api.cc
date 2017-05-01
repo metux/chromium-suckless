@@ -157,15 +157,6 @@ void DispatchVolumeChangedEvent(double volume, bool is_volume_muted) {
                 system_private::OnVolumeChanged::kEventName, std::move(dict));
 }
 
-void DispatchBrightnessChangedEvent(int brightness, bool user_initiated) {
-  std::unique_ptr<base::DictionaryValue> dict(new base::DictionaryValue());
-  dict->SetInteger(kBrightnessKey, brightness);
-  dict->SetBoolean(kUserInitiatedKey, user_initiated);
-  DispatchEvent(extensions::events::SYSTEM_PRIVATE_ON_BRIGHTNESS_CHANGED,
-                system_private::OnBrightnessChanged::kEventName,
-                std::move(dict));
-}
-
 void DispatchScreenUnlockedEvent() {
   DispatchEvent(extensions::events::SYSTEM_PRIVATE_ON_SCREEN_UNLOCKED,
                 system_private::OnScreenUnlocked::kEventName, nullptr);

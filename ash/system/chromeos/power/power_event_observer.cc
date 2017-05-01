@@ -70,11 +70,6 @@ void PowerEventObserver::OnLockAnimationsComplete() {
   }
 }
 
-void PowerEventObserver::BrightnessChanged(int level, bool user_initiated) {
-  Shell::GetInstance()->power_button_controller()->OnScreenBrightnessChanged(
-      static_cast<double>(level));
-}
-
 void PowerEventObserver::SuspendImminent() {
   SessionStateDelegate* delegate = WmShell::Get()->GetSessionStateDelegate();
 

@@ -217,10 +217,6 @@ enum KeyboardCode {
   // and 0xE8 are unassigned.
   VKEY_WLAN = 0x97,
   VKEY_POWER = 0x98,
-  VKEY_BRIGHTNESS_DOWN = 0xD8,
-  VKEY_BRIGHTNESS_UP = 0xD9,
-  VKEY_KBD_BRIGHTNESS_DOWN = 0xDA,
-  VKEY_KBD_BRIGHTNESS_UP = 0xE8,
 
   // Windows does not have a specific key code for AltGr. We use the unused 0xE1
   // (VK_OEM_AX) code to represent AltGr, matching the behaviour of Firefox on

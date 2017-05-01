@@ -325,10 +325,6 @@ bool IsReservedSystemInputEvent(const blink::WebInputEvent& event) {
   const blink::WebKeyboardEvent& key_event =
       static_cast<const blink::WebKeyboardEvent&>(event);
   switch (key_event.windowsKeyCode) {
-    case ui::VKEY_BRIGHTNESS_DOWN:
-    case ui::VKEY_BRIGHTNESS_UP:
-    case ui::VKEY_KBD_BRIGHTNESS_DOWN:
-    case ui::VKEY_KBD_BRIGHTNESS_UP:
     case ui::VKEY_VOLUME_MUTE:
     case ui::VKEY_VOLUME_DOWN:
     case ui::VKEY_VOLUME_UP:

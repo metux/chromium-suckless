@@ -167,8 +167,6 @@ DOM_KEY_MAP_DECLARATION {
   // ========================================================
 
   //          Key                     Enum                      Value
-  DOM_KEY_MAP("BrightnessDown",       BRIGHTNESS_DOWN,          0x0601),
-  DOM_KEY_MAP("BrightnessUp",         BRIGHTNESS_UP,            0x0602),
   //          "Camera" moved to Mobile Phone Keys section.
   //         ("Camera",               CAMERA,                   0x0603),
   DOM_KEY_MAP("Eject",                EJECT,                    0x0604),
