@@ -88,14 +88,6 @@ void UpdateJobFileInfo(
       callback);
 }
 
-bool HasUsbPrinterProviderPermissions(const Extension* extension) {
-  return extension->permissions_data() &&
-        extension->permissions_data()->HasAPIPermission(
-            extensions::APIPermission::kPrinterProvider) &&
-        extension->permissions_data()->HasAPIPermission(
-            extensions::APIPermission::kUsb);
-}
-
 std::string GenerateProvisionalUsbPrinterId(const Extension* extension,
                                             const UsbDevice* device) {
   return base::StringPrintf("%s:%s:%s", kProvisionalUsbLabel,
@@ -147,21 +139,6 @@ void ExtensionPrinterHandler::StartGetPrinters(
 
   bool extension_supports_usb_printers = false;
   ExtensionRegistry* registry = ExtensionRegistry::Get(browser_context_);
-  for (const auto& extension : registry->enabled_extensions()) {
-    if (UsbPrinterManifestData::Get(extension.get()) &&
-        HasUsbPrinterProviderPermissions(extension.get())) {
-      extension_supports_usb_printers = true;
-      break;
-    }
-  }
-
-  if (extension_supports_usb_printers) {
-    device::UsbService* service = device::DeviceClient::Get()->GetUsbService();
-    pending_enumeration_count_++;
-    service->GetDevices(
-        base::Bind(&ExtensionPrinterHandler::OnUsbDevicesEnumerated,
-                   weak_ptr_factory_.GetWeakPtr(), callback));
-  }
 
   extensions::PrinterProviderAPIFactory::GetInstance()
       ->GetForBrowserContext(browser_context_)
@@ -332,43 +309,6 @@ void ExtensionPrinterHandler::OnUsbDevicesEnumerated(
       DevicePermissionsManager::Get(browser_context_);
 
   ListBuilder printer_list;
-
-  for (const auto& extension : registry->enabled_extensions()) {
-    const UsbPrinterManifestData* manifest_data =
-        UsbPrinterManifestData::Get(extension.get());
-    if (!manifest_data || !HasUsbPrinterProviderPermissions(extension.get()))
-      continue;
-
-    const extensions::DevicePermissions* device_permissions =
-        permissions_manager->GetForExtension(extension->id());
-    for (const auto& device : devices) {
-      if (manifest_data->SupportsDevice(device)) {
-        extensions::UsbDevicePermission::CheckParam param(
-            device->vendor_id(), device->product_id(),
-            extensions::UsbDevicePermissionData::UNSPECIFIED_INTERFACE);
-        if (device_permissions->FindUsbDeviceEntry(device) ||
-            extension->permissions_data()->CheckAPIPermissionWithParam(
-                extensions::APIPermission::kUsbDevice, &param)) {
-          // Skip devices the extension already has permission to access.
-          continue;
-        }
-
-        printer_list.Append(
-            DictionaryBuilder()
-                .Set("id", GenerateProvisionalUsbPrinterId(extension.get(),
-                                                           device.get()))
-                .Set("name",
-                     DevicePermissionsManager::GetPermissionMessage(
-                         device->vendor_id(), device->product_id(),
-                         device->manufacturer_string(),
-                         device->product_string(), base::string16(), false))
-                .Set("extensionId", extension->id())
-                .Set("extensionName", extension->name())
-                .Set("provisional", true)
-                .Build());
-      }
-    }
-  }
 
   DCHECK_GT(pending_enumeration_count_, 0);
   pending_enumeration_count_--;

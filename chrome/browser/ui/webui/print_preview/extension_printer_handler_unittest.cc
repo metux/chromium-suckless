@@ -370,15 +370,6 @@ class FakePrinterProviderAPI : public PrinterProviderAPI {
     pending_print_requests_.push(request_info);
   }
 
-  void DispatchGetUsbPrinterInfoRequested(
-      const std::string& extension_id,
-      scoped_refptr<device::UsbDevice> device,
-      const PrinterProviderAPI::GetPrinterInfoCallback& callback) override {
-    EXPECT_EQ("fake extension id", extension_id);
-    EXPECT_TRUE(device);
-    pending_usb_info_callbacks_.push(callback);
-  }
-
   size_t pending_get_printers_count() const {
     return pending_printers_callbacks_.size();
   }
@@ -426,13 +417,6 @@ class FakePrinterProviderAPI : public PrinterProviderAPI {
 
   size_t pending_usb_info_count() const {
     return pending_usb_info_callbacks_.size();
-  }
-
-  void TriggerNextUsbPrinterInfoCallback(
-      const base::DictionaryValue& printer_info) {
-    ASSERT_GT(pending_usb_info_count(), 0u);
-    pending_usb_info_callbacks_.front().Run(printer_info);
-    pending_usb_info_callbacks_.pop();
   }
 
  private:
@@ -541,68 +525,6 @@ TEST_F(ExtensionPrinterHandlerTest, GetPrinters_Reset) {
   fake_api->TriggerNextGetPrintersCallback(*original_printers, true);
 
   EXPECT_EQ(0u, call_count);
-}
-
-TEST_F(ExtensionPrinterHandlerTest, GetUsbPrinters) {
-  scoped_refptr<MockUsbDevice> device0 =
-      new MockUsbDevice(0, 0, "Google", "USB Printer", "");
-  usb_service().AddDevice(device0);
-  scoped_refptr<MockUsbDevice> device1 =
-      new MockUsbDevice(0, 1, "Google", "USB Printer", "");
-  usb_service().AddDevice(device1);
-
-  const Extension* extension_1 = env_.MakeExtension(
-      *base::test::ParseJson(kExtension1), "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-  const Extension* extension_2 = env_.MakeExtension(
-      *base::test::ParseJson(kExtension2), "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
-
-  extensions::DevicePermissionsManager* permissions_manager =
-      extensions::DevicePermissionsManager::Get(env_.profile());
-  permissions_manager->AllowUsbDevice(extension_2->id(), device0);
-
-  size_t call_count = 0;
-  std::unique_ptr<base::ListValue> printers;
-  bool is_done = false;
-  extension_printer_handler_->StartGetPrinters(
-      base::Bind(&RecordPrinterList, &call_count, &printers, &is_done));
-
-  FakePrinterProviderAPI* fake_api = GetPrinterProviderAPI();
-  ASSERT_TRUE(fake_api);
-  ASSERT_EQ(1u, fake_api->pending_get_printers_count());
-
-  EXPECT_EQ(1u, call_count);
-  EXPECT_FALSE(is_done);
-  EXPECT_TRUE(printers.get());
-  EXPECT_EQ(2u, printers->GetSize());
-  std::unique_ptr<base::DictionaryValue> extension_1_entry(
-      DictionaryBuilder()
-          .Set("id", base::StringPrintf("provisional-usb:%s:%s",
-                                        extension_1->id().c_str(),
-                                        device0->guid().c_str()))
-          .Set("name", "USB Printer")
-          .Set("extensionName", "Provider 1")
-          .Set("extensionId", extension_1->id())
-          .Set("provisional", true)
-          .Build());
-  std::unique_ptr<base::DictionaryValue> extension_2_entry(
-      DictionaryBuilder()
-          .Set("id", base::StringPrintf("provisional-usb:%s:%s",
-                                        extension_2->id().c_str(),
-                                        device1->guid().c_str()))
-          .Set("name", "USB Printer")
-          .Set("extensionName", "Provider 2")
-          .Set("extensionId", extension_2->id())
-          .Set("provisional", true)
-          .Build());
-  EXPECT_TRUE(printers->Find(*extension_1_entry) != printers->end());
-  EXPECT_TRUE(printers->Find(*extension_2_entry) != printers->end());
-
-  fake_api->TriggerNextGetPrintersCallback(base::ListValue(), true);
-
-  EXPECT_EQ(2u, call_count);
-  EXPECT_TRUE(is_done);
-  EXPECT_TRUE(printers.get());
-  EXPECT_EQ(0u, printers->GetSize());  // RecordPrinterList resets |printers|.
 }
 
 TEST_F(ExtensionPrinterHandlerTest, GetCapability) {
@@ -949,68 +871,4 @@ TEST_F(ExtensionPrinterHandlerTest, Print_Pwg_FailedConversion) {
 
   EXPECT_FALSE(success);
   EXPECT_EQ("INVALID_DATA", status);
-}
-
-TEST_F(ExtensionPrinterHandlerTest, GrantUsbPrinterAccess) {
-  scoped_refptr<MockUsbDevice> device =
-      new MockUsbDevice(0, 0, "Google", "USB Printer", "");
-  usb_service().AddDevice(device);
-
-  size_t call_count = 0;
-  std::unique_ptr<base::DictionaryValue> printer_info;
-
-  std::string printer_id = base::StringPrintf(
-      "provisional-usb:fake extension id:%s", device->guid().c_str());
-  extension_printer_handler_->StartGrantPrinterAccess(
-      printer_id, base::Bind(&RecordPrinterInfo, &call_count, &printer_info));
-
-  EXPECT_FALSE(printer_info.get());
-  FakePrinterProviderAPI* fake_api = GetPrinterProviderAPI();
-  ASSERT_TRUE(fake_api);
-  ASSERT_EQ(1u, fake_api->pending_usb_info_count());
-
-  std::unique_ptr<base::DictionaryValue> original_printer_info(
-      DictionaryBuilder()
-          .Set("id", "printer1")
-          .Set("name", "Printer 1")
-          .Build());
-
-  fake_api->TriggerNextUsbPrinterInfoCallback(*original_printer_info);
-
-  EXPECT_EQ(1u, call_count);
-  ASSERT_TRUE(printer_info.get());
-  EXPECT_TRUE(printer_info->Equals(original_printer_info.get()))
-      << *printer_info << ", expected: " << *original_printer_info;
-}
-
-TEST_F(ExtensionPrinterHandlerTest, GrantUsbPrinterAccess_Reset) {
-  scoped_refptr<MockUsbDevice> device =
-      new MockUsbDevice(0, 0, "Google", "USB Printer", "");
-  usb_service().AddDevice(device);
-
-  size_t call_count = 0;
-  std::unique_ptr<base::DictionaryValue> printer_info;
-
-  extension_printer_handler_->StartGrantPrinterAccess(
-      base::StringPrintf("provisional-usb:fake extension id:%s",
-                         device->guid().c_str()),
-      base::Bind(&RecordPrinterInfo, &call_count, &printer_info));
-
-  EXPECT_FALSE(printer_info.get());
-  FakePrinterProviderAPI* fake_api = GetPrinterProviderAPI();
-  ASSERT_TRUE(fake_api);
-  ASSERT_EQ(1u, fake_api->pending_usb_info_count());
-
-  extension_printer_handler_->Reset();
-
-  std::unique_ptr<base::DictionaryValue> original_printer_info(
-      DictionaryBuilder()
-          .Set("id", "printer1")
-          .Set("name", "Printer 1")
-          .Build());
-
-  fake_api->TriggerNextUsbPrinterInfoCallback(*original_printer_info);
-
-  EXPECT_EQ(0u, call_count);
-  EXPECT_FALSE(printer_info.get());
 }
