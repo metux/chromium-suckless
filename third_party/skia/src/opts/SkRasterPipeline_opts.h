@@ -40,7 +40,9 @@ static inline void SK_VECTORCALL stage_1_3(SkRasterPipeline::Stage* st, size_t x
                                            Sk4f  r, Sk4f  g, Sk4f  b, Sk4f  a,
                                            Sk4f dr, Sk4f dg, Sk4f db, Sk4f da) {
 #if defined(__clang__)
+#if __has_builtin(__builtin_assume)
     __builtin_assume(tail > 0);  // This flourish lets Clang compile away any tail==0 code.
+#endif
 #endif
     kernel(st->ctx<void*>(), x,tail, r,g,b,a, dr,dg,db,da);
     if (kCallNext) {
