@@ -992,7 +992,6 @@ Quan hàgiu creat un usuari supervisat, podeu gestionar-ne la configuració en q
 <translation id="2332742915001411729">Restableix als valors predeterminats</translation>
 <translation id="2335122562899522968">Aquesta pàgina emmagatzema galetes</translation>
 <translation id="2336228925368920074">Afegeix totes les pestanyes a les adreces d'interès...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Anota a Google Keep</translation>
 <translation id="2339120501444485379">Introduïu un nom nou.</translation>
 <translation id="2339641773402824483">Cerca actualitzacions...</translation>
@@ -1170,7 +1169,6 @@ No crec que calgui bloquejar aquest lloc.</translation>
 <translation id="2562743677925229011">No heu iniciat la sessió a <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">Velocitat del ratolí tàctil:</translation>
 <translation id="2565828445440744174">WebAssembly experimental</translation>
-<translation id="2566124945717127842">Utilitzeu una operació Powerwash per restablir el dispositiu <ph name="IDS_SHORT_PRODUCT_NAME" /> i deixar-lo com si fos nou.</translation>
 <translation id="2568774940984945469">Contenidor de la barra d'informació</translation>
 <translation id="2570000010887652771">Les dades s'han desat.</translation>
 <translation id="2570648609346224037">S'ha produït un problema en baixar la imatge de recuperació.</translation>
@@ -1366,7 +1364,6 @@ No crec que calgui bloquejar aquest lloc.</translation>
       <ph name="LIST_ITEM" />establir contrasenyes d'inici de sessió del sistema i del desenvolupador personalitzades per fer servir el protocol SSH manualment al dispositiu.
     <ph name="END_LIST" />
     <ph name="BR" />
-    Quan les hàgiu activat, la majoria de les funcions de depuració estaran activades, fins i tot després de fer servir la funció Powerwash o de suprimir les dades en dispositius administrats per empreses. Per desactivar completament les funcions de depuració, seguiu el procés de recuperació de Chrome OS (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     Per obtenir més informació sobre les funcions de depuració, consulteu l'article següent:<ph name="BR" />
@@ -1592,7 +1589,6 @@ Per obtenir més informació sobre els usuaris supervisats, consulteu el <ph nam
 <translation id="3065140616557457172">Introduïu una cerca o bé un URL pel qual voleu navegar: podeu fer servir el mètode que vulgueu.</translation>
 <translation id="3067198360141518313">Executa aquest connector</translation>
 <translation id="307519606911195071">Activa les funcions addicionals d'accessibilitat a la pàgina Configuració.</translation>
-<translation id="3075874217500066906">Per començar el procés de Powerwash, cal que reinicieu el dispositiu. Després de fer-ho, haureu de confirmar que voleu continuar.</translation>
 <translation id="3076677906922146425">Permet que qualsevol persona pugui afegir una persona a Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">maj</translation>
@@ -2340,7 +2336,6 @@ Del domini <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="404493185430269859">Motor de cerca predeterminat</translation>
 <translation id="4047112090469382184">Descripció de la seguretat</translation>
 <translation id="4052120076834320548">Minúscul</translation>
-<translation id="4055023634561256217">Es requereix reiniciar el dispositiu per poder-lo restablir amb Powerwash.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" />: <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Mostra a la botiga</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3002,7 +2997,6 @@ Premeu qualsevol tecla per continuar explorant.</translation>
 <translation id="4991420928586866460">Tracta les tecles de la fila superior com a tecles de funció</translation>
 <translation id="499165176004408815">Utilitza el mode de contrast elevat</translation>
 <translation id="4992066212339426712">Deixa de silenciar</translation>
-<translation id="4992458225095111526">Confirmació de Powerwash</translation>
 <translation id="4994474651455208930">Permet que els llocs sol·licitin convertir-se en gestors predeterminats de protocols</translation>
 <translation id="4998873842614926205">Confirma els canvis</translation>
 <translation id="4999273653895592255">Aquesta marca controla si mostrem la interfície d'usuari antiga o nova de la finestra d'opcions per a captures d'escriptori.</translation>
@@ -3037,7 +3031,6 @@ Premeu qualsevol tecla per continuar explorant.</translation>
 <translation id="5045550434625856497">Contrasenya incorrecta</translation>
 <translation id="5046747760454685637">Pregunta abans de permetre que els llocs executin Flash (opció recomanada)</translation>
 <translation id="5048179823246820836">Nòrdic</translation>
-<translation id="5053604404986157245">La contrasenya de TPM generada aleatòriament no està disponible. Això és normal després d'executar la funció Powerwash.</translation>
 <translation id="5053803681436838483">Adreça d'enviament nova...</translation>
 <translation id="5055309315264875868">Mostra un enllaç a la pàgina de configuració del gestor de contrasenyes que permet administrar les contrasenyes sincronitzades en línia.</translation>
 <translation id="5061188462607594407">Augmentar la seguretat del dispositiu <ph name="PHONE_TYPE" /> per continuar</translation>
@@ -3283,7 +3276,6 @@ Premeu qualsevol tecla per continuar explorant.</translation>
 <translation id="5357579842739549440">Depuració de tecles de drecera</translation>
 <translation id="5360150013186312835">Mostra a la barra d'eines</translation>
 <translation id="5362741141255528695">Seleccioneu el fitxer de clau privada.</translation>
-<translation id="5363109466694494651">Fes un Powerwash i canvia a la versió anterior</translation>
 <translation id="5367091008316207019">S'està llegint el fitxer...</translation>
 <translation id="5367260322267293088">Activeu la pàgina de pestanya nova experimental amb icones grans.</translation>
 <translation id="5368720394188453070">El telèfon està bloquejat. Desbloquegeu-lo per accedir-hi.</translation>
@@ -3655,7 +3647,6 @@ Assegureu-vos que no es pugui accedir a informació confidencial.</translation>
 <translation id="5851063901794976166">Això és buit...</translation>
 <translation id="5851868085455377790">Emissor</translation>
 <translation id="5852112051279473187">Vaja! Ha fallat alguna cosa en inscriure aquest dispositiu. Torneu-ho a provar o contacteu amb el vostre representant d'assistència.</translation>
-<translation id="5852137567692933493">Reinicia i utilitza Powerwash</translation>
 <translation id="5854409662653665676">Si teniu problemes sovint, proveu el següent per resoldre la incidència amb aquest mòdul:</translation>
 <translation id="5854912040170951372">Pizza</translation>
 <translation id="5855119960719984315">canvia de finestra</translation>
@@ -3760,7 +3751,6 @@ Assegureu-vos que no es pugui accedir a informació confidencial.</translation>
 <translation id="6007237601604674381">El trasllat ha fallat. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Envia pings per fer auditories d'enllaços.</translation>
 <translation id="6015796118275082299">Any</translation>
-<translation id="6016551720757758985">Confirmació de Powerwash amb retorn a la versió anterior</translation>
 <translation id="6016809788585079594">Digueu "Ok Google" per última vegada</translation>
 <translation id="6017225534417889107">Canvia...</translation>
 <translation id="6017981840202692187">Afegeix a Aplicacions</translation>
@@ -4038,7 +4028,6 @@ Assegureu-vos que no es pugui accedir a informació confidencial.</translation>
 <translation id="6409731863280057959">Finestres emergents</translation>
 <translation id="6410063390789552572">No es pot accedir a la biblioteca de xarxa</translation>
 <translation id="6410257289063177456">Fitxers d'imatge </translation>
-<translation id="6410328738210026208">Canvia el canal i fes Powerwash</translation>
 <translation id="6410668567036790476">Afegeix un motor de cerca</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">Finestra d'incògnit nova</translation>
@@ -4748,7 +4737,6 @@ Assegureu-vos que no es pugui accedir a informació confidencial.</translation>
 <translation id="7405422715075171617">Activa l'escaneig d'un número nou de targeta de crèdit en emplenar un formulari de targeta de crèdit.</translation>
 <translation id="740624631517654988">Finestra emergent bloquejada</translation>
 <translation id="7406691462051376731">Actualment, aquest dispositiu envia dades de diagnòstic i d'ús a Google. El propietari ha definit aquesta <ph name="BEGIN_LINK1" />opció de configuració<ph name="END_LINK1" />. <ph name="BEGIN_LINK2" />Més informació<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Torna a iniciar i fes powerwash</translation>
 <translation id="7409836189476010449">Executar Flash</translation>
 <translation id="7410344089573941623">Pregunta si <ph name="HOST" /> vol accedir a la càmera i al micròfon</translation>
 <translation id="7412226954991670867">Memòria de la GPU</translation>
@@ -4862,7 +4850,6 @@ Assegureu-vos que no es pugui accedir a informació confidencial.</translation>
 <translation id="7553242001898162573">Introduïu la contrasenya</translation>
 <translation id="7554791636758816595">Pestanya nova</translation>
 <translation id="7556033326131260574">Smart Lock no ha pogut verificar el vostre compte. Escriviu la contrasenya per accedir-hi.</translation>
-<translation id="7556242789364317684"><ph name="SHORT_PRODUCT_NAME" /> no pot recuperar la vostra configuració. Per solucionar l'error, <ph name="SHORT_PRODUCT_NAME" /> ha de restablir el dispositiu amb Powerwash.</translation>
 <translation id="7558050486864662801">Pregunta'm quan un lloc requereixi accés al micròfon (opció recomanada)</translation>
 <translation id="7559719679815339381">Espereu... L'aplicació Quiosc s'està actualitzant. No extraieu la memòria USB.</translation>
 <translation id="7561196759112975576">Sempre</translation>
@@ -5185,7 +5172,6 @@ Deseu el fitxer de clau en una ubicació segura. El necessitareu per crear versi
 <translation id="8008356846765065031">S'ha desconnectat Internet. Comproveu la connexió.</translation>
 <translation id="8012382203418782830">Aquesta pàgina s'ha traduït.</translation>
 <translation id="8014154204619229810">L'actualitzador està en funcionament. Actualitzeu la pantalla d'aquí a un minut per tornar-ho a comprovar.</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> no pot canviar a la versió anterior instal·lada. Torneu a provar de fer un Powerwash al dispositiu.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">L'autenticació no és correcta</translation>
 <translation id="8022523925619404071">Activa l'actualització automàtica</translation>
@@ -5244,9 +5230,7 @@ Deseu el fitxer de clau en una ubicació segura. El necessitareu per crear versi
 <translation id="80974698889265265">Els PIN no coincideixen</translation>
 <translation id="8098975406164436557">Voleu fer servir el telèfon per desbloquejar <ph name="DEVICE_TYPE" />?</translation>
 <translation id="810066391692572978">El fitxer utilitza funcions no compatibles.</translation>
-<translation id="8101987792947961127">Es requereix Powerwash la propera vegada que es reiniciï</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> sincronitza les vostres dades de manera segura amb el vostre compte de Google. Manteniu-ho tot sincronitzat o personalitzeu els tipus de dades que se sincronitzaran i les opcions d'encriptació.</translation>
-<translation id="8104696615244072556">Feu un Powerwash al dispositiu <ph name="IDS_SHORT_PRODUCT_NAME" /> i torneu a la versió anterior.</translation>
 <translation id="8105368624971345109">Desactiva</translation>
 <translation id="8106045200081704138">Compartit amb mi</translation>
 <translation id="8106211421800660735">Número de targeta de crèdit</translation>

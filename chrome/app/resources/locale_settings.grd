@@ -292,10 +292,6 @@
         <message name="IDS_CREDITS_APP_DIALOG_HEIGHT_PIXELS" use_name_for_id="true">
             500
         </message>
-
-        <message name="IDS_FACTORY_RESET_HELP_URL" translateable="false">
-          https://support.google.com/chromebook/answer/183084?hl=[GRITLANGCODE]
-        </message>
       </if>
 
       <!-- Links from the Clear Browsing Data dialog. -->

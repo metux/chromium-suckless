@@ -994,7 +994,6 @@ Po vytvorení nového kontrolovaného používateľa môžete kedykoľvek spravo
 <translation id="2332742915001411729">Obnoviť na predvolené hodnoty</translation>
 <translation id="2335122562899522968">Táto stránka nastavila súbory cookie.</translation>
 <translation id="2336228925368920074">Všetky karty uložiť ako záložky...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Pridať poznámky v službe Google Keep</translation>
 <translation id="2339120501444485379">Zadajte nové meno</translation>
 <translation id="2339641773402824483">Hľadajú sa aktualizácie...</translation>
@@ -1172,7 +1171,6 @@ Tieto webové stránky by podľa mňa nemali byť blokované.</translation>
 <translation id="2562743677925229011">Nie ste prihlásený/-á v prehliadači <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">Rýchlosť touchpadu:</translation>
 <translation id="2565828445440744174">Experimentálna technológia WebAssembly</translation>
-<translation id="2566124945717127842">Funkcia PowerWash obnoví zariadenie <ph name="IDS_SHORT_PRODUCT_NAME" /> tak, aby bolo ako nové.</translation>
 <translation id="2568774940984945469">Kontajner informačného panela</translation>
 <translation id="2570000010887652771">Uložené dáta.</translation>
 <translation id="2570648609346224037">Pri sťahovaní obrazu na obnovenie sa vyskytol problém.</translation>
@@ -1369,7 +1367,6 @@ Tieto webové stránky by podľa mňa nemali byť blokované.</translation>
       <ph name="LIST_ITEM" />nastaviť prihlasovacie heslo používateľa dev a root na vlastnú hodnotu, aby ste mohli ručne pristúpiť do zariadenia prostredníctvom protokolu SSH.
     <ph name="END_LIST" />
     <ph name="BR" />
-    Väčšina funkcií ladenia zostane po aktivácii povolená aj po vymazaní zariadenia prostredníctvom funkcie Powerwash alebo vymazaní údajov na zariadení spravovanom podnikom. Ak chcete funkcie ladenia úplne deaktivovať, dokončite proces obnovenia systému OS Chrome (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     Ďalšie informácie o funkciách ladenia nájdete tu:<ph name="BR" />
@@ -1595,7 +1592,6 @@ Pri vytvorení kontrolovaného používateľa sa nevytvorí účet Google a jeh
 <translation id="3065140616557457172">Zadajte text na vyhľadávanie alebo webovú adresu – funguje všetko.</translation>
 <translation id="3067198360141518313">Spustiť tento doplnok</translation>
 <translation id="307519606911195071">Táto možnosť povolí ďalšie funkcie dostupnosti na stránke Nastavenia.</translation>
-<translation id="3075874217500066906">Spustenie procesu úplného obnovenia (Powerwash) vyžaduje reštartovanie. Po reštartovaní budete musieť potvrdiť, že chcete pokračovať.</translation>
 <translation id="3076677906922146425">Umožniť každému pridať osobu do prehliadača Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2345,7 +2341,6 @@ z domény <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="404493185430269859">Predvolený vyhľadávač</translation>
 <translation id="4047112090469382184">Aké zabezpečenie funkcia poskytuje?</translation>
 <translation id="4052120076834320548">Drobné</translation>
-<translation id="4055023634561256217">Pred obnovením zariadenia pomocou funkcie Powerwash sa vyžaduje jeho reštart.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> – <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Zobraziť v Obchode</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3009,7 +3004,6 @@ Ak chcete pokračovať v práci, stlačte ľubovoľný kláves.</translation>
 <translation id="4991420928586866460">Považovať klávesy v hornom riadku za funkčné klávesy</translation>
 <translation id="499165176004408815">Použiť režim s vysokým kontrastom</translation>
 <translation id="4992066212339426712">Obnoviť zvuk</translation>
-<translation id="4992458225095111526">Potvrdenia obnovenia Powerwash</translation>
 <translation id="4994474651455208930">Povoliť stránkam požiadať o nastavenie za predvolené obslužné nástroje protokolov</translation>
 <translation id="4998873842614926205">Potvrdiť zmeny</translation>
 <translation id="4999273653895592255">Tento príznak umožňuje ovládať, či sa v okne výberu prenosu obrazovky použije staré alebo nové používateľské rozhranie.</translation>
@@ -3044,7 +3038,6 @@ Ak chcete pokračovať v práci, stlačte ľubovoľný kláves.</translation>
 <translation id="5045550434625856497">Nesprávne heslo</translation>
 <translation id="5046747760454685637">Opýtať sa pred udelením povolenia umožňujúceho webom spúšťať obsah vo formáte Flash (odporúčané)</translation>
 <translation id="5048179823246820836">Severské</translation>
-<translation id="5053604404986157245">Náhodne generované heslo modulu TPM nie je k dispozícii. Po použití funkcie Powerwash je to normálne.</translation>
 <translation id="5053803681436838483">Nová dodacia adresa...</translation>
 <translation id="5055309315264875868">Zobraziť na stránke s nastaveniami nástroja na správu hesiel odkaz na správu synchronizovaných hesiel online.</translation>
 <translation id="5061188462607594407">Ak chcete pokračovať, zabezpečte svoje zariadenie <ph name="PHONE_TYPE" /></translation>
@@ -3292,7 +3285,6 @@ s ostatnými, a to všetko na jednom mieste.<ph name="MARKUP_9" /></translatio
 <translation id="5357579842739549440">Klávesové skratky na ladenie</translation>
 <translation id="5360150013186312835">Zobraziť na paneli s nástrojmi</translation>
 <translation id="5362741141255528695">Vybrať súbor súkromného kľúča.</translation>
-<translation id="5363109466694494651">Úplne obnoviť (Powerwash) a vrátiť späť</translation>
 <translation id="5367091008316207019">Prebieha čítanie súboru..</translation>
 <translation id="5367260322267293088">Povoľte experimentálnu stránku na novej karte s použitím veľkých ikon.</translation>
 <translation id="5368720394188453070">Telefón je uzamknutý. Ak chcete pokračovať, odomknite ho.</translation>
@@ -3662,7 +3654,6 @@ s ostatnými, a to všetko na jednom mieste.<ph name="MARKUP_9" /></translatio
 <translation id="5851063901794976166">Tento priečinok je prázdny...</translation>
 <translation id="5851868085455377790">Vydavateľ</translation>
 <translation id="5852112051279473187">Ojoj! Pri registrácii tohto zariadenia sa vyskytla závažná chyba. Skúste to znova alebo kontaktujte svojho zástupcu podpory.</translation>
-<translation id="5852137567692933493">Reštartovať a použiť funkciu Powerwash</translation>
 <translation id="5854409662653665676">Ak dochádza často k problémom, môžete problém s týmto modulom skúsiť vyriešiť nasledujúcim postupom:</translation>
 <translation id="5854912040170951372">Pizza</translation>
 <translation id="5855119960719984315">prepnúť okno</translation>
@@ -3767,7 +3758,6 @@ s ostatnými, a to všetko na jednom mieste.<ph name="MARKUP_9" /></translatio
 <translation id="6007237601604674381">Presun zlyhal. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Odosiela signály ping kontrolujúce hypertextové odkazy.</translation>
 <translation id="6015796118275082299">Rok</translation>
-<translation id="6016551720757758985">Potvrdenie obnovenia Powerwash s návratom k predchádzajúcej verzii</translation>
 <translation id="6016809788585079594">Ešte raz a naposledy vyslovte „Ok Google“</translation>
 <translation id="6017225534417889107">Zmeniť...</translation>
 <translation id="6017981840202692187">Pridať do priečinka Aplikácie</translation>
@@ -4045,7 +4035,6 @@ s ostatnými, a to všetko na jednom mieste.<ph name="MARKUP_9" /></translatio
 <translation id="6409731863280057959">Kontextové okná</translation>
 <translation id="6410063390789552572">Nepodarilo sa získať prístup k sieťovej knižnici</translation>
 <translation id="6410257289063177456">Súbory obrázkov</translation>
-<translation id="6410328738210026208">Zmeniť kanál a použiť funkciu Powerwash</translation>
 <translation id="6410668567036790476">Pridať vyhľadávač</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">Nové okno inkognito</translation>
@@ -4761,7 +4750,6 @@ s ostatnými, a to všetko na jednom mieste.<ph name="MARKUP_9" /></translatio
 <translation id="7405422715075171617">Povoliť naskenovanie nového čísla kreditnej karty pri vyplňovaní formulára kreditnej karty.</translation>
 <translation id="740624631517654988">Kontextové okno bolo zablokované</translation>
 <translation id="7406691462051376731">Toto zariadenie momentálne odosiela Googlu diagnostiky a údaje o využití. Používanie tohto <ph name="BEGIN_LINK1" />nastavenia<ph name="END_LINK1" /> je vynútené vlastníkom. <ph name="BEGIN_LINK2" />Ďalšie informácie<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Znova spustiť a použiť funkciu Powerwash</translation>
 <translation id="7409836189476010449">spustiť obsah vo formáte Flash</translation>
 <translation id="7410344089573941623">Opýtať sa, ak stránky <ph name="HOST" /> chcú pristupovať ku kamere a mikrofónu</translation>
 <translation id="7412226954991670867">Pamäť GPU</translation>
@@ -4875,7 +4863,6 @@ s ostatnými, a to všetko na jednom mieste.<ph name="MARKUP_9" /></translatio
 <translation id="7553242001898162573">Zadajte svoje heslo</translation>
 <translation id="7554791636758816595">Nová karta</translation>
 <translation id="7556033326131260574">Funkcii Smart Lock sa nepodarilo overiť váš účet. Vstúpte zadaním svojho hesla.</translation>
-<translation id="7556242789364317684">Prehliadač <ph name="SHORT_PRODUCT_NAME" /> nedokáže obnoviť vaše nastavenia. Ak chcete túto chybu opraviť, prehliadač <ph name="SHORT_PRODUCT_NAME" /> musí vaše zariadenie obnoviť pomocou funkcie Powerwash.</translation>
 <translation id="7558050486864662801">Opýtať sa, keď stránky požadujú prístup k vášmu mikrofónu (odporúčané)</translation>
 <translation id="7559719679815339381">Čakajte... Aplikácia Kiosk sa práve aktualizuje. Kľúč USB neodoberajte.</translation>
 <translation id="7561196759112975576">Vždy</translation>
@@ -5200,7 +5187,6 @@ Súbor kľúča uložte na bezpečné miesto. Budete ho potrebovať na vytvoreni
 <translation id="8008356846765065031">Internet je odpojený. Skontrolujte svoje pripojenie k internetu.</translation>
 <translation id="8012382203418782830">Táto stránka bola preložená.</translation>
 <translation id="8014154204619229810">Aktualizačný nástroj je práve spustený. Obnovením stránky o minútu to znova skontrolujte.</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> sa nedokáže vrátiť späť na predchádzajúcu nainštalovanú verziu. Skúste znova vykonať úplné obnovenie svojho zariadenia (tzv. Powerwash).</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Chybné overenie totožnosti</translation>
 <translation id="8022523925619404071">Povoliť automatické aktualizácie</translation>
@@ -5259,9 +5245,7 @@ Súbor kľúča uložte na bezpečné miesto. Budete ho potrebovať na vytvoreni
 <translation id="80974698889265265">Kódy PIN sa nezhodujú</translation>
 <translation id="8098975406164436557">Chcete pomocou tohto telefónu odomknúť zariadenie <ph name="DEVICE_TYPE" />?</translation>
 <translation id="810066391692572978">Súbor používa nepodporované funkcie.</translation>
-<translation id="8101987792947961127">Pri ďalšom spustení sa bude vyžadovať funkcia Powerwash</translation>
 <translation id="8102535138653976669">Prehliadač <ph name="PRODUCT_NAME" /> zabezpečene synchronizuje údaje s vaším účtom Google. Udržujte všetko synchronizované alebo upravte typy synchronizovaných údajov a nastavenia šifrovania.</translation>
-<translation id="8104696615244072556">Vykonajte obnovenie Powerwash na svojom zariadení <ph name="IDS_SHORT_PRODUCT_NAME" /> a obnovte na ňom predchádzajúcu verziu.</translation>
 <translation id="8105368624971345109">Vypnúť</translation>
 <translation id="8106045200081704138">Zdieľané so mnou</translation>
 <translation id="8106211421800660735">Číslo kreditnej karty</translation>

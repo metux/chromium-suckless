@@ -16,9 +16,6 @@ cr.define('settings', function() {
 <if expr="chromeos">
     // First signs out current user and then performs a restart.
     signOutAndRestart: function() {},
-
-    // Triggers a factory reset.
-    factoryReset: function() {},
 </if>
   };
 
@@ -44,11 +41,6 @@ cr.define('settings', function() {
     /** @override */
     signOutAndRestart: function() {
       chrome.send('signOutAndRestart');
-    },
-
-    /** @override */
-    factoryReset: function() {
-      chrome.send('factoryReset');
     },
 </if>
   };

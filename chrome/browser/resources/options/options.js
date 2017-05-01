@@ -19,7 +19,6 @@ var CookiesView = options.CookiesView;
 var CreateProfileOverlay = options.CreateProfileOverlay;
 var EditDictionaryOverlay = cr.IsMac ? null : options.EditDictionaryOverlay;
 var EasyUnlockTurnOffOverlay = options.EasyUnlockTurnOffOverlay;
-var FactoryResetOverlay = options.FactoryResetOverlay;
 <if expr="enable_google_now">
 var GeolocationOptions = options.GeolocationOptions;
 </if>
@@ -199,9 +198,6 @@ function load() {
                                 [$('bluetooth-add-device')]);
     PageManager.registerOverlay(BluetoothPairing.getInstance(),
                                 BrowserOptions.getInstance());
-    PageManager.registerOverlay(FactoryResetOverlay.getInstance(),
-                                BrowserOptions.getInstance(),
-                                [$('factory-reset-restart')]);
     PageManager.registerOverlay(ChangePictureOptions.getInstance(),
                                 BrowserOptions.getInstance(),
                                 [$('account-picture')]);

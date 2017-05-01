@@ -42,7 +42,6 @@
 #include "chrome/browser/chromeos/login/screens/kiosk_enable_screen.h"
 #include "chrome/browser/chromeos/login/screens/network_error.h"
 #include "chrome/browser/chromeos/login/screens/network_view.h"
-#include "chrome/browser/chromeos/login/screens/reset_screen.h"
 #include "chrome/browser/chromeos/login/screens/terms_of_service_screen.h"
 #include "chrome/browser/chromeos/login/screens/update_screen.h"
 #include "chrome/browser/chromeos/login/screens/user_image_screen.h"
@@ -208,7 +207,6 @@ const char WizardController::kUserImageScreenName[] = "image";
 const char WizardController::kEulaScreenName[] = "eula";
 const char WizardController::kEnableDebuggingScreenName[] = "debugging";
 const char WizardController::kEnrollmentScreenName[] = "enroll";
-const char WizardController::kResetScreenName[] = "reset";
 const char WizardController::kKioskEnableScreenName[] = "kiosk-enable";
 const char WizardController::kKioskAutolaunchScreenName[] = "autolaunch";
 const char WizardController::kErrorScreenName[] = "error-message";
@@ -288,8 +286,6 @@ void WizardController::Init(const std::string& first_screen_name) {
   // This is a hacky way to check for local state corruption, because
   // it depends on the fact that the local state is loaded
   // synchronously and at the first demand. IsEnterpriseManaged()
-  // check is required because currently powerwash is disabled for
-  // enterprise-enrolled devices.
   //
   // TODO (ygorshenin@): implement handling of the local state
   // corruption in the case of asynchronious loading.
@@ -377,8 +373,6 @@ BaseScreen* WizardController::CreateScreen(const std::string& screen_name) {
     return new EulaScreen(this, this, oobe_ui_->GetEulaView());
   } else if (screen_name == kEnrollmentScreenName) {
     return new EnrollmentScreen(this, oobe_ui_->GetEnrollmentScreenActor());
-  } else if (screen_name == kResetScreenName) {
-    return new chromeos::ResetScreen(this, oobe_ui_->GetResetView());
   } else if (screen_name == kEnableDebuggingScreenName) {
     return new EnableDebuggingScreen(this,
                                      oobe_ui_->GetEnableDebuggingScreenActor());
@@ -504,12 +498,6 @@ void WizardController::ShowEnrollmentScreen() {
                                       ->browser_policy_connector_chromeos()
                                       ->GetPrescribedEnrollmentConfig();
   StartEnrollmentScreen(false);
-}
-
-void WizardController::ShowResetScreen() {
-  VLOG(1) << "Showing reset screen.";
-  SetStatusAreaVisible(false);
-  SetCurrentScreen(GetScreen(kResetScreenName));
 }
 
 void WizardController::ShowKioskEnableScreen() {
@@ -982,8 +970,6 @@ void WizardController::AdvanceToScreen(const std::string& screen_name) {
     ShowUserImageScreen();
   } else if (screen_name == kEulaScreenName) {
     ShowEulaScreen();
-  } else if (screen_name == kResetScreenName) {
-    ShowResetScreen();
   } else if (screen_name == kKioskEnableScreenName) {
     ShowKioskEnableScreen();
   } else if (screen_name == kKioskAutolaunchScreenName) {

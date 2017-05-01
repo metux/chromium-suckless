@@ -99,7 +99,6 @@ cr.define('cr.ui.Oobe', function() {
       login.UpdateScreen.register();
       login.AutoEnrollmentCheckScreen.register();
       login.EnableDebuggingScreen.register();
-      login.ResetScreen.register();
       login.AutolaunchScreen.register();
       login.KioskEnableScreen.register();
       login.AccountPickerScreen.register();
@@ -275,7 +274,6 @@ cr.define('cr.ui.Oobe', function() {
         $('tpm-password').hidden = false;
       } else {
         $('tpm-desc').hidden = true;
-        $('tpm-desc-powerwash').hidden = false;
       }
     },
 

@@ -1170,7 +1170,6 @@
 <translation id="2562743677925229011">Ви не ввійшли в <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">Швидкість сенсорної панелі:</translation>
 <translation id="2565828445440744174">Експериментальна мова WebAssembly</translation>
-<translation id="2566124945717127842">Виконайте Powerwash, щоб відновити заводські налаштування пристрою <ph name="IDS_SHORT_PRODUCT_NAME" />.</translation>
 <translation id="2568774940984945469">Контейнер інформаційної панелі</translation>
 <translation id="2570000010887652771">Дані збережено.</translation>
 <translation id="2570648609346224037">Під час завантаження образу для відновлення виникла проблема.</translation>
@@ -1367,7 +1366,6 @@
       <ph name="LIST_ITEM" />установити власні значення паролів для входу в режим розробника та в головний каталог системи, щоб вручну використовувати SSH на пристрої.
     <ph name="END_LIST" />
     <ph name="BR" />
-    Якщо ввімкнено, більшість функцій налагодження залишатимуться ввімкненими, навіть якщо скинути налаштування за допомогою функції Powerwash або стерти дані на пристрої, яким керує адміністратор підприємства.  Щоб повністю вимкнути всі функції налагодження, виконайте процедуру відновлення ОС Chrome (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     Докладніше про функції налагодження читайте на сторінці <ph name="BR" />
@@ -1593,7 +1591,6 @@
 <translation id="3065140616557457172">Введіть пошуковий запит або URL-адресу – усе працює чудово.</translation>
 <translation id="3067198360141518313">Запустити цей плагін</translation>
 <translation id="307519606911195071">Увімкнути додаткові спеціальні можливості на сторінці налаштувань.</translation>
-<translation id="3075874217500066906">Щоб почати виконання Powerwash, потрібно перезавантажити пристрій. Після цього вам буде запропоновано підтвердити виконання Powerwash.</translation>
 <translation id="3076677906922146425">Дозволити всім додавати користувачів у Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -3007,7 +3004,6 @@
 <translation id="4991420928586866460">Використовувати клавіші вгорі клавіатури як функціональні клавіші</translation>
 <translation id="499165176004408815">Використовувати режим високого контрасту</translation>
 <translation id="4992066212339426712">Увімкнути звук</translation>
-<translation id="4992458225095111526">Підтвердити Powerwash</translation>
 <translation id="4994474651455208930">Дозволити сайтам запитувати встановлення обробників протоколів за умовчанням.</translation>
 <translation id="4998873842614926205">Підтвердьте зміни</translation>
 <translation id="4999273653895592255">Можна вибрати, який інтерфейс (старий чи новий) показувати у вікні засобу вибору запису з екрана.</translation>
@@ -3042,7 +3038,6 @@
 <translation id="5045550434625856497">Неправильний пароль</translation>
 <translation id="5046747760454685637">Запитувати, перш ніж дозволити сайтам запускати Flash (рекомендовано)</translation>
 <translation id="5048179823246820836">Скандинавська</translation>
-<translation id="5053604404986157245">Навмання згенерований пароль TPM не доступний. Це нормально після Powerwash (очищення).</translation>
 <translation id="5053803681436838483">Нова адреса для доставки…</translation>
 <translation id="5055309315264875868">Показувати посилання на сторінці налаштувань диспетчера паролів, щоб керувати синхронізованими паролями в Інтернеті.</translation>
 <translation id="5061188462607594407">Захистіть телефон <ph name="PHONE_TYPE" />, щоб продовжити</translation>
@@ -3290,7 +3285,6 @@
 <translation id="5357579842739549440">Налагодження комбінацій клавіш</translation>
 <translation id="5360150013186312835">Показати на панелі інструментів</translation>
 <translation id="5362741141255528695">Виберіть файл секретного ключа.</translation>
-<translation id="5363109466694494651">Виконати Powerwash і повернутися до попередньої версії</translation>
 <translation id="5367091008316207019">Читання файлу...</translation>
 <translation id="5367260322267293088">Увімкнути експериментальну сторінку нової вкладки з великими значками.</translation>
 <translation id="5368720394188453070">Ваш телефон заблоковано. Щоб увійти, розблокуйте його.</translation>
@@ -3660,7 +3654,6 @@
 <translation id="5851063901794976166">Тут нічого немає…</translation>
 <translation id="5851868085455377790">Видавець</translation>
 <translation id="5852112051279473187">На жаль, під час реєстрації цього пристрою сталася значна помилка. Повторіть спробу або зв’яжіться з представником служби підтримки.</translation>
-<translation id="5852137567692933493">Перезапустити й виконати Powerwash</translation>
 <translation id="5854409662653665676">Якщо у вас часто виникають проблеми, спробуйте виконати вказані нижче дії, щоб вирішити проблему з цим модулем.</translation>
 <translation id="5854912040170951372">Піца</translation>
 <translation id="5855119960719984315">переключення вікон</translation>
@@ -3765,7 +3758,6 @@
 <translation id="6007237601604674381">Помилка переміщення. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Надсилати запити ping для перевірки гіперпосилань.</translation>
 <translation id="6015796118275082299">Рік</translation>
-<translation id="6016551720757758985">Підтвердити Powerwash і повернення до попередньої версії</translation>
 <translation id="6016809788585079594">Скажіть "Ok Google" востаннє</translation>
 <translation id="6017225534417889107">Змінити…</translation>
 <translation id="6017981840202692187">Додати в папку "Додатки"</translation>
@@ -4043,7 +4035,6 @@
 <translation id="6409731863280057959">Спливаючі вікна</translation>
 <translation id="6410063390789552572">Немає доступу до бібліотеки мережі</translation>
 <translation id="6410257289063177456">Файли зображень</translation>
-<translation id="6410328738210026208">Змінити версію й виконати Powerwash</translation>
 <translation id="6410668567036790476">Додати пошукову систему</translation>
 <translation id="641105183165925463">$1 Мб</translation>
 <translation id="6412931879992742813">Нове анонімне вікно</translation>
@@ -4760,7 +4751,6 @@
 <translation id="7405422715075171617">Увімкнути сканування номера нової кредитної картки під час введення даних кредитної картки у форму.</translation>
 <translation id="740624631517654988">Спливаюче вікно заблоковано</translation>
 <translation id="7406691462051376731">Зараз цей пристрій надсилає дані про діагностику та використання в Google. Це <ph name="BEGIN_LINK1" />налаштування<ph name="END_LINK1" /> ввімкнув власник. <ph name="BEGIN_LINK2" />Докладніше<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Перезапустити й виконати Powerwash</translation>
 <translation id="7409836189476010449">Запускати Flash</translation>
 <translation id="7410344089573941623">Запитувати, якщо хост <ph name="HOST" /> хоче отримати доступ до ваших камери та мікрофона</translation>
 <translation id="7412226954991670867">Пам’ять GPU</translation>
@@ -4874,7 +4864,6 @@
 <translation id="7553242001898162573">Пароль</translation>
 <translation id="7554791636758816595">Нова вкладка</translation>
 <translation id="7556033326131260574">Smart Lock не вдалося підтвердити ваш обліковий запис. Щоб увійти, введіть пароль.</translation>
-<translation id="7556242789364317684">На жаль, <ph name="SHORT_PRODUCT_NAME" /> не може відновити ваші налаштування. Щоб виправити помилку, <ph name="SHORT_PRODUCT_NAME" /> має відновити заводські налаштування вашого пристрою за допомогою функції Powerwash.</translation>
 <translation id="7558050486864662801">Запитувати, якщо сайту потрібен доступ до вашого мікрофона (рекомендовано)</translation>
 <translation id="7559719679815339381">Зачекайте… Додаток-термінал оновлюється. Не витягуйте носій USB.</translation>
 <translation id="7561196759112975576">Завжди</translation>
@@ -5199,7 +5188,6 @@
 <translation id="8008356846765065031">Утрачено з’єднання з Інтернетом. Перевірте з’єднання.</translation>
 <translation id="8012382203418782830">Цю сторінку перекладено.</translation>
 <translation id="8014154204619229810">Триває оновлення. Оновіть сторінку за хвилину.</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> не може повернутися до попередньої встановленої версії. Виконайте Powerwash на пристрої.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Помилка під час автентифікації</translation>
 <translation id="8022523925619404071">Увімкнути автоматичне оновлення</translation>
@@ -5258,9 +5246,7 @@
 <translation id="80974698889265265">PIN-коди не збігаються</translation>
 <translation id="8098975406164436557">Розблоковувати цей <ph name="DEVICE_TYPE" /> за допомогою вашого телефона?</translation>
 <translation id="810066391692572978">Файл використовує непідтримувані функції.</translation>
-<translation id="8101987792947961127">Під час наступного перезавантаження потрібно виконати Powerwash</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> безпечно синхронізує ваші дані з вашим обліковим записом Google. Синхронізуйте все чи налаштуйте типи синхронізованих даних і параметри шифрування.</translation>
-<translation id="8104696615244072556">Виконати Powerwash на вашому пристрої <ph name="IDS_SHORT_PRODUCT_NAME" /> і повернутися до попередньої версії.</translation>
 <translation id="8105368624971345109">Вимкнути</translation>
 <translation id="8106045200081704138">Відкриті для мене</translation>
 <translation id="8106211421800660735">Номер кредитної картки</translation>

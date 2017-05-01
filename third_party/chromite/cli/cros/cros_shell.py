@@ -127,7 +127,6 @@ Quoting can be tricky; the rules are the same as with ssh:
     return cros_build_lib.BooleanPrompt(
         prolog='The host ID for "%s" has changed since last connect.\n'
                'Some common reasons for this are:\n'
-               ' - Device powerwash.\n'
                ' - Device flash from a USB stick.\n'
                ' - Device flash using "--clobber-stateful".\n'
                'Otherwise, please verify that this is the correct device'

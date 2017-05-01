@@ -734,8 +734,6 @@ source_set("chromeos") {
     "login/screens/network_view.h",
     "login/screens/reset_model.cc",
     "login/screens/reset_model.h",
-    "login/screens/reset_screen.cc",
-    "login/screens/reset_screen.h",
     "login/screens/reset_view.h",
     "login/screens/screen_flow.h",
     "login/screens/terms_of_service_screen.cc",

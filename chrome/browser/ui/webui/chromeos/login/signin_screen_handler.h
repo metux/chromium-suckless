@@ -357,7 +357,6 @@ class SigninScreenHandler
   void HandleToggleEnrollmentScreen();
   void HandleToggleEnableDebuggingScreen();
   void HandleToggleKioskEnableScreen();
-  void HandleToggleResetScreen();
   void HandleToggleKioskAutolaunchScreen();
   void HandleAccountPickerReady();
   void HandleWallpaperReady();

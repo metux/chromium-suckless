@@ -993,7 +993,6 @@
 <translation id="2332742915001411729">ወደ ነባሪ ዳግም አስጀምር</translation>
 <translation id="2335122562899522968">ይህ ገጽ ኩኪዎችን አዋቅሯል።</translation>
 <translation id="2336228925368920074">ለሁሉም ትሮች ዕልባት አብጅ...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">በGoogle Keep ውስጥ አብራራ</translation>
 <translation id="2339120501444485379">አዲስ ስም ያስገቡ</translation>
 <translation id="2339641773402824483">የተሻሻሉ ነገሮች ካሉ በመፈተሽ ላይ ነው...</translation>
@@ -1171,7 +1170,6 @@
 <translation id="2562743677925229011"><ph name="SHORT_PRODUCT_NAME" /> ውስጥ አልገቡም</translation>
 <translation id="2565670301826831948">የመዳሰሻ ሰሌዳ ፍጥነት፦</translation>
 <translation id="2565828445440744174">የሙከራ WebAssembly</translation>
-<translation id="2566124945717127842">የ<ph name="IDS_SHORT_PRODUCT_NAME" /> መሣሪያዎ ልክ እንደ አዲስ እንዲሆን ዳግም ለማስጀመር Powerwash።</translation>
 <translation id="2568774940984945469">መረጃ አሞሌ መያዣ</translation>
 <translation id="2570000010887652771">የተቀመጠ ውሂብ።</translation>
 <translation id="2570648609346224037">ዳግም ማግኛ ምስሉ በሚወርድበት ጊዜ ችግር ነበር።</translation>
@@ -1594,7 +1592,6 @@
 <translation id="3065140616557457172">ለመፈለግ ይተይቡ ወይም ለመዳሰስ URL ያስገቡ - ሁሉም ነገር በትክክል ይሰራል።</translation>
 <translation id="3067198360141518313">ይህን ተሰኪ አሂድ</translation>
 <translation id="307519606911195071">በቅንብሮች ገጽ ውስጥ ተጨማሪ የተደራሽነት ባህሪያትን ያንቁ።</translation>
-<translation id="3075874217500066906">የPowerwash ሂደቱን ለመጀመር ዳግም ማስጀመር ያስፈልጋል። ዳግም ከተጀመረ በኋላ መቀጠል እንደሚፈልጉ እንዲያረጋግጡ ይጠየቃሉ።</translation>
 <translation id="3076677906922146425">ማንም ሰው ግለሰብን ወደ Chrome እንዲያክል ይፍቀዱ</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2344,7 +2341,6 @@
 <translation id="404493185430269859">ነባሪ የፍለጋ ፕሮግራም</translation>
 <translation id="4047112090469382184">ይሄ እንዴት ደህንነቱ የተጠበቀ እንደሆነ</translation>
 <translation id="4052120076834320548">በጣም ትንሽ</translation>
-<translation id="4055023634561256217">መሣሪያዎ በPowerwash ዳግም ሊጀምር ከመቻሉ በፊት ዳግም ማስጀመር ያስፈልጋል።</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">በመደብር ውስጥ ይመልከቱ</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3006,7 +3002,6 @@
 <translation id="4991420928586866460">የላይኛው ረድፍ ቁልፎች እንደ የተግባር ቁልፍ ተጠቀምባቸው</translation>
 <translation id="499165176004408815">ባለከፍተኛ ንፅፅር ሁነታ ተጠቀም</translation>
 <translation id="4992066212339426712">ድምጸ-ከል አንሳ</translation>
-<translation id="4992458225095111526">Powerwashን ያረጋግጡ</translation>
 <translation id="4994474651455208930">ጣቢያዎች ለፕሮቶኮሎች ነባሪ ከዋኞች እንዲሆኑ እንዲጠይቁ ፍቀድ</translation>
 <translation id="4998873842614926205">ለውጦችን ያረጋግጡ</translation>
 <translation id="4999273653895592255">ይህ ጥቆማ ለዴስክቶፕ አንሺ መምረጫ መስኮቱ የምናሳየው የድሮው ወይም አዲሱን በይነገጽ ይሁን ይቆጣጠራል።</translation>
@@ -3041,7 +3036,6 @@
 <translation id="5045550434625856497">ትክክል ያልሆነ የይለፍ ቃል</translation>
 <translation id="5046747760454685637">ጣቢያዎች Flashን እንዲጠቀሙ ከመፍቀድ በፊት ጠይቅ (የሚመከር)</translation>
 <translation id="5048179823246820836">ኖርዲክ</translation>
-<translation id="5053604404986157245">በዘፈቀደ የመነጨው የTPM ይለፍ ቃል አይገኝም። ይሄ ከአንድ Powerwash በኋላ የሚከሰት የተለመደ ነገር ነው።</translation>
 <translation id="5053803681436838483">አዲስ የመላኪያ አድራሻ...</translation>
 <translation id="5055309315264875868">የተመሳሰሉ የይለፍ ቃላትዎን መስመር ላይ ለማቀናበር በይለፍ ቃል አቀናባሪው ውስጥ አንድ አገናኝ አሳይ።</translation>
 <translation id="5061188462607594407">ለመቀጠል የእርስዎን <ph name="PHONE_TYPE" /> ደህንነት ይጠብቁ</translation>
@@ -3289,7 +3283,6 @@
 <translation id="5357579842739549440">የቁልፍ ሰሌዳ አቋራጮችን ማረም</translation>
 <translation id="5360150013186312835">በመሣሪያ አሞሌ ላይ አሳይ</translation>
 <translation id="5362741141255528695">የግል ቁልፍ ፋይል ይምረጡ።</translation>
-<translation id="5363109466694494651">Powerwash አድርግ እና አድህር</translation>
 <translation id="5367091008316207019">ፋይል በማንበብ ላይ..</translation>
 <translation id="5367260322267293088">አዳዲስ ትላልቅ አዶዎችን በመጠቀም የሙከራ አዲሱን የትር ገጽ ያንቁ።</translation>
 <translation id="5368720394188453070">የእርስዎ ስልክ ተቆልፏል። ለመግባት ያስከፍቱት።</translation>
@@ -3763,7 +3756,6 @@
 <translation id="6007237601604674381">መውሰድ አልተሳካም። <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">የገጽ አገናኝ መቆጣጠሪያ ፒንግ ይልካል</translation>
 <translation id="6015796118275082299">ዓመት</translation>
-<translation id="6016551720757758985">ወደ ቀድሞው ስሪት ከመመለስ ጋር Powerwashን ያረጋግጡ</translation>
 <translation id="6016809788585079594">ለመጨረሻ ጊዜ አንዴ «Ok Google» ይበሉ</translation>
 <translation id="6017225534417889107">ይቀይሩ...</translation>
 <translation id="6017981840202692187">ወደ መተግበሪያዎች አክል</translation>
@@ -4041,7 +4033,6 @@
 <translation id="6409731863280057959">ብቅ-ባዮች</translation>
 <translation id="6410063390789552572">የአውታረ መረብ ላይብረሪን መዳረስ አልተቻለም</translation>
 <translation id="6410257289063177456">የምስል ፋይሎች</translation>
-<translation id="6410328738210026208">ሰርጥ ቀይር እና Powerwash</translation>
 <translation id="6410668567036790476">የፍለጋ ፕሮግራም ያክሉ</translation>
 <translation id="641105183165925463">$1 ሜባ</translation>
 <translation id="6412931879992742813">አዲስ ስውር መስኮት</translation>
@@ -4758,7 +4749,6 @@
 <translation id="7405422715075171617">የክሬዲት ካርድ ቅጽ ሲሞሉ አዲስ የክሬዲት ካርድ መቃኘትን አንቃ።</translation>
 <translation id="740624631517654988">ብቅ-ባይ ታግዷል</translation>
 <translation id="7406691462051376731">ይህ መሣሪያ በአሁኑ ጊዜ የምርመራ እና የአጠቃቀም ውሂብ ወደ Google ይልካል። ይህ <ph name="BEGIN_LINK1" />ቅንብር<ph name="END_LINK1" /> በባለቤቱ ተፈጻሚ እንዲሆን የተደረገ ነው። <ph name="BEGIN_LINK2" />የበለጠ ለመረዳት<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">ዳግም አስጀምር እና Powerwash</translation>
 <translation id="7409836189476010449">Flash አሂድ</translation>
 <translation id="7410344089573941623"><ph name="HOST" /> ካሜራዎን እና ማይክሮፎንዎን መድረስ ይፈልግ እንደሆነ ይጠይቁ</translation>
 <translation id="7412226954991670867">የጂፒዩ ማህደረ ትውስታ</translation>
@@ -5202,7 +5192,6 @@ nil</translation>
 <translation id="8008356846765065031">የበይነመረብ ግንኙነት ተቋርጧል። እባክዎ የበይነመረብዎን ግንኙነት ይፈትሹ።</translation>
 <translation id="8012382203418782830">ይህ ገጽ ተተርጉሟል።</translation>
 <translation id="8014154204619229810">አዘማኙ አሁን በማሄድ ላይ ነው። እንደገና ለመፈተሽ በአንድ ደቂቃ ውስጥ ያድሱ።</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> ወደ ቀዳሚው የተጫነ ስሪት ማድህር አልቻለም። እባክዎ የእርስዎን መሣሪያ እንደገና Powerwash ለማድረግ ይሞክሩ።</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">መጥፎ ማረጋገጥ</translation>
 <translation id="8022523925619404071">ራስ-ዝማኔን አንቃ</translation>
@@ -5261,9 +5250,7 @@ nil</translation>
 <translation id="80974698889265265">ፒኖቹ አይዛመዱም</translation>
 <translation id="8098975406164436557">የእርስዎን <ph name="DEVICE_TYPE" /> ለማስከፈት ይህን ስልክ ይጠቀሙ?</translation>
 <translation id="810066391692572978">ፋይሉ ያልተደገፉ ባህሪያትን ይጠቀማል።</translation>
-<translation id="8101987792947961127">በቀጣዩ ዳግም ማስነሳት ላይ Powerwash  ያስፈልጋል</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> ውሂብዎን ደህንነቱ በተጠበቀ ሁኔታ ከGoogle መለያዎ ጋር ያመሳስለዋል። ሁሉ ነገር እንደተመሳሰሉ ያቆዩ ወይም የሚመሳሰሉ የውሂብ አይነቶችን እና ምስጠራ ቅንብሮችን ያብጁ።</translation>
-<translation id="8104696615244072556">የእርስዎ <ph name="IDS_SHORT_PRODUCT_NAME" /> መሣሪያ Powerwash ያድርጉትና ወደ ቀዳሚው ስሪት ይመለሱ።</translation>
 <translation id="8105368624971345109">አጥፋ</translation>
 <translation id="8106045200081704138">ከእኔ ጋር የተጋሩ</translation>
 <translation id="8106211421800660735">የብድር ካርድ ቁጥር</translation>

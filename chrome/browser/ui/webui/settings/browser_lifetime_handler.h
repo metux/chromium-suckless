@@ -33,7 +33,6 @@ class BrowserLifetimeHandler : public SettingsPageUIHandler {
   void HandleRelaunch(const base::ListValue* /*args*/);
 #if defined(OS_CHROMEOS)
   void HandleSignOutAndRestart(const base::ListValue* /*args*/);
-  void HandleFactoryReset(const base::ListValue* /*args*/);
 #endif  // defined(OS_CHROMEOS)
 
   DISALLOW_COPY_AND_ASSIGN(BrowserLifetimeHandler);

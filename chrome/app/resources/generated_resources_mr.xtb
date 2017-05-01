@@ -991,7 +991,6 @@
 <translation id="2332742915001411729">डीफॉल्टवर रीसेट करा</translation>
 <translation id="2335122562899522968">हे पृष्ठ कुकीज सेट करते.</translation>
 <translation id="2336228925368920074">सर्व टॅब बुकमार्क करा...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Google Keep मध्ये भाष्य करा</translation>
 <translation id="2339120501444485379">नवीन नाव प्रविष्ट करा</translation>
 <translation id="2339641773402824483">अद्यतनांसाठी तपासत आहे...</translation>
@@ -1169,7 +1168,6 @@
 <translation id="2562743677925229011"><ph name="SHORT_PRODUCT_NAME" /> मध्‍ये साइन इन नाही</translation>
 <translation id="2565670301826831948">टचपॅड वेग:</translation>
 <translation id="2565828445440744174">प्रायोगिक WebAssembly</translation>
-<translation id="2566124945717127842">आपला <ph name="IDS_SHORT_PRODUCT_NAME" /> डिव्हाइस अगदी नवीन सारखे रीसेट करण्यासाठी Powerwash करा.</translation>
 <translation id="2568774940984945469">इंफोबार कंटेनर</translation>
 <translation id="2570000010887652771">जतन केलेला डेटा.</translation>
 <translation id="2570648609346224037">पुनर्प्राप्ती प्रतिमा डाउनलोड करताना समस्या आली.</translation>
@@ -1366,7 +1364,6 @@
       <ph name="LIST_ITEM" />एका सानुकूल मूल्यावर आपले dev आणि सिस्टीम दोन्ही मूळ लॉग इन संकेतशब्द सेट करा जेणेकरून आपण डिव्हाइसवर व्यक्तिचलितपणे SSH करू शकता
     <ph name="END_LIST" />
     <ph name="BR" />
-    एकदा सक्षम केल्यानंतर, एन्टरप्राइझ व्यवस्थापित डिव्हाइसवर Powerwash केल्यानंतर किंवा डेटा पुसल्यानंतर सर्वाधिक डीबगिंग वैशिष्ट्ये सक्षम केलेली राहतील.  सर्व डीबगिंग वैशिष्ट्ये पूर्णपणे अक्षम करण्यासाठी, Chrome OS पुनर्प्राप्ती प्रक्रिया पूर्ण करा (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     डीबगिंग वैशिष्ट्यांविषयी अधिक माहितीसाठी हे पहा:<ph name="BR" />
@@ -1588,7 +1585,6 @@
 <translation id="3065140616557457172">शोधण्यासाठी टाइप करा किंवा नॅव्हिगेट करण्यासाठी URL प्रविष्ट करा – काहीही चालेल.</translation>
 <translation id="3067198360141518313">हे प्लगइन चालवा</translation>
 <translation id="307519606911195071">सेटिंग्ज पृष्ठामध्ये अतिरिक्त प्रवेशक्षमता वैशिष्ट्ये सक्षम करा.</translation>
-<translation id="3075874217500066906">Powerwash प्रक्रिया सुरु करण्‍यासाठी रीस्‍टार्ट आवश्‍यक आहे. रीस्‍टार्ट केल्‍यानंतर आपण पुढे सुरु ठेवू इच्‍छिता याची पुष्‍टी करण्‍यासाठी आपल्‍याला विचारले जाईल.</translation>
 <translation id="3076677906922146425">कोणालाही Chrome मध्ये एक व्यक्ती जोडू द्या</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2337,7 +2333,6 @@
 <translation id="404493185430269859">डीफॉल्ट शोध इंजिन</translation>
 <translation id="4047112090469382184">हे कसे सुरक्षित आहे</translation>
 <translation id="4052120076834320548"> लघु</translation>
-<translation id="4055023634561256217">Powerwash सह आपला डिव्हाइस रीसेट केला जाण्यापूर्वी रीस्टार्ट
  करणे आवश्यक आहे.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">स्टोअर मध्ये पहा</translation>
@@ -2999,7 +2994,6 @@
 <translation id="4991420928586866460">कार्य की म्हणून शीर्ष-पंक्ती की हाताळा</translation>
 <translation id="499165176004408815">उच्च तीव्रता मोड वापरा</translation>
 <translation id="4992066212339426712">सशब्द करा</translation>
-<translation id="4992458225095111526">Powerwash ची पुष्टी करा</translation>
 <translation id="4994474651455208930">प्रोटोकॉलसाठी डीफॉल्ट हँडलर होण्यासाठी साइटना विचारण्याची परवानगी द्या</translation>
 <translation id="4998873842614926205">बदलांची पुष्‍टी करा</translation>
 <translation id="4999273653895592255">डेस्कटॉप कॅप्चर निवडक विंडोसाठी आम्ही जुने किंवा नवीन UI दर्शवावे ते हे ध्वजांकन नियंत्रित करते.</translation>
@@ -3035,7 +3029,6 @@
 <translation id="5045550434625856497">अयोग्य संकेतशब्द</translation>
 <translation id="5046747760454685637">साइटना फ्लॅश चालविण्याची परवानगी देण्यापूर्वी विचारा (शिफारस केलेले)</translation>
 <translation id="5048179823246820836">नॉर्डिक</translation>
-<translation id="5053604404986157245">यादृच्छिकपणे व्युत्पन्न केलेला TPM संकेतशब्द उपलब्ध नाही. Powerwash नंतर हे सामान्य आहे.</translation>
 <translation id="5053803681436838483">नवीन नौवहन पत्ता...</translation>
 <translation id="5055309315264875868">आपले संकालित संकेतशब्द ऑनलाइन व्यवस्थापित करण्यासाठी संकेतशब्द व्यवस्थापक सेटिंग्ज पृष्ठामध्ये एक दुवा दर्शवा.</translation>
 <translation id="5061188462607594407">सुरु ठेवण्यासाठी आपला <ph name="PHONE_TYPE" /> सुरक्षित करा</translation>
@@ -3282,7 +3275,6 @@
 <translation id="5357579842739549440">डीबगिंग कीबोर्ड शॉर्टकट</translation>
 <translation id="5360150013186312835">टूलबारमध्ये दर्शवा</translation>
 <translation id="5362741141255528695">खासगी की फाइल निवडा.</translation>
-<translation id="5363109466694494651">Powerwash करा आणि परत करा</translation>
 <translation id="5367091008316207019">फाईल वाचत आहे..</translation>
 <translation id="5367260322267293088">मोठी चिन्हे वापरून प्रायोगिक नवीन टॅब पृष्ठ सक्षम करा.</translation>
 <translation id="5368720394188453070">आपला फोन लॉक केला आहे. प्रविष्‍ट करण्‍यासाठी तो अनलॉक करा.</translation>
@@ -3757,7 +3749,6 @@
 <translation id="6007237601604674381">हलविणे अयशस्वी. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">हायपरलिंक परीक्षण पिंग पाठविते.</translation>
 <translation id="6015796118275082299">वर्ष</translation>
-<translation id="6016551720757758985">मागील आवृत्तीवर परत येऊन Powerwash ची पुष्टी करा</translation>
 <translation id="6016809788585079594">एकदाच शेवटचे "Ok Google" म्हणा</translation>
 <translation id="6017225534417889107">बदला...</translation>
 <translation id="6017981840202692187">अनुप्रयोगांवर जोडा</translation>
@@ -4035,7 +4026,6 @@
 <translation id="6409731863280057959">पॉप-अप</translation>
 <translation id="6410063390789552572">नेटवर्क लायब्ररीमध्ये प्रवेश करणे शक्य नाही</translation>
 <translation id="6410257289063177456">प्रतिमा फायली</translation>
-<translation id="6410328738210026208">चॅनेल बदला आणि Powerwash करा</translation>
 <translation id="6410668567036790476">शोध इंजिन जोडा</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">नवीन गुप्त विंडो</translation>
@@ -4752,7 +4742,6 @@
 <translation id="7405422715075171617">क्रेडिट कार्ड फॉर्म भरताना नवीन क्रेडिट कार्ड नंबर स्कॅन करणे सक्षम करते.</translation>
 <translation id="740624631517654988">पॉप-अप अवरोधित</translation>
 <translation id="7406691462051376731">हे डिव्हाइस सध्या Google कडे निदान आणि वापर डेटा पाठवते. हे <ph name="BEGIN_LINK1" />सेटिंग<ph name="END_LINK1" /> मालक लागू करतो. <ph name="BEGIN_LINK2" />अधिक जाणून घ्या<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">पुन्हा लाँच करा आणि Powerwash करा</translation>
 <translation id="7409836189476010449">फ्लॅश चालवा</translation>
 <translation id="7410344089573941623"><ph name="HOST" /> आपल्या कॅमेरा आणि मायक्रोफोनवर प्रवेश करू इच्छित असल्यास विचारा</translation>
 <translation id="7412226954991670867">GPU मेमरी</translation>
@@ -5190,7 +5179,6 @@
 <translation id="8008356846765065031">इंटरनेट डिस्कनेक्ट झाले. कृपया आपले इंटरनेट कनेक्शन तपासा.</translation>
 <translation id="8012382203418782830">हे पृष्ठ भाषांतरित केले गेले आहे.</translation>
 <translation id="8014154204619229810">अद्यतनकर्ता सध्या चालू आहे. पुन्हा तपासण्यासाठी एक मिनिटात रीफ्रेश करा.</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> पूर्वी स्थापित केलेल्या आवृत्तीवर परत करण्यात अक्षम आहे. कृपया आपले डिव्हाइस Powerwash करण्यासाठी पुन्हा प्रयत्न करा.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">खराब प्रमाणीकरण</translation>
 <translation id="8022523925619404071">स्वयंअद्यतन सक्षम करा</translation>
@@ -5249,9 +5237,7 @@
 <translation id="80974698889265265">पिन जुळत नाहीत</translation>
 <translation id="8098975406164436557">आपले <ph name="DEVICE_TYPE" /> अनलॉक करण्यासाठी हा फोन वापरायचा?</translation>
 <translation id="810066391692572978">फाइल अ‍समर्थित वैशिष्ट्यांचा वापर करीत आहे.</translation>
-<translation id="8101987792947961127">पुढील रीबूटवर Powerwash आवश्यक</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> आपल्या Google खात्यासह आपला डेटा सुरक्षितपणे संंकालित करते. सर्वकाही संंकालित केलेले ठेवा किंवा संंकालित डेटा प्रकार आणि कूटबद्धीकरण सेटिंग्ज सानुकूल करा.</translation>
-<translation id="8104696615244072556">आपले <ph name="IDS_SHORT_PRODUCT_NAME" /> डिव्हाइस Powerwash करा आणि मागील आवृत्तीकडे परत या.</translation>
 <translation id="8105368624971345109">बंद करा</translation>
 <translation id="8106045200081704138">माझ्याशी सामायिक केलेले</translation>
 <translation id="8106211421800660735">क्रेडिट कार्ड क्रमांक</translation>

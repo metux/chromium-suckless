@@ -17,7 +17,6 @@ login.createScreen('ErrorMessageScreen', 'error-message', function() {
   var USER_ACTION_CONFIGURE_CERTS = 'configure-certs';
   var USER_ACTION_DIAGNOSE = 'diagnose';
   var USER_ACTION_LAUNCH_OOBE_GUEST = 'launch-oobe-guest';
-  var USER_ACTION_LOCAL_STATE_POWERWASH = 'local-state-error-powerwash';
   var USER_ACTION_REBOOT = 'reboot';
   var USER_ACTION_SHOW_CAPTIVE_PORTAL = 'show-captive-portal';
 
@@ -303,18 +302,6 @@ login.createScreen('ErrorMessageScreen', 'error-message', function() {
       spacer.classList.add('button-spacer');
       spacer.classList.add('show-with-ui-state-kiosk-mode');
       buttons.push(spacer);
-
-      var powerwashButton = this.ownerDocument.createElement('button');
-      powerwashButton.id = 'error-message-restart-and-powerwash-button';
-      powerwashButton.textContent =
-        loadTimeData.getString('localStateErrorPowerwashButton');
-      powerwashButton.classList.add('show-with-ui-state-local-state-error');
-      powerwashButton.addEventListener('click', function(e) {
-        self.send(login.Screen.CALLBACK_USER_ACTED,
-                  USER_ACTION_LOCAL_STATE_POWERWASH);
-        e.stopPropagation();
-      });
-      buttons.push(powerwashButton);
 
       return buttons;
     },

@@ -120,7 +120,6 @@ class CoreOobeHandler : public BaseScreenHandler,
   void ShowControlBar(bool show) override;
   void ShowPinKeyboard(bool show) override;
   void SetClientAreaSize(int width, int height) override;
-  void ShowDeviceResetScreen() override;
   void ShowEnableDebuggingScreen() override;
 
   void InitDemoModeDetection() override;
@@ -140,7 +139,6 @@ class CoreOobeHandler : public BaseScreenHandler,
   void HandleScreenAssetsLoaded(const std::string& screen_async_load_id);
   void HandleSkipToLoginForTesting(const base::ListValue* args);
   void HandleLaunchHelpApp(double help_topic_id);
-  void HandleToggleResetScreen();
   void HandleEnableDebuggingScreen();
   void HandleHeaderBarVisible();
   void HandleSetOobeBootstrappingSlave();

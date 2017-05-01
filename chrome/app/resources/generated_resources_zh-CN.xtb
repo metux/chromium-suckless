@@ -989,7 +989,6 @@
 <translation id="2332742915001411729">重置为默认设置</translation>
 <translation id="2335122562899522968">该页用于设置 Cookie。</translation>
 <translation id="2336228925368920074">为所有标签页添加书签...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">在 Google Keep 中添加注释</translation>
 <translation id="2339120501444485379">输入新名称</translation>
 <translation id="2339641773402824483">正在检查更新...</translation>
@@ -1167,7 +1166,6 @@
 <translation id="2562743677925229011">尚未登录 <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">触控板速度：</translation>
 <translation id="2565828445440744174">实验性 WebAssembly</translation>
-<translation id="2566124945717127842">Powerwash会将您的<ph name="IDS_SHORT_PRODUCT_NAME" />设备重置为初始状态。</translation>
 <translation id="2568774940984945469">信息栏容器</translation>
 <translation id="2570000010887652771">节省数据流量。</translation>
 <translation id="2570648609346224037">下载恢复映像时出现问题。</translation>
@@ -1363,7 +1361,6 @@
       <ph name="LIST_ITEM" />将 Dev 和系统根登录密码均设为自定义值，以便手动以 SSH 方式访问设备
     <ph name="END_LIST" />
     <ph name="BR" />
-    启用此项后，即使在企业管理的设备上执行了 Powerwash 或数据擦除操作，大部分调试功能仍将保持启用状态。要完全停用所有调试功能，请执行 Chrome 操作系统恢复过程 (https://support.google.com/chromebook/answer/1080595)。
     <ph name="BR" />
     <ph name="BR" />
     如需详细了解调试功能，请访问：<ph name="BR" />
@@ -1589,7 +1586,6 @@
 <translation id="3065140616557457172">地址栏、搜索框合二为一，更方便！</translation>
 <translation id="3067198360141518313">运行此插件</translation>
 <translation id="307519606911195071">在“设置”页面中启用其他无障碍功能。</translation>
-<translation id="3075874217500066906">必须重启才能开始 Powerwash 操作。重启后，系统将提示您确认是否要继续。</translation>
 <translation id="3076677906922146425">允许任何人向 Chrome 添加用户</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2336,7 +2332,6 @@
 <translation id="404493185430269859">默认搜索引擎</translation>
 <translation id="4047112090469382184">此功能如何保障安全</translation>
 <translation id="4052120076834320548">最小</translation>
-<translation id="4055023634561256217">使用 Powerwash 重置您的设备之前必须重新启动该设备。</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">在应用店中查看</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -2997,7 +2992,6 @@
 <translation id="4991420928586866460">将顶行键设置为功能键</translation>
 <translation id="499165176004408815">使用高反差模式</translation>
 <translation id="4992066212339426712">取消静音</translation>
-<translation id="4992458225095111526">确认 Powerwash 操作</translation>
 <translation id="4994474651455208930">允许网站要求成为协议的默认处理程序</translation>
 <translation id="4998873842614926205">确认更改</translation>
 <translation id="4999273653895592255">此项用于控制是显示屏幕内容截取选择器窗口的旧界面还是新界面。</translation>
@@ -3031,7 +3025,6 @@
 <translation id="5045550434625856497">密码不正确</translation>
 <translation id="5046747760454685637">在允许网站运行 Flash 前先询问（推荐）</translation>
 <translation id="5048179823246820836">北欧语言</translation>
-<translation id="5053604404986157245">随机生成的 TPM 密码不可用。这是执行 Powerwash 之后的正常现象。</translation>
 <translation id="5053803681436838483">新的送货地址…</translation>
 <translation id="5055309315264875868">密码管理器的设置页面中将显示一个链接，供您在线管理自己已同步的密码。</translation>
 <translation id="5061188462607594407">请先保障您的<ph name="PHONE_TYPE" />安全无虞，然后再继续</translation>
@@ -3271,7 +3264,6 @@
 <translation id="5357579842739549440">调试键盘快捷键</translation>
 <translation id="5360150013186312835">在工具栏中显示</translation>
 <translation id="5362741141255528695">选择私有密钥文件。</translation>
-<translation id="5363109466694494651">执行 Powerwash 操作并还原</translation>
 <translation id="5367091008316207019">正在读取文件...</translation>
 <translation id="5367260322267293088">启用采用大图标的实验性“打开新的标签页”页面。</translation>
 <translation id="5368720394188453070">配对手机已锁定，需将其解锁才能进入。</translation>
@@ -3641,7 +3633,6 @@
 <translation id="5851063901794976166">此处没有可显示的内容…</translation>
 <translation id="5851868085455377790">颁发者</translation>
 <translation id="5852112051279473187">糟糕！系统在注册此设备时遇到了一些严重的问题。请重试或与您的技术支持代表联系。</translation>
-<translation id="5852137567692933493">重新启动，然后执行 Powerwash</translation>
 <translation id="5854409662653665676">如果您经常遇到问题，可以试着用以下方法解决此模块存在的问题：</translation>
 <translation id="5854912040170951372">比萨</translation>
 <translation id="5855119960719984315">切换窗口</translation>
@@ -3746,7 +3737,6 @@
 <translation id="6007237601604674381">移动失败。<ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">发送超链接审核 Ping。</translation>
 <translation id="6015796118275082299">年</translation>
-<translation id="6016551720757758985">确认 Powerwash 是否将设备还原到之前的版本</translation>
 <translation id="6016809788585079594">最后说一遍“Ok Google”</translation>
 <translation id="6017225534417889107">更改…</translation>
 <translation id="6017981840202692187">添加到“应用”文件夹</translation>
@@ -4024,7 +4014,6 @@
 <translation id="6409731863280057959">弹出式窗口</translation>
 <translation id="6410063390789552572">无法访问网络库</translation>
 <translation id="6410257289063177456">图片文件</translation>
-<translation id="6410328738210026208">变更版本并执行 Powerwash</translation>
 <translation id="6410668567036790476">添加搜索引擎</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">打开新的隐身窗口</translation>
@@ -4732,7 +4721,6 @@
 <translation id="7405422715075171617">在填写信用卡表单时允许扫描新的信用卡卡号。</translation>
 <translation id="740624631517654988">已拦截弹出窗口</translation>
 <translation id="7406691462051376731">这台设备目前会向 Google 发送诊断数据和使用情况数据。设备所有者强制启用了这项<ph name="BEGIN_LINK1" />设置<ph name="END_LINK1" />。<ph name="BEGIN_LINK2" />了解详情<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">重新启动并执行 Powerwash</translation>
 <translation id="7409836189476010449">运行 Flash</translation>
 <translation id="7410344089573941623"><ph name="HOST" /> 想要使用摄像头和麦克风时询问我是否同意</translation>
 <translation id="7412226954991670867">GPU 内存</translation>
@@ -4846,7 +4834,6 @@
 <translation id="7553242001898162573">输入您的密码</translation>
 <translation id="7554791636758816595">新标签页</translation>
 <translation id="7556033326131260574">Smart Lock 无法验证您的帐号，您需要输入密码才能进入。</translation>
-<translation id="7556242789364317684">抱歉，“<ph name="SHORT_PRODUCT_NAME" />”无法恢复您的设置。要更正此错误，“<ph name="SHORT_PRODUCT_NAME" />”必须使用 Powerwash 重置您的设备。</translation>
 <translation id="7558050486864662801">当网站要求使用您的麦克风时询问您（推荐）</translation>
 <translation id="7559719679815339381">请稍候…自助服务终端应用正在更新。请不要拔下 U 盘。</translation>
 <translation id="7561196759112975576">永远</translation>
@@ -5169,7 +5156,6 @@
 <translation id="8008356846765065031">网络已断开，请检查您的互联网连接是否正常。</translation>
 <translation id="8012382203418782830">此网页内容已经过翻译。</translation>
 <translation id="8014154204619229810">更新程序正在运行，请稍后刷新并再次查看。</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" />无法还原到之前安装的版本。请重新尝试对您的设备执行 Powerwash 操作。</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">身份验证出错</translation>
 <translation id="8022523925619404071">启用自动更新</translation>
@@ -5228,9 +5214,7 @@
 <translation id="80974698889265265">PIN 码不一致</translation>
 <translation id="8098975406164436557">要使用此手机将您的 <ph name="DEVICE_TYPE" /> 解锁吗？</translation>
 <translation id="810066391692572978">该文件使用了不受支持的功能。</translation>
-<translation id="8101987792947961127">必须在下次重启时执行 Powerwash</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" />会安全地与您的 Google 帐号同步数据。您可以选择同步所有内容，也可以自定义同步的数据类型和加密设置。</translation>
-<translation id="8104696615244072556">对您的 <ph name="IDS_SHORT_PRODUCT_NAME" /> 设备执行 Powerwash 操作，使其还原到之前的版本。</translation>
 <translation id="8105368624971345109">关闭</translation>
 <translation id="8106045200081704138">与我共享</translation>
 <translation id="8106211421800660735">信用卡号</translation>

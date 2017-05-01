@@ -993,7 +993,6 @@ Yeni bir denetlenen kullanıcı oluşturduktan sonra, istediğiniz zaman herhang
 <translation id="2332742915001411729">Varsayılana sıfırla</translation>
 <translation id="2335122562899522968">Bu sayfa çerez ayarlar.</translation>
 <translation id="2336228925368920074">Tüm Sekmelere Yer İşareti Koy...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Google Keep'te Ek Açıklama Ekle</translation>
 <translation id="2339120501444485379">Yeni ad girin</translation>
 <translation id="2339641773402824483">Güncelleme olup olmadığı kontrol ediliyor...</translation>
@@ -1171,7 +1170,6 @@ Bu sitenin engellenmesi gerektiğini düşünmüyorum!</translation>
 <translation id="2562743677925229011"><ph name="SHORT_PRODUCT_NAME" /> oturumu açılmadı</translation>
 <translation id="2565670301826831948">Dokunmatik alan hızı:</translation>
 <translation id="2565828445440744174">Deneysel WebAssembly</translation>
-<translation id="2566124945717127842"><ph name="IDS_SHORT_PRODUCT_NAME" /> cihazınızı yeni alındığı günkü haline sıfırlamak için Powerwash'ı kullanın.</translation>
 <translation id="2568774940984945469">Bilgi Çubuğu Kapsayıcı</translation>
 <translation id="2570000010887652771">Veriler kaydedildi.</translation>
 <translation id="2570648609346224037">Kurtarma görüntüsü indirilirken bir sorun oluştu.</translation>
@@ -1368,7 +1366,6 @@ Bu sitenin engellenmesi gerektiğini düşünmüyorum!</translation>
       <ph name="LIST_ITEM" />Hem dev hem de sistem root düzeyinde giriş şifresini özel bir değere ayarlayabilir ve böylece cihazda manuel olarak SSH işlemi yapabilirsiniz
     <ph name="END_LIST" />
     <ph name="BR" />
-    Kuruluş tarafından yönetilen bir cihazda bu özellik etkinleştirildiğinde, powerwash veya verileri silme işlemi uygulanmış olsa bile hata ayıklama özelliklerinin çoğu etkin olmaya devam eder. Tüm hata ayıklama özelliklerini tamamen devre dışı bırakmak için Chrome OS kurtarma işlemini tamamlayın (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     Hata ayıklama özellikleriyle ilgili daha fazla bilgi edinmek için şu adrese bakın:<ph name="BR" />
@@ -1594,7 +1591,6 @@ Daha fazla bilgi için <ph name="BEGIN_LINK" />Yardım Merkezimizi<ph name="END_
 <translation id="3065140616557457172">İstediğiniz sorguyu girerek arama yapın veya gitmek istediğiniz URL'yi girin - tüm işlevlerin sorunsuz çalıştığını göreceksiniz.</translation>
 <translation id="3067198360141518313">Bu eklentiyi çalıştır</translation>
 <translation id="307519606911195071">Ayarlar sayfasından ek erişilebilirlik özelliklerini etkinleştirin.</translation>
-<translation id="3075874217500066906">Powerwash işleminin başlaması için cihazın tekrar başlatılması gerekiyor. Tekrar başlattıktan sonra devam etmek istediğinizi onaylamanız istenecektir.</translation>
 <translation id="3076677906922146425">Herhangi birinin Chrome'a kişi eklemesine izin ver</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">üstkrktr</translation>
@@ -2344,7 +2340,6 @@ Bunlar ve diğer talimatlar için lütfen <ph name="ACCOUNT_EMAIL" /> e-postanı
 <translation id="404493185430269859">Varsayılan arama motoru</translation>
 <translation id="4047112090469382184">Güvenliği nasıl sağlanır?</translation>
 <translation id="4052120076834320548">Çok küçük</translation>
-<translation id="4055023634561256217">Cihazınızın Powerwash ile sıfırlanabilmesi için yeniden başlatılması gerekir.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Mağazada Görüntüle</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3008,7 +3003,6 @@ Keşfetmeye devam etmek için herhangi bir tuşa basın.</translation>
 <translation id="4991420928586866460">Üst satırdaki tuşları işlev tuşları olarak kullan</translation>
 <translation id="499165176004408815">Yüksek kontrast modunu kullan</translation>
 <translation id="4992066212339426712">Sesi aç</translation>
-<translation id="4992458225095111526">Powerwash'ı onaylayın</translation>
 <translation id="4994474651455208930">Sitelerin, protokoller için varsayılan işleyiciler olmasını sormasına izin ver</translation>
 <translation id="4998873842614926205">Değişiklikleri Onayla</translation>
 <translation id="4999273653895592255">Bu işaret, masaüstü yakalama seçici penceresi için eski arayüzü mü, yoksa yeni arayüzü mü göstereceğimizi belirler.</translation>
@@ -3043,7 +3037,6 @@ Keşfetmeye devam etmek için herhangi bir tuşa basın.</translation>
 <translation id="5045550434625856497">Hatalı parola</translation>
 <translation id="5046747760454685637">Flash çalıştırılmasına izin verilmeden önce size sorulsun (önerilir)</translation>
 <translation id="5048179823246820836">İskandinav</translation>
-<translation id="5053604404986157245">Rastgele oluşturulmuş TPM şifresi kullanılamıyor. Powerwash sonrasında bu normaldir.</translation>
 <translation id="5053803681436838483">Yeni gönderim adresi...</translation>
 <translation id="5055309315264875868">Senkronize edilen şifrelerinizi çevrimiçi olarak yönetmek için şifre yöneticisi ayarlar sayfasında bir bağlantı göster.</translation>
 <translation id="5061188462607594407">Devam etmek için <ph name="PHONE_TYPE" /> cihazınızın güvenliğini sağlayın</translation>
@@ -3291,7 +3284,6 @@ Keşfetmeye devam etmek için herhangi bir tuşa basın.</translation>
 <translation id="5357579842739549440">Hata ayıklama klavye kısayolları</translation>
 <translation id="5360150013186312835">Araç Çubuğunda Göster</translation>
 <translation id="5362741141255528695">Özel anahtar dosyası seçin.</translation>
-<translation id="5363109466694494651">Powerwash Uygula ve Geri Al</translation>
 <translation id="5367091008316207019">Dosya okunuyor..</translation>
 <translation id="5367260322267293088">Büyük simgeleri kullanan deneysel Yeni Sekme sayfasını etkinleştirin.</translation>
 <translation id="5368720394188453070">Telefonunuz kilitli. Giriş yapmak için kilidini açın.</translation>
@@ -3662,7 +3654,6 @@ Hassas bilgileri vermediğinizden emin olun.</translation>
 <translation id="5851063901794976166">Burada görülecek bir şey yok...</translation>
 <translation id="5851868085455377790">Sertifikayı Veren</translation>
 <translation id="5852112051279473187">Hata! Bu cihaz kaydettirilirken bir sorun oluştu. Lütfen tekrar deneyin veya destek temsilcinizle iletişim kurun.</translation>
-<translation id="5852137567692933493">Tekrar başlat ve Powerwash uygula</translation>
 <translation id="5854409662653665676">Sık sık sorun yaşıyorsanız, bu modüldeki sorunu çözmek için şunu deneyebilirsiniz:</translation>
 <translation id="5854912040170951372">Dilim</translation>
 <translation id="5855119960719984315">pencereyi değiştir</translation>
@@ -3767,7 +3758,6 @@ Hassas bilgileri vermediğinizden emin olun.</translation>
 <translation id="6007237601604674381">Taşıma başarısız oldu. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Köprü denetleme ping'leri gönderir.</translation>
 <translation id="6015796118275082299">Yıl</translation>
-<translation id="6016551720757758985">Bir önceki sürüme geri dönüşü sağlayan Powerwash işlemini onaylayın</translation>
 <translation id="6016809788585079594">Son kez "Ok Google" deyin</translation>
 <translation id="6017225534417889107">Değiştir...</translation>
 <translation id="6017981840202692187">Uygulamalara ekleyin</translation>
@@ -4045,7 +4035,6 @@ Hassas bilgileri vermediğinizden emin olun.</translation>
 <translation id="6409731863280057959">Pop-up'lar</translation>
 <translation id="6410063390789552572">Ağ kitaplığına erişilemiyor</translation>
 <translation id="6410257289063177456">Resim Dosyaları</translation>
-<translation id="6410328738210026208">Kanal değiştir ve Powerwash işlemini yap</translation>
 <translation id="6410668567036790476">Arama motoru ekleyin</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">Yeni gizli pencere</translation>
@@ -4761,7 +4750,6 @@ Hassas bilgileri vermediğinizden emin olun.</translation>
 <translation id="7405422715075171617">Bir kredi kartı formu doldurulurken yeni kredi kartı numarası taramayı etkinleştirin.</translation>
 <translation id="740624631517654988">Pop-up engellendi</translation>
 <translation id="7406691462051376731">Bu cihaz şu anda teşhis ve kullanım verilerini Google'a gönderir. Bu <ph name="BEGIN_LINK1" />ayar<ph name="END_LINK1" /> cihaz sahibi tarafından zorunlu tutuluyor. <ph name="BEGIN_LINK2" />Daha Fazla Bilgi Edinin<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Yeniden başlat ve Powerwash işlemi yap</translation>
 <translation id="7409836189476010449">Flash öğesi çalıştırmak</translation>
 <translation id="7410344089573941623"><ph name="HOST" /> sitesi kamerama ve mikrofonuma erişmek isterse sor</translation>
 <translation id="7412226954991670867">GPU Belleği</translation>
@@ -4875,7 +4863,6 @@ Hassas bilgileri vermediğinizden emin olun.</translation>
 <translation id="7553242001898162573">Şifrenizi girin</translation>
 <translation id="7554791636758816595">Yeni Sekme</translation>
 <translation id="7556033326131260574">Smart Lock, hesabınızı doğrulayamadı. Giriş yapmak için şifrenizi yazın.</translation>
-<translation id="7556242789364317684">Maalesef <ph name="SHORT_PRODUCT_NAME" />, ayarlarınızı kurtaramıyor. Hatayı düzeltmek için <ph name="SHORT_PRODUCT_NAME" /> cihazınızı Powerwash ile sıfırlamalısınız.</translation>
 <translation id="7558050486864662801">Bir sitenin mikrofonuma erişmesi gerektiğinde bana sor (önerilen)</translation>
 <translation id="7559719679815339381">Lütfen bekleyin....Kiosk uygulaması güncelleniyor. USB çubuğunu çıkarmayın.</translation>
 <translation id="7561196759112975576">Her zaman</translation>
@@ -5200,7 +5187,6 @@ Anahtar dosyanızı güvenli bir yerde saklayın. Uzantınızın yeni sürümler
 <translation id="8008356846765065031">İnternet bağlantısı kesildi. Lütfen İnternet bağlantınızı kontrol edin.</translation>
 <translation id="8012382203418782830">Bu sayfa çevrildi.</translation>
 <translation id="8014154204619229810">Güncelleyici şu anda çalışıyor. Tekrar kontrol etmek için bir dakika içinde yenileyin.</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> daha önce yüklü olan sürümü geri yükleyemiyor. Lütfen cihazınıza tekrar Powerwash uygulayın.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Kimlik doğrulama sorunu</translation>
 <translation id="8022523925619404071">Otomatik güncellemeyi etkinleştir</translation>
@@ -5259,9 +5245,7 @@ Anahtar dosyanızı güvenli bir yerde saklayın. Uzantınızın yeni sürümler
 <translation id="80974698889265265">PIN'ler eşleşmiyor</translation>
 <translation id="8098975406164436557"><ph name="DEVICE_TYPE" /> cihazınızın kilidini açmak için bu telefon kullanılsın mı?</translation>
 <translation id="810066391692572978">Dosyada desteklenmeyen özellikler kullanılıyor.</translation>
-<translation id="8101987792947961127">Gelecek yeniden başlatmada Powerwash gerekli</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> verilerinizi Google hesabınızla güvenli şekilde senkronize eder. Her şeyi senkronize halde tutun veya senkronize edilmiş veri türlerini ve şifreleme ayarlarını özelleştirin.</translation>
-<translation id="8104696615244072556"><ph name="IDS_SHORT_PRODUCT_NAME" /> cihazınızda Powerwash işlemi yapabilir ve bir önceki sürüme geri dönebilirsiniz.</translation>
 <translation id="8105368624971345109">Kapat</translation>
 <translation id="8106045200081704138">Benimle paylaşılanlar</translation>
 <translation id="8106211421800660735">Kredi kartı numarası</translation>

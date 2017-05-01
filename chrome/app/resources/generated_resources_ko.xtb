@@ -994,7 +994,6 @@
 <translation id="2332742915001411729">기본 설정으로 돌아가기</translation>
 <translation id="2335122562899522968">이 페이지에서 쿠키를 설정합니다.</translation>
 <translation id="2336228925368920074">모든 탭 북마크...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Google Keep에 주석 추가</translation>
 <translation id="2339120501444485379">새 이름 입력</translation>
 <translation id="2339641773402824483">업데이트 확인 중...</translation>
@@ -1172,7 +1171,6 @@
 <translation id="2562743677925229011"><ph name="SHORT_PRODUCT_NAME" />에 로그인되어 있지 않습니다.</translation>
 <translation id="2565670301826831948">터치패드 속도:</translation>
 <translation id="2565828445440744174">실험용 WebAssembly</translation>
-<translation id="2566124945717127842">Powerwash는 <ph name="IDS_SHORT_PRODUCT_NAME" /> 기기를 재설정하여 새것처럼 만듭니다.</translation>
 <translation id="2568774940984945469">정보 표시줄 컨테이너</translation>
 <translation id="2570000010887652771">데이터가 저장되었습니다.</translation>
 <translation id="2570648609346224037">복구 이미지를 다운로드하는 중에 문제가 발생했습니다.</translation>
@@ -1369,7 +1367,6 @@
       <ph name="LIST_ITEM" />기기에 직접 SSH를 수행할 수 있도록 개발자 및 시스템 루트 로그인 비밀번호를 맞춤 값으로 설정
     <ph name="END_LIST" />
     <ph name="BR" />
-    일단 사용 설정되면 기업 관리 기기에서 Powerwash를 수행하거나 데이터를 삭제한 후에도 대부분의 디버그 기능이 사용 설정 상태로 유지됩니다.  모든 디버그 기능을 완전히 사용 중지하려면 Chrome OS 복구 절차를 완료하세요(https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     디버깅 기능에 대한 자세한 내용은 다음 페이지를 참조하세요.<ph name="BR" />
@@ -1595,7 +1592,6 @@
 <translation id="3065140616557457172">검색할 키워드나 사이트 URL, 무엇이든 입력하세요.</translation>
 <translation id="3067198360141518313">이 플러그인 실행</translation>
 <translation id="307519606911195071">설정 페이지에서 추가 접근성 기능을 사용하도록 설정합니다.</translation>
-<translation id="3075874217500066906">Powerwash 프로세스를 시작하려면 다시 시작해야 합니다. 다시 시작하면 계속 진행할 지를 확인하는 메시지가 표시됩니다.</translation>
 <translation id="3076677906922146425">누구나 사용자를 Chrome에 추가할 수 있도록 합니다.</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">Shift</translation>
@@ -2346,7 +2342,6 @@
 <translation id="404493185430269859">기본 검색엔진</translation>
 <translation id="4047112090469382184">이 기능이 안전한 이유</translation>
 <translation id="4052120076834320548">작게</translation>
-<translation id="4055023634561256217">기기를 Powerwash로 재설정하기 전에 다시 시작해야 합니다.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">스토어에서 보기</translation>
 <translation id="4058720513957747556">AppSocket(TCP/IP)</translation>
@@ -3008,7 +3003,6 @@
 <translation id="4991420928586866460">맨 위 키를 기능 키로 사용</translation>
 <translation id="499165176004408815">고대비 모드 사용</translation>
 <translation id="4992066212339426712">음소거 해제</translation>
-<translation id="4992458225095111526">Powerwash 확인</translation>
 <translation id="4994474651455208930">사이트에서 프로토콜에 대한 기본 핸들러가 될지 여부를 묻도록 허용</translation>
 <translation id="4998873842614926205">변경사항 확인</translation>
 <translation id="4999273653895592255">이 플래그는 데스크톱 캡처 선택기 창에 이전 UI 또는 새 UI를 표시할지 여부를 관리합니다.</translation>
@@ -3043,7 +3037,6 @@
 <translation id="5045550434625856497">비밀번호가 잘못되었습니다.</translation>
 <translation id="5046747760454685637">사이트에서 Flash를 실행하도록 허용하기 전에 확인(권장)</translation>
 <translation id="5048179823246820836">북유럽어</translation>
-<translation id="5053604404986157245">임의로 생성된 TPM 비밀번호는 사용할 수 없습니다. Powerwash 이후에는 정상입니다.</translation>
 <translation id="5053803681436838483">새 배송지 주소...</translation>
 <translation id="5055309315264875868">동기화된 비밀번호를 온라인에서 관리하도록 비밀번호 관리자 설정 페이지에 링크를 표시합니다.</translation>
 <translation id="5061188462607594407">계속하려면 <ph name="PHONE_TYPE" />을(를) 보호하세요.</translation>
@@ -3291,7 +3284,6 @@
 <translation id="5357579842739549440">키보드 단축키 디버깅</translation>
 <translation id="5360150013186312835">툴바에서 보기</translation>
 <translation id="5362741141255528695">비공개 키 파일을 선택합니다.</translation>
-<translation id="5363109466694494651">Powerwash 및 되돌리기</translation>
 <translation id="5367091008316207019">파일 읽는 중..</translation>
 <translation id="5367260322267293088">큰 아이콘을 사용하는 실험용 새 탭 페이지를 사용 설정합니다.</translation>
 <translation id="5368720394188453070">휴대전화가 잠겨있습니다. 이용하려면 기기를 잠금 해제하세요.</translation>
@@ -3661,7 +3653,6 @@
 <translation id="5851063901794976166">표시할 내용 없음...</translation>
 <translation id="5851868085455377790">발행기관</translation>
 <translation id="5852112051279473187">기기를 등록하는 중에 문제가 발생했습니다. 다시 시도하거나 지원 담당자에게 문의하세요.</translation>
-<translation id="5852137567692933493">다시 시작 및 Powerwash</translation>
 <translation id="5854409662653665676">문제가 자주 발생할 경우 다음 단계에 따라 모듈 문제를 해결할 수 있습니다.</translation>
 <translation id="5854912040170951372">피자왕</translation>
 <translation id="5855119960719984315">창 전환</translation>
@@ -3766,7 +3757,6 @@
 <translation id="6007237601604674381">이동에 실패했습니다. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">하이퍼링크 검사 ping을 전송합니다.</translation>
 <translation id="6015796118275082299">연도</translation>
-<translation id="6016551720757758985">이전 버전으로 돌아가서 Powerwash 확인</translation>
 <translation id="6016809788585079594">마지막으로 한번 더 "Ok Google"이라고 말하세요.</translation>
 <translation id="6017225534417889107">변경...</translation>
 <translation id="6017981840202692187">애플리케이션 폴더에 추가</translation>
@@ -4044,7 +4034,6 @@
 <translation id="6409731863280057959">팝업</translation>
 <translation id="6410063390789552572">네트워크 라이브러리에 액세스할 수 없음</translation>
 <translation id="6410257289063177456">이미지 파일</translation>
-<translation id="6410328738210026208">채널 변경 및 Powerwash</translation>
 <translation id="6410668567036790476">검색 엔진 추가</translation>
 <translation id="641105183165925463">$1MB</translation>
 <translation id="6412931879992742813">새 시크릿 창</translation>
@@ -4760,7 +4749,6 @@
 <translation id="7405422715075171617">신용카드 양식을 입력할 때 새 신용카드 번호 스캐닝을 사용합니다.</translation>
 <translation id="740624631517654988">팝업 차단됨</translation>
 <translation id="7406691462051376731">이 기기는 현재 진단 및 사용 데이터를 Google에 전송합니다. 소유자가 지정한 <ph name="BEGIN_LINK1" />설정<ph name="END_LINK1" />입니다. <ph name="BEGIN_LINK2" />자세히 알아보기<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">다시 실행 및 Powerwash</translation>
 <translation id="7409836189476010449">플래시 실행</translation>
 <translation id="7410344089573941623"><ph name="HOST" />에서 카메라와 마이크에 액세스하려는 경우 메시지 표시</translation>
 <translation id="7412226954991670867">GPU 메모리</translation>
@@ -4874,7 +4862,6 @@
 <translation id="7553242001898162573">비밀번호를 입력해 주세요.</translation>
 <translation id="7554791636758816595">새 탭</translation>
 <translation id="7556033326131260574">Smart Lock이 계정을 인증하지 못했습니다. 잠금 해제하려면 비밀번호를 입력하세요.</translation>
-<translation id="7556242789364317684">안타깝게도 <ph name="SHORT_PRODUCT_NAME" />에서 설정을 복구할 수 없습니다. 오류를 해결하려면 <ph name="SHORT_PRODUCT_NAME" />에서 Powerwash를 사용하여 기기를 재설정해야 합니다.</translation>
 <translation id="7558050486864662801">내 마이크에 사이트가 액세스할 때 확인(권장)</translation>
 <translation id="7559719679815339381">잠시 기다려주세요. Kiosk 앱을 업데이트하는 중입니다. USB 메모리를 제거하지 마세요.</translation>
 <translation id="7561196759112975576">항상</translation>
@@ -5199,7 +5186,6 @@
 <translation id="8008356846765065031">인터넷 연결이 끊겼습니다. 인터넷 연결을 확인하세요.</translation>
 <translation id="8012382203418782830">페이지가 번역되었습니다.</translation>
 <translation id="8014154204619229810">업데이터가 현재 실행 중입니다. 잠시 후에 새로고침하여 다시 확인해 주세요.</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" />을(를) 이전에 설치한 버전으로 되돌릴 수 없습니다. 대신 기기를 Powerwash해 보세요.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">잘못된 인증</translation>
 <translation id="8022523925619404071">자동 업데이트 사용</translation>
@@ -5258,9 +5244,7 @@
 <translation id="80974698889265265">PIN이 일치하지 않습니다.</translation>
 <translation id="8098975406164436557">이 휴대전화로 <ph name="DEVICE_TYPE" />을(를) 잠금 해제하시겠습니까?</translation>
 <translation id="810066391692572978">파일에서 지원되지 않는 기능을 사용합니다.</translation>
-<translation id="8101987792947961127">다음에 재부팅할 때 Powerwash 필요</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" />에서 데이터를 Google 계정과 안전하게 동기화합니다. 모든 데이터를 동기화하거나 동기화할 데이터 유형과 암호화 설정을 맞춤설정할 수 있습니다.</translation>
-<translation id="8104696615244072556"><ph name="IDS_SHORT_PRODUCT_NAME" /> 기기를 Powerwash한 다음 이전 버전으로 돌아가세요.</translation>
 <translation id="8105368624971345109">사용 중지</translation>
 <translation id="8106045200081704138">공유 문서함</translation>
 <translation id="8106211421800660735">신용카드 번호</translation>

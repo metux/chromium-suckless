@@ -123,12 +123,6 @@
                   $i18n{aboutRelaunch}
                 </paper-button>
 <if expr="chromeos">
-                <paper-button id="relaunchAndPowerwash" class="secondary-button"
-                    hidden="[[!shouldShowRelaunchAndPowerwash_(
-                        currentUpdateStatusEvent_, targetChannel_)]]"
-                    on-tap="onRelaunchAndPowerwashTap_">
-                  $i18n{aboutRelaunchAndPowerwash}
-                </paper-button>
                 <paper-button id="checkForUpdates" class="secondary-button"
                     hidden="[[!shouldShowCheckUpdates_(currentUpdateStatusEvent_)]]"
                     on-tap="onCheckUpdatesTap_">

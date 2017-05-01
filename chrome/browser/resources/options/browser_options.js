@@ -776,14 +776,6 @@ cr.define('options', function() {
         };
       }
 
-      // Factory reset section (CrOS only).
-      if (cr.isChromeOS) {
-        $('factory-reset-restart').onclick = function(event) {
-          PageManager.showPageByName('factoryResetData');
-          chrome.send('onPowerwashDialogShow');
-        };
-      }
-
       // System section.
       if (!cr.isChromeOS) {
         var updateGpuRestartButton = function() {
@@ -1842,14 +1834,6 @@ cr.define('options', function() {
     },
 
     /**
-     * Enables factory reset section.
-     * @private
-     */
-    enableFactoryResetSection_: function() {
-      $('factory-reset-section').hidden = false;
-    },
-
-    /**
      * Set the checked state of the metrics reporting checkbox.
      * @private
      */
@@ -2339,7 +2323,6 @@ cr.define('options', function() {
     'deleteCurrentProfile',
     'enableCertificateButton',
     'enableDisplaySettings',
-    'enableFactoryResetSection',
     'getCurrentProfile',
     'getStartStopSyncButton',
     'notifyInitializationComplete',

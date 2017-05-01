@@ -418,7 +418,6 @@ void RegisterLocalState(PrefRegistrySimple* registry) {
   chromeos::Preferences::RegisterPrefs(registry);
   chromeos::proxy_config::RegisterPrefs(registry);
   chromeos::RegisterDisplayLocalStatePrefs(registry);
-  chromeos::ResetScreenHandler::RegisterPrefs(registry);
   chromeos::ServicesCustomizationDocument::RegisterPrefs(registry);
   chromeos::SigninScreenHandler::RegisterPrefs(registry);
   chromeos::StartupUtils::RegisterPrefs(registry);

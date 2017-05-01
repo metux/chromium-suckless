@@ -752,9 +752,7 @@ void GaiaScreenHandler::ShowGaiaScreenIfReady() {
 
   if (core_oobe_actor_) {
     PrefService* prefs = g_browser_process->local_state();
-    if (prefs->GetBoolean(prefs::kFactoryResetRequested)) {
-      core_oobe_actor_->ShowDeviceResetScreen();
-    } else if (prefs->GetBoolean(prefs::kDebuggingFeaturesRequested)) {
+    if (prefs->GetBoolean(prefs::kDebuggingFeaturesRequested)) {
       core_oobe_actor_->ShowEnableDebuggingScreen();
     }
   }

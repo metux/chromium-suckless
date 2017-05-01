@@ -992,7 +992,6 @@ Luotuasi uuden valvotun käyttäjän voit hallinnoida käyttäjän asetuksia mil
 <translation id="2332742915001411729">Palauta oletusarvo</translation>
 <translation id="2335122562899522968">Tämä sivu asettaa evästeitä.</translation>
 <translation id="2336228925368920074">Lisää kaikki välilehdet kirjanmerkkeihin...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Tee merkintöjä Google Keepissä</translation>
 <translation id="2339120501444485379">Kirjoita uusi nimi</translation>
 <translation id="2339641773402824483">Tarkistetaan päivityksiä...</translation>
@@ -1170,7 +1169,6 @@ Tämän sivuston ei pitäisi olla estetty.</translation>
 <translation id="2562743677925229011">Ei kirjautunut tuotteeseen <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">Kosketuslevyn nopeus:</translation>
 <translation id="2565828445440744174">Kokeellinen WebAssembly</translation>
-<translation id="2566124945717127842">Palauta <ph name="IDS_SHORT_PRODUCT_NAME" />-laitteesi alkuperäiseen tilaan suorittamalla Powerwash.</translation>
 <translation id="2568774940984945469">Tietopalkki</translation>
 <translation id="2570000010887652771">Tiedot tallennettu</translation>
 <translation id="2570648609346224037">Virhe ladattaessa palautusnäköistiedostoa.</translation>
@@ -1368,7 +1366,6 @@ Tämän sivuston ei pitäisi olla estetty.</translation>
       <ph name="LIST_ITEM" />asettaa sekä kehittäjäversion että järjestelmän pääkäyttäjän salasanaksi muokatun arvon, jotta voit käyttää SSH:ta manuaalisesti laitteessa.
     <ph name="END_LIST" />
     <ph name="BR" />
-    Jos otat ne käyttöön, suurin osa virheenkorjausominaisuuksista on edelleen käytössä, vaikka yrityksen hallinnoimalle laitteelle suoritettaisiin powerwash tai sen tiedot tyhjennettäisiin. Jos haluat poistaa käytöstä kaikki virheenkorjausominaisuudet, palauta Chrome-käyttöjärjestelmän tehdasasetukset (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     Lisätietoja virheenkorjausominaisuuksista:<ph name="BR" />
@@ -1594,7 +1591,6 @@ Lisätietoja saat <ph name="BEGIN_LINK" />ohjekeskuksestamme<ph name="END_LINK" 
 <translation id="3065140616557457172">Kirjoita haku tai URL-osoite suoraa siirtymistä varten. Kaikki käy.</translation>
 <translation id="3067198360141518313">Suorita laajennus</translation>
 <translation id="307519606911195071">Voit ottaa muita esteettömyysominaisuuksia käyttöön Asetukset-sivulla.</translation>
-<translation id="3075874217500066906">Powerwash-prosessin aloittaminen vaatii uudelleenkäynnistyksen. Uudelleenkäynnistyksen jälkeen sinua pyydetään vahvistamaan, että haluat jatkaa.</translation>
 <translation id="3076677906922146425">Anna kaikkien lisätä profiileja Chromeen</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2341,7 +2337,6 @@ verkkotunnuksesta <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="404493185430269859">Oletushakukone</translation>
 <translation id="4047112090469382184">Miksi tämä on turvallista</translation>
 <translation id="4052120076834320548">Pikkuruinen</translation>
-<translation id="4055023634561256217">Käynnistä laitteesi uudelleen, ennen kuin laitteeseen voidaan palauttaa tehdasasetukset Powerwashin avulla.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Näytä Web Storessa</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3000,7 +2995,6 @@ Kaikkien käyttäjien täytyy kirjautua ulos jatkaakseen käyttöä.</translatio
 <translation id="4991420928586866460">Käytä ylärivin näppäimiä toimintanäppäiminä</translation>
 <translation id="499165176004408815">Käytä suuri kontrasti -tilaa</translation>
 <translation id="4992066212339426712">Poista mykistys</translation>
-<translation id="4992458225095111526">Vahvista powerwash</translation>
 <translation id="4994474651455208930">Anna sivustojen ehdottaa protokollien oletuskäsittelypalveluiden määrittämistä.</translation>
 <translation id="4998873842614926205">Vahvista muutokset</translation>
 <translation id="4999273653895592255">Määrittää, käytetäänkö työpöydän jakamisen valitsimessa uutta vai vanhaa käyttöliittymää.</translation>
@@ -3035,7 +3029,6 @@ Kaikkien käyttäjien täytyy kirjautua ulos jatkaakseen käyttöä.</translatio
 <translation id="5045550434625856497">Väärä salasana</translation>
 <translation id="5046747760454685637">Pyydä lupaa, kun sivustot yrittävät suorittaa Flashia (suositus)</translation>
 <translation id="5048179823246820836">pohjoismainen</translation>
-<translation id="5053604404986157245">Sattumanvarainen TPM-salasana ei ole saatavilla. Tämä on normaalia Powerwashin jälkeen.</translation>
 <translation id="5053803681436838483">Uusi toimitusosoite…</translation>
 <translation id="5055309315264875868">Näytä linkki salasanan hallinnan asetussivulla, jotta voit hallita synkronoituja salasanojasi verkossa.</translation>
 <translation id="5061188462607594407">Jatka suojaamalla <ph name="PHONE_TYPE" /></translation>
@@ -3281,7 +3274,6 @@ Kaikkien käyttäjien täytyy kirjautua ulos jatkaakseen käyttöä.</translatio
 <translation id="5357579842739549440">Vianetsinnän pikanäppäimet</translation>
 <translation id="5360150013186312835">Näytä yläpalkissa</translation>
 <translation id="5362741141255528695">Valitse yksityinen avaintiedosto.</translation>
-<translation id="5363109466694494651">Suorita Powerwash ja palauta</translation>
 <translation id="5367091008316207019">Luetaan tiedostoa...</translation>
 <translation id="5367260322267293088">Ota käyttöön kokeellinen suuria kuvakkeita käyttävä Uusi välilehti -sivu.</translation>
 <translation id="5368720394188453070">Puhelimesi on lukittu. Avaa lukitus käyttääksesi sitä.</translation>
@@ -3651,7 +3643,6 @@ Kaikkien käyttäjien täytyy kirjautua ulos jatkaakseen käyttöä.</translatio
 <translation id="5851063901794976166">Tyhjää täynnä…</translation>
 <translation id="5851868085455377790">Myöntäjä</translation>
 <translation id="5852112051279473187">Hups! Jotakin meni vikaan laitteen käyttöönoton yhteydessä. Yritä uudelleen tai ota yhteyttä tukipalveluun.</translation>
-<translation id="5852137567692933493">Käynnistä uudelleen ja suorita Powerwash</translation>
 <translation id="5854409662653665676">Jos ongelmia esiintyy usein, voit yrittää ratkaista moduulia koskevan ongelman seuraavasti:</translation>
 <translation id="5854912040170951372">Pizza</translation>
 <translation id="5855119960719984315">vaihda ikkunaa</translation>
@@ -3756,7 +3747,6 @@ Julkinen eksponentti (<ph name="PUBLIC_EXPONENT_NUM_BITS" /> bittiä):
 <translation id="6007237601604674381">Siirto epäonnistui. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Hyperlinkkien tarkistussignaalien lähettäminen.</translation>
 <translation id="6015796118275082299">Vuosi</translation>
-<translation id="6016551720757758985">Powerwashin vahvistaminen palauttaa käyttöön edellisen version</translation>
 <translation id="6016809788585079594">Sano ”Ok Google” vielä kerran.</translation>
 <translation id="6017225534417889107">Vaihda…</translation>
 <translation id="6017981840202692187">Lisää Sovellukset-kansioon</translation>
@@ -4036,7 +4026,6 @@ Julkinen eksponentti (<ph name="PUBLIC_EXPONENT_NUM_BITS" /> bittiä):
 <translation id="6409731863280057959">Ponnahdusikkunat</translation>
 <translation id="6410063390789552572">Verkkokirjastoa ei voi käyttää</translation>
 <translation id="6410257289063177456">Kuvatiedostot </translation>
-<translation id="6410328738210026208">Vaihda kanavaa ja tee Powerwash</translation>
 <translation id="6410668567036790476">Lisää hakukone</translation>
 <translation id="641105183165925463">$1 Mt</translation>
 <translation id="6412931879992742813">Uusi incognito-ikkuna</translation>
@@ -4750,7 +4739,6 @@ Julkinen eksponentti (<ph name="PUBLIC_EXPONENT_NUM_BITS" /> bittiä):
 <translation id="7405422715075171617">Ota käyttöön uuden luottokorttinumeron skannaus luottokorttilomaketta täytettäessä.</translation>
 <translation id="740624631517654988">Ponnahdusikkuna estetty</translation>
 <translation id="7406691462051376731">Tämä laite lähettää tällä hetkellä diagnostiikka- ja käyttötietoja Googlelle. Omistaja vaatiii tämän <ph name="BEGIN_LINK1" />asetuksen<ph name="END_LINK1" /> käyttöä. <ph name="BEGIN_LINK2" />Lisätietoja<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Käynnistä uudelleen ja tee Powerwash</translation>
 <translation id="7409836189476010449">suorittaa Flashin</translation>
 <translation id="7410344089573941623">Kysy, jos <ph name="HOST" /> haluaa käyttää kameraa ja mikrofonia</translation>
 <translation id="7412226954991670867">Keskusyksikön muisti</translation>
@@ -4864,7 +4852,6 @@ Julkinen eksponentti (<ph name="PUBLIC_EXPONENT_NUM_BITS" /> bittiä):
 <translation id="7553242001898162573">Anna salasana.</translation>
 <translation id="7554791636758816595">Uusi välilehti</translation>
 <translation id="7556033326131260574">Smart Lock ei voinut vahvistaa tiliäsi. Avaa laite kirjoittamalla salasana.</translation>
-<translation id="7556242789364317684">Valitettavasti <ph name="SHORT_PRODUCT_NAME" /> ei voi palauttaa asetuksiasi. Jos haluat korjata tämän virheen, kohteen <ph name="SHORT_PRODUCT_NAME" /> on nollattava laitteesi Powerwashilla.</translation>
 <translation id="7558050486864662801">Kysy aina, kun sivusto vaatii mikrofonin käyttöoikeutta (suositus)</translation>
 <translation id="7559719679815339381">Odota hetki, kioskisovellusta päivitetään. Älä irrota USB-tikkua.</translation>
 <translation id="7561196759112975576">Aina</translation>
@@ -5189,7 +5176,6 @@ Tallenna avaintiedosto suojattuun sijaintiin. Tarvitset sitä, jos haluat luoda 
 <translation id="8008356846765065031">Internetyhteys katkaistu. Tarkista internetyhteytesi.</translation>
 <translation id="8012382203418782830">Tämä sivu on käännetty.</translation>
 <translation id="8014154204619229810">Päivitysohjelma on käynnissä. Lataa sivu hetken kuluttua uudelleen ja tarkista tilanne.</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> ei voi palautua aiemmin asennettuun versioon. Suorita laitteellesi Powerwash uudelleen.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Virheellinen todennus</translation>
 <translation id="8022523925619404071">Ota automaattiset päivitykset käyttöön</translation>
@@ -5248,9 +5234,7 @@ Tallenna avaintiedosto suojattuun sijaintiin. Tarvitset sitä, jos haluat luoda 
 <translation id="80974698889265265">PIN-koodit eivät täsmää.</translation>
 <translation id="8098975406164436557">Avataanko laitteen <ph name="DEVICE_TYPE" /> lukitus tällä puhelimella?</translation>
 <translation id="810066391692572978">Tiedosto käyttää tukemattomia ominaisuuksia.</translation>
-<translation id="8101987792947961127">Powerwash vaaditaan seuraavan uudelleenkäynnistyksen yhteydessä</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> synkronoi tietosi turvallisesti Google-tilisi kanssa. Synkronoi kaikki tiedot tai muokkaa synkronoitavia tietotyyppejä ja salausasetuksia.</translation>
-<translation id="8104696615244072556">Suorita Powerwash <ph name="IDS_SHORT_PRODUCT_NAME" />-laitteellesi ja palaa aiempaan versioon.</translation>
 <translation id="8105368624971345109">Poista käytöstä</translation>
 <translation id="8106045200081704138">Jaettu minun kanssani</translation>
 <translation id="8106211421800660735">Luottokortin numero</translation>

@@ -9336,16 +9336,10 @@ I don't think this site should be blocked!
           <message name="IDS_RELAUNCH_BUTTON" desc="Titlecase: The label for the relaunch button that relaunches the browser once update is complete">
             Restart
           </message>
-          <message name="IDS_RELAUNCH_AND_POWERWASH_BUTTON" desc="Titlecase: The label for the  button that relaunches and powerwashes the browser once update is complete">
-            Relaunch and Powerwash
-          </message>
         </if>
         <if expr="chromeos and not use_titlecase">
           <message name="IDS_RELAUNCH_BUTTON" desc="The label for the relaunch button that relaunches the browser once update is complete">
             Restart
-          </message>
-          <message name="IDS_RELAUNCH_AND_POWERWASH_BUTTON" desc="Titlecase: The label for the  button that relaunches and powerwashes the browser once update is complete">
-            Relaunch and Powerwash
           </message>
         </if>
         <if expr="chromeos">
@@ -9406,12 +9400,6 @@ I don't think this site should be blocked!
         <message name="IDS_ABOUT_PAGE_CHANNEL_CHANGE_DISALLOWED_MESSAGE" desc="The error message that is displayed when non-owner tries to switch channel.">
           This setting is enforced by your administrator.
         </message>
-        <message name="IDS_ABOUT_PAGE_CHANNEL_CHANGE_PAGE_POWERWASH_TITLE" desc="The title for the message that warns user about powerwash.">
-          Powerwash required on next reboot
-        </message>
-        <message name="IDS_ABOUT_PAGE_CHANNEL_CHANGE_PAGE_POWERWASH_MESSAGE" desc="Message that warns user about powerwash.">
-          This will remove all local users, files, data, and other settings after your next restart. All users will need to sign in again.
-        </message>
         <message name="IDS_ABOUT_PAGE_CHANNEL_CHANGE_PAGE_DELAYED_CHANGE_TITLE" desc="The title for the message that notifies user that channel change will be applied later.">
           Channel change will be applied later.
         </message>
@@ -9423,9 +9411,6 @@ I don't think this site should be blocked!
         </message>
         <message name="IDS_ABOUT_PAGE_CHANNEL_CHANGE_PAGE_UNSTABLE_MESSAGE" desc="Message that warns user about switching to developer (unstable) channel.">
           You are updating to an unstable version of <ph name="PRODUCT_NAME">$1<ex>Chrome OS</ex></ph> which contains features that are in progress. Crashes and unexpected bugs will occur. Please proceed with caution.
-        </message>
-        <message name="IDS_ABOUT_PAGE_CHANNEL_CHANGE_PAGE_POWERWASH_BUTTON" desc="The label for the button for channel switch and powerwash.">
-          Change channel and Powerwash
         </message>
         <message name="IDS_ABOUT_PAGE_CHANNEL_CHANGE_PAGE_CHANGE_BUTTON" desc="The label for the button for channel switch.">
           Change channel
@@ -9857,24 +9842,6 @@ I don't think this site should be blocked!
         <message name="IDS_OPTIONS_SAFEBROWSING_ENABLE_EXTENDED_REPORTING" desc="Checkbox label: should Chrome upload information about suspicious downloads and websites to Safe Browsing">
           Automatically report details of possible security incidents to Google
         </message>
-
-        <if expr="chromeos">
-          <message name="IDS_OPTIONS_FACTORY_RESET" desc="Name of the factory reset option on the Chrome settings page">
-            Powerwash
-          </message>
-          <message name="IDS_OPTIONS_FACTORY_RESET_HEADING" desc="Name of the 'Factory reset' window">
-            Restart your device
-          </message>
-          <message name="IDS_OPTIONS_FACTORY_RESET_DESCRIPTION" desc="Description of the factory reset option on the Chrome settings page">
-            Remove all user accounts and reset your <ph name="IDS_SHORT_PRODUCT_NAME">$1<ex>Chrome</ex></ph> device to be just like new.
-          </message>
-          <message name="IDS_OPTIONS_FACTORY_RESET_BUTTON" desc="Name of the button to activate the factory reset option on the Chrome settings page">
-            Powerwash
-          </message>
-          <message name="IDS_OPTIONS_FACTORY_RESET_WARNING" desc="Warning text in the 'Factory Reset' window">
-            A restart is required before your device can be reset with Powerwash.
-          </message>
-        </if>
 
         <message name="IDS_OPTIONS_IMPORT_DATA_BUTTON" desc="Label for the import data button.">
           Import bookmarks and settings...

@@ -16,15 +16,12 @@
   margin: 0 25px;
 }
 
-.show-when-selected-channel-requires-powerwash,
 .show-when-selected-channel-requires-delayed-update,
 .show-when-selected-channel-good,
 .show-when-selected-channel-unstable {
   display: none !important;
 }
 
-.selected-channel-requires-powerwash
-.show-when-selected-channel-requires-powerwash,
 .selected-channel-requires-delayed-update
 .show-when-selected-channel-requires-delayed-update,
 .selected-channel-good .show-when-selected-channel-good,

@@ -990,7 +990,6 @@
 <translation id="2332742915001411729">بازنشانی روی موارد پیش‌فرض</translation>
 <translation id="2335122562899522968">این صفحه کوکی‌ها را تنظیم می‌کند.</translation>
 <translation id="2336228925368920074">نشانک‌گذاری همه برگه‌ها...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">‏یادداشت‌برداری در Google Keep</translation>
 <translation id="2339120501444485379">نام جدید را وارد کنید</translation>
 <translation id="2339641773402824483">در حال بررسی به‌روزرسانی‌ها...</translation>
@@ -1168,7 +1167,6 @@
 <translation id="2562743677925229011">به سیستم <ph name="SHORT_PRODUCT_NAME" /> وارد نشدید</translation>
 <translation id="2565670301826831948">سرعت پد لمسی:</translation>
 <translation id="2565828445440744174">‏WebAssembly آزمایشی</translation>
-<translation id="2566124945717127842">‏Powerwash، دستگاه <ph name="IDS_SHORT_PRODUCT_NAME" /> شما را بازنشانی می‌کند، به نحوی که مانند یک دستگاه جدید به نظر می‌رسد.</translation>
 <translation id="2568774940984945469">قسمت نوار اطلاعات</translation>
 <translation id="2570000010887652771">داده‌ها ذخیره‌ شد.</translation>
 <translation id="2570648609346224037">در طول بارگیری تصویر بازیابی، مشکلی روی داد.</translation>
@@ -1364,7 +1362,6 @@
       <ph name="LIST_ITEM" />گذرواژه ورود به سیستم ریشه سیستم و dev را روی مقدار سفارشی تنظیم کنید تا بتوانید به صورت دستی در دستگاه SSH کنید
     <ph name="END_LIST" />
     <ph name="BR" />
-    وقتی فعال شود، حتی پس از انجام powerwash یا پاک کردن داده‌ها از روی دستگاه تحت مدیریت شرکت، اکثر ویژگی‌های رفع اشکال فعال می‌ماند.  برای غیرفعال کردن کامل ویژگی‌های رفع اشکال، پردازش بازیابی سیستم عامل Chrome را تکمیل کنید (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     برای کسب اطلاعات بیشتر درباره ویژگی‌های رفع اشکال به این قسمت مراجعه کنید:<ph name="BR" />
@@ -1590,7 +1587,6 @@
 <translation id="3065140616557457172">‏برای جستجو تایپ کنید یا URL را برای پیمایش وارد کنید - همه چیز آماده است.</translation>
 <translation id="3067198360141518313">اجرای این افزایه</translation>
 <translation id="307519606911195071">قابلیت‌های دسترس‌پذیری بیشتری را در صفحه «تنظیمات» فعال کنید.</translation>
-<translation id="3075874217500066906">‏برای شروع فرآیند Powerwash، به یک راه‌اندازی مجدد نیاز دارید. پس از راه‌اندازی مجدد، از شما خواسته می‌شود تأیید کنید که می‌خواهید ادامه دهید.</translation>
 <translation id="3076677906922146425">‏اجازه به همه برای افزودن شخصی به Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">تبدیل</translation>
@@ -2340,7 +2336,6 @@
 <translation id="404493185430269859">موتور جستجوی پیش‌‌فرض</translation>
 <translation id="4047112090469382184">ایمنی آن به چه صورت است</translation>
 <translation id="4052120076834320548">بسیار کوچک</translation>
-<translation id="4055023634561256217">‏قبل از اینکه دستگاه شما با Powerwash بازنشانی شود، راه‌اندازی مجدد لازم است.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">مشاهده در فروشگاه</translation>
 <translation id="4058720513957747556">‏AppSocket ‏(TCP/IP)</translation>
@@ -3002,7 +2997,6 @@
 <translation id="4991420928586866460">در نظر گرفتن کلیدهای ردیف بالا به عنوان کلیدهای عملکرد</translation>
 <translation id="499165176004408815">استفاده از حالت کنتراست بالا</translation>
 <translation id="4992066212339426712">باصدا کردن</translation>
-<translation id="4992458225095111526">‏تأیید Powerwash</translation>
 <translation id="4994474651455208930">سایت‌ها اجازه دارند درخواست کنند کنترل کننده پیش‌فرض برای پروتکل ها شوند</translation>
 <translation id="4998873842614926205">تأیید تغییرها</translation>
 <translation id="4999273653895592255">این پرچم کنترل می‌کند رابط کاربری جدید یا قدیمی برای پنجره انتخابگر ضبط صفحه‌نمایش نشان داده شود یا خیر.</translation>
@@ -3037,7 +3031,6 @@
 <translation id="5045550434625856497">گذرواژه نادرست</translation>
 <translation id="5046747760454685637">‏قبل از اجازه دادن به سایت‌ها برای اجرای Flash سؤال شود (توصیه می‌شود)</translation>
 <translation id="5048179823246820836">نوردیک</translation>
-<translation id="5053604404986157245">‏‫گذرواژه TPM، که به صورت تصادفی ایجاد می‌شود، در دسترس نیست. پس از Powerwash این اتفاق عادی است.</translation>
 <translation id="5053803681436838483">آدرس ارسال جدید...</translation>
 <translation id="5055309315264875868">پیوندی را در صفحه تنظیمات مدیریت گذرواژه نشان دهید تا گذرواژه همگام‌سازی شده‌ خودتان را آنلاین مدیریت کنید.</translation>
 <translation id="5061188462607594407">برای ادامه دادن، <ph name="PHONE_TYPE" /> خودتان را فعال کنید</translation>
@@ -3286,7 +3279,6 @@
 <translation id="5357579842739549440">میان‌برهای صفحه‌کلید برای اشکال‌زدایی</translation>
 <translation id="5360150013186312835">نمایش در نوار ابزار</translation>
 <translation id="5362741141255528695">فایل کلید خصوصی را انتخاب کنید.</translation>
-<translation id="5363109466694494651">‏Powerwash و برگرداندن</translation>
 <translation id="5367091008316207019">درحال خواندن فایل ...</translation>
 <translation id="5367260322267293088">قابلیت آزمایشی «نمایش نمادهای بزرگ در صفحه برگه جدید» را فعال می‌کند.</translation>
 <translation id="5368720394188453070">تلفنتان قفل است. برای وارد شدن قفل آن را باز کنید.</translation>
@@ -3656,7 +3648,6 @@
 <translation id="5851063901794976166">موردی برای مشاهده موجود نیست...</translation>
 <translation id="5851868085455377790">صادرکننده</translation>
 <translation id="5852112051279473187">وای! هنگام ثبت این دستگاه واقعا مشکلی روی داد. لطفاً دوباره امتحان کنید یا با نماینده پشتیبانی خود تماس بگیرید.</translation>
-<translation id="5852137567692933493">‏راه‌اندازی مجدد و Powerwash</translation>
 <translation id="5854409662653665676">درصورت بروز مشکلات مکرر، می‌توانید برای حل مشکل در این مدول موارد زیر را امتحان کنید:</translation>
 <translation id="5854912040170951372">پیتزا</translation>
 <translation id="5855119960719984315">تغییر پنجره</translation>
@@ -3761,7 +3752,6 @@
 <translation id="6007237601604674381">انتقال انجام نشد. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">پینگ‌های بررسی پیوند ارسال می‌کند.</translation>
 <translation id="6015796118275082299">سال</translation>
-<translation id="6016551720757758985">‏تأیید Powerwash به همراه بازگشت به نسخه قبلی</translation>
 <translation id="6016809788585079594">‏برای آخرین بار بگویید «Ok Google»</translation>
 <translation id="6017225534417889107">تغییر…</translation>
 <translation id="6017981840202692187">افزودن به برنامه‌ها</translation>
@@ -4871,7 +4861,6 @@
 <translation id="7553242001898162573">گذرواژه‌تان را وارد کنید</translation>
 <translation id="7554791636758816595">برگهٔ جدید</translation>
 <translation id="7556033326131260574">‏Smart Lock حساب شما را تأیید نکرد. برای ورود، گذرواژه‌تان را تایپ کنید.</translation>
-<translation id="7556242789364317684">‏متأسفانه <ph name="SHORT_PRODUCT_NAME" /> قادر به بازیابی تنظیماتتان نیست. برای رفع این خطا، <ph name="SHORT_PRODUCT_NAME" /> باید دستگاهتان را با Powerwash بازنشانی کند.</translation>
 <translation id="7558050486864662801">وقتی سایتی باید به میکروفون شما دسترسی داشته باشد، سؤال شود (توصیه می‌شود)</translation>
 <translation id="7559719679815339381">‏لطفاً صبر کنید....برنامه کیوسک در حال به‌روز شدن است. فلش USB را خارج نکنید.</translation>
 <translation id="7561196759112975576">همیشه</translation>
@@ -5195,7 +5184,6 @@
 <translation id="8008356846765065031">اینترنت قطع است. لطفاً اتصال اینترنتتان را بررسی کنید.</translation>
 <translation id="8012382203418782830">این صفحه ترجمه شده است.</translation>
 <translation id="8014154204619229810">در حال حاضر به‌روزرسان در حال اجراست. برای بررسی دوباره، بعد از یک دقیقه بازخوانی کنید.</translation>
-<translation id="8014206674403687691">‏<ph name="IDS_SHORT_PRODUCT_NAME" /> قادر نیست به نسخه نصب شده قبلی بازگردد. لطفاً دوباره سعی کنید دستگاهتان را Powerwash کنید.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">احراز هویت نادرست</translation>
 <translation id="8022523925619404071">فعال کردن به‌روزرسانی خودکار</translation>
@@ -5256,7 +5244,6 @@
 <translation id="810066391692572978">فایل از ویژگی‌های پشتیبانی نشده استفاده می‌کند.</translation>
 <translation id="8101987792947961127">در راه‌اندازی مجدد بعدی پاکسازی لازم است</translation>
 <translation id="8102535138653976669">‏<ph name="PRODUCT_NAME" /> داده‌های شما را به صورت ایمن با حساب Google همگام‌سازی می‌کند. همه را همگام‌سازی کنید یا انواع داده‌های همگام‌سازی شده و تنظیمات رمزگذاری را سفارشی کنید.</translation>
-<translation id="8104696615244072556">‏دستگاه <ph name="IDS_SHORT_PRODUCT_NAME" /> شما Powerwash می‌شود و به نسخه قبلی باز می‌گردد.</translation>
 <translation id="8105368624971345109">خاموش کردن</translation>
 <translation id="8106045200081704138">اشتراک‌گذاری شده با من</translation>
 <translation id="8106211421800660735">شماره کارت اعتباری</translation>

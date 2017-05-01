@@ -359,12 +359,6 @@ cr.define('cr.ui.login', function() {
       } else if (name == ACCELERATOR_VERSION) {
         if (this.allowToggleVersion_)
           $('version-labels').hidden = !$('version-labels').hidden;
-      } else if (name == ACCELERATOR_RESET) {
-        if (currentStepId == SCREEN_OOBE_RESET)
-          $('reset').send(login.Screen.CALLBACK_USER_ACTED,
-                          USER_ACTION_ROLLBACK_TOGGLED);
-        else if (RESET_AVAILABLE_SCREEN_GROUP.indexOf(currentStepId) != -1)
-          chrome.send('toggleResetScreen');
       } else if (name == ACCELERATOR_DEVICE_REQUISITION) {
         if (this.isOobeUI())
           this.showDeviceRequisitionPrompt_();

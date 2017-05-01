@@ -206,8 +206,6 @@ void AddAboutStrings(content::WebUIDataSource* html_source) {
     {"aboutDetailedBuildInfo", IDS_SETTINGS_ABOUT_PAGE_DETAILED_BUILD_INFO},
     {"aboutFirmwareLabel", IDS_SETTINGS_ABOUT_PAGE_FIRMWARE},
     {"aboutPlatformLabel", IDS_SETTINGS_ABOUT_PAGE_PLATFORM},
-    {"aboutRelaunchAndPowerwash",
-     IDS_SETTINGS_ABOUT_PAGE_RELAUNCH_AND_POWERWASH},
     {"aboutUpgradeUpdatingChannelSwitch",
      IDS_SETTINGS_UPGRADE_UPDATING_CHANNEL_SWITCH},
     {"aboutUpgradeSuccessChannelSwitch",
@@ -216,15 +214,9 @@ void AddAboutStrings(content::WebUIDataSource* html_source) {
 
     // About page, channel switcher dialog.
     {"aboutChangeChannel", IDS_SETTINGS_ABOUT_PAGE_CHANGE_CHANNEL},
-    {"aboutChangeChannelAndPowerwash",
-     IDS_SETTINGS_ABOUT_PAGE_CHANGE_CHANNEL_AND_POWERWASH},
     {"aboutDelayedWarningMessage",
      IDS_SETTINGS_ABOUT_PAGE_DELAYED_WARNING_MESSAGE},
     {"aboutDelayedWarningTitle", IDS_SETTINGS_ABOUT_PAGE_DELAYED_WARNING_TITLE},
-    {"aboutPowerwashWarningMessage",
-     IDS_SETTINGS_ABOUT_PAGE_POWERWASH_WARNING_MESSAGE},
-    {"aboutPowerwashWarningTitle",
-     IDS_SETTINGS_ABOUT_PAGE_POWERWASH_WARNING_TITLE},
     {"aboutUnstableWarningMessage",
      IDS_SETTINGS_ABOUT_PAGE_UNSTABLE_WARNING_MESSAGE},
     {"aboutUnstableWarningTitle",
@@ -627,13 +619,6 @@ void AddResetStrings(content::WebUIDataSource* html_source) {
     {"resetPageCommit", IDS_RESET_PROFILE_SETTINGS_COMMIT_BUTTON},
     {"resetPageFeedback", IDS_SETTINGS_RESET_PROFILE_FEEDBACK},
     {"viewReportedSettings", IDS_SETTINGS_RESET_VIEW_REPORTED_SETTINGS},
-#if defined(OS_CHROMEOS)
-    {"powerwashTitle", IDS_OPTIONS_FACTORY_RESET},
-    {"powerwashDialogTitle", IDS_OPTIONS_FACTORY_RESET_HEADING},
-    {"powerwashDialogExplanation", IDS_OPTIONS_FACTORY_RESET_WARNING},
-    {"powerwashDialogButton", IDS_SETTINGS_RESTART},
-    {"powerwashLearnMoreUrl", IDS_FACTORY_RESET_HELP_URL},
-#endif
     // Automatic reset banner.
     {"resetProfileBannerButton",
      IDS_AUTOMATIC_SETTINGS_RESET_BANNER_RESET_BUTTON_TEXT},
@@ -646,12 +631,6 @@ void AddResetStrings(content::WebUIDataSource* html_source) {
                          chrome::kResetProfileSettingsLearnMoreURL);
   html_source->AddString("resetProfileBannerLearnMoreUrl",
                          chrome::kAutomaticSettingsResetLearnMoreURL);
-#if defined(OS_CHROMEOS)
-  html_source->AddString(
-      "powerwashDescription",
-      l10n_util::GetStringFUTF16(IDS_OPTIONS_FACTORY_RESET_DESCRIPTION,
-                                 l10n_util::GetStringUTF16(IDS_PRODUCT_NAME)));
-#endif
 }
 
 #if defined(OS_CHROMEOS)

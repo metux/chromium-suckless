@@ -49,7 +49,6 @@
 #include "chrome/browser/ui/webui/chromeos/login/network_dropdown_handler.h"
 #include "chrome/browser/ui/webui/chromeos/login/network_screen_handler.h"
 #include "chrome/browser/ui/webui/chromeos/login/network_state_informer.h"
-#include "chrome/browser/ui/webui/chromeos/login/reset_screen_handler.h"
 #include "chrome/browser/ui/webui/chromeos/login/signin_screen_handler.h"
 #include "chrome/browser/ui/webui/chromeos/login/supervised_user_creation_screen_handler.h"
 #include "chrome/browser/ui/webui/chromeos/login/terms_of_service_screen_handler.h"
@@ -231,10 +230,6 @@ OobeUI::OobeUI(content::WebUI* web_ui, const GURL& url)
   EulaScreenHandler* eula_screen_handler = new EulaScreenHandler(core_handler_);
   eula_view_ = eula_screen_handler;
   AddScreenHandler(eula_screen_handler);
-
-  ResetScreenHandler* reset_screen_handler = new ResetScreenHandler();
-  reset_view_ = reset_screen_handler;
-  AddScreenHandler(reset_screen_handler);
 
   KioskAutolaunchScreenHandler* autolaunch_screen_handler =
       new KioskAutolaunchScreenHandler();

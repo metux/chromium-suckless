@@ -26,7 +26,6 @@
 #include "chrome/browser/chromeos/login/screens/hid_detection_screen.h"
 #include "chrome/browser/chromeos/login/screens/host_pairing_screen.h"
 #include "chrome/browser/chromeos/login/screens/network_screen.h"
-#include "chrome/browser/chromeos/login/screens/reset_screen.h"
 #include "chrome/browser/chromeos/policy/enrollment_config.h"
 
 class PrefRegistrySimple;
@@ -149,7 +148,6 @@ class WizardController : public BaseScreenDelegate,
   static const char kEulaScreenName[];
   static const char kEnableDebuggingScreenName[];
   static const char kEnrollmentScreenName[];
-  static const char kResetScreenName[];
   static const char kKioskEnableScreenName[];
   static const char kKioskAutolaunchScreenName[];
   static const char kErrorScreenName[];
@@ -173,7 +171,6 @@ class WizardController : public BaseScreenDelegate,
   void ShowUserImageScreen();
   void ShowEulaScreen();
   void ShowEnrollmentScreen();
-  void ShowResetScreen();
   void ShowKioskAutolaunchScreen();
   void ShowEnableDebuggingScreen();
   void ShowKioskEnableScreen();

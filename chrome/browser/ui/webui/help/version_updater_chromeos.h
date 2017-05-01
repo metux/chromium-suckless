@@ -22,8 +22,7 @@ class VersionUpdaterCros : public VersionUpdater,
   // VersionUpdater implementation.
   void CheckForUpdate(const StatusCallback& callback,
                       const PromoteCallback&) override;
-  void SetChannel(const std::string& channel,
-                  bool is_powerwash_allowed) override;
+  void SetChannel(const std::string& channel) override;
   void GetChannel(bool get_current_channel,
                   const ChannelCallback& callback) override;
 

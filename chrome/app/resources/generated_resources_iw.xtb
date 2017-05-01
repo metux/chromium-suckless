@@ -1166,7 +1166,6 @@
 <translation id="2562743677925229011">לא נכנסת לחשבון <ph name="SHORT_PRODUCT_NAME" /> שלך</translation>
 <translation id="2565670301826831948">מהירות לוח מגע:</translation>
 <translation id="2565828445440744174">‏WebAssembly ניסיוני</translation>
-<translation id="2566124945717127842">‏בצע פעולת Powerwash כדי לאפס את מכשיר <ph name="IDS_SHORT_PRODUCT_NAME" /> שלך כך שיהיה כמו חדש.</translation>
 <translation id="2568774940984945469">גורם מכיל של סרגל המידע</translation>
 <translation id="2570000010887652771">נתונים שנשמרו.</translation>
 <translation id="2570648609346224037">אירעה בעיה במהלך ההורדה של תמונת השחזור.</translation>
@@ -1363,7 +1362,6 @@
 <ph name="LIST_ITEM" />להגדיר ערך מותאם אישית עבור סיסמת ההתחברות לשורש המערכת ולערוץ הפיתוח על מנת לגשת אל המכשיר באופן ידני באמצעות SSH
 <ph name="END_LIST" />
 <ph name="BR" />
-לאחר ההפעלה, רוב התכונות של ניפוי הבאגים יישארו פעילות, גם לאחר ביצוע Powerwash או מחיקה של הנתונים במכשיר ארגוני מנוהל. כדי להשבית באופן מלא את כל תכונות ניפוי הבאגים, בצע את תהליך השחזור של מערכת ההפעלה של Chrome‏ (https://support.google.com/chromebook/answer/1080595).
 <ph name="BR" />
 <ph name="BR" />
 למידע נוסף על תכונות ניפוי הבאגים, היכנס לכתובת:<ph name="BR" />
@@ -1589,7 +1587,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="3065140616557457172">הקלד לחיפוש או הזן כתובת אתר לניווט - שניהם עובדים.</translation>
 <translation id="3067198360141518313">הרץ פלאגין זה</translation>
 <translation id="307519606911195071">הפעל תכונות נגישות נוספות בדף ההגדרות.</translation>
-<translation id="3075874217500066906">‏נדרשת הפעלה מחדש על מנת להתחיל את תהליך ה-Powerwash. לאחר ההפעלה מחדש תתבקש לאשר שברצונך להמשיך.</translation>
 <translation id="3076677906922146425">‏אפשר לכולם להוסיף אדם ב-Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -3002,7 +2999,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="4991420928586866460">התייחס למקשים בשורה העליונה כאל מקשי פונקציה</translation>
 <translation id="499165176004408815">השתמש במצב ניגודיות גבוהה</translation>
 <translation id="4992066212339426712">בטל השתקה</translation>
-<translation id="4992458225095111526">‏אשר פעולת Powerwash</translation>
 <translation id="4994474651455208930">אפשר לאתרים לבקש להפוך למטפלי ברירת המחדל עבור פרוטוקולים</translation>
 <translation id="4998873842614926205">אשר שינויים</translation>
 <translation id="4999273653895592255">דגל זה קובע אם נציג את ממשק המשתמש הישן או החדש של חלון לבחירת סטרימינג ממחשב שולחני.</translation>
@@ -3037,7 +3033,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="5045550434625856497">סיסמה שגויה</translation>
 <translation id="5046747760454685637">‏בקש אישור לפני שתתיר לאתרים להפעיל Flash (מומלץ)</translation>
 <translation id="5048179823246820836">נורדית</translation>
-<translation id="5053604404986157245">‏סיסמת ה-TPM הנוצרת באופן אקראי אינה זמינה. המצב הזה נורמלי לאחר Powerwash.</translation>
 <translation id="5053803681436838483">כתובת חדשה למשלוח...</translation>
 <translation id="5055309315264875868">הצג קישור בדף ההגדרות של מנהל הסיסמאות כדי לנהל את הסיסמאות המסונכרנות שלך באינטרנט.</translation>
 <translation id="5061188462607594407">אבטח את ה-<ph name="PHONE_TYPE" /> כדי להמשיך</translation>
@@ -3286,7 +3281,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="5357579842739549440">מקשי קיצור לניפוי באגים</translation>
 <translation id="5360150013186312835">הצג בסרגל הכלים</translation>
 <translation id="5362741141255528695">בחר קובץ מפתח פרטי.</translation>
-<translation id="5363109466694494651">‏בצע Powerwash וחזור לגרסה הקודמת</translation>
 <translation id="5367091008316207019">קורא את הקובץ..</translation>
 <translation id="5367260322267293088">הפעלת הדף הניסיוני של כרטיסייה חדשה עם סמלים גדולים.</translation>
 <translation id="5368720394188453070">הטלפון שלך נעול. בטל את הנעילה כדי להיכנס.</translation>
@@ -3656,7 +3650,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="5851063901794976166">אין מה לראות כאן...</translation>
 <translation id="5851868085455377790">מנפיק</translation>
 <translation id="5852112051279473187">אופס! משהו השתבש בעת הרשמת התקן זה. נסה שוב או פנה לנציג תמיכה.</translation>
-<translation id="5852137567692933493">‏הפעל מחדש ובצע פעולת Powerwash</translation>
 <translation id="5854409662653665676">אם אתה נתקל בבעיות לעתים קרובות, תוכל לנסות את הפעולות הבאות לפתירת הבעיה במודול זה:</translation>
 <translation id="5854912040170951372">משולש</translation>
 <translation id="5855119960719984315">החלפת חלון</translation>
@@ -3761,7 +3754,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="6007237601604674381">ההעברה נכשלה. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">שולח איתותי פינג לביקורת של היפר-קישורים.</translation>
 <translation id="6015796118275082299">שנה</translation>
-<translation id="6016551720757758985">‏אשר פעולת Powerwash בעת חזרה לגרסה קודמת</translation>
 <translation id="6016809788585079594">‏אמור 'Ok Google' בפעם האחרונה</translation>
 <translation id="6017225534417889107">שנה...</translation>
 <translation id="6017981840202692187">הוספה ליישומים</translation>
@@ -4039,7 +4031,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="6409731863280057959">חלונות קופצים</translation>
 <translation id="6410063390789552572">לא ניתן לגשת לספריית רשת</translation>
 <translation id="6410257289063177456">קובצי תמונה</translation>
-<translation id="6410328738210026208">‏החלף ערוץ ובצע Powerwash</translation>
 <translation id="6410668567036790476">הוספת מנוע חיפוש</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">חלון חדש של גלישה בסתר</translation>
@@ -4748,7 +4739,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="7405422715075171617">אפשר סריקה של מספר כרטיס אשראי חדש בעת מילוי טופס של כרטיס אשראי.</translation>
 <translation id="740624631517654988">חלונות קופצים חסומים</translation>
 <translation id="7406691462051376731">‏נכון לעכשיו מכשיר זה שולח נתוני ניתוח ושימוש אל Google.‏ <ph name="BEGIN_LINK1" />הגדרה<ph name="END_LINK1" /> זו נאכפת על ידי הבעלים. <ph name="BEGIN_LINK2" />למידע נוסף<ph name="END_LINK2" />.</translation>
-<translation id="7409233648990234464">‏הפעל מחדש ובצע Powerwash</translation>
 <translation id="7409836189476010449">‏הפעל Flash</translation>
 <translation id="7410344089573941623">שאל אם <ph name="HOST" /> רוצה גישה למצלמה ולמיקרופון</translation>
 <translation id="7412226954991670867">‏זיכרון GPU</translation>
@@ -4862,7 +4852,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="7553242001898162573">הזן את הסיסמה</translation>
 <translation id="7554791636758816595">כרטיסייה חדשה</translation>
 <translation id="7556033326131260574">‏מערכת Smart Lock לא הצליחה לאמת את חשבונך. כדי להיכנס, הזן את הסיסמה.</translation>
-<translation id="7556242789364317684">‏לצערנו, <ph name="SHORT_PRODUCT_NAME" /> לא יכול לשחזר את ההגדרות שלך. כדי לתקן את השגיאה, <ph name="SHORT_PRODUCT_NAME" /> צריך לאפס את המכשיר שלך באמצעות Powerwash.</translation>
 <translation id="7558050486864662801">שאל כשאתר מבקש גישה אל המיקרופון שלך (מומלץ)</translation>
 <translation id="7559719679815339381">המתן....מתבצע עדכון של אפליקצית הקיוסק. אל תסיר את הדיסק און קי.</translation>
 <translation id="7561196759112975576">תמיד</translation>
@@ -5185,7 +5174,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="8008356846765065031">האינטרנט מנותק. בדוק את חיבור האינטרנט.</translation>
 <translation id="8012382203418782830">הדף הזה תורגם.</translation>
 <translation id="8014154204619229810">המעדכן פועל כעת. רענן בעוד דקה כדי לבדוק שנית.</translation>
-<translation id="8014206674403687691">‏<ph name="IDS_SHORT_PRODUCT_NAME" /> אינו יכול לחזור לגרסה המותקנת הקודמת. נסה לבצע שוב Powerwash למכשיר.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">אימות פגום</translation>
 <translation id="8022523925619404071">הפעל עדכון אוטומטי</translation>
@@ -5244,9 +5232,7 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="80974698889265265">‏מספרי ה-PIN אינם תואמים</translation>
 <translation id="8098975406164436557">להשתמש בטלפון זה כדי לבטל את נעילת ה-<ph name="DEVICE_TYPE" /> שלך?</translation>
 <translation id="810066391692572978">הקובץ משתמש בתכונות שאינן נתמכות.</translation>
-<translation id="8101987792947961127">‏יש לבצע Powerwash באתחול הבא</translation>
 <translation id="8102535138653976669">‏<ph name="PRODUCT_NAME" /> מסנכרן באופן מאובטח את הנתונים שלך עם חשבון Google. ודא שהכל יישאר מסונכרן או התאם אישית סוגי נתונים מסונכרנים והגדרות הצפנה.</translation>
-<translation id="8104696615244072556">‏בצע פעולת Powerwash במכשיר <ph name="IDS_SHORT_PRODUCT_NAME" /> שלך וחזור לגרסה הקודמת.</translation>
 <translation id="8105368624971345109">כבה</translation>
 <translation id="8106045200081704138">בשיתוף איתי</translation>
 <translation id="8106211421800660735">מספר כרטיס אשראי</translation>

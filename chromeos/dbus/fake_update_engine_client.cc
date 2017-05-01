@@ -69,8 +69,7 @@ void FakeUpdateEngineClient::NotifyObserversThatStatusChanged(
   FOR_EACH_OBSERVER(Observer, observers_, UpdateStatusChanged(status));
 }
 
-void FakeUpdateEngineClient::SetChannel(const std::string& target_channel,
-                                        bool is_powerwash_allowed) {
+void FakeUpdateEngineClient::SetChannel(const std::string& target_channel) {
 }
 
 void FakeUpdateEngineClient::GetChannel(bool get_current_channel,

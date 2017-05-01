@@ -31,7 +31,6 @@ class NetworkErrorModel : public BaseScreen {
   static const char kUserActionConfigureCertsButtonClicked[];
   static const char kUserActionDiagnoseButtonClicked[];
   static const char kUserActionLaunchOobeGuestSessionClicked[];
-  static const char kUserActionLocalStateErrorPowerwashButtonClicked[];
   static const char kUserActionRebootButtonClicked[];
   static const char kUserActionShowCaptivePortalClicked[];
   static const char kUserActionConnectRequested[];

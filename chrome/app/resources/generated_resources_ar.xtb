@@ -993,7 +993,6 @@
 <translation id="2332742915001411729">إعادة تعيين على الإعدادات الافتراضية</translation>
 <translation id="2335122562899522968">تُعين هذه الصفحة ملفات تعريف الارتباط.</translation>
 <translation id="2336228925368920074">وضع إشارة على جميع علامات التبويب...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">‏إضافة تعليق توضيحي إلى Google Keep</translation>
 <translation id="2339120501444485379">أدخل اسمًا جديدًا</translation>
 <translation id="2339641773402824483">التحقّق من التحديثات...</translation>
@@ -1171,7 +1170,6 @@
 <translation id="2562743677925229011">لم يتم تسجيل الدخول إلى <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">سرعة لوحة اللمس:</translation>
 <translation id="2565828445440744174">‏WebAssembly التجريبية</translation>
-<translation id="2566124945717127842">‏يمكنك إجراء Powerwash لإعادة تعيين جهاز <ph name="IDS_SHORT_PRODUCT_NAME" /> ليصبح كما لو كان جديدًا.</translation>
 <translation id="2568774940984945469">حاوية شريط المعلومات</translation>
 <translation id="2570000010887652771">تم حفظ البيانات.</translation>
 <translation id="2570648609346224037">حدثت مشكلة أثناء تنزيل صورة الاستعادة.</translation>
@@ -1367,7 +1365,6 @@
       <ph name="LIST_ITEM" />إعادة كلمة مرور تسجيل الدخول لكل من جذر النظام والجهاز من خلال قيمة مخصصة حتى يُمكنك إضافة SSH يدويًا إلى الجهاز
     <ph name="END_LIST" />
     <ph name="BR" />
-    بعد حدوث التمكين، ستبقى معظم ميزات التصحيح ممكّنة حتى بعد إجراء powerwash أو محو البيانات على جهاز مُدار من قبل المؤسسات.  لتعطيل ميزات التصحيح بالكامل، أكمل عملية استرداد تشغيل نظام Chrome (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     لمزيد من المعلومات حول ميزات التصحيح، راجع:<ph name="BR" />
@@ -2338,7 +2335,6 @@
 <translation id="404493185430269859">محرك البحث الافتراضي</translation>
 <translation id="4047112090469382184">كم هذا آمن</translation>
 <translation id="4052120076834320548">دقيق</translation>
-<translation id="4055023634561256217">‏يُتطلب إعادة تشغيل الجهاز حتى يتسنى لك إعادة تعيينه باستخدام Powerwash.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">عرض في المتجر</translation>
 <translation id="4058720513957747556">‏AppSocket (بروتوكول TCP/IP)</translation>
@@ -3002,7 +2998,6 @@
 <translation id="4991420928586866460">معالجة مفاتيح الصف العلوي باعتبارها مفاتيح الوظائف</translation>
 <translation id="499165176004408815">استخدام وضع التباين العالي</translation>
 <translation id="4992066212339426712">إعادة الصوت</translation>
-<translation id="4992458225095111526">‏تأكيد Powerwash</translation>
 <translation id="4994474651455208930">السماح للمواقع بأن تطلب أن تصبح معالجات افتراضية للبروتوكولات</translation>
 <translation id="4998873842614926205">تأكيد التغييرات</translation>
 <translation id="4999273653895592255">تتحكم هذه العلامة في ما إذا كان يمكننا عرض واجهة المستخدم القديمة أو الجديدة لنافذة منتقي بث محتوى سطح المكتب.</translation>
@@ -3036,7 +3031,6 @@
 <translation id="5045550434625856497">كلمة مرور غير صحيحة</translation>
 <translation id="5046747760454685637">‏السؤال قبل السماح للمواقع بتشغيل Flash (موصى به)</translation>
 <translation id="5048179823246820836">الإسكندنافيّة</translation>
-<translation id="5053604404986157245">‏كلمة مرور TPM التي تم إنشاؤها عشوائيًا غير متوفرة. هذا أمر عادي بعد إجراء Powerwash.</translation>
 <translation id="5053803681436838483">عنوان شحن جديد...</translation>
 <translation id="5055309315264875868">عرض رابط في صفحة إعدادات مدير كلمة المرور لإدارة كلمات المرور المتزامنة عبر الإنترنت.</translation>
 <translation id="5061188462607594407">تأمين <ph name="PHONE_TYPE" /> لديك للمتابعة</translation>
@@ -3654,7 +3648,6 @@
 <translation id="5851063901794976166">لا يوجد شئ هنا...</translation>
 <translation id="5851868085455377790">جهة الإصدار</translation>
 <translation id="5852112051279473187">عفوًا، حدث خطأ جسيم أثناء تسجيل هذه الخدمة. الرجاء إعادة المحاولة أو الاتصال بممثل الدعم.</translation>
-<translation id="5852137567692933493">‏إعادة التشغيل وإجراء Powerwash</translation>
 <translation id="5854409662653665676">إذا كنت تواجه مشكلات متكررة، يمكنك تجربة ما يلي لحل المشكلة في هذه الوحدة:</translation>
 <translation id="5854912040170951372">الشريحة</translation>
 <translation id="5855119960719984315">تبديل النافذة</translation>
@@ -3759,7 +3752,6 @@
 <translation id="6007237601604674381">أخفق النقل. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">يرسل أدوات فحص الاتصال لتدقيق الروابط التشعبية.</translation>
 <translation id="6015796118275082299">عام</translation>
-<translation id="6016551720757758985">‏تأكيد Powerwash بالعودة إلى الإصدار السابق</translation>
 <translation id="6016809788585079594">‏قل "Ok Google" للمرة الأخيرة</translation>
 <translation id="6017225534417889107">تغيير...</translation>
 <translation id="6017981840202692187">إضافة إلى التطبيقات</translation>
@@ -4038,7 +4030,6 @@
 <translation id="6409731863280057959">النوافذ المنبثقة</translation>
 <translation id="6410063390789552572">لا يمكن الدخول إلى مكتبة الشبكة</translation>
 <translation id="6410257289063177456">ملفات الصور</translation>
-<translation id="6410328738210026208">‏تغيير القناة وPowerwash</translation>
 <translation id="6410668567036790476">إضافة محرّك بحث</translation>
 <translation id="641105183165925463">$1 ميغابايت</translation>
 <translation id="6412931879992742813">نافذة جديدة للتصفح المتخفي</translation>
@@ -4755,7 +4746,6 @@
 <translation id="7405422715075171617">تمكين فحص رقم بطاقة ائتمان جديدة عند ملء استمارة بطاقة ائتمان.</translation>
 <translation id="740624631517654988">تم منع النوافذ المنبثقة.</translation>
 <translation id="7406691462051376731">‏يرسل هذا الجهاز حاليًا بيانات التشخيص والاستخدام إلى Google. ويتم فرض هذا <ph name="BEGIN_LINK1" />الإعداد<ph name="END_LINK1" /> من خلال المالك. <ph name="BEGIN_LINK2" />مزيد من المعلومات<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">‏إعادة تشغيل وإجراء Powerwash</translation>
 <translation id="7409836189476010449">‏تشغيل Flash</translation>
 <translation id="7410344089573941623">السؤال عند رغبة <ph name="HOST" /> في الدخول إلى الكاميرا والميكروفون التابعين لك</translation>
 <translation id="7412226954991670867">‏ذاكرة GPU</translation>
@@ -4869,7 +4859,6 @@
 <translation id="7553242001898162573">أدخل كلمة المرور</translation>
 <translation id="7554791636758816595">علامة تبويب جديدة</translation>
 <translation id="7556033326131260574">‏لم يتمكن Smart Lock من التحقق من حسابك. اكتب كلمة المرور للدخول.</translation>
-<translation id="7556242789364317684">‏للأسف، يتعذّر على <ph name="SHORT_PRODUCT_NAME" /> استعادة إعداداتك. ولإصلاح الخطأ، يجب على <ph name="SHORT_PRODUCT_NAME" /> إعادة تعيين جهازك باستخدام Powerwash.</translation>
 <translation id="7558050486864662801">الرجوع إليك عندما يطلب أحد المواقع الدخول إلى الميكروفون (مستحسن)</translation>
 <translation id="7559719679815339381">‏يُرجى الانتظار ...بينما يتم تحديث تطبيق Kiosk. لا تقم بإزالة جهاز USB.</translation>
 <translation id="7561196759112975576">دومًا</translation>
@@ -5253,9 +5242,7 @@
 <translation id="80974698889265265">أرقام التعريف الشخصية غير متطابقة</translation>
 <translation id="8098975406164436557">هل ترغب في استخدام هذا الهاتف لإلغاء قفل <ph name="DEVICE_TYPE" />؟</translation>
 <translation id="810066391692572978">يستخدم الملف ميزات غير معتمدة.</translation>
-<translation id="8101987792947961127">‏يتطلب إجراء Powerwash بعد عملية إعادة التشغيل التالية</translation>
 <translation id="8102535138653976669">‏يزامن <ph name="PRODUCT_NAME" /> بياناتك مع حسابك في Google بشكل آمن. يمكنك مزامنة جميع العناصر أو تخصيص أنواع البيانات التي تتم مزامنتها وإعدادات التشفير.</translation>
-<translation id="8104696615244072556">‏استخدم وظيفة Powerwash <ph name="IDS_SHORT_PRODUCT_NAME" /> وارجع إلى الإصدار السابق.</translation>
 <translation id="8105368624971345109">إيقاف</translation>
 <translation id="8106045200081704138">تمت مشاركتها معي</translation>
 <translation id="8106211421800660735">رقم بطاقة الائتمان</translation>

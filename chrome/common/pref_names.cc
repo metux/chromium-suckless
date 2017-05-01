@@ -1881,9 +1881,6 @@ const char kPerformanceTracingEnabled[] =
 // Defaults to false.
 const char kTabStripStackedLayout[] = "tab-strip-stacked-layout";
 
-// Indicates that factory reset was requested from options page or reset screen.
-const char kFactoryResetRequested[] = "FactoryResetRequested";
-
 // Indicates that debugging features were requested from oobe screen.
 const char kDebuggingFeaturesRequested[] = "DebuggingFeaturesRequested";
 

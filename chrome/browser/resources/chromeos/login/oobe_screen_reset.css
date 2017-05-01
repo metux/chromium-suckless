@@ -26,9 +26,7 @@
   height: 112px;
 }
 
-#reset #reset-warning-msg,
-#reset #powerwash-warning-msg,
-#reset #powerwash-and-rollback-warning-msg {
+#reset #reset-warning-msg {
   color: #606060;
   font-size: 22px;
   padding: 5px 45px 30px;
@@ -62,14 +60,12 @@
   vertical-align: middle;
 }
 
-.powerwash-proposal-specific,
 .rollback-proposal-specific,
 .revert-promise-specific,
 .restart-required-specific {
   display: none;
 }
 
-.powerwash-proposal-view .powerwash-proposal-specific,
 .rollback-proposal-view .rollback-proposal-specific,
 .restart-required-view .restart-required-specific,
 .revert-promise-view .revert-promise-specific {
@@ -85,10 +81,8 @@
 }
 
 .restart-required-view #reset-restart-button,
-.powerwash-proposal-view #reset-toconfirm-button,
 .rollback-proposal-view #reset-toconfirm-button,
 .restart-required-view #reset-cancel-button,
-.powerwash-proposal-view #reset-cancel-button,
 .rollback-proposal-view #reset-cancel-button {
   display: inline-block;
 }

@@ -81,7 +81,6 @@ struct ASH_EXPORT UpdateInfo {
 
   UpdateSeverity severity;
   bool update_required;
-  bool factory_reset_required;
 };
 
 class CastConfigDelegate;

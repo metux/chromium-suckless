@@ -477,15 +477,8 @@ void AboutHandler::HandleSetChannel(const base::ListValue* args) {
   }
 
   base::string16 channel;
-  bool is_powerwash_allowed;
-  if (!args->GetString(0, &channel) ||
-      !args->GetBoolean(1, &is_powerwash_allowed)) {
-    LOG(ERROR) << "Can't parse SetChannel() args";
-    return;
-  }
 
-  version_updater_->SetChannel(base::UTF16ToUTF8(channel),
-                               is_powerwash_allowed);
+  version_updater_->SetChannel(base::UTF16ToUTF8(channel));
   if (user_manager::UserManager::Get()->IsCurrentUserOwner()) {
     // Check for update after switching release channel.
     version_updater_->CheckForUpdate(

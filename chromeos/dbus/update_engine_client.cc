@@ -140,7 +140,7 @@ class UpdateEngineClientImpl : public UpdateEngineClient {
         update_engine::kUpdateEngineInterface,
         update_engine::kAttemptRollback);
     dbus::MessageWriter writer(&method_call);
-    writer.AppendBool(true /* powerwash */);
+    writer.AppendBool(true);
 
     update_engine_proxy_->CallMethod(
         &method_call,
@@ -165,8 +165,7 @@ class UpdateEngineClientImpl : public UpdateEngineClient {
 
   Status GetLastStatus() override { return last_status_; }
 
-  void SetChannel(const std::string& target_channel,
-                  bool is_powerwash_allowed) override {
+  void SetChannel(const std::string& target_channel) override {
     if (!IsValidChannel(target_channel)) {
       LOG(ERROR) << "Invalid channel name: " << target_channel;
       return;
@@ -177,11 +176,10 @@ class UpdateEngineClientImpl : public UpdateEngineClient {
         update_engine::kSetChannel);
     dbus::MessageWriter writer(&method_call);
     writer.AppendString(target_channel);
-    writer.AppendBool(is_powerwash_allowed);
+    writer.AppendBool(false);
 
     VLOG(1) << "Requesting to set channel: "
-            << "target_channel=" << target_channel << ", "
-            << "is_powerwash_allowed=" << is_powerwash_allowed;
+            << "target_channel=" << target_channel << ", ";
     update_engine_proxy_->CallMethod(
         &method_call,
         dbus::ObjectProxy::TIMEOUT_USE_DEFAULT,
@@ -464,11 +462,9 @@ class UpdateEngineClientStubImpl : public UpdateEngineClient {
     callback.Run(true);
   }
   Status GetLastStatus() override { return Status(); }
-  void SetChannel(const std::string& target_channel,
-                  bool is_powerwash_allowed) override {
+  void SetChannel(const std::string& target_channel) override {
     VLOG(1) << "Requesting to set channel: "
-            << "target_channel=" << target_channel << ", "
-            << "is_powerwash_allowed=" << is_powerwash_allowed;
+            << "target_channel=" << target_channel << ", ";
     target_channel_ = target_channel;
   }
   void GetChannel(bool get_current_channel,

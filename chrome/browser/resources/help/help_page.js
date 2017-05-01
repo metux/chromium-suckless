@@ -110,9 +110,6 @@ cr.define('help', function() {
         chrome.send('relaunchNow');
       });
       if (cr.isChromeOS) {
-        this.maybeSetOnClick_($('relaunch-and-powerwash'), function() {
-          chrome.send('relaunchAndPowerwash');
-        });
 
         this.channelTable_ = {
           'stable-channel': {
@@ -138,7 +135,7 @@ cr.define('help', function() {
       var channelChanger = $('channel-changer');
       if (channelChanger) {
         channelChanger.onchange = function(event) {
-          self.setChannel_(event.target.value, false);
+          self.setChannel_(event.target.value);
         };
       }
 
@@ -414,18 +411,6 @@ cr.define('help', function() {
         $('channel-change-disallowed-icon').hidden = this.canChangeChannel_;
       }
 
-      // Following invariant must be established at the end of this function:
-      // { ~$('relaunch_and_powerwash').hidden -> $('relaunch').hidden }
-      var relaunchAndPowerwashHidden = true;
-      if ($('relaunch-and-powerwash')) {
-        // It's allowed to do powerwash only for customer devices,
-        // when user explicitly decides to update to a more stable
-        // channel.
-        relaunchAndPowerwashHidden =
-            !this.targetChannelIsMoreStable_() || status != 'nearly_updated';
-        $('relaunch-and-powerwash').hidden = relaunchAndPowerwashHidden;
-      }
-
       if (cr.isChromeOS) {
         // Re-enable the update button if we are in a stale 'updated' status or
         // update has failed, and disable it if there's an update in progress or
@@ -448,7 +433,7 @@ cr.define('help', function() {
       if (container) {
         container.hidden = status == 'disabled';
         $('relaunch').hidden =
-            (status != 'nearly_updated') || !relaunchAndPowerwashHidden;
+            (status != 'nearly_updated');
 
         if (cr.isChromeOS) {
           // Assume the "updated" status is stale if we haven't checked yet.
@@ -461,7 +446,7 @@ cr.define('help', function() {
           // Hide the request update button if auto-updating is disabled or
           // a relaunch button is showing.
           $('request-update').hidden = status == 'disabled' ||
-            !$('relaunch').hidden || !relaunchAndPowerwashHidden;
+            !$('relaunch').hidden;
         }
 
         if (!cr.isMac)
@@ -623,11 +608,10 @@ cr.define('help', function() {
     /**
      * Sets the device target channel.
      * @param {string} channel The name of the target channel.
-     * @param {boolean} isPowerwashAllowed True iff powerwash is allowed.
      * @private
      */
-    setChannel_: function(channel, isPowerwashAllowed) {
-      chrome.send('setChannel', [channel, isPowerwashAllowed]);
+    setChannel_: function(channel) {
+      chrome.send('setChannel', [channel, false]);
       $('channel-change-confirmation').hidden = false;
       $('channel-change-confirmation').textContent = loadTimeData.getStringF(
           'channel-changed', this.channelTable_[channel].name);
@@ -755,8 +739,8 @@ cr.define('help', function() {
     HelpPage.getInstance().updateEnableReleaseChannel_(enabled);
   };
 
-  HelpPage.setChannel = function(channel, isPowerwashAllowed) {
-    HelpPage.getInstance().setChannel_(channel, isPowerwashAllowed);
+  HelpPage.setChannel = function(channel) {
+    HelpPage.getInstance().setChannel_(channel);
   };
 
   HelpPage.setBuildDate = function(buildDate) {

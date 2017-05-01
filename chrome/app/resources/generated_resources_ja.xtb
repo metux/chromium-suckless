@@ -993,7 +993,6 @@
 <translation id="2332742915001411729">デフォルトに戻す</translation>
 <translation id="2335122562899522968">このページの Cookie が設定されました。</translation>
 <translation id="2336228925368920074">すべてのタブをブックマークに追加...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Google Keep でメモを追加</translation>
 <translation id="2339120501444485379">新しい名前を入力</translation>
 <translation id="2339641773402824483">アップデートを確認しています...</translation>
@@ -1171,7 +1170,6 @@
 <translation id="2562743677925229011"><ph name="SHORT_PRODUCT_NAME" /> にログインしていません</translation>
 <translation id="2565670301826831948">タッチパッドの速度:</translation>
 <translation id="2565828445440744174">試験運用版 WebAssembly</translation>
-<translation id="2566124945717127842">お使いの <ph name="IDS_SHORT_PRODUCT_NAME" /> 搭載デバイスを出荷時の状態にリセットするために、Powerwash を実行します。</translation>
 <translation id="2568774940984945469">情報バー コンテナ</translation>
 <translation id="2570000010887652771">データ消費を削減しました。</translation>
 <translation id="2570648609346224037">リカバリ イメージのダウンロード中に問題が発生しました。</translation>
@@ -1368,7 +1366,6 @@
       <ph name="LIST_ITEM" />デバイスに SSH で手動アクセスできるように、dev とシステム ルート ログイン パスワードの両方をカスタム値に設定できます。
     <ph name="END_LIST" />
     <ph name="BR" />
-    デバッグ機能を有効にすると、企業の管理対象デバイスで Powerwash やデータ消去を実行した場合でもほとんどのデバッグ機能は有効なまま維持されます。すべてのデバッグ機能を完全に無効にするには、Chrome OS の復元処理を行ってください（https://support.google.com/chromebook/answer/1080595 をご覧ください）。
     <ph name="BR" />
     <ph name="BR" />
     デバッグ機能について詳しくは以下をご覧ください。<ph name="BR" />
@@ -1594,7 +1591,6 @@
 <translation id="3065140616557457172">キーワードを入力して検索するか、直接 URL を入力してください。</translation>
 <translation id="3067198360141518313">このプラグインを実行する</translation>
 <translation id="307519606911195071">[設定] ページで追加のユーザー補助機能を設定できるようにします。</translation>
-<translation id="3075874217500066906">Powerwash を開始するには再起動が必要です。再起動後、続行の確認メッセージが表示されます。</translation>
 <translation id="3076677906922146425">だれでも Chrome にユーザーを追加できるようにする</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2344,7 +2340,6 @@
 <translation id="404493185430269859">デフォルトの検索エンジン</translation>
 <translation id="4047112090469382184">デバイスが保護される仕組み</translation>
 <translation id="4052120076834320548">極小</translation>
-<translation id="4055023634561256217">デバイスを Powerwash でリセットするには再起動が必要です。</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">ストアで見る</translation>
 <translation id="4058720513957747556">AppSocket（TCP/IP）</translation>
@@ -3008,7 +3003,6 @@
 <translation id="4991420928586866460">キーボードの最上段のキーをファンクション キーとして使用する</translation>
 <translation id="499165176004408815">ハイコントラスト モードを使用</translation>
 <translation id="4992066212339426712">ミュートを解除</translation>
-<translation id="4992458225095111526">Powerwash の実行を確認</translation>
 <translation id="4994474651455208930">プロトコルのデフォルト ハンドラへのサイトの登録要求を許可する</translation>
 <translation id="4998873842614926205">変更内容を確認</translation>
 <translation id="4999273653895592255">デスクトップ キャプチャ選択ウィンドウで以前のユーザー インターフェースと新しいユーザー インターフェースのどちらを表示するかを制御するフラグです。</translation>
@@ -3043,7 +3037,6 @@
 <translation id="5045550434625856497">パスワードが正しくありません</translation>
 <translation id="5046747760454685637">サイトに Flash の実行を許可する前に確認する（推奨）</translation>
 <translation id="5048179823246820836">北欧</translation>
-<translation id="5053604404986157245">ランダムに生成された TPM パスワードは使用できません。これは Powerwash 後の通常の動作です。</translation>
 <translation id="5053803681436838483">新しい配送先住所...</translation>
 <translation id="5055309315264875868">パスワード マネージャの設定ページに、同期済みのパスワードをオンラインで管理するためのリンクを表示します。</translation>
 <translation id="5061188462607594407">先に進むには <ph name="PHONE_TYPE" /> を保護してください</translation>
@@ -3291,7 +3284,6 @@
 <translation id="5357579842739549440">デバッグ用キーボード ショートカット</translation>
 <translation id="5360150013186312835">ツールバーに表示</translation>
 <translation id="5362741141255528695">秘密鍵ファイルを選択します。</translation>
-<translation id="5363109466694494651">Powerwash を実行して以前のバージョンに戻す</translation>
 <translation id="5367091008316207019">ファイルを読み取っています...</translation>
 <translation id="5367260322267293088">大きなアイコンを表示する試験運用機能の新しいタブページを有効にします。</translation>
 <translation id="5368720394188453070">スマートフォンがロックされています。ログインするにはロックを解除してしてください。</translation>
@@ -3661,7 +3653,6 @@
 <translation id="5851063901794976166">ここには何もありません...</translation>
 <translation id="5851868085455377790">発行元</translation>
 <translation id="5852112051279473187">エラー: このデバイスの登録中に問題が発生しました。もう一度お試しいただくか、サポート担当者にお問い合わせください。</translation>
-<translation id="5852137567692933493">再起動して Powerwash を実行する</translation>
 <translation id="5854409662653665676">このモジュールで頻繁に問題が発生する場合は、次の手順に従って問題を解決してください:</translation>
 <translation id="5854912040170951372">スライス</translation>
 <translation id="5855119960719984315">ウィンドウを切り替える</translation>
@@ -3766,7 +3757,6 @@
 <translation id="6007237601604674381">移動できませんでした。<ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">ハイパーリンク監査の ping を送信します。</translation>
 <translation id="6015796118275082299">年</translation>
-<translation id="6016551720757758985">Powerwash を実行して以前のバージョンに戻すことを確認</translation>
 <translation id="6016809788585079594">最後にもう一度「OK Google」とお話しください</translation>
 <translation id="6017225534417889107">変更...</translation>
 <translation id="6017981840202692187">アプリケーションに追加</translation>
@@ -4044,7 +4034,6 @@
 <translation id="6409731863280057959">ポップアップ</translation>
 <translation id="6410063390789552572">ネットワーク ライブラリにアクセスできません</translation>
 <translation id="6410257289063177456">画像ファイル</translation>
-<translation id="6410328738210026208">チャンネルを変更して Powerwash</translation>
 <translation id="6410668567036790476">検索エンジンの追加</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">新しいシークレット ウィンドウ</translation>
@@ -4763,7 +4752,6 @@
 <translation id="7405422715075171617">クレジット カード フォームに入力する際、新しいクレジット カード番号をスキャンできるようにします。</translation>
 <translation id="740624631517654988">ポップアップがブロックされました</translation>
 <translation id="7406691462051376731">この端末では現在、診断と使用状況のデータが Google に送信されるように設定されています。この<ph name="BEGIN_LINK1" />設定<ph name="END_LINK1" />は所有者によって制御されています。<ph name="BEGIN_LINK2" />詳細<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">再起動と Powerwash</translation>
 <translation id="7409836189476010449">Flash の実行</translation>
 <translation id="7410344089573941623"><ph name="HOST" /> がカメラやマイクへのアクセスを要求しているか確認する</translation>
 <translation id="7412226954991670867">GPU メモリ</translation>
@@ -4877,7 +4865,6 @@
 <translation id="7553242001898162573">パスワードを入力してください</translation>
 <translation id="7554791636758816595">新しいタブ</translation>
 <translation id="7556033326131260574">Smart Lock でアカウントを確認できませんでした。ログインするにはパスワードを入力してください。</translation>
-<translation id="7556242789364317684"><ph name="SHORT_PRODUCT_NAME" /> ではユーザーの設定を回復することができません。エラーを修正するには、<ph name="SHORT_PRODUCT_NAME" /> が Powerwash でデバイスをリセットする必要があります。</translation>
 <translation id="7558050486864662801">マイクへのアクセスをサイトが要求するたびに確認する（推奨）</translation>
 <translation id="7559719679815339381">しばらくお待ちください....キオスクアプリを更新しています。USB スティックを取り外さないでください。</translation>
 <translation id="7561196759112975576">常に使用</translation>
@@ -5202,7 +5189,6 @@
 <translation id="8008356846765065031">インターネットが切断されました。インターネット接続を確認してください。</translation>
 <translation id="8012382203418782830">このページは翻訳されました。</translation>
 <translation id="8014154204619229810">現在アップデータを実行中です。しばらくしてから更新して、もう一度ご確認ください。</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> を以前のインストール バージョンに戻せません。デバイスでもう一度 Powerwash を実行してみてください。</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">不正な認証が行われました</translation>
 <translation id="8022523925619404071">自動更新を有効にする</translation>
@@ -5261,9 +5247,7 @@
 <translation id="80974698889265265">PIN が一致しません</translation>
 <translation id="8098975406164436557">このスマートフォンを使用して <ph name="DEVICE_TYPE" /> のロックを解除しますか？</translation>
 <translation id="810066391692572978">サポートされていない機能がファイルで使用されています。</translation>
-<translation id="8101987792947961127">次回の再起動時に Powerwash が必要</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> では、ユーザー データを Google アカウントと安全に同期することができます。すべてのデータを常に同期するか、同期するデータのタイプと暗号化設定を選択してカスタマイズしてください。</translation>
-<translation id="8104696615244072556"><ph name="IDS_SHORT_PRODUCT_NAME" /> 搭載デバイスで Powerwash を実行し、以前のバージョンに戻します。</translation>
 <translation id="8105368624971345109">オフにする</translation>
 <translation id="8106045200081704138">共有アイテム</translation>
 <translation id="8106211421800660735">クレジットカード番号</translation>

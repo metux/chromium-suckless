@@ -107,8 +107,6 @@ void ErrorScreenHandler::DeclareLocalizedValues(
   builder->AddF("localStateErrorText0", IDS_LOCAL_STATE_ERROR_TEXT_0,
                 IDS_SHORT_PRODUCT_NAME);
   builder->Add("localStateErrorText1", IDS_LOCAL_STATE_ERROR_TEXT_1);
-  builder->Add("localStateErrorPowerwashButton",
-               IDS_LOCAL_STATE_ERROR_POWERWASH_BUTTON);
   builder->Add("connectingIndicatorText", IDS_LOGIN_CONNECTING_INDICATOR_TEXT);
   builder->Add("guestSigninFixNetwork", IDS_LOGIN_GUEST_SIGNIN_FIX_NETWORK);
   builder->Add("rebootButton", IDS_RELAUNCH_BUTTON);

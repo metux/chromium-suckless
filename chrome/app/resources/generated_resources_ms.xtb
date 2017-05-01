@@ -992,7 +992,6 @@ Selepas anda membuat pengguna di bawah seliaan yang baharu, anda boleh mengurus 
 <translation id="2332742915001411729">Tetapkan semula kepada lalai</translation>
 <translation id="2335122562899522968">Halaman ini menetapkan kuki.</translation>
 <translation id="2336228925368920074">Tanda Halaman Semua Tab...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Catat dalam Google Keep</translation>
 <translation id="2339120501444485379">Masukkan nama baharu</translation>
 <translation id="2339641773402824483">Menyemak kemas kini...</translation>
@@ -1170,7 +1169,6 @@ Saya tidak fikir tapak web ini perlu disekat!</translation>
 <translation id="2562743677925229011">Tidak log masuk ke <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">Kelajuan pad sentuh:</translation>
 <translation id="2565828445440744174">WebAssembly Percubaan</translation>
-<translation id="2566124945717127842">Powerwash untuk menetapkan semula peranti <ph name="IDS_SHORT_PRODUCT_NAME" /> anda supaya seperti baharu.</translation>
 <translation id="2568774940984945469">Bekas Bar Maklumat</translation>
 <translation id="2570000010887652771">Data disimpan.</translation>
 <translation id="2570648609346224037">Terdapat masalah semasa muat turun imej pemulihan.</translation>
@@ -1368,7 +1366,6 @@ Saya tidak fikir tapak web ini perlu disekat!</translation>
       <ph name="LIST_ITEM" />Menetapkan kedua-dua kata laluan log masuk dev dan akar sistem kepada nilai peribadi supaya anda boleh SSH kepada peranti secara manual
     <ph name="END_LIST" />
     <ph name="BR" />
-    Setelah didayakan, kebanyakan ciri penyahpepijatan akan kekal didayakan walaupun selepas melakukan powerwash atau penyapuan data pada peranti diurus perusahaan.  Untuk melumpuhkan sepenuhnya semua ciri penyahpepijatan, sila lengkapkan proses pemulihan OS Chrome (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     Untuk maklumat lanjut tentang ciri penyahpepijatan sila lihat:<ph name="BR" />
@@ -1594,7 +1591,6 @@ Untuk mendapatkan maklumat lanjut, lawati <ph name="BEGIN_LINK" />Pusat Bantuan<
 <translation id="3065140616557457172">Taip untuk mencari atau memasukkan URL untuk menavigasi - semua boleh digunakan.</translation>
 <translation id="3067198360141518313">Jalankan pemalam ini</translation>
 <translation id="307519606911195071">Dayakan ciri kebolehaksesan tambahan di halaman Tetapan.</translation>
-<translation id="3075874217500066906">Mula semula perlu dilakukan untuk memulakan proses Powerwash. Selepas memulakan semula, anda akan diminta mengesahkan bahawa anda ingin meneruskan.</translation>
 <translation id="3076677906922146425">Benarkan orang menambahkan seseorang ke Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2344,7 +2340,6 @@ Daripada <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="404493185430269859">Enjin carian lalai</translation>
 <translation id="4047112090469382184">Bagaimana ini selamat</translation>
 <translation id="4052120076834320548">Sangat Kecil</translation>
-<translation id="4055023634561256217">Mula semula diperlukan sebelum peranti anda boleh ditetapkan semula dengan Powerwash.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Lihat di Gedung</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3008,7 +3003,6 @@ Tekan sebarang kekunci untuk terus meneroka.</translation>
 <translation id="4991420928586866460">Kendalikan kekunci baris atas sebagai kekunci fungsi</translation>
 <translation id="499165176004408815">Gunakan mod kontras tinggi</translation>
 <translation id="4992066212339426712">Nyahredam</translation>
-<translation id="4992458225095111526">Sahkan Powerwash</translation>
 <translation id="4994474651455208930">Membenarkan tapak untuk meminta menjadi pengendali lalai untuk protokol</translation>
 <translation id="4998873842614926205">Sahkan Perubahan</translation>
 <translation id="4999273653895592255">Bendera ini mengawal sama ada kami menunjukkan UI lama atau baharu untuk tetingkap pemilih tangkapan desktop.</translation>
@@ -3043,7 +3037,6 @@ Tekan sebarang kekunci untuk terus meneroka.</translation>
 <translation id="5045550434625856497">Kata laluan tidak sah</translation>
 <translation id="5046747760454685637">Tanya sebelum membenarkan tapak menjalankan Flash (disyorkan)</translation>
 <translation id="5048179823246820836">Nordic</translation>
-<translation id="5053604404986157245">Kata laluan TPM yang dihasilkan secara rawak tidak tersedia. Perkara ini biasa berlaku selepas Powerwash.</translation>
 <translation id="5053803681436838483">Alamat penghantaran baharu...</translation>
 <translation id="5055309315264875868">Tunjukkan pautan dalam halaman tetapan pengurus kata laluan untuk mengurus kata laluan disegerakkan anda dalam talian.</translation>
 <translation id="5061188462607594407">Selamatkan <ph name="PHONE_TYPE" /> anda untuk meneruskan</translation>
@@ -3291,7 +3284,6 @@ Tekan sebarang kekunci untuk terus meneroka.</translation>
 <translation id="5357579842739549440">Menyahpepijat pintasan papan kekunci</translation>
 <translation id="5360150013186312835">Tunjukkan dalam Bar Alat</translation>
 <translation id="5362741141255528695">Pilih fail kunci persendirian.</translation>
-<translation id="5363109466694494651">Powerwash dan Berbalik</translation>
 <translation id="5367091008316207019">Membaca fail..</translation>
 <translation id="5367260322267293088">Dayakan halaman Tab Baharu eksperimen menggunakan ikon besar.</translation>
 <translation id="5368720394188453070">Telefon anda dikunci. Buka kuncinya untuk masuk.</translation>
@@ -3661,7 +3653,6 @@ Tekan sebarang kekunci untuk terus meneroka.</translation>
 <translation id="5851063901794976166">Tiada apa-apa untuk dilihat di sini...</translation>
 <translation id="5851868085455377790">Pengeluar</translation>
 <translation id="5852112051279473187">Op!  Berlaku masalah besar semasa mendaftarkan peranti ini.  Sila cuba semula atau hubungi wakil sokongan anda.</translation>
-<translation id="5852137567692933493">Mulakan Semula dan lakukan Powerwash</translation>
 <translation id="5854409662653665676">Jika anda kerap mengalami masalah, anda boleh mencuba yang berikut untuk menyelesaikan isu dengan modul ini:</translation>
 <translation id="5854912040170951372">Kepingan</translation>
 <translation id="5855119960719984315">tukar tetingkap</translation>
@@ -3766,7 +3757,6 @@ Tekan sebarang kekunci untuk terus meneroka.</translation>
 <translation id="6007237601604674381">Pemindahan gagal. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Menghantar ping pengauditan hiperpautan.</translation>
 <translation id="6015796118275082299">Tahun</translation>
-<translation id="6016551720757758985">Sahkan Powerwash dengan kembali ke versi terdahulu</translation>
 <translation id="6016809788585079594">Sebut "Ok Google" untuk kali terakhir</translation>
 <translation id="6017225534417889107">Tukar...</translation>
 <translation id="6017981840202692187">Tambahkan pada Aplikasi</translation>
@@ -4044,7 +4034,6 @@ Tekan sebarang kekunci untuk terus meneroka.</translation>
 <translation id="6409731863280057959">Pop muncul</translation>
 <translation id="6410063390789552572">Tidak dapat mengakses perpustakaan rangkaian</translation>
 <translation id="6410257289063177456">Fail Imej</translation>
-<translation id="6410328738210026208">Tukar saluran dan Powerwash</translation>
 <translation id="6410668567036790476">Tambah enjin carian</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">Tetingkap incognito baharu</translation>
@@ -4760,7 +4749,6 @@ Tekan sebarang kekunci untuk terus meneroka.</translation>
 <translation id="7405422715075171617">Dayakan pengimbasan nombor kad kredit baharu apabila mengisi borang kad kredit.</translation>
 <translation id="740624631517654988">Pop muncul disekat</translation>
 <translation id="7406691462051376731">Peranti ini menghantar data diagnostik dan penggunaan ke Google pada masa ini. <ph name="BEGIN_LINK1" />Tetapan<ph name="END_LINK1" /> ini dikuatkuasakan oleh pemilik. <ph name="BEGIN_LINK2" />Ketahui Lebih Lanjut<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Lancarkan Semula dan Powerwash</translation>
 <translation id="7409836189476010449">Jalankan Flash</translation>
 <translation id="7410344089573941623">Tanya jika <ph name="HOST" /> ingin mengakses kamera dan mikrofon anda</translation>
 <translation id="7412226954991670867">Memori GPU</translation>
@@ -4874,7 +4862,6 @@ Tekan sebarang kekunci untuk terus meneroka.</translation>
 <translation id="7553242001898162573">Masukkan kata laluan anda</translation>
 <translation id="7554791636758816595">Tab Baharu</translation>
 <translation id="7556033326131260574">Smart Lock tidak dapat mengesahkan akaun anda. Taip kata laluan anda untuk masuk.</translation>
-<translation id="7556242789364317684">Malangnya, <ph name="SHORT_PRODUCT_NAME" /> tidak dapat memulihkan tetapan anda. <ph name="SHORT_PRODUCT_NAME" /> mesti menetapkan semula peranti anda menggunakan Powerwash untuk membetulkan ralat.</translation>
 <translation id="7558050486864662801">Tanya apabila tapak memerlukan akses kepada mikrofon anda (disyorkan)</translation>
 <translation id="7559719679815339381">Sila tunggu....apl Kiosk sedang dalam proses untuk dikemas kini. Jangan alih keluar batang USB.</translation>
 <translation id="7561196759112975576">Sentiasa</translation>
@@ -5199,7 +5186,6 @@ Simpan fail kunci anda di tempat selamat. Anda akan memerlukannya untuk mencipta
 <translation id="8008356846765065031">Internet terputus sambungan. Sila periksa sambungan internet anda.</translation>
 <translation id="8012382203418782830">Halaman ini telah diterjemahkan.</translation>
 <translation id="8014154204619229810">Pengemaskinian sedang dijalankan. Muatkan semula dalam satu minit untuk memeriksa lagi.</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> tidak dapat kembali kepada versi yang dipasang sebelumnya. Sila cuba Powerwash peranti anda lagi.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Pengesahan salah</translation>
 <translation id="8022523925619404071">Dayakan autokemas kini</translation>
@@ -5258,9 +5244,7 @@ Simpan fail kunci anda di tempat selamat. Anda akan memerlukannya untuk mencipta
 <translation id="80974698889265265">PIN tidak sepadan</translation>
 <translation id="8098975406164436557">Gunakan telefon ini untuk membuka kunci <ph name="DEVICE_TYPE" /> anda?</translation>
 <translation id="810066391692572978">Fail menggunakan ciri tidak disokong.</translation>
-<translation id="8101987792947961127">Powerwash diperlukan pada but semula seterusnya</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> menyegerakkan data anda dengan akaun Google anda dengan selamat. Pastikan semua disegerakkan atau sesuaikan jenis data yang disegerakkan dan tetapan penyulitan.</translation>
-<translation id="8104696615244072556">Powerwash peranti <ph name="IDS_SHORT_PRODUCT_NAME" /> anda dan kembali ke versi terdahulu.</translation>
 <translation id="8105368624971345109">Matikan</translation>
 <translation id="8106045200081704138">Dikongsi dengan saya</translation>
 <translation id="8106211421800660735">Nombor kad kredit</translation>

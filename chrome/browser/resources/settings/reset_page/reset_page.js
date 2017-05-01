@@ -20,19 +20,6 @@ Polymer({
 
   behaviors: [settings.RouteObserverBehavior],
 
-  properties: {
-<if expr="chromeos">
-    /** @private */
-    showPowerwashDialog_: Boolean,
-</if>
-
-    /** @private */
-    allowPowerwash_: {
-      type: Boolean,
-      value: cr.isChromeOS ? loadTimeData.getBoolean('allowPowerwash') : false
-    },
-  },
-
   /** @protected */
   currentRouteChanged: function() {
     if (settings.getCurrentRoute() == settings.Route.RESET_DIALOG) {
@@ -49,16 +36,4 @@ Polymer({
   onResetProfileDialogClose_: function() {
     settings.navigateToPreviousRoute();
   },
-
-<if expr="chromeos">
-  /** @private */
-  onShowPowerwashDialog_: function() {
-    this.showPowerwashDialog_ = true;
-  },
-
-  /** @private */
-  onPowerwashDialogClose_: function() {
-    this.showPowerwashDialog_ = false;
-  },
-</if>
 });

@@ -185,9 +185,6 @@ BrowserOptionsHandler::BrowserOptionsHandler()
     : page_initialized_(false),
       template_url_service_(NULL),
       cloud_print_mdns_ui_enabled_(false),
-#if defined(OS_CHROMEOS)
-      enable_factory_reset_(false),
-#endif  // defined(OS_CHROMEOS)
       signin_observer_(this),
       weak_ptr_factory_(this) {
 #if !defined(OS_CHROMEOS)
@@ -472,14 +469,6 @@ void BrowserOptionsHandler::GetLocalizedValues(base::DictionaryValue* values) {
     { "enableContentProtectionAttestation",
       IDS_OPTIONS_ENABLE_CONTENT_PROTECTION_ATTESTATION },
     { "manageScreenlock", IDS_OPTIONS_MANAGE_SCREENLOCKER },
-    { "factoryResetDataRestart", IDS_RELAUNCH_BUTTON },
-    { "factoryResetDescription", IDS_OPTIONS_FACTORY_RESET_DESCRIPTION,
-      IDS_SHORT_PRODUCT_NAME },
-    { "factoryResetHeading", IDS_OPTIONS_FACTORY_RESET_HEADING },
-    { "factoryResetHelpUrl", IDS_FACTORY_RESET_HELP_URL },
-    { "factoryResetRestart", IDS_OPTIONS_FACTORY_RESET_BUTTON },
-    { "factoryResetTitle", IDS_OPTIONS_FACTORY_RESET },
-    { "factoryResetWarning", IDS_OPTIONS_FACTORY_RESET_WARNING },
     { "internetOptionsButtonTitle", IDS_OPTIONS_INTERNET_OPTIONS_BUTTON_TITLE },
     { "keyboardSettingsButtonTitle",
       IDS_OPTIONS_DEVICE_GROUP_KEYBOARD_SETTINGS_BUTTON_TITLE },
@@ -828,14 +817,6 @@ void BrowserOptionsHandler::RegisterMessages() {
       base::Bind(&BrowserOptionsHandler::VirtualKeyboardChangeCallback,
                  base::Unretained(this)));
   web_ui()->RegisterMessageCallback(
-       "onPowerwashDialogShow",
-       base::Bind(&BrowserOptionsHandler::OnPowerwashDialogShow,
-                  base::Unretained(this)));
-  web_ui()->RegisterMessageCallback(
-      "performFactoryResetRestart",
-      base::Bind(&BrowserOptionsHandler::PerformFactoryResetRestart,
-                 base::Unretained(this)));
-  web_ui()->RegisterMessageCallback(
       "showAndroidAppsSettings",
       base::Bind(&BrowserOptionsHandler::ShowAndroidAppsSettings,
                  base::Unretained(this)));
@@ -1100,14 +1081,6 @@ void BrowserOptionsHandler::InitializePage() {
   SetupAccessibilityFeatures();
   policy::BrowserPolicyConnectorChromeOS* connector =
       g_browser_process->platform_part()->browser_policy_connector_chromeos();
-  enable_factory_reset_ = !connector->IsEnterpriseManaged() &&
-      !user_manager::UserManager::Get()->IsLoggedInAsGuest() &&
-      !user_manager::UserManager::Get()->IsLoggedInAsSupervisedUser();
-  if (enable_factory_reset_) {
-    web_ui()->CallJavascriptFunctionUnsafe(
-        "BrowserOptions.enableFactoryResetSection");
-  }
-
   Profile* const profile = Profile::FromWebUI(web_ui());
   user_manager::User const* const user =
       chromeos::ProfileHelper::Get()->GetUserByProfile(profile);
@@ -1626,14 +1599,6 @@ void BrowserOptionsHandler::OnWallpaperPolicyChanged(
     OnWallpaperManagedChanged(has_policy);
 }
 
-void BrowserOptionsHandler::OnPowerwashDialogShow(
-     const base::ListValue* args) {
-  UMA_HISTOGRAM_ENUMERATION(
-      "Reset.ChromeOS.PowerwashDialogShown",
-      chromeos::reset::DIALOG_FROM_OPTIONS,
-      chromeos::reset::DIALOG_VIEW_TYPE_SIZE);
-}
-
 #endif  // defined(OS_CHROMEOS)
 
 void BrowserOptionsHandler::UpdateSyncState() {
@@ -1904,20 +1869,6 @@ void BrowserOptionsHandler::VirtualKeyboardChangeCallback(
   args->GetBoolean(0, &enabled);
 
   chromeos::accessibility::EnableVirtualKeyboard(enabled);
-}
-
-void BrowserOptionsHandler::PerformFactoryResetRestart(
-    const base::ListValue* args) {
-  if (!enable_factory_reset_)
-    return;
-
-  PrefService* prefs = g_browser_process->local_state();
-  prefs->SetBoolean(prefs::kFactoryResetRequested, true);
-  prefs->CommitPendingWrite();
-
-  // Perform sign out. Current chrome process will then terminate, new one will
-  // be launched (as if it was a restart).
-  chromeos::DBusThreadManager::Get()->GetPowerManagerClient()->RequestRestart();
 }
 
 void BrowserOptionsHandler::OnAppRegistered(

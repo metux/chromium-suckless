@@ -119,8 +119,6 @@ void ErrorScreen::OnUserAction(const std::string& action_id) {
     OnDiagnoseButtonClicked();
   else if (action_id == kUserActionLaunchOobeGuestSessionClicked)
     OnLaunchOobeGuestSession();
-  else if (action_id == kUserActionLocalStateErrorPowerwashButtonClicked)
-    OnLocalStateErrorPowerwashButtonClicked();
   else if (action_id == kUserActionRebootButtonClicked)
     OnRebootButtonClicked();
   else if (action_id == kUserActionConnectRequested)
@@ -292,12 +290,6 @@ void ErrorScreen::OnLaunchOobeGuestSession() {
   DeviceSettingsService::Get()->GetOwnershipStatusAsync(
       base::Bind(&ErrorScreen::StartGuestSessionAfterOwnershipCheck,
                  weak_factory_.GetWeakPtr()));
-}
-
-void ErrorScreen::OnLocalStateErrorPowerwashButtonClicked() {
-  chromeos::DBusThreadManager::Get()
-      ->GetSessionManagerClient()
-      ->StartDeviceWipe();
 }
 
 void ErrorScreen::OnRebootButtonClicked() {

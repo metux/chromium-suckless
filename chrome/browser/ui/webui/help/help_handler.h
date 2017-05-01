@@ -80,8 +80,6 @@ class HelpHandler : public content::WebUIMessageHandler,
   // Sets the release track version.
   void SetChannel(const base::ListValue* args);
 
-  // Performs relaunch and powerwash.
-  void RelaunchAndPowerwash(const base::ListValue* args);
 #endif
 
   // Checks for and applies update.

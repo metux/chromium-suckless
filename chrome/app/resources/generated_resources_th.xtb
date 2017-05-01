@@ -992,7 +992,6 @@
 <translation id="2332742915001411729">รีเซ็ตเป็นค่าเริ่มต้น</translation>
 <translation id="2335122562899522968">หน้าเว็บนี้ได้บันทึกคุกกี้แล้ว</translation>
 <translation id="2336228925368920074">บุ๊กมาร์กแท็บทั้งหมด...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">ใส่หมายเหตุใน Google Keep</translation>
 <translation id="2339120501444485379">ป้อนชื่อใหม่</translation>
 <translation id="2339641773402824483">กำลังตรวจสอบเพื่ออัปเดต...</translation>
@@ -1170,7 +1169,6 @@
 <translation id="2562743677925229011">ไม่ได้ลงชื่อเข้าใช้ <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">ความเร็วทัชแพด:</translation>
 <translation id="2565828445440744174">WebAssembly แบบทดลอง</translation>
-<translation id="2566124945717127842">Powerwash เพื่อรีเซ็ตอุปกรณ์ <ph name="IDS_SHORT_PRODUCT_NAME" /> ให้เหมือนใหม่</translation>
 <translation id="2568774940984945469">ที่เก็บแถบข้อมูล</translation>
 <translation id="2570000010887652771">ข้อมูลที่บันทึกไว้</translation>
 <translation id="2570648609346224037">เกิดปัญหาขณะดาวน์โหลดอิมเมจการกู้คืน</translation>
@@ -1367,7 +1365,6 @@
       <ph name="LIST_ITEM" />ตั้งค่า dev และรหัสผ่านการเข้าระบบในระดับรากให้กับค่าที่กำหนดเองเพื่อให้คุณสามารถเข้าถึงอุปกรณ์แบบ SSH ได้ด้วยตนเอง
     <ph name="END_LIST" />
     <ph name="BR" />
-    เมื่อเปิดใช้แล้ว คุณลักษณะการแก้ไขข้อบกพร่องส่วนใหญ่จะยังคงเปิดใช้อยู่แม้ดำเนินการ Powerwash หรือล้างข้อมูลบนอุปกรณ์ที่จัดการโดยองค์กรแล้ว หากต้องการปิดใช้คุณลักษณะโดยสมบูรณ์ ให้ดำเนินการขั้นตอนการกู้คืน Chrome OS (https://support.google.com/chromebook/answer/1080595)
     <ph name="BR" />
     <ph name="BR" />
     สำหรับข้อมูลเพิ่มเติมเกี่ยวกับคุณลักษณะการแก้ไขข้อบกพร่อง โปรดดู:<ph name="BR" />
@@ -1593,7 +1590,6 @@
 <translation id="3065140616557457172">พิมพ์เพื่อค้นหาหรือป้อน URL เพื่อไปยังทุกๆ เรื่องที่สามารถแสดงผลได้</translation>
 <translation id="3067198360141518313">เรียกใช้ปลั๊กอินนี้</translation>
 <translation id="307519606911195071">เปิดใช้คุณลักษณะการเข้าถึงเพิ่มเติมในหน้าการตั้งค่า</translation>
-<translation id="3075874217500066906">จำเป็นต้องรีสตาร์ทเพื่อเริ่มดำเนินการ Powerwash เมื่อรีสตาร์ทแล้ว ระบบจะขอให้คุณยืนยันว่าคุณต้องการดำเนินการ</translation>
 <translation id="3076677906922146425">อนุญาตให้ทุกคนเพิ่มบุคคลไปยัง Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2343,7 +2339,6 @@
 <translation id="404493185430269859">เครื่องมือค้นหาเริ่มต้น</translation>
 <translation id="4047112090469382184">คุณลักษณะนี้มีความปลอดภัยอย่างไร</translation>
 <translation id="4052120076834320548">ขนาดจิ๋ว</translation>
-<translation id="4055023634561256217">ต้องรีสตาร์ทก่อน จึงจะสามารถรีเซ็ตอุปกรณ์ของคุณด้วย Powerwash ได้</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">ดูในสโตร์</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3007,7 +3002,6 @@
 <translation id="4991420928586866460">ใช้แป้นแถวบนสุดเป็นแป้นฟังก์ชัน</translation>
 <translation id="499165176004408815">ใช้โหมดคอนทราสต์สูง</translation>
 <translation id="4992066212339426712">เปิดเสียง</translation>
-<translation id="4992458225095111526">ยืนยัน Powerwash</translation>
 <translation id="4994474651455208930">อนุญาตให้ไซต์แจ้งขอเป็นตัวจัดการเริ่มต้นสำหรับโปรโตคอล</translation>
 <translation id="4998873842614926205">ยืนยันการเปลี่ยนแปลง</translation>
 <translation id="4999273653895592255">การตั้งค่าสถานะนี้เป็นการควบคุมว่าจะให้เราแสดง UI แบบเก่าหรือแบบใหม่สำหรับหน้าต่างเครื่องมือเลือกการจับภาพเดสก์ท็อป</translation>
@@ -3042,7 +3036,6 @@
 <translation id="5045550434625856497">รหัสผ่านไม่ถูกต้อง</translation>
 <translation id="5046747760454685637">ถามก่อนอนุญาตให้เว็บไซต์เรียกใช้ Flash (แนะนำ)</translation>
 <translation id="5048179823246820836">นอร์ดิก</translation>
-<translation id="5053604404986157245">รหัสผ่าน TPM ที่สร้างแบบสุ่มไม่พร้อมใช้งาน เหตุการณ์นี้เป็นเรื่องปกติหลังจากการ Powerwash</translation>
 <translation id="5053803681436838483">ที่อยู่ใหม่สำหรับการจัดส่ง...</translation>
 <translation id="5055309315264875868">แสดงลิงก์ในหน้าการตั้งค่าตัวจัดการรหัสผ่านเพื่อจัดการรหัสผ่านที่ซิงค์ทางออนไลน์</translation>
 <translation id="5061188462607594407">รักษาความปลอดภัย <ph name="PHONE_TYPE" /> ของคุณเพื่อดำเนินการต่อ</translation>
@@ -3290,7 +3283,6 @@
 <translation id="5357579842739549440">การแก้ไขข้อบกพร่องของแป้นพิมพ์ลัด</translation>
 <translation id="5360150013186312835">แสดงในแถบเครื่องมือ</translation>
 <translation id="5362741141255528695">เลือกไฟล์กุญแจส่วนตัว</translation>
-<translation id="5363109466694494651">Powerwash และเปลี่ยนกลับ</translation>
 <translation id="5367091008316207019">กำลังอ่านไฟล์..</translation>
 <translation id="5367260322267293088">เปิดใช้หน้าแท็บใหม่แบบทดลองโดยใช้ไอคอนขนาดใหญ่</translation>
 <translation id="5368720394188453070">โทรศัพท์ล็อกอยู่ โปรดปลดล็อกเพื่อเข้าใช้งาน</translation>
@@ -3660,7 +3652,6 @@
 <translation id="5851063901794976166">ไม่มีอะไรอยู่ในนี้...</translation>
 <translation id="5851868085455377790">ผู้ออกใบรับรอง</translation>
 <translation id="5852112051279473187">อ๊ะ! เกิดข้อผิดพลาดขึ้นในขณะลงทะเบียนอุปกรณ์นี้ โปรดลองอีกครั้งหรือติดต่อตัวแทนการสนับสนุนของคุณ</translation>
-<translation id="5852137567692933493">รีสตาร์ทและ Powerwash</translation>
 <translation id="5854409662653665676">หากคุณประสบปัญหาที่เกิดขึ้นบ่อยครั้ง คุณสามารถลองใช้วิธีต่อไปนี้เพื่อแก้ไขปัญหาเกี่ยวกับโมดูลนี้:</translation>
 <translation id="5854912040170951372">สไลซ์</translation>
 <translation id="5855119960719984315">สลับหน้าต่าง</translation>
@@ -3765,7 +3756,6 @@
 <translation id="6007237601604674381">การย้ายล้มเหลว <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">ส่งคำสั่ง ping สำหรับการตรวจสอบไฮเปอร์ลิงก์</translation>
 <translation id="6015796118275082299">ปี</translation>
-<translation id="6016551720757758985">ยืนยัน Powerwash และเปลี่ยนกลับเป็นเวอร์ชันก่อนหน้า</translation>
 <translation id="6016809788585079594">พูดว่า "Ok Google" เป็นครั้งสุดท้าย</translation>
 <translation id="6017225534417889107">เปลี่ยน...</translation>
 <translation id="6017981840202692187">เพิ่มไปยังแอปพลิเคชัน</translation>
@@ -4043,7 +4033,6 @@
 <translation id="6409731863280057959">ป๊อปอัป</translation>
 <translation id="6410063390789552572">ไม่สามารถเข้าถึงไลบรารีเครือข่าย</translation>
 <translation id="6410257289063177456">ไฟล์ภาพ</translation>
-<translation id="6410328738210026208">เปลี่ยนช่องและ Powerwash</translation>
 <translation id="6410668567036790476">เพิ่มเครื่องมือค้นหา</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">หน้าต่างที่ไม่ระบุตัวตนใหม่</translation>
@@ -4759,7 +4748,6 @@
 <translation id="7405422715075171617">เปิดใช้การสแกนหมายเลขบัตรเครดิตใหม่เมื่อกรอกแบบฟอร์มบัตรเครดิต</translation>
 <translation id="740624631517654988">ปิดกั้นป๊อปอัป</translation>
 <translation id="7406691462051376731">อุปกรณ์นี้กำลังส่งข้อมูลการวินิจฉัยและการใช้งานไปยัง Google <ph name="BEGIN_LINK1" />การตั้งค่า<ph name="END_LINK1" />นี้บังคับใช้โดยเจ้าของ <ph name="BEGIN_LINK2" />เรียนรู้เพิ่มเติม<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">เรียกใช้งานอีกครั้งและ Powerwash</translation>
 <translation id="7409836189476010449">เรียกใช้ Flash</translation>
 <translation id="7410344089573941623">ถามว่า <ph name="HOST" /> ต้องการเข้าถึงกล้องและไมโครโฟนของคุณหรือไม่</translation>
 <translation id="7412226954991670867">หน่วยความจำ GPU</translation>
@@ -4873,7 +4861,6 @@
 <translation id="7553242001898162573">ป้อนรหัสผ่านของคุณ</translation>
 <translation id="7554791636758816595">แท็บใหม่</translation>
 <translation id="7556033326131260574">Smart Lock ไม่สามารถยืนยันบัญชีของคุณได้ โปรดพิมพ์รหัสผ่านเพื่อเข้าใช้งาน</translation>
-<translation id="7556242789364317684">ขออภัย <ph name="SHORT_PRODUCT_NAME" /> ไม่สามารถกู้คืนการตั้งค่าของคุณได้ หากต้องการแก้ไขข้อผิดพลาด <ph name="SHORT_PRODUCT_NAME" /> ต้องรีเซ็ตอุปกรณ์ของคุณด้วย Powerwash</translation>
 <translation id="7558050486864662801">ถามเมื่อไซต์ต้องการเข้าถึงไมโครโฟนของคุณ (แนะนำ)</translation>
 <translation id="7559719679815339381">โปรดรอสักครู่....แอปคีออสก์อยู่ในระหว่างการอัปเดต โปรดอย่านำ USB สติ๊กออก</translation>
 <translation id="7561196759112975576">ทุกครั้ง</translation>
@@ -5198,7 +5185,6 @@
 <translation id="8008356846765065031">อินเทอร์เน็ตถูกตัด โปรดตรวจสอบการเชื่อมต่ออินเทอร์เน็ต</translation>
 <translation id="8012382203418782830">หน้านี้ได้รับการแปลแล้ว</translation>
 <translation id="8014154204619229810">โปรแกรมอัปเดตกำลังทำงาน โปรดรีเฟรชในอีก 1 นาทีเพื่อตรวจสอบอีกครั้ง</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> ไม่สามารถเปลี่ยนกลับไปเป็นเวอร์ชันที่ติดตั้งไว้ก่อนหน้านี้ได้ โปรดลองอีกครั้งเพื่อ Powerwash อุปกรณ์ของคุณ</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">การตรวจสอบสิทธิ์ไม่เหมาะสม</translation>
 <translation id="8022523925619404071">เปิดใช้การอัปเดตอัตโนมัติ</translation>
@@ -5257,9 +5243,7 @@
 <translation id="80974698889265265">PIN ไม่ตรงกัน</translation>
 <translation id="8098975406164436557">ต้องการใช้โทรศัพท์นี้เพื่อปลดล็อก <ph name="DEVICE_TYPE" /> ไหม</translation>
 <translation id="810066391692572978">ไฟล์ใช้คุณลักษณะที่ไม่ได้รับการสนับสนุน</translation>
-<translation id="8101987792947961127">ต้องใช้ Powerwash ในการรีบูตครั้งถัดไป</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> ได้ซิงค์ข้อมูลของคุณกับบัญชี Google อย่างปลอดภัยแล้ว โปรดซิงค์ข้อมูลทุกอย่างหรือกำหนดค่าประเภทข้อมูลที่ซิงค์และการตั้งค่าการเข้ารหัสเป็นประจำ</translation>
-<translation id="8104696615244072556">Powerwash อุปกรณ์ <ph name="IDS_SHORT_PRODUCT_NAME" /> ของคุณและเปลี่ยนกลับไปใช้เวอร์ชันก่อนหน้า</translation>
 <translation id="8105368624971345109">ปิด</translation>
 <translation id="8106045200081704138">ที่แชร์กับฉัน</translation>
 <translation id="8106211421800660735">หมายเลขบัตรเครดิต</translation>

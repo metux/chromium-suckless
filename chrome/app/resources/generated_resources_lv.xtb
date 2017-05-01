@@ -993,7 +993,6 @@ Pēc jauna uzraudzīta lietotāja izveides varat pārvaldīt viņa iestatījumus
 <translation id="2332742915001411729">Atiestatīt noklusējuma iestatījumus</translation>
 <translation id="2335122562899522968">Šī lapa iestatīja sīkfailus.</translation>
 <translation id="2336228925368920074">Saglabāt visas cilnes kā grāmatzīmes...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Pievienot piezīmes pakalpojumā Google Keep</translation>
 <translation id="2339120501444485379">Ievadiet jaunu nosaukumu</translation>
 <translation id="2339641773402824483">Atjauninājumu meklēšana...</translation>
@@ -1171,7 +1170,6 @@ Es uzskatu, ka šai vietnei nav jābūt bloķētai.</translation>
 <translation id="2562743677925229011">Nav pierakstījies pakalpojumā <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">Skārienpaliktņa ātrums:</translation>
 <translation id="2565828445440744174">Eksperimentālā WebAssembly</translation>
-<translation id="2566124945717127842">Izmantojiet funkciju Powerwash un atiestatiet savā <ph name="IDS_SHORT_PRODUCT_NAME" /> ierīcē sākotnējos rūpnīcas iestatījumus.</translation>
 <translation id="2568774940984945469">Informācijas joslas konteiners</translation>
 <translation id="2570000010887652771">Dati ir saglabāti.</translation>
 <translation id="2570648609346224037">Atkopšanas attēla lejupielādes laikā radās problēma.</translation>
@@ -1368,7 +1366,6 @@ Es uzskatu, ka šai vietnei nav jābūt bloķētai.</translation>
       <ph name="LIST_ITEM" />iestatīt pielāgotu vērtību kā izstrādātāja un sistēmas saknes pieteikšanās paroli, lai varētu manuāli piekļūt ierīcei, izmantojot SSH.
     <ph name="END_LIST" />
     <ph name="BR" />
-    Kad atkļūdošanas funkcijas būs iespējotas, to lielākā daļa paliks iespējotas arī pēc funkcijas Powerwash izmantošanas vai datu notīrīšanas uzņēmuma pārvaldītā ierīcē. Lai pilnībā atspējotu visas atkļūdošanas funkcijas, izpildiet Chrome OS atkopšanas procesu (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     Lai iegūtu plašāku informāciju par atkļūdošanas funkcijām, skatiet vietni<ph name="BR" />
@@ -1594,7 +1591,6 @@ Plašāku informāciju skatiet mūsu <ph name="BEGIN_LINK" />palīdzības centr�
 <translation id="3065140616557457172">Rakstiet, lai meklētu, vai ievadiet URL, lai pārvietotos - viss vienkārši darbojas.</translation>
 <translation id="3067198360141518313">Izpildīt šo spraudni</translation>
 <translation id="307519606911195071">Iespējojiet papildu pieejamības funkcijas lapā Iestatījumi.</translation>
-<translation id="3075874217500066906">Lai varētu sākt Powerwash procesu, ir jāveic restartēšana. Pēc tam jums tiks lūgts apstiprināt, ka vēlaties turpināt darbu.</translation>
 <translation id="3076677906922146425">Ļaut ikvienam pievienot personu pārlūkā Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2345,7 +2341,6 @@ Vai vēlaties palaist rīku <ph name="CONTROL_PANEL_APPLET_NAME" />?</translatio
 <translation id="404493185430269859">Noklusējuma meklētājprogramma</translation>
 <translation id="4047112090469382184">Drošības aspekti</translation>
 <translation id="4052120076834320548">Niecīgs</translation>
-<translation id="4055023634561256217">Lai ierīces atiestatīšanai izmantotu funkciju Powerwash, ierīci ir nepieciešams restartēt.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Skatīt veikalā</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3009,7 +3004,6 @@ Lai turpinātu skatīšanu, nospiediet jebkuru taustiņu.</translation>
 <translation id="4991420928586866460">Uzskatīt augšējās rindas taustiņus par funkciju taustiņiem</translation>
 <translation id="499165176004408815">Izmantot augsta kontrasta režīmu</translation>
 <translation id="4992066212339426712">Ieslēgt skaņu</translation>
-<translation id="4992458225095111526">Powerwash apstiprināšana</translation>
 <translation id="4994474651455208930">Ļaut vietnēm lūgt kļūt par protokolu noklusējuma apdarinātājiem</translation>
 <translation id="4998873842614926205">Apstiprināt izmaiņas</translation>
 <translation id="4999273653895592255">Šis karodziņš nosaka, vai rādīt iepriekšējo vai jauno lietotāja saskarni darbvirsmas attēla uzņemšanas atlasīšanas logā.</translation>
@@ -3044,7 +3038,6 @@ Lai turpinātu skatīšanu, nospiediet jebkuru taustiņu.</translation>
 <translation id="5045550434625856497">Nepareiza parole</translation>
 <translation id="5046747760454685637">Jautāt, pirms atļaut vietnēm aktivizēt Flash atskaņotāju (ieteicams)</translation>
 <translation id="5048179823246820836">Skandināvu</translation>
-<translation id="5053604404986157245">Pēc nejaušības principa ģenerētā TPM parole nav pieejama. Tā nereti notiek pēc funkcijas Powerwash izmantošanas.</translation>
 <translation id="5053803681436838483">Jauna piegādes adrese...</translation>
 <translation id="5055309315264875868">Rādīt saiti paroļu pārvaldnieka iestatījumu lapā, lai tiešsaistē pārvaldītu sinhronizētās paroles.</translation>
 <translation id="5061188462607594407">Lai turpinātu, uzlabojiet ierīces <ph name="PHONE_TYPE" /> drošību!</translation>
@@ -3292,7 +3285,6 @@ Lai turpinātu skatīšanu, nospiediet jebkuru taustiņu.</translation>
 <translation id="5357579842739549440">Atkļūdošanas īsinājumtaustiņi</translation>
 <translation id="5360150013186312835">Rādīšana rīkjoslā</translation>
 <translation id="5362741141255528695">Atlasiet privātās atslēgas failu.</translation>
-<translation id="5363109466694494651">Powerwash un atjaunošana</translation>
 <translation id="5367091008316207019">Notiek faila lasīšana...</translation>
 <translation id="5367260322267293088">Iespējojiet eksperimentālo Jaunas cilnes lapu, kurā tiek izmantotas lielas ikonas.</translation>
 <translation id="5368720394188453070">Jūsu tālrunis ir bloķēts. Lai tajā ieietu, atbloķējiet to.</translation>
@@ -3662,7 +3654,6 @@ Lai turpinātu skatīšanu, nospiediet jebkuru taustiņu.</translation>
 <translation id="5851063901794976166">Šeit nekā nav...</translation>
 <translation id="5851868085455377790">Izdevējs</translation>
 <translation id="5852112051279473187">Vai! Palaižot ierīci, kaut kas nogāja greizi. Lūdzu, mēģiniet vēlreiz vai sazinieties ar savu atbalsta pārstāvi.</translation>
-<translation id="5852137567692933493">Restartēt un aktivizēt funkciju Powerwash</translation>
 <translation id="5854409662653665676">Ja problēmas rodas bieži, varbūt mēģināt veikt tālāk aprakstītās darbības, lai atrisinātu problēmu ar šo moduli:</translation>
 <translation id="5854912040170951372">Pica</translation>
 <translation id="5855119960719984315">pārslēgt logu</translation>
@@ -3767,7 +3758,6 @@ Lai turpinātu skatīšanu, nospiediet jebkuru taustiņu.</translation>
 <translation id="6007237601604674381">Pārvietošana neizdevās. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Tiek nosūtīti hipersaišu auditēšanas ehotesti.</translation>
 <translation id="6015796118275082299">Gads</translation>
-<translation id="6016551720757758985">Apstiprinājums funkcijas Powerwash lietošanai, lai atjaunotu ierīcē iepriekšējo programmatūras versiju</translation>
 <translation id="6016809788585079594">Vēl vienu reizi sakiet frāzi “Ok Google”</translation>
 <translation id="6017225534417889107">Mainīt...</translation>
 <translation id="6017981840202692187">Pievienošana lietojumprogrammām</translation>
@@ -4045,7 +4035,6 @@ Lai turpinātu skatīšanu, nospiediet jebkuru taustiņu.</translation>
 <translation id="6409731863280057959">Uznirstošie logi</translation>
 <translation id="6410063390789552572">Nevar piekļūt tīkla bibliotēkai</translation>
 <translation id="6410257289063177456">Attēlu faili</translation>
-<translation id="6410328738210026208">Mainīt kanālu un Powerwash</translation>
 <translation id="6410668567036790476">Meklētājprogrammas pievienošana</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">Jauns inkognito logs</translation>
@@ -4762,7 +4751,6 @@ Lai turpinātu skatīšanu, nospiediet jebkuru taustiņu.</translation>
 <translation id="7405422715075171617">Iespējot jauna kredītkartes numura skenēšanu, kad aizpildāt kredītkartes veidlapu.</translation>
 <translation id="740624631517654988">Uznirstošie logi bloķēti</translation>
 <translation id="7406691462051376731">No šīs ierīces pašlaik tiek sūtīti diagnostikas un lietojuma dati Google serveriem. Šo <ph name="BEGIN_LINK1" />iestatījumu<ph name="END_LINK1" /> ir noteicis īpašnieks. <ph name="BEGIN_LINK2" />Uzziniet vairāk<ph name="END_LINK2" />.</translation>
-<translation id="7409233648990234464">Atkārtoti palaist un Powerwash</translation>
 <translation id="7409836189476010449">Aktivizēt Flash atskaņotāju</translation>
 <translation id="7410344089573941623">Vaicāt, ja vietne <ph name="HOST" /> vēlas piekļūt jūsu kamerai un mikrofonam</translation>
 <translation id="7412226954991670867">Grafiskā procesora atmiņa</translation>
@@ -4876,7 +4864,6 @@ Lai turpinātu skatīšanu, nospiediet jebkuru taustiņu.</translation>
 <translation id="7553242001898162573">Ievadiet paroli.</translation>
 <translation id="7554791636758816595">Jauna cilne</translation>
 <translation id="7556033326131260574">Smart Lock nevarēja verificēt jūsu kontu. Lai ieietu, ievadiet savu paroli.</translation>
-<translation id="7556242789364317684">Diemžēl <ph name="SHORT_PRODUCT_NAME" /> nevar atkopt jūsu iestatījumus. Lai novērstu šo kļūdu, pārlūkam <ph name="SHORT_PRODUCT_NAME" /> ir jāatiestata jūsu ierīce, izmantojot funkciju Powerwash.</translation>
 <translation id="7558050486864662801">Vaicāt, ja vietne pieprasa piekļuvi mikrofonam (ieteicams)</translation>
 <translation id="7559719679815339381">Lūdzu, uzgaidiet... Kioska lietotne tiek atjaunināta. Neizņemiet USB atmiņas karti.</translation>
 <translation id="7561196759112975576">Vienmēr</translation>
@@ -5201,7 +5188,6 @@ Glabājiet atslēgas failu drošā vietā. Tas būs vajadzīgs, lai izveidotu ja
 <translation id="8008356846765065031">Internets atvienots. Pārbaudiet interneta savienojumu.</translation>
 <translation id="8012382203418782830">Šī lapa ir tulkota.</translation>
 <translation id="8014154204619229810">Pašlaik darbojas atjauninātājs. Pēc brīža atsvaidziniet, lai pārbaudītu vēlreiz.</translation>
-<translation id="8014206674403687691">Nevar atjaunot iepriekš instalēto <ph name="IDS_SHORT_PRODUCT_NAME" /> versiju. Lūdzu, vēlreiz mēģiniet aktivizēt ierīcē funkciju Powerwash.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Neizdevusies autentifikācija</translation>
 <translation id="8022523925619404071">Iespējot automātisko atjaunināšanu</translation>
@@ -5260,9 +5246,7 @@ Glabājiet atslēgas failu drošā vietā. Tas būs vajadzīgs, lai izveidotu ja
 <translation id="80974698889265265">PIN vērtības neatbilst.</translation>
 <translation id="8098975406164436557">Vai jūsu <ph name="DEVICE_TYPE" /> ierīces atbloķēšanai izmantot šo tālruni?</translation>
 <translation id="810066391692572978">Fails izmanto neatbalstītas funkcijas.</translation>
-<translation id="8101987792947961127">Nākamajā atkārtotas palaišanas reizē jāizpilda funkcija Powerwash</translation>
 <translation id="8102535138653976669">Pakalpojums <ph name="PRODUCT_NAME" /> droši sinhronizē jūsu datus ar jūsu Google kontu. Sinhronizējiet visu vai pielāgojiet sinhronizētos datu veidus un šifrēšanas iestatījumus.</translation>
-<translation id="8104696615244072556">Aktivizējiet savā <ph name="IDS_SHORT_PRODUCT_NAME" /> ierīcē funkciju Powerwash un atjaunojiet iepriekšējo versiju.</translation>
 <translation id="8105368624971345109">Izslēgt</translation>
 <translation id="8106045200081704138">Kopīgots ar mani</translation>
 <translation id="8106211421800660735">Kredītkartes numurs</translation>

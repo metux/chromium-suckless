@@ -989,7 +989,6 @@ Nach der Erstellung eines neuen betreuten Nutzers können Sie die Einstellungen 
 <translation id="2332742915001411729">Auf Standardeinstellungen zurücksetzen</translation>
 <translation id="2335122562899522968">Diese Seite hat Cookies gesetzt.</translation>
 <translation id="2336228925368920074">Alle Tabs als Lesezeichen speichern...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">In Google Keep mit Anmerkungen versehen</translation>
 <translation id="2339120501444485379">Geben Sie einen neuen Namen ein.</translation>
 <translation id="2339641773402824483">Suche nach Updates läuft...</translation>
@@ -1167,7 +1166,6 @@ Ich glaube nicht, dass diese Website blockiert werden sollte.</translation>
 <translation id="2562743677925229011">Nicht in <ph name="SHORT_PRODUCT_NAME" /> angemeldet</translation>
 <translation id="2565670301826831948">Touchpad-Geschwindigkeit:</translation>
 <translation id="2565828445440744174">Experimentelle WebAssembly</translation>
-<translation id="2566124945717127842">Durch einen Powerwash wird Ihr <ph name="IDS_SHORT_PRODUCT_NAME" />-Gerät auf den Werkszustand zurückgesetzt.</translation>
 <translation id="2568774940984945469">Infoleisten-Container</translation>
 <translation id="2570000010887652771">Daten gespeichert.</translation>
 <translation id="2570648609346224037">Beim Download des Wiederherstellungsabbilds ist ein Problem aufgetreten.</translation>
@@ -1363,7 +1361,6 @@ Ich glaube nicht, dass diese Website blockiert werden sollte.</translation>
       <ph name="LIST_ITEM" />für das Dev- und System-Root-Passwort einen benutzerdefinierten Wert festlegen, sodass Sie sich manuell per SSH mit dem Gerät verbinden können.
     <ph name="END_LIST" />
     <ph name="BR" />
-    Nach der Aktivierung bleiben die meisten Debugging-Funktionen auch dann aktiviert, wenn Sie einen Powerwash durchführen oder die Daten auf einem verwalteten Unternehmensgerät löschen. Führen Sie zur vollständigen Deaktivierung aller Debugging-Funktionen den Chrome OS-Wiederherstellungsprozess aus: https://support.google.com/chromebook/answer/1080595.
     <ph name="BR" />
     <ph name="BR" />
     Weitere Informationen zu den Debugging-Funktionen finden Sie hier:<ph name="BR" />
@@ -1589,7 +1586,6 @@ Mehr dazu erfahren Sie in <ph name="BEGIN_LINK" />unserer Hilfe<ph name="END_LIN
 <translation id="3065140616557457172">Einfach Suchbegriff oder Webadresse eingeben – alles ist möglich.</translation>
 <translation id="3067198360141518313">Dieses Plug-in ausführen</translation>
 <translation id="307519606911195071">Zusätzliche Bedienungshilfen auf der Seite "Einstellungen" aktivieren.</translation>
-<translation id="3075874217500066906">Zu Beginn des Powerwashs ist ein Neustart erforderlich. Nach dem Neustart werden Sie gefragt, ob der Vorgang fortgesetzt werden soll.</translation>
 <translation id="3076677906922146425">Jeder darf Personen zu Chrome hinzufügen.</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">Shift</translation>
@@ -2339,7 +2335,6 @@ Möchten Sie <ph name="CONTROL_PANEL_APPLET_NAME" /> starten?</translation>
 <translation id="404493185430269859">Standardsuchmaschine</translation>
 <translation id="4047112090469382184">Warum ist das sicher?</translation>
 <translation id="4052120076834320548">Winzig</translation>
-<translation id="4055023634561256217">Für das Zurücksetzen Ihres Geräts mit Powerwash ist ein Neustart erforderlich.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Im Store ansehen</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3000,7 +2995,6 @@ Drücken Sie eine beliebige Taste, um fortzufahren.</translation>
 <translation id="4991420928586866460">Tasten in der obersten Reihe als Funktionstasten behandeln</translation>
 <translation id="499165176004408815">Modus mit hohem Kontrast verwenden</translation>
 <translation id="4992066212339426712">Stummschaltung aufheben</translation>
-<translation id="4992458225095111526">Powerwash bestätigen</translation>
 <translation id="4994474651455208930">Registrierung von Websites als Standard-Handler für Protokolle zulassen</translation>
 <translation id="4998873842614926205">Änderungen bestätigen</translation>
 <translation id="4999273653895592255">Mit dieser Markierung wird festgelegt, ob für das Desktop Capture-Auswahlfenster die alte oder neue Benutzeroberfläche verwendet wird.</translation>
@@ -3035,7 +3029,6 @@ Drücken Sie eine beliebige Taste, um fortzufahren.</translation>
 <translation id="5045550434625856497">Falsches Passwort</translation>
 <translation id="5046747760454685637">Nachfragen, bevor Websites Flash ausführen (empfohlen)</translation>
 <translation id="5048179823246820836">Nordisch</translation>
-<translation id="5053604404986157245">Das nach dem Zufallsprinzip erzeugte TPM-Passwort ist nicht verfügbar. Dies ist nach einem Powerwash normal.</translation>
 <translation id="5053803681436838483">Neue Versandadresse...</translation>
 <translation id="5055309315264875868">Anzeige eines Links auf der Einstellungsseite des Passwortmanagers, über den Sie Ihre synchronisierten Passwörter online verwalten können</translation>
 <translation id="5061188462607594407">Schützen Sie Ihr <ph name="PHONE_TYPE" />, um fortzufahren.</translation>
@@ -3280,7 +3273,6 @@ Drücken Sie eine beliebige Taste, um fortzufahren.</translation>
 <translation id="5357579842739549440">Debugging-Tastenkombinationen</translation>
 <translation id="5360150013186312835">In Symbolleiste anzeigen</translation>
 <translation id="5362741141255528695">Private Schlüsseldatei auswählen</translation>
-<translation id="5363109466694494651">Powerwash durchführen und zurücksetzen</translation>
 <translation id="5367091008316207019">Datei wird gelesen...</translation>
 <translation id="5367260322267293088">Aktiviert die experimentelle "Neuer Tab"-Seite mit großen Symbolen</translation>
 <translation id="5368720394188453070">Ihr Telefon ist gesperrt. Entsperren Sie es, um fortzufahren.</translation>
@@ -3650,7 +3642,6 @@ Drücken Sie eine beliebige Taste, um fortzufahren.</translation>
 <translation id="5851063901794976166">Nichts gefunden...</translation>
 <translation id="5851868085455377790">Aussteller</translation>
 <translation id="5852112051279473187">Hoppla! Bei der Anmeldung dieses Geräts ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder wenden Sie sich an einen Support-Mitarbeiter.</translation>
-<translation id="5852137567692933493">Neu starten und Powerwash durchführen</translation>
 <translation id="5854409662653665676">Wenn Sie häufig Schwierigkeiten haben, können Sie versuchen, das Problem mit diesem Modul zu beheben:</translation>
 <translation id="5854912040170951372">Pizza</translation>
 <translation id="5855119960719984315">Fenster wechseln</translation>
@@ -3755,7 +3746,6 @@ Drücken Sie eine beliebige Taste, um fortzufahren.</translation>
 <translation id="6007237601604674381">Fehler beim Verschieben. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Sendet Pings zur Hyperlinküberprüfung.</translation>
 <translation id="6015796118275082299">Jahr</translation>
-<translation id="6016551720757758985">Powerwash und Zurücksetzen auf vorherige Version bestätigen</translation>
 <translation id="6016809788585079594">Sagen Sie noch ein letztes Mal "Ok Google".</translation>
 <translation id="6017225534417889107">Ändern...</translation>
 <translation id="6017981840202692187">Zu Anwendungen hinzufügen</translation>
@@ -4033,7 +4023,6 @@ Drücken Sie eine beliebige Taste, um fortzufahren.</translation>
 <translation id="6409731863280057959">Pop-ups</translation>
 <translation id="6410063390789552572">Kein Zugriff auf Netzwerkbibliothek möglich</translation>
 <translation id="6410257289063177456">Bilddateien</translation>
-<translation id="6410328738210026208">Versionsänderung und Powerwash</translation>
 <translation id="6410668567036790476">Suchmaschine hinzufügen</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">Neues Inkognitofenster</translation>
@@ -4751,7 +4740,6 @@ Drücken Sie eine beliebige Taste, um fortzufahren.</translation>
 <translation id="7405422715075171617">Hiermit wird das Scannen einer neuen Kreditkartennummer beim Ausfüllen von Kreditkartenformularen ermöglicht.</translation>
 <translation id="740624631517654988">Pop-up blockiert</translation>
 <translation id="7406691462051376731">Dieses Gerät sendet automatisch Diagnose- und Nutzungsdaten an Google. <ph name="BEGIN_LINK1" />Diese Einstellung<ph name="END_LINK1" /> wird durch den Eigentümer erzwungen. <ph name="BEGIN_LINK2" />Weitere Informationen<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Neustart und Powerwash</translation>
 <translation id="7409836189476010449">Flash ausführen</translation>
 <translation id="7410344089573941623">Nachfragen, wenn <ph name="HOST" /> auf Kamera und Mikrofon zugreifen möchte</translation>
 <translation id="7412226954991670867">GPU-Speicher</translation>
@@ -4865,7 +4853,6 @@ Drücken Sie eine beliebige Taste, um fortzufahren.</translation>
 <translation id="7553242001898162573">Passwort eingeben</translation>
 <translation id="7554791636758816595">Neuer Tab</translation>
 <translation id="7556033326131260574">Smart Lock konnte Ihr Konto nicht bestätigen. Bitte geben Sie Ihr Passwort ein.</translation>
-<translation id="7556242789364317684"><ph name="SHORT_PRODUCT_NAME" /> kann Ihre Einstellungen nicht wiederherstellen. Zur Behebung des Fehlers muss Ihr Gerät von <ph name="SHORT_PRODUCT_NAME" /> per Powerwash zurückgesetzt werden.</translation>
 <translation id="7558050486864662801">Nachfragen, wenn eine Website auf Ihr Mikrofon zugreifen möchte (empfohlen)</translation>
 <translation id="7559719679815339381">Die Kiosk-App wird gerade aktualisiert, bitte warten. Entfernen Sie den USB-Stick nicht.</translation>
 <translation id="7561196759112975576">Immer</translation>
@@ -5190,7 +5177,6 @@ Speichern Sie Ihre Schlüsseldatei an einem sicheren Ort. Sie benötigen die Dat
 <translation id="8008356846765065031">Sie haben keine Verbindung mit dem Internet. Bitte überprüfen Sie Ihre Internetverbindung.</translation>
 <translation id="8012382203418782830">Diese Seite wurde übersetzt.</translation>
 <translation id="8014154204619229810">Der Updater wird momentan ausgeführt. Bitte versuchen Sie es in einer Minute erneut, indem Sie eine Aktualisierung vornehmen.</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> konnte die zuvor installierte Version nicht wiederherstellen. Bitte versuchen Sie erneut, ein Powerwash für Ihr Gerät durchzuführen.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Fehlerhafte Authentifizierung</translation>
 <translation id="8022523925619404071">Automatische Updates aktivieren</translation>
@@ -5249,9 +5235,7 @@ Speichern Sie Ihre Schlüsseldatei an einem sicheren Ort. Sie benötigen die Dat
 <translation id="80974698889265265">Die PINs stimmen nicht überein</translation>
 <translation id="8098975406164436557">Möchten Sie mit diesem Telefon Ihr <ph name="DEVICE_TYPE" /> entsperren?</translation>
 <translation id="810066391692572978">Datei verwendet nicht unterstützte Funktionen.</translation>
-<translation id="8101987792947961127">Powerwash beim nächsten Neustart erforderlich</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> synchronisiert Ihre Daten sicher mit Ihrem Google-Konto. Synchronisieren Sie alle Daten oder passen Sie die zu synchronisierenden Datentypen und Verschlüsselungsoptionen an.</translation>
-<translation id="8104696615244072556">Powerwash für Ihr <ph name="IDS_SHORT_PRODUCT_NAME" />-Gerät ausführen und auf die vorherige Version zurücksetzen</translation>
 <translation id="8105368624971345109">Deaktivieren</translation>
 <translation id="8106045200081704138">Für mich freigegeben</translation>
 <translation id="8106211421800660735">Kreditkartennummer</translation>

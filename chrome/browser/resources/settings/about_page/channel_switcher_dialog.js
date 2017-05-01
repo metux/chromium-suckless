@@ -25,7 +25,7 @@ Polymer({
 
     /**
      * Controls which of the two action buttons is visible.
-     * @private {?{changeChannel: boolean, changeChannelAndPowerwash: boolean}}
+     * @private {?{changeChannel: boolean}}
      */
     shouldShowButtons_: {
       type: Object,
@@ -71,14 +71,6 @@ Polymer({
     this.fire('target-channel-changed', selectedChannel);
   },
 
-  /** @private */
-  onChangeChannelAndPowerwashTap_: function() {
-    var selectedChannel = this.$$('paper-radio-group').selected;
-    this.browserProxy_.setChannel(selectedChannel, true);
-    this.$.dialog.close();
-    this.fire('target-channel-changed', selectedChannel);
-  },
-
   /**
    * @param {string} titleId Localized string ID for the title.
    * @param {string} descriptionId Localized string ID for the description.
@@ -98,19 +90,11 @@ Polymer({
   /**
    * @param {boolean} changeChannel Whether the changeChannel button sholud be
    *     visible.
-   * @param {boolean} changeChannelAndPowerwash Whether the
-   *     changeChannelAndPowerwash button should be visible.
    * @private
    */
-  updateButtons_: function(changeChannel, changeChannelAndPowerwash) {
-    if (changeChannel || changeChannelAndPowerwash) {
-      // Ensure that at most one button is visible at any given time.
-      assert(changeChannel != changeChannelAndPowerwash);
-    }
-
+  updateButtons_: function(changeChannel) {
     this.shouldShowButtons_ = {
       changeChannel: changeChannel,
-      changeChannelAndPowerwash: changeChannelAndPowerwash,
     };
   },
 
@@ -133,8 +117,6 @@ Polymer({
             'aboutProductTitle');
         this.updateButtons_(true, false);
       } else {
-        this.updateWarning_(
-          'aboutPowerwashWarningTitle', 'aboutPowerwashWarningMessage');
         this.updateButtons_(false, true);
       }
     } else {

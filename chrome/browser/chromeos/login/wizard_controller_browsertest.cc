@@ -31,7 +31,6 @@
 #include "chrome/browser/chromeos/login/screens/mock_update_screen.h"
 #include "chrome/browser/chromeos/login/screens/mock_wrong_hwid_screen.h"
 #include "chrome/browser/chromeos/login/screens/network_screen.h"
-#include "chrome/browser/chromeos/login/screens/reset_screen.h"
 #include "chrome/browser/chromeos/login/screens/user_image_screen.h"
 #include "chrome/browser/chromeos/login/screens/wrong_hwid_screen.h"
 #include "chrome/browser/chromeos/login/startup_utils.h"
@@ -942,20 +941,6 @@ IN_PROC_BROWSER_TEST_F(WizardControllerBrokenLocalStateTest,
             GetErrorScreen()->GetUIState());
 
   WaitUntilJSIsReady();
-
-  // Checks visibility of the error message and powerwash button.
-  ASSERT_FALSE(JSExecuteBooleanExpression("$('error-message').hidden"));
-  ASSERT_TRUE(JSExecuteBooleanExpression(
-      "$('error-message').classList.contains('ui-state-local-state-error')"));
-  ASSERT_TRUE(JSExecuteBooleanExpression("$('progress-dots').hidden"));
-  ASSERT_TRUE(JSExecuteBooleanExpression("$('login-header-bar').hidden"));
-
-  // Emulates user click on the "Restart and Powerwash" button.
-  ASSERT_EQ(0, fake_session_manager_client()->start_device_wipe_call_count());
-  ASSERT_TRUE(content::ExecuteScript(
-      GetWebContents(),
-      "$('error-message-restart-and-powerwash-button').click();"));
-  ASSERT_EQ(1, fake_session_manager_client()->start_device_wipe_call_count());
 }
 
 class WizardControllerProxyAuthOnSigninTest : public WizardControllerTest {

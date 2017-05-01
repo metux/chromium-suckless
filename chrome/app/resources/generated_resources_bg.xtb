@@ -989,7 +989,6 @@
 <translation id="2332742915001411729">Възстановяване на настройката по подразбиране</translation>
 <translation id="2335122562899522968">Тази страница задава „бисквитки“.</translation>
 <translation id="2336228925368920074">Запазване на отметки към всички раздели...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Пояснения в Google Keep</translation>
 <translation id="2339120501444485379">Въведете ново име</translation>
 <translation id="2339641773402824483">Извършва се проверка за актуализации...</translation>
@@ -1167,7 +1166,6 @@
 <translation id="2562743677925229011">Не сте влезли в <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">Скорост на сензорния панел:</translation>
 <translation id="2565828445440744174">Експериментална технология WebAssembly</translation>
-<translation id="2566124945717127842">Извършете Powerwash, за да възстановите устройството си с <ph name="IDS_SHORT_PRODUCT_NAME" />, така че да бъде като ново.</translation>
 <translation id="2568774940984945469">Контейнер на инфолента</translation>
 <translation id="2570000010887652771">Спестени са данни.</translation>
 <translation id="2570648609346224037">Възникна проблем при изтеглянето на образа за възстановяване.</translation>
@@ -1364,7 +1362,6 @@
 <ph name="LIST_ITEM" />да зададете персонализиранa стойност за паролите за вход в режима за програмисти и в основната системна директория, за да можете да осъществявате достъп до устройството ръчно чрез SSH.
 <ph name="END_LIST" />
 <ph name="BR" />
-След като ги активирате, повечето функции за отстраняване на грешки ще останат включени дори след извършване на Powerwash на корпоративно управлявано устройство или изтриване на данните от него. За да деактивирате напълно тези функции, изпълнете процеса за възстановяване на Chrome OS (https://support.google.com/chromebook/answer/1080595).
 <ph name="BR" />
 <ph name="BR" />
 За повече информация относно функциите за отстраняване на грешки посетете:<ph name="BR" />
@@ -1590,7 +1587,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="3065140616557457172">Въведи за търсене или въведи URL адрес, за да навигирате - просто всичко работи.</translation>
 <translation id="3067198360141518313">Стартиране на тази приставка</translation>
 <translation id="307519606911195071">Активиране на допълнителните функции за достъпност на страницата „Настройки“.</translation>
-<translation id="3075874217500066906">За започването на Powerwash се изисква рестартиране. След това ще бъдете помолени да потвърдите, че искате да продължите.</translation>
 <translation id="3076677906922146425">Разрешаване на всички да добавят хора към Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2339,7 +2335,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="404493185430269859">Основна търсеща машина</translation>
 <translation id="4047112090469382184">Защо това е сигурно</translation>
 <translation id="4052120076834320548">Миниатюрен</translation>
-<translation id="4055023634561256217">Изисква се да рестартирате устройството си, преди да може да бъде възстановено с Powerwash.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Преглед в магазина</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3003,7 +2998,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="4991420928586866460">Третиране на клавишите от най-горния ред като функционални</translation>
 <translation id="499165176004408815">Използване на режима на висок контраст</translation>
 <translation id="4992066212339426712">Включване на звука</translation>
-<translation id="4992458225095111526">Потвърждаване на извършването на Powerwash</translation>
 <translation id="4994474651455208930">Разрешаване на питания от сайтове дали да са манипулаторите по подразбиране за протоколите</translation>
 <translation id="4998873842614926205">Потвърждаване на промените</translation>
 <translation id="4999273653895592255">Този флаг контролира дали да се показва старият, или новият потребителски интерфейс на прозореца на инструмента за заснемане на работния плот.</translation>
@@ -3038,7 +3032,6 @@ http://www.chromium.org/chromium-os/how-tos-and-troubleshooting/debugging-featur
 <translation id="5045550434625856497">Грешна парола</translation>
 <translation id="5046747760454685637">Извеждане на запитване, преди да се разреши на сайтовете да изпълняват Flash (препоръчително)</translation>
 <translation id="5048179823246820836">Скандинавски</translation>
-<translation id="5053604404986157245">Произволно генерираната TPM парола не е налице. Това е нормално след Powerwash.</translation>
 <translation id="5053803681436838483">Нов адрес за доставка...</translation>
 <translation id="5055309315264875868">На страницата с настройки за диспечера на паролите се показва връзка за управление на синхронизираните ви пароли онлайн.</translation>
 <translation id="5061188462607594407">Подсигурете телефона си <ph name="PHONE_TYPE" />, за да продължите</translation>
@@ -3286,7 +3279,6 @@ PDF файл или в Google Диск.</translation>
 <translation id="5357579842739549440">Клавишни комбинации за отстраняване на програмни грешки</translation>
 <translation id="5360150013186312835">Показване в лентата с инструменти</translation>
 <translation id="5362741141255528695">Изберете файла с личен ключ.</translation>
-<translation id="5363109466694494651">Powerwash и възстановяване</translation>
 <translation id="5367091008316207019">Файлът се чете...</translation>
 <translation id="5367260322267293088">Активирайте експерименталното използване на големи икони в новия раздел в браузъра.</translation>
 <translation id="5368720394188453070">Телефонът ви е заключен. Отключете го, за да влезете.</translation>
@@ -3657,7 +3649,6 @@ PDF файл или в Google Диск.</translation>
 <translation id="5851063901794976166">Тук няма нищо...</translation>
 <translation id="5851868085455377790">Издател</translation>
 <translation id="5852112051279473187">Ами сега!  При записването на това устройство нещо се обърка сериозно.  Моля, опитайте отново или се свържете с представител на екипа за поддръжка.</translation>
-<translation id="5852137567692933493">Рестартиране и извършване на Powerwash</translation>
 <translation id="5854409662653665676">Ако често имате проблеми, може да опитате следните стъпки, за да разрешите проблема с този модул:</translation>
 <translation id="5854912040170951372">Парче пица</translation>
 <translation id="5855119960719984315">превключване на прозореца</translation>
@@ -3762,7 +3753,6 @@ PDF файл или в Google Диск.</translation>
 <translation id="6007237601604674381">Преместването не бе успешно. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Изпраща сигнали за проверка на хипервръзки.</translation>
 <translation id="6015796118275082299">Година</translation>
-<translation id="6016551720757758985">Потвърждаване на извършването на Powerwash и връщането към предишната версия</translation>
 <translation id="6016809788585079594">Кажете „Ok Google“ за последен път</translation>
 <translation id="6017225534417889107">Промяна...</translation>
 <translation id="6017981840202692187">Добавяне към Applications</translation>
@@ -4040,7 +4030,6 @@ PDF файл или в Google Диск.</translation>
 <translation id="6409731863280057959">Изскачащи прозорци</translation>
 <translation id="6410063390789552572">Няма достъп до мрежовата библиотека</translation>
 <translation id="6410257289063177456">Графични файлове</translation>
-<translation id="6410328738210026208">Промяна на канала и Powerwash</translation>
 <translation id="6410668567036790476">Добавяне на търсеща машина</translation>
 <translation id="641105183165925463">$1 МБ</translation>
 <translation id="6412931879992742813">Нов прозорец в режим „инкогнито“</translation>
@@ -4756,7 +4745,6 @@ PDF файл или в Google Диск.</translation>
 <translation id="7405422715075171617">Активиране на сканирането на нов номер на кредитна карта при попълване на формуляр за кредитна карта.</translation>
 <translation id="740624631517654988">Блокиран бе изскачащ прозорец</translation>
 <translation id="7406691462051376731">Понастоящем устройството изпраща до Google данни за диагностиката и употребата. Тази <ph name="BEGIN_LINK1" />настройка<ph name="END_LINK1" /> е наложена от собственика. <ph name="BEGIN_LINK2" />Научете повече<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Повторно стартиране и Powerwash</translation>
 <translation id="7409836189476010449">Изпълни Flash</translation>
 <translation id="7410344089573941623">Да се получава запитване, ако <ph name="HOST" /> иска достъп до камерата и микрофона ви</translation>
 <translation id="7412226954991670867">Памет на графичния процесор</translation>
@@ -4870,7 +4858,6 @@ PDF файл или в Google Диск.</translation>
 <translation id="7553242001898162573">Въведете паролата си</translation>
 <translation id="7554791636758816595">Нов раздел</translation>
 <translation id="7556033326131260574">Smart Lock не можа да потвърди профила ви. Въведете паролата си, за да влезете.</translation>
-<translation id="7556242789364317684">За съжаление <ph name="SHORT_PRODUCT_NAME" /> не може да възстанови настройките ви. За да поправи грешката, <ph name="SHORT_PRODUCT_NAME" /> трябва да нулира устройството ви с Powerwash.</translation>
 <translation id="7558050486864662801">Извеждане на запитване, когато сайт иска достъп до микрофона ви (препоръчително)</translation>
 <translation id="7559719679815339381">Моля, изчакайте... Павилионното приложение се актуализира. Не изваждайте USB паметта.</translation>
 <translation id="7561196759112975576">Винаги</translation>
@@ -5195,7 +5182,6 @@ PDF файл или в Google Диск.</translation>
 <translation id="8008356846765065031">Няма връзка с интернет. Моля, проверете връзката си.</translation>
 <translation id="8012382203418782830">Тази страница е преведена.</translation>
 <translation id="8014154204619229810">Актуализиращата програма понастоящем се изпълнява. Опреснете след минута, за да проверите отново.</translation>
-<translation id="8014206674403687691">Предишната инсталирана версия на <ph name="IDS_SHORT_PRODUCT_NAME" /> не може да се възстанови. Моля, опитайте отново да извършите Powerwash на устройството си.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Неуспешно удостоверяване</translation>
 <translation id="8022523925619404071">Активиране на автоматичното актуализиране</translation>
@@ -5254,9 +5240,7 @@ PDF файл или в Google Диск.</translation>
 <translation id="80974698889265265">ПИН кодовете не съвпадат</translation>
 <translation id="8098975406164436557">Да се използва ли този телефон за отключване на вашия <ph name="DEVICE_TYPE" />?</translation>
 <translation id="810066391692572978">Файлът използва неподдържани функции.</translation>
-<translation id="8101987792947961127">При следващото рестартиране се изисква Powerwash</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> синхронизира сигурно вашите данни с профила ви в Google. Поддържайте всичко в синхрон или персонализирайте синхронизираните типове данни и настройките за шифроване.</translation>
-<translation id="8104696615244072556">Извършване на Powerwash на устройството ви с <ph name="IDS_SHORT_PRODUCT_NAME" /> и връщане към предишната версия.</translation>
 <translation id="8105368624971345109">Изключване</translation>
 <translation id="8106045200081704138">Споделени с мен</translation>
 <translation id="8106211421800660735">Номер на кредитната карта</translation>

@@ -155,7 +155,6 @@ void CoreOobeHandler::RegisterMessages() {
                  &CoreOobeHandler::HandleSkipToLoginForTesting);
   AddCallback("launchHelpApp",
               &CoreOobeHandler::HandleLaunchHelpApp);
-  AddCallback("toggleResetScreen", &CoreOobeHandler::HandleToggleResetScreen);
   AddCallback("toggleEnableDebuggingScreen",
               &CoreOobeHandler::HandleEnableDebuggingScreen);
   AddCallback("headerBarVisible",
@@ -208,23 +207,6 @@ void CoreOobeHandler::ShowSignInError(
 
 void CoreOobeHandler::ShowTpmError() {
   CallJSOrDefer("showTpmError");
-}
-
-void CoreOobeHandler::ShowDeviceResetScreen() {
-  policy::BrowserPolicyConnectorChromeOS* connector =
-      g_browser_process->platform_part()->browser_policy_connector_chromeos();
-  if (!connector->IsEnterpriseManaged()) {
-    // Don't recreate WizardController if it already exists.
-    WizardController* wizard_controller =
-        WizardController::default_controller();
-    if (wizard_controller && !wizard_controller->login_screen_started()) {
-      wizard_controller->AdvanceToScreen(WizardController::kResetScreenName);
-    } else {
-      DCHECK(LoginDisplayHost::default_host());
-      LoginDisplayHost::default_host()->StartWizard(
-          WizardController::kResetScreenName);
-    }
-  }
 }
 
 void CoreOobeHandler::ShowEnableDebuggingScreen() {
@@ -363,10 +345,6 @@ void CoreOobeHandler::HandleSkipToLoginForTesting(
   LoginScreenContext context(args);
   if (WizardController::default_controller())
       WizardController::default_controller()->SkipToLoginForTesting(context);
-}
-
-void CoreOobeHandler::HandleToggleResetScreen() {
-  ShowDeviceResetScreen();
 }
 
 void CoreOobeHandler::HandleEnableDebuggingScreen() {

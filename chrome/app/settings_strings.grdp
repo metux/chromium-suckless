@@ -36,9 +36,6 @@
     <message name="IDS_SETTINGS_ABOUT_PAGE_RELAUNCH" desc="The label for the relaunch button that relaunches the browser once update is complete">
       Restart
     </message>
-    <message name="IDS_SETTINGS_ABOUT_PAGE_RELAUNCH_AND_POWERWASH" desc="The label for the  button that relaunches and powerwashes the browser once update is complete">
-      Relaunch and Powerwash
-    </message>
     <message name="IDS_SETTINGS_UPGRADE_UPDATING" desc="Status label: Updating ChromiumOS or ChromeOS">
       Updating your device (<ph name="PROGRESS_PERCENT">$1<ex>90%</ex></ph>)
     </message>
@@ -59,20 +56,11 @@
     <message name="IDS_SETTINGS_ABOUT_PAGE_CHANGE_CHANNEL" desc="Button label for channel switch.">
       Change channel
     </message>
-    <message name="IDS_SETTINGS_ABOUT_PAGE_CHANGE_CHANNEL_AND_POWERWASH" desc="Button label for channel switch and powerwash.">
-      Change channel and Powerwash
-    </message>
     <message name="IDS_SETTINGS_ABOUT_PAGE_DELAYED_WARNING_MESSAGE" desc="Message that notifies user that channel change will be applied later.">
       You are changing to a channel with an older version of <ph name="PRODUCT_NAME">$1<ex>Chrome OS</ex></ph>. The channel change will be applied when the channel version matches the version currently installed on your device.
     </message>
     <message name="IDS_SETTINGS_ABOUT_PAGE_DELAYED_WARNING_TITLE" desc="Title for the message that the channel change will be applied later.">
       Channel change will be applied later.
-    </message>
-    <message name="IDS_SETTINGS_ABOUT_PAGE_POWERWASH_WARNING_MESSAGE" desc="Message that warns user about powerwash.">
-      This will remove all local users, files, data, and other settings after your next restart. All users will need to sign in again.
-    </message>
-    <message name="IDS_SETTINGS_ABOUT_PAGE_POWERWASH_WARNING_TITLE" desc="The title for the message that warns user about powerwash.">
-      Powerwash required on next reboot
     </message>
     <message name="IDS_SETTINGS_ABOUT_PAGE_UNSTABLE_WARNING_MESSAGE" desc="Warning about switching to developer (unstable) channel.">
       You are updating to an unstable version of <ph name="PRODUCT_NAME">$1<ex>Chrome OS</ex></ph> which contains features that are in progress. Crashes and unexpected bugs will occur. Please proceed with caution.

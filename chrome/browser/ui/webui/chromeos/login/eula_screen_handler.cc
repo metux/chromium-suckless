@@ -130,7 +130,6 @@ void EulaScreenHandler::DeclareLocalizedValues(
                IDS_EULA_SYSTEM_SECURITY_SETTING);
   builder->Add("eulaTpmDesc", IDS_EULA_TPM_DESCRIPTION);
   builder->Add("eulaTpmKeyDesc", IDS_EULA_TPM_KEY_DESCRIPTION);
-  builder->Add("eulaTpmDescPowerwash", IDS_EULA_TPM_KEY_DESCRIPTION_POWERWASH);
   builder->Add("eulaTpmBusy", IDS_EULA_TPM_BUSY);
   builder->Add("eulaSystemInstallationSettingsOkButton", IDS_OK);
   builder->Add("termsOfServiceLoading", IDS_TERMS_OF_SERVICE_SCREEN_LOADING);

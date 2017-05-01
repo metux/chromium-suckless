@@ -116,15 +116,12 @@ class CHROMEOS_EXPORT UpdateEngineClient : public DBusClient {
   // Changes the current channel of the device to the target
   // channel. If the target channel is a less stable channel than the
   // current channel, then the channel change happens immediately (at
-  // the next update check).  If the target channel is a more stable
-  // channel, then if |is_powerwash_allowed| is set to true, then also
-  // the change happens immediately but with a powerwash if
-  // required. Otherwise, the change takes effect eventually (when the
+  // the next update check). 
+  // the change takes effect eventually (when the
   // version on the target channel goes above the version number of
   // what the device currently has). |target_channel| should look like
   // "dev-channel", "beta-channel" or "stable-channel".
-  virtual void SetChannel(const std::string& target_channel,
-                          bool is_powerwash_allowed) = 0;
+  virtual void SetChannel(const std::string& target_channel) = 0;
 
   // If |get_current_channel| is set to true, calls |callback| with
   // the name of the channel that the device is currently

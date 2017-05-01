@@ -13,12 +13,6 @@ enum DialogViewType {
   // User invoked the dialog from options page.
   DIALOG_FROM_OPTIONS,
 
-  // Invoked with shortcut. Confirming form for powerwash.
-  DIALOG_SHORTCUT_CONFIRMING_POWERWASH_ONLY,
-
-  // Invoked with shortcut. Confirming form for powerwash and rollback.
-  DIALOG_SHORTCUT_CONFIRMING_POWERWASH_AND_ROLLBACK,
-
   // Invoked with shortcut. Offering form, rollback option set.
   DIALOG_SHORTCUT_OFFERING_ROLLBACK_UNAVAILABLE,
 

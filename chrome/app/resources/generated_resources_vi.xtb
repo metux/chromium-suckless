@@ -994,7 +994,6 @@ Sau khi tạo người dùng được giám sát mới, bạn có thể quản l
 <translation id="2332742915001411729">Đặt lại về mặc định</translation>
 <translation id="2335122562899522968">Trang này đã đặt các cookie.</translation>
 <translation id="2336228925368920074">Đánh dấu trang Tất cả các Tab...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Chú thích trong Google Keep</translation>
 <translation id="2339120501444485379">Nhập tên mới</translation>
 <translation id="2339641773402824483">Kiểm tra cập nhật...</translation>
@@ -1172,7 +1171,6 @@ Tôi không cho rằng nên chặn trang web này!</translation>
 <translation id="2562743677925229011">Chưa được đăng nhập vào <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">Tốc độ bàn di chuột cảm ứng:</translation>
 <translation id="2565828445440744174">WebAssembly thử nghiệm</translation>
-<translation id="2566124945717127842">Powerwash để đặt lại thiết bị <ph name="IDS_SHORT_PRODUCT_NAME" /> của bạn giống như mới.</translation>
 <translation id="2568774940984945469">Bộ chứa Thanh thông tin</translation>
 <translation id="2570000010887652771">Dữ liệu đã lưu.</translation>
 <translation id="2570648609346224037">Đã xảy ra sự cố trong quá trình tải xuống hình ảnh khôi phục.</translation>
@@ -1369,7 +1367,6 @@ Tôi không cho rằng nên chặn trang web này!</translation>
       <ph name="LIST_ITEM" />Đặt dev và mật khẩu đăng nhập gốc hệ thống thành một giá trị tùy chỉnh để bạn có thể SSH thủ công vào thiết bị
     <ph name="END_LIST" />
     <ph name="BR" />
-    Sau khi được bật, hầu hết các tính năng gỡ lỗi sẽ vẫn được bật kể cả sau khi thực hiện powerwash hoặc quét dữ liệu trên thiết bị do doanh nghiệp quản lý.  Để tắt tất cả các tính năng gỡ lỗi, hãy hoàn tất quy trình khôi phục Chrome OS (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     Để biết thêm thông tin về các tính năng gỡ lỗi, hãy xem:<ph name="BR" />
@@ -1595,7 +1592,6 @@ Tạo người dùng được giám sát sẽ không tạo Tài khoản Google, 
 <translation id="3065140616557457172">Nhập để tìm kiếm hoặc nhập URL để điều hướng - mọi thứ chỉ hoạt động.</translation>
 <translation id="3067198360141518313">Chạy plugin này</translation>
 <translation id="307519606911195071">Bật các tính năng khác về trợ năng trong trang Cài đặt.</translation>
-<translation id="3075874217500066906">Bạn cần khởi động lại để bắt đầu quy trình Powerwash. Sau khi khởi động lại, bạn sẽ được yêu cầu xác nhận rằng bạn muốn tiếp tục.</translation>
 <translation id="3076677906922146425">Cho phép mọi người thêm người vào Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2345,7 +2341,6 @@ Từ <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="404493185430269859">Công cụ tìm kiếm mặc định</translation>
 <translation id="4047112090469382184">Tính năng này an toàn như thế nào</translation>
 <translation id="4052120076834320548">Rất nhỏ</translation>
-<translation id="4055023634561256217">Cần khởi động lại trước khi có thể đặt lại thiết bị của bạn bằng Powerwash.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Xem trong cửa hàng</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3009,7 +3004,6 @@ Nhấn phím bất kỳ để tiếp tục khám phá.</translation>
 <translation id="4991420928586866460">Coi các phím ở hàng trên cùng là phím chức năng</translation>
 <translation id="499165176004408815">Sử dụng chế độ tương phản cao</translation>
 <translation id="4992066212339426712">Bật âm thanh</translation>
-<translation id="4992458225095111526">Xác nhận Powerwash</translation>
 <translation id="4994474651455208930">Cho phép các trang web yêu cầu trở thành trình xử lý mặc định cho giao thức</translation>
 <translation id="4998873842614926205">Xác nhận thay đổi</translation>
 <translation id="4999273653895592255">Cờ này kiểm soát việc chúng tôi hiển thị giao diện người dùng cũ hay mới cho cửa sổ bộ chọn chụp màn hình.</translation>
@@ -3044,7 +3038,6 @@ Nhấn phím bất kỳ để tiếp tục khám phá.</translation>
 <translation id="5045550434625856497">Mật khẩu sai</translation>
 <translation id="5046747760454685637">Hỏi trước khi cho phép trang web chạy Flash (được đề xuất)</translation>
 <translation id="5048179823246820836">Nordic</translation>
-<translation id="5053604404986157245">Mật khẩu TPM được tạo ngẫu nhiên hiện không khả dụng. Đây là hiện tượng bình thường sau khi tiến hành Powerwash.</translation>
 <translation id="5053803681436838483">Địa chỉ giao hàng mới...</translation>
 <translation id="5055309315264875868">Hiển thị liên kết trong trang cài đặt trình quản lý mật khẩu để quản lý mật khẩu được đồng bộ hóa của bạn trực tuyến.</translation>
 <translation id="5061188462607594407">Bảo vệ <ph name="PHONE_TYPE" /> của bạn để tiếp tục</translation>
@@ -3292,7 +3285,6 @@ Nhấn phím bất kỳ để tiếp tục khám phá.</translation>
 <translation id="5357579842739549440">Gỡ lỗi phím tắt</translation>
 <translation id="5360150013186312835">Hiển thị trên thanh công cụ</translation>
 <translation id="5362741141255528695">Chọn tệp khóa cá nhân.</translation>
-<translation id="5363109466694494651">Powerwash và hoàn nguyên</translation>
 <translation id="5367091008316207019">Đang đọc tệp..</translation>
 <translation id="5367260322267293088">Bật trang Tab mới thử nghiệm sử dụng các biểu tượng lớn.</translation>
 <translation id="5368720394188453070">Điện thoại của bạn bị khóa. Hãy mở khóa điện thoại để truy cập.</translation>
@@ -3662,7 +3654,6 @@ Nhấn phím bất kỳ để tiếp tục khám phá.</translation>
 <translation id="5851063901794976166">Không có nội dung nào để xem tại đây...</translation>
 <translation id="5851868085455377790">Nhà cung cấp</translation>
 <translation id="5852112051279473187">Rất tiếc! Đã xảy ra sự cố khi đăng ký thiết bị này. Vui lòng thử lại hoặc liên hệ với đại diện hỗ trợ của bạn.</translation>
-<translation id="5852137567692933493">Khởi động lại và Powerwash</translation>
 <translation id="5854409662653665676">Nếu bạn đang gặp phải sự cố thông thường, bạn có thể thử cách sau để giải quyết sự cố với mô-đun này:</translation>
 <translation id="5854912040170951372">Lát pizza</translation>
 <translation id="5855119960719984315">chuyển cửa sổ</translation>
@@ -3767,7 +3758,6 @@ Nhấn phím bất kỳ để tiếp tục khám phá.</translation>
 <translation id="6007237601604674381">Di chuyển không thành công. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Gửi ping kiểm tra siêu liên kết.</translation>
 <translation id="6015796118275082299">Năm</translation>
-<translation id="6016551720757758985">Xác nhận Powerwash quay lại phiên bản trước</translation>
 <translation id="6016809788585079594">Nói "Ok Google" một lần cuối</translation>
 <translation id="6017225534417889107">Thay đổi...</translation>
 <translation id="6017981840202692187">Thêm vào Ứng dụng</translation>
@@ -4045,7 +4035,6 @@ Nhấn phím bất kỳ để tiếp tục khám phá.</translation>
 <translation id="6409731863280057959">Cửa sổ bật lên</translation>
 <translation id="6410063390789552572">Không thể truy cập thư viện mạng</translation>
 <translation id="6410257289063177456">Tệp hình ảnh</translation>
-<translation id="6410328738210026208">Thay đổi kênh và Powerwash</translation>
 <translation id="6410668567036790476">Thêm công cụ tìm kiếm</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">Cửa sổ ẩn danh mới</translation>
@@ -4763,7 +4752,6 @@ Nhấn phím bất kỳ để tiếp tục khám phá.</translation>
 <translation id="7405422715075171617">Bật quét số thẻ tín dụng mới khi điền vào biểu mẫu thẻ tín dụng.</translation>
 <translation id="740624631517654988">Đã chặn cửa sổ bật lên</translation>
 <translation id="7406691462051376731">Thiết bị này hiện gửi dữ liệu sử dụng và chẩn đoán cho Google. <ph name="BEGIN_LINK1" />Cài đặt<ph name="END_LINK1" /> này do chủ sở hữu thực thi. <ph name="BEGIN_LINK2" />Tìm hiểu thêm<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Chạy lại và Powerwash</translation>
 <translation id="7409836189476010449">Chạy Flash</translation>
 <translation id="7410344089573941623">Hỏi xem <ph name="HOST" /> có muốn truy cập vào máy ảnh và micrô của bạn không</translation>
 <translation id="7412226954991670867">Bộ nhớ GPU</translation>
@@ -4877,7 +4865,6 @@ Nhấn phím bất kỳ để tiếp tục khám phá.</translation>
 <translation id="7553242001898162573">Nhập mật khẩu của bạn</translation>
 <translation id="7554791636758816595">Tab mới</translation>
 <translation id="7556033326131260574">Smart Lock không thể xác minh tài khoản của bạn. Hãy nhập mật khẩu của bạn để truy cập.</translation>
-<translation id="7556242789364317684">Thật không may, <ph name="SHORT_PRODUCT_NAME" /> không thể khôi phục cài đặt của bạn. Để khắc phục lỗi, <ph name="SHORT_PRODUCT_NAME" /> phải đặt lại thiết bị của bạn bằng Powerwash.</translation>
 <translation id="7558050486864662801">Hỏi khi một trang web yêu cầu quyền truy cập vào micrô của bạn (được đề xuất)</translation>
 <translation id="7559719679815339381">Vui lòng đợi....ứng dụng Kiosk đang được cập nhật. Vui lòng không rút thẻ USB.</translation>
 <translation id="7561196759112975576">Luôn luôn</translation>
@@ -5202,7 +5189,6 @@ Giữ tệp khóa của bạn ở nơi an toàn. Bạn sẽ cần tệp khóa đ
 <translation id="8008356846765065031">Internet đã bị ngắt kết nối. Vui lòng kiểm tra kết nối Internet của bạn.</translation>
 <translation id="8012382203418782830">Trang này đã được dịch.</translation>
 <translation id="8014154204619229810">Trình cập nhật hiện đang chạy. Hãy làm mới sau một phút nữa để kiểm tra lại.</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> không thể hoàn nguyên về phiên bản được cài đặt trước. Vui lòng thử lại để Powerwash thiết bị của bạn.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Xác thực kém</translation>
 <translation id="8022523925619404071">Bật tự động cập nhật</translation>
@@ -5261,9 +5247,7 @@ Giữ tệp khóa của bạn ở nơi an toàn. Bạn sẽ cần tệp khóa đ
 <translation id="80974698889265265">Mã PIN không khớp</translation>
 <translation id="8098975406164436557">Sử dụng điện thoại này để mở khóa <ph name="DEVICE_TYPE" /> của bạn?</translation>
 <translation id="810066391692572978">Tệp sử dụng các tính năng không được hỗ trợ.</translation>
-<translation id="8101987792947961127">Yêu cầu Powerwash trong lần khởi động lại tiếp theo</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> đồng bộ hóa dữ liệu một cách an toàn bằng tài khoản Google của bạn. Luôn giữ mọi thứ được đồng bộ hóa hoặc tùy chỉnh loại dữ liệu được đồng bộ hóa và cài đặt mã hóa.</translation>
-<translation id="8104696615244072556">Powerwash thiết bị <ph name="IDS_SHORT_PRODUCT_NAME" /> của bạn và quay lại phiên bản trước.</translation>
 <translation id="8105368624971345109">Tắt</translation>
 <translation id="8106045200081704138">Được chia sẻ với tôi</translation>
 <translation id="8106211421800660735">Số thẻ tín dụng</translation>

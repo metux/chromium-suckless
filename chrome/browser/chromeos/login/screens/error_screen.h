@@ -83,10 +83,6 @@ class ErrorScreen : public NetworkErrorModel, public LoginPerformer::Delegate {
   // Handle user action to launch guest session from out-of-box.
   void OnLaunchOobeGuestSession();
 
-  // Handle user action to launch Powerwash in case of
-  // Local State critical error.
-  void OnLocalStateErrorPowerwashButtonClicked();
-
   // Handle uses action to reboot device.
   void OnRebootButtonClicked();
 

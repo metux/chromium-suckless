@@ -993,7 +993,6 @@ Sukūrę naują prižiūrimą naudotoją, bet kuriuo metu galite tvarkyti jo nus
 <translation id="2332742915001411729">Nustatyti iš naujo numatytąjį</translation>
 <translation id="2335122562899522968">Šis puslapis nustatė slapukus.</translation>
 <translation id="2336228925368920074">Žymėti visus skirtukus...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Komentuoti programoje „Google Keep“</translation>
 <translation id="2339120501444485379">Įveskite naują pavadinimą</translation>
 <translation id="2339641773402824483">Ieškoma atnaujinimų...</translation>
@@ -1368,7 +1367,6 @@ Nemanau, kad ši svetainė turėtų būti užblokuota!</translation>
       <ph name="LIST_ITEM" />Nustatyti kūrėjo ir sistemos šakninį prisijungimo slaptažodį į tinkintą vertę, kad galėtumėte neautomatiškai naudoti funkciją SSH įrenginyje
     <ph name="END_LIST" />
     <ph name="BR" />
-    Įgalinus dauguma derinimo funkcijų liks įgalintos, net paleidus funkciją „Powerwash“ ar išvalius duomenis įmonės tvarkomame įrenginyje. Kad visiškai išjungtumėte visas derinimo funkcijas, atlikite „Chrome“ OS atkūrimo procesą (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     Jei reikia daugiau informacijos apie derinimo funkcijas, žr.:<ph name="BR" />
@@ -1594,7 +1592,6 @@ Jei reikia daugiau informacijos, apsilankykite <ph name="BEGIN_LINK" />pagalbos 
 <translation id="3065140616557457172">Norėdami naršyti įveskite paiešką ar URL adresą: tinka viskas.</translation>
 <translation id="3067198360141518313">Paleisti šį papildinį</translation>
 <translation id="307519606911195071">Įgalinkite papildomas pritaikymo neįgaliesiems funkcijas puslapyje „Nustatymai“.</translation>
-<translation id="3075874217500066906">Norint pradėti funkcijos „Powerwash“ procesą, būtina paleisti iš naujo. Paleidus iš naujo jūsų bus paprašyta patvirtinti, kad norite tęsti.</translation>
 <translation id="3076677906922146425">Leisti bet kam pridėti asmenį prie „Chrome“</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" /> / <ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2344,7 +2341,6 @@ Ar norite paleisti „<ph name="CONTROL_PANEL_APPLET_NAME" />“?</translation>
 <translation id="404493185430269859">Numatytasis paieškos variklis</translation>
 <translation id="4047112090469382184">Kodėl tai saugu</translation>
 <translation id="4052120076834320548">Mažytis</translation>
-<translation id="4055023634561256217">Kad įrenginį būtų galima nustatyti iš naujo naudojant „Powerwash“, reikia paleisti iš naujo.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Peržiūrėti parduotuvėje</translation>
 <translation id="4058720513957747556">„AppSocket“ (TPC/IP)</translation>
@@ -3008,7 +3004,6 @@ Jei norite toliau naršyti, paspauskite bet kurį klavišą.</translation>
 <translation id="4991420928586866460">Viršutinės eilutės klavišus naudoti kaip funkcijų klavišus</translation>
 <translation id="499165176004408815">Naudoti didelio kontrasto režimą</translation>
 <translation id="4992066212339426712">Įjungti garsą</translation>
-<translation id="4992458225095111526">Patvirtinti „Powerwash“</translation>
 <translation id="4994474651455208930">Leisti svetainėms pateikti pranešimus, kuriuose prašoma leisti tapti numatytosiomis protokolų apdorojimo programomis</translation>
 <translation id="4998873842614926205">Patvirtinti pakeitimus</translation>
 <translation id="4999273653895592255">Ši žyma valdo, ar rodoma sena, ar nauja darbalaukio transliacijos rinkiklio lango NS.</translation>
@@ -3043,7 +3038,6 @@ Jei norite toliau naršyti, paspauskite bet kurį klavišą.</translation>
 <translation id="5045550434625856497">Neteisingas slaptažodis</translation>
 <translation id="5046747760454685637">Paklausti prieš leidžiant svetainėms vykdyti „Flash“ (rekomenduojama)</translation>
 <translation id="5048179823246820836">Šiaurės šalių</translation>
-<translation id="5053604404986157245">Šis atsitiktiniu būdu sugeneruotas TPM slaptažodis negalimas. Tai įprasta po „Powerwash“ vykdymo.</translation>
 <translation id="5053803681436838483">Naujas pristatymo adresas...</translation>
 <translation id="5055309315264875868">Rodyti nuorodą slaptažodžių tvarkytuvės nustatymų puslapyje, kad galėtumėte prisijungę tvarkyti sinchronizuojamus slaptažodžius.</translation>
 <translation id="5061188462607594407">Jei norite tęsti, apsaugokite „<ph name="PHONE_TYPE" />“</translation>
@@ -3291,7 +3285,6 @@ Jei norite toliau naršyti, paspauskite bet kurį klavišą.</translation>
 <translation id="5357579842739549440">Sparčiųjų klavišų derinimas</translation>
 <translation id="5360150013186312835">Rodyti įrankių juostoje</translation>
 <translation id="5362741141255528695">Pasirinkti asmeninio rakto failą.</translation>
-<translation id="5363109466694494651">Įvykdyti „Powerwash“ ir versijos grąžinimo funkcijas</translation>
 <translation id="5367091008316207019">Skaitomas failas...</translation>
 <translation id="5367260322267293088">Įgalinti eksperimentinį naujo skirtuko puslapį su didelėmis piktogramomis</translation>
 <translation id="5368720394188453070">Telefonas užrakintas. Norėdami įeiti, atrakinkite jį.</translation>
@@ -3662,7 +3655,6 @@ Jei norite toliau naršyti, paspauskite bet kurį klavišą.</translation>
 <translation id="5851063901794976166">Čia nieko nėra...</translation>
 <translation id="5851868085455377790">Išdavėjas</translation>
 <translation id="5852112051279473187">Oi! Bandant užregistruoti šį įrenginį iškilo rimtų problemų. Bandykite dar kartą arba susisiekite su palaikymo atstovu.</translation>
-<translation id="5852137567692933493">Paleisti iš naujo ir naudoti „Powerwash“</translation>
 <translation id="5854409662653665676">Jei dažnai iškyla problemų, kad išspręstumėte su šiuo moduliu susijusias problemas, pabandykite atlikti šiuos veiksmus:</translation>
 <translation id="5854912040170951372">Gabaliukas</translation>
 <translation id="5855119960719984315">perjungti langą</translation>
@@ -3767,7 +3759,6 @@ Jei norite toliau naršyti, paspauskite bet kurį klavišą.</translation>
 <translation id="6007237601604674381">Nepavyko perkelti. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Siunčiamos hipersaitų ryšio patikros užklausos.</translation>
 <translation id="6015796118275082299">Metai</translation>
-<translation id="6016551720757758985">„Powerwash“ grąžinant ankstesnę versiją patvirtinimas</translation>
 <translation id="6016809788585079594">Paskutinį kartą ištarkite „Ok Google“</translation>
 <translation id="6017225534417889107">Pakeisti…</translation>
 <translation id="6017981840202692187">Pridėti prie programų</translation>
@@ -4045,7 +4036,6 @@ Jei norite toliau naršyti, paspauskite bet kurį klavišą.</translation>
 <translation id="6409731863280057959">Iššokantieji langai</translation>
 <translation id="6410063390789552572">Nepavyksta pasiekti tinklo bibliotekos</translation>
 <translation id="6410257289063177456">Vaizdo failai</translation>
-<translation id="6410328738210026208">Pakeisti kanalą ir paleisti „Powerwash“</translation>
 <translation id="6410668567036790476">Paieškos variklio pridėjimas</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">Naujas inkognito langas</translation>
@@ -4763,7 +4753,6 @@ Jei norite toliau naršyti, paspauskite bet kurį klavišą.</translation>
 <translation id="7405422715075171617">Įgalinkite naujo kredito kortelės numerio nuskaitymą, kai pildote kredito kortelės formą.</translation>
 <translation id="740624631517654988">Iššokantysis langas užblokuotas</translation>
 <translation id="7406691462051376731">Šiuo metu įrenginys siunčia diagnostikos ir naudojimo duomenis „Google“. Šį <ph name="BEGIN_LINK1" />nustatymą<ph name="END_LINK1" /> taiko įrenginio savininkas. <ph name="BEGIN_LINK2" />Sužinokite daugiau<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Paleisti iš naujo ir paleisti „Powerwash“</translation>
 <translation id="7409836189476010449">Vykdyti „Flash“</translation>
 <translation id="7410344089573941623">Klausti, jei <ph name="HOST" /> nori pasiekti fotoaparatą ir mikrofoną</translation>
 <translation id="7412226954991670867">GPU atmintis</translation>
@@ -4877,7 +4866,6 @@ Jei norite toliau naršyti, paspauskite bet kurį klavišą.</translation>
 <translation id="7553242001898162573">Įveskite slaptažodį</translation>
 <translation id="7554791636758816595">Naujas skirtukas</translation>
 <translation id="7556033326131260574">„Smart Lock“ negalėjo patvirtinti paskyros. Įveskite slaptažodį ir prisijunkite.</translation>
-<translation id="7556242789364317684">Deja, „<ph name="SHORT_PRODUCT_NAME" />“ nepavyksta atkurti jūsų nustatymų. Kad būtų galima ištaisyti klaidą, „<ph name="SHORT_PRODUCT_NAME" />“ turi iš naujo nustatyti jūsų įrenginį per „Powerwash“.</translation>
 <translation id="7558050486864662801">Paklausti, kai svetainei reikalinga prieiga prie mikrofono (rekomenduojama)</translation>
 <translation id="7559719679815339381">Palaukite... Viešojo terminalo programa atnaujinama. Neatjunkite USB atmintuko.</translation>
 <translation id="7561196759112975576">Visada</translation>
@@ -5202,7 +5190,6 @@ Rakto failą laikykite saugioje vietoje. Jo reikės, kai norėsite sukurti nauja
 <translation id="8008356846765065031">Internetas atjungtas. Patikrinkite interneto ryšį.</translation>
 <translation id="8012382203418782830">Šis puslapis buvo išverstas.</translation>
 <translation id="8014154204619229810">Atnaujinimo programa šiuo metu paleista. Netrukus atnaujinkite ir vėl patikrinkite.</translation>
-<translation id="8014206674403687691">Neįmanoma grąžinti ankstesnės įdiegtos „<ph name="IDS_SHORT_PRODUCT_NAME" />“ versijos. Pabandykite vykdyti funkciją „Powerwash“.</translation>
 <translation id="8017335670460187064">„<ph name="LABEL" />“</translation>
 <translation id="8017667670902200762">Netinkamas autentifikavimas</translation>
 <translation id="8022523925619404071">Įgalinti automatinį atnaujinimą</translation>
@@ -5261,9 +5248,7 @@ Rakto failą laikykite saugioje vietoje. Jo reikės, kai norėsite sukurti nauja
 <translation id="80974698889265265">PIN kodai nesutampa</translation>
 <translation id="8098975406164436557">Naudoti šį telefoną „<ph name="DEVICE_TYPE" />“ atrakinti?</translation>
 <translation id="810066391692572978">Faile naudojamos nepalaikomos funkcijos.</translation>
-<translation id="8101987792947961127">Kitą kartą įkeliant operacinę sistemą iš naujo būtina paleisti „Powerwash“</translation>
 <translation id="8102535138653976669">„<ph name="PRODUCT_NAME" />“ saugiai sinchronizuoja duomenis su „Google“ paskyra. Viską sinchronizuokite arba tinkinkite sinchronizuojamų duomenų tipus ir šifruotės nustatymus.</translation>
-<translation id="8104696615244072556">Naudokite funkciją „Powerwash“ „<ph name="IDS_SHORT_PRODUCT_NAME" />“ įrenginyje ir grąžinkite ankstesnę versiją.</translation>
 <translation id="8105368624971345109">Išjungti</translation>
 <translation id="8106045200081704138">Bendrinama su manimi</translation>
 <translation id="8106211421800660735">Kredito kortelės numeris</translation>

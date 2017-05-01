@@ -1200,7 +1200,6 @@ PasswordStoreChangeList PasswordStoreMac::RemoveLoginsSyncedBetweenImpl(
     RemoveKeychainForms(forms_to_remove.get());
     CleanOrphanedForms(&forms_to_remove);  // Add the orphaned forms_to_remove.
     changes = FormsToRemoveChangeList(forms_to_remove.get());
-    LogStatsForBulkDeletionDuringRollback(changes.size());
   }
   return changes;
 }

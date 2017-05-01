@@ -134,11 +134,6 @@ void UpgradeDetectorChromeos::NotifyOnUpgrade() {
 void UpgradeDetectorChromeos::OnChannelsReceived(
     const std::string& current_channel,
     const std::string& target_channel) {
-  // As current update engine status is UPDATE_STATUS_UPDATED_NEED_REBOOT
-  // and target channel is more stable than current channel, powerwash
-  // will be performed after reboot.
-  set_is_factory_reset_required(UpdateEngineClient::IsTargetChannelMoreStable(
-      current_channel, target_channel));
 
   // ChromeOS shows upgrade arrow once the upgrade becomes available.
   NotifyOnUpgrade();

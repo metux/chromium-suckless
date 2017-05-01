@@ -23,9 +23,6 @@ const char NetworkErrorModel::kUserActionConfigureCertsButtonClicked[] =
 const char NetworkErrorModel::kUserActionDiagnoseButtonClicked[] = "diagnose";
 const char NetworkErrorModel::kUserActionLaunchOobeGuestSessionClicked[] =
     "launch-oobe-guest";
-const char
-    NetworkErrorModel::kUserActionLocalStateErrorPowerwashButtonClicked[] =
-        "local-state-error-powerwash";
 const char NetworkErrorModel::kUserActionRebootButtonClicked[] = "reboot";
 const char NetworkErrorModel::kUserActionShowCaptivePortalClicked[] =
     "show-captive-portal";

@@ -993,7 +993,6 @@ Una vez que hayas creado un nuevo usuario supervisado, podrás administrar su co
 <translation id="2332742915001411729">Restablecer nivel de zoom predeterminado</translation>
 <translation id="2335122562899522968">Esta página almacena cookies</translation>
 <translation id="2336228925368920074">Añadir todas las pestañas a marcadores...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Incluir anotaciones en Google Keep</translation>
 <translation id="2339120501444485379">Introduce un nuevo nombre</translation>
 <translation id="2339641773402824483">Buscando actualizaciones</translation>
@@ -1171,7 +1170,6 @@ No creo que este sitio deba bloquearse</translation>
 <translation id="2562743677925229011">No has iniciado sesión en <ph name="SHORT_PRODUCT_NAME" />.</translation>
 <translation id="2565670301826831948">Velocidad del panel táctil:</translation>
 <translation id="2565828445440744174">Versión experimental de WebAssembly</translation>
-<translation id="2566124945717127842">Haz un Powerwash y restablece los datos de fábrica de tu dispositivo <ph name="IDS_SHORT_PRODUCT_NAME" /> para que quede como nuevo.</translation>
 <translation id="2568774940984945469">Contenedor de barra de información</translation>
 <translation id="2570000010887652771">Se han guardado los datos.</translation>
 <translation id="2570648609346224037">Se ha producido un error durante la descarga de la imagen de recuperación.</translation>
@@ -1370,7 +1368,6 @@ sistema operativo desde una unidad USB
       <ph name="LIST_ITEM" />Establecer un valor personalizado para las contraseñas de inicio de sesión de raíz del sistema y dev para poder acceder al dispositivo manualmente mediante SSH
     <ph name="END_LIST" />
     <ph name="BR" />
-    Una vez habilitadas, la mayoría de las funciones de depuración seguirán estando activadas incluso después de realizar un Powerwash o borrar los datos en dispositivos administrados por la empresa. Para inhabilitar por completo todas las funciones de depuración, debes realizar el proceso de recuperación de Chrome OS (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     Para obtener más información sobre las funciones de depuración, consulta la siguiente página:<ph name="BR" />
@@ -1596,7 +1593,6 @@ Para obtener más información, accede a nuestro <ph name="BEGIN_LINK" />Centro 
 <translation id="3065140616557457172">Puedes introducir una consulta o bien la URL de la página que quieres visitar, lo que prefieras.</translation>
 <translation id="3067198360141518313">Ejecutar este complemento</translation>
 <translation id="307519606911195071">Permite habilitar las funciones de accesibilidad adicionales en la página de configuración.</translation>
-<translation id="3075874217500066906">Es necesario reiniciar el dispositivo antes de comenzar el proceso de Powerwash. Después de reiniciar, se te pedirá que confirmes si quieres continuar.</translation>
 <translation id="3076677906922146425">Dejar que cualquier pueda añadir a una persona a Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">mayús</translation>
@@ -2343,7 +2339,6 @@ Si no cambias la configuración predeterminada, <ph name="USER_DISPLAY_NAME" /> 
 <translation id="404493185430269859">Motor de búsqueda predeterminado</translation>
 <translation id="4047112090469382184">Seguridad</translation>
 <translation id="4052120076834320548">Diminuto</translation>
-<translation id="4055023634561256217">Es necesario reiniciar el dispositivo antes de poder restablecerlo con Powerwash.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Ver en Chrome Web Store</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3007,7 +3002,6 @@ Pulsa cualquier tecla para seguir con la exploración.</translation>
 <translation id="4991420928586866460">Tratar las teclas de la fila superior como teclas de función</translation>
 <translation id="499165176004408815">Usar el modo de contraste alto</translation>
 <translation id="4992066212339426712">Activar sonido</translation>
-<translation id="4992458225095111526">Confirmar Powerwash</translation>
 <translation id="4994474651455208930">Permitir que los sitios web se conviertan en controladores de protocolos predeterminados</translation>
 <translation id="4998873842614926205">Confirmar cambios</translation>
 <translation id="4999273653895592255">Esta marca controla si mostramos la interfaz de usuario antigua o la nueva en la ventana del selector de captura de escritorio.</translation>
@@ -3041,7 +3035,6 @@ Pulsa cualquier tecla para seguir con la exploración.</translation>
 <translation id="5045550434625856497">Contraseña incorrecta</translation>
 <translation id="5046747760454685637">Preguntar antes de permitir que los sitios web ejecuten Flash (recomendado)</translation>
 <translation id="5048179823246820836">Nórdico</translation>
-<translation id="5053604404986157245">La contraseña de TPM generada de forma aleatoria no está disponible. Esto es normal después de un Powerwash.</translation>
 <translation id="5053803681436838483">Nueva dirección de envío...</translation>
 <translation id="5055309315264875868">Muestra un enlace en la página de configuración del administrador de contraseñas que permite administrar las contraseñas sincronizadas online.</translation>
 <translation id="5061188462607594407">Protege tu <ph name="PHONE_TYPE" /> para continuar</translation>
@@ -3287,7 +3280,6 @@ Pulsa cualquier tecla para seguir con la exploración.</translation>
 <translation id="5357579842739549440">Combinaciones de teclas de depuración</translation>
 <translation id="5360150013186312835">Mostrar en la barra de herramientas</translation>
 <translation id="5362741141255528695">Selecciona un archivo de clave privada.</translation>
-<translation id="5363109466694494651">Powerwash y cambio a versión anterior</translation>
 <translation id="5367091008316207019">Leyendo archivo...</translation>
 <translation id="5367260322267293088">Habilita la página Nueva pestaña experimental utilizando iconos grandes.</translation>
 <translation id="5368720394188453070">Tu teléfono está bloqueado. Desbloquéalo para acceder.</translation>
@@ -3657,7 +3649,6 @@ Pulsa cualquier tecla para seguir con la exploración.</translation>
 <translation id="5851063901794976166">No hay contenido...</translation>
 <translation id="5851868085455377790">Emisor</translation>
 <translation id="5852112051279473187">¡Ups! Algo no ha funcionado como debía al registrar este dispositivo. Inténtalo de nuevo o ponte en contacto con tu representante de asistencia técnica.</translation>
-<translation id="5852137567692933493">Reiniciar y Powerwash</translation>
 <translation id="5854409662653665676">Si tienes dificultades con frecuencia, puedes probar a realizar las siguientes acciones para resolver el error de este módulo:</translation>
 <translation id="5854912040170951372">Pizza</translation>
 <translation id="5855119960719984315">cambiar ventana</translation>
@@ -3762,7 +3753,6 @@ Exponente público (<ph name="PUBLIC_EXPONENT_NUM_BITS" /> bits):
 <translation id="6007237601604674381">Se ha producido un error al mover el archivo (<ph name="ERROR_MESSAGE" />).</translation>
 <translation id="6008241731410823808">Envía pings de auditoría de hiperenlaces.</translation>
 <translation id="6015796118275082299">Año</translation>
-<translation id="6016551720757758985">Confirmar Powerwash para volver a la versión anterior</translation>
 <translation id="6016809788585079594">Di "Ok Google" una última vez</translation>
 <translation id="6017225534417889107">Cambiar...</translation>
 <translation id="6017981840202692187">Añadir a Aplicaciones</translation>
@@ -4039,7 +4029,6 @@ Exponente público (<ph name="PUBLIC_EXPONENT_NUM_BITS" /> bits):
 <translation id="6409731863280057959">Ventanas emergentes</translation>
 <translation id="6410063390789552572">No es posible acceder a la biblioteca de red.</translation>
 <translation id="6410257289063177456">Archivos de imagen</translation>
-<translation id="6410328738210026208">Cambiar canal y Powerwash</translation>
 <translation id="6410668567036790476">Añadir motor de búsqueda</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">Nueva ventana de incógnito</translation>
@@ -4752,7 +4741,6 @@ Exponente público (<ph name="PUBLIC_EXPONENT_NUM_BITS" /> bits):
 <translation id="7405422715075171617">Habilita el escaneado de un nuevo número de tarjeta de crédito al completar un formulario de tarjeta de crédito.</translation>
 <translation id="740624631517654988">Ventana emergente bloqueada</translation>
 <translation id="7406691462051376731">Este dispositivo envía datos de uso y diagnósticos a Google. El propietario aplica esta <ph name="BEGIN_LINK1" />configuración<ph name="END_LINK1" />. <ph name="BEGIN_LINK2" />Más información<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Reiniciar y Powerwash</translation>
 <translation id="7409836189476010449">Ejecutar Flash</translation>
 <translation id="7410344089573941623">Preguntar si <ph name="HOST" /> quiere acceder a la cámara y al micrófono</translation>
 <translation id="7412226954991670867">Memoria de la GPU</translation>
@@ -4866,7 +4854,6 @@ Exponente público (<ph name="PUBLIC_EXPONENT_NUM_BITS" /> bits):
 <translation id="7553242001898162573">Introduce tu contraseña</translation>
 <translation id="7554791636758816595">Nueva pestaña</translation>
 <translation id="7556033326131260574">Smart Lock no ha podido verificar tu cuenta. Escribe la contraseña para acceder.</translation>
-<translation id="7556242789364317684">Lamentablemente, <ph name="SHORT_PRODUCT_NAME" /> no puede recuperar tu configuración. Para solucionar el error, <ph name="SHORT_PRODUCT_NAME" /> debe restablecer tu dispositivo con Powerwash.</translation>
 <translation id="7558050486864662801">Preguntar cuando un sitio necesite acceder a tu micrófono (recomendado)</translation>
 <translation id="7559719679815339381">Por favor, espera... La aplicación de kiosco se está actualizando. No extraigas el dispositivo USB.</translation>
 <translation id="7561196759112975576">Siempre</translation>
@@ -5191,7 +5178,6 @@ Guarda tu archivo de clave en un lugar seguro, ya que lo necesitarás para crear
 <translation id="8008356846765065031">No hay conexión a Internet. Comprueba la conexión.</translation>
 <translation id="8012382203418782830">Esta página se ha traducido.</translation>
 <translation id="8014154204619229810">La herramienta de actualización se está ejecutando en este momento. Actualiza en un minuto para comprobarlo de nuevo.</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> no puede volver a la versión instalada previamente. Vuelve a intentarlo para hacer un Powerwash del dispositivo.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Autenticación errónea</translation>
 <translation id="8022523925619404071">Habilitar actualización automática</translation>
@@ -5250,9 +5236,7 @@ Guarda tu archivo de clave en un lugar seguro, ya que lo necesitarás para crear
 <translation id="80974698889265265">Los PIN no coinciden</translation>
 <translation id="8098975406164436557">¿Utilizar este teléfono para desbloquear tu <ph name="DEVICE_TYPE" />?</translation>
 <translation id="810066391692572978">El archivo utiliza funciones no admitidas.</translation>
-<translation id="8101987792947961127">Se requiere Powerwash en el siguiente reinicio</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> sincroniza de forma segura tus datos con tu cuenta de Google. Mantén todo tu contenido sincronizado o personaliza los tipos de datos que se sincronizarán y las opciones de encriptación.</translation>
-<translation id="8104696615244072556">Haz un Powerwash del dispositivo <ph name="IDS_SHORT_PRODUCT_NAME" /> y vuelve a la versión anterior.</translation>
 <translation id="8105368624971345109">Desactivar</translation>
 <translation id="8106045200081704138">Compartido conmigo</translation>
 <translation id="8106211421800660735">Número de la tarjeta de crédito</translation>

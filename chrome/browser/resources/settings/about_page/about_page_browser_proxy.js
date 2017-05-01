@@ -126,9 +126,8 @@ cr.define('settings', function() {
 
     /**
      * @param {!BrowserChannel} channel
-     * @param {boolean} isPowerwashAllowed
      */
-    setChannel: function(channel, isPowerwashAllowed) {},
+    setChannel: function(channel) {},
 
     /** @return {!Promise<!BrowserChannel>} */
     getCurrentChannel: function() {},
@@ -181,8 +180,8 @@ cr.define('settings', function() {
     },
 
     /** @override */
-    setChannel: function(channel, isPowerwashAllowed) {
-      chrome.send('setChannel', [channel, isPowerwashAllowed]);
+    setChannel: function(channel) {
+      chrome.send('setChannel', [channel, false]);
     },
 
     /** @override */

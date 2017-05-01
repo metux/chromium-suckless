@@ -992,7 +992,6 @@ Miután létrehozott egy új felügyelt felhasználót, bármikor és bármilyen
 <translation id="2332742915001411729">Visszaállítás az alapértékre</translation>
 <translation id="2335122562899522968">Ez az oldal cookie-kat állít be.</translation>
 <translation id="2336228925368920074">Összes lap hozzáadása a könyvjelzőkhöz...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Jegyzet készítése a Google Keep alkalmazásban</translation>
 <translation id="2339120501444485379">Adjon meg egy új nevet</translation>
 <translation id="2339641773402824483">Frissítések keresése...</translation>
@@ -1170,7 +1169,6 @@ Miután létrehozott egy új felügyelt felhasználót, bármikor és bármilyen
 <translation id="2562743677925229011">Nem jelentkezett be ide: <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">Érintőpad sebessége:</translation>
 <translation id="2565828445440744174">Kísérleti WebAssembly</translation>
-<translation id="2566124945717127842">Végezze el a powerwash műveletet a(z) <ph name="IDS_SHORT_PRODUCT_NAME" /> eszköz visszaállításához, hogy az olyan legyen, mint új korában.</translation>
 <translation id="2568774940984945469">Infósáv tárolója</translation>
 <translation id="2570000010887652771">Megspórolt adatforgalom.</translation>
 <translation id="2570648609346224037">Probléma lépett fel a helyreállító képfájl letöltése során.</translation>
@@ -1368,7 +1366,6 @@ Miután létrehozott egy új felügyelt felhasználót, bármikor és bármilyen
       <ph name="LIST_ITEM" />Egyéni értéket adhat meg mind a fejlesztői, mind a rendszergazdai jelszónál, és így manuálisan is bejelentkezhet az eszközre SSH protokoll használatával.
     <ph name="END_LIST" />
     <ph name="BR" />
-    A hibaelhárítási funkciók nagy része az engedélyezését követően még akkor is bekapcsolva marad, ha Powerwash műveletet hajt végre, vagy törli az adatokat egy felügyelt vállalati eszközről. A hibaelhárító funkciók teljes körű letiltásához végezze el a Chrome OS helyreállítási folyamatot (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     Ha további információt szeretne a hibaelhárító funkciókról, látogasson el a következő webhelyre:<ph name="BR" />
@@ -1594,7 +1591,6 @@ Ha további információt szeretne, látogasson el a <ph name="BEGIN_LINK" />Sú
 <translation id="3065140616557457172">Írja be a keresett kifejezést, vagy írja be a felkeresni kívánt URL-címet – mindkét lehetőség működik.</translation>
 <translation id="3067198360141518313">A plug-in futtatása</translation>
 <translation id="307519606911195071">További kisegítő lehetőségek engedélyezése a Beállítások oldalon.</translation>
-<translation id="3075874217500066906">A Powerwash művelet elindításához újraindítás szükséges. Az újraindítás után a rendszer kéri a folytatás megerősítését.</translation>
 <translation id="3076677906922146425">Bárki hozzáadhat felhasználót a Chrome-ban</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2343,7 +2339,6 @@ Elindítja a következőt: <ph name="CONTROL_PANEL_APPLET_NAME" />?</translation
 <translation id="404493185430269859">Alapértelmezett keresőmotor</translation>
 <translation id="4047112090469382184">Miért biztonságos ez?</translation>
 <translation id="4052120076834320548">Legkisebb</translation>
-<translation id="4055023634561256217">Mielőtt a Powerwash segítségével visszaállítaná, újra kell indítania az eszközt.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Megtekintés az áruházban</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3006,7 +3001,6 @@ Az összes felhasználónak ki kell jelentkeznie a folytatáshoz.</translation>
 <translation id="4991420928586866460">A legfelső sor billentyűi legyenek funkcióbillentyűk</translation>
 <translation id="499165176004408815">Nagy kontrasztú mód használata</translation>
 <translation id="4992066212339426712">Némítás feloldása</translation>
-<translation id="4992458225095111526">Powerwash megerősítése</translation>
 <translation id="4994474651455208930">A webhelyek kérhetik, hogy protokollok alapértelmezett kezelői legyenek</translation>
 <translation id="4998873842614926205">Módosítások jóváhagyása</translation>
 <translation id="4999273653895592255">A jelölő azt határozza meg, hogy a Desktop Capture választóablakának régi vagy új kezelőfelületét jelenítsük meg.</translation>
@@ -3041,7 +3035,6 @@ Az összes felhasználónak ki kell jelentkeznie a folytatáshoz.</translation>
 <translation id="5045550434625856497">Helytelen jelszó</translation>
 <translation id="5046747760454685637">Kérdezzen rá, mielőtt engedélyezné a webhelyek számára a Flash futtatását (ajánlott)</translation>
 <translation id="5048179823246820836">Skandináv</translation>
-<translation id="5053604404986157245">Nem áll rendelkezésre véletlenszerűen generált TPM jelszó. Powerwash után ez normális.</translation>
 <translation id="5053803681436838483">Új szállítási cím...</translation>
 <translation id="5055309315264875868">Link megjelenítése a jelszókezelő beállítások oldalán a szinkronizált jelszavak online kezeléséhez.</translation>
 <translation id="5061188462607594407">Tegye biztonságossá <ph name="PHONE_TYPE" /> telefonját a folytatáshoz</translation>
@@ -3289,7 +3282,6 @@ Az összes felhasználónak ki kell jelentkeznie a folytatáshoz.</translation>
 <translation id="5357579842739549440">Hibakereső billentyűkódok</translation>
 <translation id="5360150013186312835">Megjelenítés az eszköztáron</translation>
 <translation id="5362741141255528695">Válasszon ki privátkulcs-fájlt.</translation>
-<translation id="5363109466694494651">Powerwash művelet és visszaállítás</translation>
 <translation id="5367091008316207019">Fájl olvasása..</translation>
 <translation id="5367260322267293088">A kísérleti Új lap oldal funkció engedélyezése nagy ikonok használatával.</translation>
 <translation id="5368720394188453070">A telefon zárolva van. Oldja fel a belépéshez.</translation>
@@ -3660,7 +3652,6 @@ Győződjön meg arról, hogy nem ad ki bizalmas adatokat.</translation>
 <translation id="5851063901794976166">Nincs itt semmi látnivaló...</translation>
 <translation id="5851868085455377790">Kiállító</translation>
 <translation id="5852112051279473187">Hoppá! Az eszköz rögzítése közben hiba történt. Kérjük, próbálja újra, vagy forduljon a támogatási képviselőhöz.</translation>
-<translation id="5852137567692933493">Újraindítás és Powerwash</translation>
 <translation id="5854409662653665676">Ha gyakran észlel problémákat, a modullal kapcsolatos problémák megoldása érdekében megpróbálkozhat a következővel:</translation>
 <translation id="5854912040170951372">Pizza</translation>
 <translation id="5855119960719984315">ablakváltás</translation>
@@ -3765,7 +3756,6 @@ Győződjön meg arról, hogy nem ad ki bizalmas adatokat.</translation>
 <translation id="6007237601604674381">Az áthelyezés sikertelen. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Hiperlinkeket ellenőrző pingeket küld.</translation>
 <translation id="6015796118275082299">Év</translation>
-<translation id="6016551720757758985">A Powerwash és az előző verzióhoz való visszatérés megerősítése</translation>
 <translation id="6016809788585079594">Mondja ki még egy utolsó alkalommal az „Ok Google” kifejezést.</translation>
 <translation id="6017225534417889107">Módosítás…</translation>
 <translation id="6017981840202692187">Hozzáadás az Alkalmazások mappához</translation>
@@ -4043,7 +4033,6 @@ Győződjön meg arról, hogy nem ad ki bizalmas adatokat.</translation>
 <translation id="6409731863280057959">Előugró ablakok</translation>
 <translation id="6410063390789552572">A hálózati könyvtár nem érhető el</translation>
 <translation id="6410257289063177456">Képfájlok</translation>
-<translation id="6410328738210026208">Csatorna módosítása és Powerwash</translation>
 <translation id="6410668567036790476">Keresőmotor hozzáadása</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">Új inkognitóablak</translation>
@@ -4759,7 +4748,6 @@ Győződjön meg arról, hogy nem ad ki bizalmas adatokat.</translation>
 <translation id="7405422715075171617">Új hitelkártyaszám beolvasásának engedélyezése hitelkártyaűrlap kitöltésekor.</translation>
 <translation id="740624631517654988">Előugró ablak letiltva</translation>
 <translation id="7406691462051376731">Az eszköz jelenleg diagnosztikai és használati adatokat küld a Google számára. Ezt a <ph name="BEGIN_LINK1" />beállítást<ph name="END_LINK1" /> a tulajdonos kényszeríti. <ph name="BEGIN_LINK2" />További információ<ph name="END_LINK2" />.</translation>
-<translation id="7409233648990234464">Újraindítás és Powerwash</translation>
 <translation id="7409836189476010449">Flash futtatása</translation>
 <translation id="7410344089573941623">Kérdezzen rá, ha a(z) <ph name="HOST" /> hozzá szeretne férni a kamerához és a mikrofonhoz</translation>
 <translation id="7412226954991670867">GPU memória</translation>
@@ -4873,7 +4861,6 @@ Győződjön meg arról, hogy nem ad ki bizalmas adatokat.</translation>
 <translation id="7553242001898162573">Adja meg a jelszavát</translation>
 <translation id="7554791636758816595">Új lap</translation>
 <translation id="7556033326131260574">A Smart Lock nem tudta ellenőrizni a fiókját. A belépéshez írja be jelszavát.</translation>
-<translation id="7556242789364317684">Sajnos a(z) <ph name="SHORT_PRODUCT_NAME" /> nem tudja visszaállítani a beállításokat. A hiba kijavításához a(z) <ph name="SHORT_PRODUCT_NAME" /> alkalmazásnak a Powerwash eljárást kell alkalmaznia.</translation>
 <translation id="7558050486864662801">Kérdezzen rá, amikor egy webhely hozzáférést kér a mikrofonhoz (ajánlott)</translation>
 <translation id="7559719679815339381">Kérjük, várjon… A kioszkalkalmazás frissítése folyamatban van. Ne távolítsa el az USB-meghajtót.</translation>
 <translation id="7561196759112975576">Mindig</translation>
@@ -5198,7 +5185,6 @@ A kulcsfájlt tartsa biztonságos helyen. Szüksége lesz rá ahhoz, hogy új ve
 <translation id="8008356846765065031">Az internetkapcsolat megszűnt. Kérjük, ellenőrizze az internetkapcsolatot.</translation>
 <translation id="8012382203418782830">Az oldal fordítása megtörtént.</translation>
 <translation id="8014154204619229810">A frissítő most fut. Frissítsen egy perc múlva, és ellenőrizze az állapotát.</translation>
-<translation id="8014206674403687691">Nem sikerült visszatérni a(z) <ph name="IDS_SHORT_PRODUCT_NAME" /> korábban telepített verziójához. Kérjük, próbálja meg újra eszközén végrehajtani a Powerwash műveletet.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Helytelen hitelesítés</translation>
 <translation id="8022523925619404071">Automatikus frissítés engedélyezése</translation>
@@ -5257,9 +5243,7 @@ A kulcsfájlt tartsa biztonságos helyen. Szüksége lesz rá ahhoz, hogy új ve
 <translation id="80974698889265265">A megadott PIN-kódok nem egyeznek</translation>
 <translation id="8098975406164436557">A telefon használatával oldja fel a következő eszköz zárolását: <ph name="DEVICE_TYPE" />?</translation>
 <translation id="810066391692572978">A fájl nem támogatott funkciókat használ.</translation>
-<translation id="8101987792947961127">Powerwash szükséges a következő újraindításkor</translation>
 <translation id="8102535138653976669">A <ph name="PRODUCT_NAME" /> biztonságosan szinkronizálja adatait Google-fiókjával. Mindent állandóan szinkronban tarthat, vagy testreszabhatja a szinkronizálandó adatok típusát és a titkosítási lehetőségeket.</translation>
-<translation id="8104696615244072556">Hajtson végre Powerwash műveletet <ph name="IDS_SHORT_PRODUCT_NAME" /> eszközén, és térjen vissza a korábbi verzióhoz.</translation>
 <translation id="8105368624971345109">Kikapcsolás</translation>
 <translation id="8106045200081704138">Velem megosztott</translation>
 <translation id="8106211421800660735">Hitelkártya száma</translation>

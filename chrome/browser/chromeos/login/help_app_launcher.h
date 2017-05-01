@@ -32,8 +32,6 @@ class HelpAppLauncher : public base::RefCountedThreadSafe<HelpAppLauncher> {
     HELP_ACCOUNT_DISABLED = 188756,
     // Showed as "Learn more" about enterprise enrolled devices.
     HELP_ENTERPRISE = 2535613,
-    // Shown at reset screen as "Learn more" about powerwash/rollback options.
-    HELP_POWERWASH = 183084,
     // Shown as "Learn more" about the device attributes.
     HELP_DEVICE_ATTRIBUTES = 6218780,
   };

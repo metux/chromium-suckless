@@ -32,5 +32,4 @@ void GetUpdateInfo(const UpgradeDetector* detector, ash::UpdateInfo* info) {
       break;
   }
   info->update_required = detector->notify_upgrade();
-  info->factory_reset_required = detector->is_factory_reset_required();
 }

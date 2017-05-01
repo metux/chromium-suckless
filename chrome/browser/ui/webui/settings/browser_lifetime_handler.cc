@@ -34,9 +34,6 @@ void BrowserLifetimeHandler::RegisterMessages() {
   web_ui()->RegisterMessageCallback("signOutAndRestart",
       base::Bind(&BrowserLifetimeHandler::HandleSignOutAndRestart,
                  base::Unretained(this)));
-  web_ui()->RegisterMessageCallback("factoryReset",
-      base::Bind(&BrowserLifetimeHandler::HandleFactoryReset,
-                 base::Unretained(this)));
 #endif  // defined(OS_CHROMEOS)
 }
 
@@ -56,25 +53,6 @@ void BrowserLifetimeHandler::HandleSignOutAndRestart(
   chrome::AttemptUserExit();
 }
 
-void BrowserLifetimeHandler::HandleFactoryReset(
-    const base::ListValue* args) {
-  policy::BrowserPolicyConnectorChromeOS* connector =
-      g_browser_process->platform_part()->browser_policy_connector_chromeos();
-  bool allow_powerwash = !connector->IsEnterpriseManaged() &&
-      !user_manager::UserManager::Get()->IsLoggedInAsGuest() &&
-      !user_manager::UserManager::Get()->IsLoggedInAsSupervisedUser();
-
-  if (!allow_powerwash)
-    return;
-
-  PrefService* prefs = g_browser_process->local_state();
-  prefs->SetBoolean(prefs::kFactoryResetRequested, true);
-  prefs->CommitPendingWrite();
-
-  // Perform sign out. Current chrome process will then terminate, new one will
-  // be launched (as if it was a restart).
-  chrome::AttemptRelaunch();
-}
 #endif  // defined(OS_CHROMEOS)
 
 }  // namespace settings

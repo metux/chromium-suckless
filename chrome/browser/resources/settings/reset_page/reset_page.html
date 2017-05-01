@@ -7,7 +7,6 @@
 <link rel="import" href="/settings_shared_css.html">
 
 <if expr="chromeos">
-<link rel="import" href="/reset_page/powerwash_dialog.html">
 </if>
 
 <dom-module id="settings-reset-page">
@@ -26,18 +25,6 @@
       </settings-reset-profile-dialog>
     </template>
 <if expr="chromeos">
-    <div class="settings-box two-line" id="powerwash" actionable
-        on-tap="onShowPowerwashDialog_" hidden="[[!allowPowerwash_]]">
-      <div class="start">
-        <div>$i18n{powerwashTitle}</div>
-        <div class="secondary">$i18n{powerwashDescription}</div>
-      </div>
-      <button class="icon-arrow-right" is="paper-icon-button-light"></button>
-    </div>
-    <template is="dom-if" if="[[showPowerwashDialog_]]" restamp>
-      <settings-powerwash-dialog on-close="onPowerwashDialogClose_">
-      </settings-powerwash-dialog>
-    </template>
 </if>
   </template>
   <script src="/reset_page/reset_page.js"></script>

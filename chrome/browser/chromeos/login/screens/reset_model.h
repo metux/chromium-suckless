@@ -18,14 +18,10 @@ class ResetModel : public BaseScreen {
  public:
   static const char kUserActionCancelReset[];
   static const char kUserActionResetRestartPressed[];
-  static const char kUserActionResetPowerwashPressed[];
   static const char kUserActionResetLearnMorePressed[];
-  static const char kUserActionResetRollbackToggled[];
   static const char kUserActionResetShowConfirmationPressed[];
   static const char kUserActionResetResetConfirmationDismissed[];
   static const char kContextKeyIsRestartRequired[];
-  static const char kContextKeyIsRollbackAvailable[];
-  static const char kContextKeyIsRollbackChecked[];
   static const char kContextKeyIsConfirmational[];
   static const char kContextKeyIsOfficialBuild[];
   static const char kContextKeyScreenState[];

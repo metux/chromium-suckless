@@ -242,9 +242,6 @@ void HelpHandler::GetLocalizedValues(base::DictionaryValue* localized_strings) {
 #endif
     {"aboutProductDescription", IDS_ABOUT_PRODUCT_DESCRIPTION},
     {"relaunch", IDS_RELAUNCH_BUTTON},
-#if defined(OS_CHROMEOS)
-    {"relaunchAndPowerwash", IDS_RELAUNCH_AND_POWERWASH_BUTTON},
-#endif
     {"productName", IDS_PRODUCT_NAME},
     {"updateCheckStarted", IDS_UPGRADE_CHECK_STARTED},
     {"updating", IDS_UPGRADE_UPDATING},
@@ -281,16 +278,10 @@ void HelpHandler::GetLocalizedValues(base::DictionaryValue* localized_strings) {
     {"channelChangeDisallowedMessage",
      IDS_ABOUT_PAGE_CHANNEL_CHANGE_DISALLOWED_MESSAGE},
     {"channelChangePageTitle", IDS_ABOUT_PAGE_CHANNEL_CHANGE_PAGE_TITLE},
-    {"channelChangePagePowerwashTitle",
-     IDS_ABOUT_PAGE_CHANNEL_CHANGE_PAGE_POWERWASH_TITLE},
-    {"channelChangePagePowerwashMessage",
-     IDS_ABOUT_PAGE_CHANNEL_CHANGE_PAGE_POWERWASH_MESSAGE},
     {"channelChangePageDelayedChangeTitle",
      IDS_ABOUT_PAGE_CHANNEL_CHANGE_PAGE_DELAYED_CHANGE_TITLE},
     {"channelChangePageUnstableTitle",
      IDS_ABOUT_PAGE_CHANNEL_CHANGE_PAGE_UNSTABLE_TITLE},
-    {"channelChangePagePowerwashButton",
-     IDS_ABOUT_PAGE_CHANNEL_CHANGE_PAGE_POWERWASH_BUTTON},
     {"channelChangePageChangeButton",
      IDS_ABOUT_PAGE_CHANNEL_CHANGE_PAGE_CHANGE_BUTTON},
     {"channelChangePageCancelButton",
@@ -404,8 +395,6 @@ void HelpHandler::RegisterMessages() {
 #if defined(OS_CHROMEOS)
   web_ui()->RegisterMessageCallback("setChannel",
       base::Bind(&HelpHandler::SetChannel, base::Unretained(this)));
-  web_ui()->RegisterMessageCallback("relaunchAndPowerwash",
-      base::Bind(&HelpHandler::RelaunchAndPowerwash, base::Unretained(this)));
   web_ui()->RegisterMessageCallback("requestUpdate",
       base::Bind(&HelpHandler::RequestUpdate, base::Unretained(this)));
 #endif
@@ -576,37 +565,13 @@ void HelpHandler::SetChannel(const base::ListValue* args) {
     return;
   }
 
-  base::string16 channel;
-  bool is_powerwash_allowed;
-  if (!args->GetString(0, &channel) ||
-      !args->GetBoolean(1, &is_powerwash_allowed)) {
-    LOG(ERROR) << "Can't parse SetChannel() args";
-    return;
-  }
-
-  version_updater_->SetChannel(base::UTF16ToUTF8(channel),
-                               is_powerwash_allowed);
+  version_updater_->SetChannel(base::UTF16ToUTF8(channel), 0);
   if (user_manager::UserManager::Get()->IsCurrentUserOwner()) {
     // Check for update after switching release channel.
     version_updater_->CheckForUpdate(base::Bind(&HelpHandler::SetUpdateStatus,
                                                 base::Unretained(this)),
                                      VersionUpdater::PromoteCallback());
   }
-}
-
-void HelpHandler::RelaunchAndPowerwash(const base::ListValue* args) {
-  DCHECK(args->empty());
-
-  if (IsEnterpriseManaged())
-    return;
-
-  PrefService* prefs = g_browser_process->local_state();
-  prefs->SetBoolean(prefs::kFactoryResetRequested, true);
-  prefs->CommitPendingWrite();
-
-  // Perform sign out. Current chrome process will then terminate, new one will
-  // be launched (as if it was a restart).
-  chromeos::DBusThreadManager::Get()->GetPowerManagerClient()->RequestRestart();
 }
 
 #endif  // defined(OS_CHROMEOS)

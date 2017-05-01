@@ -32,7 +32,6 @@ namespace settings {
 
 // Handler for
 //  1) 'Reset Profile Settings' dialog
-//  2) 'Powerwash' dialog (ChromeOS only)
 class ResetSettingsHandler : public SettingsPageUIHandler {
  public:
   ~ResetSettingsHandler() override;
@@ -80,11 +79,6 @@ class ResetSettingsHandler : public SettingsPageUIHandler {
   // Closes the dialog once all requested settings has been reset.
   void OnResetProfileSettingsDone(std::string callback_id,
                                   bool send_feedback);
-
-#if defined(OS_CHROMEOS)
-  // Will be called when powerwash dialog is shown.
-  void OnShowPowerwashDialog(const base::ListValue* args);
-#endif  // defined(OS_CHROMEOS)
 
   Profile* const profile_;
 

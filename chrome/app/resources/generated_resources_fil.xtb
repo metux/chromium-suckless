@@ -994,7 +994,6 @@ Pagkatapos mong gumawa ng bagong pinangangasiwaang user, maaari mong pamahalaan 
 <translation id="2332742915001411729">I-reset sa default</translation>
 <translation id="2335122562899522968">Nagtatakda ang pahinang ito ng cookies.</translation>
 <translation id="2336228925368920074">I-bookmark ang Lahat ng Mga Tab...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Mag-annotate sa Google Keep</translation>
 <translation id="2339120501444485379">Maglagay ng bagong pangalan</translation>
 <translation id="2339641773402824483">Pagsuri para sa mga pag-update...</translation>
@@ -1172,7 +1171,6 @@ Sa palagay ko, hindi dapat i-block ang site na ito!</translation>
 <translation id="2562743677925229011">Hindi naka-sign in sa <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">Bilis ng touchpad:</translation>
 <translation id="2565828445440744174">Pang-eksperimentong WebAssembly</translation>
-<translation id="2566124945717127842">Mag-powerwash upang i-reset ang iyong <ph name="IDS_SHORT_PRODUCT_NAME" /> device upang maging parang bago.</translation>
 <translation id="2568774940984945469">Infobar Container</translation>
 <translation id="2570000010887652771">Na-save ang data.</translation>
 <translation id="2570648609346224037">Nagkaproblema habang dina-download ang larawan ng pagbawi.</translation>
@@ -1369,7 +1367,6 @@ Sa palagay ko, hindi dapat i-block ang site na ito!</translation>
       <ph name="LIST_ITEM" />Parehong itakda ang dev at ang password ng pag-login sa system root sa isang custom na value upang manu-mano kang makakapag-SSH sa device
     <ph name="END_LIST" />
     <ph name="BR" />
-    Kapag naka-enable, mananatiling naka-enable ang karamihan ng mga feature ng pagde-debug kahit na pagkatapos magsagawa ng powerwash o pagwa-wipe ng data sa isang device na pinamamahalaan ng enterprise.  Upang ganap na ma-disable ang lahat ng feature ng pagde-debug, kumpletuhin ang proseso ng pag-recover ng Chrome OS (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     Para sa higit pang impormasyon tungkol sa mga feature ng pagde-debug, tingnan ang:<ph name="BR" />
@@ -1595,7 +1592,6 @@ Para sa higit pang impormasyon, bisitahin ang aming <ph name="BEGIN_LINK" />Help
 <translation id="3065140616557457172">I-type upang mahanap o ilagay ang isang URL para i-navigate - gumagana naman ang lahat.</translation>
 <translation id="3067198360141518313">Patakbuhin ang plugin na ito</translation>
 <translation id="307519606911195071">I-enable ang mga karagdagang feature ng accessibility sa page ng Mga Setting.</translation>
-<translation id="3075874217500066906">Kailangang mag-restart upang masimulan ang proseso ng Powerwash. Pagkatapos mag-restart, hihilingin sa iyo na kumpirmahing gusto mong magpatuloy.</translation>
 <translation id="3076677906922146425">Hayaan ang sinuman na magdagdag ng tao sa Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2346,7 +2342,6 @@ Mula Sa <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="404493185430269859">Default na search engine</translation>
 <translation id="4047112090469382184">Paano ito naging secure</translation>
 <translation id="4052120076834320548">Maliit</translation>
-<translation id="4055023634561256217">Kinakailangang mag-restart bago maaaring ma-reset ang iyong device gamit ang Powerwash.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Tingnan sa Store</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3010,7 +3005,6 @@ Pumindot ng anumang key upang magpatuloy sa pagtuklas.</translation>
 <translation id="4991420928586866460">Ituring ang mga top-row key bilang mga function key</translation>
 <translation id="499165176004408815">Gamitin ang high contrast mode</translation>
 <translation id="4992066212339426712">I-unmute</translation>
-<translation id="4992458225095111526">Kumpirmahin ang Powerwash</translation>
 <translation id="4994474651455208930">Payagan ang mga site na humiling na maging mga default na handler para sa mga protocol</translation>
 <translation id="4998873842614926205">Kumpirmahin ang mga Pagbabago</translation>
 <translation id="4999273653895592255">Kinokontrol ng flag na ito kung ipapakita namin ang luma o bagong UI para sa window ng picker ng desktop capture.</translation>
@@ -3045,7 +3039,6 @@ Pumindot ng anumang key upang magpatuloy sa pagtuklas.</translation>
 <translation id="5045550434625856497">Hindi wastong password</translation>
 <translation id="5046747760454685637">Magtanong bago payagan ang site na magpatakbo ng Flash (inirerekomenda)</translation>
 <translation id="5048179823246820836">Nordic</translation>
-<translation id="5053604404986157245">Hindi available ang random na nabuong TPM password. Normal ito pagkatapos ng Powerwash.</translation>
 <translation id="5053803681436838483">Bagong shipping address...</translation>
 <translation id="5055309315264875868">Magpakita ng link sa page ng mga setting ng tagapamahala ng password upang pamahalaan ang iyong mga naka-sync na password online.</translation>
 <translation id="5061188462607594407">I-secure ang iyong <ph name="PHONE_TYPE" /> upang magpatuloy</translation>
@@ -3293,7 +3286,6 @@ Pumindot ng anumang key upang magpatuloy sa pagtuklas.</translation>
 <translation id="5357579842739549440">Pag-debug ng mga keyboard shortcut</translation>
 <translation id="5360150013186312835">Ipakita sa Toolbar</translation>
 <translation id="5362741141255528695">Piliin ang file ng private na key.</translation>
-<translation id="5363109466694494651">I-Powerwash at I-revert</translation>
 <translation id="5367091008316207019">Binabasa ang file..</translation>
 <translation id="5367260322267293088">I-enable ang eksperimental na page na Bagong Tab gamit ang mga malaking icon.</translation>
 <translation id="5368720394188453070">Naka-lock ang iyong telepono. I-unlock ito upang makapasok.</translation>
@@ -3663,7 +3655,6 @@ Pumindot ng anumang key upang magpatuloy sa pagtuklas.</translation>
 <translation id="5851063901794976166">Walang itong laman...</translation>
 <translation id="5851868085455377790">Nagbigay</translation>
 <translation id="5852112051279473187">Oops!  May mali talagang nangyari habang itinatala ang device na ito.  Mangyaring subukang muli o makipag-ugnayan sa iyong kinatawan sa suporta.</translation>
-<translation id="5852137567692933493">I-restart at I-powerwash</translation>
 <translation id="5854409662653665676">Kung nakakaranas ka ng madadalas na problema, maaari mong subukan ang sumusunod upang malutas ang isyu sa mobile na ito:</translation>
 <translation id="5854912040170951372">Pizza</translation>
 <translation id="5855119960719984315">lumipat ng window</translation>
@@ -3768,7 +3759,6 @@ Pumindot ng anumang key upang magpatuloy sa pagtuklas.</translation>
 <translation id="6007237601604674381">Nabigo ang paglipat. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Nagpapadala ng mga hyperlink auditing ping.</translation>
 <translation id="6015796118275082299">Taon</translation>
-<translation id="6016551720757758985">Kumpirmahin ang Powerwash na maaaring bumalik sa dating bersyon</translation>
 <translation id="6016809788585079594">Sabihin ang "Ok Google" nang isang beses na lang</translation>
 <translation id="6017225534417889107">Baguhin...</translation>
 <translation id="6017981840202692187">Idagdag sa Mga Application</translation>
@@ -4046,7 +4036,6 @@ Pumindot ng anumang key upang magpatuloy sa pagtuklas.</translation>
 <translation id="6409731863280057959">Mga Pop-up</translation>
 <translation id="6410063390789552572">Hindi ma-access ang network library</translation>
 <translation id="6410257289063177456">Mga File ng Larawan</translation>
-<translation id="6410328738210026208">Baguhin ang channel at Powerwash</translation>
 <translation id="6410668567036790476">Magdagdag ng search engine</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">Bagong window ng incognito</translation>
@@ -4764,7 +4753,6 @@ Pumindot ng anumang key upang magpatuloy sa pagtuklas.</translation>
 <translation id="7405422715075171617">I-enable ang pagsa-scan ng bagong numero ng credit card kapag pinupunan ang isang form ng credit card.</translation>
 <translation id="740624631517654988">Naka-block ang pop-up</translation>
 <translation id="7406691462051376731">Kasalukuyang nagpapadala ng diagnostic at data ng paggamit ang device na ito sa Google. Ang <ph name="BEGIN_LINK1" />setting<ph name="END_LINK1" /> na ito ay ipinapatupad ng may-ari. <ph name="BEGIN_LINK2" />Matuto nang Higit Pa<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Ilunsad muli at I-powerwash</translation>
 <translation id="7409836189476010449">Patakbuhin ang Flash</translation>
 <translation id="7410344089573941623">Itanong kung gusto ng <ph name="HOST" /> na i-access ang iyong camera at mikropono</translation>
 <translation id="7412226954991670867">GPU Memory</translation>
@@ -4878,7 +4866,6 @@ Pumindot ng anumang key upang magpatuloy sa pagtuklas.</translation>
 <translation id="7553242001898162573">Ilagay ang iyong password</translation>
 <translation id="7554791636758816595">Bagong Tab</translation>
 <translation id="7556033326131260574">Hindi na-verify ng Smart Lock ang iyong account. I-type ang iyong password upang makapasok.</translation>
-<translation id="7556242789364317684">Sa kasamaang palad, hindi mabawi ng <ph name="SHORT_PRODUCT_NAME" /> ang iyong mga setting. Upang maayos ang error, dapat i-reset ng <ph name="SHORT_PRODUCT_NAME" /> ang iyong device gamit ang Powerwash.</translation>
 <translation id="7558050486864662801">Magtanong kapag nangangailangan ang isang site ng access sa iyong mikropono (inirerekomenda)</translation>
 <translation id="7559719679815339381">Mangyaring maghintay....kasalukuyang ina-update ang Kiosk app. Huwag alisin ang USB stick.</translation>
 <translation id="7561196759112975576">Palagi</translation>
@@ -5203,7 +5190,6 @@ Ilagay ang iyong key file sa ligtas na lugar. Kailangan mo ito upang lumikha ng 
 <translation id="8008356846765065031">Nadiskonekta ang Internet. Pakisuri ang iyong koneksyon sa internet.</translation>
 <translation id="8012382203418782830">Naisalin na ang pahinang ito.</translation>
 <translation id="8014154204619229810">Kasalukuyang tumatakbo ang updater. I-refresh pagkatapos ng isang minuto upang muling suriin.</translation>
-<translation id="8014206674403687691">Hindi ma-revert ang <ph name="IDS_SHORT_PRODUCT_NAME" /> sa dating naka-install na bersyon. Pakisubukang muli upang i-Powerwash ang iyong device.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Maling pagpapatotoo</translation>
 <translation id="8022523925619404071">I-enable ang autoupdate</translation>
@@ -5262,9 +5248,7 @@ Ilagay ang iyong key file sa ligtas na lugar. Kailangan mo ito upang lumikha ng 
 <translation id="80974698889265265">Hindi nagtutugma ang mga PIN</translation>
 <translation id="8098975406164436557">Gamitin ang teleponong ito upang i-unlock ang iyong <ph name="DEVICE_TYPE" />?</translation>
 <translation id="810066391692572978">Gumagamit ang file ng mga hindi sinusuportahang tampok.</translation>
-<translation id="8101987792947961127">Kinakailangan ng Powerwash sa susunod na reboot</translation>
 <translation id="8102535138653976669">Secure na sini-sync ng <ph name="PRODUCT_NAME" /> ang iyong data sa iyong Google account. Panatilihing naka-sync ang lahat o i-customize ang naka-sync na mga uri ng data at setting ng pag-encrypt.</translation>
-<translation id="8104696615244072556">I-powerwash ang iyong <ph name="IDS_SHORT_PRODUCT_NAME" /> device at ibalik sa dating bersyon.</translation>
 <translation id="8105368624971345109">I-off</translation>
 <translation id="8106045200081704138">Ibinahagi sa akin</translation>
 <translation id="8106211421800660735">Numero ng credit card</translation>

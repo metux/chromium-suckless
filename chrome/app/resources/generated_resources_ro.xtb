@@ -992,7 +992,6 @@ După ce creezi un utilizator monitorizat, poți gestiona setările oricând și
 <translation id="2332742915001411729">Resetați la valorile prestabilite</translation>
 <translation id="2335122562899522968">Această pagină a setat cookie-uri.</translation>
 <translation id="2336228925368920074">Marchează toate filele...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Adnotează în Google Keep</translation>
 <translation id="2339120501444485379">Introduceți noul nume</translation>
 <translation id="2339641773402824483">Se caută actualizări...</translation>
@@ -1170,7 +1169,6 @@ Nu cred că acest site ar trebui blocat!</translation>
 <translation id="2562743677925229011">Nu sunteți conectat(ă) la <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">Viteză touchpad:</translation>
 <translation id="2565828445440744174">Limbaj WebAssembly experimental</translation>
-<translation id="2566124945717127842">Folosiți Powerwash pentru a reseta dispozitivul <ph name="IDS_SHORT_PRODUCT_NAME" /> la configurația din fabrică.</translation>
 <translation id="2568774940984945469">Container bară de informații</translation>
 <translation id="2570000010887652771">Date salvate.</translation>
 <translation id="2570648609346224037">A apărut o problemă la descărcarea imaginii de recuperare.</translation>
@@ -1367,7 +1365,6 @@ Nu cred că acest site ar trebui blocat!</translation>
       <ph name="LIST_ITEM" />să setezi parola de conectare, atât pentru dezvoltator, cât și pentru rădăcina sistemului, la o valoare personalizată, pentru a putea instala manual SSH pe dispozitiv.
     <ph name="END_LIST" />
     <ph name="BR" />
-    După activare, majoritatea funcțiilor de remediere a erorilor vor rămâne activate, chiar după efectuarea unui powerwash sau ștergerea datelor pe un dispozitiv gestionat de companie. Pentru a dezactiva complet toate funcțiile de remediere a erorilor, finalizează procesul de recuperare a sistemului de operare Chrome (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     Pentru mai multe informații despre funcțiile de remediere a erorilor, consultă:<ph name="BR" />
@@ -1593,7 +1590,6 @@ Pentru mai multe informații, accesează <ph name="BEGIN_LINK" />Centrul de ajut
 <translation id="3065140616557457172">Tastează pentru a căuta sau introdu o adresă URL pentru a naviga. Orice variantă funcționează.</translation>
 <translation id="3067198360141518313">Rulează acest plugin</translation>
 <translation id="307519606911195071">Activează funcții suplimentare de accesibilitate pe pagina Setări.</translation>
-<translation id="3075874217500066906">Este necesară o repornire pentru a începe procesul de Powerwash. După repornire, ți se va solicita să confirmi dacă dorești să continui.</translation>
 <translation id="3076677906922146425">Permite oricui să adauge o persoană în Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2343,7 +2339,6 @@ De la <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="404493185430269859">Motor de căutare prestabilit</translation>
 <translation id="4047112090469382184">Ce siguranță oferă</translation>
 <translation id="4052120076834320548">Mic</translation>
-<translation id="4055023634561256217">Trebuie să reporniți gadgetul înainte de a-l reseta utilizând Powerwash.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> – <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Vedeți în magazin</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3007,7 +3002,6 @@ Apăsați pe orice tastă pentru a continua explorarea.</translation>
 <translation id="4991420928586866460">Tastele din rândul de sus sunt considerate taste pentru funcții</translation>
 <translation id="499165176004408815">Utilizați modul de contrast ridicat</translation>
 <translation id="4992066212339426712">Activează sunetul</translation>
-<translation id="4992458225095111526">Confirmă Powerwash</translation>
 <translation id="4994474651455208930">Permiteți site-urilor să solicite să aibă rolul de programe asociate prestabilite pentru protocoale</translation>
 <translation id="4998873842614926205">Confirmați modificările</translation>
 <translation id="4999273653895592255">Acest marcaj controlează dacă afișăm vechea sau noua interfață de utilizare în fereastra cu selectorul pentru captura desktopului.</translation>
@@ -3042,7 +3036,6 @@ Apăsați pe orice tastă pentru a continua explorarea.</translation>
 <translation id="5045550434625856497">Parolă incorectă</translation>
 <translation id="5046747760454685637">Întreabă înainte de a permite site-urilor să ruleze Flash (recomandat)</translation>
 <translation id="5048179823246820836">Nordică</translation>
-<translation id="5053604404986157245">Parola TPM generată aleatoriu nu este disponibilă. Acest lucru este normal după utilizarea Powerwash.</translation>
 <translation id="5053803681436838483">Adresă de expediere nouă...</translation>
 <translation id="5055309315264875868">Afișează un link în pagina cu setări a managerului de parole, pentru a gestiona parolele sincronizate online.</translation>
 <translation id="5061188462607594407">Pentru a continua, securizează dispozitivul <ph name="PHONE_TYPE" /></translation>
@@ -3290,7 +3283,6 @@ Apăsați pe orice tastă pentru a continua explorarea.</translation>
 <translation id="5357579842739549440">Comenzi rapide de la tastatură pentru depanare</translation>
 <translation id="5360150013186312835">Afișează în bara de instrumente</translation>
 <translation id="5362741141255528695">Selectează fișierul cu cheia privată.</translation>
-<translation id="5363109466694494651">Folosește Powerwash și revino la o versiune anterioară</translation>
 <translation id="5367091008316207019">Se citește fișierul...</translation>
 <translation id="5367260322267293088">Activează pagina experimentată Filă nouă care folosește pictograme mari.</translation>
 <translation id="5368720394188453070">Telefonul este blocat. Pentru acces, deblochează-l.</translation>
@@ -3660,7 +3652,6 @@ Apăsați pe orice tastă pentru a continua explorarea.</translation>
 <translation id="5851063901794976166">Nimic de văzut aici...</translation>
 <translation id="5851868085455377790">Emitent</translation>
 <translation id="5852112051279473187">Hopa! A apărut o eroare gravă la înregistrarea dispozitivului. Încearcă din nou sau contactează reprezentantul de asistență.</translation>
-<translation id="5852137567692933493">Reporniți și efectuați Powerwash</translation>
 <translation id="5854409662653665676">Dacă te confrunți cu probleme frecvente, ai putea încerca următoarele pentru a rezolva problema cu acest modul:</translation>
 <translation id="5854912040170951372">Feliuță</translation>
 <translation id="5855119960719984315">comută fereastra</translation>
@@ -3765,7 +3756,6 @@ Apăsați pe orice tastă pentru a continua explorarea.</translation>
 <translation id="6007237601604674381">Mutarea nu a reușit. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Trimite comenzi ping de verificare a hyperlinkurilor.</translation>
 <translation id="6015796118275082299">An</translation>
-<translation id="6016551720757758985">Confirmă Powerwash cu revenire la versiunea anterioară</translation>
 <translation id="6016809788585079594">Rostește „Ok Google” încă o dată</translation>
 <translation id="6017225534417889107">Modificați...</translation>
 <translation id="6017981840202692187">Adaugă în Aplicații</translation>
@@ -4043,7 +4033,6 @@ Apăsați pe orice tastă pentru a continua explorarea.</translation>
 <translation id="6409731863280057959">Ferestre pop-up</translation>
 <translation id="6410063390789552572">Biblioteca din rețea nu poate fi accesată</translation>
 <translation id="6410257289063177456">Fișiere imagine</translation>
-<translation id="6410328738210026208">Schimbați canalul și porniți Powerwash</translation>
 <translation id="6410668567036790476">Adaugă motorul de căutare</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">Fereastră incognito nouă</translation>
@@ -4759,7 +4748,6 @@ Apăsați pe orice tastă pentru a continua explorarea.</translation>
 <translation id="7405422715075171617">Activează scanarea unui număr de card de credit nou la completarea unui formular pentru card de credit.</translation>
 <translation id="740624631517654988">Fereastră pop-up blocată</translation>
 <translation id="7406691462051376731">Acest dispozitiv trimite în prezent la Google date de diagnosticare și privind utilizarea. Această <ph name="BEGIN_LINK1" />setare<ph name="END_LINK1" /> este impusă de proprietar. <ph name="BEGIN_LINK2" />Află mai multe<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Relansați și porniți Powerwash</translation>
 <translation id="7409836189476010449">să ruleze Flash</translation>
 <translation id="7410344089573941623">Întreabă dacă <ph name="HOST" /> solicită acces la camera și microfonul meu</translation>
 <translation id="7412226954991670867">Memorie GPU</translation>
@@ -4873,7 +4861,6 @@ Apăsați pe orice tastă pentru a continua explorarea.</translation>
 <translation id="7553242001898162573">Introdu parola</translation>
 <translation id="7554791636758816595">Filă nouă</translation>
 <translation id="7556033326131260574">Smart Lock nu a putut verifica contul tău. Pentru acces, introdu parola.</translation>
-<translation id="7556242789364317684">Din păcate, <ph name="SHORT_PRODUCT_NAME" /> nu vă poate recupera setările. Pentru a remedia eroarea, este necesar ca <ph name="SHORT_PRODUCT_NAME" /> să reseteze dispozitivul utilizând Powerwash.</translation>
 <translation id="7558050486864662801">Notifică-mă dacă un site solicită acces la microfon (recomandat)</translation>
 <translation id="7559719679815339381">Așteaptă... Aplicația de tip chioșc se actualizează. Nu scoate stickul USB.</translation>
 <translation id="7561196759112975576">Întotdeauna</translation>
@@ -5198,7 +5185,6 @@ Păstrează fișierul cu cheia într-un loc sigur. Acesta va fi necesar la crear
 <translation id="8008356846765065031">Internet deconectat. Verificați conexiunea la internet.</translation>
 <translation id="8012382203418782830">Pagina a fost tradusă.</translation>
 <translation id="8014154204619229810">Momentan, rulează instrumentul pentru actualizare. Actualizează într-un minut și verifică din nou.</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> nu poate reveni la versiunea instalată anterior. Încearcă să folosești din nou Powerwash pe dispozitivul tău.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Autentificare incorectă</translation>
 <translation id="8022523925619404071">Activați actualizarea automată</translation>
@@ -5257,9 +5243,7 @@ Păstrează fișierul cu cheia într-un loc sigur. Acesta va fi necesar la crear
 <translation id="80974698889265265">Codurile PIN nu se potrivesc</translation>
 <translation id="8098975406164436557">Folosești acest telefon pentru a debloca <ph name="DEVICE_TYPE" />?</translation>
 <translation id="810066391692572978">Fișierul utilizează funcții neacceptate.</translation>
-<translation id="8101987792947961127">Este necesară lansarea Powerwash la următoarea repornire</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> sincronizează securizat datele cu Contul Google. Păstrați opțiunea de sincronizare integrală sau personalizați tipurile de date de sincronizat și setările de criptare.</translation>
-<translation id="8104696615244072556">Folosește Powerwash pe dispozitivul <ph name="IDS_SHORT_PRODUCT_NAME" /> și revino la versiunea anterioară.</translation>
 <translation id="8105368624971345109">Dezactivează</translation>
 <translation id="8106045200081704138">În colaborare cu mine</translation>
 <translation id="8106211421800660735">Numărul cardului de credit</translation>

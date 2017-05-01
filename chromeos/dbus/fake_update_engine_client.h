@@ -31,8 +31,7 @@ class FakeUpdateEngineClient : public UpdateEngineClient {
   void Rollback() override;
   void CanRollbackCheck(const RollbackCheckCallback& callback) override;
   Status GetLastStatus() override;
-  void SetChannel(const std::string& target_channel,
-                  bool is_powerwash_allowed) override;
+  void SetChannel(const std::string& target_channel) override;
   void GetChannel(bool get_current_channel,
                   const GetChannelCallback& callback) override;
   void GetEolStatus(const GetEolStatusCallback& callback) override;

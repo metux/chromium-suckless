@@ -46,7 +46,7 @@ cr.define('help', function() {
      * List of the possible ui states.
      * @private
      */
-    uiClassTable_: ['selected-channel-requires-powerwash',
+    uiClassTable_: [
                     'selected-channel-requires-delayed-update',
                     'selected-channel-good',
                     'selected-channel-unstable'],
@@ -66,11 +66,6 @@ cr.define('help', function() {
           self.updateUI_(this.value);
         };
       }
-
-      $('channel-change-page-powerwash-button').onclick = function() {
-        self.setChannel_(self.getSelectedOption_(), true);
-        PageManager.closeOverlay();
-      };
 
       $('channel-change-page-change-button').onclick = function() {
         self.setChannel_(self.getSelectedOption_(), false);
@@ -153,11 +148,8 @@ cr.define('help', function() {
         // Selected channel isn't equal to the current and target channel.
         if (newStability > currentStability) {
           // More stable channel is selected. For customer devices
-          // notify user about powerwash.
           if (this.isEnterpriseManaged_)
             newOverlayClass = 'selected-channel-requires-delayed-update';
-          else
-            newOverlayClass = 'selected-channel-requires-powerwash';
         } else if (selectedChannel == 'dev-channel') {
           // Warn user about unstable channel.
           newOverlayClass = 'selected-channel-unstable';
@@ -178,13 +170,12 @@ cr.define('help', function() {
     /**
      * Sets the device target channel.
      * @param {string} channel The name of the target channel
-     * @param {boolean} isPowerwashAllowed True iff powerwash is allowed
      * @private
      */
-    setChannel_: function(channel, isPowerwashAllowed) {
+    setChannel_: function(channel) {
       this.targetChannel_ = channel;
       this.updateUI_(channel);
-      help.HelpPage.setChannel(channel, isPowerwashAllowed);
+      help.HelpPage.setChannel(channel);
     },
 
     /**

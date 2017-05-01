@@ -989,7 +989,6 @@ Når du har oprettet en ny administreret bruger, kan du til enhver tid administr
 <translation id="2332742915001411729">Nulstil til standard</translation>
 <translation id="2335122562899522968">Denne side indstiller cookies.</translation>
 <translation id="2336228925368920074">Tilføj alle faner som bogmærker...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Annoter i Google Keep</translation>
 <translation id="2339120501444485379">Indtast nyt navn</translation>
 <translation id="2339641773402824483">Søger efter opdateringer...</translation>
@@ -1167,7 +1166,6 @@ Jeg synes ikke, dette website skal blokeres.</translation>
 <translation id="2562743677925229011">Ikke logget ind på <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">Hastighed for touchpad:</translation>
 <translation id="2565828445440744174">Eksperimentel WebAssembly</translation>
-<translation id="2566124945717127842">Powerwash for at nulstille din <ph name="IDS_SHORT_PRODUCT_NAME" />-enhed til fabriksindstillingerne.</translation>
 <translation id="2568774940984945469">Container til oplysningsbjælke</translation>
 <translation id="2570000010887652771">Gemte data.</translation>
 <translation id="2570648609346224037">Der opstod et problem under download af genoprettelsesbilledet.</translation>
@@ -1365,7 +1363,6 @@ Jeg synes ikke, dette website skal blokeres.</translation>
       <ph name="LIST_ITEM" />Konfigurere både adgangskoderoden til login for udviklere og for systemet til en tilpasset værdi, så du manuelt kan konfigurere SSH på enheden
     <ph name="END_LIST" />
     <ph name="BR" />
-    Når fejlfindingsfuntionerne er oprettet, vil de fleste af dem forblive aktiveret, selv efter powerwash eller datasletning på en virksomhedsadministreret enhed. For at deaktivere alle fejlfindingsfunktioner skal du gennemgå en gendannelsesproces for Chrome-operativsystemet (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     Få flere oplysninger om fejlfindingsfunktionerne på:<ph name="BR" />
@@ -1593,7 +1590,6 @@ Få flere oplysninger i <ph name="BEGIN_LINK" />Hjælp<ph name="END_LINK" />.</t
 <translation id="3065140616557457172">Tast for at søge, eller angiv en webadresse for at navigere – det hele virker.</translation>
 <translation id="3067198360141518313">Kør dette plugin</translation>
 <translation id="307519606911195071">Aktivér flere hjælpefunktioner på siden Indstillinger.</translation>
-<translation id="3075874217500066906">Enheden skal genstartes for at begynde Powerwash-processen. Efter genstart vil du blive bedt om at bekræfte, at du vil fortsætte.</translation>
 <translation id="3076677906922146425">Lad andre føje en person til Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2343,7 +2339,6 @@ Vil du starte <ph name="CONTROL_PANEL_APPLET_NAME" />?</translation>
 <translation id="404493185430269859">Standardsøgemaskine</translation>
 <translation id="4047112090469382184">Hvordan er denne funktion sikker?</translation>
 <translation id="4052120076834320548">Lillebitte</translation>
-<translation id="4055023634561256217">Enheden skal genstartes, før den kan nulstilles med Powerwash.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Se i Webshop</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3006,7 +3001,6 @@ Tryk på en vilkårlig tast for at fortsætte udforskningen.</translation>
 <translation id="4991420928586866460">Brug tasterne på øverste række som funktionstaster</translation>
 <translation id="499165176004408815">Brug tilstanden Høj kontrast</translation>
 <translation id="4992066212339426712">Slå lyden til</translation>
-<translation id="4992458225095111526">Bekræft Powerwash</translation>
 <translation id="4994474651455208930">Tillad, at websites beder om at håndtere protokoller som standard</translation>
 <translation id="4998873842614926205">Bekræft ændringer</translation>
 <translation id="4999273653895592255">Dette flag kontrollerer, om vi viser den gamle eller den nye brugerflade i vinduet for valg af skærmoptagelse.</translation>
@@ -3041,7 +3035,6 @@ Tryk på en vilkårlig tast for at fortsætte udforskningen.</translation>
 <translation id="5045550434625856497">Ugyldig adgangskode</translation>
 <translation id="5046747760454685637">Spørg om tilladelse, før websites begynder at køre Flash (anbefales)</translation>
 <translation id="5048179823246820836">Nordisk</translation>
-<translation id="5053604404986157245">Den vilkårligt genererede TPM-adgangskode er ikke tilgængelig. Dette er normalt efter en Powerwash.</translation>
 <translation id="5053803681436838483">Ny leveringsadresse...</translation>
 <translation id="5055309315264875868">Vis et link på indstillingssiden i adgangskodeadministrator til administration af dine adgangskoder til synkronisering på nettet.</translation>
 <translation id="5061188462607594407">Beskyt din <ph name="PHONE_TYPE" /> for at fortsætte</translation>
@@ -3288,7 +3281,6 @@ Tryk på en vilkårlig tast for at fortsætte udforskningen.</translation>
 <translation id="5357579842739549440">Tastaturgenveje til fejlretning</translation>
 <translation id="5360150013186312835">Vis på værktøjslinjen</translation>
 <translation id="5362741141255528695">Vælg privat nøglefil.</translation>
-<translation id="5363109466694494651">Powerwash, og vend tilbage</translation>
 <translation id="5367091008316207019">Læser fil...</translation>
 <translation id="5367260322267293088">Aktivér den eksperimentelle side Ny fane med store ikoner.</translation>
 <translation id="5368720394188453070">Din telefon er låst. Lås den op for at få adgang.</translation>
@@ -3658,7 +3650,6 @@ Tryk på en vilkårlig tast for at fortsætte udforskningen.</translation>
 <translation id="5851063901794976166">Der er intet at se her...</translation>
 <translation id="5851868085455377790">Udsteder</translation>
 <translation id="5852112051279473187">Ups!  Der gik noget galt under tilmeldingen af denne enhed.  Prøv igen, eller kontakt din supportrepræsentant.</translation>
-<translation id="5852137567692933493">Genstart og Powerwash</translation>
 <translation id="5854409662653665676">Hvis du ofte oplever problemer, kan du prøve følgende for at løse problemet med dette modul:</translation>
 <translation id="5854912040170951372">Pepperoni</translation>
 <translation id="5855119960719984315">skift vindue</translation>
@@ -3763,7 +3754,6 @@ Tryk på en vilkårlig tast for at fortsætte udforskningen.</translation>
 <translation id="6007237601604674381">Flytningen mislykkedes. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Sender revisionspings for hyperlink.</translation>
 <translation id="6015796118275082299">År</translation>
-<translation id="6016551720757758985">Bekræft Powerwash med nulstilling til forrige version</translation>
 <translation id="6016809788585079594">Sig "Ok Google" en sidste gang</translation>
 <translation id="6017225534417889107">Skift...</translation>
 <translation id="6017981840202692187">Føj til apps</translation>
@@ -4042,7 +4032,6 @@ slettes permanent, når den administrerede bruger fjernes. Besøgte websites og 
 <translation id="6409731863280057959">Pop op-vinduer</translation>
 <translation id="6410063390789552572">Kan ikke få adgang til netværksbibliotek</translation>
 <translation id="6410257289063177456">Billedfiler</translation>
-<translation id="6410328738210026208">Skift kanal og powerwash</translation>
 <translation id="6410668567036790476">Tilføj søgemaskine</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">Nyt inkognitovindue</translation>
@@ -4758,7 +4747,6 @@ slettes permanent, når den administrerede bruger fjernes. Besøgte websites og 
 <translation id="7405422715075171617">Aktivér scanning af et nyt kreditkortnummer, når en kreditkortformular udfyldes.</translation>
 <translation id="740624631517654988">Pop op-vindue blokeret</translation>
 <translation id="7406691462051376731">Denne enhed sender i øjeblikket diagnostik og brugsdata til Google. Denne <ph name="BEGIN_LINK1" />indstilling<ph name="END_LINK1" /> håndhæves af ejeren. <ph name="BEGIN_LINK2" />Få flere oplysninger<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Genstart og powerwash</translation>
 <translation id="7409836189476010449">Kør Flash</translation>
 <translation id="7410344089573941623">Spørg, hvis <ph name="HOST" /> vil have adgang til dit kamera og din mikrofon</translation>
 <translation id="7412226954991670867">GPU-hukommelse</translation>
@@ -4872,7 +4860,6 @@ slettes permanent, når den administrerede bruger fjernes. Besøgte websites og 
 <translation id="7553242001898162573">Angiv din adgangskode</translation>
 <translation id="7554791636758816595">Ny fane</translation>
 <translation id="7556033326131260574">Smart Lock kunne ikke bekræfte din konto. Indtast din adgangskode for at få adgang.</translation>
-<translation id="7556242789364317684"><ph name="SHORT_PRODUCT_NAME" /> kan ikke gendanne dine indstillinger. Denne fejl kan korrigeres ved at lade <ph name="SHORT_PRODUCT_NAME" /> nulstille din enhed med Powerwash.</translation>
 <translation id="7558050486864662801">Spørg om tilladelse, hvis et website kræver adgang til din mikrofon (anbefales)</translation>
 <translation id="7559719679815339381">Vent et øjeblik....Terminalappen er ved at blive opdateret. Undlad at fjerne USB-stikket.</translation>
 <translation id="7561196759112975576">Altid</translation>
@@ -5197,7 +5184,6 @@ Opbevar din nøglefil på et sikkert sted. Du skal bruge den til at oprette nye 
 <translation id="8008356846765065031">Internetforbindelsen blev afbrudt. Kontrollér din internetforbindelse.</translation>
 <translation id="8012382203418782830">Denne side er oversat.</translation>
 <translation id="8014154204619229810">Opdateringsprogrammet kører i øjeblikket. Opdater om et minut for at kontrollere igen.</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> kan ikke vende tilbage til den tidligere version. Prøv Powerwash i stedet.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Ugyldig godkendelse</translation>
 <translation id="8022523925619404071">Aktivér autoopdatering</translation>
@@ -5256,9 +5242,7 @@ Opbevar din nøglefil på et sikkert sted. Du skal bruge den til at oprette nye 
 <translation id="80974698889265265">Pinkoderne stemmer ikke overens</translation>
 <translation id="8098975406164436557">Vil du bruge denne telefon til at låse din <ph name="DEVICE_TYPE" />?</translation>
 <translation id="810066391692572978">Filen anvender funktioner, der ikke understøttes.</translation>
-<translation id="8101987792947961127">Powerwash er påkrævet ved næste genstart</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> foretager en sikker synkronisering af dine data med din Google-konto. Hold alt synkroniseret, eller tilpas de synkroniserede datatyper og indstillinger for kryptering.</translation>
-<translation id="8104696615244072556">Powerwash din <ph name="IDS_SHORT_PRODUCT_NAME" />-enhed, og nulstil til forrige version.</translation>
 <translation id="8105368624971345109">Deaktiver</translation>
 <translation id="8106045200081704138">Delt med mig</translation>
 <translation id="8106211421800660735">Kreditkortnummer</translation>

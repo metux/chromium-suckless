@@ -523,10 +523,6 @@ void ExistingUserController::ShowEnrollmentScreen() {
   host_->StartWizard(WizardController::kEnrollmentScreenName);
 }
 
-void ExistingUserController::ShowResetScreen() {
-  host_->StartWizard(WizardController::kResetScreenName);
-}
-
 void ExistingUserController::ShowEnableDebuggingScreen() {
   host_->StartWizard(WizardController::kEnableDebuggingScreenName);
 }

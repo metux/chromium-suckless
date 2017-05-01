@@ -992,7 +992,6 @@ Nakon izrade novog nadziranog korisnika možete upravljati njegovim postavkama u
 <translation id="2332742915001411729">Vrati na zadano</translation>
 <translation id="2335122562899522968">Ova stranica postavila je kolačiće.</translation>
 <translation id="2336228925368920074">Označi sve kartice...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Izradi napomenu u Google Keepu</translation>
 <translation id="2339120501444485379">Unesite novo ime</translation>
 <translation id="2339641773402824483">Provjera ažuriranja...</translation>
@@ -1170,7 +1169,6 @@ Mislim da ta web-lokacija ne bi trebala biti blokirana!</translation>
 <translation id="2562743677925229011">Niste prijavljeni na uslugu <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">Brzina dodirne podloge:</translation>
 <translation id="2565828445440744174">Eksperimentalni WebAssembly</translation>
-<translation id="2566124945717127842">Pokrenite Powerwash da biste vratili uređaj <ph name="IDS_SHORT_PRODUCT_NAME" /> na tvorničke postavke.</translation>
 <translation id="2568774940984945469">Spremnik infotrake</translation>
 <translation id="2570000010887652771">Spremljeni podaci.</translation>
 <translation id="2570648609346224037">Došlo je do pogreške tijekom preuzimanja slike za oporavak sustava.</translation>
@@ -1367,7 +1365,6 @@ Mislim da ta web-lokacija ne bi trebala biti blokirana!</translation>
       <ph name="LIST_ITEM" />postavljanje dev i sistemske korijenske zaporke za prijavu na prilagođenu vrijednost kako biste ručno unosili SSH na uređaj.
     <ph name="END_LIST" />
     <ph name="BR" />
-    Kada ih omogućite, većina značajki za otklanjanje pogrešaka ostat će omogućene čak i nakon izvršavanja Powerwasha ili brisanja podataka na uređaju kojim upravlja tvrtka. Da biste potpuno onemogućili značajke za otklanjanje pogrešaka, izvršite postupak oporavka OS-a Chrome (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     Više informacija o značajkama za otklanjanje pogrešaka potražite na stranici:<ph name="BR" />
@@ -1593,7 +1590,6 @@ Više informacija potražite u našem <ph name="BEGIN_LINK" />centru za pomoć<p
 <translation id="3065140616557457172">Unesite pojam za pretraživanje ili URL za odlazak na stranicu - i jedno i drugo radi.</translation>
 <translation id="3067198360141518313">Pokrenite ovaj dodatak</translation>
 <translation id="307519606911195071">Omogućuje dodatne značajke pristupačnosti na stranici postavki.</translation>
-<translation id="3075874217500066906">Za pokretanje postupka Powerwash potrebno je ponovo pokrenuti uređaj. Nakon ponovnog pokretanja morat ćete potvrditi da želite nastaviti.</translation>
 <translation id="3076677906922146425">Dopusti svakome da doda osobu u Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2343,7 +2339,6 @@ s <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="404493185430269859">Zadana tražilica</translation>
 <translation id="4047112090469382184">Koliko je to sigurno</translation>
 <translation id="4052120076834320548">Jako mali</translation>
-<translation id="4055023634561256217">Potrebno je ponovno pokretanje prije nego što vaš uređaj može biti ponovo vraćen s funkcijom Powerwash.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Prikaži u Web-trgovini</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3007,7 +3002,6 @@ Pritisnite bilo koju tipku da biste nastavili istraživati.</translation>
 <translation id="4991420928586866460">Smatraj tipke najvišeg retka funkcijskim tipkama</translation>
 <translation id="499165176004408815">Upotrijebi način visokog kontrasta</translation>
 <translation id="4992066212339426712">Uključi zvuk</translation>
-<translation id="4992458225095111526">Potvrda Powerwasha</translation>
 <translation id="4994474651455208930">Dopusti web-lokacijama traženje dopuštenja da postanu zadani rukovatelji za protokole</translation>
 <translation id="4998873842614926205">Potvrda promjene</translation>
 <translation id="4999273653895592255">Ta oznaka upravlja time hoćemo li prikazivati staro ili novo korisničko sučelje prozora alata za odabir streaminga radne površine.</translation>
@@ -3042,7 +3036,6 @@ Pritisnite bilo koju tipku da biste nastavili istraživati.</translation>
 <translation id="5045550434625856497">Pogrešna zaporka</translation>
 <translation id="5046747760454685637">Web-lokacije moraju tražiti dopuštenje za pokretanje Flasha (preporučeno)</translation>
 <translation id="5048179823246820836">nordijski</translation>
-<translation id="5053604404986157245">Nasumično generirana TPM zaporka nije dostupna. To je uobičajeno nakon primjene funkcije Powerwash.</translation>
 <translation id="5053803681436838483">Nova adresa za dostavu...</translation>
 <translation id="5055309315264875868">Prikažite vezu u postavkama upravitelja zaporki kako biste svojim sinkroniziranim zaporkama upravljali online.</translation>
 <translation id="5061188462607594407">Zaštitite telefon <ph name="PHONE_TYPE" /> da biste nastavili</translation>
@@ -3290,7 +3283,6 @@ Pritisnite bilo koju tipku da biste nastavili istraživati.</translation>
 <translation id="5357579842739549440">Tipkovnički prečaci za otklanjanje pogrešaka</translation>
 <translation id="5360150013186312835">Prikaži na alatnoj traci</translation>
 <translation id="5362741141255528695">Odaberite datoteku s osobnim ključem.</translation>
-<translation id="5363109466694494651">Powerwash i vraćanje u prethodno stanje</translation>
 <translation id="5367091008316207019">Čitanje datoteke...</translation>
 <translation id="5367260322267293088">Omogućuje se eksperimentalna web-stranica nove kartice pomoću velikih ikona.</translation>
 <translation id="5368720394188453070">Vaš je telefon zaključan. Otključajte ga da biste mu pristupili.</translation>
@@ -3660,7 +3652,6 @@ Pritisnite bilo koju tipku da biste nastavili istraživati.</translation>
 <translation id="5851063901794976166">Ovdje nema ničega...</translation>
 <translation id="5851868085455377790">Izdavač</translation>
 <translation id="5852112051279473187">Ups!  Došlo je do problema prilikom prijavljivanja ovog uređaja.  Pokušajte ponovo ili kontaktirajte svog predstavnika podrške.</translation>
-<translation id="5852137567692933493">Pokreni ponovo i izvrši Powerwash</translation>
 <translation id="5854409662653665676">Ako često imate problema, pokušajte na sljedeći način riješiti poteškoće s ovim modulom:</translation>
 <translation id="5854912040170951372">Kriška</translation>
 <translation id="5855119960719984315">promjena prozora</translation>
@@ -3765,7 +3756,6 @@ Pritisnite bilo koju tipku da biste nastavili istraživati.</translation>
 <translation id="6007237601604674381">Premještanje nije uspjelo. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Šalje pingove za provjeru hiperveze.</translation>
 <translation id="6015796118275082299">Godina</translation>
-<translation id="6016551720757758985">Potvrda Powerwasha uz povratak na prethodnu verziju</translation>
 <translation id="6016809788585079594">Recite "OK Google" još samo jedanput</translation>
 <translation id="6017225534417889107">Promijeni...</translation>
 <translation id="6017981840202692187">Dodavanje u Aplikacije</translation>
@@ -4043,7 +4033,6 @@ Pritisnite bilo koju tipku da biste nastavili istraživati.</translation>
 <translation id="6409731863280057959">Skočni prozori</translation>
 <translation id="6410063390789552572">Pristup mrežnoj biblioteci nije moguć</translation>
 <translation id="6410257289063177456">Slikovne datoteke</translation>
-<translation id="6410328738210026208">Promijeni kanal i pokreni Powerwash</translation>
 <translation id="6410668567036790476">Dodavanje tražilice</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">Novi anonimni prozor</translation>
@@ -4757,7 +4746,6 @@ Pritisnite bilo koju tipku da biste nastavili istraživati.</translation>
 <translation id="7405422715075171617">Omogući skeniranje broja nove kreditne kartice prilikom ispunjavanja obrasca za kreditnu karticu.</translation>
 <translation id="740624631517654988">Skočni prozor blokiran</translation>
 <translation id="7406691462051376731">Uređaj Googleu trenutačno šalje dijagnostiku i podatke o upotrebi. Tu je <ph name="BEGIN_LINK1" />postavku<ph name="END_LINK1" /> nametnuo vlasnik. <ph name="BEGIN_LINK2" />Saznajte više<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Pokreni ponovo i izvrši Powerwash</translation>
 <translation id="7409836189476010449">pokrenuti Flash</translation>
 <translation id="7410344089573941623">Pitaj ako <ph name="HOST" /> želi pristupiti kameri i mikrofonu</translation>
 <translation id="7412226954991670867">Memorija grafičkog procesora</translation>
@@ -4871,7 +4859,6 @@ Pritisnite bilo koju tipku da biste nastavili istraživati.</translation>
 <translation id="7553242001898162573">Unesite zaporku</translation>
 <translation id="7554791636758816595">Nova kartica</translation>
 <translation id="7556033326131260574">Smart Lock nije uspio potvrditi vaš račun. Upišite zaporku da biste pristupili uređaju.</translation>
-<translation id="7556242789364317684">Nažalost, <ph name="SHORT_PRODUCT_NAME" /> ne može oporaviti vaše postavke. Da biste ispravili pogrešku, <ph name="SHORT_PRODUCT_NAME" /> mora vratiti vaš uređaj na zadane postavke pomoću funkcije Powerwash.</translation>
 <translation id="7558050486864662801">Pitaj me kad web-lokacija zahtijeva pristup mom mikrofonu (preporučeno)</translation>
 <translation id="7559719679815339381">Pričekajte... Aplikacija kioska upravo se ažurira. Ne uklanjajte USB privjesak.</translation>
 <translation id="7561196759112975576">Uvijek</translation>
@@ -5196,7 +5183,6 @@ Ključnu datoteku čuvajte na sigurnom mjestu. Trebat će vam za stvaranje novih
 <translation id="8008356846765065031">Prekinuta je veza s internetom. Provjerite internetsku vezu.</translation>
 <translation id="8012382203418782830">Ta je stranica prevedena.</translation>
 <translation id="8014154204619229810">U tijeku je izvođenje alata za ažuriranje. Osvježite za minutu i provjerite ponovo.</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> ne može vratiti prethodno instaliranu verziju. Pokušajte ponovo pokrenuti Powerwash na svom uređaju.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Pogrešna autentifikacija</translation>
 <translation id="8022523925619404071">Omogući automatsko ažuriranje</translation>
@@ -5255,9 +5241,7 @@ Ključnu datoteku čuvajte na sigurnom mjestu. Trebat će vam za stvaranje novih
 <translation id="80974698889265265">PIN-ovi se ne podudaraju</translation>
 <translation id="8098975406164436557">Upotrijebite ovaj telefon kako biste otključali svoj <ph name="DEVICE_TYPE" />?</translation>
 <translation id="810066391692572978">Datoteka upotrebljava nepodržane značajke.</translation>
-<translation id="8101987792947961127">Pri sljedećem ponovnom pokretanju potrebno je izvršiti Powerwash</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> na siguran način sinkronizira podatke s vašim Google računom. Održavajte sve sinkronizirano i prilagođavajte vrste sinkroniziranih podataka i opcije enkripcije.</translation>
-<translation id="8104696615244072556">Pokrenite Powerwash na svom <ph name="IDS_SHORT_PRODUCT_NAME" /> uređaju i vratite ga na prethodnu verziju.</translation>
 <translation id="8105368624971345109">Isključi</translation>
 <translation id="8106045200081704138">Dijeljeno sa mnom</translation>
 <translation id="8106211421800660735">Broj kreditne kartice</translation>

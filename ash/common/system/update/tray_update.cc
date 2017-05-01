@@ -101,10 +101,7 @@ class UpdateView : public ActionableView {
     AddChildView(image);
 
     base::string16 label_text =
-        info.factory_reset_required
-            ? bundle.GetLocalizedString(
-                  IDS_ASH_STATUS_TRAY_RESTART_AND_POWERWASH_TO_UPDATE)
-            : bundle.GetLocalizedString(IDS_ASH_STATUS_TRAY_UPDATE);
+            bundle.GetLocalizedString(IDS_ASH_STATUS_TRAY_UPDATE);
     label_ = new views::Label(label_text);
     AddChildView(label_);
     SetAccessibleName(label_text);

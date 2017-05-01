@@ -991,7 +991,6 @@ Baada ya kuunda mtumiaji mpya anayesimamiwa, unaweza kudhibiti mipangilio yake w
 <translation id="2332742915001411729">Rejesha kwenye chaguo-msingi</translation>
 <translation id="2335122562899522968">Ukurasa huu unaweka vidakuzi.</translation>
 <translation id="2336228925368920074">Alamisha Vichupo Vyote...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Fafanua katika Google Keep</translation>
 <translation id="2339120501444485379">Ingiza jina jipya</translation>
 <translation id="2339641773402824483">Inatafuta visasishi...</translation>
@@ -1169,7 +1168,6 @@ Sidhani ikiwa tovuti hii inapaswa kuzuiwa!</translation>
 <translation id="2562743677925229011">Hajaingia kwenye <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">Kasi ya padimguso:</translation>
 <translation id="2565828445440744174">WebAssembly ya Majaribio</translation>
-<translation id="2566124945717127842">Tumia Powerwash ili uweke upya kifaa chako cha <ph name="IDS_SHORT_PRODUCT_NAME" /> kiwe kama kipya.</translation>
 <translation id="2568774940984945469">Hifadhi ya Upau wa Maelezo</translation>
 <translation id="2570000010887652771">Data iliyohifadhiwa.</translation>
 <translation id="2570648609346224037">Kulikuwa na tatizo wakati wa kupakua picha ya ufufuzi.</translation>
@@ -1365,7 +1363,6 @@ Sidhani ikiwa tovuti hii inapaswa kuzuiwa!</translation>
       <ph name="LIST_ITEM" />Weka dev na nenosiri la kuingia katika akaunti msingi ya mfumo kuwa nambari maalum ili uweke SSH kwa njia ya kawaida katika kifaa
     <ph name="END_LIST" />
     <ph name="BR" />
-    Pindi tu inapowashwa, vipengele vingi vya kutatua vitasalia vikiwa vimewashwa hata baada ya kutekeleza powerwash au kufuta data kwenye kifaa kinachodhibitiwa na biashara.  Ili kuzima vipengele vyote vya kutatua kabisa, kamilisha mchakato wa kurejesha Chrome OS (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     Kwa maelezo zaidi kuhusu vipengele vya kutatua angalia:<ph name="BR" />
@@ -1591,7 +1588,6 @@ Tembelea <ph name="BEGIN_LINK" />Kituo chetu cha Usaidizi<ph name="END_LINK" /> 
 <translation id="3065140616557457172">Chapa ili kutafuta au uweke URL ili upitie - yote yanafanya kazi.</translation>
 <translation id="3067198360141518313">Tekeleza programu-jalizi hii</translation>
 <translation id="307519606911195071">Washa vipengele vya ufikiaji wa ziada katika ukurasa wa Mipangilio.</translation>
-<translation id="3075874217500066906">Inahitaji kuanzishwa upya ili mchakato wa Powerwash uanze. Baada ya kuanzisha upya utaombwa uthibitishe kwamba unataka kuendelea.</translation>
 <translation id="3076677906922146425">Ruhusu yeyote aongeze wasifu kwenye Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2337,7 +2333,6 @@ Ungependa kuanza <ph name="CONTROL_PANEL_APPLET_NAME" />?</translation>
 <translation id="404493185430269859">Injini tafuti chaguo-msingi</translation>
 <translation id="4047112090469382184">Namna hiki kilivyo salama</translation>
 <translation id="4052120076834320548">Ndogo sana</translation>
-<translation id="4055023634561256217">Uwashaji upya unahitajika kabla ya kifaa chako kuwekwa upya na Powerwash.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">Angalia katika Duka la Wavuti</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -2996,7 +2991,6 @@ Bonyeza kitufe chochote ili kuendelea kuchunguza.</translation>
 <translation id="4991420928586866460">Chukulia vitufe vya safu mlalo ya juu kama vitufe vya chaguo za kukokotoa</translation>
 <translation id="499165176004408815">Tumia hali ya juu ya utofautishaji</translation>
 <translation id="4992066212339426712">Rejesha sauti</translation>
-<translation id="4992458225095111526">Thibitisha Powerwash</translation>
 <translation id="4994474651455208930">Ruhusu tovuti kutuma ombi la kuwa vidhibiti chaguo-msingi vya itifaki</translation>
 <translation id="4998873842614926205">Thibitisha Mabadiliko</translation>
 <translation id="4999273653895592255">Kipengele hiki hudhibiti iwapo tutaonyesha Kiolesura cha zamani au kipya kwa ajili ya dirisha la kiteua cha kupeperusha skrini ya eneo-kazi.</translation>
@@ -3031,7 +3025,6 @@ Bonyeza kitufe chochote ili kuendelea kuchunguza.</translation>
 <translation id="5045550434625856497">Nenosiri lisilo sahihi</translation>
 <translation id="5046747760454685637">Uliza kabla ya kuruhusu tovuti zitumie Flash (inapendekezwa)</translation>
 <translation id="5048179823246820836">Kinodiki</translation>
-<translation id="5053604404986157245">Nenosiri la TPM lililoundwa bila mpangilio halipatikani. Hii ni kawadia baada ya Powerwash.</translation>
 <translation id="5053803681436838483">Anwani mpya ya usafirishaji...</translation>
 <translation id="5055309315264875868">Onyesha kiungo katika ukurasa wa mipangilio ya kisimamia nenosiri ili kusimamia manenosiri yako yaliyosawazishwa mtandaoni.</translation>
 <translation id="5061188462607594407">Weka <ph name="PHONE_TYPE" /> yako salama ili uendelee</translation>
@@ -3279,7 +3272,6 @@ Bonyeza kitufe chochote ili kuendelea kuchunguza.</translation>
 <translation id="5357579842739549440">Utatuaji wa njiamikato za kibodi</translation>
 <translation id="5360150013186312835">Onyesha katika Upau wa Vidhibiti</translation>
 <translation id="5362741141255528695">Chagua faili ya ufunguo binafsi.</translation>
-<translation id="5363109466694494651">Powerwash na Urejeshe nakala ya awali</translation>
 <translation id="5367091008316207019">Inasoma faili..</translation>
 <translation id="5367260322267293088">Washa ukurasa wa majaribio wa Kichupo Kipya kwa kutumia aikoni kubwa.</translation>
 <translation id="5368720394188453070">Simu yako imefungwa. Ifungue ili kuingia.</translation>
@@ -3649,7 +3641,6 @@ Bonyeza kitufe chochote ili kuendelea kuchunguza.</translation>
 <translation id="5851063901794976166">Hapana cha kuona hapa...</translation>
 <translation id="5851868085455377790">Mtoaji</translation>
 <translation id="5852112051279473187">Lo! Hitilafu imetokea wakati wa kusajili kifaa hiki. Tafadhali jaribu tena au uwasiliane na mwakilishi atakayekusaidia.</translation>
-<translation id="5852137567692933493">Anzisha upya na Powerwash</translation>
 <translation id="5854409662653665676">Ukiwa unakumbana na matatizo ya mara kwa mara, unaweza kujaribu zifuatazo ili kusuluhisha suala hilo kwa kipengee hiki:</translation>
 <translation id="5854912040170951372">Slaisi</translation>
 <translation id="5855119960719984315">badilisha dirisha</translation>
@@ -3754,7 +3745,6 @@ Bonyeza kitufe chochote ili kuendelea kuchunguza.</translation>
 <translation id="6007237601604674381">Kusogezwa kumeshindika. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Hutuma mito ya ukaguzi wa kiungo.</translation>
 <translation id="6015796118275082299">Mwaka</translation>
-<translation id="6016551720757758985">Thibitisha Powerwash kwa kurejea kwenye toleo la awali</translation>
 <translation id="6016809788585079594">Sema "Ok Google" mara ya mwisho</translation>
 <translation id="6017225534417889107">Badilisha...</translation>
 <translation id="6017981840202692187">Ongeza kwenye Programu</translation>
@@ -4032,7 +4022,6 @@ Bonyeza kitufe chochote ili kuendelea kuchunguza.</translation>
 <translation id="6409731863280057959">Madirisha ibukizi</translation>
 <translation id="6410063390789552572">Maabara ya mtandao haiwezi kufikiwa</translation>
 <translation id="6410257289063177456">Faili za Picha</translation>
-<translation id="6410328738210026208">Badilisha kituo na Powerwash</translation>
 <translation id="6410668567036790476">Ongeza mtambo wa kutafuta</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">Dirisha fiche jipya</translation>
@@ -4748,7 +4737,6 @@ Bonyeza kitufe chochote ili kuendelea kuchunguza.</translation>
 <translation id="7405422715075171617">Washa kuchanganua nambari mpya ya kadi ya malipo unapojaza fomu ya kadi ya malipo.</translation>
 <translation id="740624631517654988">Kidirisha ibukizi kimezuiwa</translation>
 <translation id="7406691462051376731">Kwa sasa kifaa hiki kinatuma data kuhusu matumizi na utambuzi wa matatizo kwa Google. <ph name="BEGIN_LINK1" />Mipangilio<ph name="END_LINK1" /> hii inatekelezwa na mmiliki. <ph name="BEGIN_LINK2" />Pata Maelezo zaidi<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Zindua tena na Powerwash</translation>
 <translation id="7409836189476010449">Tumia Flash</translation>
 <translation id="7410344089573941623">Uliza iwapo <ph name="HOST" /> inataka kufikia kamera na maikrofoni yako</translation>
 <translation id="7412226954991670867">Kumbukumbu ya GPU</translation>
@@ -4862,7 +4850,6 @@ Bonyeza kitufe chochote ili kuendelea kuchunguza.</translation>
 <translation id="7553242001898162573">Weka nenosiri lako</translation>
 <translation id="7554791636758816595">Kichupo Kipya</translation>
 <translation id="7556033326131260574">Smart Lock haikuweza kuthibitisha akaunti yako. Charaza nenosiri lako ili uingie.</translation>
-<translation id="7556242789364317684">Kwa bahati mbaya, <ph name="SHORT_PRODUCT_NAME" /> imeshindwa kuokoa mipangilio yako. Kurekebisha hitilafu hii, <ph name="SHORT_PRODUCT_NAME" /> lazima uweke upya kifaa chako na Powerwash.</translation>
 <translation id="7558050486864662801">Uliza wakati tovuti inahitaji kufikia kipaza sauti chako (inapendekezwa)</translation>
 <translation id="7559719679815339381">Tafadhali subiri....Programu ya skrini nzima inasasishwa. Usiondoe hifadhi ya USB.</translation>
 <translation id="7561196759112975576">Kila wakati</translation>
@@ -5187,7 +5174,6 @@ Weka faili yako ya funguo mahali salama. Utaihitaji kuunda matoleo mapya ya kien
 <translation id="8008356846765065031">Intaneti imekatizwa. Tafadhali kagua muunganisho wako wa intaneti.</translation>
 <translation id="8012382203418782830">Ukurasa huu umetafsiriwa.</translation>
 <translation id="8014154204619229810">Programu ya kusasisha inatekeleza kwa sasa. Onyesha upya baada ya dakika moja ili uangalie tena.</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> haiwezi kurejesha toleo lililokuwa limesakinishwa. Tafadhali jaribu kutumia tena Powerwash kwenye kifaa chako.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Uthibitishaji batili</translation>
 <translation id="8022523925619404071">Washa kusasisha kiotomatiki</translation>
@@ -5246,9 +5232,7 @@ Weka faili yako ya funguo mahali salama. Utaihitaji kuunda matoleo mapya ya kien
 <translation id="80974698889265265">PIN hazilingani</translation>
 <translation id="8098975406164436557">Je, ungependa kutumia simu hii kufungua <ph name="DEVICE_TYPE" />?</translation>
 <translation id="810066391692572978">Faili inatumia vipengele visivyohimiliwa.</translation>
-<translation id="8101987792947961127">Powerwash inahitajika kwenye kuwasha kunakofuata</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> husawazisha data yako na akaunti yako ya Google, kwa usalama. Weka kila kitu kikiwa kimesawazishwa au badilsiha kukufaa aina za data za kusawazisha na mipangilio ya usimbaji fiche.</translation>
-<translation id="8104696615244072556">Tumia Powerwash kwenye kifaa <ph name="IDS_SHORT_PRODUCT_NAME" /> chako na urejee kwenye toleo la awali.</translation>
 <translation id="8105368624971345109">Zima</translation>
 <translation id="8106045200081704138">Zilizoshirikiwa na mimi</translation>
 <translation id="8106211421800660735">Nambari ya kadi ya malipo</translation>

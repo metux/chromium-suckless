@@ -1210,12 +1210,7 @@ void SigninScreenHandler::HandleAccountPickerReady() {
   }
 
   PrefService* prefs = g_browser_process->local_state();
-  if (prefs->GetBoolean(prefs::kFactoryResetRequested)) {
-    if (core_oobe_actor_)
-      core_oobe_actor_->ShowDeviceResetScreen();
-
-    return;
-  } else if (prefs->GetBoolean(prefs::kDebuggingFeaturesRequested)) {
+  if (prefs->GetBoolean(prefs::kDebuggingFeaturesRequested)) {
     if (core_oobe_actor_)
       core_oobe_actor_->ShowEnableDebuggingScreen();
 

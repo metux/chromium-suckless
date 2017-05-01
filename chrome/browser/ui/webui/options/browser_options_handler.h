@@ -142,9 +142,6 @@ class BrowserOptionsHandler
   void OnWallpaperPolicyChanged(const base::Value* previous_policy,
                                 const base::Value* current_policy);
 
-  // Will be called when powerwash dialog is shown.
-  void OnPowerwashDialogShow(const base::ListValue* args);
-
   // ArcAppListPrefs::Observer overrides.
   void OnAppReadyChanged(const std::string& app_id, bool ready) override;
   void OnAppRemoved(const std::string& app_id) override;
@@ -323,10 +320,6 @@ class BrowserOptionsHandler
   // ("true" or "false").
   void VirtualKeyboardChangeCallback(const base::ListValue* args);
 
-  // Called when the user confirmed factory reset. Chrome will
-  // initiate asynchronous file operation and then log out.
-  void PerformFactoryResetRestart(const base::ListValue* args);
-
   // Update visibility of Android apps settings section.
   void UpdateAndroidSettingsAppState(bool visible);
 
@@ -417,9 +410,6 @@ class BrowserOptionsHandler
   PrefChangeRegistrar profile_pref_registrar_;
 #if defined(OS_CHROMEOS)
   std::unique_ptr<policy::PolicyChangeRegistrar> policy_registrar_;
-
-  // Whether factory reset can be performed.
-  bool enable_factory_reset_;
 
   PrefChangeRegistrar local_state_pref_change_registrar_;
 #endif

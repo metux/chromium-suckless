@@ -155,8 +155,7 @@ void VersionUpdaterCros::CheckForUpdate(const StatusCallback& callback,
   }
 }
 
-void VersionUpdaterCros::SetChannel(const std::string& channel,
-                                    bool is_powerwash_allowed) {
+void VersionUpdaterCros::SetChannel(const std::string& channel) {
   OwnerSettingsServiceChromeOS* service =
       context_
           ? OwnerSettingsServiceChromeOSFactory::GetInstance()
@@ -166,7 +165,7 @@ void VersionUpdaterCros::SetChannel(const std::string& channel,
   if (service)
     service->SetString(chromeos::kReleaseChannel, channel);
   DBusThreadManager::Get()->GetUpdateEngineClient()->
-      SetChannel(channel, is_powerwash_allowed);
+      SetChannel(channel);
 }
 
 void VersionUpdaterCros::GetChannel(bool get_current_channel,

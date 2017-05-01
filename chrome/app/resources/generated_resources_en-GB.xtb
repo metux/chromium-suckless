@@ -994,7 +994,6 @@ After you create a new supervised user, you can manage their settings at any tim
 <translation id="2332742915001411729">Reset to default</translation>
 <translation id="2335122562899522968">This page has set cookies.</translation>
 <translation id="2336228925368920074">Bookmark All Tabs...</translation>
-<translation id="2336381494582898602">Powerwash</translation>
 <translation id="2336922762358079423">Annotate in Google Keep</translation>
 <translation id="2339120501444485379">Enter new name</translation>
 <translation id="2339641773402824483">Checking for updates...</translation>
@@ -1172,7 +1171,6 @@ I don't think this site should be blocked!</translation>
 <translation id="2562743677925229011">Not signed in to <ph name="SHORT_PRODUCT_NAME" /></translation>
 <translation id="2565670301826831948">Touchpad speed:</translation>
 <translation id="2565828445440744174">Experimental WebAssembly</translation>
-<translation id="2566124945717127842">Powerwash to reset your <ph name="IDS_SHORT_PRODUCT_NAME" /> device to be just like new.</translation>
 <translation id="2568774940984945469">Infobar Container</translation>
 <translation id="2570000010887652771">Saved data.</translation>
 <translation id="2570648609346224037">There was a problem during recovery image download.</translation>
@@ -1368,7 +1366,6 @@ I don't think this site should be blocked!</translation>
       <ph name="LIST_ITEM" />Set both the dev and the system root log-in password to a customised value so that you can manually SSH into the device
     <ph name="END_LIST" />
     <ph name="BR" />
-    Once enabled, most of the debugging features will remain enabled even after performing a powerwash or wiping the data on an enterprise-managed device. To fully disable all debugging features, complete the Chrome OS recovery process (https://support.google.com/chromebook/answer/1080595).
     <ph name="BR" />
     <ph name="BR" />
     For more information about the debugging features see:<ph name="BR" />
@@ -1594,7 +1591,6 @@ For more information, visit our <ph name="BEGIN_LINK" />Help Centre<ph name="END
 <translation id="3065140616557457172">Type to search or enter a URL to navigate - everything just works.</translation>
 <translation id="3067198360141518313">Run this plug-in</translation>
 <translation id="307519606911195071">Enable additional accessibility features in the Settings page.</translation>
-<translation id="3075874217500066906">A restart is required to begin the Powerwash process. After restart you will be asked to confirm that you want to proceed.</translation>
 <translation id="3076677906922146425">Let anyone add a person to Chrome</translation>
 <translation id="3076909148546628648"><ph name="DOWNLOAD_RECEIVED" />/<ph name="DOWNLOAD_TOTAL" /></translation>
 <translation id="3077734595579995578">shift</translation>
@@ -2344,7 +2340,6 @@ From <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="404493185430269859">Default search engine</translation>
 <translation id="4047112090469382184">How this is secure</translation>
 <translation id="4052120076834320548">Tiny</translation>
-<translation id="4055023634561256217">A restart is required before your device can be reset with Powerwash.</translation>
 <translation id="4057041477816018958"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" /></translation>
 <translation id="4057896668975954729">View in Store</translation>
 <translation id="4058720513957747556">AppSocket (TCP/IP)</translation>
@@ -3008,7 +3003,6 @@ Press any key to continue exploring.</translation>
 <translation id="4991420928586866460">Treat top-row keys as function keys</translation>
 <translation id="499165176004408815">Use high contrast mode</translation>
 <translation id="4992066212339426712">Unmute</translation>
-<translation id="4992458225095111526">Confirm Powerwash</translation>
 <translation id="4994474651455208930">Allow sites to ask to become default handlers for protocols</translation>
 <translation id="4998873842614926205">Confirm Changes</translation>
 <translation id="4999273653895592255">This flag controls whether we show the old or new UI for desktop capture picker window.</translation>
@@ -3043,7 +3037,6 @@ Press any key to continue exploring.</translation>
 <translation id="5045550434625856497">Incorrect password</translation>
 <translation id="5046747760454685637">Ask before allowing sites to run Flash (recommended)</translation>
 <translation id="5048179823246820836">Nordic</translation>
-<translation id="5053604404986157245">The randomly generated TPM password is not available. This is normal after a Powerwash.</translation>
 <translation id="5053803681436838483">New delivery address...</translation>
 <translation id="5055309315264875868">Show a link in the password manager settings page to manage your synced passwords online.</translation>
 <translation id="5061188462607594407">Secure your <ph name="PHONE_TYPE" /> to continue</translation>
@@ -3290,7 +3283,6 @@ Press any key to continue exploring.</translation>
 <translation id="5357579842739549440">Debugging keyboard shortcuts</translation>
 <translation id="5360150013186312835">Show in Toolbar</translation>
 <translation id="5362741141255528695">Select private key file.</translation>
-<translation id="5363109466694494651">Powerwash and Revert</translation>
 <translation id="5367091008316207019">Reading file..</translation>
 <translation id="5367260322267293088">Enable the experimental New Tab page using large icons.</translation>
 <translation id="5368720394188453070">Your phone is locked. Unlock it to enter.</translation>
@@ -3660,7 +3652,6 @@ Press any key to continue exploring.</translation>
 <translation id="5851063901794976166">Nothing to see here...</translation>
 <translation id="5851868085455377790">Issuer</translation>
 <translation id="5852112051279473187">Oops!  Something went really wrong while enrolling this device.  Please try again or contact your support representative.</translation>
-<translation id="5852137567692933493">Restart and Powerwash</translation>
 <translation id="5854409662653665676">If you are experiencing frequent problems, you could try the following to resolve the issue with this module:</translation>
 <translation id="5854912040170951372">Pizza</translation>
 <translation id="5855119960719984315">switch window</translation>
@@ -3765,7 +3756,6 @@ Press any key to continue exploring.</translation>
 <translation id="6007237601604674381">Move failed. <ph name="ERROR_MESSAGE" /></translation>
 <translation id="6008241731410823808">Sends hyperlink auditing pings.</translation>
 <translation id="6015796118275082299">Year</translation>
-<translation id="6016551720757758985">Confirm Powerwash with return to previous version</translation>
 <translation id="6016809788585079594">Say "OK Google" one last time</translation>
 <translation id="6017225534417889107">Change...</translation>
 <translation id="6017981840202692187">Add to Applications</translation>
@@ -4043,7 +4033,6 @@ Press any key to continue exploring.</translation>
 <translation id="6409731863280057959">Pop-ups</translation>
 <translation id="6410063390789552572">Can't access network library</translation>
 <translation id="6410257289063177456">Image Files</translation>
-<translation id="6410328738210026208">Change channel and Powerwash</translation>
 <translation id="6410668567036790476">Add search engine</translation>
 <translation id="641105183165925463">$1 MB</translation>
 <translation id="6412931879992742813">New incognito window</translation>
@@ -4760,7 +4749,6 @@ Press any key to continue exploring.</translation>
 <translation id="7405422715075171617">Enable scanning a new credit card number when filling out a credit card form.</translation>
 <translation id="740624631517654988">Pop-up blocked</translation>
 <translation id="7406691462051376731">This device currently sends diagnostic and usage data to Google. This <ph name="BEGIN_LINK1" />setting<ph name="END_LINK1" /> is enforced by the owner. <ph name="BEGIN_LINK2" />Find out More<ph name="END_LINK2" /></translation>
-<translation id="7409233648990234464">Relaunch and Powerwash</translation>
 <translation id="7409836189476010449">Run Flash</translation>
 <translation id="7410344089573941623">Ask if <ph name="HOST" /> wants to access your camera and microphone</translation>
 <translation id="7412226954991670867">GPU Memory</translation>
@@ -4874,7 +4862,6 @@ Press any key to continue exploring.</translation>
 <translation id="7553242001898162573">Enter your password</translation>
 <translation id="7554791636758816595">New Tab</translation>
 <translation id="7556033326131260574">Smart Lock couldn’t verify your account. Type your password to enter.</translation>
-<translation id="7556242789364317684">Unfortunately, <ph name="SHORT_PRODUCT_NAME" /> is unable to recover your settings. To fix the error, <ph name="SHORT_PRODUCT_NAME" /> must reset your device with Powerwash.</translation>
 <translation id="7558050486864662801">Ask when a site requires access to your microphone (recommended)</translation>
 <translation id="7559719679815339381">Please wait... Kiosk app is in the process of being updated. Do not remove the USB stick.</translation>
 <translation id="7561196759112975576">Always</translation>
@@ -5199,7 +5186,6 @@ Keep your key file in a safe place. You will need it to create new versions of y
 <translation id="8008356846765065031">Internet disconnected. Please check your Internet connection.</translation>
 <translation id="8012382203418782830">This page has been translated.</translation>
 <translation id="8014154204619229810">The updater is currently running. Refresh in a minute to check again.</translation>
-<translation id="8014206674403687691"><ph name="IDS_SHORT_PRODUCT_NAME" /> is unable to revert to the previously installed version. Please try again to Powerwash your device.</translation>
 <translation id="8017335670460187064"><ph name="LABEL" /></translation>
 <translation id="8017667670902200762">Bad authentication</translation>
 <translation id="8022523925619404071">Enable auto-update</translation>
@@ -5258,9 +5244,7 @@ Keep your key file in a safe place. You will need it to create new versions of y
 <translation id="80974698889265265">PINs do not match</translation>
 <translation id="8098975406164436557">Use this phone to unlock your <ph name="DEVICE_TYPE" />?</translation>
 <translation id="810066391692572978">File uses unsupported features.</translation>
-<translation id="8101987792947961127">Powerwash required on next reboot</translation>
 <translation id="8102535138653976669"><ph name="PRODUCT_NAME" /> securely syncs your data with your Google account. Keep everything synced or customise synced data types and encryption settings.</translation>
-<translation id="8104696615244072556">Powerwash your <ph name="IDS_SHORT_PRODUCT_NAME" /> device and return to the previous version.</translation>
 <translation id="8105368624971345109">Turn Off</translation>
 <translation id="8106045200081704138">Shared with me</translation>
 <translation id="8106211421800660735">Credit card number</translation>

@@ -246,20 +246,6 @@ Polymer({
   },
 
   /** @private */
-  onRelaunchAndPowerwashTap_: function() {
-    this.lifetimeBrowserProxy_.factoryReset();
-  },
-
-  /**
-   * @return {boolean}
-   * @private
-   */
-  shouldShowRelaunchAndPowerwash_: function() {
-    return this.checkStatus_(UpdateStatus.NEARLY_UPDATED) &&
-        this.isTargetChannelMoreStable_();
-  },
-
-  /** @private */
   onCheckUpdatesTap_: function() {
     this.onUpdateStatusChanged_({status: UpdateStatus.CHECKING});
     this.aboutBrowserProxy_.requestUpdate();

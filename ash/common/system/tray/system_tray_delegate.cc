@@ -24,8 +24,7 @@ BluetoothDeviceInfo::~BluetoothDeviceInfo() {}
 
 UpdateInfo::UpdateInfo()
     : severity(UPDATE_NONE),
-      update_required(false),
-      factory_reset_required(false) {}
+      update_required(false) {}
 
 UpdateInfo::~UpdateInfo() {}
 
@@ -70,7 +69,6 @@ bool SystemTrayDelegate::IsUserChild() const {
 void SystemTrayDelegate::GetSystemUpdateInfo(UpdateInfo* info) const {
   info->severity = UpdateInfo::UPDATE_NONE;
   info->update_required = false;
-  info->factory_reset_required = false;
 }
 
 bool SystemTrayDelegate::ShouldShowSettings() {

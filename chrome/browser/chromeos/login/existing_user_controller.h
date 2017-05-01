@@ -180,9 +180,6 @@ class ExistingUserController : public LoginDisplay::Delegate,
   // Enters the enterprise enrollment screen.
   void ShowEnrollmentScreen();
 
-  // Shows "reset device" screen.
-  void ShowResetScreen();
-
   // Shows "enable developer features" screen.
   void ShowEnableDebuggingScreen();
 
