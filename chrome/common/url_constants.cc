@@ -255,7 +255,6 @@ const char kChromeUITouchIconHost[] = "touch-icon";
 const char kChromeUITranslateInternalsHost[] = "translate-internals";
 const char kChromeUIUberFrameHost[] = "uber-frame";
 const char kChromeUIUberHost[] = "chrome";
-const char kChromeUIUsbInternalsHost[] = "usb-internals";
 const char kChromeUIUserActionsHost[] = "user-actions";
 const char kChromeUIVersionHost[] = "version";
 const char kChromeUIWelcomeHost[] = "welcome";
@@ -636,7 +635,6 @@ const char* const kChromeHostURLs[] = {
   kChromeUITermsHost,
   kChromeUIThumbnailListHost,
   kChromeUITranslateInternalsHost,
-  kChromeUIUsbInternalsHost,
   kChromeUIUserActionsHost,
   kChromeUIVersionHost,
   content::kChromeUIAccessibilityHost,
@@ -789,9 +787,6 @@ const char kBluetoothAdapterOffHelpURL[] =
 #else
     "https://support.google.com/chrome?p=bluetooth";
 #endif
-
-const char kChooserUsbOverviewURL[] =
-    "https://support.google.com/chrome?p=webusb";
 
 #if defined(OS_CHROMEOS)
 const char kEolNotificationURL[] = "https://www.google.com/chromebook/older/";
