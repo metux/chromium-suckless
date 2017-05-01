@@ -77,7 +77,7 @@ bool SurfacesContextProvider::BindToCurrentThread() {
   gpu::CommandBuffer* command_buffer = command_buffer_proxy_impl_.get();
 
   gles2_helper_.reset(new gpu::gles2::GLES2CmdHelper(command_buffer));
-  constexpr gpu::SharedMemoryLimits default_limits;
+  constexpr gpu::SharedMemoryLimits default_limits{};
   if (!gles2_helper_->Initialize(default_limits.command_buffer_size))
     return false;
   gles2_helper_->SetAutomaticFlushes(false);

@@ -57,9 +57,9 @@ class ChromeExtensionsClient : public ExtensionsClient {
   static ChromeExtensionsClient* GetInstance();
 
  private:
-  const ChromeAPIPermissions chrome_api_permissions_;
-  const ExtensionsAPIPermissions extensions_api_permissions_;
-  const ChromePermissionMessageProvider permission_message_provider_;
+  ChromeAPIPermissions chrome_api_permissions_;
+  ExtensionsAPIPermissions extensions_api_permissions_;
+  ChromePermissionMessageProvider permission_message_provider_;
 
   // A whitelist of extensions that can script anywhere. Do not add to this
   // list (except in tests) without consulting the Extensions team first.
