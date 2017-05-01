@@ -3501,7 +3501,6 @@ Hassas bilgileri vermediğinizden emin olun.</translation>
 <translation id="5626134646977739690">Adı:</translation>
 <translation id="5627086634964711283">Ayrıca, Ana Sayfa düğmesini tıkladığınızda gösterilen sayfayı denetler.</translation>
 <translation id="5627259319513858869">Henüz geliştirilme aşamasında olan deneysel tuval özelliklerinin kullanılmasına olanak verir.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Erişmeden önce sor (önerilir)</translation>
 <translation id="5636996382092289526"><ph name="NETWORK_ID" /> ağını kullanabilmek için öncelikle <ph name="LINK_START" />ağın oturum açma sayfasını ziyaret etmeniz<ph name="LINK_END" /> gerekebilir. Söz konusu sayfa birkaç saniye içinde otomatik olarak açılacaktır. Açılmazsa, ağ kullanılamaz.</translation>
 <translation id="5637357908912398026">Şifreleri kaydedilmeye zorlama</translation>
@@ -5898,7 +5897,6 @@ Dolana kadar geçecek süre hesaplanıyor</translation>
 <translation id="8944964446326379280"><ph name="APP_NAME" />, bir pencereyi <ph name="TAB_NAME" /> ile paylaşıyor.</translation>
 <translation id="8946284507644756416"><ph name="DEVICE_TYPE" /> cihazınızın kilidi Android telefonunuzdan açılabilir.</translation>
 <translation id="8946359700442089734">Hata ayıklama özellikleri bu <ph name="IDS_SHORT_PRODUCT_NAME" /> cihazda tam olarak etkinleştirilmemişti.</translation>
-<translation id="8946784827990177241">WebUSB desteğini etkinleştirin.</translation>
 <translation id="89515141420106838">Yazıcı sürücüleri için Chrome Web Mağazası Galeri uygulamasını etkinleştirir. Uygulama Chrome Web Mağazası'nda, belirli bir USB kimliğine sahip USB yazıcısına yazdırmayı destekleyen uzantıları arar.</translation>
 <translation id="895347679606913382">Başlatılıyor...</translation>
 <translation id="8954952943849489823">Taşıma başarısız oldu, beklenmeyen hata: $1</translation>

@@ -3489,7 +3489,6 @@ Trykk på en tast for å fortsette økten.</translation>
 <translation id="5626134646977739690">Navn:</translation>
 <translation id="5627086634964711283">Den styrer også hvilken side som vises når du klikker på Startside-knappen.</translation>
 <translation id="5627259319513858869">Aktiverer bruk av eksperimentelle lerretfunksjoner som fortsatt er under utvikling.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Spør før noe brukes (anbefales).</translation>
 <translation id="5636996382092289526">Hvis du vil bruke <ph name="NETWORK_ID" />, er det mulig du må <ph name="LINK_START" />gå til nettverkets påloggingsside<ph name="LINK_END" />, som åpnes automatisk om få sekunder. Hvis det ikke skjer, kan ikke nettverket brukes.</translation>
 <translation id="5637357908912398026">Tvungen lagring av passord</translation>
@@ -5874,7 +5873,6 @@ Oppbevar nøkkelfilen på et trygt sted. Du får bruk for den når du skal oppre
 <translation id="8944964446326379280"><ph name="APP_NAME" /> deler et vindu med <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416"><ph name="DEVICE_TYPE" /> kan låses opp med Android-telefonen din.</translation>
 <translation id="8946359700442089734">Feilsøkingsfunksjonene ble ikke påslått på denne <ph name="IDS_SHORT_PRODUCT_NAME" />-enheten.</translation>
-<translation id="8946784827990177241">Slå på WebUSB-støtte.</translation>
 <translation id="89515141420106838">Slår på Chrome Nettmarked Galleri-appen for skriverdrivere. Appen søker i Chrome Nettmarked etter utvidelser som støtter utskrift til USB-skrivere med spesifikke USB-ID-er.</translation>
 <translation id="895347679606913382">Starter...</translation>
 <translation id="8954952943849489823">Flytting mislyktes på grunn av uventet feil: $1</translation>

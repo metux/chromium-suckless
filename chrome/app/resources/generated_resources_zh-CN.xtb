@@ -3480,7 +3480,6 @@
 <translation id="5626134646977739690">名字：</translation>
 <translation id="5627086634964711283">它还能够控制您点击“主页”按钮后系统显示的页面。</translation>
 <translation id="5627259319513858869">启用仍在开发阶段的实验性画布功能。</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">使用前先询问（推荐）</translation>
 <translation id="5636996382092289526">要使用“<ph name="NETWORK_ID" />”，您可能需要先<ph name="LINK_START" />访问该网络的登录页面<ph name="LINK_END" />，该页面会在几秒钟后自动打开。如果未打开，就表示该网络无法使用。</translation>
 <translation id="5637357908912398026">强制保存密码</translation>
@@ -5865,7 +5864,6 @@
 <translation id="8944964446326379280"><ph name="APP_NAME" /> 正在与 <ph name="TAB_NAME" /> 共享窗口。</translation>
 <translation id="8946284507644756416">您可以利用 Android 手机解锁您的 <ph name="DEVICE_TYPE" />。</translation>
 <translation id="8946359700442089734">此<ph name="IDS_SHORT_PRODUCT_NAME" />设备上未完全启用调试功能。</translation>
-<translation id="8946784827990177241">启用 WebUSB 支持。</translation>
 <translation id="89515141420106838">启用专门搜索打印机驱动程序的“Chrome 网上应用店扩展程序列表”应用。此应用会在 Chrome 网上应用店中搜索支持通过 USB 打印机打印（使用特定 USB ID）的扩展程序。</translation>
 <translation id="895347679606913382">即将开始下载...</translation>
 <translation id="8954952943849489823">移动失败，出现意外错误：$1</translation>

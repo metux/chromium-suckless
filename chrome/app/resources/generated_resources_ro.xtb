@@ -3499,7 +3499,6 @@ Apăsați pe orice tastă pentru a continua explorarea.</translation>
 <translation id="5626134646977739690">Nume:</translation>
 <translation id="5627086634964711283">Stabilește și ce pagină se afișează când dați clic pe butonul Pagină de pornire.</translation>
 <translation id="5627259319513858869">Activează utilizarea funcțiilor experimentale pentru obiectul Canvas, care sunt încă în curs de dezvoltare.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Solicită permisiunea înainte de accesare (recomandat)</translation>
 <translation id="5636996382092289526">Pentru a utiliza <ph name="NETWORK_ID" /> ar putea fi necesar să <ph name="LINK_START" />accesați mai întâi pagina de conectare a rețelei<ph name="LINK_END" />, care se va deschide automat în câteva secunde. Dacă acest lucru nu se întâmplă, rețeaua nu poate fi utilizată.</translation>
 <translation id="5637357908912398026">Salvarea forțată a parolelor</translation>
@@ -5894,7 +5893,6 @@ Păstrează fișierul cu cheia într-un loc sigur. Acesta va fi necesar la crear
 <translation id="8944964446326379280"><ph name="APP_NAME" /> trimite conținutul unei ferestre către <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416">Dispozitivul <ph name="DEVICE_TYPE" /> poate fi deblocat folosind telefonul Android.</translation>
 <translation id="8946359700442089734">Funcțiile de remediere a erorilor nu au fost activate complet pe acest dispozitiv <ph name="IDS_SHORT_PRODUCT_NAME" />.</translation>
-<translation id="8946784827990177241">Activează compatibilitatea cu WebUSB.</translation>
 <translation id="89515141420106838">Activează aplicația Galeria Magazinului web Chrome pentru driverele de imprimantă. Aplicația caută în Magazinul web Chrome extensii care acceptă printarea pe o imprimantă USB cu un anumit ID USB.</translation>
 <translation id="895347679606913382">Se începe...</translation>
 <translation id="8954952943849489823">Mutarea nu a reușit; eroare neașteptată: $1</translation>

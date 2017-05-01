@@ -3501,7 +3501,6 @@ s ostatnými, a to všetko na jednom mieste.<ph name="MARKUP_9" /></translatio
 <translation id="5626134646977739690">Názov:</translation>
 <translation id="5627086634964711283">Tiež určuje, ktorá stránka sa zobrazí po kliknutí na tlačidlo Domovská stránka.</translation>
 <translation id="5627259319513858869">Povolí použitie experimentálnych funkcií plátna, ktoré sú ešte vo vývoji.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Spýtať sa pred pristupovaním (odporúčané)</translation>
 <translation id="5636996382092289526">Pred použitím siete <ph name="NETWORK_ID" /> bude možno potrebné najprv <ph name="LINK_START" />prejsť na prihlasovaciu stránku siete<ph name="LINK_END" />, ktorá sa otvorí automaticky v priebehu niekoľkých sekúnd. Ak k tomu nedôjde, daná sieť sa nedá použiť.</translation>
 <translation id="5637357908912398026">Vynútené ukladanie hesiel</translation>
@@ -5897,7 +5896,6 @@ Prebieha výpočet času do úplného nabitia</translation>
 <translation id="8944964446326379280"><ph name="APP_NAME" /> zdieľa okno s kartou <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416">Vaše zariadenie <ph name="DEVICE_TYPE" /> je možné odomknúť pomocou telefónu s Androidom.</translation>
 <translation id="8946359700442089734">Na tomto zariadení <ph name="IDS_SHORT_PRODUCT_NAME" /> neboli úplne povolené funkcie ladenia</translation>
-<translation id="8946784827990177241">Povoľte podporu protokolu WebUSB.</translation>
 <translation id="89515141420106838">Povolí aplikáciu Galéria Internetového obchodu Chrome pre ovládače tlačiarní. Aplikácia hľadá v Internetovom obchode Chrome rozšírenia, ktoré podporujú tlač do tlačiarní s rozhraním USB a konkrétnym identifikátorom USB.</translation>
 <translation id="895347679606913382">Spúšťa sa...</translation>
 <translation id="8954952943849489823">Presun zlyhal, neočakávaná chyba: $1</translation>

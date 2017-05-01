@@ -3497,7 +3497,6 @@ Não exponha nenhuma informação confidencial.</translation>
 <translation id="5626134646977739690">Nome:</translation>
 <translation id="5627086634964711283">Controla também qual página deve ser exibida quando você clica no botão "Página inicial".</translation>
 <translation id="5627259319513858869">Ativa o uso de recursos experimentais de canvas que ainda estão em desenvolvimento.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Perguntar antes de acessar (recomendado)</translation>
 <translation id="5636996382092289526">Para usar <ph name="NETWORK_ID" />, talvez seja necessário primeiro <ph name="LINK_START" />visitar a página de login da rede<ph name="LINK_END" />, que abrirá automaticamente em alguns segundos. Se isso não acontecer, significa que a rede não pode ser usada.</translation>
 <translation id="5637357908912398026">Salvamento forçado de senhas</translation>
@@ -5895,7 +5894,6 @@ Mantenha a sua chave de arquivo em um local seguro. Você precisará dela para c
 <translation id="8944964446326379280">O app <ph name="APP_NAME" /> está compartilhando uma janela com <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416">Seu <ph name="DEVICE_TYPE" /> pode ser desbloqueado com seu smartphone Android.</translation>
 <translation id="8946359700442089734">Os recursos de depuração não foram completamente ativados neste dispositivo <ph name="IDS_SHORT_PRODUCT_NAME" />.</translation>
-<translation id="8946784827990177241">Ativa a compatibilidade com WebUSB.</translation>
 <translation id="89515141420106838">Ativa o aplicativo Galeria da Chrome Web Store para drivers de impressora. O aplicativo procura na Chrome Web Store por extensões que sejam compatíveis com a impressão a partir de uma impressora USB com código USB específico.</translation>
 <translation id="895347679606913382">Iniciando...</translation>
 <translation id="8954952943849489823">Falha na transferência, erro inesperado: $1</translation>

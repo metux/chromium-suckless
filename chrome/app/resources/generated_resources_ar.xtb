@@ -3493,7 +3493,6 @@
 <translation id="5626134646977739690">الاسم:</translation>
 <translation id="5627086634964711283">كما أنها تتحكم في الصفحة التي تظهر عند  النقر على زر الصفحة الرئيسية.</translation>
 <translation id="5627259319513858869">لتمكين استخدام ميزات اللوحة التجريبية التي لا تزال قيد التطوير.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">اسأل قبل الدخول (موصى به)</translation>
 <translation id="5636996382092289526">لاستخدام <ph name="NETWORK_ID" /> ربما تحتاج أولاً إلى <ph name="LINK_START" />الانتقال إلى صفحة تسجيل الدخول إلى الشبكة<ph name="LINK_END" />، والتي سيتم فتحها تلقائيًا خلال بضع ثوانٍ. إذا لم يحدث ذلك، فلن يمكن استخدام الشبكة.</translation>
 <translation id="5637357908912398026">الحفظ الإجباري لكلمات المرور</translation>
@@ -5891,7 +5890,6 @@
 <translation id="8944964446326379280">يشارك <ph name="APP_NAME" /> نافذة من خلال <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416">‏يمكن إلغاء قفل <ph name="DEVICE_TYPE" /> باستخدام هاتفك Android.</translation>
 <translation id="8946359700442089734">لم يتم تمكين ميزات التصحيح كليًا على هذا الجهاز <ph name="IDS_SHORT_PRODUCT_NAME" />.</translation>
-<translation id="8946784827990177241">‏تمكين دعم WebUSB.</translation>
 <translation id="89515141420106838">‏تمكين تطبيق معرض سوق Chrome الإلكتروني لبرامج تشغيل الطابعة. يبحث التطبيق في سوق Chrome الإلكتروني عن الإضافات التي تدعم الطباعة إلى طابعة USB مع رقم تعريف USB محدد.</translation>
 <translation id="895347679606913382">بدء التحميل...</translation>
 <translation id="8954952943849489823">أخفق النقل، خطأ غير متوقع: $1</translation>

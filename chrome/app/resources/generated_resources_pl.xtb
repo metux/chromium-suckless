@@ -3497,7 +3497,6 @@ Naciśnij dowolny klawisz, by kontynuować przeglądanie.</translation>
 <translation id="5626134646977739690">Nazwa:</translation>
 <translation id="5627086634964711283">Kontroluje także to, jaka strona wyświetla się po kliknięciu przycisku strony startowej.</translation>
 <translation id="5627259319513858869">Włącz używanie eksperymentalnych funkcji kanw, które wciąż są opracowywane.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Pytaj przed uzyskaniem dostępu (zalecane)</translation>
 <translation id="5636996382092289526">Skorzystanie z <ph name="NETWORK_ID" /> może wymagać <ph name="LINK_START" />wejścia na stronę logowania się do sieci<ph name="LINK_END" />, która otworzy się automatycznie za kilka sekund. Jeśli tak się nie stanie, nie będzie można użyć tej sieci.</translation>
 <translation id="5637357908912398026">Wymuszone zapisywanie haseł</translation>
@@ -5884,7 +5883,6 @@ Przechowuj plik klucza w bezpiecznym miejscu. Będzie on potrzebny do utworzenia
 <translation id="8944964446326379280"><ph name="APP_NAME" /> udostępnia okno karcie <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416">Urządzenie <ph name="DEVICE_TYPE" /> możesz odblokowywać przy użyciu swojego telefonu z Androidem.</translation>
 <translation id="8946359700442089734">Funkcje debugowania nie zostały w pełni włączone na urządzeniu <ph name="IDS_SHORT_PRODUCT_NAME" />.</translation>
-<translation id="8946784827990177241">Włącz obsługę WebUSB.</translation>
 <translation id="89515141420106838">Włącza aplikację Galeria Chrome Web Store do obsługi sterowników drukarek. Aplikacja ta wyszukuje w Chrome Web Store rozszerzenia, które obsługują drukowanie na drukarce USB z konkretnym identyfikatorem USB.</translation>
 <translation id="895347679606913382">Rozpoczynanie...</translation>
 <translation id="8954952943849489823">Przenoszenie nie powiodło się, nieoczekiwany błąd: $1</translation>

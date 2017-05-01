@@ -3492,7 +3492,6 @@ Premi un tasto qualsiasi per continuare a esplorare.</translation>
 <translation id="5626134646977739690">Nome:</translation>
 <translation id="5627086634964711283">Controlla anche la pagina visualizzata quando fai clic sul pulsante Pagina iniziale.</translation>
 <translation id="5627259319513858869">Consente l'utilizzo di funzioni canvas sperimentali che sono ancora in fase di sviluppo.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Chiedi prima di accedere (opzione consigliata)</translation>
 <translation id="5636996382092289526">Per poter utilizzare la rete <ph name="NETWORK_ID" />, potrebbe essere necessario <ph name="LINK_START" />visitare la pagina di accesso della rete<ph name="LINK_END" />, che si aprirà automaticamente tra alcuni secondi. In caso contrario, non è possibile utilizzare la rete.</translation>
 <translation id="5637357908912398026">Salvataggio forzato delle password</translation>
@@ -5879,7 +5878,6 @@ Conserva il file di chiave in un luogo sicuro. Ti servirà per creare nuove vers
 <translation id="8944964446326379280"><ph name="APP_NAME" /> condivide una finestra con <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416">Il tuo dispositivo <ph name="DEVICE_TYPE" /> può essere sbloccato con il tuo telefono Android.</translation>
 <translation id="8946359700442089734">Le funzioni di debug non sono state attivate completamente su questo dispositivo <ph name="IDS_SHORT_PRODUCT_NAME" />.</translation>
-<translation id="8946784827990177241">Attiva supporto WebUSB.</translation>
 <translation id="89515141420106838">Consente di attivare l'app Chrome Web Store Gallery per i driver delle stampanti. L'app cerca nel Chrome Web Store estensioni che supportino la stampa tramite stampante USB con uno specifico ID USB.</translation>
 <translation id="895347679606913382">Avvio download in corso...</translation>
 <translation id="8954952943849489823">Spostamento non riuscito, errore imprevisto: $1</translation>

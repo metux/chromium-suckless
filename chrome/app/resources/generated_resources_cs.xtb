@@ -3492,7 +3492,6 @@ Chcete-li pokračovat v práci, stiskněte libovolnou klávesu.</translation>
 <translation id="5626134646977739690">Jméno:</translation>
 <translation id="5627086634964711283">Také řídí, která stránka se zobrazí po kliknutí na tlačítko Domovská stránka.</translation>
 <translation id="5627259319513858869">Umožňuje použití experimentálních funkcí Canvas, které jsou stále ještě ve vývoji.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Před přístupem se zeptat (doporučeno)</translation>
 <translation id="5636996382092289526">Chcete-li používat síť <ph name="NETWORK_ID" />, je třeba nejdříve <ph name="LINK_START" />přejít na přihlašovací stránku sítě<ph name="LINK_END" />, která se za několik sekund automaticky otevře. Pokud se tak nestane, nelze síť použít.</translation>
 <translation id="5637357908912398026">Vynucené ukládání hesel</translation>
@@ -5885,7 +5884,6 @@ Výpočet času zbývajícího do úplného nabití</translation>
 <translation id="8944964446326379280"><ph name="APP_NAME" /> sdílí okno s kartou <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416"><ph name="DEVICE_TYPE" /> lze odemykat pomocí telefonu Android.</translation>
 <translation id="8946359700442089734">V tomto zařízení <ph name="IDS_SHORT_PRODUCT_NAME" /> nebyly úplně povoleny funkce ladění.</translation>
-<translation id="8946784827990177241">Aktivuje podporu rozhraní WebUSB.</translation>
 <translation id="89515141420106838">Aktivuje aplikaci Galerie Internetového obchodu Chrome za účelem vyhledávání ovladačů tiskáren. Aplikace v Internetovém obchodu Chrome vyhledá rozšíření, která podporují tisk v tiskárně USB s konkrétním ID rozhraní USB.</translation>
 <translation id="895347679606913382">Spouštění...</translation>
 <translation id="8954952943849489823">Přesun se nezdařil, neočekávaná chyba: $1</translation>

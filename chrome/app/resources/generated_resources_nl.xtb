@@ -3498,7 +3498,6 @@ Druk op een toets om door te gaan met verkennen.</translation>
 <translation id="5626134646977739690">Naam:</translation>
 <translation id="5627086634964711283">Hiermee wordt ook gecontroleerd welke pagina wordt weergegeven wanneer je op de knop 'Startpagina' klikt.</translation>
 <translation id="5627259319513858869">Maakt het gebruik mogelijk van experimentele canvasfuncties die nog in ontwikkeling zijn.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Vragen vóór toegang (aanbevolen)</translation>
 <translation id="5636996382092289526">Als je <ph name="NETWORK_ID" /> wilt gebruiken, moet je mogelijk eerst <ph name="LINK_START" />de inlogpagina van het netwerk bezoeken<ph name="LINK_END" />, die over enkele seconden automatisch wordt geopend. Als de pagina niet wordt geopend, kan het netwerk niet worden gebruikt.</translation>
 <translation id="5637357908912398026">Geforceerd opslaan van wachtwoorden</translation>
@@ -5897,7 +5896,6 @@ Tijd berekenen tot vol</translation>
 <translation id="8944964446326379280"><ph name="APP_NAME" /> deelt een venster met <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416">Je <ph name="DEVICE_TYPE" /> kan worden ontgrendeld met je Android-telefoon.</translation>
 <translation id="8946359700442089734">Foutopsporingsfuncties zijn niet volledig ingeschakeld op dit <ph name="IDS_SHORT_PRODUCT_NAME" />-apparaat.</translation>
-<translation id="8946784827990177241">WebUSB-ondersteuning inschakelen</translation>
 <translation id="89515141420106838">Schakelt de Chrome Web Store-galerij-app in voor printerstuurprogramma's. De app zoekt in de Chrome Web Store naar extensies die afdrukken ondersteunt op een USB-printer met een specifiek USB-ID.</translation>
 <translation id="895347679606913382">Starten...</translation>
 <translation id="8954952943849489823">Verplaatsen mislukt. Onverwachte fout: $1</translation>

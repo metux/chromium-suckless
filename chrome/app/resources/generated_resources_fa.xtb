@@ -3495,7 +3495,6 @@
 <translation id="5626134646977739690">نام:</translation>
 <translation id="5627086634964711283">این برنامه افزودنی همچنین صفحه‌ای را که هنگام کلیک کردن روی دکمه اصلی نشان داده می‌شود، کنترل می‌کند.</translation>
 <translation id="5627259319513858869">استفاده از قابلیت‌های کانواس آزمایشی در حال توسعه را به کار می‌اندازد.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">قبل از دسترسی سؤال شود (توصیه می‌شود)</translation>
 <translation id="5636996382092289526">برای استفاده از <ph name="NETWORK_ID" /> ابتدا باید به <ph name="LINK_START" />صفحه ورود به سیستم شبکه بروید<ph name="LINK_END" />، که تا چند ثانیه دیگر به‌طور خودکار باز می‌شود. اگر این اتفاق نیافتد، نمی‌توان از شبکه استفاده کرد.</translation>
 <translation id="5637357908912398026">ذخیره‌سازی اجباری گذرواژه‌ها</translation>
@@ -5891,7 +5890,6 @@
 <translation id="8944964446326379280"><ph name="APP_NAME" /> درحال اشتراک‌گذاری یک پنجره با <ph name="TAB_NAME" /> است.</translation>
 <translation id="8946284507644756416">‏قفل <ph name="DEVICE_TYPE" /> شما می‌تواند با تلفن Android شما باز شود.</translation>
 <translation id="8946359700442089734">ویژگی‌های رفع اشکال در این دستگاه <ph name="IDS_SHORT_PRODUCT_NAME" /> کاملاً فعال نشدند.</translation>
-<translation id="8946784827990177241">‏فعال کردن پشتیبانی WebUSB.</translation>
 <translation id="89515141420106838">‏برنامه گالری فروشگاه وب Chrome را برای درایورهای چاپگر فعال می‌کند. برنامه فروشگاه وب Chrome را برای افزونه‌هایی جستجو می‌کند که از چاپ در چاپگر USB با شناسه USB خاص پشتیبانی می‌کنند.</translation>
 <translation id="895347679606913382">در حال شروع...</translation>
 <translation id="8954952943849489823">انتقال انجام نشد، خطای پیش‌بینی‌نشده: $1</translation>

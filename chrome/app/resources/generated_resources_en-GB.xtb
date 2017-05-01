@@ -3499,7 +3499,6 @@ Press any key to continue exploring.</translation>
 <translation id="5626134646977739690">Name:</translation>
 <translation id="5627086634964711283">It also controls what page is shown when you click the Home button.</translation>
 <translation id="5627259319513858869">Enables the use of experimental canvas features which are still in development.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Ask before accessing (recommended)</translation>
 <translation id="5636996382092289526">To use <ph name="NETWORK_ID" /> you may first need to <ph name="LINK_START" />visit the network's sign-in page<ph name="LINK_END" />, which will open automatically in a few seconds. If it doesn't happen, the network can't be used.</translation>
 <translation id="5637357908912398026">Force-saving of passwords</translation>
@@ -5897,7 +5896,6 @@ Calculating time until full</translation>
 <translation id="8944964446326379280"><ph name="APP_NAME" /> is sharing a window with <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416">Your <ph name="DEVICE_TYPE" /> can be unlocked with your Android phone.</translation>
 <translation id="8946359700442089734">Debugging features were not completely enabled on this <ph name="IDS_SHORT_PRODUCT_NAME" /> device.</translation>
-<translation id="8946784827990177241">Enable WebUSB support.</translation>
 <translation id="89515141420106838">Enables Chrome Web Store Gallery app for printer drivers. The app searches Chrome Web Store for extensions that support printing to a USB printer with specific USB ID.</translation>
 <translation id="895347679606913382">Starting...</translation>
 <translation id="8954952943849489823">Move failed, unexpected error: $1</translation>

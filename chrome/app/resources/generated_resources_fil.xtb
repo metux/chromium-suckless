@@ -3502,7 +3502,6 @@ Pumindot ng anumang key upang magpatuloy sa pagtuklas.</translation>
 <translation id="5626134646977739690">Pangalan:</translation>
 <translation id="5627086634964711283">Kinokontrol din nito kung anong pahina ang ipinapakita kapag na-click mo ang button ng Home.</translation>
 <translation id="5627259319513858869">Nagbibigay-daan sa paggamit ng mga pang-eksperimentong tampok ng canvas na binubuo pa.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Magtanong bago mag-access (inirerekomenda)</translation>
 <translation id="5636996382092289526">Upang gamitin ang <ph name="NETWORK_ID" />, maaaring kailangan mo munang <ph name="LINK_START" />bisitahin ang pahina sa pag-sign in ng network<ph name="LINK_END" />, na awtomatikong bubukas sa loob ng ilang segundo. Kung hindi ito mangyayari, hindi magagamit ang network.</translation>
 <translation id="5637357908912398026">Puwersahang pagse-save ng mga password</translation>
@@ -5904,7 +5903,6 @@ Kinakalkula ang oras hanggang sa mapuno</translation>
 <translation id="8944964446326379280">Nagbabahagi ang <ph name="APP_NAME" /> ng window sa <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416">Maaaring i-unlock ang iyong <ph name="DEVICE_TYPE" /> gamit ang iyong Android phone.</translation>
 <translation id="8946359700442089734">Ang mga feature para sa pagde-debug ay hindi ganap na na-enable sa <ph name="IDS_SHORT_PRODUCT_NAME" /> device na ito.</translation>
-<translation id="8946784827990177241">I-enable ang suporta sa WebUSB.</translation>
 <translation id="89515141420106838">Ine-enable ang Chrome Web Store Gallery app para sa mga driver ng printer. Naghahanap ang app sa Chrome Web Store ng mga extension na sumusuporta sa pagpi-print sa isang USB printer na mayroong partikular na USB ID.</translation>
 <translation id="895347679606913382">Nagsisimula...</translation>
 <translation id="8954952943849489823">Nabigo ang paglipat, hindi inaasahang error: $1</translation>

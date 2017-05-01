@@ -3494,7 +3494,6 @@
 <translation id="5626134646977739690">名稱：</translation>
 <translation id="5627086634964711283">這個擴充功能也會控管您點選 [首頁] 按鈕時所顯示的網頁。</translation>
 <translation id="5627259319513858869">啟用仍在開發中的實驗性 Canvas 功能。</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">存取前詢問我 (建議)</translation>
 <translation id="5636996382092289526">如要使用 <ph name="NETWORK_ID" />，您必須先<ph name="LINK_START" />造訪網路的登入頁面<ph name="LINK_END" />，系統隨即會自動開啟登入頁面；如果沒有，您就無法使用這個網路。</translation>
 <translation id="5637357908912398026">強制儲存密碼</translation>
@@ -5885,7 +5884,6 @@
 <translation id="8944964446326379280"><ph name="APP_NAME" /> 正在與 <ph name="TAB_NAME" /> 共用視窗。</translation>
 <translation id="8946284507644756416">您可以使用 Android 手機解鎖 <ph name="DEVICE_TYPE" />。</translation>
 <translation id="8946359700442089734">尚未在這個 <ph name="IDS_SHORT_PRODUCT_NAME" /> 裝置上完整啟用偵錯功能。</translation>
-<translation id="8946784827990177241">啟用 WebUSB 支援功能。</translation>
 <translation id="89515141420106838">啟用專門尋找印表機驅動程式的「Chrome 線上應用程式商店擴充功能庫」應用程式。這個應用程式會搜尋 Chrome 線上應用程式商店，找出可讓您透過 USB 印表機進行列印 (使用特定 USB ID) 的擴充功能。</translation>
 <translation id="895347679606913382">啟動中...</translation>
 <translation id="8954952943849489823">移動失敗，發生未預期的錯誤：$1</translation>

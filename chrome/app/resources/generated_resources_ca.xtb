@@ -3493,7 +3493,6 @@ Assegureu-vos que no es pugui accedir a informació confidencial.</translation>
 <translation id="5626134646977739690">Nom:</translation>
 <translation id="5627086634964711283">També controla la pàgina que es mostra quan feu clic al botó d'inici.</translation>
 <translation id="5627259319513858869">Permet utilitzar funcions de dibuix experimentals que estiguin en desenvolupament.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Demana permís abans d'accedir als elements (recomanat)</translation>
 <translation id="5636996382092289526">Per utilitzar <ph name="NETWORK_ID" />, és possible que abans calgui que <ph name="LINK_START" />visiteu la pàgina d'inici de sessió de la xarxa<ph name="LINK_END" />, que s'obrirà automàticament d'aquí a pocs segons. Si no s'obre, no podreu utilitzar la xarxa.</translation>
 <translation id="5637357908912398026">Opció per desar les contrasenyes per força</translation>
@@ -5881,7 +5880,6 @@ Deseu el fitxer de clau en una ubicació segura. El necessitareu per crear versi
 <translation id="8944964446326379280"><ph name="APP_NAME" /> està compartint una finestra amb <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416"><ph name="DEVICE_TYPE" /> es pot desbloquejar amb el telèfon Android.</translation>
 <translation id="8946359700442089734">Les funcions de depuració no s'han activat del tot en aquest dispositiu <ph name="IDS_SHORT_PRODUCT_NAME" />.</translation>
-<translation id="8946784827990177241">Activa la compatibilitat amb WebUSB.</translation>
 <translation id="89515141420106838">Activa l'aplicació Galeria de Chrome Web Store per a controladors d'impressora. L'aplicació cerca extensions a Chrome Web Store que siguin compatibles amb la impressió mitjançant una impressora USB amb un identificador USB específic.</translation>
 <translation id="895347679606913382">S'està iniciant...</translation>
 <translation id="8954952943849489823">El trasllat ha fallat, s'ha produït un error inesperat: $1</translation>

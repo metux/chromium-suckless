@@ -3497,7 +3497,6 @@ Tryk på en vilkårlig tast for at fortsætte udforskningen.</translation>
 <translation id="5626134646977739690">Navn:</translation>
 <translation id="5627086634964711283">Den styrer også, hvilken side der vises, når du klikker på knappen Startside.</translation>
 <translation id="5627259319513858869">Muliggør brugen af eksperimentelle kanvasfunktioner, som stadig er under udvikling.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Spørg inden brug (anbefales)</translation>
 <translation id="5636996382092289526">Hvis du vil bruge <ph name="NETWORK_ID" />, skal du først <ph name="LINK_START" />gå til netværkets loginside<ph name="LINK_END" />, som åbner automatisk om et par sekunder. Hvis ikke, kan netværket ikke bruges.</translation>
 <translation id="5637357908912398026">Tving til at gemme adgangskoder</translation>
@@ -5895,7 +5894,6 @@ Beregner resterende tid</translation>
 <translation id="8944964446326379280"><ph name="APP_NAME" /> deler et vindue med <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416">Din <ph name="DEVICE_TYPE" /> kan låses op med din Android-telefon.</translation>
 <translation id="8946359700442089734">Fejlfindingsfunktionerne blev ikke aktiveret korrekt på denne <ph name="IDS_SHORT_PRODUCT_NAME" />-enhed.</translation>
-<translation id="8946784827990177241">Aktivér WebUSB-support.</translation>
 <translation id="89515141420106838">Aktiverer Chrome Webshop Galleri-appen til printerdrivere. Appen søger efter udvidelser i Chrome Webshop, der understøtter udskrivning til en USB-printer med specifikt USB-id.</translation>
 <translation id="895347679606913382">Begynder...</translation>
 <translation id="8954952943849489823">Flytningen mislykkedes. Uventet fejl: $1</translation>

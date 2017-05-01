@@ -3490,7 +3490,6 @@ Kaikkien käyttäjien täytyy kirjautua ulos jatkaakseen käyttöä.</translatio
 <translation id="5626134646977739690">Nimi:</translation>
 <translation id="5627086634964711283">Määrittää myös Etusivu-painikkeella avattavan sivun.</translation>
 <translation id="5627259319513858869">Ottaa käyttöön kokeellisten, vielä kehitettävien canvas-ominaisuuksien käytön.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Kysy ennen käyttöä (suositus)</translation>
 <translation id="5636996382092289526">Jos haluat käyttää verkkoa <ph name="NETWORK_ID" />, voit joutua <ph name="LINK_START" />käymään verkon kirjautumissivulla<ph name="LINK_END" />, joka avautuu automaattisesti muutaman sekunnin kuluttua. Jos sivu ei avaudu, tätä verkkoa ei voi käyttää.</translation>
 <translation id="5637357908912398026">Salasanojen pakotettu tallentaminen</translation>
@@ -5885,7 +5884,6 @@ Tallenna avaintiedosto suojattuun sijaintiin. Tarvitset sitä, jos haluat luoda 
 <translation id="8944964446326379280"><ph name="APP_NAME" /> jakaa ikkunan välilehdelle <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416"><ph name="DEVICE_TYPE" /> on mahdollista avata Android-puhelimellasi.</translation>
 <translation id="8946359700442089734">Virheenkorjausominaisuudet eivät olleet täysin käytössä tällä <ph name="IDS_SHORT_PRODUCT_NAME" />-laitteella.</translation>
-<translation id="8946784827990177241">Ota WebUSB-tuki käyttöön.</translation>
 <translation id="89515141420106838">Ottaa käyttöön Chrome Web Store Gallery -sovelluksen tulostinajureille. Sovellus etsii Chrome Web Storesta laajennuksia, jotka tukevat tulostamista USB-tulostimella, jolla on tietty USB-tunnus.</translation>
 <translation id="895347679606913382">Käynnistää...</translation>
 <translation id="8954952943849489823">Siirto epäonnistui, odottamaton virhe: $1</translation>

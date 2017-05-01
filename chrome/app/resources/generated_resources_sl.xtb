@@ -3502,7 +3502,6 @@ Poskrbite, da ne boste razkrili morebitnih občutljivih podatkov.</translation>
 <translation id="5626134646977739690">Ime:</translation>
 <translation id="5627086634964711283">Določa tudi, katera stran je prikazana, ko kliknete gumb za domačo stran.</translation>
 <translation id="5627259319513858869">Omogoča uporabo poskusnih funkcij platna, ki se še vedno v razvijajo.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Vprašaj pred dostopom (priporočljivo)</translation>
 <translation id="5636996382092289526">Če želite uporabljati omrežje <ph name="NETWORK_ID" />, morate najprej <ph name="LINK_START" />obiskati stran za prijavo v omrežje<ph name="LINK_END" />, ki se bo samodejno odprla čez nekaj sekund. Če se ne odpre, omrežja ne morete uporabljati.</translation>
 <translation id="5637357908912398026">Vsiljeno shranjevanje gesel</translation>
@@ -5898,7 +5897,6 @@ izračun časa do napolnjenosti</translation>
 <translation id="8944964446326379280">Aplikacija <ph name="APP_NAME" /> je v skupno rabo z zavihkom <ph name="TAB_NAME" /> dala okno.</translation>
 <translation id="8946284507644756416">Napravo <ph name="DEVICE_TYPE" /> je mogoče odkleniti s telefonom Android.</translation>
 <translation id="8946359700442089734">V tej napravi niso bile v celoti omogočene funkcije za odpravljanje napak: <ph name="IDS_SHORT_PRODUCT_NAME" />.</translation>
-<translation id="8946784827990177241">Omogočanje podpore za WebUSB.</translation>
 <translation id="89515141420106838">Omogoči aplikacijo Galerija za Spletno trgovino Chrome za gonilnike tiskalnikov. Aplikacija po Spletni trgovini Chrome išče razširitve, ki podpirajo tiskanje s tiskalniki USB z določenim ID-jem za USB.</translation>
 <translation id="895347679606913382">Začetek ...</translation>
 <translation id="8954952943849489823">Premikanje ni uspelo, nepričakovana napaka: $1</translation>

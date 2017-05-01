@@ -3499,7 +3499,6 @@ Pritisnite bilo koju tipku da biste nastavili istraživati.</translation>
 <translation id="5626134646977739690">Naziv:</translation>
 <translation id="5627086634964711283">Upravlja i time koja se stranica prikazuje kada se klikne gumb Početna.</translation>
 <translation id="5627259319513858869">Omogućuje upotrebu eksperimentalnih značajki platna koje su još u izgradnji.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Pitanje prije pristupa (preporučeno)</translation>
 <translation id="5636996382092289526">Za upotrebu mreže <ph name="NETWORK_ID" /> možda ćete prvo morati <ph name="LINK_START" />posjetiti njezinu stranicu za prijavu<ph name="LINK_END" /> koja će se automatski otvoriti za nekoliko sekundi. Ako se to ne dogodi, mreža se ne može upotrebljavati.</translation>
 <translation id="5637357908912398026">Prisilno spremanje zaporki</translation>
@@ -5892,7 +5891,6 @@ Ključnu datoteku čuvajte na sigurnom mjestu. Trebat će vam za stvaranje novih
 <translation id="8944964446326379280"><ph name="APP_NAME" /> dijeli prozor s karticom <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416">Vaš uređaj <ph name="DEVICE_TYPE" /> može se otključati vašim Android telefonom.</translation>
 <translation id="8946359700442089734">Značajke uklanjanja pogrešaka nisu posve omogućene na ovom uređaju <ph name="IDS_SHORT_PRODUCT_NAME" />.</translation>
-<translation id="8946784827990177241">Omogućuje podršku za WebUSB.</translation>
 <translation id="89515141420106838">Omogućuje aplikaciju Galerija Chrome web-trgovine za upravljačke programe pisača. Ta aplikacija u Chrome web-trgovini traži proširenja koja podržavaju ispis na USB pisačima s određenim ID-jem USB-a.</translation>
 <translation id="895347679606913382">Početak...</translation>
 <translation id="8954952943849489823">Premještanje nije uspjelo, neočekivana pogreška: $1</translation>

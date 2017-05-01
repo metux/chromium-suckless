@@ -3500,7 +3500,6 @@
 <translation id="5626134646977739690">名前:</translation>
 <translation id="5627086634964711283">この拡張機能では、ホーム ボタンのクリック時に表示されるページも制御されます。</translation>
 <translation id="5627259319513858869">開発中の canvas 試験運用機能を使用できるようにします。</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">アクセスする前に確認する（推奨）</translation>
 <translation id="5636996382092289526"><ph name="NETWORK_ID" /> を使用するには、最初に<ph name="LINK_START" />ネットワークのログイン ページにアクセス<ph name="LINK_END" />する必要がある場合があります。その場合は、数秒でログイン ページが自動的に開きます。ログイン ページが自動的に開かない場合、そのネットワークは使用できません。</translation>
 <translation id="5637357908912398026">パスワードの強制保存</translation>
@@ -5898,7 +5897,6 @@
 <translation id="8944964446326379280"><ph name="APP_NAME" /> が <ph name="TAB_NAME" /> のウィンドウを共有しています。</translation>
 <translation id="8946284507644756416">Android スマートフォンを使って <ph name="DEVICE_TYPE" /> のロックを解除できます。</translation>
 <translation id="8946359700442089734">この <ph name="IDS_SHORT_PRODUCT_NAME" /> 搭載デバイスでデバッグ機能が完全に有効になっていませんでした。</translation>
-<translation id="8946784827990177241">WebUSB のサポートを有効にします。</translation>
 <translation id="89515141420106838">プリンタ ドライバ用 Chrome ウェブストア ギャラリー アプリを有効にします。このアプリは、特定の USB ID が設定された USB プリンタへの印刷をサポートする拡張機能を Chrome ウェブストアで検索します。</translation>
 <translation id="895347679606913382">開始しています...</translation>
 <translation id="8954952943849489823">移動できませんでした。予期しないエラー: $1</translation>

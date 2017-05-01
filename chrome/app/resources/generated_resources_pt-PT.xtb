@@ -3501,7 +3501,6 @@ Certifique-se de que não revela informações confidenciais.</translation>
 <translation id="5626134646977739690">Nome:</translation>
 <translation id="5627086634964711283">Também controla a página apresentada quando clica no botão Página Inicial.</translation>
 <translation id="5627259319513858869">Ativa a utilização de funcionalidades de telas experimentais que ainda estão em desenvolvimento.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Perguntar antes de aceder (recomendado)</translation>
 <translation id="5636996382092289526">Para utilizar <ph name="NETWORK_ID" /> poderá ter primeiro de <ph name="LINK_START" />visitar a página de início de sessão da rede<ph name="LINK_END" />, que será aberta automaticamente dentro de alguns segundos. Se isso não acontecer, a rede não pode ser utilizada.</translation>
 <translation id="5637357908912398026">Memorização forçada de palavras-passe</translation>
@@ -5896,7 +5895,6 @@ Mantenha o seu ficheiro de chave num local seguro, pois irá precisar dele para 
 <translation id="8944964446326379280"><ph name="APP_NAME" /> está a partilhar uma janela com <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416">É possível desbloquear o <ph name="DEVICE_TYPE" /> com o telemóvel Android.</translation>
 <translation id="8946359700442089734">As funcionalidades de depuração não foram totalmente ativadas neste dispositivo <ph name="IDS_SHORT_PRODUCT_NAME" />.</translation>
-<translation id="8946784827990177241">Ativar suporte para WebUSB.</translation>
 <translation id="89515141420106838">Ativa a aplicação Galeria da Web Store do Chrome para controladores de impressora. A aplicação procura na Web Store do Chrome extensões que suportem a impressão numa impressora USB com um ID USB específico.</translation>
 <translation id="895347679606913382">A iniciar...</translation>
 <translation id="8954952943849489823">Falha ao mover, erro inesperado: $1</translation>

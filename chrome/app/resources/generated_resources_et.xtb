@@ -3496,7 +3496,6 @@ Uurimise jätkamiseks vajutage mis tahes klahvi.</translation>
 <translation id="5626134646977739690">Nimi:</translation>
 <translation id="5627086634964711283">Lisaks juhib see seda, mis lehte kuvatakse avalehe nupul klõpsamisel.</translation>
 <translation id="5627259319513858869">Lubab kasutada alles arendusjärgus olevaid eksperimentaalseid lõuendifunktsioone.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Küsib enne juurdepääsu hankimist (soovitatav)</translation>
 <translation id="5636996382092289526">Võimalik, et võrgu <ph name="NETWORK_ID" /> kasutamiseks tuleb teil esmalt <ph name="LINK_START" />külastada võrgu sisselogimislehte<ph name="LINK_END" />, mis avaneb mõne sekundi pärast automaatselt. Kui see ei avane, ei saa võrku kasutada.</translation>
 <translation id="5637357908912398026">Paroolide sundsalvestamine</translation>
@@ -5892,7 +5891,6 @@ Täislaadimiseks kuluva aja arvutamine</translation>
 <translation id="8944964446326379280">Rakendus <ph name="APP_NAME" /> jagab akent vahelehega <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416">Seadme <ph name="DEVICE_TYPE" /> saab avada teie Android-telefoniga.</translation>
 <translation id="8946359700442089734">Silumisfunktsioone ei lubatud täielikult selles toote <ph name="IDS_SHORT_PRODUCT_NAME" /> seadmes.</translation>
-<translation id="8946784827990177241">Lubatakse WebUSB tugi.</translation>
 <translation id="89515141420106838">Lubatakse Chrome'i veebipoe galerii rakendus printeridraiveritele. Rakendus otsib Chrome'i veebipoest laiendusi, mis toetavad printimist kindla USB ID-ga USB-printeriga.</translation>
 <translation id="895347679606913382">Alustamine...</translation>
 <translation id="8954952943849489823">Teisaldamine ebaõnnestus, ootamatu viga: $1</translation>

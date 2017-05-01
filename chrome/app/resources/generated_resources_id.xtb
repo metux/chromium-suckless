@@ -3499,7 +3499,6 @@ Tekan sembarang tombol untuk melanjutkan penjelajahan.</translation>
 <translation id="5626134646977739690">Nama:</translation>
 <translation id="5627086634964711283">Juga mengontrol apa yang ditampilkan laman saat Anda mengeklik tombol Beranda.</translation>
 <translation id="5627259319513858869">Mengaktifkan fitur kanvas eksperimental yang masih dalam pengembangan.</translation>
-<translation id="5627618611556177958">WebUSB</translation>
 <translation id="563535393368633106">Tanyakan sebelum mengakses (disarankan)</translation>
 <translation id="5636996382092289526">Untuk menggunakan <ph name="NETWORK_ID" />, pertama Anda harus <ph name="LINK_START" />mengunjungi laman proses masuk jaringan<ph name="LINK_END" />, yang akan otomatis terbuka dalam beberapa detik. Jika hal itu tidak terjadi, jaringan tidak akan dapat digunakan.</translation>
 <translation id="5637357908912398026">Penyimpanan paksa sandi</translation>
@@ -5894,7 +5893,6 @@ Simpan file kunci Anda di tempat yang aman. Anda akan membutuhkannya untuk membu
 <translation id="8944964446326379280"><ph name="APP_NAME" /> membagikan jendela dengan <ph name="TAB_NAME" />.</translation>
 <translation id="8946284507644756416"><ph name="DEVICE_TYPE" /> dapat dibuka menggunakan ponsel Android Anda.</translation>
 <translation id="8946359700442089734">Fitur debug belum diaktifkan sepenuhnya di perangkat <ph name="IDS_SHORT_PRODUCT_NAME" />.</translation>
-<translation id="8946784827990177241">Mengaktifkan dukungan WebUSB.</translation>
 <translation id="89515141420106838">Mengaktifkan aplikasi Galeri Toko Web Chrome untuk driver printer. Aplikasi ini akan menelusuri ekstensi yang mendukung pencetakan ke printer USB dengan ID USB khusus di Toko Web Chrome.</translation>
 <translation id="895347679606913382">Memulai...</translation>
 <translation id="8954952943849489823">Pemindahan gagal, terjadi kesalahan tak diduga: $1</translation>
