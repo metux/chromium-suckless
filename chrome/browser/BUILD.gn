@@ -2822,8 +2822,6 @@ split_static_library("browser") {
       "sync/sync_ui_util.h",
       "upgrade_detector.cc",
       "upgrade_detector.h",
-      "usb/usb_chooser_controller.cc",
-      "usb/usb_chooser_controller.h",
     ]
     deps += [
       "//apps",
