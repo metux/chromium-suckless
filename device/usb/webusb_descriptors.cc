@@ -564,16 +564,6 @@ bool ParseWebUsbUrlDescriptor(const std::vector<uint8_t>& bytes, GURL* output) {
   return true;
 }
 
-void ReadWebUsbDescriptors(scoped_refptr<UsbDeviceHandle> device_handle,
-                           const ReadWebUsbDescriptorsCallback& callback) {
-  scoped_refptr<IOBufferWithSize> buffer = new IOBufferWithSize(5);
-  device_handle->ControlTransfer(
-      USB_DIRECTION_INBOUND, UsbDeviceHandle::STANDARD, UsbDeviceHandle::DEVICE,
-      kGetDescriptorRequest, kBosDescriptorType << 8, 0, buffer, buffer->size(),
-      kControlTransferTimeout,
-      base::Bind(&OnReadBosDescriptorHeader, device_handle, callback));
-}
-
 bool FindInWebUsbAllowedOrigins(
     const device::WebUsbAllowedOrigins* allowed_origins,
     const GURL& origin) {

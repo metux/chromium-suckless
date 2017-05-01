@@ -52,11 +52,6 @@ class UsbDeviceAndroid : public UsbDevice {
       scoped_refptr<UsbDeviceHandle> device_handle);
   void OnReadDescriptors(scoped_refptr<UsbDeviceHandle> device_handle,
                          std::unique_ptr<UsbDeviceDescriptor> descriptor);
-  void OnReadWebUsbDescriptors(
-      scoped_refptr<UsbDeviceHandle> device_handle,
-      std::unique_ptr<WebUsbAllowedOrigins> allowed_origins,
-      const GURL& landing_page);
-
   scoped_refptr<base::SequencedTaskRunner> blocking_task_runner_;
 
   const jint device_id_;

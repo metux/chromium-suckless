@@ -185,11 +185,6 @@ void OnDeviceOpenedReadDescriptors(
           base::Bind(&SaveStringsAndRunContinuation, device, manufacturer,
                      product, serial_number, barrier));
     }
-
-    if (read_bos_descriptors) {
-      ReadWebUsbDescriptors(device_handle, base::Bind(&OnReadBosDescriptor,
-                                                      device_handle, barrier));
-    }
   } else {
     failure_closure.Run();
   }

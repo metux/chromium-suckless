@@ -64,12 +64,6 @@ struct WebUsbPlatformCapabilityDescriptor {
 
 bool ParseWebUsbUrlDescriptor(const std::vector<uint8_t>& bytes, GURL* output);
 
-void ReadWebUsbDescriptors(
-    scoped_refptr<UsbDeviceHandle> device_handle,
-    const base::Callback<
-        void(std::unique_ptr<WebUsbAllowedOrigins> allowed_origins,
-             const GURL& landing_page)>& callback);
-
 // Check if the origin is allowed.
 bool FindInWebUsbAllowedOrigins(
     const device::WebUsbAllowedOrigins* allowed_origins,

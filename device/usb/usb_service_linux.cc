@@ -54,12 +54,7 @@ void OnReadDescriptors(const base::Callback<void(bool)>& callback,
 void OnDeviceOpenedToReadDescriptors(
     const base::Callback<void(bool)>& callback,
     scoped_refptr<UsbDeviceHandle> device_handle) {
-  if (device_handle) {
-    ReadWebUsbDescriptors(
-        device_handle, base::Bind(&OnReadDescriptors, callback, device_handle));
-  } else {
     callback.Run(false /* failure */);
-  }
 }
 
 }  // namespace

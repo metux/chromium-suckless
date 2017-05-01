@@ -186,27 +186,8 @@ void UsbDeviceAndroid::OnReadDescriptors(
   device_version_ = descriptor->device_version;
   configurations_ = descriptor->configurations;
 
-  if (usb_version_ >= 0x0210) {
-    ReadWebUsbDescriptors(device_handle,
-                          base::Bind(&UsbDeviceAndroid::OnReadWebUsbDescriptors,
-                                     this, device_handle));
-  } else {
     device_handle->Close();
     CallRequestPermissionCallbacks(true);
-  }
-}
-
-void UsbDeviceAndroid::OnReadWebUsbDescriptors(
-    scoped_refptr<UsbDeviceHandle> device_handle,
-    std::unique_ptr<WebUsbAllowedOrigins> allowed_origins,
-    const GURL& landing_page) {
-  if (allowed_origins)
-    webusb_allowed_origins_ = std::move(allowed_origins);
-  if (landing_page.is_valid())
-    webusb_landing_page_ = landing_page;
-
-  device_handle->Close();
-  CallRequestPermissionCallbacks(true);
 }
 
 }  // namespace device
