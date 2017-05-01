@@ -264,10 +264,6 @@
 #include "ui/aura/env.h"
 #endif  // defined(USE_AURA)
 
-#if !defined(OS_ANDROID)
-#include "chrome/browser/usb/web_usb_detector.h"
-#endif
-
 #if defined(USE_AURA)
 #include "chrome/browser/lifetime/application_lifetime.h"
 #include "content/public/common/service_manager_connection.h"
@@ -2129,8 +2125,6 @@ void ChromeBrowserMainParts::PostMainMessageLoopRun() {
   // Remove observers attached to D-Bus clients before DbusThreadManager is
   // shut down.
   process_power_collector_.reset();
-
-  web_usb_detector_.reset();
 
   for (size_t i = 0; i < chrome_extra_parts_.size(); ++i)
     chrome_extra_parts_[i]->PostMainMessageLoopRun();

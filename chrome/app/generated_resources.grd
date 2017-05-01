@@ -14851,16 +14851,6 @@ Please check your email at <ph name="ACCOUNT_EMAIL">$2<ex>jane.doe@gmail.com</ex
       </message>
     </if>
 
-    <if expr="not is_ios">
-      <!-- WebUsb Notification -->
-      <message name="IDS_WEBUSB_DEVICE_DETECTED_NOTIFICATION" desc="Content for notification shown to the user when a USB device gets plugged in.">
-        Go to <ph name="LANDING_PAGE">$1<ex>www.google.com</ex></ph> to connect.
-      </message>
-      <message name="IDS_WEBUSB_DEVICE_DETECTED_NOTIFICATION_TITLE" desc="Title for notification shown to the user when a USB device gets plugged in.">
-        <ph name="USB_DEVICE_NAME">$1<ex>Nexus 5</ex></ph> detected
-      </message>
-    </if>
-
       <!-- Audio device strings. -->
       <message name="IDS_DEFAULT_AUDIO_DEVICE_NAME" desc="System default audio device (microphone or loudspeaker). This is typically presented to users in a drop-down list of device choices.">
           Default
