@@ -155,7 +155,7 @@ void AppListService::RegisterPrefs(PrefRegistrySimple* registry) {
 
   // Identifies whether we should show the app launcher promo or not. This
   // becomes false when the user dismisses the promo.
-  registry->RegisterBooleanPref(prefs::kShowAppLauncherPromo, true);
+  registry->RegisterBooleanPref(prefs::kShowAppLauncherPromo, false);
 }
 
 // static
