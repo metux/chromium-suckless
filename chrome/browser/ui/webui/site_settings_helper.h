@@ -98,8 +98,6 @@ struct ChooserTypeNameEntry {
   const char* ui_name_key;
 };
 
-ChooserContextBase* GetUsbChooserContext(Profile* profile);
-
 struct ContentSettingsTypeNameEntry {
   ContentSettingsType type;
   const char* name;
@@ -130,8 +128,6 @@ const ContentSettingsTypeNameEntry kContentSettingsTypeGroupNames[] = {
 };
 
 const ChooserTypeNameEntry kChooserTypeGroupNames[] = {
-    {CONTENT_SETTINGS_TYPE_USB_CHOOSER_DATA, &GetUsbChooserContext,
-     kGroupTypeUsb, "name"},
 };
 
 const ChooserTypeNameEntry* ChooserTypeFromGroupName(const std::string& name);

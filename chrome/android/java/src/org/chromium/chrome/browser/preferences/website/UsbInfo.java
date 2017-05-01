@@ -57,6 +57,5 @@ public class UsbInfo implements Serializable {
      * Revokes permission for the origin to access the USB device.
      */
     public void revoke() {
-        WebsitePreferenceBridge.nativeRevokeUsbPermission(mOrigin, mEmbedder, mObject);
     }
 }

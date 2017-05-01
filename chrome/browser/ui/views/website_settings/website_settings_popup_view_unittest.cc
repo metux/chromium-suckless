@@ -9,8 +9,6 @@
 #include "chrome/browser/ui/exclusive_access/exclusive_access_manager.h"
 #include "chrome/browser/ui/views/website_settings/chosen_object_row.h"
 #include "chrome/browser/ui/views/website_settings/permission_selector_row.h"
-#include "chrome/browser/usb/usb_chooser_context.h"
-#include "chrome/browser/usb/usb_chooser_context_factory.h"
 #include "chrome/test/base/testing_profile.h"
 #include "content/public/browser/ssl_status.h"
 #include "content/public/test/test_browser_thread_bundle.h"
@@ -216,45 +214,4 @@ TEST_F(WebsiteSettingsPopupViewTest, MAYBE_SetPermissionInfo) {
   // settings should omit the permission from the UI.
   api_->SetPermissionInfo(list);
   EXPECT_EQ(kExpectedChildren, api_->permissions_view()->child_count());
-}
-
-// Test UI construction and reconstruction with USB devices.
-TEST_F(WebsiteSettingsPopupViewTest, SetPermissionInfoWithUsbDevice) {
-  const int kExpectedChildren =
-      ExclusiveAccessManager::IsSimplifiedFullscreenUIEnabled() ? 11 : 13;
-  EXPECT_EQ(kExpectedChildren, api_->permissions_view()->child_count());
-
-  const GURL origin = GURL(kUrl).GetOrigin();
-  scoped_refptr<device::UsbDevice> device =
-      new device::MockUsbDevice(0, 0, "Google", "Gizmo", "1234567890");
-  device_client_.usb_service()->AddDevice(device);
-  UsbChooserContext* store =
-      UsbChooserContextFactory::GetForProfile(web_contents_helper_.profile());
-  store->GrantDevicePermission(origin, origin, device->guid());
-
-  PermissionInfoList list;
-  api_->SetPermissionInfo(list);
-  EXPECT_EQ(kExpectedChildren + 1, api_->permissions_view()->child_count());
-
-  ChosenObjectRow* object_view = static_cast<ChosenObjectRow*>(
-      api_->permissions_view()->child_at(kExpectedChildren));
-  EXPECT_EQ(3, object_view->child_count());
-
-  const int kLabelIndex = 1;
-  views::Label* label =
-      static_cast<views::Label*>(object_view->child_at(kLabelIndex));
-  EXPECT_EQ(base::ASCIIToUTF16("Gizmo"), label->text());
-
-  const int kButtonIndex = 2;
-  views::Button* button =
-      static_cast<views::Button*>(object_view->child_at(kButtonIndex));
-
-  const ui::MouseEvent event(ui::ET_MOUSE_PRESSED, gfx::Point(), gfx::Point(),
-                             ui::EventTimeForNow(), 0, 0);
-  views::ButtonListener* button_listener =
-      static_cast<views::ButtonListener*>(object_view);
-  button_listener->ButtonPressed(button, event);
-  api_->SetPermissionInfo(list);
-  EXPECT_EQ(kExpectedChildren, api_->permissions_view()->child_count());
-  EXPECT_FALSE(store->HasDevicePermission(origin, origin, device));
 }

@@ -16,8 +16,6 @@
 #include "chrome/browser/content_settings/host_content_settings_map_factory.h"
 #include "chrome/browser/infobars/infobar_service.h"
 #include "chrome/browser/ui/website_settings/website_settings_ui.h"
-#include "chrome/browser/usb/usb_chooser_context.h"
-#include "chrome/browser/usb/usb_chooser_context_factory.h"
 #include "chrome/grit/theme_resources.h"
 #include "chrome/test/base/chrome_render_view_host_test_harness.h"
 #include "chrome/test/base/testing_profile.h"
@@ -303,33 +301,6 @@ TEST_F(WebsiteSettingsTest, OnSiteDataAccessed) {
       WebsiteSettingsUI::TAB_ID_PERMISSIONS));
 
   website_settings()->OnSiteDataAccessed();
-}
-
-TEST_F(WebsiteSettingsTest, OnChosenObjectDeleted) {
-  scoped_refptr<device::UsbDevice> device =
-      new device::MockUsbDevice(0, 0, "Google", "Gizmo", "1234567890");
-  usb_service().AddDevice(device);
-  UsbChooserContext* store = UsbChooserContextFactory::GetForProfile(profile());
-  store->GrantDevicePermission(url(), url(), device->guid());
-
-  EXPECT_CALL(*mock_ui(), SetIdentityInfo(_));
-  EXPECT_CALL(*mock_ui(), SetCookieInfo(_));
-  EXPECT_CALL(*mock_ui(),
-              SetSelectedTab(WebsiteSettingsUI::TAB_ID_PERMISSIONS));
-
-  // Access WebsiteSettings so that SetPermissionInfo is called once to populate
-  // |last_chosen_object_info_|. It will be called again by
-  // OnSiteChosenObjectDeleted.
-  EXPECT_CALL(*mock_ui(), SetPermissionInfo(_, _)).Times(2);
-  website_settings();
-
-  ASSERT_EQ(1u, last_chosen_object_info().size());
-  const WebsiteSettingsUI::ChosenObjectInfo* info =
-      last_chosen_object_info()[0].get();
-  website_settings()->OnSiteChosenObjectDeleted(info->ui_info, *info->object);
-
-  EXPECT_FALSE(store->HasDevicePermission(url(), url(), device));
-  EXPECT_EQ(0u, last_chosen_object_info().size());
 }
 
 TEST_F(WebsiteSettingsTest, HTTPConnection) {

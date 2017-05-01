@@ -34,8 +34,6 @@
 #include "chrome/browser/profiles/profile.h"
 #include "chrome/browser/profiles/profile_manager.h"
 #include "chrome/browser/storage/storage_info_fetcher.h"
-#include "chrome/browser/usb/usb_chooser_context.h"
-#include "chrome/browser/usb/usb_chooser_context_factory.h"
 #include "components/content_settings/core/browser/cookie_settings.h"
 #include "components/content_settings/core/browser/host_content_settings_map.h"
 #include "content/public/browser/browser_thread.h"
@@ -420,26 +418,6 @@ static jboolean UrlMatchesContentSettingsPattern(
   ContentSettingsPattern pattern = ContentSettingsPattern::FromString(
       ConvertJavaStringToUTF8(env, jpattern));
   return pattern.Matches(GURL(ConvertJavaStringToUTF8(env, jurl)));
-}
-
-static void RevokeUsbPermission(JNIEnv* env,
-                                const JavaParamRef<jclass>& clazz,
-                                const JavaParamRef<jstring>& jorigin,
-                                const JavaParamRef<jstring>& jembedder,
-                                const JavaParamRef<jstring>& jobject) {
-  Profile* profile = ProfileManager::GetActiveUserProfile();
-  UsbChooserContext* context = UsbChooserContextFactory::GetForProfile(profile);
-  GURL origin(ConvertJavaStringToUTF8(env, jorigin));
-  DCHECK(origin.is_valid());
-  // If embedder == origin above then a null embedder was sent to Java instead
-  // of a duplicated string.
-  GURL embedder(
-      ConvertJavaStringToUTF8(env, jembedder.is_null() ? jorigin : jembedder));
-  DCHECK(embedder.is_valid());
-  std::unique_ptr<base::DictionaryValue> object = base::DictionaryValue::From(
-      base::JSONReader::Read(ConvertJavaStringToUTF8(env, jobject)));
-  DCHECK(object);
-  context->RevokeObjectPermission(origin, embedder, *object);
 }
 
 namespace {

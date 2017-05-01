@@ -287,5 +287,4 @@ public abstract class WebsitePreferenceBridge {
             String origin, String embedder, boolean isIncognito);
     static native void nativeSetFullscreenSettingForOrigin(
             String origin, String embedder, int value, boolean isIncognito);
-    static native void nativeRevokeUsbPermission(String origin, String embedder, String object);
 }

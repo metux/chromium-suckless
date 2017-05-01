@@ -38,8 +38,6 @@
 #include "chrome/browser/ssl/chrome_ssl_host_state_delegate.h"
 #include "chrome/browser/ssl/chrome_ssl_host_state_delegate_factory.h"
 #include "chrome/browser/ui/website_settings/website_settings_ui.h"
-#include "chrome/browser/usb/usb_chooser_context.h"
-#include "chrome/browser/usb/usb_chooser_context_factory.h"
 #include "chrome/common/chrome_switches.h"
 #include "chrome/common/features.h"
 #include "chrome/common/url_constants.h"
@@ -231,17 +229,10 @@ base::string16 GetSimpleSiteName(const GURL& url) {
       url, url_formatter::SchemeDisplay::OMIT_HTTP_AND_HTTPS);
 }
 
-ChooserContextBase* GetUsbChooserContext(Profile* profile) {
-  return UsbChooserContextFactory::GetForProfile(profile);
-}
-
 // The list of chooser types that need to display entries in the Website
 // Settings UI. THE ORDER OF THESE ITEMS IS IMPORTANT. To propose changing it,
 // email security-dev@chromium.org.
 WebsiteSettings::ChooserUIInfo kChooserUIInfo[] = {
-    {CONTENT_SETTINGS_TYPE_USB_CHOOSER_DATA, &GetUsbChooserContext,
-     IDR_BLOCKED_USB, IDR_ALLOWED_USB, IDS_WEBSITE_SETTINGS_USB_DEVICE_LABEL,
-     IDS_WEBSITE_SETTINGS_DELETE_USB_DEVICE, "name"},
 };
 
 }  // namespace
