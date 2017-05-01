@@ -31,7 +31,6 @@
 #include "chrome/browser/devtools/device/adb/adb_device_provider.h"
 #include "chrome/browser/devtools/device/port_forwarding_controller.h"
 #include "chrome/browser/devtools/device/tcp_device_provider.h"
-#include "chrome/browser/devtools/device/usb/usb_device_provider.h"
 #include "chrome/browser/devtools/devtools_protocol.h"
 #include "chrome/browser/devtools/devtools_window.h"
 #include "chrome/browser/devtools/remote_debugging_server.h"
@@ -705,9 +704,6 @@ DevToolsAndroidBridge::DevToolsAndroidBridge(
       weak_factory_(this) {
   DCHECK_CURRENTLY_ON(BrowserThread::UI);
   pref_change_registrar_.Init(profile_->GetPrefs());
-  pref_change_registrar_.Add(prefs::kDevToolsDiscoverUsbDevicesEnabled,
-      base::Bind(&DevToolsAndroidBridge::CreateDeviceProviders,
-                 base::Unretained(this)));
   pref_change_registrar_.Add(prefs::kDevToolsTCPDiscoveryConfig,
       base::Bind(&DevToolsAndroidBridge::CreateDeviceProviders,
                  base::Unretained(this)));
@@ -862,8 +858,6 @@ void DevToolsAndroidBridge::RequestDeviceCount(
   if (device_count_listeners_.empty() ||
       !callback.Equals(device_count_callback_.callback()))
     return;
-
-  UsbDeviceProvider::CountDevices(callback);
 }
 
 void DevToolsAndroidBridge::ReceivedDeviceCount(int count) {
@@ -953,15 +947,6 @@ void DevToolsAndroidBridge::CreateDeviceProviders() {
 #endif
 
   device_providers.push_back(new AdbDeviceProvider());
-
-  const PrefService::Preference* pref =
-      service->FindPreference(prefs::kDevToolsDiscoverUsbDevicesEnabled);
-  const base::Value* pref_value = pref->GetValue();
-
-  bool enabled;
-  if (pref_value->GetAsBoolean(&enabled) && enabled) {
-    device_providers.push_back(new UsbDeviceProvider(profile_));
-  }
 
   device_manager_->SetDeviceProviders(device_providers);
   if (NeedsDeviceListPolling()) {

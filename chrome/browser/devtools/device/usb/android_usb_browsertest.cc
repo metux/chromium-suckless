@@ -17,7 +17,6 @@
 #include "chrome/browser/devtools/device/adb/mock_adb_server.h"
 #include "chrome/browser/devtools/device/devtools_android_bridge.h"
 #include "chrome/browser/devtools/device/usb/android_usb_device.h"
-#include "chrome/browser/devtools/device/usb/usb_device_provider.h"
 #include "chrome/browser/ui/browser.h"
 #include "chrome/test/base/in_process_browser_test.h"
 #include "content/public/browser/browser_thread.h"
@@ -507,11 +506,7 @@ class AndroidUsbDiscoveryTest : public InProcessBrowserTest {
         &AndroidUsbDiscoveryTest::ScheduleDeviceCountRequest,
         base::Unretained(this)));
 
-    scoped_refptr<UsbDeviceProvider> provider =
-        new UsbDeviceProvider(browser()->profile());
-
     AndroidDeviceManager::DeviceProviders providers;
-    providers.push_back(provider);
     adb_bridge_->set_device_providers_for_test(providers);
     runner_ = new content::MessageLoopRunner;
   }
