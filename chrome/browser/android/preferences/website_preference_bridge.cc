@@ -422,42 +422,6 @@ static jboolean UrlMatchesContentSettingsPattern(
   return pattern.Matches(GURL(ConvertJavaStringToUTF8(env, jurl)));
 }
 
-static void GetUsbOrigins(JNIEnv* env,
-                          const JavaParamRef<jclass>& clazz,
-                          const JavaParamRef<jobject>& list) {
-  Profile* profile = ProfileManager::GetActiveUserProfile();
-  UsbChooserContext* context = UsbChooserContextFactory::GetForProfile(profile);
-  for (const auto& object : context->GetAllGrantedObjects()) {
-    // Remove the trailing slash so that origins are matched correctly in
-    // SingleWebsitePreferences.mergePermissionInfoForTopLevelOrigin.
-    std::string origin = object->requesting_origin.spec();
-    DCHECK_EQ('/', origin.back());
-    origin.pop_back();
-    ScopedJavaLocalRef<jstring> jorigin = ConvertUTF8ToJavaString(env, origin);
-
-    std::string embedder = object->embedding_origin.spec();
-    DCHECK_EQ('/', embedder.back());
-    embedder.pop_back();
-    ScopedJavaLocalRef<jstring> jembedder;
-    if (embedder != origin)
-      jembedder = ConvertUTF8ToJavaString(env, embedder);
-
-    std::string name;
-    bool found = object->object.GetString("name", &name);
-    DCHECK(found);
-    ScopedJavaLocalRef<jstring> jname = ConvertUTF8ToJavaString(env, name);
-
-    std::string serialized;
-    bool written = base::JSONWriter::Write(object->object, &serialized);
-    DCHECK(written);
-    ScopedJavaLocalRef<jstring> jserialized =
-        ConvertUTF8ToJavaString(env, serialized);
-
-    Java_WebsitePreferenceBridge_insertUsbInfoIntoList(
-        env, list, jorigin, jembedder, jname, jserialized);
-  }
-}
-
 static void RevokeUsbPermission(JNIEnv* env,
                                 const JavaParamRef<jclass>& clazz,
                                 const JavaParamRef<jstring>& jorigin,

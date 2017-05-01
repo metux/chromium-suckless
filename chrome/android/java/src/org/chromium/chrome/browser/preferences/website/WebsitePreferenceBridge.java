@@ -223,7 +223,6 @@ public abstract class WebsitePreferenceBridge {
      */
     public static List<UsbInfo> getUsbInfo() {
         ArrayList<UsbInfo> list = new ArrayList<UsbInfo>();
-        nativeGetUsbOrigins(list);
         return list;
     }
 
@@ -288,6 +287,5 @@ public abstract class WebsitePreferenceBridge {
             String origin, String embedder, boolean isIncognito);
     static native void nativeSetFullscreenSettingForOrigin(
             String origin, String embedder, int value, boolean isIncognito);
-    static native void nativeGetUsbOrigins(Object list);
     static native void nativeRevokeUsbPermission(String origin, String embedder, String object);
 }
