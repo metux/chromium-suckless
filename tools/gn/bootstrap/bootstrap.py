@@ -102,6 +102,7 @@ def main(argv):
   parser.add_option('--gn-gen-args', help='Args to pass to gn gen --args')
   parser.add_option('-v', '--verbose', action='store_true',
                     help='Log more details')
+  parser.add_option('-j', '--jobs', help='Number of jobs')
   options, args = parser.parse_args(argv)
 
   if args:
@@ -186,6 +187,8 @@ def build_gn_with_ninja_manually(tempdir, options):
   cmd = ['ninja', '-C', tempdir]
   if options.verbose:
     cmd.append('-v')
+  if options.jobs:
+    cmd.append('-j'+str(options.jobs))
 
   if is_win:
     cmd.append('gn.exe')
