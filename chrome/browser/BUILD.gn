@@ -2824,8 +2824,6 @@ split_static_library("browser") {
       "upgrade_detector.h",
       "usb/usb_chooser_controller.cc",
       "usb/usb_chooser_controller.h",
-      "usb/web_usb_chooser_service.cc",
-      "usb/web_usb_chooser_service.h",
     ]
     deps += [
       "//apps",
@@ -3191,8 +3189,6 @@ split_static_library("browser") {
       "android/thumbnail/thumbnail_cache.h",
       "android/url_utilities.cc",
       "android/url_utilities.h",
-      "android/usb/web_usb_chooser_service_android.cc",
-      "android/usb/web_usb_chooser_service_android.h",
       "android/voice_search_tab_helper.cc",
       "android/voice_search_tab_helper.h",
       "android/warmup_manager.cc",
