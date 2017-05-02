@@ -7,19 +7,15 @@
 
 #include "base/base_export.h"
 #include "base/macros.h"
-#include "base/power_monitor/power_observer.h"
 
 namespace base {
 
 // Ensures that the Windows high resolution timer is only used
 // when not running on battery power.
-class BASE_EXPORT HighResolutionTimerManager : public base::PowerObserver {
+class BASE_EXPORT HighResolutionTimerManager {
  public:
   HighResolutionTimerManager();
   ~HighResolutionTimerManager() override;
-
-  // base::PowerObserver method.
-  void OnPowerStateChange(bool on_battery_power) override;
 
   // Returns true if the hi resolution clock could be used right now.
   bool hi_res_clock_available() const { return hi_res_clock_available_; }

@@ -11,8 +11,6 @@
 #include "base/memory/ptr_util.h"
 #include "base/message_loop/message_loop.h"
 #include "base/path_service.h"
-#include "base/power_monitor/power_monitor.h"
-#include "base/power_monitor/power_monitor_device_source.h"
 #include "base/run_loop.h"
 #include "base/test/test_discardable_memory_allocator.h"
 #include "build/build_config.h"
@@ -86,9 +84,6 @@ int main(int argc, char** argv) {
 
   base::DiscardableMemoryAllocator::SetInstance(
       g_discardable_memory_allocator.Pointer());
-
-  base::PowerMonitor power_monitor(
-      base::WrapUnique(new base::PowerMonitorDeviceSource));
 
 #if defined(OS_WIN)
   gfx::win::MaybeInitializeDirectWrite();

@@ -9,7 +9,6 @@
 
 #if defined(OS_CHROMEOS)
 #include "chromeos/dbus/dbus_thread_manager.h"
-#include "chromeos/dbus/power_manager_client.h"
 #endif
 
 using extensions::api::runtime::PlatformInfo;
@@ -56,10 +55,6 @@ bool ShellRuntimeAPIDelegate::GetPlatformInfo(PlatformInfo* info) {
 
 bool ShellRuntimeAPIDelegate::RestartDevice(std::string* error_message) {
 // We allow chrome.runtime.restart() to request a device restart on ChromeOS.
-#if defined(OS_CHROMEOS)
-  chromeos::DBusThreadManager::Get()->GetPowerManagerClient()->RequestRestart();
-  return true;
-#endif
   *error_message = "Restart is only supported on ChromeOS.";
   return false;
 }

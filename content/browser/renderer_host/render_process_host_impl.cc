@@ -159,7 +159,6 @@
 #include "content/public/common/sandboxed_process_launcher_delegate.h"
 #include "content/public/common/service_names.h"
 #include "content/public/common/url_constants.h"
-#include "device/battery/battery_monitor_impl.h"
 #include "device/time_zone_monitor/time_zone_monitor.h"
 #include "gpu/GLES2/gl2extchromium.h"
 #include "gpu/command_buffer/client/gpu_switches.h"
@@ -701,7 +700,6 @@ RenderProcessHostImpl::RenderProcessHostImpl(
       gpu_observer_registered_(false),
       delayed_cleanup_needed_(false),
       within_process_died_observer_(false),
-      power_monitor_broadcaster_(this),
 #if defined(ENABLE_WEBRTC)
       webrtc_eventlog_host_(id_),
 #endif
@@ -985,8 +983,6 @@ bool RenderProcessHostImpl::Init() {
     ui::GpuSwitchingManager::GetInstance()->AddObserver(this);
   }
 
-  power_monitor_broadcaster_.Init();
-
   is_initialized_ = true;
   init_time_ = base::TimeTicks::Now();
   return true;
@@ -1209,14 +1205,6 @@ void RenderProcessHostImpl::RegisterMojoInterfaces() {
       base::Bind(&RenderProcessHostImpl::OnRouteProviderRequest,
                  base::Unretained(this)));
 
-#if defined(OS_ANDROID)
-  AddUIThreadInterface(registry.get(),
-                       GetGlobalJavaInterfaces()
-                           ->CreateInterfaceFactory<device::BatteryMonitor>());
-#else
-  AddUIThreadInterface(
-      registry.get(), base::Bind(&device::BatteryMonitorImpl::Create));
-#endif
   AddUIThreadInterface(
       registry.get(),
       base::Bind(&PermissionServiceContext::CreateService,

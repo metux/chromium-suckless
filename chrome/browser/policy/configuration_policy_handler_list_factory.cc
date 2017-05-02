@@ -467,9 +467,6 @@ const PolicyToPreferenceMapEntry kSimplePolicyMap[] = {
   { key::kPowerManagementUsesAudioActivity,
     prefs::kPowerUseAudioActivity,
     base::Value::TYPE_BOOLEAN },
-  { key::kPowerManagementUsesVideoActivity,
-    prefs::kPowerUseVideoActivity,
-    base::Value::TYPE_BOOLEAN },
   { key::kAllowScreenWakeLocks,
     prefs::kPowerAllowScreenWakeLocks,
     base::Value::TYPE_BOOLEAN },
@@ -819,88 +816,11 @@ std::unique_ptr<ConfigurationPolicyHandlerList> BuildHandlerList(
   handlers->AddHandler(
       base::MakeUnique<LoginScreenPowerManagementPolicyHandler>(chrome_schema));
 
-  ScopedVector<ConfigurationPolicyHandler>
-      power_management_idle_legacy_policies;
-  power_management_idle_legacy_policies.push_back(
-      new IntRangePolicyHandler(key::kScreenDimDelayAC,
-                                prefs::kPowerAcScreenDimDelayMs,
-                                0,
-                                INT_MAX,
-                                true));
-  power_management_idle_legacy_policies.push_back(
-      new IntRangePolicyHandler(key::kScreenOffDelayAC,
-                                prefs::kPowerAcScreenOffDelayMs,
-                                0,
-                                INT_MAX,
-                                true));
-  power_management_idle_legacy_policies.push_back(
-      new IntRangePolicyHandler(key::kIdleWarningDelayAC,
-                                prefs::kPowerAcIdleWarningDelayMs,
-                                0,
-                                INT_MAX,
-                                true));
-  power_management_idle_legacy_policies.push_back(new IntRangePolicyHandler(
-      key::kIdleDelayAC, prefs::kPowerAcIdleDelayMs, 0, INT_MAX, true));
-  power_management_idle_legacy_policies.push_back(
-      new IntRangePolicyHandler(key::kScreenDimDelayBattery,
-                                prefs::kPowerBatteryScreenDimDelayMs,
-                                0,
-                                INT_MAX,
-                                true));
-  power_management_idle_legacy_policies.push_back(
-      new IntRangePolicyHandler(key::kScreenOffDelayBattery,
-                                prefs::kPowerBatteryScreenOffDelayMs,
-                                0,
-                                INT_MAX,
-                                true));
-  power_management_idle_legacy_policies.push_back(
-      new IntRangePolicyHandler(key::kIdleWarningDelayBattery,
-                                prefs::kPowerBatteryIdleWarningDelayMs,
-                                0,
-                                INT_MAX,
-                                true));
-  power_management_idle_legacy_policies.push_back(
-      new IntRangePolicyHandler(key::kIdleDelayBattery,
-                                prefs::kPowerBatteryIdleDelayMs,
-                                0,
-                                INT_MAX,
-                                true));
-  power_management_idle_legacy_policies.push_back(new IntRangePolicyHandler(
-      key::kIdleActionAC,
-      prefs::kPowerAcIdleAction,
-      chromeos::PowerPolicyController::ACTION_SUSPEND,
-      chromeos::PowerPolicyController::ACTION_DO_NOTHING,
-      false));
-  power_management_idle_legacy_policies.push_back(new IntRangePolicyHandler(
-      key::kIdleActionBattery,
-      prefs::kPowerBatteryIdleAction,
-      chromeos::PowerPolicyController::ACTION_SUSPEND,
-      chromeos::PowerPolicyController::ACTION_DO_NOTHING,
-      false));
-  power_management_idle_legacy_policies.push_back(
-      new DeprecatedIdleActionHandler());
-
   ScopedVector<ConfigurationPolicyHandler> screen_lock_legacy_policies;
-  screen_lock_legacy_policies.push_back(
-      new IntRangePolicyHandler(key::kScreenLockDelayAC,
-                                prefs::kPowerAcScreenLockDelayMs,
-                                0,
-                                INT_MAX,
-                                true));
-  screen_lock_legacy_policies.push_back(
-      new IntRangePolicyHandler(key::kScreenLockDelayBattery,
-                                prefs::kPowerBatteryScreenLockDelayMs,
-                                0,
-                                INT_MAX,
-                                true));
 
   handlers->AddHandler(base::MakeUnique<IntRangePolicyHandler>(
       key::kSAMLOfflineSigninTimeLimit, prefs::kSAMLOfflineSigninTimeLimit, -1,
       INT_MAX, true));
-  handlers->AddHandler(base::MakeUnique<IntRangePolicyHandler>(
-      key::kLidCloseAction, prefs::kPowerLidClosedAction,
-      chromeos::PowerPolicyController::ACTION_SUSPEND,
-      chromeos::PowerPolicyController::ACTION_DO_NOTHING, false));
   handlers->AddHandler(base::MakeUnique<IntPercentageToDoublePolicyHandler>(
       key::kPresentationScreenDimDelayScale,
       prefs::kPowerPresentationScreenDimDelayFactor, 100, INT_MAX, true));
@@ -915,10 +835,6 @@ std::unique_ptr<ConfigurationPolicyHandlerList> BuildHandlerList(
   // TODO(binjin): Remove LegacyPoliciesDeprecatingPolicyHandler for these two
   // policies once deprecation of legacy power management policies is done.
   // http://crbug.com/346229
-  handlers->AddHandler(base::MakeUnique<LegacyPoliciesDeprecatingPolicyHandler>(
-      std::move(power_management_idle_legacy_policies),
-      base::WrapUnique(
-          new PowerManagementIdleSettingsPolicyHandler(chrome_schema))));
   handlers->AddHandler(base::MakeUnique<LegacyPoliciesDeprecatingPolicyHandler>(
       std::move(screen_lock_legacy_policies),
       base::WrapUnique(new ScreenLockDelayPolicyHandler(chrome_schema))));

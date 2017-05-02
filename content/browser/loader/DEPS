@@ -123,11 +123,6 @@ specific_include_rules = {
     "+content/public/browser/browser_thread.h",  # Only for DCHECK.
     "+content/public/common/resource_devtools_info.h",
   ],
-  "power_save_block_resource_throttle\.(cc|h)": [
-    "-content",
-    "+content/browser/loader/power_save_block_resource_throttle.h",
-    "+content/public/browser/resource_throttle.h",
-  ],
   "resource_dispatcher_host_impl\.(cc|h)": [
     "-content",
     "+content/browser/loader/async_resource_handler.h",
@@ -135,7 +130,6 @@ specific_include_rules = {
     "+content/browser/loader/global_routing_id.h",
     "+content/browser/loader/loader_delegate.h",
     "+content/browser/loader/mojo_async_resource_handler.h",
-    "+content/browser/loader/power_save_block_resource_throttle.h",
     "+content/browser/loader/resource_dispatcher_host_impl.h",
     "+content/browser/loader/resource_loader.h",
     "+content/browser/loader/resource_loader_delegate.h",

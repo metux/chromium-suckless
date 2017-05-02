@@ -164,42 +164,6 @@ TEST_F(BrowserProcessPowerTest, MultipleSites) {
   EXPECT_EQ(1u, metrics_map->size());
 }
 
-TEST_F(BrowserProcessPowerTest, IncognitoDoesntRecordPowerUsage) {
-  Browser::CreateParams native_params(profile()->GetOffTheRecordProfile());
-  std::unique_ptr<Browser> incognito_browser(
-      chrome::CreateBrowserWithTestWindowForParams(&native_params));
-  GURL url("http://www.google.com");
-  AddTab(browser(), url);
-
-  GURL hidden_url("http://foo.com");
-  AddTab(incognito_browser.get(), hidden_url);
-
-  // Create fake process numbers.
-  GetProcess(browser())->SetProcessHandle(MakeProcessHandle(1));
-  GetProcess(incognito_browser.get())->SetProcessHandle(MakeProcessHandle(2));
-
-  EXPECT_DOUBLE_EQ(0, collector->UpdatePowerConsumptionForTesting());
-  ProcessPowerCollector::ProcessMetricsMap* metrics_map =
-      collector->metrics_map_for_testing();
-  EXPECT_EQ(1u, metrics_map->size());
-
-  OriginPowerMap* origin_power_map =
-      OriginPowerMapFactory::GetForBrowserContext(profile());
-  EXPECT_EQ(0, origin_power_map->GetPowerForOrigin(url));
-
-  collector->set_cpu_usage_callback_for_testing(
-      base::Bind(&BrowserProcessPowerTest::ReturnCpuAsConstant,
-                 base::Unretained(this),
-                 5));
-  EXPECT_DOUBLE_EQ(5, collector->UpdatePowerConsumptionForTesting());
-
-  // Verify that the incognito data was not stored.
-  EXPECT_EQ(100, origin_power_map->GetPowerForOrigin(url));
-  EXPECT_EQ(0, origin_power_map->GetPowerForOrigin(hidden_url));
-
-  chrome::CloseTab(incognito_browser.get());
-}
-
 TEST_F(BrowserProcessPowerTest, MultipleProfilesRecordSeparately) {
   std::unique_ptr<Profile> other_profile(CreateProfile());
   Browser::CreateParams native_params(other_profile.get());
@@ -239,53 +203,4 @@ TEST_F(BrowserProcessPowerTest, MultipleProfilesRecordSeparately) {
 
   // Clean up
   chrome::CloseTab(other_user.get());
-}
-
-TEST_F(BrowserProcessPowerTest, AppsRecordPowerUsage) {
-// Install an app (an extension*).
-#if defined(OS_WIN)
-  base::FilePath extension_path(FILE_PATH_LITERAL("c:\\foo"));
-#elif defined(OS_POSIX)
-  base::FilePath extension_path(FILE_PATH_LITERAL("/foo"));
-#endif
-  base::DictionaryValue manifest;
-  manifest.SetString("name", "Fake Name");
-  manifest.SetString("version", "1");
-  std::string error;
-  char kTestAppId[] = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-  scoped_refptr<extensions::Extension> extension(
-      extensions::Extension::Create(extension_path,
-                                    extensions::Manifest::INTERNAL,
-                                    manifest,
-                                    extensions::Extension::NO_FLAGS,
-                                    kTestAppId,
-                                    &error));
-  EXPECT_TRUE(extension.get()) << error;
-
-  Profile* current_profile =
-      profile_manager_->CreateTestingProfile("Test user");
-  GURL url("chrome-extension://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-  extensions::AppWindow* window = new extensions::AppWindow(
-      current_profile, new ChromeAppDelegate(false), extension.get());
-  content::WebContents* web_contents(
-      content::WebContents::Create(content::WebContents::CreateParams(
-          current_profile,
-          content::SiteInstance::CreateForURL(current_profile, url))));
-  window->SetAppWindowContentsForTesting(
-      std::unique_ptr<extensions::AppWindowContents>(
-          new extensions::TestAppWindowContents(web_contents)));
-  extensions::AppWindowRegistry* app_registry =
-      extensions::AppWindowRegistry::Get(current_profile);
-  app_registry->AddAppWindow(window);
-
-  collector->set_cpu_usage_callback_for_testing(
-      base::Bind(&BrowserProcessPowerTest::ReturnCpuAsConstant,
-                 base::Unretained(this),
-                 5));
-  collector->UpdatePowerConsumptionForTesting();
-  EXPECT_EQ(1u, collector->metrics_map_for_testing()->size());
-
-  window->OnNativeClose();
-  collector->UpdatePowerConsumptionForTesting();
-  EXPECT_EQ(0u, collector->metrics_map_for_testing()->size());
 }

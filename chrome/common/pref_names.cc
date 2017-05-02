@@ -697,39 +697,10 @@ const char kSessionLengthLimit[] = "session.length_limit";
 const char kSessionWaitForInitialUserActivity[] =
     "session.wait_for_initial_user_activity";
 
-// Inactivity time in milliseconds while the system is on AC power before
-// the screen should be dimmed, turned off, or locked, before an
-// IdleActionImminent D-Bus signal should be sent, or before
-// kPowerAcIdleAction should be performed.  0 disables the delay (N/A for
-// kPowerAcIdleDelayMs).
-const char kPowerAcScreenDimDelayMs[] = "power.ac_screen_dim_delay_ms";
-const char kPowerAcScreenOffDelayMs[] = "power.ac_screen_off_delay_ms";
-const char kPowerAcScreenLockDelayMs[] = "power.ac_screen_lock_delay_ms";
-const char kPowerAcIdleWarningDelayMs[] = "power.ac_idle_warning_delay_ms";
-const char kPowerAcIdleDelayMs[] = "power.ac_idle_delay_ms";
-
-// Similar delays while the system is on battery power.
-const char kPowerBatteryScreenDimDelayMs[] =
-    "power.battery_screen_dim_delay_ms";
-const char kPowerBatteryScreenOffDelayMs[] =
-    "power.battery_screen_off_delay_ms";
-const char kPowerBatteryScreenLockDelayMs[] =
-    "power.battery_screen_lock_delay_ms";
-const char kPowerBatteryIdleWarningDelayMs[] =
-    "power.battery_idle_warning_delay_ms";
-const char kPowerBatteryIdleDelayMs[] =
-    "power.battery_idle_delay_ms";
-
 // Inactivity delays used to dim the screen or turn it off while the screen is
 // locked.
 const char kPowerLockScreenDimDelayMs[] = "power.lock_screen_dim_delay_ms";
 const char kPowerLockScreenOffDelayMs[] = "power.lock_screen_off_delay_ms";
-
-// Action that should be performed when the idle delay is reached while the
-// system is on AC power or battery power.
-// Values are from the chromeos::PowerPolicyController::Action enum.
-const char kPowerAcIdleAction[] = "power.ac_idle_action";
-const char kPowerBatteryIdleAction[] = "power.battery_idle_action";
 
 // Action that should be performed when the lid is closed.
 // Values are from the chromeos::PowerPolicyController::Action enum.
@@ -737,7 +708,6 @@ const char kPowerLidClosedAction[] = "power.lid_closed_action";
 
 // Should audio and video activity be used to disable the above delays?
 const char kPowerUseAudioActivity[] = "power.use_audio_activity";
-const char kPowerUseVideoActivity[] = "power.use_video_activity";
 
 // Should extensions be able to use the chrome.power API to override
 // screen-related power management (including locking)?

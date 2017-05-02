@@ -263,7 +263,6 @@
 <translation id="1359381790106966506">Update permissions</translation>
 <translation id="1361164813881551742">Add Manually</translation>
 <translation id="1361655923249334273">Unused</translation>
-<translation id="136180453919764941">Battery – <ph name="STATUS" /></translation>
 <translation id="1364639026564874341">Keep your <ph name="DEVICE_TYPE" /> unlocked when your phone is unlocked and nearby.
         Note that Bluetooth will be turned on for all <ph name="USER_DISPLAY_EMAIL" />'s compatible devices, and some hardware information will be sent to Google. &lt;a&gt;Learn more&lt;/a&gt;</translation>
 <translation id="13649080186077898">Manage Auto-fill settings</translation>
@@ -1144,7 +1143,6 @@ I don't think this site should be blocked!</translation>
 <translation id="2526590354069164005">Desktop</translation>
 <translation id="2526619973349913024">Check for update</translation>
 <translation id="2527167509808613699">Any kind of connection</translation>
-<translation id="2527591341887670429">Using battery: <ph name="PRECENTAGE" />%</translation>
 <translation id="2529133382850673012">US keyboard</translation>
 <translation id="2532589005999780174">High contrast mode</translation>
 <translation id="253434972992662860">&amp;Pause</translation>
@@ -1998,7 +1996,6 @@ From <ph name="DOWNLOAD_DOMAIN" /></translation>
 <translation id="3592313833691251126">Allow extensions to create panel windows that open outside of the browser frame. Attempts to open a panel will open a pop-up instead if not enabled. Default behaviour is to allow only for white-listed extensions. Enabled behaviour is to allow for all extensions. Disabled behaviour is to disallow panels for any extension.</translation>
 <translation id="359283478042092570">Enter</translation>
 <translation id="3593965109698325041">Certificate Name Constraints</translation>
-<translation id="3595596368722241419">Battery full</translation>
 <translation id="3596235046596950091">Enable cloud services</translation>
 <translation id="3600456501114769456">Access to local files on your device is disabled by your administrator.</translation>
 <translation id="3603385196401704894">Canadian French</translation>
@@ -2481,7 +2478,6 @@ All users must sign out to continue.</translation>
 <translation id="4250431568374086873">Your connection to this site is not fully secure</translation>
 <translation id="4250680216510889253">No</translation>
 <translation id="4254813446494774748">Translation language:</translation>
-<translation id="425573743389990240">Battery Discharge Rate in Watts (Negative value means battery is charging)</translation>
 <translation id="4256316378292851214">Sa&amp;ve Video As...</translation>
 <translation id="4258348331913189841">File System</translation>
 <translation id="426015154560005552">Arabic keyboard</translation>
@@ -2610,7 +2606,6 @@ Press any key to continue exploring.</translation>
 <translation id="4444512841222467874">If space isn’t made available, users and data may be automatically removed.</translation>
 <translation id="4445559854264555037">Not seeing your device? <ph name="GET_HELP_LINK" /></translation>
 <translation id="4446933390699670756">Mirrored</translation>
-<translation id="4447465454292850432">Battery:</translation>
 <translation id="4449935293120761385">About Auto-fill</translation>
 <translation id="4449996769074858870">This tab is playing audio.</translation>
 <translation id="4450974146388585462">Diagnose</translation>
@@ -3718,7 +3713,6 @@ Press any key to continue exploring.</translation>
 <translation id="5942207977017515242">https://support.google.com/chrome/?hl=<ph name="GRITLANGCODE_1" />&amp;p=settings_sign_in</translation>
 <translation id="5946591249682680882">Report ID <ph name="WEBRTC_LOG_REPORT_ID" /></translation>
 <translation id="5948544841277865110">Add private network</translation>
-<translation id="5951823343679007761">No battery</translation>
 <translation id="5956585768868398362">Is this the search page that you were expecting?</translation>
 <translation id="5957613098218939406">More Options</translation>
 <translation id="5958529069007801266">Supervised user</translation>
@@ -3731,7 +3725,6 @@ Press any key to continue exploring.</translation>
 <translation id="5972708806901999743">Move to the top</translation>
 <translation id="5972826969634861500">Start <ph name="PRODUCT_NAME" /></translation>
 <translation id="5975083100439434680">Zoom out</translation>
-<translation id="5975792506968920132">Battery Charge Percentage</translation>
 <translation id="5976160379964388480">Others</translation>
 <translation id="5978264784700053212">Message centre</translation>
 <translation id="5979421442488174909">&amp;Translate to <ph name="LANGUAGE" /></translation>
@@ -3740,7 +3733,7 @@ Press any key to continue exploring.</translation>
 <translation id="5984222099446776634">Recently Visited</translation>
 <translation id="5984814259619230127">Smart Lock Bluetooth Low Energy Discovery</translation>
 <translation id="5986245990306121338">If enabled, a tab switcher will show even when 'merge tabs and apps' option is on in the settings.</translation>
-<translation id="5989712527536636369"><ph name="BEGIN_PARAGRAPH1" />This is general information about your device and how you use it, such as battery level, how often you use your apps, the quality and duration of your network connections (like Wi-Fi and Bluetooth) and crash reports when things aren’t working the way they should. It will be used to improve Google’s products and services for everyone. Some aggregated information will help partners, such as Android developers, make their apps and products better too.<ph name="END_PARAGRAPH1" />
+<translation id="5989712527536636369"><ph name="BEGIN_PARAGRAPH1" />This is general information about your device and how you use it, how often you use your apps, the quality and duration of your network connections (like Wi-Fi and Bluetooth) and crash reports when things aren’t working the way they should. It will be used to improve Google’s products and services for everyone. Some aggregated information will help partners, such as Android developers, make their apps and products better too.<ph name="END_PARAGRAPH1" />
     <ph name="BEGIN_PARAGRAPH2" />You can turn this on or off at any time in the Android apps Settings. This doesn’t affect your device’s ability to send the information it needs to receive essential services such as system updates and security.<ph name="END_PARAGRAPH2" /></translation>
 <translation id="5990198433782424697">Extensions on chrome:// URLs</translation>
 <translation id="5990814808592353318">Manual password generation.</translation>
@@ -3902,7 +3895,6 @@ Press any key to continue exploring.</translation>
 <translation id="6227235786875481728">This file could not be played.</translation>
 <translation id="6231148928368101651">Panels</translation>
 <translation id="6231881193380278751">Add a QueryParam in URL to auto-refresh the page: chrome://device-log/?refresh=&lt;sec&gt;</translation>
-<translation id="6232017090690406397">Battery</translation>
 <translation id="6237816943013845465">Allows you to adjust your screen resolution</translation>
 <translation id="6239558157302047471">Reload &amp;frame</translation>
 <translation id="6241530762627360640">Access information about Bluetooth devices paired with your system and discover nearby Bluetooth devices.</translation>
@@ -3949,7 +3941,7 @@ Press any key to continue exploring.</translation>
 <translation id="628139792761853604">Provides experimental options for MHTML file generator.</translation>
 <translation id="6281743458679673853">Experiment to have all APIs reflect the layout viewport. This will make window.scroll properties relative to the layout viewport.</translation>
 <translation id="6285120908535925801">{NUM_PRINTER,plural, =1{New printer on your network}other{New printers on your network}}</translation>
-<translation id="6285395082104474418">The status tray shows you the current state of your network, battery and more.</translation>
+<translation id="6285395082104474418">The status tray shows you the current state of your network, and more.</translation>
 <translation id="6286684120317096255">Data use is being measured</translation>
 <translation id="6286708577777130801">Saved password details</translation>
 <translation id="6287852322318138013">Select an app to open this file</translation>
@@ -4424,7 +4416,6 @@ Press any key to continue exploring.</translation>
 <translation id="6972929256216826630">Allow all sites to download multiple files automatically</translation>
 <translation id="6973630695168034713">Folders</translation>
 <translation id="6974053822202609517">Right to Left</translation>
-<translation id="6975147921678461939">Charging battery: <ph name="PRECENTAGE" />%</translation>
 <translation id="6976108581241006975">JavaScript console</translation>
 <translation id="6977381486153291903">Firmware revision</translation>
 <translation id="6978121630131642226">Search Engines</translation>
@@ -4873,7 +4864,6 @@ Press any key to continue exploring.</translation>
 <translation id="7566723889363720618">F12</translation>
 <translation id="756809126120519699">Cleared Chrome data</translation>
 <translation id="7568790562536448087">Updating</translation>
-<translation id="7573172247376861652">Battery Charge</translation>
 <translation id="7576032389798113292">6 x 4</translation>
 <translation id="7576690715254076113">Collate</translation>
 <translation id="7580671184200851182">Play the same audio through all speakers (mono audio)</translation>
@@ -5182,7 +5172,6 @@ Keep your key file in a safe place. You will need it to create new versions of y
 <translation id="799923393800005025">Can view</translation>
 <translation id="8000066093800657092">No network</translation>
 <translation id="8004582292198964060">Browser</translation>
-<translation id="8007030362289124303">Battery Low</translation>
 <translation id="8008356846765065031">Internet disconnected. Please check your Internet connection.</translation>
 <translation id="8012382203418782830">This page has been translated.</translation>
 <translation id="8014154204619229810">The updater is currently running. Refresh in a minute to check again.</translation>
@@ -5301,8 +5290,6 @@ Keep your key file in a safe place. You will need it to create new versions of y
 <translation id="816095449251911490"><ph name="SPEED" /> - <ph name="RECEIVED_AMOUNT" />, <ph name="TIME_REMAINING" /></translation>
 <translation id="8165208966034452696"><ph name="PLUGIN_NAME" /></translation>
 <translation id="8165383685500900731">Manage microphone settings...</translation>
-<translation id="8169977663846153645">Battery
-Calculating remaining time</translation>
 <translation id="8172078946816149352">Adobe Flash Player microphone settings are different.</translation>
 <translation id="8174047975335711832">Device information</translation>
 <translation id="8177196903785554304">Network Details</translation>
@@ -5448,7 +5435,7 @@ Calculating time until full</translation>
 <translation id="8373281062075027970">Party Name: <ph name="PARTY_NAME" /></translation>
 <translation id="8373360586245335572">Allow all sites to show notifications</translation>
 <translation id="8373553483208508744">Mute tabs</translation>
-<translation id="8378285435971754261">Let Google’s location service help apps find your location quickly and accurately, which can reduce battery consumption. Anonymous location data will be sent to Google, even when no apps are running. <ph name="BEGIN_LINK1" />Learn More<ph name="END_LINK1" /></translation>
+<translation id="8378285435971754261">Let Google’s location service help apps find your location quickly and accurately, which can reduce power consumption. Anonymous location data will be sent to Google, even when no apps are running. <ph name="BEGIN_LINK1" />Learn More<ph name="END_LINK1" /></translation>
 <translation id="8381055888183086563">Enables debugging context menu options such as Inspect Element for packed applications.</translation>
 <translation id="8381179624334829711">Manage camera settings...</translation>
 <translation id="8381750437846184350">Control how Google uses your browsing history to personalise Search, ads and other Google services</translation>
@@ -6001,8 +5988,6 @@ Calculating time until full</translation>
 <translation id="9101691533782776290">Launch app</translation>
 <translation id="9103001804464916031">{NUM_DOWNLOAD,plural, =1{Download in Progress}other{Downloads in Progress}}</translation>
 <translation id="9105212490906037469">F2</translation>
-<translation id="9106577689055281370">Battery
-<ph name="HOUR" />:<ph name="MINUTE" /> remaining</translation>
 <translation id="9109122242323516435">To free up space, delete files from device storage.</translation>
 <translation id="9110990317705400362">We're constantly looking for ways to make your browsing safer. Previously, any website could prompt you to add an extension into your browser. In the latest versions of Google Chrome, you must explicitly tell Chrome that you want to install these extensions by adding them through the Extensions page. <ph name="BEGIN_LINK" />Learn more<ph name="END_LINK" /></translation>
 <translation id="9111102763498581341">Unlock</translation>

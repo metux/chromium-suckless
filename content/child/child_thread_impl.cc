@@ -42,7 +42,6 @@
 #include "content/child/fileapi/webfilesystem_impl.h"
 #include "content/child/memory/child_memory_message_filter.h"
 #include "content/child/notifications/notification_dispatcher.h"
-#include "content/child/power_monitor_broadcast_source.h"
 #include "content/child/push_messaging/push_dispatcher.h"
 #include "content/child/quota_dispatcher.h"
 #include "content/child/quota_message_filter.h"
@@ -511,16 +510,6 @@ void ChildThreadImpl::Init(const Options& options) {
     channel_->AddFilter(new tracing::ChildTraceMessageFilter(
         ChildProcess::current()->io_task_runner()));
     channel_->AddFilter(new ChildMemoryMessageFilter());
-  }
-
-  // In single process mode we may already have a power monitor
-  if (!base::PowerMonitor::Get()) {
-    std::unique_ptr<PowerMonitorBroadcastSource> power_monitor_source(
-        new PowerMonitorBroadcastSource());
-    channel_->AddFilter(power_monitor_source->GetMessageFilter());
-
-    power_monitor_.reset(
-        new base::PowerMonitor(std::move(power_monitor_source)));
   }
 
 #if defined(OS_POSIX)

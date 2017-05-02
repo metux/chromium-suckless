@@ -419,8 +419,6 @@ IN_PROC_BROWSER_TEST_P(SpokenFeedbackTest, OpenStatusTray) {
   EXPECT_TRUE(
       base::MatchPattern(speech_monitor_.GetNextUtterance(), "Status tray*"));
   EXPECT_TRUE(base::MatchPattern(speech_monitor_.GetNextUtterance(), "time *"));
-  EXPECT_TRUE(base::MatchPattern(speech_monitor_.GetNextUtterance(),
-                                 "Battery is*full.,"));
   EXPECT_EQ("window", speech_monitor_.GetNextUtterance());
 }
 
@@ -680,8 +678,6 @@ IN_PROC_BROWSER_TEST_P(SpokenFeedbackTest, TouchExploreStatusTray) {
 
   EXPECT_EQ("Status tray,", speech_monitor_.GetNextUtterance());
   EXPECT_TRUE(base::MatchPattern(speech_monitor_.GetNextUtterance(), "time*,"));
-  EXPECT_TRUE(
-      base::MatchPattern(speech_monitor_.GetNextUtterance(), "Battery*"));
   EXPECT_EQ("Button", speech_monitor_.GetNextUtterance());
 }
 

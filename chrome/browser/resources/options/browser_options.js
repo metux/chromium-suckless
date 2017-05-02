@@ -343,14 +343,6 @@ cr.define('options', function() {
           };
           $('stylus-row').hidden = false;
         }
-        if (loadTimeData.getBoolean('showPowerStatus')) {
-          $('power-settings-link').onclick = function(evt) {
-            PageManager.showPageByName('power-overlay');
-            chrome.send('coreOptionsUserMetricsAction',
-                        ['Options_ShowPowerSettings']);
-          };
-          $('power-row').hidden = false;
-        }
         $('keyboard-settings-button').onclick = function(evt) {
           PageManager.showPageByName('keyboard-overlay');
           chrome.send('coreOptionsUserMetricsAction',

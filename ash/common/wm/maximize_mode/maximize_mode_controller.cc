@@ -114,8 +114,6 @@ MaximizeModeController::MaximizeModeController()
 #if defined(OS_CHROMEOS)
   if (is_enabled)
     chromeos::AccelerometerReader::GetInstance()->AddObserver(this);
-  chromeos::DBusThreadManager::Get()->GetPowerManagerClient()->AddObserver(
-      this);
 #endif  // OS_CHROMEOS
 }
 
@@ -128,8 +126,6 @@ MaximizeModeController::~MaximizeModeController() {
 #if defined(OS_CHROMEOS)
   if (is_enabled)
     chromeos::AccelerometerReader::GetInstance()->RemoveObserver(this);
-  chromeos::DBusThreadManager::Get()->GetPowerManagerClient()->RemoveObserver(
-      this);
 #endif  // OS_CHROMEOS
 }
 

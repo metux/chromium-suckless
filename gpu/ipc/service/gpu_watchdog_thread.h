@@ -10,7 +10,6 @@
 #include "base/memory/ref_counted.h"
 #include "base/memory/weak_ptr.h"
 #include "base/message_loop/message_loop.h"
-#include "base/power_monitor/power_observer.h"
 #include "base/threading/thread.h"
 #include "base/time/time.h"
 #include "build/build_config.h"
@@ -33,7 +32,6 @@ namespace gpu {
 // A thread that intermitently sends tasks to a group of watched message loops
 // and deliberately crashes if one of them does not respond after a timeout.
 class GPU_EXPORT GpuWatchdogThread : public base::Thread,
-                                     public base::PowerObserver,
                                      public gles2::ProgressReporter {
  public:
   ~GpuWatchdogThread() override;
@@ -41,10 +39,6 @@ class GPU_EXPORT GpuWatchdogThread : public base::Thread,
   static std::unique_ptr<GpuWatchdogThread> Create();
 
   void CheckArmed();
-
-  // Must be called after a PowerMonitor has been created. Can be called from
-  // any thread.
-  void AddPowerObserver();
 
   // gles2::ProgressReporter implementation:
   void ReportProgress() override;
@@ -79,12 +73,6 @@ class GPU_EXPORT GpuWatchdogThread : public base::Thread,
   void SetupXChangeProp();
   bool MatchXEventAtom(XEvent* event);
 #endif
-
-  void OnAddPowerObserver();
-
-  // Implement PowerObserver.
-  void OnSuspend() override;
-  void OnResume() override;
 
 #if defined(OS_WIN)
   base::ThreadTicks GetWatchedThreadTime();

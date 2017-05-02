@@ -14,8 +14,6 @@
 #include "base/message_loop/message_loop.h"
 #include "base/metrics/histogram.h"
 #include "base/path_service.h"
-#include "base/power_monitor/power_monitor.h"
-#include "base/power_monitor/power_monitor_device_source.h"
 #include "base/process/process_metrics.h"
 #include "base/system_monitor/system_monitor.h"
 #include "base/threading/thread_restrictions.h"
@@ -73,9 +71,6 @@ void WebMainLoop::MainMessageLoopStart() {
   system_monitor_.reset(new base::SystemMonitor);
 #endif
   // TODO(rohitrao): Do we need PowerMonitor on iOS, or can we get rid of it?
-  std::unique_ptr<base::PowerMonitorSource> power_monitor_source(
-      new base::PowerMonitorDeviceSource());
-  power_monitor_.reset(new base::PowerMonitor(std::move(power_monitor_source)));
   network_change_notifier_.reset(net::NetworkChangeNotifier::Create());
 
   if (parts_) {

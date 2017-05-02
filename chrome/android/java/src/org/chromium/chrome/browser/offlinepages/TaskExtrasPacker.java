@@ -17,7 +17,6 @@ public class TaskExtrasPacker {
 
     // Trigger condition tags.
     private static final String POWER_CONNECTED_TAG = "PowerConnected";
-    private static final String BATTERY_PERCENTAGE_TAG = "BatteryPercentage";
     private static final String UNMETERED_NETWORK_TAG = "UnmeteredNetwork";
 
     /** Puts current time into the input bundle. */
@@ -34,16 +33,14 @@ public class TaskExtrasPacker {
     /** Puts trigger conditions into the input bundle. */
     public static void packTriggerConditionsInBundle(Bundle bundle, TriggerConditions conditions) {
         bundle.putBoolean(POWER_CONNECTED_TAG, conditions.requirePowerConnected());
-        bundle.putInt(BATTERY_PERCENTAGE_TAG, conditions.getMinimumBatteryPercentage());
         bundle.putBoolean(UNMETERED_NETWORK_TAG, conditions.requireUnmeteredNetwork());
     }
 
     /** Extracts the trigger conditions we put into the bundle. */
     public static TriggerConditions unpackTriggerConditionsFromBundle(Bundle bundle) {
         boolean requirePowerConnected = bundle.getBoolean(POWER_CONNECTED_TAG, true);
-        int minimumBatteryPercentage = bundle.getInt(BATTERY_PERCENTAGE_TAG, 100);
         boolean requireUnmeteredNetwork = bundle.getBoolean(UNMETERED_NETWORK_TAG, true);
         return new TriggerConditions(
-                requirePowerConnected, minimumBatteryPercentage, requireUnmeteredNetwork);
+                requirePowerConnected, 0, requireUnmeteredNetwork);
     }
 }

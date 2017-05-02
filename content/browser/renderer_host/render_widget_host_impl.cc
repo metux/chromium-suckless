@@ -83,7 +83,6 @@
 #include "ui/snapshot/snapshot.h"
 
 #if defined(OS_MACOSX)
-#include "device/power_save_blocker/power_save_blocker.h"
 #include "ui/accelerated_widget_mac/window_resize_helper_mac.h"
 #endif
 
@@ -1283,19 +1282,6 @@ void RenderWidgetHostImpl::GetSnapshotFromBrowser(
     const GetSnapshotFromBrowserCallback& callback) {
   int id = next_browser_snapshot_id_++;
 
-#if defined(OS_MACOSX)
-  // MacOS version of underlying GrabViewSnapshot() blocks while
-  // display/GPU are in a power-saving mode, so make sure display
-  // does not go to sleep for the duration of reading a snapshot.
-  if (pending_browser_snapshots_.empty()) {
-    DCHECK(!power_save_blocker_);
-    power_save_blocker_.reset(new device::PowerSaveBlocker(
-        device::PowerSaveBlocker::kPowerSaveBlockPreventDisplaySleep,
-        device::PowerSaveBlocker::kReasonOther, "GetSnapshot",
-        BrowserThread::GetTaskRunnerForThread(BrowserThread::UI),
-        BrowserThread::GetTaskRunnerForThread(BrowserThread::FILE)));
-  }
-#endif
   pending_browser_snapshots_.insert(std::make_pair(id, callback));
   ui::LatencyInfo latency_info;
   latency_info.AddLatencyNumber(ui::WINDOW_SNAPSHOT_FRAME_NUMBER_COMPONENT, 0,
@@ -2165,10 +2151,6 @@ void RenderWidgetHostImpl::OnSnapshotDataReceived(int snapshot_id,
         ++it;
       }
   }
-#if defined(OS_MACOSX)
-  if (pending_browser_snapshots_.empty())
-    power_save_blocker_.reset();
-#endif
 }
 
 void RenderWidgetHostImpl::OnSnapshotDataReceivedAsync(

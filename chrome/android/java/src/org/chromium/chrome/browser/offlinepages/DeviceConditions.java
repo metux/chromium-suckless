@@ -7,16 +7,14 @@ package org.chromium.chrome.browser.offlinepages;
 /** Device network and power conditions. */
 public class DeviceConditions {
     private final boolean mPowerConnected;
-    private final int mBatteryPercentage;
     private final int mNetConnectionType;
 
     /**
      * Creates set of device network and power conditions.
      * @param powerConnected whether device is connected to power
-     * @param batteryPercentage percentage (0-100) of remaining battery power
      * @param connectionType the org.chromium.net.ConnectionType value for the network connection
      */
-    public DeviceConditions(boolean powerConnected, int batteryPercentage, int netConnectionType) {
+    public DeviceConditions(boolean powerConnected, int foo, int bar) {
         mPowerConnected = powerConnected;
         mBatteryPercentage = batteryPercentage;
         mNetConnectionType = netConnectionType;

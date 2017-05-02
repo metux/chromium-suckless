@@ -71,15 +71,6 @@ class OfflinerPolicy {
     return !(user_requested);
   }
 
-  int BatteryPercentageRequired(bool user_requested) const {
-    if (user_requested)
-      return 0;
-    // This is so low because we require the device to be plugged in and
-    // charging.  If we decide to allow non-user requested pages when not
-    // plugged in, we should raise this somewhat higher.
-    return 25;
-  }
-
   // How many seconds to keep trying new pages for, before we give up,  and
   // return to the scheduler.
   int GetBackgroundProcessingTimeBudgetSeconds() const {

@@ -20,7 +20,6 @@ import "net.mojom";
 import "notifications.mojom";
 import "obb_mounter.mojom";
 import "policy.mojom";
-import "power.mojom";
 import "print.mojom";
 import "process.mojom";
 import "storage_manager.mojom";
@@ -88,9 +87,6 @@ interface ArcBridgeHost {
 
   // Notifies Chrome that the PolicyInstance interface is ready.
   [MinVersion=7] OnPolicyInstanceReady@114(PolicyInstance instance_ptr);
-
-  // Notifies Chrome that the PowerInstance interface is ready.
-  OnPowerInstanceReady@103(PowerInstance instance_ptr);
 
   // Notifies Chrome that the PrintInstance interface is ready.
   [MinVersion=16] OnPrintInstanceReady@121(PrintInstance instance_ptr);

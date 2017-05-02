@@ -6,7 +6,6 @@
 
 #include "ash/common/wm_shell.h"
 #include "ash/shell.h"
-#include "ash/system/chromeos/power/power_event_observer.h"
 #include "base/command_line.h"
 #include "base/metrics/histogram_macros.h"
 #include "base/strings/utf_string_conversions.h"
@@ -68,7 +67,6 @@ WebUIScreenLocker::WebUIScreenLocker(ScreenLocker* screen_locker)
   ash::WmShell::Get()->AddLockStateObserver(this);
   ash::WmShell::Get()->AddShellObserver(this);
   display::Screen::GetScreen()->AddObserver(this);
-  DBusThreadManager::Get()->GetPowerManagerClient()->AddObserver(this);
 
   if (keyboard::KeyboardController::GetInstance()) {
     keyboard::KeyboardController::GetInstance()->AddObserver(this);
@@ -162,7 +160,6 @@ void WebUIScreenLocker::ResetAndFocusUserPod() {
 }
 
 WebUIScreenLocker::~WebUIScreenLocker() {
-  DBusThreadManager::Get()->GetPowerManagerClient()->RemoveObserver(this);
   display::Screen::GetScreen()->RemoveObserver(this);
   ash::WmShell::Get()->RemoveLockStateObserver(this);
   ash::WmShell::Get()->RemoveShellObserver(this);
@@ -201,8 +198,6 @@ void WebUIScreenLocker::OnLockBackgroundDisplayed() {
 
 void WebUIScreenLocker::OnHeaderBarVisible() {
   DCHECK(ash::Shell::HasInstance());
-
-  ash::Shell::GetInstance()->power_event_observer()->OnLockAnimationsComplete();
 }
 
 OobeUI* WebUIScreenLocker::GetOobeUI() {
@@ -316,30 +311,6 @@ void WebUIScreenLocker::OnWidgetDestroying(views::Widget* widget) {
 
 ////////////////////////////////////////////////////////////////////////////////
 // PowerManagerClient::Observer:
-
-void WebUIScreenLocker::LidEventReceived(bool open,
-                                         const base::TimeTicks& time) {
-  if (open) {
-    content::BrowserThread::PostTask(
-        content::BrowserThread::UI, FROM_HERE,
-        base::Bind(&WebUIScreenLocker::FocusUserPod,
-                   weak_factory_.GetWeakPtr()));
-  }
-}
-
-void WebUIScreenLocker::SuspendImminent() {
-  content::BrowserThread::PostTask(
-      content::BrowserThread::UI, FROM_HERE,
-      base::Bind(&WebUIScreenLocker::ResetAndFocusUserPod,
-                 weak_factory_.GetWeakPtr()));
-}
-
-void WebUIScreenLocker::SuspendDone(const base::TimeDelta& sleep_duration) {
-  content::BrowserThread::PostTask(
-      content::BrowserThread::UI,
-      FROM_HERE,
-      base::Bind(&WebUIScreenLocker::FocusUserPod, weak_factory_.GetWeakPtr()));
-}
 
 void WebUIScreenLocker::RenderProcessGone(base::TerminationStatus status) {
   if (browser_shutdown::GetShutdownType() == browser_shutdown::NOT_VALID &&

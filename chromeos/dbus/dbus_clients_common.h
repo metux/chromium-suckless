@@ -21,7 +21,6 @@ class CryptohomeClient;
 class GsmSMSClient;
 class ModemMessagingClient;
 class PermissionBrokerClient;
-class PowerManagerClient;
 class SessionManagerClient;
 class ShillDeviceClient;
 class ShillIPConfigClient;
@@ -62,7 +61,6 @@ class CHROMEOS_EXPORT DBusClientsCommon {
   std::unique_ptr<PermissionBrokerClient> permission_broker_client_;
   std::unique_ptr<SMSClient> sms_client_;
   std::unique_ptr<SystemClockClient> system_clock_client_;
-  std::unique_ptr<PowerManagerClient> power_manager_client_;
   std::unique_ptr<SessionManagerClient> session_manager_client_;
   std::unique_ptr<UpdateEngineClient> update_engine_client_;
 

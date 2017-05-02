@@ -10,8 +10,6 @@
 #include "base/command_line.h"
 #include "base/logging.h"
 #include "base/message_loop/message_loop.h"
-#include "base/power_monitor/power_monitor.h"
-#include "base/power_monitor/power_monitor_device_source.h"
 #include "base/process/launch.h"
 #include "base/process/memory.h"
 #include "base/strings/string_util.h"
@@ -47,9 +45,6 @@ int NaClBrokerMain(const content::MainFunctionParams& parameters) {
   DCHECK(platform_channel.is_valid());
   mojo::edk::SetParentPipeHandle(std::move(platform_channel));
 
-  std::unique_ptr<base::PowerMonitorSource> power_monitor_source(
-      new base::PowerMonitorDeviceSource());
-  base::PowerMonitor power_monitor(std::move(power_monitor_source));
   base::HighResolutionTimerManager hi_res_timer_manager;
 
   NaClBrokerListener listener;

@@ -116,7 +116,6 @@ class ArcBridgeService {
     return &obb_mounter_;
   }
   InstanceHolder<mojom::PolicyInstance>* policy() { return &policy_; }
-  InstanceHolder<mojom::PowerInstance>* power() { return &power_; }
   InstanceHolder<mojom::PrintInstance>* print() { return &print_; }
   InstanceHolder<mojom::ProcessInstance>* process() { return &process_; }
   InstanceHolder<mojom::StorageManagerInstance>* storage_manager() {
@@ -188,7 +187,6 @@ class ArcBridgeService {
   InstanceHolder<mojom::NotificationsInstance> notifications_;
   InstanceHolder<mojom::ObbMounterInstance> obb_mounter_;
   InstanceHolder<mojom::PolicyInstance> policy_;
-  InstanceHolder<mojom::PowerInstance> power_;
   InstanceHolder<mojom::PrintInstance> print_;
   InstanceHolder<mojom::ProcessInstance> process_;
   InstanceHolder<mojom::StorageManagerInstance> storage_manager_;

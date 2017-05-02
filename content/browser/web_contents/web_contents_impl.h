@@ -67,7 +67,6 @@ class LoaderIOThreadNotifier;
 class ManifestManagerHost;
 class MediaWebContentsObserver;
 class PluginContentOriginWhitelist;
-class PowerSaveBlocker;
 class RenderViewHost;
 class RenderViewHostDelegateView;
 class RenderWidgetHostImpl;

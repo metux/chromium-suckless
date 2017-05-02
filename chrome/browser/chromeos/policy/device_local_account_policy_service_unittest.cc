@@ -807,12 +807,6 @@ void DeviceLocalAccountPolicyProviderTest::SetUp() {
 
   // Values implicitly enforced for public accounts.
   expected_policy_map_.Set(
-      key::kLidCloseAction, POLICY_LEVEL_MANDATORY, POLICY_SCOPE_MACHINE,
-      POLICY_SOURCE_PUBLIC_SESSION_OVERRIDE,
-      base::MakeUnique<base::FundamentalValue>(
-          chromeos::PowerPolicyController::ACTION_STOP_SESSION),
-      nullptr);
-  expected_policy_map_.Set(
       key::kShelfAutoHideBehavior, POLICY_LEVEL_MANDATORY, POLICY_SCOPE_MACHINE,
       POLICY_SOURCE_PUBLIC_SESSION_OVERRIDE,
       base::MakeUnique<base::StringValue>("Never"), nullptr);

@@ -34,7 +34,6 @@
 #include "ash/shell.h"
 #include "ash/touch/touch_hud_debug.h"
 #include "ash/utility/screenshot_controller.h"
-#include "ash/wm/power_button_controller.h"
 #include "ash/wm/window_state_aura.h"
 #include "ash/wm/window_util.h"
 #include "base/metrics/histogram_macros.h"
@@ -447,21 +446,6 @@ void AcceleratorControllerDelegateAura::PerformAction(
       break;
     case LOCK_PRESSED:
     case LOCK_RELEASED:
-      Shell::GetInstance()->power_button_controller()->OnLockButtonEvent(
-          action == LOCK_PRESSED, base::TimeTicks());
-      break;
-    case POWER_PRESSED:  // fallthrough
-    case POWER_RELEASED:
-      if (!base::SysInfo::IsRunningOnChromeOS()) {
-        // There is no powerd, the Chrome OS power manager, in linux desktop,
-        // so call the PowerButtonController here.
-        Shell::GetInstance()->power_button_controller()->OnPowerButtonEvent(
-            action == POWER_PRESSED, base::TimeTicks());
-      }
-      // We don't do anything with these at present on the device,
-      // (power button events are reported to us from powerm via
-      // D-BUS), but we consume them to prevent them from getting
-      // passed to apps -- see http://crbug.com/146609.
       break;
     case SWAP_PRIMARY_DISPLAY:
       HandleSwapPrimaryDisplay();

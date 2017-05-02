@@ -19,10 +19,6 @@
 #include "content/public/browser/download_save_info.h"
 #include "content/public/browser/download_url_parameters.h"
 
-namespace device {
-class PowerSaveBlocker;
-}  // namespace device
-
 namespace net {
 class HttpResponseHeaders;
 class URLRequest;
@@ -139,11 +135,6 @@ class CONTENT_EXPORT DownloadRequestCore
   // Data flow
   scoped_refptr<net::IOBuffer> read_buffer_;    // From URLRequest.
   std::unique_ptr<ByteStreamWriter> stream_writer_;  // To rest of system.
-
-  // Keeps the system from sleeping while this is alive. If the
-  // system enters power saving mode while a request is alive, it can cause the
-  // request to fail and the associated download will be interrupted.
-  std::unique_ptr<device::PowerSaveBlocker> power_save_blocker_;
 
   // The following are used to collect stats.
   base::TimeTicks download_start_time_;

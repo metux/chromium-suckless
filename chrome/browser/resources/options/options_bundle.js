@@ -43,7 +43,6 @@
 <include src="chromeos/storage_clear_drive_cache_overlay.js">
 <include src="chromeos/storage_manager.js">
 <include src="chromeos/third_party_ime_confirm_overlay.js">
-<include src="chromeos/power_overlay.js">
 var AccountsOptions = options.AccountsOptions;
 var ChangePictureOptions = options.ChangePictureOptions;
 var DetailsInternetPage = options.internet.DetailsInternetPage;

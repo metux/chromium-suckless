@@ -1449,12 +1449,6 @@ Press any key to continue exploring.
   <message name="IDS_NETWORK_ENROLLMENT_HANDLER_BUTTON" desc="Text of the accept button for generating a new network certificate.">
     Get new certificate
   </message>
-  <message name="IDS_LOW_BATTERY_TITLE" desc="Title for low battery notification">
-    Battery Low
-  </message>
-  <message name="IDS_LOW_BATTERY_MESSAGE" desc="Message for low battery notification">
-    Less than <ph name="MINUTES">$1<ex>15 mins left</ex></ph>.
-  </message>
   <message name="IDS_UPDATE_TITLE" desc="Title for update notification">
     System Update
   </message>
@@ -2293,18 +2287,6 @@ Press any key to continue exploring.
   <message name="IDS_OPTIONS_SETTINGS_SECTION_TITLE_LANGUAGE">
     Language
   </message>
-  <message name="IDS_OPTIONS_DEVICE_GROUP_BATTERY_STATUS_LABEL" desc="The prefix to the battery status in the device section.">
-    Battery - <ph name="status">$1<ex>56% - 2:03 left</ex></ph>
-  </message>
-  <message name="IDS_OPTIONS_BATTERY_STATUS" desc="The battery status in the device section and 'Power' overlay while the battery is discharging, showing the battery power as a percentage and the time left until the battery is empty.">
-    <ph name="percentage">$1<ex>56</ex></ph>% - <ph name="time">$2<ex>2 hours and 20 minutes</ex></ph> left
-  </message>
-  <message name="IDS_OPTIONS_BATTERY_STATUS_CHARGING" desc="The battery status in the device section and 'Power' overlay while the battery is charging, showing the battery power as a percentage and the time left until the battery is full.">
-    <ph name="percentage">$1<ex>56</ex></ph>% - <ph name="time">$2<ex>2 hours and 20 minutes</ex></ph> until full
-  </message>
-  <message name="IDS_OPTIONS_BATTERY_STATUS_SHORT" desc="The battery status in the device section and 'Power' overlay when the time left cannot be shown.">
-    <ph name="percentage">$1<ex>56</ex></ph>%
-  </message>
   <message name="IDS_OPTIONS_DEVICE_GROUP_POWER_SETTINGS_BUTTON" desc="Text on button to take user to the 'Power' overlay.">
     Manage power source...
   </message>
@@ -2317,17 +2299,11 @@ Press any key to continue exploring.
   <message name="IDS_OPTIONS_POWER_SOURCE_LABEL" desc="The label for the power source dropdown in the Power overlay.">
     Power source:
   </message>
-  <message name="IDS_OPTIONS_POWER_SOURCE_BATTERY" desc="The text referring to the battery as the power source.">
-    Battery
-  </message>
   <message name="IDS_OPTIONS_POWER_SOURCE_AC_ADAPTER" desc="The text referring to a dedicated charger like an AC adapter as the power source.">
     AC adapter
   </message>
   <message name="IDS_OPTIONS_POWER_SOURCE_LOW_POWER_CHARGER" desc="The text referring to a low-power charger like a USB charger as the power source.">
     Low-power charger
-  </message>
-  <message name="IDS_OPTIONS_BATTERY_STATUS_LABEL" desc="The label for the battery information in the 'Power' overlay.">
-    Battery:
   </message>
   <message name="IDS_OPTIONS_SETTINGS_SET_TIME_BUTTON" desc="In the settings tab, the prompt on the button to open a dialog to set date and time.">
     Set date and time
@@ -3750,34 +3726,6 @@ Press any key to continue exploring.
   </message>
   <message name="IDS_STATUSBAR_NO_NETWORKS_MESSAGE" desc="No networks are available">
     No networks are available
-  </message>
-  <message name="IDS_STATUSBAR_BATTERY_CHARGING_PERCENTAGE" desc="In the power menu button, this shows what percentage of battery is left when power supply is connected.">
-    Charging battery: <ph name="PRECENTAGE">$1<ex>100</ex></ph>%
-  </message>
-  <message name="IDS_STATUSBAR_BATTERY_USING_PERCENTAGE" desc="In the power menu button, this shows what percentage of battery is left when power supply is not connected.">
-    Using battery: <ph name="PRECENTAGE">$1<ex>100</ex></ph>%
-  </message>
-  <message name="IDS_STATUSBAR_NO_BATTERY" desc="In the power menu button, menu item label shown when there is no battery installed in the device.">
-    No battery
-  </message>
-  <message name="IDS_STATUSBAR_BATTERY_TIME_UNTIL_FULL" desc="In the power menu button, this shows how much time until fully charged.">
-Charging
-<ph name="HOUR">$1<ex>2</ex></ph>:<ph name="MINUTE">$2<ex>30</ex></ph> until full
-  </message>
-  <message name="IDS_STATUSBAR_BATTERY_TIME_UNTIL_EMPTY" desc="In the power menu button, this shows how much time until empty.">
-Battery
-<ph name="HOUR">$1<ex>2</ex></ph>:<ph name="MINUTE">$2<ex>30</ex></ph> remaining
-  </message>
-  <message name="IDS_STATUSBAR_BATTERY_CALCULATING_TIME_UNTIL_FULL" desc="In the power menu button, this is the message the shows when we are calculating time until full.">
-Charging
-Calculating time until full
-  </message>
-  <message name="IDS_STATUSBAR_BATTERY_CALCULATING_TIME_UNTIL_EMPTY" desc="In the power menu button, this is the message the shows when we are calculating time until empty.">
-Battery
-Calculating remaining time
-  </message>
-  <message name="IDS_STATUSBAR_BATTERY_IS_CHARGED" desc="In the power menu button, the battery is charged message.">
-Battery full
   </message>
   <message name="IDS_STATUSBAR_NETWORK_CONNECTING_TOOLTIP" desc="Tooltip for the network menu status bar icon when connecting to a network.">
     Connecting to <ph name="NAME">$1<ex>GoogleGuest</ex></ph>
@@ -5564,7 +5512,7 @@ All users must sign out to continue.
     Hassle-free goodness.
   </message>
   <message name="IDS_FIRST_RUN_TRAY_STEP_TEXT" desc="Text on the first-run tutorial bubble pointing to system tray bubble.">
-    The status tray shows you the current state of your network, battery, and more.
+    The status tray shows you the current state of your network, and more.
   </message>
   <message name="IDS_FIRST_RUN_HELP_STEP_HEADER" desc="Header of the first-run tutorial bubble pointing to help button in system tray.">
     Have fun! We're here for you.
@@ -5683,15 +5631,6 @@ All users must sign out to continue.
   </message>
   <message name="IDS_ABOUT_POWER_RELOAD_BUTTON" desc="Text on the 'Reload' buttons of the about:power page ">
     Reload
-  </message>
-  <message name="IDS_ABOUT_POWER_BATTERY_CHARGE_SECTION_TITLE" desc="Title for the battery charge related plots on the about:power page">
-    Battery Charge
-  </message>
-  <message name="IDS_ABOUT_POWER_BATTERY_CHARGE_PERCENTAGE_HEADER" desc="Header of the battery charge plot on the about:power page">
-    Battery Charge Percentage
-  </message>
-  <message name="IDS_ABOUT_POWER_BATTERY_DISCHARGE_RATE_HEADER" desc="Header of the battery discharge rate plot on the about:power page">
-    Battery Discharge Rate in Watts (Negative value means battery is charging)
   </message>
   <message name="IDS_ABOUT_POWER_DISCHARGE_RATE_LEGEND_TEXT" desc="Text to be displayed for the discharge rate legend entry of the discharge rate plot on the about:power page">
     Discharge Rate in Watts
@@ -6201,7 +6140,7 @@ All users must sign out to continue.
     Automatically back up and restore Play app data to Google Drive. <ph name="BEGIN_LINK1">&lt;a href="#" id="learn-more-link-backup-restore"&gt;</ph>Learn More<ph name="END_LINK1">&lt;/a&gt;<ex>&lt;/a&gt;</ex></ph>
   </message>
   <message name="IDS_ARC_OPT_IN_LOCATION_SETTING" desc="Message in the opt-in dialog for Android apps for the user to turn on Google location services">
-    Let Google’s location service help apps find your location quickly and accurately, which can reduce battery consumption. Anonymous location data will be sent to Google, even when no apps are running. <ph name="BEGIN_LINK1">&lt;a href="#" id="learn-more-link-location-service"&gt;</ph>Learn More<ph name="END_LINK1">&lt;/a&gt;<ex>&lt;/a&gt;</ex></ph>
+    Let Google’s location service help apps find your location quickly and accurately, which can reduce power consumption. Anonymous location data will be sent to Google, even when no apps are running. <ph name="BEGIN_LINK1">&lt;a href="#" id="learn-more-link-location-service"&gt;</ph>Learn More<ph name="END_LINK1">&lt;/a&gt;<ex>&lt;/a&gt;</ex></ph>
   </message>
   <message name="IDS_ARC_OPT_IN_SCANNING_SETTING" desc="Message in the opt-in dialog for Android apps for the user to enable wifi and bluetooth scanning to improve location">
     Improve location accuracy by allowing apps and services to scan for Wi-Fi networks and Bluetooth devices.

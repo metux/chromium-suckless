@@ -516,7 +516,6 @@ DOM_KEY_MAP_DECLARATION {
   DOM_KEY_MAP("PlaySpeedReset",       PLAY_SPEED_RESET,         0x0D3B),
   DOM_KEY_MAP("PlaySpeedUp",          PLAY_SPEED_UP,            0x0D3C),
   DOM_KEY_MAP("RandomToggle",         RANDOM_TOGGLE,            0x0D3D),
-  DOM_KEY_MAP("RcLowBattery",         RC_LOW_BATTERY,           0x0D3E),
   DOM_KEY_MAP("RecordSpeedNext",      RECORD_SPEED_NEXT,        0x0D3F),
   DOM_KEY_MAP("RfBypass",             RF_BYPASS,                0x0D40),
   DOM_KEY_MAP("ScanChannelsToggle",   SCAN_CHANNELS_TOGGLE,     0x0D41),

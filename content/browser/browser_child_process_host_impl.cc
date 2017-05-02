@@ -143,7 +143,6 @@ BrowserChildProcessHostImpl::BrowserChildProcessHostImpl(
     : data_(process_type),
       delegate_(delegate),
       child_token_(mojo::edk::GenerateRandomToken()),
-      power_monitor_message_broadcaster_(this),
       is_channel_connected_(false),
       notify_child_disconnected_(false),
       weak_factory_(this) {
@@ -170,8 +169,6 @@ BrowserChildProcessHostImpl::BrowserChildProcessHostImpl(
 
   g_child_process_list.Get().push_back(this);
   GetContentClient()->browser()->BrowserChildProcessHostCreated(this);
-
-  power_monitor_message_broadcaster_.Init();
 
   if (!service_name.empty()) {
     DCHECK_CURRENTLY_ON(BrowserThread::IO);

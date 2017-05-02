@@ -45,21 +45,13 @@ public class BackgroundOfflinerTask {
                 TaskExtrasPacker.unpackTriggerConditionsFromBundle(bundle);
         BackgroundScheduler.backupSchedule(context, previousTriggerConditions, DEFER_START_SECONDS);
 
-        DeviceConditions currentConditions = OfflinePageUtils.getDeviceConditions(context);
-        if (!currentConditions.isPowerConnected()
-                && currentConditions.getBatteryPercentage()
-                        < previousTriggerConditions.getMinimumBatteryPercentage()) {
-            Log.d(TAG, "Battery percentage is lower than minimum to start processing");
-            return false;
-        }
-
         if (SysUtils.isLowEndDevice() && ApplicationStatus.hasVisibleActivities()) {
             Log.d(TAG, "Application visible on low-end device so deferring background processing");
             return false;
         }
 
         // Now initiate processing.
-        processBackgroundRequests(bundle, currentConditions, waiter);
+        processBackgroundRequests(bundle, waiter);
 
         // Gather UMA data to measure how often the user's machine is amenable to background
         // loading when we wake to do a task.
@@ -76,15 +68,13 @@ public class BackgroundOfflinerTask {
     // startBackgroundRequests instead of this method.
     @VisibleForTesting
     public void processBackgroundRequests(
-            Bundle bundle, DeviceConditions deviceConditions,
+            Bundle bundle,
             final ChromeBackgroundServiceWaiter waiter) {
         // TODO(petewil): Nothing is holding the Wake Lock.  We need some solution to
         // keep hold of it.  Options discussed so far are having a fresh set of functions
         // to grab and release a countdown latch, or holding onto the wake lock ourselves,
         // or grabbing the wake lock and then starting chrome and running startProcessing
         // on the UI thread.
-
-        // TODO(petewil): Decode the TriggerConditions from the bundle.
 
         Callback<Boolean> callback = new Callback<Boolean>() {
             /**
@@ -100,7 +90,7 @@ public class BackgroundOfflinerTask {
         };
 
         // Pass the activation on to the bridge to the C++ RequestCoordinator.
-        if (!mBridge.startProcessing(deviceConditions, callback)) {
+        if (!mBridge.startProcessing(callback)) {
             // Processing not started currently. Let callback know.
             callback.onResult(false);
         }

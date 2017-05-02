@@ -6,7 +6,6 @@
 #include <string>
 #include <vector>
 
-#include "chromeos/dbus/fake_power_manager_client.h"
 #include "chromeos/disks/disk_mount_manager.h"
 #include "chromeos/disks/mock_disk_mount_manager.h"
 #include "chromeos/disks/suspend_unmount_manager.h"
@@ -52,7 +51,6 @@ class SuspendUnmountManagerTest : public testing::Test {
 
  protected:
   FakeDiskMountManager disk_mount_manager_;
-  FakePowerManagerClient fake_power_client_;
   SuspendUnmountManager suspend_unmount_manager_;
 };
 

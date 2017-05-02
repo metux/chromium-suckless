@@ -16,7 +16,6 @@
 #include "base/compiler_specific.h"
 #include "base/logging.h"
 #include "base/macros.h"
-#include "base/power_monitor/power_monitor.h"
 #include "base/profiler/scoped_tracker.h"
 #include "base/rand_util.h"
 #include "base/strings/string_number_conversions.h"
@@ -450,12 +449,6 @@ MediaStreamManager::MediaStreamManager(media::AudioManager* audio_manager)
         base::Bind(&MediaStreamManager::InitializeDeviceManagersOnIOThread,
                    base::Unretained(this)));
   }
-
-  base::PowerMonitor* power_monitor = base::PowerMonitor::Get();
-  // BrowserMainLoop always creates the PowerMonitor instance before creating
-  // MediaStreamManager, but power_monitor may be NULL in unit tests.
-  if (power_monitor)
-    power_monitor->AddObserver(this);
 }
 
 MediaStreamManager::~MediaStreamManager() {
@@ -464,12 +457,6 @@ MediaStreamManager::~MediaStreamManager() {
   DCHECK(requests_.empty());
   DCHECK(!device_task_runner_.get());
   DCHECK(device_change_subscribers_.empty());
-
-  base::PowerMonitor* power_monitor = base::PowerMonitor::Get();
-  // The PowerMonitor instance owned by BrowserMainLoops always outlives the
-  // MediaStreamManager, but it may be NULL in unit tests.
-  if (power_monitor)
-    power_monitor->RemoveObserver(this);
 }
 
 VideoCaptureManager* MediaStreamManager::video_capture_manager() {

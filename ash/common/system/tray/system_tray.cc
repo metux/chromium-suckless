@@ -56,8 +56,6 @@
 #include "ash/common/system/chromeos/network/tray_network.h"
 #include "ash/common/system/chromeos/network/tray_sms.h"
 #include "ash/common/system/chromeos/network/tray_vpn.h"
-#include "ash/common/system/chromeos/power/power_status.h"
-#include "ash/common/system/chromeos/power/tray_power.h"
 #include "ash/common/system/chromeos/screen_security/screen_capture_tray_item.h"
 #include "ash/common/system/chromeos/screen_security/screen_share_tray_item.h"
 #include "ash/common/system/chromeos/session/tray_session_length_limit.h"
@@ -236,7 +234,6 @@ void SystemTray::CreateItems(SystemTrayDelegate* delegate) {
   AddTrayItem(new TrayIME(this));
   AddTrayItem(tray_accessibility_);
   AddTrayItem(new TrayTracing(this));
-  AddTrayItem(new TrayPower(this, message_center::MessageCenter::Get()));
   AddTrayItem(new TrayNetwork(this));
   AddTrayItem(new TrayVPN(this));
   AddTrayItem(new TraySms(this));
@@ -462,9 +459,6 @@ void SystemTray::DestroyNotificationBubble() {
 base::string16 SystemTray::GetAccessibleNameForTray() {
   base::string16 time = GetAccessibleTimeString(base::Time::Now());
   base::string16 battery = base::ASCIIToUTF16("");
-#if defined(OS_CHROMEOS)
-  battery = PowerStatus::Get()->GetAccessibleNameString(false);
-#endif
   return l10n_util::GetStringFUTF16(IDS_ASH_STATUS_TRAY_ACCESSIBLE_DESCRIPTION,
                                     time, battery);
 }

@@ -535,10 +535,6 @@ float AnalyzeOneSegment(const base::FilePath& ref_segment,
                         int segment_number) {
   media::AudioParameters ref_parameters;
   media::AudioParameters actual_parameters;
-  float ref_energy =
-      test::ComputeAudioEnergyForWavFile(ref_segment, &ref_parameters);
-  float actual_energy =
-      test::ComputeAudioEnergyForWavFile(actual_segment, &actual_parameters);
 
   base::TimeDelta difference_in_length = ref_parameters.GetBufferDuration() -
                                          actual_parameters.GetBufferDuration();
@@ -549,7 +545,7 @@ float AnalyzeOneSegment(const base::FilePath& ref_segment,
       << "in length for segment " << segment_number << "; we're likely "
       << "comparing unrelated segments or silence splitting is busted.";
 
-  return actual_energy - ref_energy;
+  return 0;
 }
 
 std::string MakeTraceName(const base::FilePath& ref_filename,

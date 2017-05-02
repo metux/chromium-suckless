@@ -345,51 +345,6 @@ Press Shift + Alt to switch.
     Your input method has changed to <ph name="INPUT_METHOD_ID">$1<ex>EN</ex></ph>*(<ph name="BEGIN_LINK">&lt;a target="_blank" href="$2"&gt;</ph>3rd party<ph name="END_LINK">&lt;/a&gt;<ex>&lt;/a&gt;</ex></ph>).
 Press Shift + Alt to switch.
   </message>
-  <message name="IDS_ASH_STATUS_TRAY_BATTERY_FULL" desc="The label in the tray dialog to indicate that the battery is full.">
-    Battery full
-  </message>
-  <message name="IDS_ASH_STATUS_TRAY_BATTERY_PERCENT" desc="The label in the tray dialog to show the remaining battery power as a percent.">
-    <ph name="percentage">{0,number,percent}<ex>56%</ex></ph> remaining
-  </message>
-  <message name="IDS_ASH_STATUS_TRAY_BATTERY_TIME_UNTIL_FULL" desc="The label in the tray dialog to show a time estimate until the battery is fully charged.">
-    <ph name="time">$1<ex>2h 53m</ex></ph> until full
-  </message>
-  <message name="IDS_ASH_STATUS_TRAY_BATTERY_CALCULATING" desc="The label in the tray dialog indicating that the time to charge or discharge the battery is being calculated.">
-    Calculating...
-  </message>
-  <message name="IDS_ASH_STATUS_TRAY_BATTERY_TIME_LEFT_SHORT" desc="The label in the tray bubble settings row to show a time estimate until the battery is empty.">
-    <ph name="time">$1<ex>2:53</ex></ph> left
-  </message>
-  <message name="IDS_ASH_STATUS_TRAY_BATTERY_TIME_UNTIL_FULL_SHORT" desc="The label in the tray bubble settings row to show a time estimate until the battery is fully charged.">
-    <ph name="time">$1<ex>2:53</ex></ph> until full
-  </message>
-  <message name="IDS_ASH_STATUS_TRAY_BATTERY_CHARGING_UNRELIABLE" desc="The label in the tray dialog to indicate that battery charging is unreliable.">
-    Low-power charger
-  </message>
-  <message name="IDS_ASH_STATUS_TRAY_BATTERY_FULL_CHARGE_ACCESSIBLE" desc="The message used by accessibility to show battery is fully charged.">
-    Battery is full.
-  </message>
-  <message name="IDS_ASH_STATUS_TRAY_BATTERY_PERCENT_ACCESSIBLE" desc="The message used by accessibility to show battery is discharging.">
-    Battery is <ph name="percentage">$1<ex>56</ex></ph>% full.
-  </message>
-  <message name="IDS_ASH_STATUS_TRAY_BATTERY_PERCENT_CHARGING_ACCESSIBLE" desc="The message used by accessibility to show battery is being charged.">
-    Battery is <ph name="percentage">$1<ex>56</ex></ph>% full and charging.
-  </message>
-  <message name="IDS_ASH_STATUS_TRAY_BATTERY_CALCULATING_ACCESSIBLE" desc="The message used by accessibility to show battery is calculating its time in short message.">
-    Calculating battery time.
-  </message>
-  <message name= "IDS_ASH_STATUS_TRAY_BATTERY_TIME_LEFT_ACCESSIBLE" desc="The message used by accessibility to read remaining battery time until empty.">
-    Time left until battery is empty, <ph name="time_left">$1<ex>1 hour and 15 minutes</ex></ph>
-  </message>
-  <message name= "IDS_ASH_STATUS_TRAY_BATTERY_TIME_UNTIL_FULL_ACCESSIBLE" desc="The message used by accessibility to read the estimated time until full.">
-    Time remaining until battery is fully charged, <ph name="time_remaining">$1<ex>1 hour and 15 minutes</ex></ph>
-  </message>
-  <message name = "IDS_ASH_STATUS_TRAY_BATTERY_TIME_ACCESSIBLE" desc="The message used by accessibility to read battery time, which includes both non-zero hours and minutes.">
-    <ph name="hour">$1<ex> 1 hour</ex></ph> and <ph name="minute">$2<ex>15 minutes</ex></ph>
-  </message>
-  <message name="IDS_ASH_STATUS_TRAY_BATTERY_CHARGING_UNRELIABLE_ACCESSIBLE" desc="The message used by accessibility to indicate that battery charging is unreliable.">
-    Plugged in to a low-power charger. Battery charging may not be reliable.
-  </message>
   <message name="IDS_ASH_STATUS_TRAY_BUBBLE_SESSION_LENGTH_LIMIT" desc="Tray bubble item shown to inform the user that the session length is limited.">
     Session ends in <ph name="session_time_remaining">$1<ex>4 minutes 23 seconds</ex></ph>.
   </message>
@@ -434,9 +389,6 @@ Press Shift + Alt to switch.
   </message>
   <message name="IDS_ASH_DISPLAY_RESOLUTION_TIMEOUT" desc="A message for to notify the user about the timeout of display resolution change.">
     Reverting to old resolution in <ph name="TIMEOUT_SECONDS">$1</ph>
-  </message>
-  <message name="IDS_ASH_LOW_PERIPHERAL_BATTERY_NOTIFICATION_TEXT" desc="The text of the notification when a peripheral device is in low battery condition.">
-    Battery low (<ph name="percentage">$1<ex>56</ex></ph>%)
   </message>
   <message name="IDS_ASH_SCREENSHOT_NOTIFICATION_TITLE_SUCCESS" desc="The title of the notification when a screenshot was taken.">
     Screenshot taken

@@ -7,21 +7,17 @@
 
 #include "base/compiler_specific.h"
 #include "base/macros.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "chromeos/dbus/session_manager_client.h"
 
 namespace chromeos {
 
 // Dispatches extension events in response to system events.
-class ExtensionSystemEventObserver : public PowerManagerClient::Observer,
+class ExtensionSystemEventObserver : 
                                      public SessionManagerClient::Observer {
  public:
   // This class registers/unregisters itself as an observer in ctor/dtor.
   ExtensionSystemEventObserver();
   ~ExtensionSystemEventObserver() override;
-
-  // PowerManagerClient::Observer overrides:
-  void SuspendDone(const base::TimeDelta& sleep_duration) override;
 
   // SessionManagerClient::Observer override.
   void ScreenIsUnlocked() override;

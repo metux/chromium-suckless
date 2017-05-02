@@ -62,7 +62,6 @@
 #include "remoting/host/host_event_logger.h"
 #include "remoting/host/host_exit_codes.h"
 #include "remoting/host/host_main.h"
-#include "remoting/host/host_power_save_blocker.h"
 #include "remoting/host/host_status_logger.h"
 #include "remoting/host/input_injector.h"
 #include "remoting/host/ipc_desktop_environment.h"
@@ -403,7 +402,6 @@ class HostProcess : public ConfigWatcher::Delegate,
       host_change_notification_listener_;
   std::unique_ptr<HostStatusLogger> host_status_logger_;
   std::unique_ptr<HostEventLogger> host_event_logger_;
-  std::unique_ptr<HostPowerSaveBlocker> power_save_blocker_;
 
   std::unique_ptr<ChromotingHost> host_;
 
@@ -1478,11 +1476,6 @@ void HostProcess::StartHost() {
       host_->AsWeakPtr(), ServerLogEntry::ME2ME,
       signal_strategy_.get(), directory_bot_jid_));
 
-  power_save_blocker_.reset(new HostPowerSaveBlocker(
-      host_->AsWeakPtr(),
-      context_->ui_task_runner(),
-      context_->file_task_runner()));
-
   // Set up reporting the host status notifications.
 #if defined(REMOTING_MULTI_PROCESS)
   host_event_logger_.reset(
@@ -1546,7 +1539,6 @@ void HostProcess::GoOffline(const std::string& host_offline_reason) {
   host_.reset();
   host_event_logger_.reset();
   host_status_logger_.reset();
-  power_save_blocker_.reset();
   host_change_notification_listener_.reset();
 
   // Before shutting down HostSignalingManager, send the |host_offline_reason|

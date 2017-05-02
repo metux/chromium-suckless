@@ -51,17 +51,9 @@ ProcessPowerCollector::PerProcessData::~PerProcessData() {
 
 ProcessPowerCollector::ProcessPowerCollector()
     : scale_factor_(1.0) {
-#if defined(OS_CHROMEOS)
-  chromeos::DBusThreadManager::Get()->GetPowerManagerClient()->AddObserver(
-      this);
-#endif
 }
 
 ProcessPowerCollector::~ProcessPowerCollector() {
-#if defined(OS_CHROMEOS)
-  chromeos::DBusThreadManager::Get()->GetPowerManagerClient()->RemoveObserver(
-      this);
-#endif
 }
 
 #if defined(OS_CHROMEOS)

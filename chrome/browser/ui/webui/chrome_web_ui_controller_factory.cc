@@ -138,7 +138,6 @@
 #include "chrome/browser/ui/webui/chromeos/login/oobe_ui.h"
 #include "chrome/browser/ui/webui/chromeos/mobile_setup_ui.h"
 #include "chrome/browser/ui/webui/chromeos/network_ui.h"
-#include "chrome/browser/ui/webui/chromeos/power_ui.h"
 #include "chrome/browser/ui/webui/chromeos/proxy_settings_ui.h"
 #include "chrome/browser/ui/webui/chromeos/set_time_ui.h"
 #include "chrome/browser/ui/webui/chromeos/sim_unlock_ui.h"
@@ -497,8 +496,6 @@ WebUIFactoryFunction GetWebUIFactoryFunction(WebUI* web_ui,
     return &NewWebUI<chromeos::NetworkUI>;
   if (url.host() == chrome::kChromeUIOobeHost)
     return &NewWebUI<chromeos::OobeUI>;
-  if (url.host() == chrome::kChromeUIPowerHost)
-    return &NewWebUI<chromeos::PowerUI>;
   if (url.host() == proximity_auth::kChromeUIProximityAuthHost)
     return &NewWebUI<proximity_auth::ProximityAuthUI>;
   if (url.host() == chrome::kChromeUIProxySettingsHost)

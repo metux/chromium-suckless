@@ -101,12 +101,6 @@ message PowerManagementPolicy {
   // activity is observed for |idle_ms|.
   optional bool use_audio_activity = 5;
 
-  // Should video activity be honored?  If true, video activity will
-  // prevent |idle_action| from being performed and the screen from being
-  // automatically dimmed, turned off, or locked.  All these timeouts will
-  // be reset once the video has stopped.
-  optional bool use_video_activity = 6;
-
   // Backlight brightness in the range [0.0, 100.0] to use when on AC or battery
   // power. When a message containing these fields is received, the backlight is
   // set to the requested brightness. The updated brightness persists until the

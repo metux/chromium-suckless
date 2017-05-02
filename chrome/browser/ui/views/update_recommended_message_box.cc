@@ -15,7 +15,6 @@
 
 #if defined(OS_CHROMEOS)
 #include "chromeos/dbus/dbus_thread_manager.h"
-#include "chromeos/dbus/power_manager_client.h"
 #endif
 
 ////////////////////////////////////////////////////////////////////////////////

@@ -11,7 +11,6 @@
 #include "base/macros.h"
 #include "chromeos/chromeos_export.h"
 #include "chromeos/dbus/cros_disks_client.h"
-#include "chromeos/dbus/power_manager_client.h"
 
 namespace chromeos {
 namespace disks {
@@ -20,24 +19,18 @@ class DiskMountManager;
 
 // Class to unmount disks at suspend.
 class CHROMEOS_EXPORT SuspendUnmountManager
-    : public PowerManagerClient::Observer {
+    {
  public:
   // The ownership of these raw pointers still remains with the caller.
-  SuspendUnmountManager(DiskMountManager* disk_mount_manager,
-                        PowerManagerClient* power_manager_client);
+  SuspendUnmountManager(DiskMountManager* disk_mount_manager);
   ~SuspendUnmountManager() override;
 
  private:
   void OnUnmountComplete(const std::string& mount_path,
                          chromeos::MountError error_code);
 
-  // PowerManagerClient::Observer
-  void SuspendImminent() override;
-  void SuspendDone(const base::TimeDelta& sleep_duration) override;
-
   // Callback passed to DiskMountManager holds weak pointers of this.
   DiskMountManager* const disk_mount_manager_;
-  PowerManagerClient* const power_manager_client_;
 
   // The paths that the manager currently tries to unmount for suspend.
   std::set<std::string> unmounting_paths_;

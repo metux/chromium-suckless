@@ -97,9 +97,6 @@ UnlockManager::UnlockManager(
   screenlock_bridge->AddObserver(this);
   OnScreenLockedOrUnlocked(screenlock_bridge->IsLocked());
 
-#if defined(OS_CHROMEOS)
-  DBusThreadManager::Get()->GetPowerManagerClient()->AddObserver(this);
-#endif  // defined(OS_CHROMEOS)
   SetWakingUpState(true);
 
   if (device::BluetoothAdapterFactory::IsBluetoothAdapterAvailable()) {
@@ -114,10 +111,6 @@ UnlockManager::~UnlockManager() {
     GetMessenger()->RemoveObserver(this);
 
   ScreenlockBridge::Get()->RemoveObserver(this);
-
-#if defined(OS_CHROMEOS)
-  DBusThreadManager::Get()->GetPowerManagerClient()->RemoveObserver(this);
-#endif  // defined(OS_CHROMEOS)
 
   if (bluetooth_adapter_)
     bluetooth_adapter_->RemoveObserver(this);

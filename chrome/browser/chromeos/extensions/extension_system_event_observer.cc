@@ -10,12 +10,10 @@
 namespace chromeos {
 
 ExtensionSystemEventObserver::ExtensionSystemEventObserver() {
-  DBusThreadManager::Get()->GetPowerManagerClient()->AddObserver(this);
   DBusThreadManager::Get()->GetSessionManagerClient()->AddObserver(this);
 }
 
 ExtensionSystemEventObserver::~ExtensionSystemEventObserver() {
-  DBusThreadManager::Get()->GetPowerManagerClient()->RemoveObserver(this);
   DBusThreadManager::Get()->GetSessionManagerClient()->RemoveObserver(this);
 }
 

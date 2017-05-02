@@ -8,7 +8,6 @@
 #include <stdint.h>
 
 #include "base/macros.h"
-#include "base/power_monitor/power_observer.h"
 #include "content/public/browser/browser_message_filter.h"
 
 struct PeerConnectionInfo;
@@ -25,8 +24,7 @@ class WebRTCEventLogHost;
 // managed by RenderProcessHostImpl. It receives PeerConnection events from
 // PeerConnectionTracker as IPC messages that it forwards to WebRTCInternals.
 // It also forwards browser process events to PeerConnectionTracker via IPC.
-class PeerConnectionTrackerHost : public BrowserMessageFilter,
-                                  public base::PowerObserver {
+class PeerConnectionTrackerHost : public BrowserMessageFilter {
  public:
   PeerConnectionTrackerHost(
       int render_process_id,
@@ -38,9 +36,6 @@ class PeerConnectionTrackerHost : public BrowserMessageFilter,
                                 BrowserThread::ID* thread) override;
   void OnChannelConnected(int32_t peer_pid) override;
   void OnChannelClosing() override;
-
-  // base::PowerObserver override.
-  void OnSuspend() override;
 
  protected:
   ~PeerConnectionTrackerHost() override;

@@ -28,7 +28,6 @@ class FakeBluetoothDeviceClient;
 namespace chromeos {
 
 class FakeCrasAudioClient;
-class FakePowerManagerClient;
 
 // Handler class for the Device Emulator page operations.
 class DeviceEmulatorMessageHandler :
@@ -83,8 +82,6 @@ class DeviceEmulatorMessageHandler :
 
   // Callbacks for JS update methods. All these methods work
   // asynchronously.
-  void UpdateBatteryPercent(const base::ListValue* args);
-  void UpdateBatteryState(const base::ListValue* args);
   void UpdateExternalPower(const base::ListValue* args);
   void UpdateTimeToEmpty(const base::ListValue* args);
   void UpdateTimeToFull(const base::ListValue* args);
@@ -104,7 +101,6 @@ class DeviceEmulatorMessageHandler :
  private:
   class BluetoothObserver;
   class CrasAudioObserver;
-  class PowerObserver;
 
   // Creates a bluetooth device with the properties given in |args|. |args|
   // should contain a dictionary so that each dictionary value can be mapped
@@ -126,9 +122,6 @@ class DeviceEmulatorMessageHandler :
 
   FakeCrasAudioClient* fake_cras_audio_client_;
   std::unique_ptr<CrasAudioObserver> cras_audio_observer_;
-
-  FakePowerManagerClient* fake_power_manager_client_;
-  std::unique_ptr<PowerObserver> power_observer_;
 
   base::WeakPtrFactory<DeviceEmulatorMessageHandler> weak_ptr_factory_;
 

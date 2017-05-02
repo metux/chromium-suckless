@@ -30,7 +30,6 @@
 #include "ui/views/mus/surface_context_factory.h"
 
 #if defined(OS_CHROMEOS)
-#include "ash/common/system/chromeos/power/power_status.h"
 #include "chromeos/audio/cras_audio_handler.h"
 #include "chromeos/dbus/dbus_thread_manager.h"
 #include "chromeos/network/network_handler.h"
@@ -135,13 +134,11 @@ void WindowManagerApplication::InitializeComponents() {
   ui::NetworkConnect::Initialize(network_connect_delegate_.get());
   // TODO(jamescook): Initialize real audio handler.
   chromeos::CrasAudioHandler::InitializeForTesting();
-  PowerStatus::Initialize();
 #endif
 }
 
 void WindowManagerApplication::ShutdownComponents() {
 #if defined(OS_CHROMEOS)
-  PowerStatus::Shutdown();
   chromeos::CrasAudioHandler::Shutdown();
   ui::NetworkConnect::Shutdown();
   network_connect_delegate_.reset();

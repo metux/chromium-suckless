@@ -22,7 +22,6 @@ import android.view.inputmethod.InputMethodSubtype;
 import org.chromium.base.CommandLine;
 import org.chromium.base.ContextUtils;
 import org.chromium.base.FieldTrialList;
-import org.chromium.base.PowerMonitor;
 import org.chromium.base.SysUtils;
 import org.chromium.base.ThreadUtils;
 import org.chromium.base.TraceEvent;
@@ -189,8 +188,6 @@ public class DeferredStartupHandler {
                 });
 
                 PartnerBookmarksShim.kickOffReading(mAppContext);
-
-                PowerMonitor.create(mAppContext);
 
                 ShareHelper.clearSharedImages();
 

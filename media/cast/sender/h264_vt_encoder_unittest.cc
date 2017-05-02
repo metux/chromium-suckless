@@ -10,10 +10,8 @@
 #include "base/command_line.h"
 #include "base/macros.h"
 #include "base/message_loop/message_loop.h"
-#include "base/power_monitor/power_monitor.h"
 #include "base/run_loop.h"
 #include "base/test/launcher/unit_test_launcher.h"
-#include "base/test/power_monitor_test_base.h"
 #include "base/test/simple_test_tick_clock.h"
 #include "base/test/test_suite.h"
 #include "media/base/cdm_context.h"
@@ -193,11 +191,9 @@ void NoopFrameEncodedCallback(
 class TestPowerSource : public base::PowerMonitorSource {
  public:
   void GenerateSuspendEvent() {
-    ProcessPowerEvent(SUSPEND_EVENT);
     base::RunLoop().RunUntilIdle();
   }
   void GenerateResumeEvent() {
-    ProcessPowerEvent(RESUME_EVENT);
     base::RunLoop().RunUntilIdle();
   }
 
@@ -215,10 +211,6 @@ class H264VideoToolboxEncoderTest : public ::testing::Test {
     clock_ = new base::SimpleTestTickClock();
     clock_->Advance(base::TimeTicks::Now() - base::TimeTicks());
 
-    power_source_ = new TestPowerSource();
-    power_monitor_.reset(new base::PowerMonitor(
-        std::unique_ptr<TestPowerSource>(power_source_)));
-
     cast_environment_ = new CastEnvironment(
         std::unique_ptr<base::TickClock>(clock_), message_loop_.task_runner(),
         message_loop_.task_runner(), message_loop_.task_runner());
@@ -232,7 +224,6 @@ class H264VideoToolboxEncoderTest : public ::testing::Test {
   void TearDown() final {
     encoder_.reset();
     base::RunLoop().RunUntilIdle();
-    power_monitor_.reset();
   }
 
   void AdvanceClockAndVideoFrameTimestamp() {
@@ -262,7 +253,6 @@ class H264VideoToolboxEncoderTest : public ::testing::Test {
   std::unique_ptr<VideoEncoder> encoder_;
   OperationalStatus operational_status_;
   TestPowerSource* power_source_;  // Owned by the power monitor.
-  std::unique_ptr<base::PowerMonitor> power_monitor_;
 
  private:
   DISALLOW_COPY_AND_ASSIGN(H264VideoToolboxEncoderTest);

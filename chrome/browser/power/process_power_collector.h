@@ -16,10 +16,6 @@
 #include "components/power/origin_power_map_factory.h"
 #include "url/gurl.h"
 
-#if defined(OS_CHROMEOS)
-#include "chromeos/dbus/power_manager_client.h"
-#endif
-
 class Profile;
 
 namespace content {
@@ -34,9 +30,6 @@ class PowerSupplyProperties;
 
 // Manages regular updates of the profile power consumption.
 class ProcessPowerCollector
-#if defined(OS_CHROMEOS)
-    : public chromeos::PowerManagerClient::Observer
-#endif
       {
  public:
   class PerProcessData {
@@ -99,11 +92,6 @@ class ProcessPowerCollector
   }
 
   ProcessMetricsMap* metrics_map_for_testing() { return &metrics_map_; }
-
-#if defined(OS_CHROMEOS)
-  // PowerManagerClient::Observer implementation:
-  void PowerChanged(const power_manager::PowerSupplyProperties& prop) override;
-#endif
 
   // Begin periodically updating the power consumption numbers by profile.
   void Initialize();

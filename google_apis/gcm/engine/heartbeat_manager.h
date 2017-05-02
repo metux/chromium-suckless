@@ -11,7 +11,6 @@
 #include "base/logging.h"
 #include "base/macros.h"
 #include "base/memory/weak_ptr.h"
-#include "base/power_monitor/power_observer.h"
 #include "google_apis/gcm/base/gcm_export.h"
 #include "google_apis/gcm/engine/connection_factory.h"
 
@@ -27,7 +26,7 @@ namespace gcm {
 
 // A heartbeat management class, capable of sending and handling heartbeat
 // receipt/failures and triggering reconnection as necessary.
-class GCM_EXPORT HeartbeatManager : public base::PowerObserver {
+class GCM_EXPORT HeartbeatManager {
  public:
   typedef base::Callback<void(ConnectionFactory::ConnectionResetReason)>
       ReconnectCallback;
@@ -61,10 +60,6 @@ class GCM_EXPORT HeartbeatManager : public base::PowerObserver {
 
   // Updates the timer used for scheduling heartbeats.
   void UpdateHeartbeatTimer(std::unique_ptr<base::Timer> timer);
-
-  // base::PowerObserver override.
-  void OnSuspend() override;
-  void OnResume() override;
 
   // Maximum and minimum of the custom client interval that can be requested,
   // calculated based on the network conditions.

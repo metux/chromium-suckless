@@ -13,22 +13,15 @@ namespace offline_pages {
 class DeviceConditions {
  public:
   DeviceConditions(
-      bool power_connected,
-      int battery_percentage,
+      bool bar,
+      int foo,
       net::NetworkChangeNotifier::ConnectionType net_connection_type)
       : power_connected_(power_connected),
-        battery_percentage_(battery_percentage),
         net_connection_type_(net_connection_type) {}
 
   DeviceConditions()
-      : power_connected_(true), battery_percentage_(75),
+      : power_connected_(true),
         net_connection_type_(net::NetworkChangeNotifier::CONNECTION_WIFI) {}
-
-  // Returns whether power is connected.
-  bool IsPowerConnected() const { return power_connected_; }
-
-  // Returns percentage of remaining battery power (0-100).
-  int GetBatteryPercentage() const { return battery_percentage_; }
 
   // Returns the current type of network connection, if any.
   net::NetworkChangeNotifier::ConnectionType GetNetConnectionType() const {
@@ -36,8 +29,6 @@ class DeviceConditions {
   }
 
  private:
-  const bool power_connected_;
-  const int battery_percentage_;
   const net::NetworkChangeNotifier::ConnectionType net_connection_type_;
 
   // NOTE: We intentionally allow the default copy constructor and assignment.

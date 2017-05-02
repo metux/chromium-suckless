@@ -10,16 +10,11 @@
 
 namespace chromeos {
 
-class PowerManagerClient;
-
-}  // namespace chromeos
-
 namespace policy {
 
 class DeviceCommandRebootJob : public RemoteCommandJob {
  public:
-  explicit DeviceCommandRebootJob(
-      chromeos::PowerManagerClient* power_manager_client);
+  explicit DeviceCommandRebootJob();
   ~DeviceCommandRebootJob() override;
 
   // RemoteCommandJob:
@@ -31,8 +26,6 @@ class DeviceCommandRebootJob : public RemoteCommandJob {
   void RunImpl(const CallbackWithResult& succeeded_callback,
                const CallbackWithResult& failed_callback) override;
   base::TimeDelta GetCommmandTimeout() const override;
-
-  chromeos::PowerManagerClient* power_manager_client_;
 
   DISALLOW_COPY_AND_ASSIGN(DeviceCommandRebootJob);
 };

@@ -16,7 +16,6 @@
 #include "ui/aura/window_tree_host_observer.h"
 
 #if defined(OS_CHROMEOS)
-#include "chromeos/dbus/power_manager_client.h"
 #include "ui/display/chromeos/display_configurator.h"
 #endif
 
@@ -39,9 +38,6 @@ class Size;
 
 namespace ui {
 class UserActivityDetector;
-#if defined(OS_CHROMEOS)
-class UserActivityPowerManagerNotifier;
-#endif
 }
 
 namespace wm {
@@ -59,7 +55,6 @@ class ShellDesktopControllerAura
     : public DesktopController,
       public aura::client::WindowTreeClient,
 #if defined(OS_CHROMEOS)
-      public chromeos::PowerManagerClient::Observer,
       public ui::DisplayConfigurator::Observer,
 #endif
       public aura::WindowTreeHostObserver {
@@ -81,10 +76,6 @@ class ShellDesktopControllerAura
                                  const gfx::Rect& bounds) override;
 
 #if defined(OS_CHROMEOS)
-  // chromeos::PowerManagerClient::Observer overrides:
-  void PowerButtonEventReceived(bool down,
-                                const base::TimeTicks& timestamp) override;
-
   // ui::DisplayConfigurator::Observer overrides.
   void OnDisplayModeChanged(
       const ui::DisplayConfigurator::DisplayStateList& displays) override;
@@ -126,9 +117,6 @@ class ShellDesktopControllerAura
   std::unique_ptr<wm::CursorManager> cursor_manager_;
 
   std::unique_ptr<ui::UserActivityDetector> user_activity_detector_;
-#if defined(OS_CHROMEOS)
-  std::unique_ptr<ui::UserActivityPowerManagerNotifier> user_activity_notifier_;
-#endif
 
   std::unique_ptr<AppWindowClient> app_window_client_;
 

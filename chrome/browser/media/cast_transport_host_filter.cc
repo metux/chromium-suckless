@@ -10,7 +10,6 @@
 #include "chrome/common/cast_messages.h"
 #include "components/net_log/chrome_net_log.h"
 #include "content/public/browser/browser_thread.h"
-#include "device/power_save_blocker/power_save_blocker.h"
 #include "media/cast/net/cast_transport.h"
 
 namespace {
@@ -145,19 +144,6 @@ void CastTransportHostFilter::OnNew(int32_t channel_id,
                                     const net::IPEndPoint& local_end_point,
                                     const net::IPEndPoint& remote_end_point,
                                     const base::DictionaryValue& options) {
-  if (!power_save_blocker_) {
-    DVLOG(1) << ("Preventing the application from being suspended while one or "
-                 "more transports are active for Cast Streaming.");
-    power_save_blocker_.reset(new device::PowerSaveBlocker(
-        device::PowerSaveBlocker::kPowerSaveBlockPreventAppSuspension,
-        device::PowerSaveBlocker::kReasonOther,
-        "Cast is streaming content to a remote receiver",
-        content::BrowserThread::GetTaskRunnerForThread(
-            content::BrowserThread::UI),
-        content::BrowserThread::GetTaskRunnerForThread(
-            content::BrowserThread::FILE)));
-  }
-
   if (id_map_.Lookup(channel_id)) {
     id_map_.Remove(channel_id);
   }
@@ -196,13 +182,6 @@ void CastTransportHostFilter::OnDelete(int32_t channel_id) {
     }
   }
   stream_id_map_.erase(channel_id);
-
-  if (id_map_.IsEmpty()) {
-    DVLOG_IF(1, power_save_blocker_) <<
-        ("Releasing the block on application suspension since no transports "
-         "are active anymore for Cast Streaming.");
-    power_save_blocker_.reset();
-  }
 }
 
 void CastTransportHostFilter::OnInitializeStream(

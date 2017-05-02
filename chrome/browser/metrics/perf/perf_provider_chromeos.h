@@ -18,7 +18,6 @@
 #include "chrome/browser/metrics/perf/perf_output.h"
 #include "chrome/browser/metrics/perf/random_selector.h"
 #include "chrome/browser/sessions/session_restore.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "chromeos/login/login_state.h"
 #include "components/metrics/proto/sampled_profile.pb.h"
 
@@ -29,8 +28,7 @@ class WindowedIncognitoObserver;
 // Provides access to ChromeOS perf data. perf aka "perf events" is a
 // performance profiling infrastructure built into the linux kernel. For more
 // information, see: https://perf.wiki.kernel.org/index.php/Main_Page.
-class PerfProvider : public base::NonThreadSafe,
-                     public chromeos::PowerManagerClient::Observer {
+class PerfProvider : public base::NonThreadSafe {
  public:
   PerfProvider();
   ~PerfProvider() override;
@@ -184,11 +182,6 @@ class PerfProvider : public base::NonThreadSafe,
   // |command_selector_| for any keys that are present in |params|.
   void SetCollectionParamsFromVariationParams(
       const std::map<std::string, std::string> &params);
-
-  // Called when a suspend finishes. This is either a successful suspend
-  // followed by a resume, or a suspend that was canceled. Inherited from
-  // PowerManagerClient::Observer.
-  void SuspendDone(const base::TimeDelta& sleep_duration) override;
 
   // Turns on perf collection. Resets the timer that's used to schedule
   // collections.

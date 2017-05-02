@@ -13,8 +13,6 @@
 #include "base/callback_helpers.h"
 #include "base/logging.h"
 #include "base/macros.h"
-#include "base/power_monitor/power_monitor.h"
-#include "base/power_monitor/power_observer.h"
 #include "base/rand_util.h"
 #include "base/strings/utf_string_conversions.h"
 #include "base/time/time.h"
@@ -80,7 +78,7 @@ const char TimeZoneResolver::kLastTimeZoneRefreshTime[] =
 
 // This class periodically refreshes location and timezone.
 // It should be destroyed to stop refresh.
-class TimeZoneResolver::TimeZoneResolverImpl : public base::PowerObserver {
+class TimeZoneResolver::TimeZoneResolverImpl {
  public:
   explicit TimeZoneResolverImpl(const TimeZoneResolver* resolver);
 
@@ -88,9 +86,6 @@ class TimeZoneResolver::TimeZoneResolverImpl : public base::PowerObserver {
 
   // This is called once after the object is created.
   void Start();
-
-  // PowerObserver implementation.
-  void OnResume() override;
 
   // (Re)Starts timer.
   void ScheduleRequest();
@@ -265,9 +260,6 @@ TimeZoneResolver::TimeZoneResolverImpl::TimeZoneResolverImpl(
   DCHECK(!resolver_->apply_timezone().is_null());
   DCHECK(!resolver_->delay_network_call().is_null());
 
-  base::PowerMonitor* power_monitor = base::PowerMonitor::Get();
-  power_monitor->AddObserver(this);
-
   const int64_t last_refresh_at_raw =
       resolver_->local_state()->GetInt64(kLastTimeZoneRefreshTime);
   const base::Time last_refresh_at =
@@ -283,9 +275,6 @@ TimeZoneResolver::TimeZoneResolverImpl::TimeZoneResolverImpl(
 }
 
 TimeZoneResolver::TimeZoneResolverImpl::~TimeZoneResolverImpl() {
-  base::PowerMonitor* power_monitor = base::PowerMonitor::Get();
-  if (power_monitor)
-    power_monitor->RemoveObserver(this);
 }
 
 void TimeZoneResolver::TimeZoneResolverImpl::Start() {

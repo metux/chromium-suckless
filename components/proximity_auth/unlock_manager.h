@@ -17,10 +17,6 @@
 #include "components/proximity_auth/screenlock_state.h"
 #include "device/bluetooth/bluetooth_adapter.h"
 
-#if defined(OS_CHROMEOS)
-#include "chromeos/dbus/power_manager_client.h"
-#endif
-
 namespace proximity_auth {
 
 class Messenger;
@@ -31,9 +27,6 @@ class ProximityMonitor;
 // the authentication status of the registered remote devices.
 class UnlockManager : public MessengerObserver,
                       public ScreenlockBridge::Observer,
-#if defined(OS_CHROMEOS)
-                      chromeos::PowerManagerClient::Observer,
-#endif  // defined(OS_CHROMEOS)
                       public device::BluetoothAdapter::Observer {
  public:
   // The |proximity_auth_client| is not owned and should outlive the constructed
@@ -100,11 +93,6 @@ class UnlockManager : public MessengerObserver,
                              bool present) override;
   void AdapterPoweredChanged(device::BluetoothAdapter* adapter,
                              bool powered) override;
-
-#if defined(OS_CHROMEOS)
-  // chromeos::PowerManagerClient::Observer:
-  void SuspendDone(const base::TimeDelta& sleep_duration) override;
-#endif  // defined(OS_CHROMEOS)
 
   // Called when auth is attempted to send the sign-in challenge to the remote
   // device for decryption.

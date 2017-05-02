@@ -71,7 +71,6 @@ class WebMainLoop {
   // Members initialized in |MainMessageLoopStart()| ---------------------------
   std::unique_ptr<base::MessageLoop> main_message_loop_;
   std::unique_ptr<base::SystemMonitor> system_monitor_;
-  std::unique_ptr<base::PowerMonitor> power_monitor_;
   std::unique_ptr<net::NetworkChangeNotifier> network_change_notifier_;
 
   // Destroy parts_ before main_message_loop_ (required) and before other

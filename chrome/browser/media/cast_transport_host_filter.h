@@ -20,10 +20,6 @@
 #include "media/cast/net/cast_transport.h"
 #include "media/cast/net/udp_transport.h"
 
-namespace device {
-class PowerSaveBlocker;
-}  // namespace device
-
 namespace cast {
 
 class CastTransportHostFilter : public content::BrowserMessageFilter {
@@ -92,11 +88,6 @@ class CastTransportHostFilter : public content::BrowserMessageFilter {
 
   // Clock used by Cast transport.
   base::DefaultTickClock clock_;
-
-  // While |id_map_| is non-empty, hold an instance of
-  // device::PowerSaveBlocker.  This prevents Chrome from being suspended while
-  // remoting content.
-  std::unique_ptr<device::PowerSaveBlocker> power_save_blocker_;
 
   // This map records all active remoting senders. It uses the unique RTP
   // stream ID as the key.

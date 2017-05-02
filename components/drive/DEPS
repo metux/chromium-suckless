@@ -2,7 +2,6 @@ include_rules = [
   "+components/invalidation",
   "+components/keyed_service",
   "+components/prefs",
-  "+device/power_save_blocker",
   "+google_apis",
   "+google/cacheinvalidation/types.pb.h",
   "+net",

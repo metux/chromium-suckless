@@ -69,8 +69,6 @@ ExtensionEventObserver::ExtensionEventObserver()
                  content::NotificationService::AllBrowserContextsAndSources());
   registrar_.Add(this, chrome::NOTIFICATION_PROFILE_DESTROYED,
                  content::NotificationService::AllBrowserContextsAndSources());
-
-  DBusThreadManager::Get()->GetPowerManagerClient()->AddObserver(this);
 }
 
 ExtensionEventObserver::~ExtensionEventObserver() {
@@ -82,8 +80,6 @@ ExtensionEventObserver::~ExtensionEventObserver() {
         const_cast<extensions::ExtensionHost*>(pair.first);
     host->RemoveObserver(this);
   }
-
-  DBusThreadManager::Get()->GetPowerManagerClient()->RemoveObserver(this);
 }
 
 std::unique_ptr<ExtensionEventObserver::TestApi>
@@ -240,10 +236,6 @@ void ExtensionEventObserver::OnSuspendImminent(bool dark_suspend) {
   }
 
   suspend_is_pending_ = true;
-  power_manager_callback_ = DBusThreadManager::Get()
-                                ->GetPowerManagerClient()
-                                ->GetSuspendReadinessCallback();
-
   suspend_readiness_callback_.Reset(
       base::Bind(&ExtensionEventObserver::MaybeReportSuspendReadiness,
                  weak_factory_.GetWeakPtr()));

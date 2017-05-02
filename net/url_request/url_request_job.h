@@ -13,7 +13,6 @@
 
 #include "base/macros.h"
 #include "base/memory/weak_ptr.h"
-#include "base/power_monitor/power_observer.h"
 #include "net/base/host_port_pair.h"
 #include "net/base/load_states.h"
 #include "net/base/net_error_details.h"
@@ -44,7 +43,7 @@ class UploadDataStream;
 class URLRequestStatus;
 class X509Certificate;
 
-class NET_EXPORT URLRequestJob : public base::PowerObserver {
+class NET_EXPORT URLRequestJob {
  public:
   explicit URLRequestJob(URLRequest* request,
                          NetworkDelegate* network_delegate);
@@ -220,10 +219,6 @@ class NET_EXPORT URLRequestJob : public base::PowerObserver {
   // Returns the socket address for the connection.
   // See url_request.h for details.
   virtual HostPortPair GetSocketAddress() const;
-
-  // base::PowerObserver methods:
-  // We invoke URLRequestJob::Kill on suspend (crbug.com/4606).
-  void OnSuspend() override;
 
   // Called after a NetworkDelegate has been informed that the URLRequest
   // will be destroyed. This is used to track that no pending callbacks

@@ -16,7 +16,6 @@
 #include "content/public/browser/invalidate_type.h"
 #include "content/public/browser/web_contents_delegate.h"
 #include "content/public/test/test_renderer_host.h"
-#include "media/audio/audio_power_monitor.h"
 #include "testing/gmock/include/gmock/gmock.h"
 #include "testing/gtest/include/gtest/gtest.h"
 
@@ -210,7 +209,6 @@ TEST_F(AudioStreamMonitorTest,
     ExpectCurrentlyAudibleChangeNotification(true);
 
     // Poll an audible signal, and expect tab indicator state is on.
-    SetStreamPower(kStreamId, media::AudioPowerMonitor::max_power());
     last_blurt_time = GetTestClockTime();
     SimulatePollTimerFired();
     ExpectTabWasRecentlyAudible(true, last_blurt_time);
@@ -220,7 +218,6 @@ TEST_F(AudioStreamMonitorTest,
 
     // Poll a silent signal repeatedly, ensuring that the indicator is being
     // held on during the holding period.
-    SetStreamPower(kStreamId, media::AudioPowerMonitor::zero_power());
     for (int i = 0; i < num_silence_polls; ++i) {
       SimulatePollTimerFired();
       ExpectTabWasRecentlyAudible(true, last_blurt_time);
@@ -260,8 +257,6 @@ TEST_F(AudioStreamMonitorTest, HandlesMultipleStreamsBlurting) {
   ExpectRecentlyAudibleChangeNotification(true);
   ExpectCurrentlyAudibleChangeNotification(true);
 
-  SetStreamPower(kStreamId, media::AudioPowerMonitor::max_power());
-  SetStreamPower(kAnotherStreamId, media::AudioPowerMonitor::zero_power());
   last_blurt_time = GetTestClockTime();
   SimulatePollTimerFired();
   ExpectTabWasRecentlyAudible(true, last_blurt_time);
@@ -271,7 +266,6 @@ TEST_F(AudioStreamMonitorTest, HandlesMultipleStreamsBlurting) {
   // indicator stays on.
   AdvanceClock(holding_period() / 2);
   SimulateOffTimerFired();
-  SetStreamPower(kAnotherStreamId, media::AudioPowerMonitor::max_power());
   last_blurt_time = GetTestClockTime();
   SimulatePollTimerFired();  // Restarts holding period.
   ExpectTabWasRecentlyAudible(true, last_blurt_time);
@@ -285,8 +279,6 @@ TEST_F(AudioStreamMonitorTest, HandlesMultipleStreamsBlurting) {
 
   AdvanceClock(holding_period());
   SimulateOffTimerFired();
-  SetStreamPower(kStreamId, media::AudioPowerMonitor::zero_power());
-  SetStreamPower(kAnotherStreamId, media::AudioPowerMonitor::zero_power());
   SimulatePollTimerFired();
   ExpectTabWasRecentlyAudible(false, last_blurt_time);
   ExpectNotCurrentlyAudible();
@@ -296,7 +288,6 @@ TEST_F(AudioStreamMonitorTest, HandlesMultipleStreamsBlurting) {
   ExpectRecentlyAudibleChangeNotification(true);
   ExpectCurrentlyAudibleChangeNotification(true);
 
-  SetStreamPower(kAnotherStreamId, media::AudioPowerMonitor::max_power());
   last_blurt_time = GetTestClockTime();
   SimulatePollTimerFired();
   ExpectTabWasRecentlyAudible(true, last_blurt_time);
@@ -306,7 +297,6 @@ TEST_F(AudioStreamMonitorTest, HandlesMultipleStreamsBlurting) {
   // period, the tab is no longer audible but stays as recently audible.
   ExpectCurrentlyAudibleChangeNotification(false);
 
-  SetStreamPower(kAnotherStreamId, media::AudioPowerMonitor::zero_power());
   AdvanceClock(holding_period() / 2);
   SimulatePollTimerFired();
   SimulateOffTimerFired();

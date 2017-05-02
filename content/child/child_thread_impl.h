@@ -14,7 +14,6 @@
 #include "base/macros.h"
 #include "base/memory/shared_memory.h"
 #include "base/memory/weak_ptr.h"
-#include "base/power_monitor/power_monitor.h"
 #include "base/sequenced_task_runner.h"
 #include "base/tracked_objects.h"
 #include "build/build_config.h"
@@ -317,8 +316,6 @@ class CONTENT_EXPORT ChildThreadImpl
 
   std::unique_ptr<ChildDiscardableSharedMemoryManager>
       discardable_shared_memory_manager_;
-
-  std::unique_ptr<base::PowerMonitor> power_monitor_;
 
   scoped_refptr<base::SequencedTaskRunner> browser_process_io_runner_;
 

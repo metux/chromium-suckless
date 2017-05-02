@@ -297,7 +297,6 @@ const char kChromeUIMobileSetupHost[] = "mobilesetup";
 const char kChromeUINetworkHost[] = "network";
 const char kChromeUIOobeHost[] = "oobe";
 const char kChromeUIOSCreditsHost[] = "os-credits";
-const char kChromeUIPowerHost[] = "power";
 const char kChromeUIProxySettingsHost[] = "proxy-settings";
 const char kChromeUIRotateHost[] = "rotate";
 const char kChromeUIScreenlockIconHost[] = "screenlock-icon";
@@ -682,7 +681,6 @@ const char* const kChromeHostURLs[] = {
   kChromeUINetworkHost,
   kChromeUIOobeHost,
   kChromeUIOSCreditsHost,
-  kChromeUIPowerHost,
   kChromeUIProxySettingsHost,
   kChromeUIVoiceSearchHost,
 #endif

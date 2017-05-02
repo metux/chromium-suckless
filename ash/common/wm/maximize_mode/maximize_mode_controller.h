@@ -17,7 +17,6 @@
 #if defined(OS_CHROMEOS)
 #include "chromeos/accelerometer/accelerometer_reader.h"
 #include "chromeos/accelerometer/accelerometer_types.h"
-#include "chromeos/dbus/power_manager_client.h"
 #endif  // OS_CHROMEOS
 
 namespace base {
@@ -50,7 +49,6 @@ class VirtualKeyboardControllerTest;
 class ASH_EXPORT MaximizeModeController :
 #if defined(OS_CHROMEOS)
     public chromeos::AccelerometerReader::Observer,
-    public chromeos::PowerManagerClient::Observer,
 #endif  // OS_CHROMEOS
     public ShellObserver,
     public WmDisplayObserver {
@@ -91,12 +89,6 @@ class ASH_EXPORT MaximizeModeController :
   // chromeos::AccelerometerReader::Observer:
   void OnAccelerometerUpdated(
       scoped_refptr<const chromeos::AccelerometerUpdate> update) override;
-
-  // PowerManagerClient::Observer:
-  void LidEventReceived(bool open, const base::TimeTicks& time) override;
-  void TabletModeEventReceived(bool on, const base::TimeTicks& time) override;
-  void SuspendImminent() override;
-  void SuspendDone(const base::TimeDelta& sleep_duration) override;
 #endif  // OS_CHROMEOS
 
  private:

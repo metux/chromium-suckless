@@ -19,10 +19,6 @@
 #include "mojo/public/cpp/bindings/interface_request.h"
 #include "ui/gfx/native_widget_types.h"
 
-namespace device {
-class PowerSaveBlocker;
-}  // namespace device
-
 namespace content {
 
 class CONTENT_EXPORT WakeLockServiceContext {
@@ -56,7 +52,6 @@ class CONTENT_EXPORT WakeLockServiceContext {
   int num_lock_requests_;
 
   // The actual power save blocker for screen.
-  std::unique_ptr<device::PowerSaveBlocker> wake_lock_;
   base::Callback<gfx::NativeView()> native_view_getter_;
 
   base::WeakPtrFactory<WakeLockServiceContext> weak_factory_;

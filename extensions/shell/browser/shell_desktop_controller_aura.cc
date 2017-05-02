@@ -42,7 +42,6 @@
 
 #if defined(OS_CHROMEOS)
 #include "chromeos/dbus/dbus_thread_manager.h"
-#include "ui/chromeos/user_activity_power_manager_notifier.h"
 #include "ui/display/types/display_mode.h"
 #include "ui/display/types/display_snapshot.h"
 
@@ -178,8 +177,6 @@ ShellDesktopControllerAura::ShellDesktopControllerAura()
   extensions::AppWindowClient::Set(app_window_client_.get());
 
 #if defined(OS_CHROMEOS)
-  chromeos::DBusThreadManager::Get()->GetPowerManagerClient()->AddObserver(
-      this);
   display_configurator_.reset(new ui::DisplayConfigurator);
 #if defined(USE_OZONE)
   display_configurator_->Init(
@@ -197,10 +194,6 @@ ShellDesktopControllerAura::ShellDesktopControllerAura()
 ShellDesktopControllerAura::~ShellDesktopControllerAura() {
   CloseAppWindows();
   DestroyRootWindow();
-#if defined(OS_CHROMEOS)
-  chromeos::DBusThreadManager::Get()->GetPowerManagerClient()->RemoveObserver(
-      this);
-#endif
   extensions::AppWindowClient::Set(NULL);
 }
 
@@ -248,11 +241,6 @@ aura::Window* ShellDesktopControllerAura::GetDefaultParent(
 void ShellDesktopControllerAura::PowerButtonEventReceived(
     bool down,
     const base::TimeTicks& timestamp) {
-  if (down) {
-    chromeos::DBusThreadManager::Get()
-        ->GetPowerManagerClient()
-        ->RequestShutdown();
-  }
 }
 
 void ShellDesktopControllerAura::OnDisplayModeChanged(
@@ -294,10 +282,6 @@ void ShellDesktopControllerAura::InitWindowManager() {
   aura::client::SetCursorClient(host_->window(), cursor_manager_.get());
 
   user_activity_detector_.reset(new ui::UserActivityDetector);
-#if defined(OS_CHROMEOS)
-  user_activity_notifier_.reset(
-      new ui::UserActivityPowerManagerNotifier(user_activity_detector_.get()));
-#endif
 }
 
 void ShellDesktopControllerAura::CreateRootWindow() {

@@ -363,12 +363,6 @@ class EasyUnlockService : public KeyedService {
   // app in favor of |proximity_auth_system_|.
   std::unique_ptr<proximity_auth::ProximityAuthSystem> proximity_auth_system_;
 
-#if defined(OS_CHROMEOS)
-  // Monitors suspend and wake state of ChromeOS.
-  class PowerMonitor;
-  std::unique_ptr<PowerMonitor> power_monitor_;
-#endif
-
   // Whether the service has been shut down.
   bool shut_down_;
 

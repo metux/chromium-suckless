@@ -16,7 +16,6 @@
 #include "base/location.h"
 #include "base/macros.h"
 #include "base/memory/ptr_util.h"
-#include "base/power_monitor/power_monitor.h"
 #include "base/process/process.h"
 #include "base/single_thread_task_runner.h"
 #include "base/threading/platform_thread.h"
@@ -143,10 +142,6 @@ GpuWatchdogThread::~GpuWatchdogThread() {
 #if defined(OS_WIN)
   CloseHandle(watched_thread_handle_);
 #endif
-
-  base::PowerMonitor* power_monitor = base::PowerMonitor::Get();
-  if (power_monitor)
-    power_monitor->RemoveObserver(this);
 
 #if defined(USE_X11)
   if (tty_file_)
@@ -406,20 +401,6 @@ bool GpuWatchdogThread::MatchXEventAtom(XEvent* event) {
 }
 
 #endif
-void GpuWatchdogThread::AddPowerObserver() {
-  // As we stop the task runner before destroying this class, the unretained
-  // reference will always outlive the task.
-  task_runner()->PostTask(FROM_HERE,
-                          base::Bind(&GpuWatchdogThread::OnAddPowerObserver,
-                                     base::Unretained(this)));
-}
-
-void GpuWatchdogThread::OnAddPowerObserver() {
-  base::PowerMonitor* power_monitor = base::PowerMonitor::Get();
-  DCHECK(power_monitor);
-  power_monitor->AddObserver(this);
-}
-
 void GpuWatchdogThread::OnSuspend() {
   suspended_ = true;
   suspend_time_ = base::Time::Now();

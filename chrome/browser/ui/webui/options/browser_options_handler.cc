@@ -136,7 +136,6 @@
 #include "chrome/browser/ui/browser_window.h"
 #include "chromeos/chromeos_switches.h"
 #include "chromeos/dbus/dbus_thread_manager.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "components/arc/arc_bridge_service.h"
 #include "components/user_manager/user.h"
 #include "components/user_manager/user_manager.h"

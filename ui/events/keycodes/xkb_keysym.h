@@ -498,7 +498,6 @@ using xkb_keysym_t = uint32_t;
 #define XKB_KEY_XF86MailForward                   XF86XK_MailForward
 #define XKB_KEY_XF86Pictures                      XF86XK_Pictures
 #define XKB_KEY_XF86Music                         XF86XK_Music
-#define XKB_KEY_XF86Battery                       XF86XK_Battery
 #define XKB_KEY_XF86Bluetooth                     XF86XK_Bluetooth
 #define XKB_KEY_XF86WLAN                          XF86XK_WLAN
 #define XKB_KEY_XF86UWB                           XF86XK_UWB

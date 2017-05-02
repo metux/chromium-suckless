@@ -30,7 +30,6 @@ namespace ash {
 
 namespace test {
 class LockStateControllerTest;
-class PowerButtonControllerTest;
 }
 
 // Performs system-related functions on behalf of LockStateController.
@@ -206,7 +205,6 @@ class ASH_EXPORT LockStateController : public aura::WindowTreeHostObserver,
   }
 
  private:
-  friend class test::PowerButtonControllerTest;
   friend class test::LockStateControllerTest;
 
   struct UnlockedStateProperties {

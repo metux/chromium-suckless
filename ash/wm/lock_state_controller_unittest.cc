@@ -17,7 +17,6 @@
 #include "ash/test/test_session_state_animator.h"
 #include "ash/test/test_session_state_delegate.h"
 #include "ash/test/test_shell_delegate.h"
-#include "ash/wm/power_button_controller.h"
 #include "ash/wm/session_state_animator.h"
 #include "base/memory/scoped_vector.h"
 #include "base/time/time.h"
@@ -47,8 +46,7 @@ void CheckCalledCallback(bool* flag) {
 class LockStateControllerTest : public AshTestBase {
  public:
   LockStateControllerTest()
-      : power_button_controller_(nullptr),
-        lock_state_controller_(nullptr),
+      : lock_state_controller_(nullptr),
         lock_state_controller_delegate_(nullptr),
         session_manager_client_(nullptr),
         test_animator_(nullptr) {}
@@ -70,8 +68,6 @@ class LockStateControllerTest : public AshTestBase {
     lock_state_controller_->set_animator_for_test(test_animator_);
 
     test_api_.reset(new LockStateController::TestApi(lock_state_controller_));
-
-    power_button_controller_ = Shell::GetInstance()->power_button_controller();
 
     shell_delegate_ =
         static_cast<TestShellDelegate*>(WmShell::Get()->delegate());
@@ -270,20 +266,10 @@ class LockStateControllerTest : public AshTestBase {
 
   void HideWallpaper() { test_animator_->HideWallpaper(); }
 
-  void PressPowerButton() {
-    power_button_controller_->OnPowerButtonEvent(true, base::TimeTicks::Now());
-  }
-
-  void ReleasePowerButton() {
-    power_button_controller_->OnPowerButtonEvent(false, base::TimeTicks::Now());
-  }
-
   void PressLockButton() {
-    power_button_controller_->OnLockButtonEvent(true, base::TimeTicks::Now());
   }
 
   void ReleaseLockButton() {
-    power_button_controller_->OnLockButtonEvent(false, base::TimeTicks::Now());
   }
 
   void PressVolumeDown() {
@@ -315,8 +301,6 @@ class LockStateControllerTest : public AshTestBase {
   }
 
   void Initialize(bool legacy_button, LoginStatus status) {
-    power_button_controller_->set_has_legacy_power_button_for_test(
-        legacy_button);
     lock_state_controller_->OnLoginStateChanged(status);
     SetUserLoggedIn(status != LoginStatus::NOT_LOGGED_IN);
     if (status == LoginStatus::GUEST)
@@ -324,7 +308,6 @@ class LockStateControllerTest : public AshTestBase {
     lock_state_controller_->OnLockStateChanged(false);
   }
 
-  PowerButtonController* power_button_controller_;  // not owned
   LockStateController* lock_state_controller_;      // not owned
   TestLockStateControllerDelegate*
       lock_state_controller_delegate_;            // not owned
@@ -349,8 +332,6 @@ TEST_F(LockStateControllerTest, LegacyLockAndShutDown) {
 
   // We should request that the screen be locked immediately after seeing the
   // power button get pressed.
-  PressPowerButton();
-
   EXPECT_FALSE(test_api_->is_lock_cancellable());
 
   ExpectPreLockAnimationStarted();
@@ -373,11 +354,7 @@ TEST_F(LockStateControllerTest, LegacyLockAndShutDown) {
   EXPECT_FALSE(test_api_->lock_to_shutdown_timer_is_running());
   EXPECT_FALSE(test_api_->shutdown_timer_is_running());
 
-  ReleasePowerButton();
-
   // Hold the button again and check that we start shutting down.
-  PressPowerButton();
-
   ExpectShutdownAnimationStarted();
 
   EXPECT_EQ(0, NumShutdownRequests());
@@ -395,7 +372,6 @@ TEST_F(LockStateControllerTest, LegacyLockAndShutDown) {
 TEST_F(LockStateControllerTest, LegacyNotLoggedIn) {
   Initialize(true, LoginStatus::NOT_LOGGED_IN);
 
-  PressPowerButton();
   ExpectShutdownAnimationStarted();
 
   EXPECT_TRUE(test_api_->real_shutdown_timer_is_running());
@@ -406,7 +382,6 @@ TEST_F(LockStateControllerTest, LegacyNotLoggedIn) {
 TEST_F(LockStateControllerTest, LegacyGuest) {
   Initialize(true, LoginStatus::GUEST);
 
-  PressPowerButton();
   ExpectShutdownAnimationStarted();
 
   EXPECT_TRUE(test_api_->real_shutdown_timer_is_running());
@@ -418,7 +393,6 @@ TEST_F(LockStateControllerTest, ShutdownWhenNotLoggedIn) {
   Initialize(false, LoginStatus::NOT_LOGGED_IN);
 
   // Press the power button and check that we start the shutdown timer.
-  PressPowerButton();
   EXPECT_FALSE(test_api_->is_animating_lock());
   EXPECT_TRUE(test_api_->shutdown_timer_is_running());
   ExpectShutdownAnimationStarted();
@@ -426,8 +400,6 @@ TEST_F(LockStateControllerTest, ShutdownWhenNotLoggedIn) {
   AdvancePartially(SessionStateAnimator::ANIMATION_SPEED_SHUTDOWN, 0.5f);
 
   // Release the power button before the shutdown timer fires.
-  ReleasePowerButton();
-
   EXPECT_FALSE(test_api_->shutdown_timer_is_running());
   ExpectShutdownAnimationCancel();
 
@@ -435,8 +407,6 @@ TEST_F(LockStateControllerTest, ShutdownWhenNotLoggedIn) {
 
   // Press the button again and make the shutdown timeout fire this time.
   // Check that we start the timer for actually requesting the shutdown.
-  PressPowerButton();
-
   EXPECT_TRUE(test_api_->shutdown_timer_is_running());
 
   Advance(SessionStateAnimator::ANIMATION_SPEED_SHUTDOWN);
@@ -460,8 +430,6 @@ TEST_F(LockStateControllerTest, LockAndUnlock) {
 
   // Press the power button and check that the lock timer is started and that we
   // start lifting the non-screen-locker containers.
-  PressPowerButton();
-
   ExpectPreLockAnimationStarted();
   EXPECT_TRUE(test_api_->is_lock_cancellable());
   EXPECT_EQ(0, session_manager_client_->request_lock_screen_call_count());
@@ -486,7 +454,6 @@ TEST_F(LockStateControllerTest, LockAndUnlock) {
   // stopped.
   ExpectLockedState();
   EXPECT_TRUE(test_api_->lock_to_shutdown_timer_is_running());
-  ReleasePowerButton();
   ExpectLockedState();
   EXPECT_FALSE(test_api_->lock_to_shutdown_timer_is_running());
 
@@ -519,8 +486,6 @@ TEST_F(LockStateControllerTest, LockAndCancel) {
 
   // Press the power button and check that the lock timer is started and that we
   // start lifting the non-screen-locker containers.
-  PressPowerButton();
-
   ExpectPreLockAnimationStarted();
   EXPECT_TRUE(test_api_->is_lock_cancellable());
 
@@ -528,8 +493,6 @@ TEST_F(LockStateControllerTest, LockAndCancel) {
   AdvancePartially(SessionStateAnimator::ANIMATION_SPEED_UNDOABLE, 0.5f);
 
   // Release the button before the lock timer fires.
-  ReleasePowerButton();
-
   ExpectPreLockAnimationCancel();
 
   Advance(SessionStateAnimator::ANIMATION_SPEED_MOVE_WINDOWS);
@@ -545,8 +508,6 @@ TEST_F(LockStateControllerTest, LockAndCancelAndLockAgain) {
 
   // Press the power button and check that the lock timer is started and that we
   // start lifting the non-screen-locker containers.
-  PressPowerButton();
-
   ExpectPreLockAnimationStarted();
   EXPECT_TRUE(test_api_->is_lock_cancellable());
 
@@ -554,13 +515,11 @@ TEST_F(LockStateControllerTest, LockAndCancelAndLockAgain) {
   AdvancePartially(SessionStateAnimator::ANIMATION_SPEED_UNDOABLE, 0.5f);
 
   // Release the button before the lock timer fires.
-  ReleasePowerButton();
   ExpectPreLockAnimationCancel();
 
   AdvancePartially(SessionStateAnimator::ANIMATION_SPEED_UNDO_MOVE_WINDOWS,
                    0.5f);
 
-  PressPowerButton();
   ExpectPreLockAnimationStarted();
   EXPECT_TRUE(test_api_->is_lock_cancellable());
 
@@ -578,7 +537,6 @@ TEST_F(LockStateControllerTest, LockToShutdown) {
   Initialize(false, LoginStatus::USER);
 
   // Hold the power button and lock the screen.
-  PressPowerButton();
   EXPECT_TRUE(test_api_->is_animating_lock());
 
   Advance(SessionStateAnimator::ANIMATION_SPEED_UNDOABLE);
@@ -610,8 +568,6 @@ TEST_F(LockStateControllerTest, LockToShutdown) {
 TEST_F(LockStateControllerTest, CancelLockToShutdown) {
   Initialize(false, LoginStatus::USER);
 
-  PressPowerButton();
-
   // Hold the power button and lock the screen.
   EXPECT_TRUE(test_api_->is_animating_lock());
 
@@ -620,8 +576,6 @@ TEST_F(LockStateControllerTest, CancelLockToShutdown) {
   AdvancePartially(SessionStateAnimator::ANIMATION_SPEED_MOVE_WINDOWS, 0.5f);
 
   // Power button is released while system attempts to lock.
-  ReleasePowerButton();
-
   Advance(SessionStateAnimator::ANIMATION_SPEED_MOVE_WINDOWS);
 
   EXPECT_FALSE(lock_state_controller_->ShutdownRequested());
@@ -637,7 +591,6 @@ TEST_F(LockStateControllerTest, Lock) {
   Initialize(false, LoginStatus::USER);
 
   // Hold the power button and lock the screen.
-  PressPowerButton();
   ExpectPreLockAnimationStarted();
 
   Advance(SessionStateAnimator::ANIMATION_SPEED_UNDOABLE);
@@ -734,7 +687,6 @@ TEST_F(LockStateControllerTest, PowerButtonPreemptsLockButton) {
   AdvancePartially(SessionStateAnimator::ANIMATION_SPEED_UNDOABLE, 0.1f);
   ExpectPreLockAnimationRunning();
 
-  PressPowerButton();
   ExpectPreLockAnimationRunning();
 
   AdvancePartially(SessionStateAnimator::ANIMATION_SPEED_UNDOABLE, 0.1f);
@@ -744,14 +696,12 @@ TEST_F(LockStateControllerTest, PowerButtonPreemptsLockButton) {
   ReleaseLockButton();
   ExpectPreLockAnimationRunning();
 
-  ReleasePowerButton();
   ExpectPreLockAnimationCancel();
 
   Advance(SessionStateAnimator::ANIMATION_SPEED_MOVE_WINDOWS);
   ExpectUnlockedState();
 
   // Now press the power button first and then the lock button.
-  PressPowerButton();
   ExpectPreLockAnimationStarted();
 
   AdvancePartially(SessionStateAnimator::ANIMATION_SPEED_UNDOABLE, 0.1f);
@@ -762,7 +712,6 @@ TEST_F(LockStateControllerTest, PowerButtonPreemptsLockButton) {
   AdvancePartially(SessionStateAnimator::ANIMATION_SPEED_UNDOABLE, 0.1f);
 
   // Releasing the power button should stop the lock timer.
-  ReleasePowerButton();
   ExpectPreLockAnimationCancel();
 
   AdvancePartially(SessionStateAnimator::ANIMATION_SPEED_UNDOABLE, 0.1f);
@@ -848,7 +797,6 @@ TEST_F(LockStateControllerTest, RequestAndCancelShutdownFromLockScreen) {
   ExpectLockedState();
 
   // Press the power button and check that we start the shutdown timer.
-  PressPowerButton();
   EXPECT_FALSE(test_api_->is_animating_lock());
   EXPECT_TRUE(test_api_->shutdown_timer_is_running());
 
@@ -857,8 +805,6 @@ TEST_F(LockStateControllerTest, RequestAndCancelShutdownFromLockScreen) {
   AdvancePartially(SessionStateAnimator::ANIMATION_SPEED_SHUTDOWN, 0.5f);
 
   // Release the power button before the shutdown timer fires.
-  ReleasePowerButton();
-
   EXPECT_FALSE(test_api_->shutdown_timer_is_running());
 
   ExpectShutdownAnimationCancel();
@@ -891,10 +837,7 @@ TEST_F(LockStateControllerTest, HonorPowerButtonInDockedMode) {
   // on (indicating either docked mode or the user having manually decreased the
   // brightness to 0%), the power button should still be handled.
   external_display.set_current_mode(external_display.modes().back().get());
-  power_button_controller_->OnDisplayModeChanged(outputs);
-  PressPowerButton();
   EXPECT_TRUE(test_api_->is_animating_lock());
-  ReleasePowerButton();
 }
 
 // Test that hidden wallpaper appears and revers correctly on lock/cancel.
@@ -903,7 +846,6 @@ TEST_F(LockStateControllerTest, TestHiddenWallpaperLockCancel) {
   HideWallpaper();
 
   ExpectUnlockedState();
-  PressPowerButton();
 
   ExpectPreLockAnimationStarted();
   ExpectWallpaperIsShowing();
@@ -912,7 +854,6 @@ TEST_F(LockStateControllerTest, TestHiddenWallpaperLockCancel) {
   AdvancePartially(SessionStateAnimator::ANIMATION_SPEED_UNDOABLE, 0.5f);
 
   // Release the button before the lock timer fires.
-  ReleasePowerButton();
   ExpectPreLockAnimationCancel();
   ExpectWallpaperIsHiding();
 
@@ -936,7 +877,6 @@ TEST_F(LockStateControllerTest, TestHiddenWallpaperLockUnlock) {
 
   // Press the power button and check that the lock timer is started and that we
   // start lifting the non-screen-locker containers.
-  PressPowerButton();
 
   ExpectPreLockAnimationStarted();
   ExpectWallpaperIsShowing();
@@ -946,8 +886,6 @@ TEST_F(LockStateControllerTest, TestHiddenWallpaperLockUnlock) {
   ExpectPreLockAnimationFinished();
 
   SystemLocks();
-
-  ReleasePowerButton();
 
   ExpectPostLockAnimationStarted();
   Advance(SessionStateAnimator::ANIMATION_SPEED_MOVE_WINDOWS);
@@ -988,30 +926,22 @@ TEST_F(LockStateControllerTest, Screenshot) {
   // Screenshot handling should not be active when not in maximize mode.
   ASSERT_EQ(0, delegate->handle_take_screenshot_count());
   PressVolumeDown();
-  PressPowerButton();
-  ReleasePowerButton();
   ReleaseVolumeDown();
   EXPECT_EQ(0, delegate->handle_take_screenshot_count());
 
   EnableMaximizeMode(true);
 
   // Pressing power alone does not take a screenshot.
-  PressPowerButton();
-  ReleasePowerButton();
   EXPECT_EQ(0, delegate->handle_take_screenshot_count());
 
   // Press & release volume then pressing power does not take a screenshot.
   ASSERT_EQ(0, delegate->handle_take_screenshot_count());
   PressVolumeDown();
   ReleaseVolumeDown();
-  PressPowerButton();
-  ReleasePowerButton();
   EXPECT_EQ(0, delegate->handle_take_screenshot_count());
 
   // Pressing power and then volume does not take a screenshot.
   ASSERT_EQ(0, delegate->handle_take_screenshot_count());
-  PressPowerButton();
-  ReleasePowerButton();
   PressVolumeDown();
   ReleaseVolumeDown();
   EXPECT_EQ(0, delegate->handle_take_screenshot_count());
@@ -1019,8 +949,6 @@ TEST_F(LockStateControllerTest, Screenshot) {
   // Holding volume down and pressing power takes a screenshot.
   ASSERT_EQ(0, delegate->handle_take_screenshot_count());
   PressVolumeDown();
-  PressPowerButton();
-  ReleasePowerButton();
   ReleaseVolumeDown();
   EXPECT_EQ(1, delegate->handle_take_screenshot_count());
 }
@@ -1029,16 +957,11 @@ TEST_F(LockStateControllerTest, Screenshot) {
 // maximize mode is not active.
 TEST_F(LockStateControllerTest, QuickLockWhileNotInMaximizeMode) {
   Initialize(false, LoginStatus::USER);
-  power_button_controller_->set_enable_quick_lock_for_test(true);
   EnableMaximizeMode(false);
-
-  PressPowerButton();
 
   ExpectPreLockAnimationStarted();
   EXPECT_TRUE(test_api_->is_animating_lock());
   EXPECT_TRUE(lock_state_controller_->CanCancelLockAnimation());
-
-  ReleasePowerButton();
 
   EXPECT_EQ(0, session_manager_client_->request_lock_screen_call_count());
 }
@@ -1047,16 +970,11 @@ TEST_F(LockStateControllerTest, QuickLockWhileNotInMaximizeMode) {
 // maximize mode is active.
 TEST_F(LockStateControllerTest, QuickLockWhileInMaximizeMode) {
   Initialize(false, LoginStatus::USER);
-  power_button_controller_->set_enable_quick_lock_for_test(true);
   EnableMaximizeMode(true);
-
-  PressPowerButton();
 
   ExpectPreLockAnimationStarted();
   EXPECT_TRUE(test_api_->is_animating_lock());
   EXPECT_FALSE(lock_state_controller_->CanCancelLockAnimation());
-
-  ReleasePowerButton();
 
   ExpectPreLockAnimationStarted();
 

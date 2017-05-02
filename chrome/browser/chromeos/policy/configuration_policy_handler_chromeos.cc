@@ -73,14 +73,7 @@ const char kIdleWarningDelayAC[] = "AC.Delays.IdleWarning";
 const char kIdleDelayAC[] = "AC.Delays.Idle";
 const char kIdleActionAC[] = "AC.IdleAction";
 
-const char kScreenDimDelayBattery[] = "Battery.Delays.ScreenDim";
-const char kScreenOffDelayBattery[] = "Battery.Delays.ScreenOff";
-const char kIdleWarningDelayBattery[] = "Battery.Delays.IdleWarning";
-const char kIdleDelayBattery[] = "Battery.Delays.Idle";
-const char kIdleActionBattery[] = "Battery.IdleAction";
-
 const char kScreenLockDelayAC[] = "AC";
-const char kScreenLockDelayBattery[] = "Battery";
 
 const char kActionSuspend[] = "Suspend";
 const char kActionLogout[] = "Logout";
@@ -101,22 +94,6 @@ std::unique_ptr<base::Value> GetAction(const base::DictionaryValue* dict,
   std::string action;
   if (!value || !value->GetAsString(&action))
     return std::unique_ptr<base::Value>();
-  if (action == kActionSuspend) {
-    return std::unique_ptr<base::Value>(new base::FundamentalValue(
-        chromeos::PowerPolicyController::ACTION_SUSPEND));
-  }
-  if (action == kActionLogout) {
-    return std::unique_ptr<base::Value>(new base::FundamentalValue(
-        chromeos::PowerPolicyController::ACTION_STOP_SESSION));
-  }
-  if (action == kActionShutdown) {
-    return std::unique_ptr<base::Value>(new base::FundamentalValue(
-        chromeos::PowerPolicyController::ACTION_SHUT_DOWN));
-  }
-  if (action == kActionDoNothing) {
-    return std::unique_ptr<base::Value>(new base::FundamentalValue(
-        chromeos::PowerPolicyController::ACTION_DO_NOTHING));
-  }
   return std::unique_ptr<base::Value>();
 }
 
@@ -378,79 +355,12 @@ void LoginScreenPowerManagementPolicyHandler::ApplyPolicySettings(
 DeprecatedIdleActionHandler::DeprecatedIdleActionHandler()
     : IntRangePolicyHandlerBase(
           key::kIdleAction,
-          chromeos::PowerPolicyController::ACTION_SUSPEND,
-          chromeos::PowerPolicyController::ACTION_DO_NOTHING,
           false) {}
 
 DeprecatedIdleActionHandler::~DeprecatedIdleActionHandler() {}
 
 void DeprecatedIdleActionHandler::ApplyPolicySettings(const PolicyMap& policies,
                                                       PrefValueMap* prefs) {
-  const base::Value* value = policies.GetValue(policy_name());
-  if (value && EnsureInRange(value, NULL, NULL)) {
-    if (!prefs->GetValue(prefs::kPowerAcIdleAction, NULL))
-      prefs->SetValue(prefs::kPowerAcIdleAction, value->CreateDeepCopy());
-    if (!prefs->GetValue(prefs::kPowerBatteryIdleAction, NULL))
-      prefs->SetValue(prefs::kPowerBatteryIdleAction, value->CreateDeepCopy());
-  }
-}
-
-PowerManagementIdleSettingsPolicyHandler::
-    PowerManagementIdleSettingsPolicyHandler(const Schema& chrome_schema)
-    : SchemaValidatingPolicyHandler(
-          key::kPowerManagementIdleSettings,
-          chrome_schema.GetKnownProperty(key::kPowerManagementIdleSettings),
-          SCHEMA_ALLOW_UNKNOWN) {
-}
-
-PowerManagementIdleSettingsPolicyHandler::
-    ~PowerManagementIdleSettingsPolicyHandler() {
-}
-
-void PowerManagementIdleSettingsPolicyHandler::ApplyPolicySettings(
-    const PolicyMap& policies,
-    PrefValueMap* prefs) {
-  std::unique_ptr<base::Value> policy_value;
-  if (!CheckAndGetValue(policies, NULL, &policy_value))
-    return;
-  const base::DictionaryValue* dict = NULL;
-  if (!policy_value->GetAsDictionary(&dict)) {
-    NOTREACHED();
-    return;
-  }
-  std::unique_ptr<base::Value> value;
-
-  value = GetValue(dict, kScreenDimDelayAC);
-  if (value)
-    prefs->SetValue(prefs::kPowerAcScreenDimDelayMs, std::move(value));
-  value = GetValue(dict, kScreenOffDelayAC);
-  if (value)
-    prefs->SetValue(prefs::kPowerAcScreenOffDelayMs, std::move(value));
-  value = GetValue(dict, kIdleWarningDelayAC);
-  if (value)
-    prefs->SetValue(prefs::kPowerAcIdleWarningDelayMs, std::move(value));
-  value = GetValue(dict, kIdleDelayAC);
-  if (value)
-    prefs->SetValue(prefs::kPowerAcIdleDelayMs, std::move(value));
-  value = GetAction(dict, kIdleActionAC);
-  if (value)
-    prefs->SetValue(prefs::kPowerAcIdleAction, std::move(value));
-
-  value = GetValue(dict, kScreenDimDelayBattery);
-  if (value)
-    prefs->SetValue(prefs::kPowerBatteryScreenDimDelayMs, std::move(value));
-  value = GetValue(dict, kScreenOffDelayBattery);
-  if (value)
-    prefs->SetValue(prefs::kPowerBatteryScreenOffDelayMs, std::move(value));
-  value = GetValue(dict, kIdleWarningDelayBattery);
-  if (value)
-    prefs->SetValue(prefs::kPowerBatteryIdleWarningDelayMs, std::move(value));
-  value = GetValue(dict, kIdleDelayBattery);
-  if (value)
-    prefs->SetValue(prefs::kPowerBatteryIdleDelayMs, std::move(value));
-  value = GetAction(dict, kIdleActionBattery);
-  if (value)
-    prefs->SetValue(prefs::kPowerBatteryIdleAction, std::move(value));
 }
 
 ScreenLockDelayPolicyHandler::ScreenLockDelayPolicyHandler(
@@ -475,14 +385,6 @@ void ScreenLockDelayPolicyHandler::ApplyPolicySettings(
     NOTREACHED();
     return;
   }
-  std::unique_ptr<base::Value> value;
-
-  value = GetValue(dict, kScreenLockDelayAC);
-  if (value)
-    prefs->SetValue(prefs::kPowerAcScreenLockDelayMs, std::move(value));
-  value = GetValue(dict, kScreenLockDelayBattery);
-  if (value)
-    prefs->SetValue(prefs::kPowerBatteryScreenLockDelayMs, std::move(value));
 }
 
 }  // namespace policy

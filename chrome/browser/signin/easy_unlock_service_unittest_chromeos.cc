@@ -24,7 +24,6 @@
 #include "chrome/common/pref_names.h"
 #include "chrome/test/base/testing_profile.h"
 #include "chromeos/dbus/dbus_thread_manager.h"
-#include "chromeos/dbus/fake_power_manager_client.h"
 #include "components/signin/core/account_id/account_id.h"
 #include "components/signin/core/browser/signin_manager_base.h"
 #include "components/syncable_prefs/testing_pref_service_syncable.h"
@@ -34,8 +33,6 @@
 #include "testing/gmock/include/gmock/gmock.h"
 
 using chromeos::DBusThreadManagerSetter;
-using chromeos::FakePowerManagerClient;
-using chromeos::PowerManagerClient;
 using chromeos::ProfileHelper;
 using device::MockBluetoothAdapter;
 using testing::_;
@@ -215,9 +212,6 @@ class EasyUnlockServiceTest : public testing::Test {
 
     std::unique_ptr<DBusThreadManagerSetter> dbus_setter =
         chromeos::DBusThreadManager::GetSetterForTesting();
-    power_manager_client_ = new FakePowerManagerClient;
-    dbus_setter->SetPowerManagerClient(
-        std::unique_ptr<PowerManagerClient>(power_manager_client_));
 
     ON_CALL(*mock_user_manager_, Shutdown()).WillByDefault(Return());
     ON_CALL(*mock_user_manager_, IsLoggedInAsUserWithGaiaAccount())
@@ -245,10 +239,6 @@ class EasyUnlockServiceTest : public testing::Test {
 
   bool is_bluetooth_adapter_present() const {
     return is_bluetooth_adapter_present_;
-  }
-
-  FakePowerManagerClient* power_manager_client() {
-    return power_manager_client_;
   }
 
   // Checks whether AppManager passed to EasyUnlockservice for |profile| has
@@ -306,8 +296,6 @@ class EasyUnlockServiceTest : public testing::Test {
 
   chromeos::ScopedUserManagerEnabler scoped_user_manager_;
 
-  FakePowerManagerClient* power_manager_client_;
-
   bool is_bluetooth_adapter_present_;
   scoped_refptr<testing::NiceMock<MockBluetoothAdapter>> mock_adapter_;
 
@@ -339,11 +327,9 @@ TEST_F(EasyUnlockServiceTest, DisabledOnSuspend) {
   EXPECT_TRUE(
       EasyUnlockAppInState(profile_.get(), TestAppManager::STATE_LOADED));
 
-  power_manager_client()->SendSuspendImminent();
   EXPECT_TRUE(
       EasyUnlockAppInState(profile_.get(), TestAppManager::STATE_DISABLED));
 
-  power_manager_client()->SendSuspendDone();
   EXPECT_TRUE(
       EasyUnlockAppInState(profile_.get(), TestAppManager::STATE_LOADED));
 }

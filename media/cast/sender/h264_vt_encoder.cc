@@ -15,7 +15,6 @@
 #include "base/location.h"
 #include "base/logging.h"
 #include "base/macros.h"
-#include "base/power_monitor/power_monitor.h"
 #include "base/synchronization/lock.h"
 #include "build/build_config.h"
 #include "media/base/mac/corevideo_glue.h"
@@ -183,27 +182,15 @@ H264VideoToolboxEncoder::H264VideoToolboxEncoder(
             weak_factory_.GetWeakPtr(), cast_environment_));
 
     // Register for power state changes.
-    auto* power_monitor = base::PowerMonitor::Get();
-    if (power_monitor) {
-      power_monitor->AddObserver(this);
-      VLOG(1) << "Registered for power state changes.";
-    } else {
       DLOG(WARNING) << "No power monitor. Process suspension will invalidate "
                        "the encoder.";
-    }
   }
 }
 
 H264VideoToolboxEncoder::~H264VideoToolboxEncoder() {
   DestroyCompressionSession();
-
   // If video_frame_factory_ is not null, the encoder registered for power state
   // changes in the ctor and it must now unregister.
-  if (video_frame_factory_) {
-    auto* power_monitor = base::PowerMonitor::Get();
-    if (power_monitor)
-      power_monitor->RemoveObserver(this);
-  }
 }
 
 void H264VideoToolboxEncoder::ResetCompressionSession() {

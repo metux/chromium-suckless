@@ -47,7 +47,6 @@
 
 #if defined(OS_ANDROID)
 #include "content/public/browser/render_widget_host_view.h"
-#include "device/power_save_blocker/power_save_blocker.h"
 #endif
 
 namespace content {
@@ -532,7 +531,6 @@ void RenderFrameDevToolsAgentHost::OnClientAttached() {
     return;
 
   frame_trace_recorder_.reset(new DevToolsFrameTraceRecorder());
-  CreatePowerSaveBlocker();
 
   // TODO(kaznacheev): Move this call back to DevToolsManager when
   // extensions::ProcessManager no longer relies on this notification.
@@ -540,9 +538,6 @@ void RenderFrameDevToolsAgentHost::OnClientAttached() {
 }
 
 void RenderFrameDevToolsAgentHost::OnClientDetached() {
-#if defined(OS_ANDROID)
-  power_save_blocker_.reset();
-#endif
   browser_handler_->Detached();
   if (emulation_handler_)
     emulation_handler_->Detached();
@@ -724,20 +719,6 @@ bool RenderFrameDevToolsAgentHost::CheckConsistency() {
       handlers_frame_host_ == manager->pending_frame_host();
 }
 
-void RenderFrameDevToolsAgentHost::CreatePowerSaveBlocker() {
-#if defined(OS_ANDROID)
-  power_save_blocker_.reset(new device::PowerSaveBlocker(
-      device::PowerSaveBlocker::kPowerSaveBlockPreventDisplaySleep,
-      device::PowerSaveBlocker::kReasonOther, "DevTools",
-      BrowserThread::GetTaskRunnerForThread(BrowserThread::UI),
-      BrowserThread::GetTaskRunnerForThread(BrowserThread::FILE)));
-  if (web_contents()->GetNativeView()) {
-    power_save_blocker_->InitDisplaySleepBlocker(
-        web_contents()->GetNativeView());
-  }
-#endif
-}
-
 void RenderFrameDevToolsAgentHost::RenderProcessGone(
     base::TerminationStatus status) {
   switch(status) {
@@ -838,13 +819,9 @@ void RenderFrameDevToolsAgentHost::DidFailProvisionalLoad(
 }
 
 void RenderFrameDevToolsAgentHost::WasShown() {
-  CreatePowerSaveBlocker();
 }
 
 void RenderFrameDevToolsAgentHost::WasHidden() {
-#if defined(OS_ANDROID)
-  power_save_blocker_.reset();
-#endif
 }
 
 void RenderFrameDevToolsAgentHost::

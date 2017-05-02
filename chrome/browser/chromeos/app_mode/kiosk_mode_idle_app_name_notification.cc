@@ -63,9 +63,6 @@ KioskModeIdleAppNameNotification::~KioskModeIdleAppNameNotification() {
   if (user_activity_detector && user_activity_detector->HasObserver(this)) {
     user_activity_detector->RemoveObserver(this);
     // At this time the DBusThreadManager might already be gone.
-    if (chromeos::DBusThreadManager::IsInitialized())
-      chromeos::DBusThreadManager::Get()->GetPowerManagerClient(
-          )->RemoveObserver(this);
   }
 }
 
@@ -107,8 +104,6 @@ void KioskModeIdleAppNameNotification::SuspendDone(
 void KioskModeIdleAppNameNotification::Start() {
   if (!ui::UserActivityDetector::Get()->HasObserver(this)) {
     ui::UserActivityDetector::Get()->AddObserver(this);
-    chromeos::DBusThreadManager::Get()->GetPowerManagerClient()->AddObserver(
-        this);
   }
   ResetTimer();
 }

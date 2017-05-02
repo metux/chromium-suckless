@@ -17,7 +17,7 @@ namespace ash {
 const int kShellWindowId_Invalid = -1;
 
 // A higher-level container that holds all of the containers stacked below
-// kShellWindowId_LockScreenContainer.  Only used by PowerButtonController for
+// kShellWindowId_LockScreenContainer.  Only used by for
 // animating lower-level containers.
 const int kShellWindowId_NonLockScreenContainersContainer = 0;
 

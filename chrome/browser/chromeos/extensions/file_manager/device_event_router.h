@@ -13,7 +13,6 @@
 #include "base/threading/thread_checker.h"
 #include "chrome/browser/chromeos/file_manager/volume_manager_observer.h"
 #include "chrome/common/extensions/api/file_manager_private.h"
-#include "chromeos/dbus/power_manager_client.h"
 
 namespace file_manager {
 
@@ -27,8 +26,7 @@ enum DeviceState {
 };
 
 // Event router for device events.
-class DeviceEventRouter : public VolumeManagerObserver,
-                          public chromeos::PowerManagerClient::Observer {
+class DeviceEventRouter : public VolumeManagerObserver {
  public:
   DeviceEventRouter();
 
@@ -54,10 +52,6 @@ class DeviceEventRouter : public VolumeManagerObserver,
                          const Volume& volume) override;
   void OnFormatStarted(const std::string& device_path, bool success) override;
   void OnFormatCompleted(const std::string& device_path, bool success) override;
-
-  // PowerManagerClient::Observer overrides.
-  void SuspendImminent() override;
-  void SuspendDone(const base::TimeDelta& sleep_duration) override;
 
   bool is_resuming() const { return is_resuming_; }
   bool is_starting_up() const { return is_starting_up_; }

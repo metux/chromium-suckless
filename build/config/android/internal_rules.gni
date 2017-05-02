@@ -37,7 +37,6 @@ _java_target_whitelist = [
   "//components/cronet/android:cronet_api",
   "//components/cronet/android:cronet_javadoc_classpath",
   "//components/policy:app_restrictions_resources",
-  "//device/battery/android:battery_monitor_android",
   "//device/vibration/android:vibration_manager_android",
   "//mojo/public/java:bindings",
   "//mojo/public/java:system",

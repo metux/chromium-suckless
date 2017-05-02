@@ -4,26 +4,16 @@
 
 #include "base/timer/hi_res_timer_manager.h"
 
-#include "base/power_monitor/power_monitor.h"
 #include "base/time/time.h"
 
 namespace base {
 
 HighResolutionTimerManager::HighResolutionTimerManager()
     : hi_res_clock_available_(false) {
-  base::PowerMonitor* power_monitor = base::PowerMonitor::Get();
-  DCHECK(power_monitor != NULL);
-  power_monitor->AddObserver(this);
-  UseHiResClock(!power_monitor->IsOnBatteryPower());
 }
 
 HighResolutionTimerManager::~HighResolutionTimerManager() {
-  base::PowerMonitor::Get()->RemoveObserver(this);
   UseHiResClock(false);
-}
-
-void HighResolutionTimerManager::OnPowerStateChange(bool on_battery_power) {
-  UseHiResClock(!on_battery_power);
 }
 
 void HighResolutionTimerManager::UseHiResClock(bool use) {

@@ -20,7 +20,6 @@
 #include "build/build_config.h"
 #include "media/audio/audio_io.h"
 #include "media/audio/audio_manager.h"
-#include "media/audio/audio_power_monitor.h"
 #include "media/audio/audio_source_diverter.h"
 #include "media/audio/simple_sources.h"
 #include "media/base/media_export.h"
@@ -267,9 +266,6 @@ class MEDIA_EXPORT AudioOutputController
 
   // The message loop of audio manager thread that this object runs on.
   const scoped_refptr<base::SingleThreadTaskRunner> message_loop_;
-
-  // Scans audio samples from OnMoreData() as input to compute power levels.
-  AudioPowerMonitor power_monitor_;
 
   // Flags when we've asked for a stream to start but it never did.
   base::AtomicRefCount on_more_io_data_called_;

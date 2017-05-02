@@ -63,7 +63,6 @@
 #include "chrome/browser/chromeos/login/users/mock_user_manager.h"
 #include "chrome/browser/chromeos/login/users/scoped_user_manager_enabler.h"
 #include "chromeos/dbus/dbus_thread_manager.h"
-#include "chromeos/dbus/fake_power_manager_client.h"
 #endif
 
 using content::WebContents;
@@ -1252,17 +1251,12 @@ IN_PROC_BROWSER_TEST_F(PlatformAppIncognitoBrowserTest, IncognitoComponentApp) {
 class RestartDeviceTest : public PlatformAppBrowserTest {
  public:
   RestartDeviceTest()
-      : power_manager_client_(NULL),
         mock_user_manager_(NULL) {}
   ~RestartDeviceTest() override {}
 
   // PlatformAppBrowserTest overrides
   void SetUpInProcessBrowserTestFixture() override {
     PlatformAppBrowserTest::SetUpInProcessBrowserTestFixture();
-
-    power_manager_client_ = new chromeos::FakePowerManagerClient;
-    chromeos::DBusThreadManager::GetSetterForTesting()->SetPowerManagerClient(
-        std::unique_ptr<chromeos::PowerManagerClient>(power_manager_client_));
   }
 
   void SetUpOnMainThread() override {
@@ -1291,11 +1285,10 @@ class RestartDeviceTest : public PlatformAppBrowserTest {
   }
 
   int num_request_restart_calls() const {
-    return power_manager_client_->num_request_restart_calls();
+    return 0;
   }
 
  private:
-  chromeos::FakePowerManagerClient* power_manager_client_;
   chromeos::MockUserManager* mock_user_manager_;
   std::unique_ptr<chromeos::ScopedUserManagerEnabler> user_manager_enabler_;
 

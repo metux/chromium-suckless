@@ -70,7 +70,6 @@
 #include "chrome/browser/chromeos/power/login_lock_state_notifier.h"
 #include "chrome/browser/chromeos/power/peripheral_battery_observer.h"
 #include "chrome/browser/chromeos/power/power_data_collector.h"
-#include "chrome/browser/chromeos/power/power_prefs.h"
 #include "chrome/browser/chromeos/power/renderer_freezer.h"
 #include "chrome/browser/chromeos/profiles/profile_helper.h"
 #include "chrome/browser/chromeos/resource_reporter/resource_reporter.h"
@@ -212,9 +211,6 @@ class DBusServices {
         DBusThreadManager::Get()->GetSystemBus(),
         chromeos::DBusThreadManager::Get()->IsUsingFakes());
 
-    PowerPolicyController::Initialize(
-        DBusThreadManager::Get()->GetPowerManagerClient());
-
     CrosDBusService::ServiceProviderList service_providers;
     service_providers.push_back(
         base::WrapUnique(ProxyResolutionServiceProvider::Create(
@@ -230,9 +226,6 @@ class DBusServices {
         base::MakeUnique<ChromeConsoleServiceProviderDelegate>()));
     service_providers.push_back(base::MakeUnique<KioskInfoService>());
     CrosDBusService::Initialize(std::move(service_providers));
-
-    // Initialize PowerDataCollector after DBusThreadManager is initialized.
-    PowerDataCollector::Initialize();
 
     LoginState::Initialize();
     SystemSaltGetter::Initialize();
@@ -280,8 +273,6 @@ class DBusServices {
     CertLoader::Shutdown();
     TPMTokenLoader::Shutdown();
     CrosDBusService::Shutdown();
-    PowerDataCollector::Shutdown();
-    PowerPolicyController::Shutdown();
     device::BluetoothAdapterFactory::Shutdown();
     bluez::BluezDBusManager::Shutdown();
 
@@ -495,7 +486,7 @@ void ChromeBrowserMainPartsChromeos::PreProfileInit() {
       chrome::DIR_CHROMEOS_WALLPAPERS,
       chrome::DIR_CHROMEOS_CUSTOM_WALLPAPERS);
 
-  // Add observers for WallpaperManager. This depends on PowerManagerClient,
+  // Add observers for WallpaperManager. This depends
   // TimezoneSettings and CrosSettings.
   WallpaperManager::Initialize();
   WallpaperManager::Get()->AddObservers();
@@ -518,8 +509,6 @@ void ChromeBrowserMainPartsChromeos::PreProfileInit() {
   // Enable/disable native CUPS integration
   printing::PrintBackend::SetNativeCupsEnabled(
       parsed_command_line().HasSwitch(::switches::kEnableNativeCups));
-
-  power_prefs_.reset(new PowerPrefs(PowerPolicyController::Get()));
 
   // In Aura builds this will initialize ash::Shell.
   ChromeBrowserMainPartsLinux::PreProfileInit();
@@ -673,8 +662,6 @@ void ChromeBrowserMainPartsChromeos::PostProfileInit() {
   if (user_manager::UserManager::Get()->IsLoggedInAsGuest())
     SetGuestLocale(profile());
 
-  peripheral_battery_observer_.reset(new PeripheralBatteryObserver());
-
   renderer_freezer_.reset(
       new RendererFreezer(std::unique_ptr<RendererFreezer::Delegate>(
           new FreezerCgroupProcessManager())));
@@ -800,7 +787,6 @@ void ChromeBrowserMainPartsChromeos::PostMainMessageLoopRun() {
   // We should remove observers attached to D-Bus clients before
   // DBusThreadManager is shut down.
   peripheral_battery_observer_.reset();
-  power_prefs_.reset();
   renderer_freezer_.reset();
   wake_on_wifi_manager_.reset();
   ScreenLocker::ShutDownClass();

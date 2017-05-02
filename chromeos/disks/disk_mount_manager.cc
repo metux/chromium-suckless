@@ -35,10 +35,8 @@ class DiskMountManagerImpl : public DiskMountManager {
     weak_ptr_factory_(this) {
     DBusThreadManager* dbus_thread_manager = DBusThreadManager::Get();
     cros_disks_client_ = dbus_thread_manager->GetCrosDisksClient();
-    PowerManagerClient* power_manager_client =
-        dbus_thread_manager->GetPowerManagerClient();
     suspend_unmount_manager_.reset(
-        new SuspendUnmountManager(this, power_manager_client));
+        new SuspendUnmountManager(this));
     cros_disks_client_->SetMountEventHandler(
         base::Bind(&DiskMountManagerImpl::OnMountEvent,
                    weak_ptr_factory_.GetWeakPtr()));

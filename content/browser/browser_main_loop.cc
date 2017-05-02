@@ -22,8 +22,6 @@
 #include "base/metrics/histogram_macros.h"
 #include "base/metrics/user_metrics.h"
 #include "base/pending_task.h"
-#include "base/power_monitor/power_monitor.h"
-#include "base/power_monitor/power_monitor_device_source.h"
 #include "base/process/process_metrics.h"
 #include "base/run_loop.h"
 #include "base/single_thread_task_runner.h"
@@ -577,13 +575,6 @@ void BrowserMainLoop::PostMainMessageLoopStart() {
   {
     TRACE_EVENT0("startup", "BrowserMainLoop::Subsystem:SystemMonitor");
     system_monitor_.reset(new base::SystemMonitor);
-  }
-  {
-    TRACE_EVENT0("startup", "BrowserMainLoop::Subsystem:PowerMonitor");
-    std::unique_ptr<base::PowerMonitorSource> power_monitor_source(
-        new base::PowerMonitorDeviceSource());
-    power_monitor_.reset(
-        new base::PowerMonitor(std::move(power_monitor_source)));
   }
   {
     TRACE_EVENT0("startup", "BrowserMainLoop::Subsystem:HighResTimerManager");

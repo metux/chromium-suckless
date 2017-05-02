@@ -17,7 +17,6 @@
 #include "chrome/browser/chromeos/system/input_device_settings.h"
 #include "chromeos/dbus/dbus_thread_manager.h"
 #include "chromeos/dbus/fake_cras_audio_client.h"
-#include "chromeos/dbus/fake_power_manager_client.h"
 #include "content/public/browser/web_ui.h"
 #include "device/bluetooth/dbus/bluez_dbus_manager.h"
 #include "device/bluetooth/dbus/fake_bluetooth_adapter_client.h"
@@ -40,8 +39,6 @@ const char kRemoveAudioNode[] = "removeAudioNode";
 // Define update functions that will update the power properties to the
 // variables defined in the web UI.
 const char kRemoveBluetoothDevice[] = "removeBluetoothDevice";
-const char kUpdateBatteryPercent[] = "updateBatteryPercent";
-const char kUpdateBatteryState[] = "updateBatteryState";
 const char kUpdateTimeToEmpty[] = "updateTimeToEmpty";
 const char kUpdateTimeToFull[] = "updateTimeToFull";
 const char kUpdatePowerSources[] = "updatePowerSources";
@@ -63,8 +60,6 @@ const char kPairFailedJSCallback[] =
     "device_emulator.bluetoothSettings.pairFailed";
 const char kUpdateBluetoothInfoJSCallback[] =
     "device_emulator.bluetoothSettings.updateBluetoothInfo";
-const char kUpdatePowerPropertiesJSCallback[] =
-    "device_emulator.batterySettings.updatePowerProperties";
 const char kTouchpadExistsCallback[] =
     "device_emulator.inputDeviceSettings.setTouchpadExists";
 const char kMouseExistsCallback[] =
@@ -159,45 +154,6 @@ void DeviceEmulatorMessageHandler::CrasAudioObserver::NodesChanged() {
   owner_->HandleRequestAudioNodes(nullptr);
 }
 
-class DeviceEmulatorMessageHandler::PowerObserver
-    : public PowerManagerClient::Observer {
- public:
-  explicit PowerObserver(DeviceEmulatorMessageHandler* owner)
-      : owner_(owner) {
-    owner_->fake_power_manager_client_->AddObserver(this);
-  }
-
-  ~PowerObserver() override {
-    owner_->fake_power_manager_client_->RemoveObserver(this);
-  }
-
-  void PowerChanged(
-      const power_manager::PowerSupplyProperties& proto) override;
-
- private:
-   DeviceEmulatorMessageHandler* owner_;
-
-   DISALLOW_COPY_AND_ASSIGN(PowerObserver);
-};
-
-void DeviceEmulatorMessageHandler::PowerObserver::PowerChanged(
-    const power_manager::PowerSupplyProperties& proto) {
-  base::DictionaryValue power_properties;
-
-  power_properties.SetInteger("battery_percent", proto.battery_percent());
-  power_properties.SetInteger("battery_state", proto.battery_state());
-  power_properties.SetInteger("external_power", proto.external_power());
-  power_properties.SetInteger("battery_time_to_empty_sec",
-                              proto.battery_time_to_empty_sec());
-  power_properties.SetInteger("battery_time_to_full_sec",
-                              proto.battery_time_to_full_sec());
-  power_properties.SetString("external_power_source_id",
-                             proto.external_power_source_id());
-
-  owner_->web_ui()->CallJavascriptFunctionUnsafe(
-      kUpdatePowerPropertiesJSCallback, power_properties);
-}
-
 DeviceEmulatorMessageHandler::DeviceEmulatorMessageHandler()
     : fake_bluetooth_device_client_(
           static_cast<bluez::FakeBluetoothDeviceClient*>(
@@ -206,9 +162,6 @@ DeviceEmulatorMessageHandler::DeviceEmulatorMessageHandler()
       fake_cras_audio_client_(static_cast<chromeos::FakeCrasAudioClient*>(
           chromeos::DBusThreadManager::Get()
               ->GetCrasAudioClient())),
-      fake_power_manager_client_(static_cast<chromeos::FakePowerManagerClient*>(
-          chromeos::DBusThreadManager::Get()
-              ->GetPowerManagerClient())),
       weak_ptr_factory_(this) {}
 
 DeviceEmulatorMessageHandler::~DeviceEmulatorMessageHandler() {
@@ -220,7 +173,6 @@ void DeviceEmulatorMessageHandler::Init(const base::ListValue* args) {
 
 void DeviceEmulatorMessageHandler::RequestPowerInfo(
     const base::ListValue* args) {
-  fake_power_manager_client_->RequestStatusUpdate();
 }
 
 void DeviceEmulatorMessageHandler::HandleRemoveBluetoothDevice(
@@ -364,115 +316,20 @@ void DeviceEmulatorMessageHandler::HandleSetHasMouse(
       has_mouse);
 }
 
-void DeviceEmulatorMessageHandler::UpdateBatteryPercent(
-    const base::ListValue* args) {
-  int new_percent;
-  if (args->GetInteger(0, &new_percent)) {
-    power_manager::PowerSupplyProperties props =
-        fake_power_manager_client_->props();
-    props.set_battery_percent(new_percent);
-    fake_power_manager_client_->UpdatePowerProperties(props);
-  }
-}
-
-void DeviceEmulatorMessageHandler::UpdateBatteryState(
-    const base::ListValue* args) {
-  int battery_state;
-  if (args->GetInteger(0, &battery_state)) {
-    power_manager::PowerSupplyProperties props =
-        fake_power_manager_client_->props();
-    props.set_battery_state(
-        static_cast<power_manager::PowerSupplyProperties_BatteryState>(
-            battery_state));
-    fake_power_manager_client_->UpdatePowerProperties(props);
-  }
-}
-
 void DeviceEmulatorMessageHandler::UpdateTimeToEmpty(
     const base::ListValue* args) {
-  int new_time;
-  if (args->GetInteger(0, &new_time)) {
-    power_manager::PowerSupplyProperties props =
-        fake_power_manager_client_->props();
-    props.set_battery_time_to_empty_sec(new_time);
-    fake_power_manager_client_->UpdatePowerProperties(props);
-  }
 }
 
 void DeviceEmulatorMessageHandler::UpdateTimeToFull(
     const base::ListValue* args) {
-  int new_time;
-  if (args->GetInteger(0, &new_time)) {
-    power_manager::PowerSupplyProperties props =
-        fake_power_manager_client_->props();
-    props.set_battery_time_to_full_sec(new_time);
-    fake_power_manager_client_->UpdatePowerProperties(props);
-  }
 }
 
 void DeviceEmulatorMessageHandler::UpdatePowerSources(
     const base::ListValue* args) {
-  const base::ListValue* sources;
-  CHECK(args->GetList(0, &sources));
-  power_manager::PowerSupplyProperties props =
-      fake_power_manager_client_->props();
-
-  std::string selected_id = props.external_power_source_id();
-
-  props.clear_available_external_power_source();
-  props.set_external_power_source_id("");
-
-  // Try to find the previously selected source in the list.
-  const power_manager::PowerSupplyProperties_PowerSource* selected_source =
-      nullptr;
-  for (const auto& val : *sources) {
-    const base::DictionaryValue* dict;
-    CHECK(val->GetAsDictionary(&dict));
-    power_manager::PowerSupplyProperties_PowerSource* source =
-        props.add_available_external_power_source();
-    std::string id;
-    CHECK(dict->GetString("id", &id));
-    source->set_id(id);
-    std::string device_type;
-    CHECK(dict->GetString("type", &device_type));
-    bool dual_role = device_type == "DualRoleUSB";
-    source->set_active_by_default(!dual_role);
-    if (dual_role)
-      props.set_supports_dual_role_devices(true);
-    int port;
-    CHECK(dict->GetInteger("port", &port));
-    source->set_port(
-        static_cast<power_manager::PowerSupplyProperties_PowerSource_Port>(
-            port));
-    std::string power_level;
-    CHECK(dict->GetString("power", &power_level));
-    source->set_max_power(
-        power_level == "high" ? kPowerLevelHigh : kPowerLevelLow);
-    if (id == selected_id)
-      selected_source = source;
-  }
-
-  // Emulate the device's source selection process.
-  for (const auto& source : props.available_external_power_source()) {
-    if (!source.active_by_default())
-      continue;
-    if (selected_source && selected_source->active_by_default() &&
-        source.max_power() < selected_source->max_power()) {
-      continue;
-    }
-    selected_source = &source;
-  }
-
-  fake_power_manager_client_->UpdatePowerProperties(props);
-  fake_power_manager_client_->SetPowerSource(
-      selected_source ? selected_source->id() : "");
 }
 
 void DeviceEmulatorMessageHandler::UpdatePowerSourceId(
     const base::ListValue* args) {
-  std::string id;
-  CHECK(args->GetString(0, &id));
-  fake_power_manager_client_->SetPowerSource(id);
 }
 
 void DeviceEmulatorMessageHandler::RegisterMessages() {
@@ -482,14 +339,6 @@ void DeviceEmulatorMessageHandler::RegisterMessages() {
   web_ui()->RegisterMessageCallback(
       kRequestPowerInfo,
       base::Bind(&DeviceEmulatorMessageHandler::RequestPowerInfo,
-                 base::Unretained(this)));
-  web_ui()->RegisterMessageCallback(
-      kUpdateBatteryPercent,
-      base::Bind(&DeviceEmulatorMessageHandler::UpdateBatteryPercent,
-                 base::Unretained(this)));
-  web_ui()->RegisterMessageCallback(
-      kUpdateBatteryState,
-      base::Bind(&DeviceEmulatorMessageHandler::UpdateBatteryState,
                  base::Unretained(this)));
   web_ui()->RegisterMessageCallback(
       kUpdateTimeToEmpty,
@@ -548,7 +397,6 @@ void DeviceEmulatorMessageHandler::RegisterMessages() {
 void DeviceEmulatorMessageHandler::OnJavascriptAllowed() {
   bluetooth_observer_.reset(new BluetoothObserver(this));
   cras_audio_observer_.reset(new CrasAudioObserver(this));
-  power_observer_.reset(new PowerObserver(this));
 
   system::InputDeviceSettings::Get()->TouchpadExists(
       base::Bind(&DeviceEmulatorMessageHandler::TouchpadExists,
@@ -561,7 +409,6 @@ void DeviceEmulatorMessageHandler::OnJavascriptAllowed() {
 void DeviceEmulatorMessageHandler::OnJavascriptDisallowed() {
   bluetooth_observer_.reset();
   cras_audio_observer_.reset();
-  power_observer_.reset();
 }
 
 std::string DeviceEmulatorMessageHandler::CreateBluetoothDeviceFromListValue(

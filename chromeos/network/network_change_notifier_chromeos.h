@@ -14,7 +14,6 @@
 #include "base/memory/weak_ptr.h"
 #include "base/single_thread_task_runner.h"
 #include "chromeos/chromeos_export.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "chromeos/network/network_state_handler_observer.h"
 #include "net/base/network_change_notifier.h"
 
@@ -22,7 +21,6 @@ namespace chromeos {
 
 class CHROMEOS_EXPORT NetworkChangeNotifierChromeos
     : public net::NetworkChangeNotifier,
-      public chromeos::PowerManagerClient::Observer,
       public chromeos::NetworkStateHandlerObserver {
  public:
   NetworkChangeNotifierChromeos();
@@ -40,9 +38,6 @@ class CHROMEOS_EXPORT NetworkChangeNotifierChromeos
   void GetCurrentMaxBandwidthAndConnectionType(
       double* max_bandwidth_mbps,
       ConnectionType* connection_type) const override;
-
-  // PowerManagerClient::Observer overrides.
-  void SuspendDone(const base::TimeDelta& sleep_duration) override;
 
   // NetworkStateHandlerObserver overrides.
   void DefaultNetworkChanged(

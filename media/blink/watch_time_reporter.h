@@ -6,7 +6,6 @@
 #define MEDIA_BLINK_WATCH_TIME_REPORTER_H_
 
 #include "base/callback.h"
-#include "base/power_monitor/power_observer.h"
 #include "base/time/time.h"
 #include "base/timer/timer.h"
 #include "media/base/media_log.h"
@@ -37,7 +36,7 @@ namespace media {
 //
 // Each seek event will result in a new watch time metric being started and the
 // old metric finalized as accurately as possible.
-class MEDIA_BLINK_EXPORT WatchTimeReporter : base::PowerObserver {
+class MEDIA_BLINK_EXPORT WatchTimeReporter {
  public:
   using GetMediaTimeCB = base::Callback<base::TimeDelta(void)>;
 
@@ -98,13 +97,6 @@ class MEDIA_BLINK_EXPORT WatchTimeReporter : base::PowerObserver {
 
  private:
   friend class WatchTimeReporterTest;
-
-  // base::PowerObserver implementation.
-  //
-  // We only observe power source changes. We don't need to observe suspend and
-  // resume events because we report watch time in terms of elapsed media time
-  // and not in terms of elapsed real time.
-  void OnPowerStateChange(bool on_battery_power) override;
 
   bool ShouldReportWatchTime();
   void MaybeStartReportingTimer(base::TimeDelta start_timestamp);

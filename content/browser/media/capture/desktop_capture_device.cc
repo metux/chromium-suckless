@@ -22,7 +22,6 @@
 #include "content/browser/media/capture/desktop_capture_device_uma_types.h"
 #include "content/public/browser/browser_thread.h"
 #include "content/public/browser/desktop_media_id.h"
-#include "device/power_save_blocker/power_save_blocker.h"
 #include "media/base/video_util.h"
 #include "media/capture/content/capture_resolution_chooser.h"
 #include "third_party/libyuv/include/libyuv/scale_argb.h"
@@ -132,10 +131,6 @@ class DesktopCaptureDevice::Core : public webrtc::DesktopCapturer::Callback {
 
   std::unique_ptr<webrtc::BasicDesktopFrame> black_frame_;
 
-  // TODO(jiayl): Remove power_save_blocker_ when there is an API to keep the
-  // screen from sleeping for the drive-by web.
-  std::unique_ptr<device::PowerSaveBlocker> power_save_blocker_;
-
   DISALLOW_COPY_AND_ASSIGN(Core);
 };
 
@@ -172,12 +167,6 @@ void DesktopCaptureDevice::Core::AllocateAndStart(
   resolution_chooser_.reset(new media::CaptureResolutionChooser(
       params.requested_format.frame_size,
       params.resolution_change_policy));
-
-  power_save_blocker_.reset(new device::PowerSaveBlocker(
-      device::PowerSaveBlocker::kPowerSaveBlockPreventDisplaySleep,
-      device::PowerSaveBlocker::kReasonOther, "DesktopCaptureDevice is running",
-      BrowserThread::GetTaskRunnerForThread(BrowserThread::UI),
-      BrowserThread::GetTaskRunnerForThread(BrowserThread::FILE)));
 
   desktop_capturer_->Start(this);
 

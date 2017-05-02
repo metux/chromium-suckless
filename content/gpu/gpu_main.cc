@@ -273,9 +273,6 @@ int GpuMain(const MainFunctionParams& parameters) {
 
   gpu_process.set_main_thread(child_thread);
 
-  if (child_thread->watchdog_thread())
-    child_thread->watchdog_thread()->AddPowerObserver();
-
 #if defined(OS_ANDROID)
   base::trace_event::MemoryDumpManager::GetInstance()->RegisterDumpProvider(
       tracing::GraphicsMemoryDumpProvider::GetInstance(), "AndroidGraphics",

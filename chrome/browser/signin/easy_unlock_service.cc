@@ -59,7 +59,6 @@
 #include "chrome/browser/chromeos/login/session/user_session_manager.h"
 #include "chrome/browser/chromeos/profiles/profile_helper.h"
 #include "chromeos/dbus/dbus_thread_manager.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "components/signin/core/account_id/account_id.h"
 #include "components/user_manager/user_manager.h"
 #endif
@@ -200,68 +199,6 @@ class EasyUnlockService::BluetoothDetector
 
   DISALLOW_COPY_AND_ASSIGN(BluetoothDetector);
 };
-
-#if defined(OS_CHROMEOS)
-class EasyUnlockService::PowerMonitor
-    : public chromeos::PowerManagerClient::Observer {
- public:
-  explicit PowerMonitor(EasyUnlockService* service)
-      : service_(service),
-        waking_up_(false),
-        weak_ptr_factory_(this) {
-    chromeos::DBusThreadManager::Get()->GetPowerManagerClient()->
-        AddObserver(this);
-  }
-
-  ~PowerMonitor() override {
-    chromeos::DBusThreadManager::Get()->GetPowerManagerClient()->
-        RemoveObserver(this);
-  }
-
-  // Called when the remote device has been authenticated to record the time
-  // delta from waking up. No time will be recorded if the start-up time has
-  // already been recorded or if the system never went to sleep previously.
-  void RecordStartUpTime() {
-    if (wake_up_time_.is_null())
-      return;
-    UMA_HISTOGRAM_MEDIUM_TIMES(
-        "EasyUnlock.StartupTimeFromSuspend",
-        base::Time::Now() - wake_up_time_);
-    wake_up_time_ = base::Time();
-  }
-
-  bool waking_up() const { return waking_up_; }
-
- private:
-  // chromeos::PowerManagerClient::Observer:
-  void SuspendImminent() override { service_->PrepareForSuspend(); }
-
-  void SuspendDone(const base::TimeDelta& sleep_duration) override {
-    waking_up_ = true;
-    wake_up_time_ = base::Time::Now();
-    base::ThreadTaskRunnerHandle::Get()->PostDelayedTask(
-        FROM_HERE,
-        base::Bind(&PowerMonitor::ResetWakingUp,
-                   weak_ptr_factory_.GetWeakPtr()),
-        base::TimeDelta::FromSeconds(5));
-    service_->OnSuspendDone();
-    service_->UpdateAppState();
-    // Note that |this| may get deleted after |UpdateAppState| is called.
-  }
-
-  void ResetWakingUp() {
-    waking_up_ = false;
-    service_->UpdateAppState();
-  }
-
-  EasyUnlockService* service_;
-  bool waking_up_;
-  base::Time wake_up_time_;
-  base::WeakPtrFactory<PowerMonitor> weak_ptr_factory_;
-
-  DISALLOW_COPY_AND_ASSIGN(PowerMonitor);
-};
-#endif
 
 EasyUnlockService::EasyUnlockService(Profile* profile)
     : profile_(profile),
@@ -481,10 +418,6 @@ bool EasyUnlockService::UpdateScreenlockState(ScreenlockState state) {
   handler->ChangeState(state);
 
   if (state == ScreenlockState::AUTHENTICATED) {
-#if defined(OS_CHROMEOS)
-    if (power_monitor_)
-      power_monitor_->RecordStartUpTime();
-#endif
   } else if (auth_attempt_.get()) {
     // Clean up existing auth attempt if we can no longer authenticate the
     // remote device.
@@ -657,9 +590,6 @@ void EasyUnlockService::Shutdown() {
   ResetScreenlockState();
   bluetooth_detector_.reset();
   proximity_auth_system_.reset();
-#if defined(OS_CHROMEOS)
-  power_monitor_.reset();
-#endif
 
   weak_ptr_factory_.InvalidateWeakPtrs();
 }
@@ -680,28 +610,13 @@ void EasyUnlockService::UpdateAppState() {
     if (proximity_auth_system_)
       proximity_auth_system_->Start();
 
-#if defined(OS_CHROMEOS)
-    if (!power_monitor_)
-      power_monitor_.reset(new PowerMonitor(this));
-#endif
   } else {
     bool bluetooth_waking_up = false;
-#if defined(OS_CHROMEOS)
-    // If the service is not allowed due to bluetooth not being detected just
-    // after system suspend is done, give bluetooth more time to be detected
-    // before disabling the app (and resetting screenlock state).
-    bluetooth_waking_up =
-        power_monitor_.get() && power_monitor_->waking_up() &&
-        !bluetooth_detector_->IsPresent();
-#endif
 
     if (!bluetooth_waking_up) {
       app_manager_->DisableAppIfLoaded();
       if (proximity_auth_system_)
         proximity_auth_system_->Stop();
-#if defined(OS_CHROMEOS)
-      power_monitor_.reset();
-#endif
     }
   }
 }

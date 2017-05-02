@@ -49,7 +49,6 @@
 #include "content/shell/browser/shell_browser_context.h"
 #include "content/shell/browser/shell_download_manager_delegate.h"
 #include "content/shell/browser/shell_network_delegate.h"
-#include "device/power_save_blocker/power_save_blocker.h"
 #include "net/test/embedded_test_server/embedded_test_server.h"
 #include "net/test/embedded_test_server/http_request.h"
 #include "net/test/embedded_test_server/http_response.h"
@@ -133,7 +132,6 @@ class DownloadFileWithDelay : public DownloadFileImpl {
       const base::FilePath& default_download_directory,
       std::unique_ptr<ByteStreamReader> stream,
       const net::NetLogWithSource& net_log,
-      std::unique_ptr<device::PowerSaveBlocker> power_save_blocker,
       base::WeakPtr<DownloadDestinationObserver> observer,
       base::WeakPtr<DownloadFileWithDelayFactory> owner);
 
@@ -200,7 +198,6 @@ DownloadFileWithDelay::DownloadFileWithDelay(
     const base::FilePath& default_download_directory,
     std::unique_ptr<ByteStreamReader> stream,
     const net::NetLogWithSource& net_log,
-    std::unique_ptr<device::PowerSaveBlocker> power_save_blocker,
     base::WeakPtr<DownloadDestinationObserver> observer,
     base::WeakPtr<DownloadFileWithDelayFactory> owner)
     : DownloadFileImpl(std::move(save_info),
@@ -261,11 +258,6 @@ DownloadFile* DownloadFileWithDelayFactory::CreateFile(
     std::unique_ptr<ByteStreamReader> stream,
     const net::NetLogWithSource& net_log,
     base::WeakPtr<DownloadDestinationObserver> observer) {
-  std::unique_ptr<device::PowerSaveBlocker> psb(new device::PowerSaveBlocker(
-      device::PowerSaveBlocker::kPowerSaveBlockPreventAppSuspension,
-      device::PowerSaveBlocker::kReasonOther, "Download in progress",
-      BrowserThread::GetTaskRunnerForThread(BrowserThread::UI),
-      BrowserThread::GetTaskRunnerForThread(BrowserThread::FILE)));
   return new DownloadFileWithDelay(std::move(save_info),
                                    default_download_directory,
                                    std::move(stream),
@@ -305,7 +297,6 @@ class CountingDownloadFile : public DownloadFileImpl {
       const base::FilePath& default_downloads_directory,
       std::unique_ptr<ByteStreamReader> stream,
       const net::NetLogWithSource& net_log,
-      std::unique_ptr<device::PowerSaveBlocker> power_save_blocker,
       base::WeakPtr<DownloadDestinationObserver> observer)
       : DownloadFileImpl(std::move(save_info),
                          default_downloads_directory,
@@ -360,11 +351,6 @@ class CountingDownloadFileFactory : public DownloadFileFactory {
       std::unique_ptr<ByteStreamReader> stream,
       const net::NetLogWithSource& net_log,
       base::WeakPtr<DownloadDestinationObserver> observer) override {
-    std::unique_ptr<device::PowerSaveBlocker> psb(new device::PowerSaveBlocker(
-        device::PowerSaveBlocker::kPowerSaveBlockPreventAppSuspension,
-        device::PowerSaveBlocker::kReasonOther, "Download in progress",
-        BrowserThread::GetTaskRunnerForThread(BrowserThread::UI),
-        BrowserThread::GetTaskRunnerForThread(BrowserThread::FILE)));
     return new CountingDownloadFile(std::move(save_info),
                                     default_downloads_directory,
                                     std::move(stream),

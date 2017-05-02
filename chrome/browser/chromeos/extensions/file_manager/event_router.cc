@@ -435,10 +435,6 @@ void EventRouter::Shutdown() {
     volume_manager->RemoveObserver(device_event_router_.get());
   }
 
-  chromeos::PowerManagerClient* const power_manager_client =
-      chromeos::DBusThreadManager::Get()->GetPowerManagerClient();
-  power_manager_client->RemoveObserver(device_event_router_.get());
-
   profile_ = NULL;
 }
 
@@ -463,10 +459,6 @@ void EventRouter::ObserveEvents() {
     volume_manager->AddObserver(this);
     volume_manager->AddObserver(device_event_router_.get());
   }
-
-  chromeos::PowerManagerClient* const power_manager_client =
-      chromeos::DBusThreadManager::Get()->GetPowerManagerClient();
-  power_manager_client->AddObserver(device_event_router_.get());
 
   DriveIntegrationService* const integration_service =
       DriveIntegrationServiceFactory::FindForProfile(profile_);

@@ -4,8 +4,6 @@
 
 #include "media/blink/watch_time_reporter.h"
 
-#include "base/power_monitor/power_monitor.h"
-
 namespace media {
 
 // The minimum amount of media playback which can elapse before we'll report
@@ -97,24 +95,6 @@ void WatchTimeReporter::OnShown() {
 void WatchTimeReporter::OnHidden() {
   is_visible_ = false;
   MaybeFinalizeWatchTime(FinalizeTime::ON_NEXT_UPDATE);
-}
-
-void WatchTimeReporter::OnPowerStateChange(bool on_battery_power) {
-  if (!reporting_timer_.IsRunning())
-    return;
-
-  // Defer changing |is_on_battery_power_| until the next watch time report to
-  // avoid momentary power changes from affecting the results.
-  if (is_on_battery_power_ != on_battery_power) {
-    end_timestamp_for_power_ = get_media_time_cb_.Run();
-
-    // Restart the reporting timer so the full hysteresis is afforded.
-    reporting_timer_.Start(FROM_HERE, reporting_interval_, this,
-                           &WatchTimeReporter::UpdateWatchTime);
-    return;
-  }
-
-  end_timestamp_for_power_ = kNoTimestamp;
 }
 
 bool WatchTimeReporter::ShouldReportWatchTime() {
@@ -241,15 +221,6 @@ void WatchTimeReporter::UpdateWatchTime() {
 
     DVLOG(2) << "Sending watch time update.";
     media_log_->AddEvent(std::move(log_event));
-  }
-
-  if (is_power_change_pending) {
-    // Invert battery power status here instead of using the value returned by
-    // the PowerObserver since there may be a pending OnPowerStateChange().
-    is_on_battery_power_ = !is_on_battery_power_;
-
-    start_timestamp_for_power_ = end_timestamp_for_power_;
-    end_timestamp_for_power_ = kNoTimestamp;
   }
 
   // Stop the timer if this is supposed to be our last tick.

@@ -190,7 +190,6 @@
 #include "chrome/browser/chromeos/policy/device_cloud_policy_manager_chromeos.h"
 #include "chrome/browser/chromeos/policy/device_status_collector.h"
 #include "chrome/browser/chromeos/policy/policy_cert_service_factory.h"
-#include "chrome/browser/chromeos/power/power_prefs.h"
 #include "chrome/browser/chromeos/preferences.h"
 #include "chrome/browser/chromeos/printing/printer_pref_manager.h"
 #include "chrome/browser/chromeos/settings/device_oauth2_token_service.h"
@@ -205,7 +204,6 @@
 #include "chrome/browser/ui/webui/chromeos/login/demo_mode_detector.h"
 #include "chrome/browser/ui/webui/chromeos/login/enable_debugging_screen_handler.h"
 #include "chrome/browser/ui/webui/chromeos/login/hid_detection_screen_handler.h"
-#include "chrome/browser/ui/webui/chromeos/login/reset_screen_handler.h"
 #include "chrome/browser/ui/webui/chromeos/login/signin_screen_handler.h"
 #include "chromeos/audio/audio_devices_pref_handler_impl.h"
 #include "chromeos/timezone/timezone_resolver.h"
@@ -674,10 +672,6 @@ void RegisterProfilePrefs(user_prefs::PrefRegistrySyncable* registry) {
 
 void RegisterUserProfilePrefs(user_prefs::PrefRegistrySyncable* registry) {
   RegisterProfilePrefs(registry);
-
-#if defined(OS_CHROMEOS)
-  chromeos::PowerPrefs::RegisterUserProfilePrefs(registry);
-#endif
 }
 
 void RegisterScreenshotPrefs(PrefRegistrySimple* registry) {
@@ -687,8 +681,6 @@ void RegisterScreenshotPrefs(PrefRegistrySimple* registry) {
 #if defined(OS_CHROMEOS)
 void RegisterLoginProfilePrefs(user_prefs::PrefRegistrySyncable* registry) {
   RegisterProfilePrefs(registry);
-
-  chromeos::PowerPrefs::RegisterLoginProfilePrefs(registry);
 }
 #endif
 

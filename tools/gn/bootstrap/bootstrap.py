@@ -660,7 +660,6 @@ def write_gn_ninja(path, root_gen_dir, options):
         'base/memory/shared_memory_win.cc',
         'base/message_loop/message_pump_win.cc',
         'base/native_library_win.cc',
-        'base/power_monitor/power_monitor_device_source_win.cc',
         'base/process/kill_win.cc',
         'base/process/launch_win.cc',
         'base/process/memory_win.cc',

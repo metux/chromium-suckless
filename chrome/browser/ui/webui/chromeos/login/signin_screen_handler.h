@@ -24,7 +24,6 @@
 #include "chrome/browser/ui/webui/chromeos/login/network_state_informer.h"
 #include "chrome/browser/ui/webui/chromeos/login/oobe_ui.h"
 #include "chrome/browser/ui/webui/chromeos/touch_view_controller_delegate.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "chromeos/network/portal_detector/network_portal_detector.h"
 #include "components/proximity_auth/screenlock_bridge.h"
 #include "components/user_manager/user_manager.h"
@@ -214,7 +213,6 @@ class SigninScreenHandler
       public LoginDisplayWebUIHandler,
       public content::NotificationObserver,
       public NetworkStateInformer::NetworkStateInformerObserver,
-      public PowerManagerClient::Observer,
       public input_method::ImeKeyboard::Observer,
       public TouchViewControllerDelegate::Observer,
       public OobeUI::Observer {
@@ -322,9 +320,6 @@ class SigninScreenHandler
   void Observe(int type,
                const content::NotificationSource& source,
                const content::NotificationDetails& details) override;
-
-  // PowerManagerClient::Observer implementation:
-  void SuspendDone(const base::TimeDelta& sleep_duration) override;
 
   // TouchViewControllerDelegate::Observer implementation:
   void OnMaximizeModeStarted() override;

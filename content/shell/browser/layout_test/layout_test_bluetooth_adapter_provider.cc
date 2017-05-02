@@ -62,7 +62,6 @@ typedef testing::NiceMock<MockBluetoothGattNotifySession>
 namespace {
 // Bluetooth UUIDs suitable to pass to BluetoothUUID():
 // Services:
-const char kBatteryServiceUUID[] = "180f";
 const char kBlacklistTestServiceUUID[] = "611c954a-263b-4f4a-aab6-01ddb953f985";
 const char kDeviceInformationServiceUUID[] = "180a";
 const char kGenericAccessServiceUUID[] = "1800";
@@ -281,8 +280,7 @@ LayoutTestBluetoothAdapterProvider::GetScanFilterCheckingAdapter() {
       *adapter,
       StartDiscoverySessionWithFilterRaw(
           ResultOf(&GetUUIDs, ElementsAre(BluetoothUUID(kGlucoseServiceUUID),
-                                          BluetoothUUID(kHeartRateServiceUUID),
-                                          BluetoothUUID(kBatteryServiceUUID))),
+                                          BluetoothUUID(kHeartRateServiceUUID))),
           _, _))
       .WillRepeatedly(
           RunCallbackWithResult<1 /* success_callback */>([adapter_ptr]() {
@@ -296,9 +294,6 @@ LayoutTestBluetoothAdapterProvider::GetScanFilterCheckingAdapter() {
   // Any unexpected call results in the failure callback.
   ON_CALL(*adapter, StartDiscoverySessionWithFilterRaw(_, _, _))
       .WillByDefault(RunCallback<2 /* error_callback */>());
-
-  // We need to add a device otherwise requestDevice would reject.
-  adapter->AddMockDevice(GetBatteryDevice(adapter.get()));
 
   return adapter;
 }
@@ -400,15 +395,6 @@ LayoutTestBluetoothAdapterProvider::GetDeviceEventAdapter() {
       {BluetoothUUID(kHeartRateServiceUUID)}, makeMACAddress(0x0)));
   connected_hr->SetConnected(true);
   adapter->AddMockDevice(std::move(connected_hr));
-
-  // Add ChangingBatteryDevice with no uuids.
-  std::unique_ptr<NiceMockBluetoothDevice> changing_battery(
-      GetBaseDevice(adapter.get(), "Changing Battery Device",
-                    BluetoothDevice::UUIDList(), makeMACAddress(0x1)));
-  changing_battery->SetConnected(false);
-
-  NiceMockBluetoothDevice* changing_battery_ptr = changing_battery.get();
-  adapter->AddMockDevice(std::move(changing_battery));
 
   // Add Non Connected Tx Power Device.
   std::unique_ptr<NiceMockBluetoothDevice> non_connected_tx_power(

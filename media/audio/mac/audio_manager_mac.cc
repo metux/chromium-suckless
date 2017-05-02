@@ -14,8 +14,6 @@
 #include "base/mac/scoped_cftyperef.h"
 #include "base/macros.h"
 #include "base/memory/free_deleter.h"
-#include "base/power_monitor/power_monitor.h"
-#include "base/power_monitor/power_observer.h"
 #include "base/strings/sys_string_conversions.h"
 #include "base/threading/thread_checker.h"
 #include "media/audio/audio_device_description.h"
@@ -292,71 +290,6 @@ static bool GetDefaultDevice(AudioDeviceID* device, bool input) {
 static bool GetDefaultOutputDevice(AudioDeviceID* device) {
   return GetDefaultDevice(device, false);
 }
-
-class AudioManagerMac::AudioPowerObserver : public base::PowerObserver {
- public:
-  AudioPowerObserver()
-      : is_suspending_(false),
-        is_monitoring_(base::PowerMonitor::Get()),
-        num_resume_notifications_(0) {
-    // The PowerMonitor requires significant setup (a CFRunLoop and preallocated
-    // IO ports) so it's not available under unit tests.  See the OSX impl of
-    // base::PowerMonitorDeviceSource for more details.
-    if (!is_monitoring_)
-      return;
-    base::PowerMonitor::Get()->AddObserver(this);
-  }
-
-  ~AudioPowerObserver() override {
-    DCHECK(thread_checker_.CalledOnValidThread());
-    if (!is_monitoring_)
-      return;
-    base::PowerMonitor::Get()->RemoveObserver(this);
-  }
-
-  bool IsSuspending() const {
-    DCHECK(thread_checker_.CalledOnValidThread());
-    return is_suspending_;
-  }
-
-  size_t num_resume_notifications() const { return num_resume_notifications_; }
-
-  bool ShouldDeferStreamStart() const {
-    DCHECK(thread_checker_.CalledOnValidThread());
-    // Start() should be deferred if the system is in the middle of a suspend or
-    // has recently started the process of resuming.
-    return is_suspending_ || base::TimeTicks::Now() < earliest_start_time_;
-  }
-
-  bool IsOnBatteryPower() const {
-    DCHECK(thread_checker_.CalledOnValidThread());
-    return base::PowerMonitor::Get()->IsOnBatteryPower();
-  }
-
- private:
-  void OnSuspend() override {
-    DCHECK(thread_checker_.CalledOnValidThread());
-    DVLOG(1) << "OnSuspend";
-    is_suspending_ = true;
-  }
-
-  void OnResume() override {
-    DCHECK(thread_checker_.CalledOnValidThread());
-    DVLOG(1) << "OnResume";
-    ++num_resume_notifications_;
-    is_suspending_ = false;
-    earliest_start_time_ = base::TimeTicks::Now() +
-        base::TimeDelta::FromSeconds(kStartDelayInSecsForPowerEvents);
-  }
-
-  bool is_suspending_;
-  const bool is_monitoring_;
-  base::TimeTicks earliest_start_time_;
-  base::ThreadChecker thread_checker_;
-  size_t num_resume_notifications_;
-
-  DISALLOW_COPY_AND_ASSIGN(AudioPowerObserver);
-};
 
 AudioManagerMac::AudioManagerMac(
     scoped_refptr<base::SingleThreadTaskRunner> task_runner,
@@ -790,7 +723,6 @@ AudioParameters AudioManagerMac::GetPreferredOutputStreamParameters(
 
 void AudioManagerMac::InitializeOnAudioThread() {
   DCHECK(GetTaskRunner()->BelongsToCurrentThread());
-  power_observer_.reset(new AudioPowerObserver());
 }
 
 void AudioManagerMac::HandleDeviceChanges() {
@@ -837,22 +769,22 @@ int AudioManagerMac::ChooseBufferSize(bool is_input, int sample_rate) {
 
 bool AudioManagerMac::IsSuspending() const {
   DCHECK(GetTaskRunner()->BelongsToCurrentThread());
-  return power_observer_->IsSuspending();
+  return false;
 }
 
 bool AudioManagerMac::ShouldDeferStreamStart() const {
   DCHECK(GetTaskRunner()->BelongsToCurrentThread());
-  return power_observer_->ShouldDeferStreamStart();
+  return false;
 }
 
 bool AudioManagerMac::IsOnBatteryPower() const {
   DCHECK(GetTaskRunner()->BelongsToCurrentThread());
-  return power_observer_->IsOnBatteryPower();
+  return false;
 }
 
 size_t AudioManagerMac::GetNumberOfResumeNotifications() const {
   DCHECK(GetTaskRunner()->BelongsToCurrentThread());
-  return power_observer_->num_resume_notifications();
+  return 0;
 }
 
 bool AudioManagerMac::MaybeChangeBufferSize(AudioDeviceID device_id,

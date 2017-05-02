@@ -6,8 +6,6 @@
 
 #include "ash/common/material_design/material_design_controller.h"
 #include "ash/common/session/session_state_delegate.h"
-#include "ash/common/system/chromeos/power/power_status.h"
-#include "ash/common/system/chromeos/power/power_status_view.h"
 #include "ash/common/system/tray/actionable_view.h"
 #include "ash/common/system/tray/fixed_sized_image_view.h"
 #include "ash/common/system/tray/system_tray_controller.h"
@@ -34,15 +32,12 @@ namespace tray {
 
 // TODO(tdanderson): Remove this class once material design is enabled by
 // default. See crbug.com/614453.
-class SettingsDefaultView : public ActionableView,
-                            public PowerStatus::Observer {
+class SettingsDefaultView : public ActionableView {
  public:
   SettingsDefaultView(SystemTrayItem* owner, LoginStatus status)
       : ActionableView(owner),
         login_status_(status),
-        label_(nullptr),
-        power_status_view_(nullptr) {
-    PowerStatus::Get()->AddObserver(this);
+        label_(nullptr) {
     SetLayoutManager(new views::BoxLayout(views::BoxLayout::kHorizontal,
                                           ash::kTrayPopupPaddingHorizontal, 0,
                                           ash::kTrayPopupPaddingBetweenItems));
@@ -73,15 +68,9 @@ class SettingsDefaultView : public ActionableView,
 
       power_view_right_align = true;
     }
-
-    if (PowerStatus::Get()->IsBatteryPresent()) {
-      power_status_view_ = new ash::PowerStatusView(power_view_right_align);
-      AddChildView(power_status_view_);
-      OnPowerStatusChanged();
-    }
   }
 
-  ~SettingsDefaultView() override { PowerStatus::Get()->RemoveObserver(this); }
+  ~SettingsDefaultView() override { }
 
   // Overridden from ash::ActionableView.
   bool PerformAction(const ui::Event& event) override {
@@ -99,16 +88,6 @@ class SettingsDefaultView : public ActionableView,
   // Overridden from views::View.
   void Layout() override {
     views::View::Layout();
-
-    if (label_ && power_status_view_) {
-      // Let the box-layout do the layout first. Then move power_status_view_
-      // to right align if it is created.
-      gfx::Size size = power_status_view_->GetPreferredSize();
-      gfx::Rect bounds(size);
-      bounds.set_x(width() - size.width() - ash::kTrayPopupPaddingBetweenItems);
-      bounds.set_y((height() - size.height()) / 2);
-      power_status_view_->SetBoundsRect(bounds);
-    }
   }
 
   // Overridden from views::View.
@@ -117,23 +96,9 @@ class SettingsDefaultView : public ActionableView,
     Layout();
   }
 
-  // Overridden from PowerStatus::Observer.
-  void OnPowerStatusChanged() override {
-    if (!PowerStatus::Get()->IsBatteryPresent())
-      return;
-
-    base::string16 accessible_name =
-        label_
-            ? label_->text() + base::ASCIIToUTF16(", ") +
-                  PowerStatus::Get()->GetAccessibleNameString(true)
-            : PowerStatus::Get()->GetAccessibleNameString(true);
-    SetAccessibleName(accessible_name);
-  }
-
  private:
   LoginStatus login_status_;
   views::Label* label_;
-  ash::PowerStatusView* power_status_view_;
 
   DISALLOW_COPY_AND_ASSIGN(SettingsDefaultView);
 };
@@ -150,8 +115,7 @@ views::View* TraySettings::CreateTrayView(LoginStatus status) {
 }
 
 views::View* TraySettings::CreateDefaultView(LoginStatus status) {
-  if ((status == LoginStatus::NOT_LOGGED_IN || status == LoginStatus::LOCKED) &&
-      !PowerStatus::Get()->IsBatteryPresent())
+  if (status == LoginStatus::NOT_LOGGED_IN || status == LoginStatus::LOCKED)
     return nullptr;
   if (!WmShell::Get()->system_tray_delegate()->ShouldShowSettings())
     return nullptr;

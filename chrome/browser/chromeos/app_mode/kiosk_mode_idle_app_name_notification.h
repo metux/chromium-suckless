@@ -10,15 +10,13 @@
 #include "base/compiler_specific.h"
 #include "base/macros.h"
 #include "base/timer/timer.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "ui/base/user_activity/user_activity_observer.h"
 
 namespace chromeos {
 
 class IdleAppNameNotificationView;
 
-class KioskModeIdleAppNameNotification : public ui::UserActivityObserver,
-                                         public PowerManagerClient::Observer {
+class KioskModeIdleAppNameNotification : public ui::UserActivityObserver {
  public:
   static void Initialize();
 
@@ -33,9 +31,6 @@ class KioskModeIdleAppNameNotification : public ui::UserActivityObserver,
 
   // ui::UserActivityObserver overrides:
   void OnUserActivity(const ui::Event* event) override;
-
-  // PowerManagerClient::Observer overrides:
-  void SuspendDone(const base::TimeDelta& sleep_duration) override;
 
   // Begins listening for user activity and calls ResetTimer().
   void Start();

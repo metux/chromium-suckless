@@ -37,9 +37,6 @@ AudioOutputController::AudioOutputController(
       state_(kEmpty),
       sync_reader_(sync_reader),
       message_loop_(audio_manager->GetTaskRunner()),
-      power_monitor_(
-          params.sample_rate(),
-          TimeDelta::FromMilliseconds(kPowerMeasurementTimeConstantMillis)),
       on_more_io_data_called_(0),
       ignore_errors_during_stop_close_(false) {
   DCHECK(audio_manager);
@@ -205,11 +202,6 @@ void AudioOutputController::StopStream() {
   if (state_ == kPlaying) {
     wedge_timer_.reset();
     stream_->Stop();
-
-    // A stopped stream is silent, and power_montior_.Scan() is no longer being
-    // called; so we must reset the power monitor.
-    power_monitor_.Reset();
-
     state_ = kPaused;
   }
 }
@@ -329,9 +321,6 @@ int AudioOutputController::OnMoreData(base::TimeDelta delay,
         base::Bind(&AudioOutputController::BroadcastDataToDuplicationTargets,
                    this, base::Passed(&copy), reference_time));
   }
-
-  if (will_monitor_audio_levels())
-    power_monitor_.Scan(*dest, frames);
 
   return frames;
 }
@@ -499,7 +488,7 @@ void AudioOutputController::DoStopDuplicating(AudioPushSink* to_stream) {
 
 std::pair<float, bool> AudioOutputController::ReadCurrentPowerAndClip() {
   DCHECK(will_monitor_audio_levels());
-  return power_monitor_.ReadCurrentPowerAndClip();
+  return std::pair(0, 0);
 }
 
 void AudioOutputController::WedgeCheck() {

@@ -10,7 +10,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.os.BatteryManager;
 import android.os.Environment;
 
 import org.chromium.base.Callback;
@@ -242,10 +241,6 @@ public class OfflinePageUtils {
         // Report charging state.
         RecordHistogram.recordBooleanHistogram(
                 "OfflinePages.Wakeup.ConnectedToPower", deviceConditions.isPowerConnected());
-
-        // Report battery percentage.
-        RecordHistogram.recordPercentageHistogram(
-                "OfflinePages.Wakeup.BatteryPercentage", deviceConditions.getBatteryPercentage());
 
         // Report the default network found (or none, if we aren't connected).
         int connectionType = deviceConditions.getNetConnectionType();
@@ -546,39 +541,13 @@ public class OfflinePageUtils {
         return offlinePageBridge.getOfflinePageHeaderForReload(tab.getWebContents());
     }
 
-    private static boolean isPowerConnected(Intent batteryStatus) {
-        int status = batteryStatus.getIntExtra(BatteryManager.EXTRA_STATUS, -1);
-        boolean isConnected = (status == BatteryManager.BATTERY_STATUS_CHARGING
-                || status == BatteryManager.BATTERY_STATUS_FULL);
-        Log.d(TAG, "Power connected is " + isConnected);
-        return isConnected;
-    }
-
-    private static int batteryPercentage(Intent batteryStatus) {
-        int level = batteryStatus.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
-        int scale = batteryStatus.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
-        if (scale == 0) return 0;
-
-        int percentage = Math.round(100 * level / (float) scale);
-        Log.d(TAG, "Battery Percentage is " + percentage);
-        return percentage;
-    }
-
     protected OfflinePageBridge getOfflinePageBridge(Profile profile) {
         return OfflinePageBridge.getForProfile(profile);
     }
 
     /** Returns the current device conditions. May be overridden for testing. */
     protected DeviceConditions getDeviceConditionsImpl(Context context) {
-        IntentFilter filter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
-        // Note this is a sticky intent, so we aren't really registering a receiver, just getting
-        // the sticky intent.  That means that we don't need to unregister the filter later.
-        Intent batteryStatus = context.registerReceiver(null, filter);
-        if (batteryStatus == null) return null;
-
-        return new DeviceConditions(isPowerConnected(batteryStatus),
-                batteryPercentage(batteryStatus),
-                NetworkChangeNotifier.getInstance().getCurrentConnectionType());
+        return null;
     }
 
     @VisibleForTesting

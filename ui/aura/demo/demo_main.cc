@@ -10,8 +10,6 @@
 #include "base/macros.h"
 #include "base/memory/ptr_util.h"
 #include "base/message_loop/message_loop.h"
-#include "base/power_monitor/power_monitor.h"
-#include "base/power_monitor/power_monitor_device_source.h"
 #include "base/run_loop.h"
 #include "build/build_config.h"
 #include "cc/surfaces/surface_manager.h"
@@ -148,9 +146,6 @@ int DemoMain() {
 
   // Create the message-loop here before creating the root window.
   base::MessageLoopForUI message_loop;
-
-  base::PowerMonitor power_monitor(
-      base::WrapUnique(new base::PowerMonitorDeviceSource));
 
   std::unique_ptr<aura::Env> env = aura::Env::CreateInstance();
   env->set_context_factory(context_factory.get());

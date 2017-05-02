@@ -138,21 +138,6 @@ class DeprecatedIdleActionHandler : public IntRangePolicyHandlerBase {
   DISALLOW_COPY_AND_ASSIGN(DeprecatedIdleActionHandler);
 };
 
-class PowerManagementIdleSettingsPolicyHandler
-    : public SchemaValidatingPolicyHandler {
- public:
-  explicit PowerManagementIdleSettingsPolicyHandler(
-      const Schema& chrome_schema);
-  ~PowerManagementIdleSettingsPolicyHandler() override;
-
-  // SchemaValidatingPolicyHandler:
-  void ApplyPolicySettings(const PolicyMap& policies,
-                           PrefValueMap* prefs) override;
-
- private:
-  DISALLOW_COPY_AND_ASSIGN(PowerManagementIdleSettingsPolicyHandler);
-};
-
 class ScreenLockDelayPolicyHandler : public SchemaValidatingPolicyHandler {
  public:
   explicit ScreenLockDelayPolicyHandler(const Schema& chrome_schema);

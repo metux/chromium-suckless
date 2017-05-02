@@ -29,7 +29,6 @@
 #include "chrome/test/base/testing_browser_process.h"
 #include "chromeos/chromeos_paths.h"
 #include "chromeos/dbus/dbus_thread_manager.h"
-#include "chromeos/dbus/fake_power_manager_client.h"
 #include "chromeos/dbus/fake_update_engine_client.h"
 #include "components/prefs/pref_registry_simple.h"
 #include "components/prefs/testing_pref_service.h"
@@ -202,8 +201,6 @@ class AutomaticRebootManagerBasicTest : public testing::Test {
   MockUserManager* mock_user_manager_;  // Not owned.
   ScopedUserManagerEnabler user_manager_enabler_;
 
-  FakePowerManagerClient* power_manager_client_;  // Not owned.
-  FakeUpdateEngineClient* update_engine_client_;  // Not owned.
 };
 
 enum AutomaticRebootManagerTestScenario {
@@ -307,7 +304,6 @@ AutomaticRebootManagerBasicTest::AutomaticRebootManagerBasicTest()
       ui_thread_task_runner_handle_(task_runner_),
       mock_user_manager_(new MockUserManager),
       user_manager_enabler_(mock_user_manager_),
-      power_manager_client_(NULL),
       update_engine_client_(NULL) {
 }
 
@@ -332,9 +328,6 @@ void AutomaticRebootManagerBasicTest::SetUp() {
 
   std::unique_ptr<DBusThreadManagerSetter> dbus_setter =
       chromeos::DBusThreadManager::GetSetterForTesting();
-  power_manager_client_ = new FakePowerManagerClient;
-  dbus_setter->SetPowerManagerClient(
-      std::unique_ptr<PowerManagerClient>(power_manager_client_));
   update_engine_client_ = new FakeUpdateEngineClient;
   dbus_setter->SetUpdateEngineClient(
       std::unique_ptr<UpdateEngineClient>(update_engine_client_));
@@ -375,8 +368,6 @@ void AutomaticRebootManagerBasicTest::SetRebootAfterUpdate(
   local_state_.SetManagedPref(prefs::kRebootAfterUpdate,
                               new base::FundamentalValue(reboot_after_update));
   task_runner_->RunUntilIdle();
-  EXPECT_EQ(expect_reboot ? 1 : 0,
-            power_manager_client_->num_request_restart_calls());
 }
 
 void AutomaticRebootManagerBasicTest::SetUptimeLimit(
@@ -391,8 +382,6 @@ void AutomaticRebootManagerBasicTest::SetUptimeLimit(
         new base::FundamentalValue(static_cast<int>(limit.InSeconds())));
   }
   task_runner_->RunUntilIdle();
-  EXPECT_EQ(expect_reboot ? 1 : 0,
-            power_manager_client_->num_request_restart_calls());
 }
 
 void AutomaticRebootManagerBasicTest::NotifyUpdateRebootNeeded() {
@@ -400,14 +389,11 @@ void AutomaticRebootManagerBasicTest::NotifyUpdateRebootNeeded() {
   automatic_reboot_manager_->UpdateStatusChanged(
       update_engine_client_->GetLastStatus());
   task_runner_->RunUntilIdle();
-  EXPECT_EQ(0, power_manager_client_->num_request_restart_calls());
 }
 
 void AutomaticRebootManagerBasicTest::NotifyResumed(bool expect_reboot) {
   automatic_reboot_manager_->SuspendDone(base::TimeDelta::FromHours(1));
   task_runner_->RunUntilIdle();
-  EXPECT_EQ(expect_reboot ? 1 : 0,
-            power_manager_client_->num_request_restart_calls());
 }
 
 void AutomaticRebootManagerBasicTest::NotifyTerminating(bool expect_reboot) {
@@ -416,23 +402,17 @@ void AutomaticRebootManagerBasicTest::NotifyTerminating(bool expect_reboot) {
       content::Source<AutomaticRebootManagerBasicTest>(this),
       content::NotificationService::NoDetails());
   task_runner_->RunUntilIdle();
-  EXPECT_EQ(expect_reboot ? 1 : 0,
-            power_manager_client_->num_request_restart_calls());
 }
 
 void AutomaticRebootManagerBasicTest::FastForwardBy(
     const base::TimeDelta& delta,
     bool expect_reboot) {
   task_runner_->FastForwardBy(delta);
-  EXPECT_EQ(expect_reboot ? 1 : 0,
-            power_manager_client_->num_request_restart_calls());
 }
 
 void AutomaticRebootManagerBasicTest::FastForwardUntilNoTasksRemain(
     bool expect_reboot) {
   task_runner_->FastForwardUntilNoTasksRemain();
-  EXPECT_EQ(expect_reboot ? 1 : 0,
-            power_manager_client_->num_request_restart_calls());
 }
 
 void AutomaticRebootManagerBasicTest::ExpectRebootRequest(
@@ -460,8 +440,6 @@ void AutomaticRebootManagerBasicTest::CreateAutomaticRebootManager(
       std::unique_ptr<base::TickClock>(task_runner_->GetMockTickClock())));
   automatic_reboot_manager_observer_.Init(automatic_reboot_manager_.get());
   task_runner_->RunUntilIdle();
-  EXPECT_EQ(expect_reboot ? 1 : 0,
-            power_manager_client_->num_request_restart_calls());
 
   uptime_processing_delay_ =
       base::TimeTicks() - automatic_reboot_manager_->boot_time_ -

@@ -21,7 +21,6 @@
 #include "chrome/browser/chromeos/login/ui/lock_window.h"
 #include "chrome/browser/chromeos/login/ui/login_display.h"
 #include "chrome/browser/chromeos/login/ui/webui_login_view.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "content/public/browser/web_contents_observer.h"
 #include "ui/display/display_observer.h"
 #include "ui/keyboard/keyboard_controller_observer.h"
@@ -54,7 +53,6 @@ class WebUIScreenLocker : public WebUILoginView,
                           public LockWindow::Observer,
                           public ash::LockStateObserver,
                           public views::WidgetObserver,
-                          public PowerManagerClient::Observer,
                           public ash::ShellObserver,
                           public keyboard::KeyboardControllerObserver,
                           public display::DisplayObserver,
@@ -105,11 +103,6 @@ class WebUIScreenLocker : public WebUILoginView,
 
   // WidgetObserver:
   void OnWidgetDestroying(views::Widget* widget) override;
-
-  // PowerManagerClient::Observer:
-  void SuspendImminent() override;
-  void SuspendDone(const base::TimeDelta& sleep_duration) override;
-  void LidEventReceived(bool open, const base::TimeTicks& time) override;
 
   // content::WebContentsObserver:
   void RenderProcessGone(base::TerminationStatus status) override;

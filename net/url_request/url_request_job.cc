@@ -10,7 +10,6 @@
 #include "base/compiler_specific.h"
 #include "base/location.h"
 #include "base/metrics/histogram_macros.h"
-#include "base/power_monitor/power_monitor.h"
 #include "base/profiler/scoped_tracker.h"
 #include "base/single_thread_task_runner.h"
 #include "base/strings/string_number_conversions.h"
@@ -131,15 +130,9 @@ URLRequestJob::URLRequestJob(URLRequest* request,
       last_notified_total_received_bytes_(0),
       last_notified_total_sent_bytes_(0),
       weak_factory_(this) {
-  base::PowerMonitor* power_monitor = base::PowerMonitor::Get();
-  if (power_monitor)
-    power_monitor->AddObserver(this);
 }
 
 URLRequestJob::~URLRequestJob() {
-  base::PowerMonitor* power_monitor = base::PowerMonitor::Get();
-  if (power_monitor)
-    power_monitor->RemoveObserver(this);
 }
 
 void URLRequestJob::SetUpload(UploadDataStream* upload) {

@@ -29,9 +29,6 @@ DeviceCommandsFactoryChromeOS::~DeviceCommandsFactoryChromeOS() {
 std::unique_ptr<RemoteCommandJob>
 DeviceCommandsFactoryChromeOS::BuildJobForType(em::RemoteCommand_Type type) {
   switch (type) {
-    case em::RemoteCommand_Type_DEVICE_REBOOT:
-      return base::WrapUnique<RemoteCommandJob>(new DeviceCommandRebootJob(
-          chromeos::DBusThreadManager::Get()->GetPowerManagerClient()));
     case em::RemoteCommand_Type_DEVICE_SCREENSHOT:
       return base::WrapUnique<RemoteCommandJob>(
           new DeviceCommandScreenshotJob(base::MakeUnique<ScreenshotDelegate>(

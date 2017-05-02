@@ -223,12 +223,6 @@ public class WebViewLayoutTest
         mTestActivity.setGrantPermission(false);
     }
 
-    @MediumTest
-    public void testBatteryApi() throws Exception {
-        runWebViewLayoutTest("blink-apis/battery-status/battery-callback.html",
-                "blink-apis/battery-status/battery-callback-expected.txt");
-    }
-
     /*
     currently failing on aosp bots, see crbug.com/607350
     */

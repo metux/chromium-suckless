@@ -67,7 +67,6 @@
 #include "chrome/browser/ui/webui/help/version_updater_chromeos.h"
 #include "chromeos/chromeos_switches.h"
 #include "chromeos/dbus/dbus_thread_manager.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "chromeos/system/statistics_provider.h"
 #include "components/prefs/pref_service.h"
 #include "components/user_manager/user_manager.h"

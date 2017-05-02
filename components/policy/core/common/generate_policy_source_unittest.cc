@@ -152,20 +152,6 @@ TEST(GeneratePolicySource, ChromeSchemaData) {
     EXPECT_EQ(base::Value::TYPE_STRING, it.schema().type());
   }
   EXPECT_TRUE(*next == NULL);
-
-#if defined(OS_CHROMEOS)
-  subschema = schema.GetKnownProperty(key::kPowerManagementIdleSettings);
-  ASSERT_TRUE(subschema.valid());
-
-  EXPECT_TRUE(IsSameSchema(subschema.GetKnownProperty("AC"),
-                           subschema.GetKnownProperty("Battery")));
-
-  subschema = schema.GetKnownProperty(key::kDeviceLoginScreenPowerManagement);
-  ASSERT_TRUE(subschema.valid());
-
-  EXPECT_TRUE(IsSameSchema(subschema.GetKnownProperty("AC"),
-                           subschema.GetKnownProperty("Battery")));
-#endif
 }
 
 TEST(GeneratePolicySource, PolicyDetails) {

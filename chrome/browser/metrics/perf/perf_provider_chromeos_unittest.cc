@@ -838,34 +838,4 @@ TEST_F(PerfProviderCollectionParamsTest, Parameters_Override) {
             parsed_params.restore_session().max_collection_delay());
 }
 
-// Setting "::SamplingFactor" to zero should disable the trigger.
-// Otherwise, it could cause a div-by-zero crash.
-TEST_F(PerfProviderCollectionParamsTest, ZeroSamplingFactorDisablesTrigger) {
-  std::map<std::string, std::string> params;
-  params.insert(std::make_pair("ResumeFromSuspend::SamplingFactor", "0"));
-  params.insert(std::make_pair("RestoreSession::SamplingFactor", "0"));
-  ASSERT_TRUE(variations::AssociateVariationParams(
-      "ChromeOSWideProfilingCollection", "group_name", params));
-  ASSERT_TRUE(base::FieldTrialList::CreateFieldTrial(
-      "ChromeOSWideProfilingCollection", "group_name"));
-
-  TestPerfProvider perf_provider;
-  chromeos::PowerManagerClient::Observer& pm_observer = perf_provider;
-  perf_provider.Init();
-
-  // Cancel the background collection.
-  perf_provider.Deactivate();
-  EXPECT_FALSE(perf_provider.timer().IsRunning())
-      << "Sanity: timer should not be running.";
-
-  // Calling SuspendDone or OnSessionRestoreDone should not start the timer
-  // that triggers collection.
-
-  pm_observer.SuspendDone(base::TimeDelta::FromMinutes(10));
-  EXPECT_FALSE(perf_provider.timer().IsRunning());
-
-  perf_provider.OnSessionRestoreDone(100);
-  EXPECT_FALSE(perf_provider.timer().IsRunning());
-}
-
 }  // namespace metrics

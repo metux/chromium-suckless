@@ -17,7 +17,6 @@
 #include "base/macros.h"
 #include "base/message_loop/message_loop.h"
 #include "base/metrics/histogram_macros.h"
-#include "base/power_monitor/power_monitor.h"
 #include "base/strings/stringprintf.h"
 #include "build/build_config.h"
 #include "media/audio/fake_audio_log_factory.h"
@@ -49,7 +48,7 @@ const int kMaxFailedPingsCount = 3;
 // audio thread is hung for > |kMaxFailedPingsCount| * |max_hung_task_time_|, we
 // want to record a UMA and optionally a non-crash dump to find offenders in the
 // field.
-class AudioManagerHelper : public base::PowerObserver {
+class AudioManagerHelper {
  public:
   // These values are histogrammed over time; do not change their ordinal
   // values.
@@ -103,41 +102,7 @@ class AudioManagerHelper : public base::PowerObserver {
   void enable_crash_key_logging() { enable_crash_key_logging_ = true; }
 
  private:
-  // base::PowerObserver overrides.
-  // Disable hang detection when the system goes into the suspend state.
-  void OnSuspend() override {
-    base::AutoLock lock(hang_lock_);
-    hang_detection_enabled_ = false;
-    failed_pings_ = successful_pings_ = 0;
-  }
   // Reenable hang detection once the system comes out of the suspend state.
-  void OnResume() override {
-    base::AutoLock lock(hang_lock_);
-    hang_detection_enabled_ = true;
-    last_audio_thread_timer_tick_ = base::TimeTicks::Now();
-    failed_pings_ = successful_pings_ = 0;
-
-    // If either of the tasks were stopped during suspend, start them now.
-    if (!audio_task_running_) {
-      audio_task_running_ = true;
-
-      base::AutoUnlock unlock(hang_lock_);
-      audio_task_runner_->PostTask(
-          FROM_HERE,
-          base::Bind(&AudioManagerHelper::UpdateLastAudioThreadTimeTick,
-                     base::Unretained(this)));
-    }
-
-    if (!io_task_running_) {
-      io_task_running_ = true;
-
-      base::AutoUnlock unlock(hang_lock_);
-      monitor_task_runner_->PostTask(
-          FROM_HERE, base::Bind(&AudioManagerHelper::RecordAudioThreadStatus,
-                                base::Unretained(this)));
-    }
-  }
-
   // Runs on |monitor_task_runner|.
   void RecordAudioThreadStatus() {
     DCHECK(monitor_task_runner_->BelongsToCurrentThread());

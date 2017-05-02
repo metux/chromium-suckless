@@ -15,7 +15,6 @@
 #include "base/process/kill.h"
 #include "base/time/time.h"
 #include "chromeos/chromeos_export.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "content/public/browser/notification_observer.h"
 #include "content/public/browser/notification_registrar.h"
 #include "content/public/browser/render_process_host_observer.h"
@@ -33,7 +32,7 @@ class ScreenLocker;
 // PowerManagerClient::Observer on creation and unregisters itself on
 // destruction.
 class CHROMEOS_EXPORT RendererFreezer
-    : public PowerManagerClient::RenderProcessManagerDelegate,
+    :
       public content::NotificationObserver,
       public content::RenderProcessHostObserver {
  public:
@@ -65,10 +64,6 @@ class CHROMEOS_EXPORT RendererFreezer
 
   explicit RendererFreezer(std::unique_ptr<Delegate> delegate);
   ~RendererFreezer() override;
-
-  // PowerManagerClient::RenderProcessManagerDelegate implementation.
-  void SuspendImminent() override;
-  void SuspendDone() override;
 
   // content::NotificationObserver implementation.
   void Observe(int type,

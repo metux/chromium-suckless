@@ -53,7 +53,6 @@
 #include "content/browser/loader/navigation_resource_handler.h"
 #include "content/browser/loader/navigation_resource_throttle.h"
 #include "content/browser/loader/navigation_url_loader_impl_core.h"
-#include "content/browser/loader/power_save_block_resource_throttle.h"
 #include "content/browser/loader/redirect_to_file_resource_handler.h"
 #include "content/browser/loader/resource_message_filter.h"
 #include "content/browser/loader/resource_request_info_impl.h"
@@ -1653,14 +1652,6 @@ ResourceDispatcherHostImpl::AddStandardHandlers(
                                 appcache_service,
                                 resource_type,
                                 &throttles);
-  }
-
-  if (request->has_upload()) {
-    // Block power save while uploading data.
-    throttles.push_back(new PowerSaveBlockResourceThrottle(
-        request->url().host(),
-        BrowserThread::GetTaskRunnerForThread(BrowserThread::UI),
-        BrowserThread::GetTaskRunnerForThread(BrowserThread::FILE)));
   }
 
   // TODO(ricea): Stop looking this up so much.

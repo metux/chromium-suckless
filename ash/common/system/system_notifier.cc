@@ -22,7 +22,7 @@ namespace {
 // which can appear regardless of the situation, such like login screen or lock
 // screen.
 const char* kAlwaysShownSystemNotifierIds[] = {
-    kNotifierDeprecatedAccelerator, kNotifierBattery, kNotifierDisplay,
+    kNotifierDeprecatedAccelerator, kNotifierDisplay,
     kNotifierDisplayError,
 #if defined(OS_CHROMEOS)
     ui::NetworkStateNotifier::kNotifierNetworkError,
@@ -64,7 +64,6 @@ bool MatchSystemNotifierId(const message_center::NotifierId& notifier_id,
 
 }  // namespace
 
-const char kNotifierBattery[] = "ash.battery";
 const char kNotifierBluetooth[] = "ash.bluetooth";
 const char kNotifierDeprecatedAccelerator[] = "ash.accelerator-controller";
 const char kNotifierDisk[] = "ash.disk";

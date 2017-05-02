@@ -30,7 +30,6 @@ const char kHandlePowerButtonAcknowledgmentMethod[] =
     "HandlePowerButtonAcknowledgment";
 const char kRecordDarkResumeWakeReasonMethod[] = "RecordDarkResumeWakeReason";
 // Signals emitted by powerd.
-const char kPeripheralBatteryStatusSignal[] = "PeripheralBatteryStatus";
 const char kPowerSupplyPollSignal[] = "PowerSupplyPoll";
 const char kSuspendImminentSignal[] = "SuspendImminent";
 const char kDarkSuspendImminentSignal[] = "DarkSuspendImminent";

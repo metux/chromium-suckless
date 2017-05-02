@@ -36,7 +36,6 @@
 #include "base/macros.h"
 #include "base/memory/ref_counted.h"
 #include "base/message_loop/message_loop.h"
-#include "base/power_monitor/power_observer.h"
 #include "base/threading/thread.h"
 #include "build/build_config.h"
 #include "content/browser/renderer_host/media/media_devices_manager.h"
@@ -70,8 +69,7 @@ class VideoCaptureManager;
 // using MediaStreamRequester.
 class CONTENT_EXPORT MediaStreamManager
     : public MediaStreamProviderListener,
-      public base::MessageLoop::DestructionObserver,
-      public base::PowerObserver {
+      public base::MessageLoop::DestructionObserver{
  public:
   // Callback to deliver the result of a media request.
   typedef base::Callback<void(const MediaStreamDevices& devices,
@@ -209,10 +207,6 @@ class CONTENT_EXPORT MediaStreamManager
   // processes are making device requests, to be used by the
   // webrtcLoggingPrivate API if requested.
   void AddLogMessageOnIOThread(const std::string& message);
-
-  // base::PowerObserver overrides.
-  void OnSuspend() override;
-  void OnResume() override;
 
   // Called by the tests to specify a fake UI that should be used for next
   // generated stream (or when using --use-fake-ui-for-media-stream).

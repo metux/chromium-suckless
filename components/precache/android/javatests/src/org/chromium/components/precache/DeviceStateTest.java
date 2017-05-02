@@ -6,7 +6,6 @@ package org.chromium.components.precache;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
-import android.os.BatteryManager;
 import android.test.InstrumentationTestCase;
 import android.test.suitebuilder.annotation.SmallTest;
 
@@ -105,32 +104,6 @@ public class DeviceStateTest extends InstrumentationTestCase {
      * Mock of {@link DeviceState}.
      */
     static class MockDeviceState extends DeviceState {
-        int mBatteryStatus;
-
-        @Override
-        int getStickyBatteryStatus(Context context) {
-            return mBatteryStatus;
-        }
-
-        public void setStickyBatteryStatus(int status) {
-            mBatteryStatus = status;
-        }
-    }
-
-    @SmallTest
-    @Feature({"Precache"})
-    public void testPowerConnected() {
-        AdvancedMockContext context = new AdvancedMockContext();
-        MockDeviceState deviceState = new MockDeviceState();
-
-        deviceState.setStickyBatteryStatus(BatteryManager.BATTERY_STATUS_NOT_CHARGING);
-        assertFalse(deviceState.isPowerConnected(context));
-
-        deviceState.setStickyBatteryStatus(BatteryManager.BATTERY_STATUS_CHARGING);
-        assertTrue(deviceState.isPowerConnected(context));
-
-        deviceState.setStickyBatteryStatus(BatteryManager.BATTERY_STATUS_FULL);
-        assertTrue(deviceState.isPowerConnected(context));
     }
 
     @SmallTest

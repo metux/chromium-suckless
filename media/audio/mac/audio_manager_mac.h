@@ -165,12 +165,6 @@ class MEDIA_EXPORT AudioManagerMac : public AudioManagerBase {
   int current_sample_rate_;
   AudioDeviceID current_output_device_;
 
-  // Helper class which monitors power events to determine if output streams
-  // should defer Start() calls.  Required to workaround an OSX bug.  See
-  // http://crbug.com/160920 for more details.
-  class AudioPowerObserver;
-  std::unique_ptr<AudioPowerObserver> power_observer_;
-
   // Tracks all constructed input and output streams.
   // TODO(alokp): We used to track these streams to close before destruction.
   // We no longer close the streams, so we may be able to get rid of these

@@ -26,7 +26,6 @@
 #include "chromeos/dbus/gsm_sms_client.h"
 #include "chromeos/dbus/modem_messaging_client.h"
 #include "chromeos/dbus/permission_broker_client.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "chromeos/dbus/power_policy_controller.h"
 #include "chromeos/dbus/session_manager_client.h"
 #include "chromeos/dbus/shill_device_client.h"
@@ -90,10 +89,6 @@ DBusClientsCommon::DBusClientsCommon(bool use_real_clients) {
   else
     permission_broker_client_.reset(new FakePermissionBrokerClient);
 
-  power_manager_client_.reset(PowerManagerClient::Create(
-      use_real_clients ? REAL_DBUS_CLIENT_IMPLEMENTATION
-                       : FAKE_DBUS_CLIENT_IMPLEMENTATION));
-
   session_manager_client_.reset(SessionManagerClient::Create(
       use_real_clients ? REAL_DBUS_CLIENT_IMPLEMENTATION
                        : FAKE_DBUS_CLIENT_IMPLEMENTATION));
@@ -123,7 +118,6 @@ void DBusClientsCommon::Initialize(dbus::Bus* system_bus) {
   gsm_sms_client_->Init(system_bus);
   modem_messaging_client_->Init(system_bus);
   permission_broker_client_->Init(system_bus);
-  power_manager_client_->Init(system_bus);
   session_manager_client_->Init(system_bus);
   shill_device_client_->Init(system_bus);
   shill_ipconfig_client_->Init(system_bus);

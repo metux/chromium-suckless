@@ -26,7 +26,6 @@
 
 #include "base/macros.h"
 #include "base/memory/weak_ptr.h"
-#include "base/power_monitor/power_observer.h"
 #include "base/synchronization/lock.h"
 #include "media/base/audio_decoder.h"
 #include "media/base/audio_renderer.h"
@@ -53,7 +52,6 @@ class DecryptingDemuxerStream;
 class MEDIA_EXPORT AudioRendererImpl
     : public AudioRenderer,
       public TimeSource,
-      public base::PowerObserver,
       NON_EXPORTED_BASE(public AudioRendererSink::RenderCallback) {
  public:
   // |task_runner| is the thread on which AudioRendererImpl will execute.
@@ -87,10 +85,6 @@ class MEDIA_EXPORT AudioRendererImpl
   void Flush(const base::Closure& callback) override;
   void StartPlaying() override;
   void SetVolume(float volume) override;
-
-  // base::PowerObserver implementation.
-  void OnSuspend() override;
-  void OnResume() override;
 
  private:
   friend class AudioRendererImplTest;

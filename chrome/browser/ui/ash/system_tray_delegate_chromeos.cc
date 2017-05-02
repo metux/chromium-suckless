@@ -18,7 +18,6 @@
 #include "ash/common/shell_delegate.h"
 #include "ash/common/shell_window_ids.h"
 #include "ash/common/system/chromeos/bluetooth/bluetooth_observer.h"
-#include "ash/common/system/chromeos/power/power_status.h"
 #include "ash/common/system/chromeos/session/logout_button_observer.h"
 #include "ash/common/system/chromeos/shutdown_policy_observer.h"
 #include "ash/common/system/date/clock_observer.h"

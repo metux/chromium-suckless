@@ -48,7 +48,6 @@
 #include "ash/common/wm_root_window_controller.h"
 #include "ash/common/wm_window.h"
 #include "chromeos/dbus/dbus_thread_manager.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "ui/base/ime/chromeos/ime_keyboard.h"
 #include "ui/base/ime/chromeos/input_method_manager.h"
 #endif  // defined(OS_CHROMEOS)
@@ -418,7 +417,6 @@ bool CanHandleShowStylusTools() {
 
 void HandleSuspend() {
   base::RecordAction(UserMetricsAction("Accel_Suspend"));
-  chromeos::DBusThreadManager::Get()->GetPowerManagerClient()->RequestSuspend();
 }
 
 bool CanHandleCycleUser() {

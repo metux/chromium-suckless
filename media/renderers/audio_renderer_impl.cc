@@ -14,7 +14,6 @@
 #include "base/callback_helpers.h"
 #include "base/command_line.h"
 #include "base/logging.h"
-#include "base/power_monitor/power_monitor.h"
 #include "base/single_thread_task_runner.h"
 #include "base/time/default_tick_clock.h"
 #include "build/build_config.h"

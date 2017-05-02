@@ -11,7 +11,6 @@
 #include "base/compiler_specific.h"
 #include "base/macros.h"
 #include "base/memory/ref_counted.h"
-#include "base/power_monitor/power_observer.h"
 #include "base/threading/non_thread_safe.h"
 #include "net/base/net_export.h"
 #include "net/http/http_transaction_factory.h"
@@ -22,7 +21,6 @@ class HttpNetworkSession;
 
 class NET_EXPORT HttpNetworkLayer
     : public HttpTransactionFactory,
-      public base::PowerObserver,
       NON_EXPORTED_BASE(public base::NonThreadSafe) {
  public:
   // Construct a HttpNetworkLayer with an existing HttpNetworkSession which
@@ -36,10 +34,6 @@ class NET_EXPORT HttpNetworkLayer
                         std::unique_ptr<HttpTransaction>* trans) override;
   HttpCache* GetCache() override;
   HttpNetworkSession* GetSession() override;
-
-  // base::PowerObserver methods:
-  void OnSuspend() override;
-  void OnResume() override;
 
  private:
   HttpNetworkSession* const session_;

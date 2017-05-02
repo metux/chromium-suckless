@@ -84,7 +84,6 @@
 #include "ui/display/win/dpi.h"
 #elif defined(OS_MACOSX)
 #include "base/mac/scoped_nsautorelease_pool.h"
-#include "base/power_monitor/power_monitor_device_source.h"
 #include "content/app/mac/mac_init.h"
 #include "content/browser/mach_broker_mac.h"
 #include "content/common/sandbox_init_mac.h"

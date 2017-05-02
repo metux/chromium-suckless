@@ -14,7 +14,6 @@
 #include "content/common/media/media_player_delegate_messages.h"
 #include "content/public/browser/render_frame_host.h"
 #include "content/public/browser/web_contents.h"
-#include "device/power_save_blocker/power_save_blocker.h"
 #include "ipc/ipc_message_macros.h"
 
 namespace content {
@@ -38,7 +37,6 @@ void MediaWebContentsObserver::WebContentsDestroyed() {
 
 void MediaWebContentsObserver::RenderFrameDeleted(
     RenderFrameHost* render_frame_host) {
-  ClearPowerSaveBlockers(render_frame_host);
   session_controllers_manager_.RenderFrameDeleted(render_frame_host);
 }
 
@@ -48,13 +46,6 @@ void MediaWebContentsObserver::MaybeUpdateAudibleState() {
 
   AudioStreamMonitor* audio_stream_monitor =
       static_cast<WebContentsImpl*>(web_contents())->audio_stream_monitor();
-
-  if (audio_stream_monitor->WasRecentlyAudible()) {
-    if (!audio_power_save_blocker_)
-      CreateAudioPowerSaveBlocker();
-  } else {
-    audio_power_save_blocker_.reset();
-  }
 
   g_audible_metrics.Get().UpdateAudibleWebContentsState(
       web_contents(), audio_stream_monitor->IsCurrentlyAudible());
@@ -78,16 +69,9 @@ bool MediaWebContentsObserver::OnMessageReceived(
 }
 
 void MediaWebContentsObserver::WasShown() {
-  // Restore power save blocker if there are active video players running.
-  if (!active_video_players_.empty() && !video_power_save_blocker_)
-    CreateVideoPowerSaveBlocker();
 }
 
 void MediaWebContentsObserver::WasHidden() {
-  // If there are entities capturing screenshots or video (e.g., mirroring),
-  // don't release the power save blocker.
-  if (!web_contents()->GetCapturerCount())
-    video_power_save_blocker_.reset();
 }
 
 void MediaWebContentsObserver::OnMediaDestroyed(
@@ -104,7 +88,6 @@ void MediaWebContentsObserver::OnMediaPaused(RenderFrameHost* render_frame_host,
       RemoveMediaPlayerEntry(player_id, &active_audio_players_);
   const bool removed_video =
       RemoveMediaPlayerEntry(player_id, &active_video_players_);
-  MaybeReleasePowerSaveBlockers();
 
   if (removed_audio || removed_video) {
     // Notify observers the player has been "paused".
@@ -134,23 +117,10 @@ void MediaWebContentsObserver::OnMediaPlaying(
   const MediaPlayerId id(render_frame_host, delegate_id);
   if (has_audio) {
     AddMediaPlayerEntry(id, &active_audio_players_);
-
-    // If we don't have audio stream monitoring, allocate the audio power save
-    // blocker here instead of during NotifyNavigationStateChanged().
-    if (!audio_power_save_blocker_ &&
-        !AudioStreamMonitor::monitoring_available()) {
-      CreateAudioPowerSaveBlocker();
-    }
   }
 
   if (has_video) {
     AddMediaPlayerEntry(id, &active_video_players_);
-
-    // If we're not hidden and have just created a player, create a blocker.
-    if (!video_power_save_blocker_ &&
-        !static_cast<WebContentsImpl*>(web_contents())->IsHidden()) {
-      CreateVideoPowerSaveBlocker();
-    }
   }
 
   if (!session_controllers_manager_.RequestPlay(
@@ -161,60 +131,6 @@ void MediaWebContentsObserver::OnMediaPlaying(
   // Notify observers of the new player.
   DCHECK(has_audio || has_video);
   static_cast<WebContentsImpl*>(web_contents())->MediaStartedPlaying(id);
-}
-
-void MediaWebContentsObserver::ClearPowerSaveBlockers(
-    RenderFrameHost* render_frame_host) {
-  std::set<MediaPlayerId> removed_players;
-  RemoveAllMediaPlayerEntries(render_frame_host, &active_audio_players_,
-                              &removed_players);
-  RemoveAllMediaPlayerEntries(render_frame_host, &active_video_players_,
-                              &removed_players);
-  MaybeReleasePowerSaveBlockers();
-
-  // Notify all observers the player has been "paused".
-  WebContentsImpl* wci = static_cast<WebContentsImpl*>(web_contents());
-  for (const auto& id : removed_players)
-    wci->MediaStoppedPlaying(id);
-}
-
-void MediaWebContentsObserver::CreateAudioPowerSaveBlocker() {
-  DCHECK(!audio_power_save_blocker_);
-  audio_power_save_blocker_.reset(new device::PowerSaveBlocker(
-      device::PowerSaveBlocker::kPowerSaveBlockPreventAppSuspension,
-      device::PowerSaveBlocker::kReasonAudioPlayback, "Playing audio",
-      BrowserThread::GetTaskRunnerForThread(BrowserThread::UI),
-      BrowserThread::GetTaskRunnerForThread(BrowserThread::FILE)));
-}
-
-void MediaWebContentsObserver::CreateVideoPowerSaveBlocker() {
-  DCHECK(!video_power_save_blocker_);
-  DCHECK(!active_video_players_.empty());
-  video_power_save_blocker_.reset(new device::PowerSaveBlocker(
-      device::PowerSaveBlocker::kPowerSaveBlockPreventDisplaySleep,
-      device::PowerSaveBlocker::kReasonVideoPlayback, "Playing video",
-      BrowserThread::GetTaskRunnerForThread(BrowserThread::UI),
-      BrowserThread::GetTaskRunnerForThread(BrowserThread::FILE)));
-#if defined(OS_ANDROID)
-  if (web_contents()->GetNativeView()) {
-    video_power_save_blocker_.get()->InitDisplaySleepBlocker(
-        web_contents()->GetNativeView());
-  }
-#endif
-}
-
-void MediaWebContentsObserver::MaybeReleasePowerSaveBlockers() {
-  // If there are no more audio players and we don't have audio stream
-  // monitoring, release the audio power save blocker here instead of during
-  // NotifyNavigationStateChanged().
-  if (active_audio_players_.empty() &&
-      !AudioStreamMonitor::monitoring_available()) {
-    audio_power_save_blocker_.reset();
-  }
-
-  // If there are no more video players, clear the video power save blocker.
-  if (active_video_players_.empty())
-    video_power_save_blocker_.reset();
 }
 
 void MediaWebContentsObserver::AddMediaPlayerEntry(

@@ -20,10 +20,6 @@
 #include "ui/android/view_android.h"
 #endif  // OS_ANDROID
 
-namespace device {
-class PowerSaveBlocker;
-}  // namespace device
-
 namespace media {
 enum class MediaContentType;
 }  // namespace media
@@ -50,14 +46,6 @@ class CONTENT_EXPORT MediaWebContentsObserver : public WebContentsObserver {
   void WasShown() override;
   void WasHidden() override;
 
-  bool has_audio_power_save_blocker_for_testing() const {
-    return !!audio_power_save_blocker_;
-  }
-
-  bool has_video_power_save_blocker_for_testing() const {
-    return !!video_power_save_blocker_;
-  }
-
  protected:
   MediaSessionControllersManager* session_controllers_manager() {
     return &session_controllers_manager_;
@@ -74,18 +62,6 @@ class CONTENT_EXPORT MediaWebContentsObserver : public WebContentsObserver {
                       bool has_audio,
                       bool is_remote,
                       media::MediaContentType media_content_type);
-
-  // Clear |render_frame_host|'s tracking entry for its power save blockers.
-  void ClearPowerSaveBlockers(RenderFrameHost* render_frame_host);
-
-  // Creates an audio or video power save blocker respectively.
-  void CreateAudioPowerSaveBlocker();
-  void CreateVideoPowerSaveBlocker();
-
-  // Releases the audio power save blockers if |active_audio_players_| is empty.
-  // Likewise, releases the video power save blockers if |active_video_players_|
-  // is empty.
-  void MaybeReleasePowerSaveBlockers();
 
   // Helper methods for adding or removing player entries in |player_map|.
   using PlayerSet = std::set<int>;
@@ -104,8 +80,6 @@ class CONTENT_EXPORT MediaWebContentsObserver : public WebContentsObserver {
   // Tracking variables and associated power save blockers for media playback.
   ActiveMediaPlayerMap active_audio_players_;
   ActiveMediaPlayerMap active_video_players_;
-  std::unique_ptr<device::PowerSaveBlocker> audio_power_save_blocker_;
-  std::unique_ptr<device::PowerSaveBlocker> video_power_save_blocker_;
 
   MediaSessionControllersManager session_controllers_manager_;
 

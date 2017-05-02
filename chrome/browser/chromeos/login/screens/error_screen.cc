@@ -31,7 +31,6 @@
 #include "chrome/common/extensions/extension_constants.h"
 #include "chrome/grit/browser_resources.h"
 #include "chromeos/dbus/dbus_thread_manager.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "chromeos/dbus/session_manager_client.h"
 #include "chromeos/network/portal_detector/network_portal_detector.h"
 #include "chromeos/network/portal_detector/network_portal_detector_strategy.h"
@@ -293,7 +292,6 @@ void ErrorScreen::OnLaunchOobeGuestSession() {
 }
 
 void ErrorScreen::OnRebootButtonClicked() {
-  chromeos::DBusThreadManager::Get()->GetPowerManagerClient()->RequestRestart();
 }
 
 void ErrorScreen::OnConnectRequested() {

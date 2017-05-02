@@ -27,7 +27,7 @@ public class BackgroundSchedulerBridge {
     public static boolean startProcessing(
             DeviceConditions deviceConditions, Callback<Boolean> callback) {
         return nativeStartProcessing(deviceConditions.isPowerConnected(),
-                deviceConditions.getBatteryPercentage(), deviceConditions.getNetConnectionType(),
+                100, deviceConditions.getNetConnectionType(),
                 callback);
     }
 
@@ -52,12 +52,12 @@ public class BackgroundSchedulerBridge {
      */
     @CalledByNative
     private static TriggerConditions createTriggerConditions(boolean requirePowerConnected,
-            int minimumBatteryPercentage, boolean requireUnmeteredNetwork) {
+            int foo, boolean requireUnmeteredNetwork) {
         return new TriggerConditions(
-                requirePowerConnected, minimumBatteryPercentage, requireUnmeteredNetwork);
+                requirePowerConnected, foo, requireUnmeteredNetwork);
     }
 
     /** Instructs the native RequestCoordinator to start processing. */
     private static native boolean nativeStartProcessing(boolean powerConnected,
-            int batteryPercentage, int netConnectionType, Callback<Boolean> callback);
+            int foo, int netConnectionType, Callback<Boolean> callback);
 }

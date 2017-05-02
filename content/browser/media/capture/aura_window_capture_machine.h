@@ -21,10 +21,6 @@ namespace cc {
 class CopyOutputResult;
 }  // namespace cc
 
-namespace device {
-class PowerSaveBlocker;
-}  // namespace device
-
 namespace display_compositor {
 class ReadbackYUVInterface;
 }
@@ -125,10 +121,6 @@ class AuraWindowCaptureMachine
 
   // Renders mouse cursor on frame.
   std::unique_ptr<content::CursorRendererAura> cursor_renderer_;
-
-  // TODO(jiayl): Remove power_save_blocker_ when there is an API to keep the
-  // screen from sleeping for the drive-by web.
-  std::unique_ptr<device::PowerSaveBlocker> power_save_blocker_;
 
   // False while frame capture has been suspended. All other aspects of the
   // machine are maintained.

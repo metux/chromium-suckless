@@ -297,7 +297,6 @@ Volume* Volume::CreateForTesting(const base::FilePath& device_path,
 VolumeManager::VolumeManager(
     Profile* profile,
     drive::DriveIntegrationService* drive_integration_service,
-    chromeos::PowerManagerClient* power_manager_client,
     chromeos::disks::DiskMountManager* disk_mount_manager,
     chromeos::file_system_provider::Service* file_system_provider_service,
     GetMtpStorageInfoCallback get_mtp_storage_info_callback)

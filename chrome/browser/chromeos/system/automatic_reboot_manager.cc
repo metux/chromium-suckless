@@ -168,7 +168,6 @@ AutomaticRebootManager::AutomaticRebootManager(
       content::NotificationService::AllSources());
 
   DBusThreadManager* dbus_thread_manager = DBusThreadManager::Get();
-  dbus_thread_manager->GetPowerManagerClient()->AddObserver(this);
   dbus_thread_manager->GetUpdateEngineClient()->AddObserver(this);
 
   // If no user is logged in, a reboot may be performed whenever the user is
@@ -205,7 +204,6 @@ AutomaticRebootManager::~AutomaticRebootManager() {
                     WillDestroyAutomaticRebootManager());
 
   DBusThreadManager* dbus_thread_manager = DBusThreadManager::Get();
-  dbus_thread_manager->GetPowerManagerClient()->RemoveObserver(this);
   dbus_thread_manager->GetUpdateEngineClient()->RemoveObserver(this);
   if (ui::UserActivityDetector::Get())
     ui::UserActivityDetector::Get()->RemoveObserver(this);
@@ -414,7 +412,6 @@ void AutomaticRebootManager::Reboot() {
   login_screen_idle_timer_.reset();
   grace_start_timer_.reset();
   grace_end_timer_.reset();
-  DBusThreadManager::Get()->GetPowerManagerClient()->RequestRestart();
 }
 
 }  // namespace system

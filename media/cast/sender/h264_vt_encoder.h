@@ -9,7 +9,6 @@
 
 #include "base/mac/scoped_cftyperef.h"
 #include "base/macros.h"
-#include "base/power_monitor/power_observer.h"
 #include "base/threading/thread_checker.h"
 #include "media/base/mac/videotoolbox_glue.h"
 #include "media/base/mac/videotoolbox_helpers.h"
@@ -24,8 +23,7 @@ namespace cast {
 // pinned to the thread on which it is constructed. Supports changing frame
 // sizes directly. Implements the base::PowerObserver interface to reset the
 // compression session when the host process is suspended.
-class H264VideoToolboxEncoder : public VideoEncoder,
-                                public base::PowerObserver {
+class H264VideoToolboxEncoder : public VideoEncoder {
   typedef CoreMediaGlue::CMSampleBufferRef CMSampleBufferRef;
   typedef VideoToolboxGlue::VTCompressionSessionRef VTCompressionSessionRef;
   typedef VideoToolboxGlue::VTEncodeInfoFlags VTEncodeInfoFlags;
@@ -50,10 +48,6 @@ class H264VideoToolboxEncoder : public VideoEncoder,
   void GenerateKeyFrame() final;
   std::unique_ptr<VideoFrameFactory> CreateVideoFrameFactory() final;
   void EmitFrames() final;
-
-  // base::PowerObserver
-  void OnSuspend() final;
-  void OnResume() final;
 
  private:
   // VideoFrameFactory tied to the VideoToolbox encoder.

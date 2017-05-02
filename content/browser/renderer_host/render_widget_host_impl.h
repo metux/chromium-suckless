@@ -68,12 +68,6 @@ namespace cc {
 class CompositorFrameAck;
 }
 
-#if defined(OS_MACOSX)
-namespace device {
-class PowerSaveBlocker;
-}  // namespace device
-#endif
-
 namespace gfx {
 class Range;
 }
@@ -840,10 +834,6 @@ class CONTENT_EXPORT RenderWidgetHostImpl : public RenderWidgetHost,
   // This value indicates how long to wait for a new compositor frame from a
   // renderer process before clearing any previously displayed content.
   base::TimeDelta new_content_rendering_delay_;
-
-#if defined(OS_MACOSX)
-  std::unique_ptr<device::PowerSaveBlocker> power_save_blocker_;
-#endif
 
   base::WeakPtrFactory<RenderWidgetHostImpl> weak_factory_;
 

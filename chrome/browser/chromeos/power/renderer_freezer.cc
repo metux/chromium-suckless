@@ -117,10 +117,6 @@ void RendererFreezer::OnCheckCanFreezeRenderersComplete(bool can_freeze) {
   if (!can_freeze)
     return;
 
-  DBusThreadManager::Get()
-      ->GetPowerManagerClient()
-      ->SetRenderProcessManagerDelegate(weak_factory_.GetWeakPtr());
-
   registrar_.Add(this, chrome::NOTIFICATION_SCREEN_LOCK_STATE_CHANGED,
                  content::NotificationService::AllBrowserContextsAndSources());
   registrar_.Add(

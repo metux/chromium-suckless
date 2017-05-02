@@ -45,8 +45,6 @@ component("chromeos") {
     "network/network_state_notifier.h",
     "touch_exploration_controller.cc",
     "touch_exploration_controller.h",
-    "user_activity_power_manager_notifier.cc",
-    "user_activity_power_manager_notifier.h",
   ]
   defines = [ "UI_CHROMEOS_IMPLEMENTATION" ]
   deps = [

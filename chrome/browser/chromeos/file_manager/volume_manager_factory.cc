@@ -47,7 +47,6 @@ KeyedService* VolumeManagerFactory::BuildServiceInstanceFor(
   Profile* const profile = Profile::FromBrowserContext(context);
   VolumeManager* instance = new VolumeManager(
       profile, drive::DriveIntegrationServiceFactory::GetForProfile(profile),
-      chromeos::DBusThreadManager::Get()->GetPowerManagerClient(),
       chromeos::disks::DiskMountManager::GetInstance(),
       chromeos::file_system_provider::ServiceFactory::Get(context),
       VolumeManager::GetMtpStorageInfoCallback());

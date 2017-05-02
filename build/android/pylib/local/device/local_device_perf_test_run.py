@@ -13,7 +13,6 @@ import threading
 import time
 import zipfile
 
-from devil.android import battery_utils
 from devil.android import device_errors
 from devil.android import device_list
 from devil.android import device_utils
@@ -212,7 +211,6 @@ class DeviceTestShard(TestShard):
       self, env, test_instance, device, index, tests, retries=3, timeout=None):
     super(DeviceTestShard, self).__init__(
         env, test_instance, tests, retries, timeout)
-    self._battery = battery_utils.BatteryUtils(device) if device else None
     self._device = device
     self._index = index
 
@@ -253,17 +251,6 @@ class DeviceTestShard(TestShard):
     if not self._device.IsOnline():
       msg = 'Device %s is unresponsive.' % str(self._device)
       raise device_errors.DeviceUnreachableError(msg)
-
-    logging.info('Charge level: %s%%',
-                 str(self._battery.GetBatteryInfo().get('level')))
-    if self._test_instance.min_battery_level:
-      self._battery.ChargeDeviceToLevel(self._test_instance.min_battery_level)
-
-    logging.info('temperature: %s (0.1 C)',
-                 str(self._battery.GetBatteryInfo().get('temperature')))
-    if self._test_instance.max_battery_temp:
-      self._battery.LetBatteryCoolToTemperature(
-          self._test_instance.max_battery_temp)
 
     if not self._device.IsScreenOn():
       self._device.SetScreen(True)

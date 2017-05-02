@@ -17,7 +17,6 @@
 #include "base/macros.h"
 #include "base/memory/weak_ptr.h"
 #include "base/time/time.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "content/public/browser/notification_details.h"
 #include "content/public/browser/notification_observer.h"
 #include "content/public/browser/notification_registrar.h"
@@ -40,8 +39,7 @@ namespace chromeos {
 // WakeOnWifiManager.
 class ExtensionEventObserver : public content::NotificationObserver,
                                public extensions::ProcessManagerObserver,
-                               public extensions::ExtensionHostObserver,
-                               public PowerManagerClient::Observer {
+                               public extensions::ExtensionHostObserver {
  public:
   class TestApi {
    public:
@@ -93,11 +91,6 @@ class ExtensionEventObserver : public content::NotificationObserver,
                                uint64_t request_id) override;
   void OnNetworkRequestDone(const extensions::ExtensionHost* host,
                             uint64_t request_id) override;
-
-  // PowerManagerClient::Observer overrides.
-  void SuspendImminent() override;
-  void DarkSuspendImminent() override;
-  void SuspendDone(const base::TimeDelta& duration) override;
 
  private:
   friend class TestApi;

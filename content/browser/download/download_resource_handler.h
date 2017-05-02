@@ -27,7 +27,6 @@ namespace content {
 class ByteStreamReader;
 class ByteStreamWriter;
 class DownloadRequestHandle;
-class PowerSaveBlocker;
 struct DownloadCreateInfo;
 
 // Forwards data to the download thread.

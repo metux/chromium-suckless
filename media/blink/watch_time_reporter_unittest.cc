@@ -99,10 +99,6 @@ class WatchTimeReporterTest : public testing::Test {
     wtr_->is_on_battery_power_ = on_battery_power;
   }
 
-  void OnPowerStateChange(bool on_battery_power) {
-    wtr_->OnPowerStateChange(on_battery_power);
-  }
-
   enum {
     // After |test_callback_func| is executed, should watch time continue to
     // accumulate?
@@ -456,45 +452,6 @@ TEST_F(WatchTimeReporterTest, OnShownHiddenHysteresisContinuation) {
 
 TEST_F(WatchTimeReporterTest, OnShownHiddenHysteresisFinalized) {
   RunHysteresisTest([this]() { wtr_->OnHidden(); });
-}
-
-TEST_F(WatchTimeReporterTest, OnPowerStateChangeHysteresisBatteryContinuation) {
-  RunHysteresisTest<kAccumulationContinuesAfterTest |
-                    kFinalizeExitDoesNotRequireCurrentTime | kStartOnBattery>(
-      [this]() {
-        OnPowerStateChange(false);
-        OnPowerStateChange(true);
-      });
-}
-
-TEST_F(WatchTimeReporterTest, OnPowerStateChangeHysteresisBatteryFinalized) {
-  RunHysteresisTest<kAccumulationContinuesAfterTest | kFinalizePowerWatchTime |
-                    kStartOnBattery>([this]() { OnPowerStateChange(false); });
-}
-
-TEST_F(WatchTimeReporterTest, OnPowerStateChangeHysteresisAcContinuation) {
-  RunHysteresisTest<kAccumulationContinuesAfterTest |
-                    kFinalizeExitDoesNotRequireCurrentTime>([this]() {
-    OnPowerStateChange(true);
-    OnPowerStateChange(false);
-  });
-}
-
-TEST_F(WatchTimeReporterTest, OnPowerStateChangeHysteresisAcFinalized) {
-  RunHysteresisTest<kAccumulationContinuesAfterTest | kFinalizePowerWatchTime>(
-      [this]() { OnPowerStateChange(true); });
-}
-
-TEST_F(WatchTimeReporterTest, OnPowerStateChangeBatteryTransitions) {
-  RunHysteresisTest<kAccumulationContinuesAfterTest | kFinalizePowerWatchTime |
-                    kStartOnBattery | kTransitionPowerWatchTime>(
-      [this]() { OnPowerStateChange(false); });
-}
-
-TEST_F(WatchTimeReporterTest, OnPowerStateChangeAcTransitions) {
-  RunHysteresisTest<kAccumulationContinuesAfterTest | kFinalizePowerWatchTime |
-                    kTransitionPowerWatchTime>(
-      [this]() { OnPowerStateChange(true); });
 }
 
 // Tests that the first finalize is the only one that matters.

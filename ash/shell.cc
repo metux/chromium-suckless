@@ -67,7 +67,6 @@
 #include "ash/wm/lock_state_controller.h"
 #include "ash/wm/overlay_event_filter.h"
 #include "ash/wm/overview/scoped_overview_animation_settings_factory_aura.h"
-#include "ash/wm/power_button_controller.h"
 #include "ash/wm/resize_shadow_controller.h"
 #include "ash/wm/screen_pinning_controller.h"
 #include "ash/wm/system_gesture_event_filter.h"
@@ -117,7 +116,6 @@
 #include "ash/accelerators/spoken_feedback_toggler.h"
 #include "ash/common/ash_constants.h"
 #include "ash/common/system/chromeos/bluetooth/bluetooth_notification_controller.h"
-#include "ash/common/system/chromeos/power/power_status.h"
 #include "ash/display/display_change_observer_chromeos.h"
 #include "ash/display/display_color_manager_chromeos.h"
 #include "ash/display/display_error_observer_chromeos.h"
@@ -125,15 +123,12 @@
 #include "ash/display/resolution_notification_controller.h"
 #include "ash/display/screen_orientation_controller_chromeos.h"
 #include "ash/sticky_keys/sticky_keys_controller.h"
-#include "ash/system/chromeos/power/power_event_observer.h"
-#include "ash/system/chromeos/power/video_activity_notifier.h"
 #include "ash/touch/touch_transformer_controller.h"
 #include "ash/virtual_keyboard_controller.h"
 #include "base/bind_helpers.h"
 #include "base/sys_info.h"
 #include "chromeos/audio/audio_a11y_controller.h"
 #include "chromeos/dbus/dbus_thread_manager.h"
-#include "ui/chromeos/user_activity_power_manager_notifier.h"
 #include "ui/display/chromeos/display_configurator.h"
 
 #if defined(USE_X11)
@@ -430,10 +425,6 @@ Shell::Shell(ShellDelegate* delegate)
   display_manager_.reset(ScreenAsh::CreateDisplayManager());
   window_tree_host_manager_.reset(new WindowTreeHostManager);
   user_metrics_recorder_.reset(new UserMetricsRecorder);
-
-#if defined(OS_CHROMEOS)
-  PowerStatus::Initialize();
-#endif
 }
 
 Shell::~Shell() {
@@ -509,12 +500,6 @@ Shell::~Shell() {
 // Controllers who have WindowObserver added must be deleted
 // before |window_tree_host_manager_| is deleted.
 
-#if defined(OS_CHROMEOS)
-  // VideoActivityNotifier must be deleted before |video_detector_| is
-  // deleted because it's observing video activity through
-  // VideoDetector::Observer interface.
-  video_activity_notifier_.reset();
-#endif  // defined(OS_CHROMEOS)
   video_detector_.reset();
   high_contrast_controller_.reset();
 
@@ -541,7 +526,6 @@ Shell::~Shell() {
   toplevel_window_event_handler_.reset();
   visibility_controller_.reset();
 
-  power_button_controller_.reset();
   lock_state_controller_.reset();
 
   screen_pinning_controller_.reset();
@@ -587,8 +571,6 @@ Shell::~Shell() {
     wm_shell_->RemoveShellObserver(projecting_observer_.get());
   }
   display_change_observer_.reset();
-
-  PowerStatus::Shutdown();
 
   // Ensure that DBusThreadManager outlives this Shell.
   DCHECK(chromeos::DBusThreadManager::IsInitialized());
@@ -643,8 +625,7 @@ void Shell::Init(const ShellInitParams& init_params) {
   // The DBusThreadManager must outlive this Shell. See the DCHECK in ~Shell.
   chromeos::DBusThreadManager* dbus_thread_manager =
       chromeos::DBusThreadManager::Get();
-  projecting_observer_.reset(
-      new ProjectingObserver(dbus_thread_manager->GetPowerManagerClient()));
+  projecting_observer_.reset(new ProjectingObserver());
   display_configurator_->AddObserver(projecting_observer_.get());
   wm_shell_->AddShellObserver(projecting_observer_.get());
 
@@ -749,13 +730,6 @@ void Shell::Init(const ShellInitParams& init_params) {
       new ScreenPinningController(window_tree_host_manager_.get()));
 
   lock_state_controller_.reset(new LockStateController);
-  power_button_controller_.reset(
-      new PowerButtonController(lock_state_controller_.get()));
-#if defined(OS_CHROMEOS)
-  // Pass the initial display state to PowerButtonController.
-  power_button_controller_->OnDisplayModeChanged(
-      display_configurator_->cached_displays());
-#endif
   wm_shell_->AddShellObserver(lock_state_controller_.get());
 
   drag_drop_controller_.reset(new DragDropController);
@@ -840,11 +814,6 @@ void Shell::Init(const ShellInitParams& init_params) {
   }
 
 #if defined(OS_CHROMEOS)
-  power_event_observer_.reset(new PowerEventObserver());
-  user_activity_notifier_.reset(
-      new ui::UserActivityPowerManagerNotifier(user_activity_detector_.get()));
-  video_activity_notifier_.reset(
-      new VideoActivityNotifier(video_detector_.get()));
   bluetooth_notification_controller_.reset(new BluetoothNotificationController);
   screen_orientation_controller_.reset(new ScreenOrientationController());
   screen_layout_observer_.reset(new ScreenLayoutObserver());

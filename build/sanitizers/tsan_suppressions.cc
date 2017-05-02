@@ -112,13 +112,6 @@ char kTSanDefaultSuppressions[] =
 // http://crbug.com/258499
 "race:third_party/skia/include/core/SkRefCnt.h\n"
 
-// http://crbug.com/268924
-"race:base::g_power_monitor\n"
-"race:base::PowerMonitor::PowerMonitor\n"
-"race:base::PowerMonitor::AddObserver\n"
-"race:base::PowerMonitor::RemoveObserver\n"
-"race:base::PowerMonitor::IsOnBatteryPower\n"
-
 // http://crbug.com/258935
 "race:base::Thread::StopSoon\n"
 

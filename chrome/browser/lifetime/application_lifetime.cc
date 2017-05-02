@@ -237,10 +237,6 @@ void AttemptRestart() {
 #endif  // !defined(OS_ANDROID)
 
 void AttemptRelaunch() {
-#if defined(OS_CHROMEOS)
-  chromeos::DBusThreadManager::Get()->GetPowerManagerClient()->RequestRestart();
-  // If running the Chrome OS build, but we're not on the device, fall through.
-#endif
   chrome::AttemptRestart();
 }
 
@@ -365,9 +361,6 @@ void NotifyAndTerminate(bool fast_path) {
     NotifyAppTerminating();
 
 #if defined(OS_CHROMEOS)
-  if (chromeos::PowerPolicyController::IsInitialized())
-    chromeos::PowerPolicyController::Get()->NotifyChromeIsExiting();
-
   if (base::SysInfo::IsRunningOnChromeOS()) {
     // If we're on a ChromeOS device, reboot if an update has been applied,
     // or else signal the session manager to log out.

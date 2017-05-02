@@ -15,7 +15,6 @@
 #include "content/browser/compositor/image_transport_factory.h"
 #include "content/browser/media/capture/desktop_capture_device_uma_types.h"
 #include "content/public/browser/browser_thread.h"
-#include "device/power_save_blocker/power_save_blocker.h"
 #include "media/base/video_capture_types.h"
 #include "media/base/video_util.h"
 #include "media/capture/content/thread_safe_capture_oracle.h"
@@ -86,12 +85,6 @@ bool AuraWindowCaptureMachine::InternalStart(
     return false;
   compositor->AddAnimationObserver(this);
 
-  power_save_blocker_.reset(new device::PowerSaveBlocker(
-      device::PowerSaveBlocker::kPowerSaveBlockPreventDisplaySleep,
-      device::PowerSaveBlocker::kReasonOther, "DesktopCaptureDevice is running",
-      BrowserThread::GetTaskRunnerForThread(BrowserThread::UI),
-      BrowserThread::GetTaskRunnerForThread(BrowserThread::FILE)));
-
   return true;
 }
 
@@ -133,8 +126,6 @@ void AuraWindowCaptureMachine::InternalStop(const base::Closure& callback) {
 
   // Cancel any and all outstanding callbacks owned by external modules.
   weak_factory_.InvalidateWeakPtrs();
-
-  power_save_blocker_.reset();
 
   // Stop observing compositor and window events.
   if (desktop_window_) {

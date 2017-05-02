@@ -55,7 +55,7 @@ class WallpaperManager
   // Returns the appropriate wallpaper resolution for all root windows.
   WallpaperResolution GetAppropriateResolution() override;
 
-  // Adds PowerManagerClient, TimeZoneSettings and CrosSettings observers.
+  // Adds TimeZoneSettings and CrosSettings observers.
   void AddObservers() override;
 
   // Loads wallpaper asynchronously if the current wallpaper is not the

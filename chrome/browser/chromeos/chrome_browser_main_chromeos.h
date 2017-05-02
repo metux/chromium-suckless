@@ -30,8 +30,6 @@ class IdleActionWarningObserver;
 class LoginLockStateNotifier;
 class LowDiskNotification;
 class MagnificationManager;
-class PeripheralBatteryObserver;
-class PowerPrefs;
 class RendererFreezer;
 class SessionManagerObserver;
 class SwapMetrics;
@@ -68,8 +66,6 @@ class ChromeBrowserMainPartsChromeos : public ChromeBrowserMainPartsLinux {
 
  private:
   std::unique_ptr<default_app_order::ExternalLoader> app_order_loader_;
-  std::unique_ptr<PeripheralBatteryObserver> peripheral_battery_observer_;
-  std::unique_ptr<PowerPrefs> power_prefs_;
   std::unique_ptr<LoginLockStateNotifier> login_lock_state_notifier_;
   std::unique_ptr<IdleActionWarningObserver> idle_action_warning_observer_;
   std::unique_ptr<DataPromoNotification> data_promo_notification_;

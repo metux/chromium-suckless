@@ -37,7 +37,6 @@
 
 #if defined(OS_CHROMEOS)
 #include "chromeos/dbus/dbus_thread_manager.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "components/user_manager/user_manager.h"
 #endif
 
@@ -312,14 +311,6 @@ bool ChromeRuntimeAPIDelegate::GetPlatformInfo(PlatformInfo* info) {
 }
 
 bool ChromeRuntimeAPIDelegate::RestartDevice(std::string* error_message) {
-#if defined(OS_CHROMEOS)
-  if (user_manager::UserManager::Get()->IsLoggedInAsKioskApp()) {
-    chromeos::DBusThreadManager::Get()
-        ->GetPowerManagerClient()
-        ->RequestRestart();
-    return true;
-  }
-#endif
   *error_message = "Function available only for ChromeOS kiosk mode.";
   return false;
 }

@@ -212,7 +212,6 @@ class CONTENT_EXPORT BrowserMainLoop {
 
   // Members initialized in |PostMainMessageLoopStart()| -----------------------
   std::unique_ptr<base::SystemMonitor> system_monitor_;
-  std::unique_ptr<base::PowerMonitor> power_monitor_;
   std::unique_ptr<base::HighResolutionTimerManager> hi_res_timer_manager_;
   std::unique_ptr<net::NetworkChangeNotifier> network_change_notifier_;
 

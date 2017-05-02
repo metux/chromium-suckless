@@ -27,7 +27,6 @@ import time
 import _strptime  # pylint: disable=unused-import
 
 import devil_chromium
-from devil.android import battery_utils
 from devil.android import device_blacklist
 from devil.android import device_errors
 from devil.android import device_temp_file
@@ -355,21 +354,6 @@ def FinishProvisioning(device, options):
   if device.IsUserBuild():
     device.SendKeyEvent(keyevent.KEYCODE_MENU)
 
-  if options.min_battery_level is not None:
-    battery = battery_utils.BatteryUtils(device)
-    try:
-      battery.ChargeDeviceToLevel(options.min_battery_level)
-    except device_errors.DeviceChargingError:
-      device.Reboot()
-      battery.ChargeDeviceToLevel(options.min_battery_level)
-
-  if options.max_battery_temp is not None:
-    try:
-      battery = battery_utils.BatteryUtils(device)
-      battery.LetBatteryCoolToTemperature(options.max_battery_temp)
-    except device_errors.CommandFailedError:
-      logging.exception('Unable to let battery cool to specified temperature.')
-
   def _set_and_verify_date():
     if device.build_version_sdk >= version_codes.MARSHMALLOW:
       date_format = '%m%d%H%M%Y.%S'
@@ -486,10 +470,6 @@ def main():
   # --disable-network
   #     TODO(tonyg): We eventually want network on. However, currently radios
   #     can cause perfbots to drain faster than they charge.
-  # --min-battery-level 95
-  #     Some perf bots run benchmarks with USB charging disabled which leads
-  #     to gradual draining of the battery. We must wait for a full charge
-  #     before starting a run in order to keep the devices online.
 
   parser = argparse.ArgumentParser(
       description='Provision Android devices with settings required for bots.')
@@ -509,9 +489,6 @@ def main():
                       help='when wiping the device, max number of seconds to'
                       ' wait after each reboot '
                       '(default: %s)' % _DEFAULT_TIMEOUTS.HELP_TEXT)
-  parser.add_argument('--min-battery-level', type=int, metavar='NUM',
-                      help='wait for the device to reach this minimum battery'
-                      ' level before trying to continue')
   parser.add_argument('--disable-location', action='store_true',
                       help='disable Google location services on devices')
   parser.add_argument('--disable-mock-location', action='store_true',
@@ -534,8 +511,6 @@ def main():
                       help='list of adb keys to push to device')
   parser.add_argument('-v', '--verbose', action='count', default=1,
                       help='Log more information.')
-  parser.add_argument('--max-battery-temp', type=int, metavar='NUM',
-                      help='Wait for the battery to have this temp or lower.')
   parser.add_argument('--output-device-blacklist',
                       help='Json file to output the device blacklist.')
   parser.add_argument('--chrome-specific-wipe', action='store_true',

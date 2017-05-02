@@ -20,10 +20,6 @@
 #include "content/public/browser/render_process_host_observer.h"
 #include "ui/shell_dialogs/select_file_dialog.h"
 
-namespace device {
-class PowerSaveBlocker;
-}  // namespace device
-
 namespace content {
 
 class WebContents;
@@ -153,11 +149,6 @@ class CONTENT_EXPORT WebRTCInternals : public RenderProcessHostObserver,
   void EnableEventLogRecordingsOnAllRenderProcessHosts();
 #endif
 
-  // Called whenever an element is added to or removed from
-  // |peer_connection_data_| to impose/release a block on suspending the current
-  // application for power-saving.
-  void CreateOrReleasePowerSaveBlocker();
-
   // Called on a timer to deliver updates to javascript.
   // We throttle and bulk together updates to avoid DOS like scenarios where
   // a page uses a lot of peerconnection instances with many event
@@ -202,12 +193,6 @@ class CONTENT_EXPORT WebRTCInternals : public RenderProcessHostObserver,
   bool event_log_recordings_;
   bool selecting_event_log_;
   base::FilePath event_log_recordings_file_path_;
-
-  // While |peer_connection_data_| is non-empty, hold an instance of
-  // PowerSaveBlocker.  This prevents the application from being suspended while
-  // remoting.
-  std::unique_ptr<device::PowerSaveBlocker> power_save_blocker_;
-  const bool should_block_power_saving_;
 
   // Set of render process hosts that |this| is registered as an observer on.
   base::hash_set<int> render_process_id_set_;

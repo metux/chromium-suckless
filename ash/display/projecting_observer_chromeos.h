@@ -10,18 +10,12 @@
 #include "base/macros.h"
 #include "ui/display/chromeos/display_configurator.h"
 
-namespace chromeos {
-class PowerManagerClient;
-}
-
 namespace ash {
 
 class ASH_EXPORT ProjectingObserver : public ui::DisplayConfigurator::Observer,
                                       public ShellObserver {
  public:
-  // |power_manager_client| must outlive this object.
-  explicit ProjectingObserver(
-      chromeos::PowerManagerClient* power_manager_client);
+  explicit ProjectingObserver();
   ~ProjectingObserver() override;
 
   // DisplayConfigurator::Observer implementation:
@@ -44,9 +38,6 @@ class ASH_EXPORT ProjectingObserver : public ui::DisplayConfigurator::Observer,
 
   // Number of outstanding casting sessions.
   int casting_session_count_;
-
-  // Weak pointer to the DBusClient PowerManagerClient;
-  chromeos::PowerManagerClient* power_manager_client_;
 
   DISALLOW_COPY_AND_ASSIGN(ProjectingObserver);
 };

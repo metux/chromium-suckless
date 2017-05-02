@@ -22,7 +22,6 @@
 #include "chrome/test/base/testing_profile.h"
 #include "chrome/test/base/testing_profile_manager.h"
 #include "chromeos/dbus/dbus_thread_manager.h"
-#include "chromeos/dbus/fake_power_manager_client.h"
 #include "content/public/browser/notification_service.h"
 #include "content/public/browser/notification_source.h"
 #include "content/public/browser/notification_types.h"
@@ -131,11 +130,7 @@ class TestDelegate : public RendererFreezer::Delegate, public ActionRecorder {
 
 class RendererFreezerTest : public testing::Test {
  public:
-  RendererFreezerTest()
-      : power_manager_client_(new FakePowerManagerClient()),
-        test_delegate_(new TestDelegate()) {
-    DBusThreadManager::GetSetterForTesting()->SetPowerManagerClient(
-        std::unique_ptr<PowerManagerClient>(power_manager_client_));
+  RendererFreezerTest() {
   }
 
   ~RendererFreezerTest() override {
@@ -150,9 +145,6 @@ class RendererFreezerTest : public testing::Test {
         std::unique_ptr<RendererFreezer::Delegate>(test_delegate_)));
   }
 
-  // Owned by DBusThreadManager.
-  FakePowerManagerClient* power_manager_client_;
-
   // Owned by |renderer_freezer_|.
   TestDelegate* test_delegate_;
   std::unique_ptr<RendererFreezer> renderer_freezer_;
@@ -162,52 +154,6 @@ class RendererFreezerTest : public testing::Test {
 
   DISALLOW_COPY_AND_ASSIGN(RendererFreezerTest);
 };
-
-// Tests that the RendererFreezer freezes renderers on suspend and thaws them on
-// resume.
-TEST_F(RendererFreezerTest, SuspendResume) {
-  Init();
-
-  power_manager_client_->SendSuspendImminent();
-  EXPECT_EQ(kFreezeRenderers, test_delegate_->GetActions());
-
-  // The renderers should be thawed when we resume.
-  power_manager_client_->SendSuspendDone();
-  EXPECT_EQ(kThawRenderers, test_delegate_->GetActions());
-}
-
-// Tests that the renderer freezer does nothing if the delegate cannot freeze
-// renderers.
-TEST_F(RendererFreezerTest, DelegateCannotFreezeRenderers) {
-  test_delegate_->set_can_freeze_renderers(false);
-  Init();
-
-  // Nothing happens on suspend.
-  power_manager_client_->SendSuspendImminent();
-  EXPECT_EQ(kNoActions, test_delegate_->GetActions());
-
-  // Nothing happens on resume.
-  power_manager_client_->SendSuspendDone();
-  EXPECT_EQ(kNoActions, test_delegate_->GetActions());
-}
-
-#if defined(GTEST_HAS_DEATH_TEST)
-// Tests that the RendererFreezer crashes the browser if the freezing operation
-// was successful but the thawing operation failed.
-TEST_F(RendererFreezerTest, ErrorThawingRenderers) {
-  // The "threadsafe" style of death test re-executes the unit test binary,
-  // which in turn re-initializes some global state leading to failed CHECKs.
-  // Instead, we use the "fast" style here to prevent re-initialization.
-  ::testing::FLAGS_gtest_death_test_style = "fast";
-  Init();
-  test_delegate_->set_thaw_renderers_result(false);
-
-  power_manager_client_->SendSuspendImminent();
-  EXPECT_EQ(kFreezeRenderers, test_delegate_->GetActions());
-
-  EXPECT_DEATH(power_manager_client_->SendSuspendDone(), "Unable to thaw");
-}
-#endif  // GTEST_HAS_DEATH_TEST
 
 class RendererFreezerTestWithExtensions : public RendererFreezerTest {
  public:

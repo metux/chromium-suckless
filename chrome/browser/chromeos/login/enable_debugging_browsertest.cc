@@ -25,7 +25,6 @@
 #include "chromeos/chromeos_switches.h"
 #include "chromeos/dbus/dbus_thread_manager.h"
 #include "chromeos/dbus/fake_debug_daemon_client.h"
-#include "chromeos/dbus/fake_power_manager_client.h"
 #include "chromeos/dbus/fake_update_engine_client.h"
 #include "components/prefs/pref_service.h"
 #include "content/public/test/browser_test_utils.h"
@@ -162,8 +161,7 @@ class TestDebugDaemonClient : public FakeDebugDaemonClient {
 class EnableDebuggingTest : public LoginManagerTest {
  public:
   EnableDebuggingTest() : LoginManagerTest(false),
-      debug_daemon_client_(NULL),
-      power_manager_client_(NULL) {
+      debug_daemon_client_(NULL) {
   }
   ~EnableDebuggingTest() override {}
 
@@ -179,9 +177,6 @@ class EnableDebuggingTest : public LoginManagerTest {
   void SetUpInProcessBrowserTestFixture() override {
     std::unique_ptr<DBusThreadManagerSetter> dbus_setter =
         chromeos::DBusThreadManager::GetSetterForTesting();
-    power_manager_client_ = new FakePowerManagerClient;
-    dbus_setter->SetPowerManagerClient(
-        std::unique_ptr<PowerManagerClient>(power_manager_client_));
     debug_daemon_client_ = new TestDebugDaemonClient;
     dbus_setter->SetDebugDaemonClient(
         std::unique_ptr<DebugDaemonClient>(debug_daemon_client_));
@@ -262,7 +257,6 @@ class EnableDebuggingTest : public LoginManagerTest {
   }
 
   TestDebugDaemonClient* debug_daemon_client_;
-  FakePowerManagerClient* power_manager_client_;
 };
 
 // Show remove protection screen, click on [Cancel] button.
@@ -288,8 +282,6 @@ IN_PROC_BROWSER_TEST_F(EnableDebuggingTest, ShowAndRemoveProtection) {
   base::RunLoop().RunUntilIdle();
   EXPECT_EQ(debug_daemon_client_->num_remove_protection(), 1);
   EXPECT_EQ(debug_daemon_client_->num_enable_debugging_features(), 0);
-  EXPECT_EQ(power_manager_client_->num_request_restart_calls(), 1);
-
 }
 
 // Show setup screen. Click on [Enable] button. Wait until done screen is shown.

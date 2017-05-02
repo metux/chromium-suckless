@@ -276,9 +276,6 @@ TEST_F(DeviceEventLogTest, TestType) {
   EXPECT_EQ(
       "Network: event1\nNetwork: event3\nNetwork: event5\nNetwork: event6\n",
       GetLogStringForType("network"));
-  const std::string power_events("Power: event2\nPower: event4\n");
-  EXPECT_EQ(power_events, GetLogStringForType("power"));
-  EXPECT_EQ(power_events, GetLogStringForType("non-network"));
   const std::string all_events(
       "Network: event1\n"
       "Power: event2\n"

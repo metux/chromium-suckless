@@ -17,7 +17,6 @@
 #include "content/public/browser/browser_thread.h"
 #include "content/public/browser/content_browser_client.h"
 #include "content/public/browser/web_contents.h"
-#include "device/power_save_blocker/power_save_blocker.h"
 #include "ipc/ipc_platform_file.h"
 
 #if defined(OS_WIN)
@@ -132,7 +131,6 @@ void WebRTCInternals::OnAddPeerConnection(int render_process_id,
     SendUpdate("addPeerConnection", dict->CreateDeepCopy());
 
   peer_connection_data_.Append(std::move(dict));
-  CreateOrReleasePowerSaveBlocker();
 
   if (render_process_id_set_.insert(render_process_id).second) {
     RenderProcessHost* host = RenderProcessHost::FromID(render_process_id);
@@ -156,7 +154,6 @@ void WebRTCInternals::OnRemovePeerConnection(ProcessId pid, int lid) {
       continue;
 
     peer_connection_data_.Remove(i, NULL);
-    CreateOrReleasePowerSaveBlocker();
 
     if (observers_.might_have_observers()) {
       std::unique_ptr<base::DictionaryValue> id(new base::DictionaryValue());
@@ -453,7 +450,6 @@ void WebRTCInternals::OnRendererExit(int render_process_id) {
       peer_connection_data_.Remove(i, NULL);
     }
   }
-  CreateOrReleasePowerSaveBlocker();
 
   bool found_any = false;
   // Iterates from the end of the list to remove the getUserMedia requests
@@ -501,27 +497,6 @@ void WebRTCInternals::EnableEventLogRecordingsOnAllRenderProcessHosts() {
     i.GetCurrentValue()->StartWebRTCEventLog(event_log_recordings_file_path_);
 }
 #endif
-
-void WebRTCInternals::CreateOrReleasePowerSaveBlocker() {
-  DCHECK_CURRENTLY_ON(BrowserThread::UI);
-  if (!should_block_power_saving_)
-    return;
-
-  if (peer_connection_data_.empty() && power_save_blocker_) {
-    DVLOG(1) << ("Releasing the block on application suspension since no "
-                 "PeerConnections are active anymore.");
-    power_save_blocker_.reset();
-  } else if (!peer_connection_data_.empty() && !power_save_blocker_) {
-    DVLOG(1) << ("Preventing the application from being suspended while one or "
-                 "more PeerConnections are active.");
-    power_save_blocker_.reset(new device::PowerSaveBlocker(
-        device::PowerSaveBlocker::kPowerSaveBlockPreventAppSuspension,
-        device::PowerSaveBlocker::kReasonOther,
-        "WebRTC has active PeerConnections",
-        BrowserThread::GetTaskRunnerForThread(BrowserThread::UI),
-        BrowserThread::GetTaskRunnerForThread(BrowserThread::FILE)));
-  }
-}
 
 void WebRTCInternals::ProcessPendingUpdates() {
   DCHECK_CURRENTLY_ON(BrowserThread::UI);

@@ -48,7 +48,6 @@ namespace ui {
 class DisplayConfigurator;
 class Layer;
 class UserActivityDetector;
-class UserActivityPowerManagerNotifier;
 }
 namespace views {
 class NonClientFrameView;
@@ -94,8 +93,6 @@ class MagnificationController;
 class MouseCursorEventFilter;
 class OverlayEventFilter;
 class PartialMagnificationController;
-class PowerButtonController;
-class PowerEventObserver;
 class ProjectingObserver;
 class ResizeShadowController;
 class ResolutionNotificationController;
@@ -120,7 +117,6 @@ class TouchTransformerController;
 class TouchObserverHUD;
 class ScreenLayoutObserver;
 class VirtualKeyboardController;
-class VideoActivityNotifier;
 class VideoDetector;
 class WebNotificationTray;
 class WindowPositioner;
@@ -263,9 +259,6 @@ class ASH_EXPORT Shell : public SystemModalContainerEventFilterDelegate,
       LinkHandlerModelFactory* link_handler_model_factory) {
     link_handler_model_factory_ = link_handler_model_factory;
   }
-  PowerButtonController* power_button_controller() {
-    return power_button_controller_.get();
-  }
   LockStateController* lock_state_controller() {
     return lock_state_controller_.get();
   }
@@ -274,9 +267,6 @@ class ASH_EXPORT Shell : public SystemModalContainerEventFilterDelegate,
     return window_tree_host_manager_.get();
   }
 #if defined(OS_CHROMEOS)
-  PowerEventObserver* power_event_observer() {
-    return power_event_observer_.get();
-  }
   TouchTransformerController* touch_transformer_controller() {
     return touch_transformer_controller_.get();
   }
@@ -467,7 +457,6 @@ class ASH_EXPORT Shell : public SystemModalContainerEventFilterDelegate,
   std::unique_ptr<::wm::WindowModalityController> window_modality_controller_;
   std::unique_ptr<views::corewm::TooltipController> tooltip_controller_;
   LinkHandlerModelFactory* link_handler_model_factory_;
-  std::unique_ptr<PowerButtonController> power_button_controller_;
   std::unique_ptr<LockStateController> lock_state_controller_;
   std::unique_ptr<ui::UserActivityDetector> user_activity_detector_;
   std::unique_ptr<VideoDetector> video_detector_;
@@ -508,9 +497,6 @@ class ASH_EXPORT Shell : public SystemModalContainerEventFilterDelegate,
   std::unique_ptr<ScreenPinningController> screen_pinning_controller_;
 
 #if defined(OS_CHROMEOS)
-  std::unique_ptr<PowerEventObserver> power_event_observer_;
-  std::unique_ptr<ui::UserActivityPowerManagerNotifier> user_activity_notifier_;
-  std::unique_ptr<VideoActivityNotifier> video_activity_notifier_;
   std::unique_ptr<StickyKeysController> sticky_keys_controller_;
   std::unique_ptr<ResolutionNotificationController>
       resolution_notification_controller_;

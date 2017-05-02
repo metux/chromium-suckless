@@ -14,7 +14,6 @@
 #include "base/time/time.h"
 #include "base/timer/timer.h"
 #include "chrome/browser/chromeos/system/automatic_reboot_manager_observer.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "chromeos/dbus/update_engine_client.h"
 #include "components/prefs/pref_change_registrar.h"
 #include "content/public/browser/notification_observer.h"
@@ -70,7 +69,7 @@ namespace system {
 // applying an update is stored in /var/run/chrome/update_reboot_needed_uptime,
 // making it persist across browser restarts and crashes. Placing the file under
 // /var/run ensures that it gets cleared automatically on every boot.
-class AutomaticRebootManager : public PowerManagerClient::Observer,
+class AutomaticRebootManager : 
                                public UpdateEngineClient::Observer,
                                public ui::UserActivityObserver,
                                public content::NotificationObserver {
@@ -100,9 +99,6 @@ class AutomaticRebootManager : public PowerManagerClient::Observer,
 
   void AddObserver(AutomaticRebootManagerObserver* observer);
   void RemoveObserver(AutomaticRebootManagerObserver* observer);
-
-  // PowerManagerClient::Observer:
-  void SuspendDone(const base::TimeDelta& sleep_duration) override;
 
   // UpdateEngineClient::Observer:
   void UpdateStatusChanged(const UpdateEngineClient::Status& status) override;

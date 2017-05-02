@@ -15,9 +15,6 @@ HighResolutionTimerManager::HighResolutionTimerManager()
 HighResolutionTimerManager::~HighResolutionTimerManager() {
 }
 
-void HighResolutionTimerManager::OnPowerStateChange(bool on_battery_power) {
-}
-
 void HighResolutionTimerManager::UseHiResClock(bool use) {
 }
 

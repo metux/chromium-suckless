@@ -11,13 +11,9 @@
 namespace chromeos {
 
 IdleActionWarningObserver::IdleActionWarningObserver() : warning_dialog_(NULL) {
-  DBusThreadManager::Get()->GetPowerManagerClient()->AddObserver(this);
 }
 
 IdleActionWarningObserver::~IdleActionWarningObserver() {
-  DBusThreadManager::Get()->GetPowerManagerClient()->RemoveObserver(this);
-  if (warning_dialog_)
-    warning_dialog_->CloseDialog();
 }
 
 void IdleActionWarningObserver::IdleActionImminent(

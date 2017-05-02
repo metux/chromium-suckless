@@ -9,7 +9,6 @@
 #include "base/bind.h"
 #include "base/threading/thread_task_runner_handle.h"
 #include "build/build_config.h"
-#include "device/power_save_blocker/power_save_blocker.h"
 #include "mojo/public/cpp/bindings/strong_binding.h"
 
 namespace content {
@@ -50,10 +49,6 @@ bool WakeLockServiceContext::HasWakeLockForTests() const {
 
 void WakeLockServiceContext::CreateWakeLock() {
   DCHECK(!wake_lock_);
-  wake_lock_.reset(new device::PowerSaveBlocker(
-      device::PowerSaveBlocker::kPowerSaveBlockPreventDisplaySleep,
-      device::PowerSaveBlocker::kReasonOther, "Wake Lock API",
-      main_task_runner_, file_task_runner_));
 
 #if defined(OS_ANDROID)
   gfx::NativeView native_view = native_view_getter_.Run();

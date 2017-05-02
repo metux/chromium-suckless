@@ -164,11 +164,6 @@ void ArcBridgeHostImpl::OnPolicyInstanceReady(
   OnInstanceReady(ArcBridgeService::Get()->policy(), std::move(policy_ptr));
 }
 
-void ArcBridgeHostImpl::OnPowerInstanceReady(
-    mojom::PowerInstancePtr power_ptr) {
-  OnInstanceReady(ArcBridgeService::Get()->power(), std::move(power_ptr));
-}
-
 void ArcBridgeHostImpl::OnPrintInstanceReady(
     mojom::PrintInstancePtr print_ptr) {
   OnInstanceReady(ArcBridgeService::Get()->print(), std::move(print_ptr));

@@ -7,8 +7,6 @@
 #include <utility>
 
 #include "base/bind.h"
-#include "base/power_monitor/power_monitor.h"
-#include "base/power_monitor/power_monitor_device_source.h"
 #include "base/run_loop.h"
 #include "base/test/thread_test_helper.h"
 #include "build/build_config.h"
@@ -109,12 +107,6 @@ class EventRouterForwarderTest : public testing::Test {
       : thread_bundle_(content::TestBrowserThreadBundle::REAL_IO_THREAD),
         profile_manager_(
             TestingBrowserProcess::GetGlobal()) {
-#if defined(OS_MACOSX)
-    base::PowerMonitorDeviceSource::AllocateSystemIOPorts();
-#endif
-    std::unique_ptr<base::PowerMonitorSource> power_monitor_source(
-        new base::PowerMonitorDeviceSource());
-    dummy.reset(new base::PowerMonitor(std::move(power_monitor_source)));
   }
 
   void SetUp() override {
@@ -127,7 +119,6 @@ class EventRouterForwarderTest : public testing::Test {
 
   content::TestBrowserThreadBundle thread_bundle_;
   TestingProfileManager profile_manager_;
-  std::unique_ptr<base::PowerMonitor> dummy;
   // Profiles are weak pointers, owned by ProfileManager in |browser_process_|.
   TestingProfile* profile1_;
   TestingProfile* profile2_;

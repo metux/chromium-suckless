@@ -19,7 +19,6 @@
 #include "chrome/browser/chromeos/file_system_provider/service.h"
 #include "chrome/common/pref_names.h"
 #include "chrome/test/base/testing_profile.h"
-#include "chromeos/dbus/fake_power_manager_client.h"
 #include "chromeos/disks/disk_mount_manager.h"
 #include "components/prefs/pref_service.h"
 #include "components/storage_monitor/storage_info.h"
@@ -144,8 +143,7 @@ class VolumeManagerTest : public testing::Test {
   // Helper class that contains per-profile objects.
   class ProfileEnvironment {
    public:
-    ProfileEnvironment(chromeos::PowerManagerClient* power_manager_client,
-                       chromeos::disks::DiskMountManager* disk_manager)
+    ProfileEnvironment(chromeos::disks::DiskMountManager* disk_manager)
         : profile_(new TestingProfile),
           extension_registry_(
               new extensions::ExtensionRegistry(profile_.get())),
@@ -156,7 +154,6 @@ class VolumeManagerTest : public testing::Test {
           volume_manager_(new VolumeManager(
               profile_.get(),
               NULL,  // DriveIntegrationService
-              power_manager_client,
               disk_manager,
               file_system_provider_service_.get(),
               base::Bind(&ProfileEnvironment::GetFakeMtpStorageInfo,
@@ -183,10 +180,8 @@ class VolumeManagerTest : public testing::Test {
   };
 
   void SetUp() override {
-    power_manager_client_.reset(new chromeos::FakePowerManagerClient);
     disk_mount_manager_.reset(new FakeDiskMountManager);
-    main_profile_.reset(new ProfileEnvironment(power_manager_client_.get(),
-                                               disk_mount_manager_.get()));
+    main_profile_.reset(new ProfileEnvironment(disk_mount_manager_.get()));
   }
 
   Profile* profile() const { return main_profile_->profile(); }
@@ -195,7 +190,6 @@ class VolumeManagerTest : public testing::Test {
   }
 
   content::TestBrowserThreadBundle thread_bundle_;
-  std::unique_ptr<chromeos::FakePowerManagerClient> power_manager_client_;
   std::unique_ptr<FakeDiskMountManager> disk_mount_manager_;
   std::unique_ptr<ProfileEnvironment> main_profile_;
 };
@@ -569,9 +563,6 @@ TEST_F(VolumeManagerTest, OnMountEvent_Remounting) {
 
   // Emulate system suspend and then resume.
   {
-    power_manager_client_->SendSuspendImminent();
-    power_manager_client_->SendSuspendDone();
-
     // After resume, the device is unmounted and then mounted.
     volume_manager()->OnMountEvent(
         chromeos::disks::DiskMountManager::UNMOUNTING,
@@ -740,8 +731,7 @@ TEST_F(VolumeManagerTest, OnExternalStorageDisabledChanged) {
 }
 
 TEST_F(VolumeManagerTest, ExternalStorageDisabledPolicyMultiProfile) {
-  ProfileEnvironment secondary(power_manager_client_.get(),
-                               disk_mount_manager_.get());
+  ProfileEnvironment secondary(disk_mount_manager_.get());
   volume_manager()->Initialize();
   secondary.volume_manager()->Initialize();
 

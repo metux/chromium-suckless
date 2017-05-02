@@ -9,7 +9,6 @@
 #include "base/memory/ptr_util.h"
 #include "chromeos/dbus/dbus_thread_manager.h"
 #include "chromeos/dbus/power_manager/power_supply_properties.pb.h"
-#include "chromeos/dbus/power_manager_client.h"
 #include "chromeos/login/login_state.h"
 #include "chromeos/network/managed_network_configuration_handler.h"
 #include "chromeos/network/network_state.h"

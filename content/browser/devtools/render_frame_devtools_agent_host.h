@@ -23,12 +23,6 @@ namespace cc {
 class CompositorFrameMetadata;
 }
 
-#if defined(OS_ANDROID)
-namespace device {
-class PowerSaveBlocker;
-}  // namespace device
-#endif
-
 namespace content {
 
 class BrowserContext;
@@ -164,8 +158,6 @@ class CONTENT_EXPORT RenderFrameDevToolsAgentHost
 
   bool CheckConsistency();
 
-  void CreatePowerSaveBlocker();
-
   class FrameHostHolder;
 
   std::unique_ptr<FrameHostHolder> current_;
@@ -191,9 +183,6 @@ class CONTENT_EXPORT RenderFrameDevToolsAgentHost
   std::unique_ptr<devtools::tracing::TracingHandler> tracing_handler_;
   std::unique_ptr<devtools::emulation::EmulationHandler> emulation_handler_;
   std::unique_ptr<DevToolsFrameTraceRecorder> frame_trace_recorder_;
-#if defined(OS_ANDROID)
-  std::unique_ptr<device::PowerSaveBlocker> power_save_blocker_;
-#endif
   std::unique_ptr<DevToolsProtocolHandler> protocol_handler_;
   RenderFrameHostImpl* handlers_frame_host_;
   bool current_frame_crashed_;

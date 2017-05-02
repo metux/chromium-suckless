@@ -240,10 +240,6 @@ void PerfProvider::Init() {
   // Register the login observer with LoginState.
   chromeos::LoginState::Get()->AddObserver(&login_observer_);
 
-  // Register as an observer of power manager events.
-  chromeos::DBusThreadManager::Get()->GetPowerManagerClient()->
-      AddObserver(this);
-
   // Register as an observer of session restore.
   on_session_restored_callback_subscription_ =
       SessionRestore::RegisterOnSessionRestoredCallback(

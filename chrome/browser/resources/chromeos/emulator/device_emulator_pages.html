@@ -13,7 +13,6 @@
 <link rel="import" href="chrome://resources/polymer/v1_0/paper-styles/shadow.html">
 <link rel="import" href="chrome://resources/polymer/v1_0/paper-toolbar/paper-toolbar.html">
 <link rel="import" href="audio_settings.html">
-<link rel="import" href="battery_settings.html">
 <link rel="import" href="bluetooth_settings.html">
 <link rel="import" href="icons.html">
 <link rel="import" href="input_device_settings.html">
@@ -68,11 +67,6 @@
             Audio
           </paper-icon-item>
           <paper-icon-item>
-            <iron-icon icon="device-emulator:battery-charging-full" item-icon>
-            </iron-icon>
-            Battery/Power
-          </paper-icon-item>
-          <paper-icon-item>
             <iron-icon icon="device-emulator:bluetooth" item-icon></iron-icon>
             Bluetooth
           </paper-icon-item>
@@ -92,7 +86,6 @@
             entry-animation="fade-in-animation"
             exit-animation="fade-out-animation">
           <audio-settings id="audioSettings"></audio-settings>
-          <battery-settings id="batterySettings"></battery-settings>
           <bluetooth-settings id="bluetoothSettings"></bluetooth-settings>
           <input-device-settings id="inputDeviceSettings">
           </input-device-settings>
